@@ -1,14 +1,14 @@
 # Site settings
-title: A.P
-baseurl: "/ap"
-url: "https://kssim.github.io"
+title: Lucas Dasso
+baseurl: "/"
+url: "https://me.c238.com.ar"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
 
 # Author
 author:
-  name: KyeongSeob Sim
+  name: Lucas Dasso
   desc: Hello nice to meet you
-  email: ksub0912@gmail.com
+  email: dassolucas@gmail.com
   selfie: assets/img/profile.jpg
 
 # social
