@@ -19,11 +19,11 @@ social:
   dribbble:
   facebook: Test
   flickr:
-  github: kssim
+  github: lukas238
   google_plus:
   instagram:
   keybase:
-  linkedin: https://www.linkedin.com/in/kssim/ 
+  linkedin: https://www.linkedin.com/in/lucasdasso
   pinterest:
   reddit:
   soundcloud:
@@ -31,7 +31,7 @@ social:
   steam:
   tumblr:
   gitlab:
-  twitter: Test
+  twitter: @lucasdasso
   vimeo:
   wordpress:
   youtube:
@@ -60,3 +60,4 @@ exclude:
   - "LICENSE"
   - "READE.md"
   - "screenshot.png"
+  - "portfolio"
