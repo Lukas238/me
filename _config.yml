@@ -7,7 +7,7 @@ google_analytics: # Tracking ID, e.g. "UA-000000-01"
 # Author
 author:
   name: Lucas Dasso
-  desc: Hello nice to meet you
+  desc: "Laziness, impatience, and hubris."
   email: dassolucas@gmail.com
   selfie: assets/img/profile.png
 
@@ -17,7 +17,7 @@ social:
   behance:
   bitbucket:
   dribbble:
-  facebook: Test
+  facebook:
   flickr:
   github: lukas238
   google_plus:
