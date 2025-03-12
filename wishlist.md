@@ -1,8 +1,21 @@
 ---
 layout: base
+title: Whishlist
 ---
 
-<div id="wishlist"></div>
+
+
+# Wishlist
+This is a list of things I want to buy or to have.
+
+
+<div id="wishlist">
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+</div>
 
 
 <script>
