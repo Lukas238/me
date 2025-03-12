@@ -3,10 +3,11 @@ layout: base
 title: Whishlist
 ---
 
-
+<br/>
 
 # Wishlist
-This is a list of things I want to buy or to have.
+My ever-growing list of wants and desires. Browse at your own risk! (You might find something you want too.)
+
 
 
 <div id="wishlist-container">
@@ -77,7 +78,7 @@ fetch(boardUrl)
       ulHtml += `<li class="mb-3">${linkedCardHtml}</li>`;
     });
 
-    wishlist.innerHTML = `<ul class="list-unstyled">${ulHtml}</ul>`;
+    wishlist.innerHTML = `<ul class="list-unstyled d-flex flex-wrap">${ulHtml}</ul>`;
 
   } else {
     wishlist.innerHTML = `<p>No lists found on the board.</p>`;
