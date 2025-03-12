@@ -4,8 +4,20 @@ layout: about
 
 # About Me
 
-I'm Lucas, Tech Lead and Fullstack Developer at VML Argentina, with over 10 years of experience. I'm also a huge Star Trek TNG fan, especially of [Data](https://memory-alpha.fandom.com/wiki/Data)!
-Passionate about technology, music, painting, and woodworking. **These are just a few things that bring me joy.**
+I'm Lucas Dasso, Tech Lead and Fullstack Developer at VML Argentina, with over 10 years of experience. Passionate about technology, music, painting, and woodworking, these are just a few things that bring me joy.
+
+When I'm not coding, I'm often lost in the worlds of science fiction. I especially enjoy time paradoxes and collapsing function premises in both books and TV shows. Speaking of favorites, I'm a huge Star Trek fan (especially of [Data](https://memory-alpha.fandom.com/wiki/Data)!) and a devoted reader of the [Dune saga](https://en.wikipedia.org/wiki/Dune_(franchise)) ("I must not fear. Fear is the mind-killer...").
+
+Beyond the screen and the page, I also enjoy reading ebooks and curating a digital library for my family. You can check it out at [books.c238.com.ar](books.c238.com.ar)! After all, books are wonderful! 
+
+
+<figure>
+    <blockquote>
+    "Somewhere, something incredible is waiting to be known."
+    </blockquote>
+    <figcaption>— Carl Sagan</figcaption>
+</figure>
+
 
 <br/>
 
