@@ -9,7 +9,7 @@ title: Whishlist
 This is a list of things I want to buy or to have.
 
 
-<div id="wishlist">
+<div id="wishlist-container">
     <div class="d-flex justify-content-center">
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -30,7 +30,7 @@ fetch(boardUrl)
   return response.json();
 })
 .then(boardData => {
-  const wishlist = document.getElementById('wishlist');
+  const wishlist = document.getElementById('wishlist-container');
   if (!wishlist) {
     console.error("Element with ID 'wishlist' not found.");
     return;
