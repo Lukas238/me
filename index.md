@@ -11,12 +11,12 @@ Passionate about technology, music, painting, and woodworking. **These are just 
 
 # Passions
 
-*   **Technology:** Fullstack Web Development - PHP, Node.js, AWS, Python.
-*   **Art:** Watercolors & Urban Sketching, Woodworking & Whittling.
+*   **Technology:** [Fullstack Web Development](https://github.com/Lukas238) - PHP, Node.js, AWS, Python.
+*   **Art:** [Watercolors](https://www.linkedin.com/in/lucasdasso/) & Urban Sketching, [Woodworking](https://www.linkedin.com/in/lucasdasso/) & [Whittling](https://www.linkedin.com/in/lucasdasso/).
 *   **Music:** Transverse Flute, Piano, Ukulele.
 *   **Science:** Astronomy.
 *   **Electronics:** Arduino.
-*   **Sport:** Taekwon-Do (1st Dan)
+*   **Sport:** [Taekwon-Do](https://www.instagram.com/mastercisternas/) (1st Dan)
 
 <br/>
 
