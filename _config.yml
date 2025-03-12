@@ -7,7 +7,7 @@ google_analytics: # Tracking ID, e.g. "UA-000000-01"
 # Author
 author:
   name: Lucas Dasso
-  desc: "Laziness, impatience, and hubris."
+  desc: "<a href="https://thethreevirtues.com/"><em>Laziness, impatience, and hubris.</em></a>"
   email: dassolucas@gmail.com
   selfie: assets/img/profile.png
 
