@@ -3,24 +3,25 @@ layout: about
 ---
 
 # About Me
-There is no specific format here. You can fill out the form you want.  
-For example, you might want to write a brief introduction about your self, experience, interests, publications, and other information.  
-I wrote "about me", "career", and "interests" on this page as an example.  
+
+I'm Lucas, Tech Lead and Fullstack Developer at VML Argentina, with over 10 years of experience.
+Passionate about technology, music, painting, and woodworking. **These are just a few things that bring me joy.**
 
 <br/>
 
-# Career
-* Second Company (2012/01 ~ )
-  * Web Application Firewall
-    * Developed TCP network acceleration module.
-    * Developde Application User Interface.
-* First Company (2011/01 ~ 2011/12)
-  * VPN Development Company
-  * Team Leader of VPN Development Div.
+# Passions
+
+*   **Technology:** Fullstack Web Development - PHP, Node.js, AWS, Python
+*   **Art:** Watercolors and Sketches, Woodworking.
+*   **Music:** Concert Flute and Soprano Ukulele
+*   **Science:** Astronomy
+*   **Electronics:** Arduino
+*   **Sport:** Taekwon-Do (1st Dan)
 
 <br/>
 
-# Interests
-I am interested in technology trends.  
-I'm not afraid to learn languages, but I enjoy using Python.  
-I like to automate and reduce annoying things.  
+# Connect with Me
+
+* [GitHub](https://github.com/Lukas238) - Explore my code and projects.
+* [LinkedIn](https://www.linkedin.com/in/lucasdasso/) - Connect professionally and learn about my career.
+* [Instagram](https://www.instagram.com/dassolucas) - See my art and creative side.
