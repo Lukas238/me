@@ -1,128 +1,91 @@
-# AP  [![Build Status](https://travis-ci.org/kssim/ap.svg?branch=master)](https://travis-ci.org/kssim/ap.svg?branch=master)
-"AP" is [Jekyll](https://jekyllrb.com/) theme for career. This theme is free and open-source.  
-Based on Chester How's tale-theme(https://github.com/chesterhow/tale) with a few new features:  
-* SNS Link
-* Google Analytics
-* Responsive design
-* Upgrading awesome fonts and modifying some layouts.
-* Use "About" as main.
-  * It can be written in simple resume form.
-* Change "Post" to "Project Portfolio"
-  * You can manage your project experience just like running a blog.
+# Lucas Dasso - Personal Website
 
+This is a Jekyll theme adapted for my personal website, serving as a digital hub showcasing my professional experience, artistic passions, and personal interests.
+
+Originally based on Chester How's tale-theme (https://github.com/chesterhow/tale), this version has been customized to reflect my unique profile and provide a central point of access to my online presence.
+
+**Key Features:**
+
+*   **About Me:** The main page features a concise overview of my background, skills, and passions.
+*   **Professional Links:** Direct links to my GitHub and LinkedIn profiles for exploring my professional work.
+*   **Artistic Showcase:** A glimpse into my creative pursuits, including watercolors, woodworking, and more.
+*   **Responsive Design:** Ensures optimal viewing experience across various devices.
 
 # Preview
-[![AP Screenshot](https://github.com/kssim/ap/blob/master/screenshot.png?raw=true)](https://kssim.github.io/ap/)
 
+[me.c238.com.ar](me.c238.com.ar)
 
 # Usage
-1. Fork and clone the AP repo:
-    * git clone https://github.com/kssim/ap.git
-2. Install Jekyll:
-    * gem install jekyll
-3. Install the theme's dependencies
-    * bundle install
-4. Customize the theme
-    * update _config.yml
-5. Run the Jekyll server
-    * jekyll serve
 
+1.  **Fork and clone the repository:**
+  ```bash
+  git clone git@github.com:Lukas238/me.git
+  ```
+2.  **Install Jekyll:**
+  ```bash
+  gem install jekyll
+  ```
+3.  **Install the theme's dependencies:**
+  ```bash
+  bundle install
+  ```
+4.  **Customize the theme:**
+  *   Update `_config.yml` with your information.
+  *   Modify `index.md` to personalize the "About Me" section.
+5.  **Run the Jekyll server:**
+  ```bash
+  jekyll serve
+  ```
 
 ## Structure
-* Here are the main files of the template
+
+*   Here are the main files of the template:
+
 ```bash
 ap
-├── _includes                  # theme includes
-├── _layouts                   # theme layouts (see below for details)
-├── _posts                     # Project & Portfolio posts
-├── _sass                      # Sass partials 
-├── portfolio                  # Main page for "portfolio"
+├── _includes                  # Theme includes
+├── _layouts                   # Theme layouts
+├── _sass                      # Sass partials
 ├── assets
-|  ├── css                     # font-awesome and main css
+|  ├── css                     # Font-awesome and main css
 |  ├── fonts                   # Font-Awesome
 |  ├── favicon.ico             # Favicon
 |  └── img                     # Images used for "about" page
-├── _config.yml                # sample configuration
-└── index.md                   # Resume to show on "about" page
+├── _config.yml                # Site configuration
+└── index.md                   # About Me content
 ```
 
-## Configure AP
-Open _config.yml in a text editor to change most of the blog's settings.
+## Configure Your Website
 
+Open `_config.yml` in a text editor to customize the website's settings.
 
 ### Site Configuration
-Configure Jekyll as your own blog or with a subpath in in _config.yml:  
+
+Configure Jekyll with your website title, URL, and other settings:
+
 ```yml
-title: [Website Title]
-baseurl: [Website Subpath]
-url: [Github Page Url]
-google_analytics: [Google Analytics Tracking ID]
+title: Lucas Dasso
+baseurl: "" # Leave empty if your site is at the root
+url: me.c238.com.ar
+google_analytics: "" # Add your Google Analytics Tracking ID if you want to use it
 ```
-Please configure this before using the theme.  
-And to enable Google Analytics, add your [Traking ID](https://support.google.com/analytics/answer/1008080?visit_id=1-636579797402349951-2693679291&rd=1)
-
-
 
 ### About You
-Meta variables hold basic information about your profile and resume.  
-Change these variables in _config.yml:  
+
+Meta variables hold basic information about your profile. Change these variables in `_config.yml`:
+
 ```yml
 author:
-  name: [Your Name]
-  desc: [Short introduction]
-  email: [Your E-Mail Address]
-  selfie: [Your Avatar]
+name: Lucas Dasso
+desc: Tech Lead & Fullstack Developer | Artist | Enthusiast
+email: "" # Optional
+selfie: "" # Path to your avatar image
 ```
-Please configure this before using the theme.
-
-
 
 ### SNS Information
-Your SNS information to display at the bottom of the page.  
-All values except "email" are text values.  
-```yml
-social:
-  email: true
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: 
-  google_plus:
-  instagram:
-  keybase:
-  linkedin:
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:
-  steam:
-  tumblr:
-  gitlab:
-  twitter: 
-  vimeo:
-  wordpress:
-  youtube:
-  default_txt: "Follow On"
-```
 
-
-## Portfolio Schema
-```markdown
----
-layout: post
-title:  [Project title to show in portfolio list]
-info: [A brief introduction to show in portfolio list]
-tech: [The technologies used in the project to show in portfolio list]
-type: [Property of the project to be displayed in front of the project's info(toy or company name)]
----
-```
-
-## Other formats
-It uses the markdown syntax by default, and there is no format other than the one mentioned above.  
-You can use it as you like.  
-
+This section is no longer used. The links to my GitHub and LinkedIn are now directly in the "About Me" section.
 
 ## License
+
 [The MIT License (MIT)](https://raw.githubusercontent.com/kssim/ap/master/LICENSE)
