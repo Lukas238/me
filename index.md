@@ -6,11 +6,9 @@ layout: about
 
 I'm Lucas Dasso, Tech Lead and Fullstack Developer at VML Argentina, with over 10 years of experience. Passionate about technology, music, painting, and woodworking. **These are just a few things that bring me joy**.
 
-When I'm not coding, I'm often lost in the worlds of science fiction. I especially enjoy time paradoxes and collapsing function premises in both scifi books and TV shows.
+When I'm not coding, I'm often lost in the worlds of science fiction. I'm a huge Star Trek fan (especially of [Data](https://memory-alpha.fandom.com/wiki/Data)!) and a devoted reader of the [Dune saga](https://en.wikipedia.org/wiki/Dune_(franchise)) (<em>"I must not fear. Fear is the mind-killer..."</em>). I especially enjoy time paradoxes and collapsing function premises in both scifi books and TV shows.
 
-I'm a huge Star Trek fan (especially of [Data](https://memory-alpha.fandom.com/wiki/Data)!) and a devoted reader of the [Dune saga](https://en.wikipedia.org/wiki/Dune_(franchise)) (<em>"I must not fear. Fear is the mind-killer..."</em>).
-
-I also enjoy curating my family digital library. You can check it out at [books.c238.com.ar](books.c238.com.ar)! Books are just wonderful! 
+Also, I enjoy curating my family digital library ([check it out here](https://books.c238.com.ar/lukas238/)!). Books are just wonderful! 
 
 <br>
 
@@ -32,6 +30,7 @@ I also enjoy curating my family digital library. You can check it out at [books.
 *   **Science:** Astronomy.
 *   **Electronics:** Arduino.
 *   **Sport:** [Taekwon-Do](https://www.instagram.com/mastercisternas/) (1st Dan)
+*   **Reading:** Mostly [Science Fiction](https://books.c238.com.ar/lukas238/) and Fantasy.
 
 <br/>
 
