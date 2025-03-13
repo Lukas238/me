@@ -17,17 +17,17 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon.ico" | relative_url }}">
-  
-  {% if site.google_analytics %}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', '{{ site.google_analytics }}');
-</script>
+  {% if site.google_analytics %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
   {% endif %}
 
 </head>
