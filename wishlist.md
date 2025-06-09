@@ -191,7 +191,7 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
         let cardHtml = template.replace('@@imageHtml@@', imageHtml)
                                .replace('@@title@@', product.title || '')
                                .replace('@@description@@', product.description || '')
-                               .replace('@@productUrl@@', product.url);
+                               .replace(/@@productUrl@@/g, product.url);
 
         cardsListHtml += cardHtml;
       });
