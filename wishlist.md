@@ -25,9 +25,7 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 <script id="product-card-template" type="text/template">
     <div class="col-auto">
         <div class="card mb-3" style="width: 18rem;">
-            <a href="{{productUrl}}" target="_blank" style="min-height: 200px; display: inline-flex;">
-                {{imageHtml}}
-            </a>
+            <a href="{{productUrl}}" target="_blank" style="min-height: 200px; display: inline-flex;">{{imageHtml}}</a>
             <div class="card-body">
                 <h5 class="card-title h6">{{title}}</h5>
                 <p class="card-text">{{description}}</p>
@@ -190,10 +188,10 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
         const imageHtml = product.thumb ? `<img src="${product.thumb}" class="card-img-top" alt="${product.title}" style="align-self: center;">` : '';
 
         // Populate the template with data
-        let cardHtml = template.replace('{{imageHtml}}', imageHtml)
-                               .replace('{{title}}', product.title || '')
-                               .replace('{{description}}', product.description || '')
-                               .replace('{{productUrl}}', product.url);
+        let cardHtml = template.replace('@@imageHtml@@', imageHtml)
+                               .replace('@@title@@', product.title || '')
+                               .replace('@@description@@', product.description || '')
+                               .replace('@@productUrl@@', product.url);
 
         cardsListHtml += cardHtml;
       });
