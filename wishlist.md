@@ -12,7 +12,7 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
 <div id="wishlist-container">
   <div id="wishlist-container__list" class="row">  
-    <div class="col-auto w-75">
+    <div class="col-auto mx-auto my-5">
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
@@ -23,31 +23,18 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
 <!-- Template for the product card -->
 <script id="product-card-template" type="text/template">
-  <div class="col-auto">
-  <div class="card mb-3" style="max-width: 540px;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <a href="{{productUrl}}" target="_blank">
-          {{imageHtml}}
-          </a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title h6">{{title}}</h5>
-            <p class="card-text">{{description}}</p>
-            <a class="icon-link icon-link-hover fs-6" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="{{productUrl}}" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
-  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-</svg>
-              Go to product page
+    <div class="col-auto">
+        <div class="card mb-3" style="width: 18rem;">
+            <a href="{{productUrl}}" target="_blank" style="min-height: 200px; display: inline-flex;">
+                {{imageHtml}}
             </a>
-
-
-          </div>
+            <div class="card-body">
+                <h5 class="card-title h6">{{title}}</h5>
+                <p class="card-text">{{description}}</p>
+                <a class="icon-link icon-link-hover fs-6" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="{{productUrl}}" target="_blank">View Product</a>
+            </div>
         </div>
-      </div>
-  </div>
-  </div>
+    </div>
 </script>
 
 
@@ -200,7 +187,7 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
       let cardsListHtml = '';
       combinedProducts.forEach(product => {
         // Create the image tag
-        const imageHtml = product.thumb ? `<img src="${product.thumb}" class="card-img-left w-100" alt="${product.title}" style="max-height: 170px;">` : '';
+        const imageHtml = product.thumb ? `<img src="${product.thumb}" class="card-img-top" alt="${product.title}" style="align-self: center;">` : '';
 
         // Populate the template with data
         let cardHtml = template.replace('{{imageHtml}}', imageHtml)
