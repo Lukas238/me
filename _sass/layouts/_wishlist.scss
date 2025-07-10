@@ -7,11 +7,11 @@
     display: block;
   }
 
-  &__title {
-    color: inherit;
-    line-height: 1.2em;
+  &__title a {
+    color: inherit !important;
+    line-height: 1.2em !important;
     font-size: 0.9em !important;
-    font-weight: normal;
+    font-weight: normal !important;
   }
 
 
