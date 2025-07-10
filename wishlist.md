@@ -36,26 +36,19 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 </script>
 
 
+
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
 <script>
   const boardUrl = 'https://trello.com/b/NjOxqya1.json';
-  const awsWishlistUrl = 'https://get-my-whishlist.dassolucas.workers.dev/';
+  const awsWishlistUrl = 'https://aws-wishlist-scrapper-worker.dassolucas.workers.dev/?url=https://www.amazon.com/hz/wishlist/ls/35A8QWIZ90CH?type=wishlist&filter=unpurchased&sort=priority&viewType=list';
 
   // Function to fetch JSON data
   async function fetchJson(url) {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.json();
-  }
 
-  // Function to fetch HTML data
-  async function fetchHtml(url) {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.text();
+    // Use axios here
+    const response = await axios.get(url);
+    return response.data;
   }
 
   // Function to process Trello data
@@ -85,9 +78,9 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
           return {
             title: card.name,
-            description: description,
-            url: url,
-            thumb: thumb
+            link: url,
+            img: thumb,
+            description: description
           };
         });
       } else {
@@ -103,64 +96,17 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
   // Function to process AWS wishlist data
   async function processAwsWishlistData() {
     try {
-      const html = await fetchHtml(awsWishlistUrl);
-      return parseWishlistItems(html);
+      // Fetch the HTML content from the AWS wishlist URL avoid CORS issues
+      const response = await fetch(awsWishlistUrl);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const html = await response.text();
+      return html;
     } catch (error) {
       console.error('Error fetching or processing AWS wishlist data:', error);
       return [];
     }
-  }
-
-  // Function to parse AWS wishlist HTML
-  function parseWishlistItems(html) {
-    const items = [];
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-
-    const productList = doc.getElementById('wl-item-view');
-    if (!productList) {
-      console.log('Could not find <div id="wl-item-view"');
-      return items;
-    }
-
-    const itemElements = productList.querySelectorAll('li.g-item-sortable');
-
-    itemElements.forEach(itemElement => {
-      const item = {};
-
-      // Extract image URL and title
-      const imgElement = itemElement.querySelector('img');
-      if (imgElement) {
-        item.thumb = imgElement.getAttribute('src');
-        item.title = imgElement.getAttribute('alt');
-
-        // Cleanup the image URL
-        if (item.thumb) {
-          const dotIndex = item.thumb.indexOf('._');
-          if (dotIndex !== -1) {
-            item.thumb = item.thumb.substring(0, dotIndex) + item.thumb.substring(item.thumb.lastIndexOf('.'));
-          }
-        }
-      } else {
-        item.thumb = null;
-        item.title = null;
-      }
-
-      // Extract product URL
-      const linkElement = itemElement.querySelector('a.a-link-normal');
-      if (linkElement) {
-        item.url = linkElement.getAttribute('href');
-        item.url = item.url.startsWith('/') ? `https://www.amazon.com${item.url}` : item.url;
-      } else {
-        item.url = null;
-      }
-
-      item.description = null; // Description is not available
-
-      items.push({ title: item.title, description: item.description, url: item.url, thumb: item.thumb });
-    });
-
-    return items;
   }
 
   // Function to render the combined product list
@@ -173,7 +119,9 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
     try {
       const trelloProducts = await processTrelloData();
+      console.log(trelloProducts);
       const awsProducts = await processAwsWishlistData();
+      console.log(awsProducts);
 
       // Merge the two product lists
       const combinedProducts = [...trelloProducts, ...awsProducts];
@@ -185,13 +133,12 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
       let cardsListHtml = '';
       combinedProducts.forEach(product => {
         // Create the image tag
-        const imageHtml = product.thumb ? `<img src="${product.thumb}" class="card-img-top" alt="${product.title}" style="align-self: center;">` : '';
+        const imageHtml = product.img ? `<img src="${product.img}" class="card-img-top" alt="${product.title}" style="align-self: center;">` : '';
 
         // Populate the template with data
         let cardHtml = template.replace('@@imageHtml@@', imageHtml)
                                .replace('@@title@@', product.title || '')
-                               .replace('@@description@@', product.description || '')
-                               .replace(/@@productUrl@@/g, product.url);
+                               .replace(/@@productUrl@@/g, product.link);
 
         cardsListHtml += cardHtml;
       });
