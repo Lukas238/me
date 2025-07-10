@@ -26,10 +26,10 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
     <div class="m-wishlist col-auto">
         <div class="card mb-3" style="width: 18rem;">
             <a href="@@link@@" target="_blank" style="min-height: 200px; display: inline-flex;">
-                <img src="@@img@@" class="card-img-top" alt="" style="align-self: center;">
+                <img src="@@img@@" class="m-wishlist__thumb card-img-top" alt="" style="align-self: center;" width="135">
             </a>
             <div class="card-body">
-                <h5 class="card-title h6">
+                <h5 class="m-wishlist__title card-title h6">
                     <a class="icon-link icon-link-hover fs-6" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="@@link@@" target="_blank">
                         @@title@@
                     </a>
