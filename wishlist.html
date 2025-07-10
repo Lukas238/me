@@ -1,17 +1,17 @@
----
-layout: base
-title: Whishlist
----
-
-<br/>
-
-# Wishlist
-My ever-growing list of wants and desires. Browse at your own risk! (You might find something you want too.)
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="_site/assets/css/main.css">
+  <link rel="stylesheet" href="_site/assets/css/style.css">
+</head>
+<body>
 
 
 <div id="wishlist-container">
-  <div id="wishlist-container__list" class="row">  
+  <div id="wishlist-container__list" class="row">
     <div class="col-auto mx-auto my-5">
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -23,17 +23,12 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
 <!-- Template for the product card -->
 <script id="product-card-template" type="text/template">
-    <div class="m-wishlist col-auto">
+    <div class="col-auto">
         <div class="card mb-3" style="width: 18rem;">
-            <a href="@@link@@" target="_blank" style="min-height: 200px; display: inline-flex;">
-                <img src="@@img@@" class="card-img-top" alt="" style="align-self: center;">
-            </a>
+            <a href="@@productUrl@@" target="_blank" style="min-height: 200px; display: inline-flex;">@@imageHtml@@</a>
             <div class="card-body">
-                <h5 class="card-title h6">
-                    <a class="icon-link icon-link-hover fs-6" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="@@link@@" target="_blank">
-                        @@title@@
-                    </a>
-                </h5>
+                <h5 class="card-title h6">@@title@@</h5>
+                <a class="icon-link icon-link-hover fs-6" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="@@productUrl@@" target="_blank">View Product</a>
             </div>
         </div>
     </div>
@@ -45,8 +40,9 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
 <script>
   const boardUrl = 'https://trello.com/b/NjOxqya1.json';
-  const awsWishlistUrl = 'https://aws-wishlist-scrapper-worker.dassolucas.workers.dev/?url=https://www.amazon.com/hz/wishlist/ls/35A8QWIZ90CH?type=wishlist&filter=unpurchased&sort=priority&viewType=list';
-  
+  // const awsWishlistUrl = 'https://aws-wishlist-scrapper-worker.dassolucas.workers.dev/?url=https://www.amazon.com/hz/wishlist/ls/35A8QWIZ90CH?type=wishlist&filter=unpurchased&sort=priority&viewType=list';
+  const awsWishlistUrl = 'http://localhost:8787?url=https://www.amazon.com/hz/wishlist/ls/35A8QWIZ90CH?type=wishlist&filter=unpurchased&sort=priority&viewType=list';
+
   // Function to fetch JSON data
   async function fetchJson(url) {
     // Use axios here
@@ -120,12 +116,13 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
       // Render the products as HTML
       let cardsListHtml = '';
       combinedProducts.forEach(product => {
+        // Create the image tag
+        const imageHtml = product.img ? `<img src="${product.img}" class="card-img-top" alt="${product.title}" style="align-self: center;">` : '';
 
         // Populate the template with data
-        let cardHtml = template
-            .replace('@@title@@', product.title || '')
-            .replace(/@@img@@/g, product.img)
-            .replace(/@@link@@/g, product.link);
+        let cardHtml = template.replace('@@imageHtml@@', imageHtml)
+                               .replace('@@title@@', product.title || '')
+                               .replace(/@@productUrl@@/g, product.link);
 
         cardsListHtml += cardHtml;
       });
@@ -141,3 +138,8 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
   // Call the render function
   renderProductList();
 </script>
+
+
+
+</body>
+</html>
