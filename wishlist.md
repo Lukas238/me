@@ -42,10 +42,9 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 <script>
   const boardUrl = 'https://trello.com/b/NjOxqya1.json';
   const awsWishlistUrl = 'https://aws-wishlist-scrapper-worker.dassolucas.workers.dev/?url=https://www.amazon.com/hz/wishlist/ls/35A8QWIZ90CH?type=wishlist&filter=unpurchased&sort=priority&viewType=list';
-
+  
   // Function to fetch JSON data
   async function fetchJson(url) {
-
     // Use axios here
     const response = await axios.get(url);
     return response.data;
@@ -93,21 +92,6 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
     }
   }
 
-  // Function to process AWS wishlist data
-  async function processAwsWishlistData() {
-    try {
-      // Fetch the HTML content from the AWS wishlist URL avoid CORS issues
-      const response = await fetch(awsWishlistUrl);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const html = await response.text();
-      return html;
-    } catch (error) {
-      console.error('Error fetching or processing AWS wishlist data:', error);
-      return [];
-    }
-  }
 
   // Function to render the combined product list
   async function renderProductList() {
@@ -120,7 +104,7 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
     try {
       const trelloProducts = await processTrelloData();
       console.log(trelloProducts);
-      const awsProducts = await processAwsWishlistData();
+      const awsProducts = await fetchJson(awsWishlistUrl);
       console.log(awsProducts);
 
       // Merge the two product lists
