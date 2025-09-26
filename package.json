@@ -1,0 +1,14 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "This is a Jekyll theme adapted for my personal website, serving as a digital hub showcasing my professional experience, artistic passions, and personal interests.",
+  "main": "index.js",
+  "scripts": {
+    "bg:thumbs": "node generate_bg_thumb.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.34.4"
+  }
+}

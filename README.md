@@ -27,7 +27,7 @@ Originally based on Chester How's tale-theme (https://github.com/chesterhow/tale
   ```
 3.  **Install the theme's dependencies:**
   ```bash
-  bundle install
+  bundle install --path vendor/bundle
   ```
 4.  **Customize the theme:**
   *   Update `_config.yml` with your information.
