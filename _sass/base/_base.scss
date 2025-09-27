@@ -48,8 +48,10 @@ ul {
 }
 
 a {
-  color: #999;
-  text-decoration: none;
+  color: $default-shade !important;
+  &:hover {
+    color: $grey-1 !important;
+  }
 }
 
 blockquote {
