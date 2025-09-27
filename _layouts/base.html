@@ -4,22 +4,27 @@
   {% include head.html %}
 
   <body>
-    <nav class="nav">
-      <div class="nav-container">
+    <header id="header" class="container-xxl border-bottom  py-4">
         <a href="{{ site.baseurl }}/">
           <h2 class="nav-title">{{ site.title }}</h2>
         </a>
-        <ul>
-          <li><a href="{{ '/' | prepend: site.baseurl }}">About</a></li>
-          <li><a href="{{ '/wishlist' | prepend: site.baseurl }}">Wishlist</a></li>
-          <li><a href="https://books.c238.com.ar/lukas238/">Books Library</a></li>
-        </ul>
-    </div>
-  </nav>
+    </header>
 
-    <main>
-      {{ content }}
-    </main>
+    <div class="container-xxl d-flex">
+      <aside id="main-sidebar" class="py-4">
+        <nav>
+          <ul class="list-unstyled">
+            <li><a href="{{ site.baseurl }}">About Me</a></li>
+            <li><a href="{{ 'wishlist' | prepend: site.baseurl }}">Wishlist</a></li>
+            <li><a href="{{ 'backgrounds' | prepend: site.baseurl }}">Backgrounds</a></li>
+            <li><a href="https://books.c238.com.ar/lukas238/">Books Library</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main id="main-content" class="order-1 py-4">
+        {{ content }}
+      </main>
+    </div>
 
     <footer>
       <span>
@@ -27,4 +32,5 @@
       </span>
     </footer>
   </body>
+
 </html>

@@ -34,8 +34,16 @@ Originally based on Chester How's tale-theme (https://github.com/chesterhow/tale
   *   Modify `index.md` to personalize the "About Me" section.
 5.  **Run the Jekyll server:**
   ```bash
-  jekyll serve
+  bundle exec jekyll serve
   ```
+
+### Troubleshooting
+
+On Mac with M1 chip, you might need to install the `eventmachine` gem with specific flags:
+
+```bash
+gem install eventmachine -v '1.2.7' -- --with-ldflags="-Wl,-undefined,dynamic_lookup"
+```
 
 ## Structure
 

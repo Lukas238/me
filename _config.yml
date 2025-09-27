@@ -1,5 +1,5 @@
 # Site settings
-title: Lucas Dasso
+title: Lucas Dasso · <span class="fw-lighter">Digital Corner</span>
 baseurl: "/"
 url: "https://me.c238.com.ar"
 google_analytics: G-VQK8L4H9C2
@@ -11,30 +11,13 @@ author:
   email: dassolucas@gmail.com
   selfie: assets/img/profile.png
 
-# social
+# Social (only keep the ones you actually use)
 social:
   email: true
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
   github: lukas238
-  google_plus:
   instagram: dassolucas
-  keybase:
   linkedin: https://www.linkedin.com/in/lucasdasso
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:
-  steam:
-  tumblr:
-  gitlab:
   twitter: lucasdasso
-  vimeo:
-  wordpress:
-  youtube:
   default_txt: "Follow On"
 
 # Build settings
@@ -45,18 +28,30 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# Gems
+
+# Backgrounds gallery
+bg_images_url: "/assets/backgrounds/"
+bg_thumbs_url: "/assets/backgrounds/_thumbs/"
+
+# Plugins
 plugins:
   - jekyll-paginate
 
-# Permalinks
-permalink: /:year-:month-:day/:title
-paginate_path: "/portfolio/page:num/"
-paginate: 5
+# Pages
+include:
+  - _pages
+  - _thumbs
+
+# Excludes
 exclude:
+  - vendor
   - "Gemfile"
   - "Gemfile.lock"
   - "*.gem"
   - "LICENSE"
-  - "READE.md"
+  - "README.md"
   - "screenshot.png"
+  - "package.json"
+  - "package-lock.json"
+  - "node_modules"
+  - "generate_bg_thumb.js"
