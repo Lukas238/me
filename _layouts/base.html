@@ -12,7 +12,7 @@
 
     <div class="container-xxl d-flex">
       <aside id="main-sidebar" class="py-4">
-        <nav class="sticky-top">
+        <nav class="sticky-top pt-2">
           <ul class="list-unstyled">
             <li><a href="{{ '/' | prepend: site.baseurl }}">About Me</a></li>
             <li><a href="{{ '/wishlist' | prepend: site.baseurl }}">Wishlist</a></li>
@@ -26,12 +26,6 @@
       </main>
     </div>
 
-    <footer class="text-center py-4 border-top">
-      <p class="fw-lighter mb-0 fs-5"><em>"Ad astra per aspera"</em></p>
-      <span>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}.
-      </span>
-    </footer>
+    {% include foot.html %}
   </body>
-
 </html>

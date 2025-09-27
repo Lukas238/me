@@ -1,36 +1,101 @@
-<div class="bg-gallery">
-  {% assign reversed_files = site.static_files | reverse %}
-  {% for file in reversed_files %}
-  {% if file.path contains "assets/backgrounds/" and file.path contains "_thumbs" == false %}
-    {% if file.extname == ".jpg" or file.extname == ".png" or file.extname == ".jpeg" or file.extname == ".gif" %}
-      {% assign filenameparts = file.path | split: "/" %}
-      {% assign fname = filenameparts | last %}
-      {% assign name_no_ext = fname | replace: file.extname, "" %}
+<div class="bg-gallery container-xxl d-flex" data-bs-spy="scroll" data-bs-target="#navbar-years">
+
+  {% assign bg_files = site.static_files | where_exp: "file", "file.path contains 'assets/backgrounds/'" %}
+
+  {% assign years = "" | split: "" %}
+
+  {% comment %} Collect unique years {% endcomment %}
+  {% for file in bg_files %}
+  {% unless file.path contains "_thumbs" %}
+  {% assign ext = file.extname | downcase %}
+  {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".gif" %}
+  {% assign year = file.path | split: "/" | last | slice: 0, 4 %}
+  {% unless years contains year %}
+  {% assign years = years | push: year %}
+  {% endunless %}
+  {% endif %}
+  {% endunless %}
+  {% endfor %}
+
+  {% assign years = years | sort | reverse %}
+
+
+  <aside class="py-4 order-2 ps-4  pt-4">
+    <nav id="navbar-years" class="sticky-top text-end">
+      <h5 class="mb-3">Years</h5>
+      <ul class="">
+        {% for year in years %}
+        <li><a href="#year-{{ year }}">{{ year }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>
+
+
+  <div>
+    {% comment %} Loop through years and show files {% endcomment %}
+    {% for year in years %}
+    <div id="year-{{ year }}" class="year-gallery">
+      <h2 class="year-gallery-title">{{ year }}</h2>
+      {% for file in bg_files %}
+      {% unless file.path contains "_thumbs" %}
+      {% assign ext = file.extname | downcase %}
+      {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".gif" %}
+      {% assign fname = file.path | split: "/" | last %}
+      {% assign file_year = fname | slice: 0, 4 %}
+      {% if file_year == year %}
+      {% assign name_no_ext = fname | replace: ext, "" %}
       <div class="bg-thumb">
         <a href="{{ site.bg_images_url }}{{ fname }}" target="_blank" title="{{ name_no_ext }}">
           <img src="{{ site.bg_thumbs_url }}{{ fname }}" alt="{{ name_no_ext }}" loading="lazy">
         </a>
       </div>
-    {% endif %}
-  {% endif %}
-{% endfor %}
+      {% endif %}
+      {% endif %}
+      {% endunless %}
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
 
 </div>
 
+
+
+
+
 <style>
-.bg-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-}
-.bg-thumb img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease;
-}
-.bg-thumb img:hover {
-  transform: scale(1.05);
-}
+  .year-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .bg-gallery h2 {
+    grid-column: 1 / -1;
+    /* Span all columns */
+    width: 100%;
+    margin: 20px 0 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  .bg-thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+  }
+
+  .bg-thumb img:hover {
+    transform: scale(1.05);
+  }
+
+  #navbar-years a.active {
+    font-weight: bold;
+    text-decoration: none;
+  }
 </style>
