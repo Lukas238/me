@@ -54,4 +54,4 @@ exclude:
   - "package.json"
   - "package-lock.json"
   - "node_modules"
-  - "generate_bg_thumb.js"
+  - "prefix_and_thumb.js"

@@ -2,9 +2,12 @@
 /**
  * prefix_and_thumb_final.js
  *
- * Source: ./assets/backgrounds or the provided directory as first argument
- * Thumbnails: ./assets/backgrounds/_thumbs
+ * Source: source  directory as first argument. If there is a local assets/backgrounds folder, it will be used.
+ * Optional Thumbnails destination folder as second argument. If there is a local assets/backgrounds/_thumbs folder, it will be used.
  * Optional flag: --dry
+ *
+ * If skiped thumbnails destination folder path, no thumbnails will be created. Except if there is a local assets/backgrounds/ folder, then assets/backgrounds/_thumbs will be used.
+ *
  *
  * Flow:
  * 1. Use date from filename if prefixed
@@ -32,7 +35,8 @@ const srcDir = args[0] ? path.resolve(args[0]) : path.join(__dirname, 'assets', 
 // The command is: node prefix_and_thumb.js [source_directory] [--dry]
 
 // The thumbnails should be stored in the local assets/backgrounds/_thumbs subdirectory.
-const thumbsDir = path.join(__dirname, 'assets', 'backgrounds', '_thumbs');
+const thumbsDir = args[1] ? path.resolve(args[1]) : path.join(srcDir, '_thumbs');
+// const thumbsDir = path.join(__dirname, 'assets', 'backgrounds', '_thumbs');
 const thumbWidth = 800;
 
 
