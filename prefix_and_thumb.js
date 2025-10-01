@@ -2,7 +2,7 @@
 /**
  * prefix_and_thumb_final.js
  *
- * Source: ./assets/backgrounds
+ * Source: ./assets/backgrounds or the provided directory as first argument
  * Thumbnails: ./assets/backgrounds/_thumbs
  * Optional flag: --dry
  *
@@ -19,12 +19,22 @@ const path = require('path');
 const exifr = require('exifr');
 const sharp = require('sharp');
 
-const srcDir = path.join(__dirname, 'assets', 'backgrounds');
-const thumbsDir = path.join(srcDir, '_thumbs');
-const thumbWidth = 800;
-
+// Parse command line arguments
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry');
+if (dryRun) {
+  console.log('*** DRY RUN MODE - No files will be modified ***\n');
+}
+
+// Determine source directory
+const srcDir = args[0] ? path.resolve(args[0]) : path.join(__dirname, 'assets', 'backgrounds');
+
+// The command is: node prefix_and_thumb.js [source_directory] [--dry]
+
+// The thumbnails should be stored in the local assets/backgrounds/_thumbs subdirectory.
+const thumbsDir = path.join(__dirname, 'assets', 'backgrounds', '_thumbs');
+const thumbWidth = 800;
+
 
 const VALID_EXTS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff', '.heic', '.bmp']);
 const MIN_DATE = new Date('1980-01-01T00:00:00Z');
