@@ -81,6 +81,24 @@ footer,
 }
 
 footer {
-    color: $default-color;
-    font-size: .8rem;
+  color: $default-color;
+  font-size: .8rem;
+}
+
+
+
+@media (min-width: 768px) {
+
+  #sidebarMenu {
+    position: relative;
+    float: unset !important;
+    transform: none;
+    visibility: visible;
+    width: 200px;
+    border: none;
+    .offcanvas-body{
+      padding: 0;
+      margin-right: 1em;
+    }
+  }
 }

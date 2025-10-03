@@ -1,7 +1,16 @@
-<footer class="text-center py-4 border-top">
+<footer class="text-center py-4">
+
+  <div class="social-layer mb-3 border-bottom">
+      <div class="social-icons">
+        <ul>
+          {% include icons.html %}
+        </ul>
+      </div>
+    </div>
+
   <p class="fw-lighter mb-0 fs-5"><em>"Ad astra per aspera"</em></p>
   <span>
-    &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}.
+    &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}
   </span>
 </footer>
 
