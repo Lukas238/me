@@ -59,6 +59,12 @@ title: Media Gallery
     line-height: 1.3;
   }
 
+  .media-item .title .age-rating-inline {
+    color: #adb5bd;
+    font-size: 0.75rem;
+    margin-left: 4px;
+  }
+
   /* Ocultar card-container en vista normal */
   .media-item .card-container {
     display: none;
@@ -338,13 +344,35 @@ title: Media Gallery
   .comment-date {
     font-size: 0.75rem;
     color: #adb5bd;
-    margin-left: 8px;
     font-weight: normal;
   }
 
   .comment-rating {
     color: #ffc107;
     font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .comment-rating .stars {
+    display: flex;
+    gap: 1px;
+    line-height: 1;
+  }
+
+  .comment-rating .star-filled {
+    color: #ffc107;
+  }
+
+  .comment-rating .star-empty {
+    color: #dee2e6;
+  }
+
+  .comment-rating .rating-text {
+    color: #6c757d;
+    font-size: 0.75rem;
+    margin-left: 2px;
   }
 
   .comment-text {
@@ -864,7 +892,10 @@ function renderGallery(type) {
       }
       
       $item.append($poster);
-      $item.append(`<div class="title">${item.title}</div>`);
+      
+      // Agregar rating de edad si existe
+      const ageRatingText = item.rating ? `<span style="color: #dee2e6; margin: 0 4px;">•</span><span class="age-rating-inline">${item.rating}</span>` : '';
+      $item.append(`<div class="title">${item.title}${ageRatingText}</div>`);
       
       // Usar helper para construir el card
       buildMediaCard($item, item);
@@ -1125,7 +1156,10 @@ function filterGalleryByTag(tag, type) {
       }
       
       $item.append($poster);
-      $item.append(`<div class="title">${item.title}</div>`);
+      
+      // Agregar rating de edad si existe
+      const ageRatingText = item.rating ? `<span style="color: #dee2e6; margin: 0 4px;">•</span><span class="age-rating-inline">${item.rating}</span>` : '';
+      $item.append(`<div class="title">${item.title}${ageRatingText}</div>`);
       
       // Reutilizar la lógica de construcción del card
       buildMediaCard($item, item);
@@ -1203,14 +1237,28 @@ function buildMediaCard($item, item) {
       </div>
       ${itemComments.map(comment => {
         const date = comment.timestamp ? new Date(comment.timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+        const rating = comment.rating || 0;
+        
+        // Crear estrellas llenas y vacías
+        let starsHtml = '';
+        for (let i = 1; i <= 5; i++) {
+          if (i <= rating) {
+            starsHtml += '<i class="bi bi-star-fill star-filled"></i>';
+          } else {
+            starsHtml += '<i class="bi bi-star-fill star-empty"></i>';
+          }
+        }
+        
+        const ratingDisplay = `<span class="stars">${starsHtml}</span><span class="rating-text">(${rating}/5)</span>`;
+        const dateSeparator = date ? '<span style="color: #adb5bd; margin: 0 4px;">•</span>' : '';
+        
         return `
         <div class="comment-item">
           <div class="comment-meta">
             <div>
-              <span class="comment-author">${comment.author}</span>
-              ${date ? `<span class="comment-date">${date}</span>` : ''}
+              <span class="comment-author">${comment.author}</span>${dateSeparator}${date ? `<span class="comment-date">${date}</span>` : ''}
             </div>
-            <span class="comment-rating">${'⭐'.repeat(comment.rating)}</span>
+            <span class="comment-rating">${ratingDisplay}</span>
           </div>
           <div class="comment-text">${comment.comment}</div>
         </div>

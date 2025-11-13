@@ -6,6 +6,7 @@ title: Comment-A-Media
 
 <!-- Bootstrap 5 y Select2 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css" rel="stylesheet" />
 <style>
@@ -59,18 +60,15 @@ title: Comment-A-Media
     justify-content: center;
     position: relative;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
-  .star-item svg {
-    width: 100%;
-    height: 100%;
-    fill: #e9ecef;
-    stroke: #dee2e6;
-    stroke-width: 1;
+  .star-item i {
+    font-size: 2.5rem;
+    color: #e9ecef;
     transition: all 0.3s ease;
   }
-  .star-item.filled svg {
-    fill: #ffc107;
-    stroke: #ffc107;
+  .star-item.filled i {
+    color: #ffc107;
   }
   .star-item span {
     position: absolute;
@@ -84,12 +82,8 @@ title: Comment-A-Media
   .star-item.filled span {
     color: #000;
   }
-  .star-item {
-    cursor: pointer;
-  }
-  .star-item:hover:not(.disabled) svg {
-    fill: #ffe69c;
-    stroke: #ffc107;
+  .star-item:hover:not(.disabled) i {
+    color: #ffe69c;
   }
   .star-display.disabled .star-item {
     opacity: 0.4;
@@ -156,33 +150,23 @@ title: Comment-A-Media
         <div class="col d-flex align-items-center justify-content-center">
           <div class="star-display disabled" id="starDisplay">
             <div class="star-item" data-star="1">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
+              <i class="bi bi-star-fill"></i>
               <span>1</span>
             </div>
             <div class="star-item" data-star="2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
+              <i class="bi bi-star-fill"></i>
               <span>2</span>
             </div>
             <div class="star-item" data-star="3">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
+              <i class="bi bi-star-fill"></i>
               <span>3</span>
             </div>
             <div class="star-item" data-star="4">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
+              <i class="bi bi-star-fill"></i>
               <span>4</span>
             </div>
             <div class="star-item" data-star="5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
+              <i class="bi bi-star-fill"></i>
               <span>5</span>
             </div>
           </div>
