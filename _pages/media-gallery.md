@@ -531,7 +531,7 @@ title: Media Gallery
     text-decoration: underline;
   }
 
-  /* Mobile Styles - activate when width is small OR height is less than card height (525px) */
+  /* Pantalla completa con 1 columna - cuando el ancho es pequeño O el alto es menor a 525px */
   @media (max-width: 768px), (max-height: 525px) {
     .media-item.expanded {
       position: fixed !important;
@@ -561,8 +561,9 @@ title: Media Gallery
       height: auto;
       aspect-ratio: 2/3;
       border-radius: 8px;
-      margin: 0 auto 0 auto;
+      margin: 20px auto;
       flex-shrink: 0;
+      order: 3;
     }
 
     .media-item.expanded .poster img {
@@ -573,16 +574,36 @@ title: Media Gallery
       width: 100%;
       max-width: 425px;
       height: auto;
-      padding: 20px;
+      padding: 0 20px;
       overflow-y: visible;
       flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      order: 1;
+    }
+
+    .media-item.expanded .card-header-info {
+      order: 1;
+      padding-bottom: 12px;
+      padding-top: 20px;
+    }
+
+    .media-item.expanded .tags-section {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    .media-item.expanded .card-body {
+      order: 4;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .media-item.expanded .card-close-btn {
       position: fixed;
       top: 16px;
-      left: 16px;
-      right: auto;
+      right: 16px;
+      left: auto;
       z-index: 100;
       width: 40px;
       height: 40px;
@@ -1095,45 +1116,54 @@ function buildMediaCard($item, item) {
     </div>
   ` : '';
   
+  // Separar header info y comentarios
+  const headerInfoHtml = `
+    <div class="card-header-info">
+      <h3>${item.title}</h3>
+      <div class="card-meta">
+        ${metaHtml}
+      </div>
+    </div>
+    ${tagsHtml}
+  `;
+  
+  const commentsHtml = `
+    <div class="comments-section">
+    ${itemComments.length > 0 ? `
+      <div class="d-flex justify-content-between align-items-baseline mb-3">
+        <h6 class="mb-0" style="font-size: 0.875rem; color: #6c757d;">Comments (${itemComments.length})</h6>
+        <a href="/media-comments/?id=${item.id}" class="add-comment-link">+ Add yours</a>
+      </div>
+      ${itemComments.map(comment => {
+        const date = comment.timestamp ? new Date(comment.timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+        return `
+        <div class="comment-item">
+          <div class="comment-meta">
+            <div>
+              <span class="comment-author">${comment.author}</span>
+              ${date ? `<span class="comment-date">${date}</span>` : ''}
+            </div>
+            <span class="comment-rating">${'⭐'.repeat(comment.rating)}</span>
+          </div>
+          <div class="comment-text">${comment.comment}</div>
+        </div>
+        `;
+      }).join('')}
+    ` : `
+      <div class="text-center py-3">
+        <p class="text-muted mb-2" style="font-size: 0.875rem;">No comments yet.</p>
+        <a href="/media-comments/?id=${item.id}" class="add-comment-link">Be the first to comment</a>
+      </div>
+    `}
+    </div>
+  `;
+  
   const $cardInfo = $(`
     <div class="card-info">
       <button class="card-close-btn" title="Close">&times;</button>
-      <div class="card-header-info">
-        <h3>${item.title}</h3>
-        <div class="card-meta">
-          ${metaHtml}
-        </div>
-      </div>
+      ${headerInfoHtml}
       <div class="card-body">
-        ${tagsHtml}
-        <div class="comments-section">
-        ${itemComments.length > 0 ? `
-          <div class="d-flex justify-content-between align-items-baseline mb-3">
-            <h6 class="mb-0" style="font-size: 0.875rem; color: #6c757d;">Comments (${itemComments.length})</h6>
-            <a href="/media-comments/?id=${item.id}" class="add-comment-link">+ Add yours</a>
-          </div>
-          ${itemComments.map(comment => {
-            const date = comment.timestamp ? new Date(comment.timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
-            return `
-            <div class="comment-item">
-              <div class="comment-meta">
-                <div>
-                  <span class="comment-author">${comment.author}</span>
-                  ${date ? `<span class="comment-date">${date}</span>` : ''}
-                </div>
-                <span class="comment-rating">${'⭐'.repeat(comment.rating)}</span>
-              </div>
-              <div class="comment-text">${comment.comment}</div>
-            </div>
-            `;
-          }).join('')}
-        ` : `
-          <div class="text-center py-3">
-            <p class="text-muted mb-2" style="font-size: 0.875rem;">No comments yet.</p>
-            <a href="/media-comments/?id=${item.id}" class="add-comment-link">Be the first to comment</a>
-          </div>
-        `}
-        </div>
+        ${commentsHtml}
       </div>
     </div>
   `);
@@ -1146,6 +1176,31 @@ function buildMediaCard($item, item) {
     
     const $clone = $item.clone(true);
     $clone.addClass('expanded');
+    
+    // Solo reorganizar contenido si estamos en modo mobile (ancho pequeño o alto pequeño)
+    const isMobileView = window.innerWidth <= 768 || window.innerHeight <= 525;
+    
+    if (isMobileView) {
+      // Reorganizar contenido para vista mobile (info arriba, poster medio, comentarios abajo)
+      const $clonedCardInfo = $clone.find('.card-info');
+      const $clonedPoster = $clone.find('.poster');
+      const $headerInfo = $clonedCardInfo.find('.card-header-info').clone();
+      const $tags = $clonedCardInfo.find('.tags-section').clone();
+      const $comments = $clonedCardInfo.find('.card-body').clone();
+      
+      // Crear estructura reorganizada
+      $clonedCardInfo.empty();
+      $clonedCardInfo.append('<button class="card-close-btn" title="Close">&times;</button>');
+      $clonedCardInfo.append($headerInfo);
+      if ($tags.length) $clonedCardInfo.append($tags);
+      
+      // Mover poster después del header
+      $clonedPoster.insertAfter($clonedCardInfo.find('.tags-section').length ? $clonedCardInfo.find('.tags-section') : $clonedCardInfo.find('.card-header-info'));
+      
+      // Agregar comentarios al final
+      $clonedCardInfo.append($comments);
+    }
+    
     $('body').append($clone);
     $('#mediaOverlay').addClass('active');
     $('body').addClass('modal-open');
