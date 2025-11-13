@@ -176,6 +176,16 @@ title: Comment-A-Media
     border-color: #495057;
     color: #fff;
   }
+  /* Mobile: ocultar estrellas y mostrar solo emojis */
+  @media (max-width: 768px) {
+    .col.d-flex.align-items-center.justify-content-center {
+      display: none !important;
+    }
+    .row > .col.border-start {
+      border-left: none !important;
+      padding-left: 1rem !important;
+    }
+  }
 </style>
 
 <h1 class="mb-2">Share Your Thoughts</h1>
