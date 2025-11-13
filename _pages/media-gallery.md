@@ -754,6 +754,9 @@ async function loadMediaList() {
       renderGallery('movie');
       populateFilterTags();
     }
+    
+    // Verificar si hay un ID en la URL para abrir automáticamente
+    checkAndOpenCardFromUrl();
   } catch (error) {
     console.error('Error loading data:', error);
     $('#mediaLoading').text('Error loading data.');
@@ -877,6 +880,13 @@ function renderGallery(type) {
     $('.media-item.expanded').remove();
     $(this).removeClass('active');
     $('body').removeClass('modal-open');
+    
+    // Quitar ID de la URL
+    const currentHash = window.location.hash.substring(1);
+    const params = new URLSearchParams(currentHash);
+    params.delete('id');
+    const newHash = params.toString();
+    window.history.pushState(null, '', newHash ? `#${newHash}` : window.location.pathname);
   });
 }
 
@@ -952,6 +962,20 @@ $(function() {
   
   // Manejar cambios en el hash (navegación atrás/adelante)
   $(window).on('hashchange', function() {
+    const hash = window.location.hash.substring(1);
+    const params = new URLSearchParams(hash);
+    
+    // Si hay un ID pero no hay card abierta, abrir
+    if (params.has('id') && !$('.media-item.expanded').length) {
+      checkAndOpenCardFromUrl();
+    }
+    // Si no hay ID pero hay card abierta, cerrar
+    else if (!params.has('id') && $('.media-item.expanded').length) {
+      $('.media-item.expanded').remove();
+      $('#mediaOverlay').removeClass('active');
+      $('body').removeClass('modal-open');
+    }
+    
     applyFilterFromHash();
     updateActiveFilterTag();
   });
@@ -976,6 +1000,68 @@ function applyFilterFromHash() {
     renderGallery(currentType);
     populateFilterTags();
   }
+}
+
+function checkAndOpenCardFromUrl() {
+  const hash = window.location.hash.substring(1);
+  if (!hash) return;
+  
+  const params = new URLSearchParams(hash);
+  const itemId = params.get('id');
+  
+  if (!itemId) return;
+  
+  // Buscar el item en mediaList
+  const item = mediaList.find(i => i.id === itemId);
+  if (!item) {
+    console.warn(`Item with ID ${itemId} not found`);
+    return;
+  }
+  
+  // Cambiar al tipo correcto (movie/series)
+  $(`input[name="mediaType"][value="${item.type}"]`).prop('checked', true);
+  
+  // Renderizar galería si hay filtro de tag
+  if (params.has('tag')) {
+    const tag = decodeURIComponent(params.get('tag'));
+    filterGalleryByTag(tag, item.type);
+  } else {
+    renderGallery(item.type);
+  }
+  
+  // Esperar a que se renderice la galería y luego abrir el card
+  setTimeout(() => {
+    // Cerrar cualquier card abierto primero
+    $('.media-item.expanded').remove();
+    $('#mediaOverlay').removeClass('active');
+    $('body').removeClass('modal-open');
+    
+    // Buscar el elemento en el DOM por ID exacto
+    const $items = $('.media-item');
+    let found = false;
+    
+    $items.each(function() {
+      if (found) return false;
+      
+      const $this = $(this);
+      const $cardContainer = $this.find('.card-container');
+      
+      if ($cardContainer.length) {
+        // Verificar el ID comparando con el título
+        const cardTitle = $cardContainer.find('.card-header-info h3').text();
+        if (item.title === cardTitle) {
+          // Hacer click para abrir
+          $this.find('.poster').first().trigger('click');
+          found = true;
+          return false;
+        }
+      }
+    });
+    
+    if (!found) {
+      console.warn(`Could not find DOM element for item ${itemId}`);
+    }
+  }, 200);
 }
 
 function filterGalleryByTag(tag, type) {
@@ -1174,6 +1260,9 @@ function buildMediaCard($item, item) {
   // Click en poster para expandir
   $item.find('.poster').on('click', function(e) {
     e.stopPropagation();
+    
+    // Cerrar cualquier card existente primero
+    $('.media-item.expanded').remove();
     
     const $clone = $item.clone(true);
     $clone.addClass('expanded');
