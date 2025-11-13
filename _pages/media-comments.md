@@ -15,6 +15,59 @@ title: Comment-A-Media
     width: 40px;
     height: 40px;
     flex-shrink: 0;
+    position: relative;
+  }
+  .rating-btn::before {
+    font-family: "bootstrap-icons";
+    font-size: 1.5rem;
+  }
+  /* Emojis default (no seleccionados) */
+  #star5 ~ .rating-btn::before {
+    content: "\F31E";
+  }
+  #star4 ~ .rating-btn::before {
+    content: "\F320";
+  }
+  #star3 ~ .rating-btn::before {
+    content: "\F324";
+  }
+  #star2 ~ .rating-btn::before {
+    content: "\F322";
+  }
+  #star1 ~ .rating-btn::before {
+    content: "\F325";
+  }
+  /* Emojis en hover */
+  .rating-option:hover #star5 ~ .rating-btn::before {
+    content: "\F31F";
+  }
+  .rating-option:hover #star4 ~ .rating-btn::before {
+    content: "\F321";
+  }
+  .rating-option:hover #star3 ~ .rating-btn::before {
+    content: "\F327";
+  }
+  .rating-option:hover #star2 ~ .rating-btn::before {
+    content: "\F323";
+  }
+  .rating-option:hover #star1 ~ .rating-btn::before {
+    content: "\F326";
+  }
+  /* Emojis cuando están seleccionados (checked) */
+  #star5:checked ~ .rating-btn::before {
+    content: "\F31F";
+  }
+  #star4:checked ~ .rating-btn::before {
+    content: "\F321";
+  }
+  #star3:checked ~ .rating-btn::before {
+    content: "\F327";
+  }
+  #star2:checked ~ .rating-btn::before {
+    content: "\F323";
+  }
+  #star1:checked ~ .rating-btn::before {
+    content: "\F326";
   }
   .rating-option {
     cursor: pointer;
@@ -35,10 +88,16 @@ title: Comment-A-Media
   .rating-option:hover .text-muted {
     color: #856404 !important;
   }
+  .rating-option:hover .rating-btn::before {
+    color: #ffc107;
+  }
   .rating-option input:checked ~ .rating-btn {
     background-color: #ffc107;
     border-color: #ffc107;
     color: #000;
+  }
+  .rating-option:hover input:checked ~ .rating-btn::before {
+    color: #212529;
   }
   .star-display {
     display: flex;
@@ -73,7 +132,7 @@ title: Comment-A-Media
   .star-item span {
     position: absolute;
     font-size: 0.875rem;
-    font-weight: bold;
+    font-weight: 300;
     color: #6c757d;
     pointer-events: none;
     top: 56%;
@@ -176,27 +235,27 @@ title: Comment-A-Media
           <div class="d-flex flex-column gap-1 disabled" id="ratingGroup">
             <label class="rating-option">
               <input type="radio" class="btn-check" name="rating" id="star5" value="5" autocomplete="off" required disabled>
-              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">🤩</span>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center"></span>
               <span class="text-muted">¡Me encantó y la vería otra vez!</span>
             </label>
             <label class="rating-option">
               <input type="radio" class="btn-check" name="rating" id="star4" value="4" autocomplete="off" disabled>
-              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😄</span>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center"></span>
               <span class="text-muted">¡Me gustó mucho!</span>
             </label>
             <label class="rating-option">
               <input type="radio" class="btn-check" name="rating" id="star3" value="3" autocomplete="off" disabled>
-              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">🙂</span>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center"></span>
               <span class="text-muted">Me gustó, pero no fue mi favorita</span>
             </label>
             <label class="rating-option">
               <input type="radio" class="btn-check" name="rating" id="star2" value="2" autocomplete="off" disabled>
-              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😕</span>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center"></span>
               <span class="text-muted">Estuvo más o menos</span>
             </label>
             <label class="rating-option">
               <input type="radio" class="btn-check" name="rating" id="star1" value="1" autocomplete="off" disabled>
-              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😞</span>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center"></span>
               <span class="text-muted">No me gustó nada</span>
             </label>
           </div>
