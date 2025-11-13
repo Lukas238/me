@@ -41,8 +41,15 @@ title: Comment-A-Media
   }
   .star-display {
     display: flex;
+    flex-direction: row;
     gap: 0.5rem;
-    margin-bottom: 0.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .rating-columns-divider {
+    border-right: 1px solid #dee2e6;
+    padding-right: 1.5rem;
+    margin-right: 0.5rem;
   }
   .star-item {
     width: 45px;
@@ -144,64 +151,72 @@ title: Comment-A-Media
     </div>
     <div class="mb-4">
       <label class="form-label fw-semibold fs-5">Calificación <span class="text-danger">*</span></label>
-      <div class="star-display disabled" id="starDisplay">
-        <div class="star-item" data-star="1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-          </svg>
-          <span>1</span>
+      <div class="row">
+        <!-- Left Column: Stars -->
+        <div class="col d-flex align-items-center justify-content-center">
+          <div class="star-display disabled" id="starDisplay">
+            <div class="star-item" data-star="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <span>1</span>
+            </div>
+            <div class="star-item" data-star="2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <span>2</span>
+            </div>
+            <div class="star-item" data-star="3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <span>3</span>
+            </div>
+            <div class="star-item" data-star="4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <span>4</span>
+            </div>
+            <div class="star-item" data-star="5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <span>5</span>
+            </div>
+          </div>
         </div>
-        <div class="star-item" data-star="2">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-          </svg>
-          <span>2</span>
+        <!-- Right Column: Emoji Ratings -->
+        <div class="col border-start ps-5">
+          <div class="d-flex flex-column gap-1 disabled" id="ratingGroup">
+            <label class="rating-option">
+              <input type="radio" class="btn-check" name="rating" id="star5" value="5" autocomplete="off" required disabled>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">🤩</span>
+              <span class="text-muted">¡Me encantó y la vería otra vez!</span>
+            </label>
+            <label class="rating-option">
+              <input type="radio" class="btn-check" name="rating" id="star4" value="4" autocomplete="off" disabled>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😄</span>
+              <span class="text-muted">¡Me gustó mucho!</span>
+            </label>
+            <label class="rating-option">
+              <input type="radio" class="btn-check" name="rating" id="star3" value="3" autocomplete="off" disabled>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">🙂</span>
+              <span class="text-muted">Me gustó, pero no fue mi favorita</span>
+            </label>
+            <label class="rating-option">
+              <input type="radio" class="btn-check" name="rating" id="star2" value="2" autocomplete="off" disabled>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😕</span>
+              <span class="text-muted">Estuvo más o menos</span>
+            </label>
+            <label class="rating-option">
+              <input type="radio" class="btn-check" name="rating" id="star1" value="1" autocomplete="off" disabled>
+              <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😞</span>
+              <span class="text-muted">No me gustó nada</span>
+            </label>
+          </div>
         </div>
-        <div class="star-item" data-star="3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-          </svg>
-          <span>3</span>
-        </div>
-        <div class="star-item" data-star="4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-          </svg>
-          <span>4</span>
-        </div>
-        <div class="star-item" data-star="5">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-          </svg>
-          <span>5</span>
-        </div>
-      </div>
-      <div class="d-flex flex-column gap-1 disabled" id="ratingGroup">
-        <label class="rating-option">
-          <input type="radio" class="btn-check" name="rating" id="star5" value="5" autocomplete="off" required disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">🤩</span>
-          <span class="text-muted">¡Me encantó y la vería otra vez!</span>
-        </label>
-        <label class="rating-option">
-          <input type="radio" class="btn-check" name="rating" id="star4" value="4" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😄</span>
-          <span class="text-muted">¡Me gustó mucho!</span>
-        </label>
-        <label class="rating-option">
-          <input type="radio" class="btn-check" name="rating" id="star3" value="3" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">🙂</span>
-          <span class="text-muted">Me gustó, pero no fue mi favorita</span>
-        </label>
-        <label class="rating-option">
-          <input type="radio" class="btn-check" name="rating" id="star2" value="2" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😕</span>
-          <span class="text-muted">Estuvo más o menos</span>
-        </label>
-        <label class="rating-option">
-          <input type="radio" class="btn-check" name="rating" id="star1" value="1" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😞</span>
-          <span class="text-muted">No me gustó nada</span>
-        </label>
       </div>
     </div>
     <div class="mb-4 comment-section disabled" id="commentSection">
