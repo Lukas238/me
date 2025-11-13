@@ -131,7 +131,7 @@ title: Comment-A-Media
 </p>
 <p class="mb-4">Rate and comment on the movies and series we've watched together. Your feedback helps us remember what we loved!</p>
 
-<div class="text-center mb-4">
+<div class="mb-4">
   <div class="btn-group" role="group" aria-label="Media type selector">
     <input type="radio" class="btn-check" name="type" id="typeMovie" value="movie" autocomplete="off" checked>
     <label class="btn btn-outline-secondary" for="typeMovie">Movies</label>
