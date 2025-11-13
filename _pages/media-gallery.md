@@ -530,6 +530,113 @@ title: Media Gallery
     color: #495057;
     text-decoration: underline;
   }
+
+  /* Mobile Styles - activate when width is small OR height is less than card height (525px) */
+  @media (max-width: 768px), (max-height: 525px) {
+    .media-item.expanded {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      transform: none !important;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100vw;
+      border-radius: 0;
+      flex-direction: column;
+      overflow-y: auto;
+      display: flex !important;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 60px 0 20px 0;
+    }
+
+    .media-item.expanded > * {
+      max-width: 425px;
+      width: 100%;
+    }
+
+    .media-item.expanded .poster {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      aspect-ratio: 2/3;
+      border-radius: 8px;
+      margin: 0 auto 0 auto;
+      flex-shrink: 0;
+    }
+
+    .media-item.expanded .poster img {
+      border-radius: 8px;
+    }
+
+    .media-item.expanded .card-info {
+      width: 100%;
+      max-width: 425px;
+      height: auto;
+      padding: 20px;
+      overflow-y: visible;
+      flex-shrink: 0;
+    }
+
+    .media-item.expanded .card-close-btn {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      right: auto;
+      z-index: 100;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-body {
+      overflow-y: visible;
+      padding-right: 0;
+    }
+
+    .card-scrollable {
+      overflow-y: visible;
+      padding-right: 0;
+    }
+
+    .comments-section {
+      min-height: 200px;
+    }
+
+    .year-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 15px;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    .media-overlay {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .year-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 12px;
+    }
+
+    .media-item.expanded .poster {
+      max-width: 300px;
+    }
+
+    .card-header-info h3 {
+      font-size: 1.1rem;
+    }
+
+    .card-meta {
+      font-size: 0.8rem;
+    }
+  }
 </style>
 
 <h1 class="mb-2">Media Gallery</h1>
