@@ -221,12 +221,12 @@ title: Comment-A-Media
         </label>
         <label class="rating-option">
           <input type="radio" class="btn-check" name="rating" id="star2" value="2" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😐</span>
+          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">�</span>
           <span class="text-muted">Estuvo más o menos</span>
         </label>
         <label class="rating-option">
           <input type="radio" class="btn-check" name="rating" id="star1" value="1" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😐</span>
+          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">�</span>
           <span class="text-muted">No me gustó nada</span>
         </label>
       </div>
@@ -264,9 +264,10 @@ title: Comment-A-Media
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script>
-const MEDIA_LIST_URL = 'https://sheets.googleapis.com/v4/spreadsheets/1v73TEfD1V4ndy3COZ93_bG9uNj-04AyaT62sVueSTqU/values/MediaList!A3:D?key=AIzaSyDRHquLZE6dgnCqLideV0gFmaEqhjGKzqI';
+const MEDIA_LIST_URL = 'https://sheets.googleapis.com/v4/spreadsheets/1v73TEfD1V4ndy3COZ93_bG9uNj-04AyaT62sVueSTqU/values/MediaList!A4:I?key=AIzaSyDRHquLZE6dgnCqLideV0gFmaEqhjGKzqI';
 // URL ofuscada con Base64
-const ENCODED_SUBMIT_URL = 'aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J5WDdtQVJwVkh3a2NYb0R1dG1xZ3BqZEJGaERYclVTS1JBa3hlZHNGYk5sYkdqUjQtQXZKWnJsay1TN2F6ZjJLZWcvZXhlYw==';
+const ENCODED_SUBMIT_URL = 'aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3bWpyc1g1WGhtYVRrUTEwQkVYWWZIX0NfNzVrZlo1ak4xc25CUjNZWmhLZWxENmVUcUNpczFZVEkxVzBmbE1vZU0vZXhlYw==';
+
 
 function decodeUrl(encoded) {
   return atob(encoded);
@@ -278,20 +279,47 @@ async function loadMediaList() {
     const response = await fetch(MEDIA_LIST_URL);
     if (!response.ok) throw new Error('Failed to fetch');
     const data = await response.json();
-    if (data.values && data.values.length > 1) {
-      const headers = data.values[0];
-      const rows = data.values.slice(1);
-      mediaList = rows.map(row => ({
+    if (data.values && data.values.length > 0) {
+      mediaList = data.values.map(row => ({
         id: row[0] || '',
         type: row[1] || '',
-        title: row[2] || '',
-        year: row[3] || ''
+        status: row[2] || '',
+        title: row[3] || '',
+        year: row[4] || '',
+        rating: row[5] || '',
+        tags: row[6] || '',
+        tmdb_id: row[7] || '',
+        tmdb_poster_url: row[8] || ''
       }));
-      // Cargar películas por defecto
-      updateTitleDropdown('movie');
+      
+      // Verificar si hay ID en la URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const mediaId = urlParams.get('id');
+      
+      if (mediaId) {
+        // Buscar el item por ID
+        const item = mediaList.find(m => m.id === mediaId);
+        if (item) {
+          // Seleccionar el tipo correcto
+          $(`input[name="type"][value="${item.type}"]`).prop('checked', true);
+          // Cargar dropdown del tipo correcto
+          updateTitleDropdown(item.type);
+          // Esperar un poco para que Select2 se inicialice
+          setTimeout(() => {
+            // Seleccionar el título
+            $('#title').val(item.title).trigger('change');
+          }, 100);
+        } else {
+          // ID no encontrado, cargar películas por defecto
+          updateTitleDropdown('movie');
+        }
+      } else {
+        // Sin ID en URL, cargar películas por defecto
+        updateTitleDropdown('movie');
+      }
     }
   } catch (error) {
-    $('#titleHelper').text('No se pudieron cargar los títulos.');
+    console.error('Error loading media list:', error);
   }
 }
 
@@ -320,9 +348,9 @@ function updateTitleDropdown(type) {
     placeholder: placeholder,
     allowClear: true
   });
-  $('#titleHelper').html(`<span class="text-success">${filtered.length} disponibles</span>`);
   
-  // Habilitar rating solo cuando se selecciona un título
+$('#titleHelper').html(`<span class="text-success">${filtered.length} disponibles</span>`);
+    // Habilitar rating solo cuando se selecciona un título
   $select.on('change', function() {
     if ($(this).val()) {
       // Actualizar el ID oculto con el data-id de la opción seleccionada
