@@ -59,7 +59,12 @@ title: Media Gallery
     line-height: 1.3;
   }
 
-  /* Card expandido */
+  /* Ocultar card-container en vista normal */
+  .media-item .card-container {
+    display: none;
+  }
+
+  /* Card expandido - Desktop */
   .media-item.expanded {
     position: fixed !important;
     top: 50% !important;
@@ -71,40 +76,79 @@ title: Media Gallery
     background: white;
     border-radius: 8px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    display: flex !important;
-    height: 525px;
     text-align: left;
   }
 
   .media-item.expanded .poster {
-    width: 350px;
-    height: 525px;
-    border-radius: 8px 0 0 8px;
-    cursor: default;
-    flex-shrink: 0;
-  }
-
-  .media-item.expanded .poster img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .media-item.expanded .poster:hover {
-    transform: none;
+    display: none;
   }
 
   .media-item.expanded .title {
     display: none;
   }
 
-  .media-item.expanded .card-info {
-    width: 400px;
-    padding: 24px;
-    display: flex !important;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
+  .media-item.expanded .card-container {
+    display: grid;
+    grid-template-columns: 350px 400px;
+    grid-template-rows: auto 1fr;
+    height: 525px;
+  }
+
+  .media-item.expanded .card-poster-section {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 350px;
+    height: 525px;
+  }
+
+  .media-item.expanded .card-poster-section .poster {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    cursor: default;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .media-item.expanded .card-poster-section .poster:hover {
+    transform: none;
+  }
+
+  .media-item.expanded .card-poster-section .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .media-item.expanded .card-info-section {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 24px 24px 0 24px;
+  }
+
+  .media-item.expanded .card-comments-section {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0 24px 24px 24px;
+    overflow-y: auto;
+  }
+
+  .media-item.expanded .card-comments-section::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .media-item.expanded .card-comments-section::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+
+  .media-item.expanded .card-comments-section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  .media-item.expanded .card-comments-section::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 
   .card-close-btn {
@@ -117,7 +161,7 @@ title: Media Gallery
     background: #f8f9fa;
     border-radius: 50%;
     cursor: pointer;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     color: #495057;
@@ -127,17 +171,21 @@ title: Media Gallery
     z-index: 10;
   }
 
+  .media-item.expanded .card-close-btn {
+    display: flex;
+  }
+
   .card-close-btn:hover {
     background: #e9ecef;
     color: #212529;
   }
 
-  .card-info {
+  .card-info-section {
     display: none;
   }
 
-  .media-item.expanded .card-info {
-    display: flex;
+  .media-item.expanded .card-info-section {
+    display: block;
   }
 
   .card-header-info {
@@ -152,28 +200,12 @@ title: Media Gallery
     font-weight: 600;
   }
 
-  .card-scrollable {
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 8px;
+  .card-comments-section {
+    display: none;
   }
 
-  .card-scrollable::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .card-scrollable::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-  }
-
-  .card-scrollable::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 3px;
-  }
-
-  .card-scrollable::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  .media-item.expanded .card-comments-section {
+    display: block;
   }
 
   .card-meta {
@@ -274,36 +306,6 @@ title: Media Gallery
     background-color: #dee2e6;
     color: #495057;
     text-decoration: none;
-  }
-
-  .card-divider {
-    height: 1px;
-    background-color: #f1f1f1;
-    margin: 0;
-  }
-
-  .card-body {
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 12px;
-  }
-
-  .card-body::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .card-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-  }
-
-  .card-body::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 3px;
-  }
-
-  .card-body::-webkit-scrollbar-thumb:hover {
-    background: #555;
   }
 
   .comments-section {
@@ -542,68 +544,23 @@ title: Media Gallery
       height: 100vh;
       max-width: 100vw;
       border-radius: 0;
-      flex-direction: column;
+    }
+
+    .media-item.expanded .card-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: 100vh;
       overflow-y: auto;
-      display: flex !important;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 60px 0 20px 0;
-    }
-
-    .media-item.expanded > * {
-      max-width: 425px;
-      width: 100%;
-    }
-
-    .media-item.expanded .poster {
-      width: 100%;
-      max-width: 350px;
-      height: auto;
-      aspect-ratio: 2/3;
-      border-radius: 8px;
-      margin: 20px auto;
-      flex-shrink: 0;
-      order: 3;
-    }
-
-    .media-item.expanded .poster img {
-      border-radius: 8px;
-    }
-
-    .media-item.expanded .card-info {
-      width: 100%;
-      max-width: 425px;
-      height: auto;
-      padding: 0 20px;
-      overflow-y: visible;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      order: 1;
-    }
-
-    .media-item.expanded .card-header-info {
-      order: 1;
-      padding-bottom: 12px;
-      padding-top: 20px;
-    }
-
-    .media-item.expanded .tags-section {
-      order: 2;
-      margin-bottom: 0;
-    }
-
-    .media-item.expanded .card-body {
-      order: 4;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 60px 20px 20px 20px;
+      justify-items: center;
+      align-content: start;
     }
 
     .media-item.expanded .card-close-btn {
       position: fixed;
       top: 16px;
       right: 16px;
-      left: auto;
       z-index: 100;
       width: 40px;
       height: 40px;
@@ -612,14 +569,38 @@ title: Media Gallery
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
-    .card-body {
-      overflow-y: visible;
-      padding-right: 0;
+    /* Orden con grid-row: info, poster, comentarios */
+    .media-item.expanded .card-info-section {
+      grid-row: 1;
+      grid-column: 1;
+      width: 100%;
+      max-width: 425px;
+      padding: 0;
     }
 
-    .card-scrollable {
+    .media-item.expanded .card-poster-section {
+      grid-row: 2;
+      grid-column: 1;
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    .media-item.expanded .card-poster-section .poster {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2/3;
+      border-radius: 8px;
+    }
+
+    .media-item.expanded .card-comments-section {
+      grid-row: 3;
+      grid-column: 1;
+      width: 100%;
+      max-width: 425px;
+      padding: 0;
       overflow-y: visible;
-      padding-right: 0;
     }
 
     .comments-section {
@@ -1158,17 +1139,37 @@ function buildMediaCard($item, item) {
     </div>
   `;
   
-  const $cardInfo = $(`
-    <div class="card-info">
+  // Estructura nueva: poster, info y comentarios como hermanos
+  const posterUrl = item.tmdb_poster_url 
+    ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}` 
+    : '';
+  
+  const posterHtml = posterUrl 
+    ? `<img src="${posterUrl}" alt="${item.title}" loading="lazy">`
+    : '';
+  
+  const $cardContainer = $(`
+    <div class="card-container">
       <button class="card-close-btn" title="Close">&times;</button>
-      ${headerInfoHtml}
-      <div class="card-body">
+      <div class="card-poster-section">
+        <div class="poster">${posterHtml}</div>
+      </div>
+      <div class="card-info-section">
+        <div class="card-header-info">
+          <h3>${item.title}</h3>
+          <div class="card-meta">
+            ${metaHtml}
+          </div>
+        </div>
+        ${tagsHtml}
+      </div>
+      <div class="card-comments-section">
         ${commentsHtml}
       </div>
     </div>
   `);
   
-  $item.append($cardInfo);
+  $item.append($cardContainer);
   
   // Click en poster para expandir
   $item.find('.poster').on('click', function(e) {
@@ -1176,34 +1177,15 @@ function buildMediaCard($item, item) {
     
     const $clone = $item.clone(true);
     $clone.addClass('expanded');
-    
-    // Solo reorganizar contenido si estamos en modo mobile (ancho pequeño o alto pequeño)
-    const isMobileView = window.innerWidth <= 768 || window.innerHeight <= 525;
-    
-    if (isMobileView) {
-      // Reorganizar contenido para vista mobile (info arriba, poster medio, comentarios abajo)
-      const $clonedCardInfo = $clone.find('.card-info');
-      const $clonedPoster = $clone.find('.poster');
-      const $headerInfo = $clonedCardInfo.find('.card-header-info').clone();
-      const $tags = $clonedCardInfo.find('.tags-section').clone();
-      const $comments = $clonedCardInfo.find('.card-body').clone();
-      
-      // Crear estructura reorganizada
-      $clonedCardInfo.empty();
-      $clonedCardInfo.append('<button class="card-close-btn" title="Close">&times;</button>');
-      $clonedCardInfo.append($headerInfo);
-      if ($tags.length) $clonedCardInfo.append($tags);
-      
-      // Mover poster después del header
-      $clonedPoster.insertAfter($clonedCardInfo.find('.tags-section').length ? $clonedCardInfo.find('.tags-section') : $clonedCardInfo.find('.card-header-info'));
-      
-      // Agregar comentarios al final
-      $clonedCardInfo.append($comments);
-    }
-    
     $('body').append($clone);
     $('#mediaOverlay').addClass('active');
     $('body').addClass('modal-open');
+    
+    // Agregar ID a la URL
+    const currentHash = window.location.hash.substring(1);
+    const params = new URLSearchParams(currentHash);
+    params.set('id', item.id);
+    window.history.pushState(null, '', `#${params.toString()}`);
     
     $clone.find('.poster').off('click');
     
@@ -1212,6 +1194,13 @@ function buildMediaCard($item, item) {
       $clone.remove();
       $('#mediaOverlay').removeClass('active');
       $('body').removeClass('modal-open');
+      
+      // Quitar ID de la URL
+      const currentHash = window.location.hash.substring(1);
+      const params = new URLSearchParams(currentHash);
+      params.delete('id');
+      const newHash = params.toString();
+      window.history.pushState(null, '', newHash ? `#${newHash}` : window.location.pathname);
     });
   });
 }
