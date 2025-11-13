@@ -110,64 +110,37 @@ title: Comment-A-Media
     opacity: 0.3;
     cursor: not-allowed;
   }
-  /* Integrar Select2 con input-group */
-  .input-group .select2-container {
-    flex: 1 1 auto;
-    width: 1% !important;
-  }
-  .input-group .select2-container .select2-selection {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    height: 100%;
-  }
-  /* Ajustar botones del tipo de media para que se vean más integrados */
-  .input-group .btn-group label.btn {
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-color: #dee2e6;
-    color: #495057;
-  }
-  .input-group .btn-group .btn-check:checked + label.btn {
+  /* Estilos del toggle de tipo de media - igual que en media-gallery */
+  .btn-group .btn-check:checked + .btn {
     background-color: #495057;
     border-color: #495057;
     color: #fff;
   }
-  .input-group .btn-group label.btn:hover {
-    background-color: #6c757d;
-    border-color: #6c757d;
-    color: #fff;
-  }
-  .input-group .btn-group label.btn:first-of-type {
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
-  }
-  .input-group .btn-group label.btn:last-of-type {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
 </style>
 
-<h1 class="mb-2">Comment-A-Media 🎥✨</h1>
-<p class="mb-4">Dejá tu opinión sobre las películas que ves. Cada comentario queda guardado para que podamos recordarlo y compartirlo más adelante.</p>
+<h1 class="mb-2">Share Your Thoughts</h1>
+<p class="mb-3">
+  <a href="/media-gallery/" style="color: #6c757d; text-decoration: underline;">← Back to Media Gallery</a>
+</p>
+<p class="mb-4">Rate and comment on the movies and series we've watched together. Your feedback helps us remember what we loved!</p>
+
+<div class="text-center mb-4">
+  <div class="btn-group" role="group" aria-label="Media type selector">
+    <input type="radio" class="btn-check" name="type" id="typeMovie" value="movie" autocomplete="off" checked>
+    <label class="btn btn-outline-secondary" for="typeMovie">Movies</label>
+    <input type="radio" class="btn-check" name="type" id="typeSeries" value="series" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="typeSeries">Series</label>
+  </div>
+</div>
 
 <div style="max-width:700px;">
   <form id="commentForm" class="needs-validation" novalidate>
     <div class="mb-4">
-      <label for="title" class="form-label fw-semibold fs-5">Título <span class="text-danger">*</span></label>
-      <div class="input-group">
-        <div class="btn-group" role="group" aria-label="Tipo de media">
-          <input type="radio" class="btn-check" name="type" id="typeMovie" value="movie" autocomplete="off" checked>
-          <label class="btn btn-outline-dark" for="typeMovie">🎬 Película</label>
-          <input type="radio" class="btn-check" name="type" id="typeSeries" value="series" autocomplete="off">
-          <label class="btn btn-outline-dark" for="typeSeries">📺 Serie</label>
-        </div>
-        <select id="title" name="title" class="form-select" required>
-          <option value="">Seleccioná una película...</option>
-        </select>
-      </div>
+      <label for="title" class="form-label fw-semibold fs-5">Title <span class="text-danger">*</span></label>
+      <select id="title" name="title" class="form-select" required>
+        <option value="">Seleccioná una película...</option>
+      </select>
       <input type="hidden" id="mediaId" name="mediaId" value="">
-      <div class="form-text" id="titleHelper"></div>
     </div>
     <div class="mb-4">
       <label class="form-label fw-semibold fs-5">Calificación <span class="text-danger">*</span></label>
@@ -221,12 +194,12 @@ title: Comment-A-Media
         </label>
         <label class="rating-option">
           <input type="radio" class="btn-check" name="rating" id="star2" value="2" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">�</span>
+          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😕</span>
           <span class="text-muted">Estuvo más o menos</span>
         </label>
         <label class="rating-option">
           <input type="radio" class="btn-check" name="rating" id="star1" value="1" autocomplete="off" disabled>
-          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">�</span>
+          <span class="btn btn-outline-warning rating-btn d-flex align-items-center justify-content-center">😞</span>
           <span class="text-muted">No me gustó nada</span>
         </label>
       </div>
@@ -349,8 +322,7 @@ function updateTitleDropdown(type) {
     allowClear: true
   });
   
-$('#titleHelper').html(`<span class="text-success">${filtered.length} disponibles</span>`);
-    // Habilitar rating solo cuando se selecciona un título
+  // Habilitar rating solo cuando se selecciona un título
   $select.on('change', function() {
     if ($(this).val()) {
       // Actualizar el ID oculto con el data-id de la opción seleccionada
@@ -409,6 +381,12 @@ async function submitForm(formData) {
 }
 
 $(function() {
+  // Inicializar campos deshabilitados hasta que se seleccione un título
+  $('#starDisplay').addClass('disabled');
+  $('#ratingGroup').addClass('disabled');
+  $('#commentSection, #authorSection').addClass('disabled');
+  $('#ratingGroup input, #comment, #author, button[type="submit"]').prop('disabled', true);
+  
   loadMediaList();
   $('input[name="type"]').on('change', function() {
     updateTitleDropdown($(this).val());
