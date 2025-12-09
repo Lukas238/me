@@ -1,0 +1,63 @@
+@import "https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css";
+
+.gallery {
+
+  &__year {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    // gap: 1.5rem;
+    // margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+
+
+
+    &__header {
+      grid-column: 1 / -1;
+      /* Span all columns */
+      width: 100%;
+      margin: 20px 0 10px 0;
+      font-size: 1.5rem;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+
+      a {
+        opacity: var(--bs-link-opacity);
+      }
+    }
+
+  }
+
+  &__item {
+
+    &__cover {
+
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      &__img {
+
+        width: 100%;
+        height: auto;
+        min-height: 130px;
+
+        border: 6px solid #fff;
+      }
+
+    }
+  }
+
+  &__navYears a.active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+}

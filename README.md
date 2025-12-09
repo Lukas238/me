@@ -97,3 +97,8 @@ This section is no longer used. The links to my GitHub and LinkedIn are now dire
 ## License
 
 [The MIT License (MIT)](https://raw.githubusercontent.com/kssim/ap/master/LICENSE)
+
+
+## Respurces
+
+https://github.com/Shopify/liquid/wiki/Liquid-for-Designers

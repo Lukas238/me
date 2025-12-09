@@ -12,4 +12,19 @@
 @import 'layouts/wishlist';
 @import 'layouts/media-vault';
 @import 'layouts/media-comment-form';
-@import 'layouts/bidassoa';
+@import 'layouts/gallery';
+
+
+
+.f-counter span{
+  line-height: 46px !important;
+}
+
+
+.f-carousel__toolbar__column.is-middle{
+  opacity: 0;
+  transition: opacity .3s ease;
+  &:hover{
+    opacity: 1;
+  }
+}
