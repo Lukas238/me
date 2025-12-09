@@ -62,9 +62,14 @@
     &__year {
       font-size: 0.9em;
       color: #999;
-      &::before{
+
+      &::before {
         content: " • ";
       }
+    }
+
+    %__meta {
+      color: #666;
     }
 
   }
