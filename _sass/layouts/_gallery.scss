@@ -53,6 +53,20 @@
       }
 
     }
+
+    &__title {
+      font-style: italic;
+      text-transform: capitalize;
+    }
+
+    &__year {
+      font-size: 0.9em;
+      color: #999;
+      &::before{
+        content: " • ";
+      }
+    }
+
   }
 
   &__navYears a.active {
