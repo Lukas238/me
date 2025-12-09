@@ -54,4 +54,4 @@ exclude:
   - "package.json"
   - "package-lock.json"
   - "node_modules"
-  - "prefix_and_thumb.js"
+  - "scritps/*"
