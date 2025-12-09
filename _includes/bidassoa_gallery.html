@@ -1,0 +1,68 @@
+<div class="bidassoa-gallery">
+  {% assign items = site.data.bidassoa | sort: "year" | reverse %}
+  {% assign current_year = nil %}
+
+  {% for item in items %}
+    {% if item.year != current_year %}
+      {% if forloop.index0 > 0 %}
+        </div> <!-- .bidassoa-year-grid (cierre del año anterior) -->
+      {% endif %}
+      {% assign current_year = item.year %}
+      <h2 class="bidassoa-year-heading">{{ current_year }}</h2>
+      <div class="bidassoa-year-grid">
+    {% endif %}
+
+    {% assign group_id = item.id | slugify %}
+
+    {% capture caption_html %}
+<strong>{{ item.title }}</strong> ({{ item.year }})
+{% if item.notes and item.notes != "" %}
+<br><em>{{ item.notes }}</em>
+{% endif %}
+{% if item.keywords and item.keywords.size > 0 %}
+<br><span class="bidassoa-keywords">{{ item.keywords | join: ', ' }}</span>
+{% endif %}
+    {% endcapture %}
+    {% assign caption = caption_html | strip_newlines %}
+
+    {% assign cover = item.images[0] %}
+    {% assign cover_src = "/assets/bidassoa/" | append: cover %}
+
+    <article class="bidassoa-item">
+      <a
+        href="{{ cover_src }}"
+        data-fancybox="{{ group_id }}"
+        data-caption="{{ caption | escape }}"
+        class="bidassoa-thumb-link"
+      >
+        <img
+          src="{{ cover_src }}"
+          alt="{{ item.title }}"
+          loading="lazy"
+          class="bidassoa-thumb-img"
+        >
+      </a>
+
+      <div class="bidassoa-thumb-meta">
+        <span class="bidassoa-thumb-title">{{ item.title }}</span>
+        <span class="bidassoa-thumb-year">{{ item.year }}</span>
+      </div>
+
+      {% if item.images.size > 1 %}
+        {% for img in item.images offset:1 %}
+          {% assign img_src = "/assets/bidassoa/" | append: img %}
+          <a
+            href="{{ img_src }}"
+            data-fancybox="{{ group_id }}"
+            data-caption="{{ caption | escape }}"
+            class="bidassoa-hidden"
+          ></a>
+        {% endfor %}
+      {% endif %}
+    </article>
+  {% endfor %}
+
+  {% if items.size > 0 %}
+    </div> <!-- cierre de la última .bidassoa-year-grid -->
+  {% endif %}
+</div>
