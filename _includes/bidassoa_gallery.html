@@ -75,6 +75,7 @@
 
         {% if item.alias %}<small class="gallery__item__alias d-block">Alias.</small>{% endif %}
         {% if item.notes != empty %}<small class="gallery__item__notas"><i class="bi bi-journal-text"></i></small>{% endif %}
+        {% if item.images.size > 1%}<small class="gallery__item__gallery"><i class="bi bi-images"></i></small>{% endif %}
       </header>
 
       {% if item.images.size > 1 %}
