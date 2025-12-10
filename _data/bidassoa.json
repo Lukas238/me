@@ -23,7 +23,8 @@
     "keywords": [
       "tractor",
       "campo",
-      "cosecha"
+      "cosecha",
+      "delineado"
     ],
     "images": [
       "1980__cosechadora y carro 17.jpg"
@@ -34,7 +35,9 @@
     "id": "1980__dique 39",
     "alias": "dique 39",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1980__dique 39.jpg"
     ]
@@ -44,7 +47,9 @@
     "id": "1980__el casco",
     "alias": "el casco",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "aplats"
+    ],
     "images": [
       "1980__el casco.jpg"
     ]
@@ -54,7 +59,9 @@
     "id": "1980__granja en la loma",
     "alias": "granja en la loma",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "aplats"
+    ],
     "images": [
       "1980__granja en la loma.jpg"
     ]
@@ -65,7 +72,8 @@
     "title": "La Croisette",
     "notes": "",
     "keywords": [
-      "back"
+      "back",
+      "aplats"
     ],
     "images": [
       "1980__La Croisette.jpg",
@@ -89,7 +97,9 @@
     "id": "1980__plato y botellon rojo",
     "alias": "plato y botellon rojo",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1980__plato y botellon rojo.jpg"
     ]
@@ -99,7 +109,9 @@
     "id": "1980__pueblo y sembradio",
     "alias": "pueblo y sembradio",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "aplats"
+    ],
     "images": [
       "1980__pueblo y sembradio.jpg"
     ]
@@ -111,7 +123,8 @@
     "notes": "",
     "keywords": [
       "back",
-      "firma"
+      "firma",
+      "aplats"
     ],
     "images": [
       "1980__Reflejos en Dinan.jpg",
@@ -135,7 +148,8 @@
     "alias": "tiempo de cosecha",
     "notes": "",
     "keywords": [
-      "back"
+      "back",
+      "aplats"
     ],
     "images": [
       "1980__Tiempo de cosecha.jpg",
@@ -149,7 +163,8 @@
     "alias": "tiempo de cosecha",
     "notes": "129 de 150",
     "keywords": [
-      "serigrafia"
+      "serigrafia",
+      "aplats"
     ],
     "images": [
       "1980__Tiempo de cosecha__serigrafia__129 de 150.jpg"
@@ -162,7 +177,8 @@
     "alias": "tiempo de cosecha",
     "notes": "",
     "keywords": [
-      "variante"
+      "variante",
+      "aplats"
     ],
     "images": [
       "1980__Tiempo de cosecha__variante.jpg"
@@ -176,7 +192,8 @@
     "notes": "",
     "keywords": [
       "variante",
-      "back"
+      "back",
+      "aplats"
     ],
     "images": [
       "1980__Tiempo de cosecha__variante_2.jpg",
@@ -189,7 +206,9 @@
     "id": "1979__fiat voluntas dei",
     "alias": "fiat voluntas dei",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1979__fiat_voluntas_dei.jpg"
     ]
@@ -199,7 +218,9 @@
     "id": "1979__welcome lucas",
     "alias": "welcome lucas",
     "notes": "Cuadro conmemorativo del nacimiento de su nieto Lucas Dasso el 21 de diciembre de 1979.",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1979__welcome lucas.jpg"
     ]
@@ -209,7 +230,9 @@
     "id": "1978__pueblo del arco y el aljibe 2",
     "alias": "pueblo del arco y el aljibe 2",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1978__pueblo del arco y el aljibe_2.jpg"
     ]
