@@ -85,6 +85,28 @@
       }
     }
 
+    &__caption{
+      &__title{
+        display: inline;
+        font-style: italic;
+        text-transform: capitalize;
+      }
+      &__year{
+        display: inline;
+        font-size: 0.9em;
+        &::before {
+        content: " • ";
+      }
+      }
+      &__notes{
+        margin-top: 0.5rem;
+        font-style: normal;
+        font-size: 0.9em;
+        color: #555;
+
+      }
+    }
+
   }
 
   &__navYears a.active {

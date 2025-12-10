@@ -68,13 +68,13 @@
     {% assign group_id = item.id | slugify %}
 
     {% capture caption_html %}
-      <strong>"{{ item.title | default: item.alias | capitalize }}"</strong> • {{ item.year }}
+    <div class="gallery__item__caption">
+      <div class="gallery__item__caption__title fw-lighter">"{{ item.title | default: item.alias | capitalize }}"</div>
+      <div class="gallery__item__caption__year fw-lighter">{{ item.year }}</div>
       {% if item.notes and item.notes != "" %}
-      <br><em>{{ item.notes }}</em>
+      <div class="gallery__item__caption__notes">{{ item.notes }}</div>
       {% endif %}
-      {% if item.keywords and item.keywords.size > 0 %}
-      <br><span class="bidassoa-keywords">{{ item.keywords | join: ', ' }}</span>
-      {% endif %}
+    </div>
     {% endcapture %}
 
     {% assign caption = caption_html | strip_newlines %}
