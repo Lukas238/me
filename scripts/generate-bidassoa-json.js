@@ -89,8 +89,8 @@ function parseFileName(fileName) {
   const rest = match[2];
 
   const parts = rest.split("__");
-  const baseName = parts[0];
-  const optionalParts = parts.slice(1);
+  const baseName = parts[0].normalize("NFC");
+  const optionalParts = parts.slice(1).map(p => p.normalize("NFC"));
   const normalizedBaseName = normalizeBaseName(baseName);
 
   return {
@@ -107,7 +107,7 @@ function parseFileName(fileName) {
 function deriveGroupKeyFromItem(item) {
   if (!item.year) return null;
 
-  let baseRaw = item.title || item.alias;
+  let baseRaw = (item.title || item.alias || "").normalize("NFC");
   let extraPart = null;
 
   if (item.id) {
@@ -249,7 +249,8 @@ async function main() {
   for (const entry of entries) {
     if (!entry.isFile()) continue;
 
-    const fileName = entry.name;
+    // Normalizar a NFC para evitar problemas de encoding con tildes
+    const fileName = entry.name.normalize("NFC");
     if (!/\.(jpe?g|png|webp)$/i.test(fileName)) continue;
 
     existingFilesSet.add(fileName);
