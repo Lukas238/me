@@ -92,31 +92,34 @@
           class="gallery__item__cover__link">
           <img
             src="{{ cover_src }}"
-            alt='"{{ item.title | default: item.alias | capitalize }} • {{ item.year }}"'
+            alt='"{{ item.title | default: item.alias | capitalize | escape}} • {{ item.year }}"'
             loading="lazy"
             class="gallery__item__cover__img">
         </a>
       </div><!-- /.gallery__item__cover -->
 
       <header class="gallery__item__header fw-light">
-        <span class="gallery__item__title">"{{ item.title | default: item.alias }}"</span>
+        <span class="gallery__item__title fw-lighter {% if item.alias %}--is-alias{% endif %}" {% if item.alias %}title="Alias"{% endif %}>"{{ item.title | default: item.alias }}"</span>
         <span class="gallery__item__year">{{ item.year }}</span>
 
-        <div class="gallery__item__meta">
-          {% if item.alias %}<small class="gallery__item__alias d-block">Alias.</small>{% endif %}
-          {% if item.notes != empty %}<small class="gallery__item__notas"><i class="bi bi-journal-text"></i></small>{% endif %}
-          {% if item.images.size > 1%}<small class="gallery__item__gallery"><i class="bi bi-images"></i></small>{% endif %}
+        <ul class="gallery__item__meta list-unstyled">
+          {% if item.alias %}<li class="gallery__item__alias d-none">Alias.</li>{% endif %}
+          {% if item.notes != empty %}<li class="gallery__item__notas"><i class="bi bi-journal-text"></i></li>{% endif %}
+
+          {% if item.images.size > 1%}<li class="gallery__item__gallery"><i class="bi bi-images"></i></li>{% endif %}
+
           {% if item.keywords.size > 0 %}
-          <div class="gallery__item__keywords mt-2">
+          <li class="gallery__item__keywords">
+            <i class="bi bi-tags"></i>
             {% for keyword in item.keywords %}
             <a href="#keyword-{{ keyword | slugify }}"
-               class="keyword-filter badge bg-light text-dark text-decoration-none me-1"
+               class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
                data-keyword="{{ keyword }}"
                style="font-size: 0.7rem;">{{ keyword }}</a>
             {% endfor %}
-          </div>
+          </li>
           {% endif %}
-        </div>
+        </ul>
       </header>
 
       {% if item.images.size > 1 %}

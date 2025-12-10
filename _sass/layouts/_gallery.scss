@@ -63,6 +63,10 @@
     &__title {
       font-style: italic;
       text-transform: capitalize;
+
+      &.--is-alias::after {
+        content: "*";
+      }
     }
 
     &__year {
@@ -74,8 +78,11 @@
       }
     }
 
-    %__meta {
+    &__meta {
       color: #666;
+      > li{
+        display: inline;
+      }
     }
 
   }
