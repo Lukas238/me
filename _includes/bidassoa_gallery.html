@@ -1,9 +1,39 @@
 
-<div id="gallery-bidassoa" class="gallery container-xxl d-flex">
+<div id="gallery-bidassoa" class="gallery container-xxl">
   {% assign items = site.data.bidassoa %}
   {% assign current_year = nil %}
 
   {% assign years = site.data.bidassoa | map: 'year' | uniq | sort | reverse %}
+
+  <!-- Recopilar todos los keywords únicos -->
+  {% assign all_keywords = "" | split: "" %}
+  {% for item in items %}
+    {% if item.keywords %}
+      {% assign all_keywords = all_keywords | concat: item.keywords %}
+    {% endif %}
+  {% endfor %}
+  {% assign unique_keywords = all_keywords | uniq | sort %}
+
+  <aside class="gallery__navFilters">
+      <!-- Keywords disponibles -->
+      <div class="mb-4">
+        <div class="d-flex mb-3">
+          <h5 class="mb-0">Keywords</h5>
+          <button id="clear-filters" class="btn btn-sm btn-link text-muted p-0 ms-3" style="display: none;" title="Clear all filters">
+            <i class="bi bi-trash"></i>
+          </button>
+        </div>
+        <div id="keywords-list" class="d-flex flex-wrap gap-2">
+          {% for keyword in unique_keywords %}
+          <a href="#keyword-{{ keyword | slugify }}"
+             class="keyword-filter badge text-bg-light text-decoration-none fw-light"
+             data-keyword="{{ keyword }}">{{ keyword }}</a>
+          {% endfor %}
+        </div>
+      </div>
+  </aside>
+
+  <div class="gallery__content d-flex">
 
   <aside class="gallery__navYears py-4 order-2 ps-4  pt-4">
     <nav id="navbar-years" class="sticky-top text-end">
@@ -16,7 +46,7 @@
     </nav>
   </aside>
 
-  <div>
+  <div class="gallery__grid flex-grow-1">
 
   {% for item in items %}
 
@@ -52,7 +82,7 @@
     {% assign cover = item.images[0] %}
     {% assign cover_src = "/assets/bidassoa/" | append: cover %}
 
-    <article class="gallery__item">
+    <article class="gallery__item" data-keywords="{{ item.keywords | join: ',' }}" data-year="{{ item.year }}">
 
       <div class="gallery__item__cover">
         <a
@@ -62,7 +92,7 @@
           class="gallery__item__cover__link">
           <img
             src="{{ cover_src }}"
-            alt="{{ item.title | default: item.alias | capitalize }} ({{ item.year }})"
+            alt='"{{ item.title | default: item.alias | capitalize }} • {{ item.year }}"'
             loading="lazy"
             class="gallery__item__cover__img">
         </a>
@@ -72,13 +102,21 @@
         <span class="gallery__item__title">"{{ item.title | default: item.alias }}"</span>
         <span class="gallery__item__year">{{ item.year }}</span>
 
-        {% if item.alias or item.notes or item.images.size > 1 %}
         <div class="gallery__item__meta">
           {% if item.alias %}<small class="gallery__item__alias d-block">Alias.</small>{% endif %}
           {% if item.notes != empty %}<small class="gallery__item__notas"><i class="bi bi-journal-text"></i></small>{% endif %}
           {% if item.images.size > 1%}<small class="gallery__item__gallery"><i class="bi bi-images"></i></small>{% endif %}
+          {% if item.keywords.size > 0 %}
+          <div class="gallery__item__keywords mt-2">
+            {% for keyword in item.keywords %}
+            <a href="#keyword-{{ keyword | slugify }}"
+               class="keyword-filter badge bg-light text-dark text-decoration-none me-1"
+               data-keyword="{{ keyword }}"
+               style="font-size: 0.7rem;">{{ keyword }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
         </div>
-        {% endif %}
       </header>
 
       {% if item.images.size > 1 %}
@@ -103,12 +141,141 @@
   {% endif %}
 
   </div>
+
+  </div><!-- /.gallery__content  -->
 </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 
 <script>
+  // Sistema de filtrado por keywords
+  (function() {
+    let activeFilters = new Set();
+
+    // Leer filtros desde URL hash
+    function loadFiltersFromHash() {
+      const hash = window.location.hash.substring(1);
+      if (!hash) {
+        activeFilters.clear();
+        return;
+      }
+
+      // Parsear keywords desde el hash: #keyword-variante,keyword-serigrafia
+      if (hash.startsWith('keyword-')) {
+        const keywords = hash.substring(8).split(',').map(k => decodeURIComponent(k));
+        activeFilters = new Set(keywords);
+      }
+    }
+
+    // Actualizar URL hash con filtros activos
+    function updateHash() {
+      if (activeFilters.size === 0) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      } else {
+        const keywords = Array.from(activeFilters).map(k => encodeURIComponent(k)).join(',');
+        history.replaceState(null, '', `#keyword-${keywords}`);
+      }
+    }
+
+    // Aplicar filtros a la galería
+    function applyFilters() {
+      const items = document.querySelectorAll('.gallery__item');
+      let visibleCount = 0;
+
+      items.forEach(item => {
+        if (activeFilters.size === 0) {
+          item.style.display = '';
+          visibleCount++;
+          return;
+        }
+
+        const itemKeywords = item.dataset.keywords ? item.dataset.keywords.split(',') : [];
+
+        // Un item es visible si tiene TODOS los keywords activos (AND logic)
+        const hasAllFilters = Array.from(activeFilters).every(filter =>
+          itemKeywords.includes(filter)
+        );
+
+        if (hasAllFilters) {
+          item.style.display = '';
+          visibleCount++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Ocultar años sin items visibles
+      const years = document.querySelectorAll('.gallery__year');
+      years.forEach(yearSection => {
+        const visibleItems = yearSection.querySelectorAll('.gallery__item[style=""], .gallery__item:not([style*="display: none"])');
+        yearSection.style.display = visibleItems.length > 0 ? '' : 'none';
+      });
+
+      updateActiveFiltersUI();
+    }
+
+    // Actualizar UI de filtros activos
+    function updateActiveFiltersUI() {
+      const clearBtn = document.getElementById('clear-filters');
+
+      // Mostrar/ocultar botón de clear
+      clearBtn.style.display = activeFilters.size > 0 ? 'block' : 'none';
+
+      // Actualizar estado de keywords en la lista
+      document.querySelectorAll('.keyword-filter').forEach(link => {
+        const keyword = link.dataset.keyword;
+        if (activeFilters.has(keyword)) {
+          link.classList.remove('text-bg-light');
+          link.classList.add('text-bg-secondary');
+        } else {
+          link.classList.remove('text-bg-secondary');
+          link.classList.add('text-bg-light');
+        }
+      });
+    }
+
+    // Event listeners
+    document.addEventListener('click', function(e) {
+      // Click en keyword para filtrar
+      if (e.target.closest('.keyword-filter')) {
+        e.preventDefault();
+        const link = e.target.closest('.keyword-filter');
+        const keyword = link.dataset.keyword;
+
+        if (activeFilters.has(keyword)) {
+          activeFilters.delete(keyword);
+        } else {
+          activeFilters.add(keyword);
+        }
+
+        updateHash();
+        applyFilters();
+      }
+
+      // Click en clear all
+      if (e.target.closest('#clear-filters')) {
+        e.preventDefault();
+        activeFilters.clear();
+        updateHash();
+        applyFilters();
+      }
+    });
+
+    // Cargar filtros al inicio
+    window.addEventListener('load', function() {
+      loadFiltersFromHash();
+      applyFilters();
+    });
+
+    // Escuchar cambios en el hash
+    window.addEventListener('hashchange', function() {
+      loadFiltersFromHash();
+      applyFilters();
+    });
+  })();
+
+  // Fancybox
   Fancybox.bind("[data-fancybox]",{
   Carousel: {
     Toolbar: {

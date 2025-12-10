@@ -2,6 +2,12 @@
 
 .gallery {
 
+  &__filterNav {
+    margin-bottom: 1.5rem;
+
+    width: 100%;
+  }
+
   &__year {
     // display: grid;
     // grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
