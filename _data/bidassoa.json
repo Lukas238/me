@@ -119,7 +119,7 @@
     "notes": "",
     "keywords": [],
     "images": [
-      "1980__reloj verde y violín.jpg"
+      "1980__reloj verde y violín.jpg"
     ]
   },
   {
@@ -196,19 +196,6 @@
   },
   {
     "year": 1977,
-    "id": "1977__Le Moulin Rouge__serigrafia",
-    "title": "Le Moulin Rouge",
-    "notes": "P-A XVII",
-    "keywords": [
-      "serigrafia",
-      "lineas"
-    ],
-    "images": [
-      "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__lineas.jpg"
-    ]
-  },
-  {
-    "year": 1977,
     "id": "1977__Le Moulin Rouge__serigrafia_2",
     "title": "Le Moulin Rouge",
     "notes": "",
@@ -221,15 +208,15 @@
   },
   {
     "year": 1977,
-    "id": "1977__Le Moulin Rouge__variante",
+    "id": "1977__Le Moulin Rouge__serigrafia",
     "title": "Le Moulin Rouge",
-    "notes": "",
+    "notes": "P-A XVII",
     "keywords": [
-      "variante",
+      "serigrafia",
       "lineas"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge__variante__lineas.jpg"
+      "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__lineas.jpg"
     ]
   },
   {
@@ -246,6 +233,19 @@
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante_2__invertido__lineas__blanco__rojo.jpg"
+    ]
+  },
+  {
+    "year": 1977,
+    "id": "1977__Le Moulin Rouge__variante",
+    "title": "Le Moulin Rouge",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "lineas"
+    ],
+    "images": [
+      "1977__Le_Moulin_Rouge__variante__lineas.jpg"
     ]
   },
   {

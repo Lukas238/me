@@ -1,7 +1,6 @@
 
 <div id="gallery-bidassoa" class="gallery container-xxl d-flex">
-  {% assign items_sorted_by_title = site.data.bidassoa | sort: "title" | sort: "alias" %}
-  {% assign items = items_sorted_by_title | sort: "year" | reverse %}
+  {% assign items = site.data.bidassoa %}
   {% assign current_year = nil %}
 
   {% assign years = site.data.bidassoa | map: 'year' | uniq | sort | reverse %}

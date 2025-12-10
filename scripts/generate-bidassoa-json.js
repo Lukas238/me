@@ -444,12 +444,17 @@ async function main() {
     resultItems.push(merged);
   }
 
-  // Ordenar por año desc, y dentro del año por id
+  // Ordenar por año desc, luego por título, luego por alias
   resultItems.sort((a, b) => {
-    if (b.year === a.year) {
-      return (a.id || "").localeCompare(b.id || "");
+    // Primero por año (descendente)
+    if (b.year !== a.year) {
+      return b.year - a.year;
     }
-    return b.year - a.year;
+
+    // Luego por título o alias (el que esté presente)
+    const nameA = (a.title || a.alias || "").toLowerCase();
+    const nameB = (b.title || b.alias || "").toLowerCase();
+    return nameA.localeCompare(nameB);
   });
 
   await fsp.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
