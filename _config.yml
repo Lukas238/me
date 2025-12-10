@@ -23,6 +23,9 @@ social:
 # Build settings
 markdown: kramdown
 
+# Encoding (para manejar correctamente tildes y caracteres especiales)
+encoding: utf-8
+
 # Assets
 sass:
   sass_dir: _sass
