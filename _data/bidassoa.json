@@ -125,6 +125,61 @@
     ]
   },
   {
+    "year": 1980,
+    "id": "1980__tiempo de cosecha",
+    "alias": "tiempo de cosecha",
+    "notes": "",
+    "keywords": [
+      "back"
+    ],
+    "images": [
+      "1980__Tiempo de cosecha.jpg",
+      "1980__Tiempo de cosecha__back.jpg"
+    ],
+    "title": "Tiempo de cosecha"
+  },
+  {
+    "year": 1980,
+    "id": "1980__tiempo de cosecha__serigrafia",
+    "alias": "tiempo de cosecha",
+    "notes": "129 de 150",
+    "keywords": [
+      "serigrafia"
+    ],
+    "images": [
+      "1980__Tiempo de cosecha__serigrafia__129 de 150.jpg"
+    ],
+    "title": "Tiempo de cosecha"
+  },
+  {
+    "year": 1980,
+    "id": "1980__tiempo de cosecha__variante",
+    "alias": "tiempo de cosecha",
+    "notes": "",
+    "keywords": [
+      "variante"
+    ],
+    "images": [
+      "1980__Tiempo de cosecha__variante.jpg"
+    ],
+    "title": "Tiempo de cosecha"
+  },
+  {
+    "year": 1980,
+    "id": "1980__tiempo de cosecha__variante_2",
+    "alias": "tiempo de cosecha",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "back"
+    ],
+    "images": [
+      "1980__Tiempo de cosecha__variante_2.jpg",
+      "1980__Tiempo de cosecha__variante_2__back.jpg"
+    ],
+    "title": "Tiempo de cosecha"
+  },
+  {
     "year": 1979,
     "id": "1979__fiat voluntas dei",
     "alias": "fiat voluntas dei",
