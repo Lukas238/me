@@ -401,12 +401,17 @@ async function main() {
       merged.notes = notes;
     }
 
-    // keywords
-    const kwExisting = Array.isArray(merged.keywords) ? merged.keywords : [];
-    const kwSet = new Set(
-      [...kwExisting, ...group.keywordSet].map(canonicalizeKeyword).filter((v) => v && v.trim() !== "")
-    );
-    merged.keywords = Array.from(kwSet);
+    // keywords:
+    // - Si el item YA existía y tiene keywords, las respetamos
+    // - Si no tenía keywords, las generamos desde keywordSet
+    if (existing && Array.isArray(existing.keywords) && existing.keywords.length > 0) {
+      merged.keywords = existing.keywords;
+    } else {
+      const kwSet = new Set(
+        [...group.keywordSet].map(canonicalizeKeyword).filter((v) => v && v.trim() !== "")
+      );
+      merged.keywords = Array.from(kwSet);
+    }
 
     // imágenes: cover + extras + respetar lo que ya había cuando se pueda
     const newImagesFromFiles = [];
