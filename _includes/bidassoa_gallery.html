@@ -62,7 +62,7 @@
           class="gallery__item__cover__link">
           <img
             src="{{ cover_src }}"
-            alt="{{ item.title }}"
+            alt="{{ item.title | default: item.alias | capitalize }} ({{ item.year }})"
             loading="lazy"
             class="gallery__item__cover__img">
         </a>
