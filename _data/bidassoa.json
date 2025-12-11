@@ -244,7 +244,8 @@
     "notes": "Serigrafía número 19/50",
     "keywords": [
       "serigrafia",
-      "19-50"
+      "19-50",
+      "aplats"
     ],
     "images": [
       "1977__El Molino Rojo__19-50__serigrafia.jpg"
@@ -256,7 +257,8 @@
     "title": "La Piazza d'argento",
     "notes": "",
     "keywords": [
-      "back"
+      "back",
+      "aplats"
     ],
     "images": [
       "1977__La Piazza d'argento.jpg",
@@ -272,7 +274,8 @@
       "serigrafia",
       "variante",
       "lineas",
-      "back"
+      "back",
+      "aplats"
     ],
     "images": [
       "1977__Le_Moulin_Rouge.jpg",
@@ -285,7 +288,8 @@
     "title": "Le Moulin Rouge",
     "notes": "",
     "keywords": [
-      "serigrafia"
+      "serigrafia",
+      "aplats"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__serigrafia_2.jpg"
@@ -298,7 +302,8 @@
     "notes": "Serigrafía P-A XVII (prueba para el autor #17).",
     "keywords": [
       "serigrafia",
-      "lineas"
+      "lineas",
+      "delineado"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__lineas.jpg"
@@ -314,7 +319,8 @@
       "invertido",
       "lineas",
       "blanco",
-      "rojo"
+      "rojo",
+      "delineado"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante_2__invertido__lineas__blanco__rojo.jpg"
@@ -327,7 +333,8 @@
     "notes": "",
     "keywords": [
       "variante",
-      "lineas"
+      "lineas",
+      "delineado"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante__lineas.jpg"
@@ -338,7 +345,9 @@
     "id": "1977__Luz De Gas",
     "title": "Luz De Gas",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1977__Luz De Gas.jpg"
     ]
@@ -348,7 +357,9 @@
     "id": "1977__pueblo costero",
     "alias": "pueblo costero",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1977__pueblo costero.jpg"
     ]
@@ -358,7 +369,9 @@
     "id": "1977__Senuf Retse Akire Atketihcra y Arejaiv",
     "title": "Senuf Retse Akire Atketihcra y Arejaiv",
     "notes": "Las palabras se leen al reves y significan: \"Erika Ester Funes, Viajera y Architekta \".",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1977__Senuf Retse Akire_Atketihcra y Arejaiv.jpg"
     ]
@@ -369,7 +382,8 @@
     "title": "Cuadro-Partido",
     "notes": "",
     "keywords": [
-      "back"
+      "back",
+      "delineado"
     ],
     "images": [
       "1976__Cuadro-Partido.jpg",
@@ -394,7 +408,9 @@
     "id": "1975__Nuremberga 1493",
     "title": "Nuremberga 1493",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1975__Nuremberga 1493.jpg"
     ]
@@ -405,7 +421,8 @@
     "title": "Nuremberga 1493",
     "notes": "",
     "keywords": [
-      "variante"
+      "variante",
+      "delineado"
     ],
     "images": [
       "1975__Nuremberga 1493__variante.jpg"
@@ -416,7 +433,9 @@
     "id": "1975__pabellon al mar con piso de baldosas y bandera roja",
     "alias": "pabellon al mar con piso de baldosas y bandera roja",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "aplats"
+    ],
     "images": [
       "1975__pabellon al mar con piso de baldosas y bandera roja.jpg"
     ]
@@ -426,7 +445,9 @@
     "id": "1975__pasaje con poste y ventanas",
     "alias": "pasaje con poste y ventanas",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1975__pasaje con poste y ventanas.jpg"
     ]
@@ -436,7 +457,9 @@
     "id": "1974__bidassoa autorretrato",
     "alias": "bidassoa autorretrato",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1974__bidassoa_autorretrato.jpg"
     ]
@@ -456,7 +479,9 @@
     "id": "1974__monasterio",
     "alias": "monasterio",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1974__monasterio.jpg"
     ]
@@ -466,7 +491,9 @@
     "id": "1974__vino mandolina y reloj",
     "alias": "vino mandolina y reloj",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1974__vino mandolina y reloj.jpg"
     ]
@@ -476,7 +503,9 @@
     "id": "1973__techumbres",
     "alias": "techumbres",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1973__techumbres.jpg"
     ]
@@ -487,7 +516,8 @@
     "title": "Techumbres y el Arbolito",
     "notes": "",
     "keywords": [
-      "back"
+      "back",
+      "delineado"
     ],
     "images": [
       "1973__Techumbres y el Arbolito.jpg",
@@ -499,7 +529,9 @@
     "id": "1972__bateas de pintura",
     "alias": "bateas de pintura",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1972__bateas de pintura.jpg"
     ]
@@ -509,7 +541,9 @@
     "id": "1972__el jugador",
     "alias": "el jugador",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1972__el jugador.jpg"
     ]
@@ -519,7 +553,9 @@
     "id": "1972__el partido de futbol",
     "alias": "el partido de futbol",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1972__el partido de futbol.jpg"
     ]
@@ -539,7 +575,9 @@
     "id": "1972__la huida a egipto",
     "alias": "la huida a egipto",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1972__la huida a egipto.jpg"
     ]
@@ -549,7 +587,9 @@
     "id": "1972__la puerta",
     "alias": "la puerta",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1972__la puerta.jpg"
     ]
@@ -559,7 +599,9 @@
     "id": "1972__Los 7",
     "title": "Los 7",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1972__Los 7.jpg"
     ]
@@ -579,7 +621,9 @@
     "id": "1971__el abrazo",
     "alias": "el abrazo",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1971__el abrazo.jpg"
     ]
@@ -599,7 +643,9 @@
     "id": "1971__escritorio",
     "alias": "escritorio",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1971__escritorio.jpg"
     ]
@@ -610,7 +656,8 @@
     "alias": "fiordo",
     "notes": "",
     "keywords": [
-      "lineas"
+      "lineas",
+      "delineado"
     ],
     "images": [
       "1971__fiordo.jpg",
@@ -622,7 +669,9 @@
     "id": "1971__mesa de dibujo",
     "alias": "mesa de dibujo",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1971__mesa de dibujo.jpg"
     ]
@@ -632,7 +681,9 @@
     "id": "1971__taller imaginario del tren",
     "alias": "taller imaginario del tren",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1971__taller imaginario del tren.jpg"
     ]
@@ -642,7 +693,9 @@
     "id": "1970__arreglo de flores",
     "alias": "arreglo de flores",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1970__arreglo de flores.jpg"
     ]
@@ -652,7 +705,9 @@
     "id": "1970__arreglo de flores cubistas",
     "alias": "arreglo de flores cubistas",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1970__arreglo de flores cubistas.jpg"
     ]
@@ -662,7 +717,9 @@
     "id": "1970__botellones y una flor",
     "alias": "botellones y una flor",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1970__botellones y una flor.jpg"
     ]
@@ -674,7 +731,8 @@
     "notes": "",
     "keywords": [
       "239",
-      "back"
+      "back",
+      "delineado"
     ],
     "images": [
       "1970__Caserio__239.jpg",
@@ -686,7 +744,9 @@
     "id": "1970__el ayuntamiento",
     "alias": "el ayuntamiento",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1970__el ayuntamiento.jpg"
     ]
@@ -696,7 +756,9 @@
     "id": "1970__entrada enrejada",
     "alias": "entrada enrejada",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "aplats"
+    ],
     "images": [
       "1970__entrada enrejada.jpg"
     ]
@@ -706,7 +768,9 @@
     "id": "1970__entrada enrejada de cerca",
     "alias": "entrada enrejada de cerca",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "aplats"
+    ],
     "images": [
       "1970__entrada enrejada de cerca.jpg"
     ]
@@ -716,7 +780,9 @@
     "id": "1970__farol en mantel rojo y la ventana",
     "alias": "farol en mantel rojo y la ventana",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1970__farol en mantel rojo y la ventana.jpg"
     ]
@@ -726,7 +792,9 @@
     "id": "1970__la garita del 17",
     "alias": "la garita del 17",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1970__la garita del 17.jpg"
     ]
@@ -736,7 +804,9 @@
     "id": "1970__mujer con guitarra",
     "alias": "mujer con guitarra",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado"
+    ],
     "images": [
       "1970__mujer con guitarra.jpg"
     ]
