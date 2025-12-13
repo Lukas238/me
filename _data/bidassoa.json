@@ -1,5 +1,317 @@
 [
   {
+    "year": 1996,
+    "id": "1996__Cubismo Moscovita Calles de Moscú",
+    "title": "Cubismo Moscovita Calles de Moscú",
+    "notes": "",
+    "keywords": [
+      "back",
+      "delineado",
+      "paisaje-urbano",
+      "iglesia"
+    ],
+    "images": [
+      "1996__Cubismo Moscovita_Calles de Moscú__back.jpg",
+      "1996__Cubismo Moscovita_Calles de Moscú__delineado__paisaje-urbano__iglesia.jpg"
+    ]
+  },
+  {
+    "year": 1996,
+    "id": "1996__las estaciones - otoño__variante_2",
+    "alias": "las estaciones - otoño",
+    "notes": "Estación de Otoño",
+    "keywords": [
+      "variante",
+      "paisaje",
+      "serie",
+      "otoño",
+      "estaciones",
+      "aplast"
+    ],
+    "images": [
+      "1996__las estaciones - otoño__variante_2__Estación de Otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
+    ]
+  },
+  {
+    "year": 1995,
+    "id": "1995__puerto 17-p",
+    "alias": "puerto 17-p",
+    "notes": "",
+    "keywords": [
+      "rio",
+      "puerto",
+      "aplast"
+    ],
+    "images": [
+      "1995__puerto_17-p__rio__puerto__aplast.jpg"
+    ]
+  },
+  {
+    "year": 1994,
+    "id": "1994__parroquia santa maria de la Lucila",
+    "title": "parroquia santa maria de la Lucila",
+    "notes": "",
+    "keywords": [
+      "parroquia",
+      "iglecia",
+      "religioso",
+      "lugares",
+      "martinez",
+      "aplast"
+    ],
+    "images": [
+      "1994__parroquia santa maria de la Lucila__parroquia__iglesia__religioso__lugares__martinez__aplast.jpg"
+    ]
+  },
+  {
+    "year": 1992,
+    "id": "1992__las estaciones - invierno",
+    "alias": "las estaciones - invierno",
+    "notes": "Estación de invierno",
+    "keywords": [
+      "paisaje",
+      "serie",
+      "invierno",
+      "estaciones",
+      "aplast"
+    ],
+    "images": [
+      "1992__las estaciones - invierno__Estación de invierno__paisaje__serie__invierno__estaciones__aplast.jpg"
+    ]
+  },
+  {
+    "year": 1992,
+    "id": "1992__las estaciones - otoño",
+    "alias": "las estaciones - otoño",
+    "notes": "Estación de otoño",
+    "keywords": [
+      "paisaje",
+      "serie",
+      "otoño",
+      "estaciones",
+      "aplast"
+    ],
+    "images": [
+      "1992__las estaciones - otoño__Estación de otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
+    ]
+  },
+  {
+    "year": 1989,
+    "id": "1989__Cruz",
+    "title": "Cruz",
+    "notes": "Número 128; Número 138",
+    "keywords": [
+      "religioso",
+      "delineado",
+      "back"
+    ],
+    "images": [
+      "1989__Cruz__Número 128__religioso__delineado.jpg",
+      "1989__Cruz__Número 138__back.jpg"
+    ]
+  },
+  {
+    "year": 1987,
+    "id": "1987__bol de naranjas",
+    "alias": "bol de naranjas",
+    "notes": "",
+    "keywords": [
+      "bodegon",
+      "interior",
+      "aplast"
+    ],
+    "images": [
+      "1987__bol de naranjas__bodegon__interior__aplast.jpg"
+    ]
+  },
+  {
+    "year": 1986,
+    "id": "1986__puerto 3 tovau",
+    "alias": "puerto 3 tovau",
+    "notes": "",
+    "keywords": [
+      "aplast",
+      "nautico",
+      "puerto",
+      "rio",
+      "barcos"
+    ],
+    "images": [
+      "1986__puerto_3_tovau__aplast__nautico__puerto__rio__barcos.jpg"
+    ]
+  },
+  {
+    "year": 1985,
+    "id": "1985__Dársena",
+    "title": "Dársena",
+    "notes": "",
+    "keywords": [
+      "back",
+      "puerto",
+      "aplast",
+      "nautico"
+    ],
+    "images": [
+      "1985__Dársena__back.jpg",
+      "1985__Dársena__puerto__aplast__nautico.jpg"
+    ]
+  },
+  {
+    "year": 1985,
+    "id": "1985__taberna y vivero - mariskonea",
+    "alias": "taberna y vivero - mariskonea",
+    "notes": "",
+    "keywords": [
+      "punta_del_este",
+      "lugares"
+    ],
+    "images": [
+      "1985__taberna y vivero - mariskonea__punta_del_este__lugares.jpg"
+    ]
+  },
+  {
+    "year": 1983,
+    "id": "1983__pueblo con escaleras",
+    "alias": "pueblo con escaleras",
+    "notes": "",
+    "keywords": [
+      "aplast",
+      "paisaje-urbano"
+    ],
+    "images": [
+      "1983__pueblo con escaleras__aplast__paisaje-urbano.jpg"
+    ]
+  },
+  {
+    "year": 1983,
+    "id": "1983__pueblo sobre pilotes",
+    "alias": "pueblo sobre pilotes",
+    "notes": "",
+    "keywords": [
+      "aplast",
+      "paisaje-urbano"
+    ],
+    "images": [
+      "1983__pueblo sobre pilotes__aplast__paisaje-urbano.jpg"
+    ]
+  },
+  {
+    "year": 1983,
+    "id": "1983__Reflejos en Dinan__serigrafia_2",
+    "title": "Reflejos en Dinan",
+    "notes": "",
+    "keywords": [
+      "serigrafia",
+      "aplast",
+      "rio"
+    ],
+    "images": [
+      "1983__Reflejos en Dinan__serigrafia_2__aplast__rio.jpg"
+    ]
+  },
+  {
+    "year": 1983,
+    "id": "1983__Reflejos en Dinan__serigrafia",
+    "title": "Reflejos en Dinan",
+    "notes": "",
+    "keywords": [
+      "serigrafia",
+      "aplast",
+      "rio"
+    ],
+    "images": [
+      "1983__Reflejos en Dinan__serigrafia__aplast__rio.jpg",
+      "1983__Reflejos en Dinan__serigrafia__back.jpg",
+      "1983__Reflejos en Dinan__serigrafia__back_detalle.jpg"
+    ]
+  },
+  {
+    "year": 1982,
+    "id": "1982__Piazza Viareggio - St. Giorgio",
+    "title": "Piazza Viareggio - St. Giorgio",
+    "notes": "",
+    "keywords": [
+      "delineado",
+      "monocromatico",
+      "plaza",
+      "dibujo"
+    ],
+    "images": [
+      "1982__Piazza Viareggio - St. Giorgio__delineado__monocromatico__plaza__dibujo.jpg"
+    ]
+  },
+  {
+    "year": 1981,
+    "id": "1981__Granja en Bretaña",
+    "title": "Granja en Bretaña",
+    "notes": "",
+    "keywords": [
+      "aplast",
+      "paisaje-rural"
+    ],
+    "images": [
+      "1981__Granja_en_Bretaña__aplast__paisaje-rural.jpg",
+      "1981__Granja_en_Bretaña__back_1.jpg",
+      "1981__Granja_en_Bretaña__back_2.jpg"
+    ]
+  },
+  {
+    "year": 1981,
+    "id": "1981__Granja en Bretaña__variante_2",
+    "title": "Granja en Bretaña",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "invertido",
+      "aplast",
+      "paisaje-rural"
+    ],
+    "images": [
+      "1981__Granja_en_Bretaña__variante_2__invertido__aplast__paisaje-rural.jpg"
+    ]
+  },
+  {
+    "year": 1981,
+    "id": "1981__Granja en Bretaña__variante",
+    "title": "Granja en Bretaña",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "aplast",
+      "paisaje-rural"
+    ],
+    "images": [
+      "1981__Granja_en_Bretaña__variante__aplast__paisaje-rural.jpg"
+    ]
+  },
+  {
+    "year": 1981,
+    "id": "1981__velero y cabaña",
+    "alias": "velero y cabaña",
+    "notes": "",
+    "keywords": [
+      "aplast",
+      "rio"
+    ],
+    "images": [
+      "1981__velero y cabaña__aplast__rio.jpg"
+    ]
+  },
+  {
+    "year": 1981,
+    "id": "1981__velero y cabaña__serigrafia",
+    "alias": "velero y cabaña",
+    "notes": "",
+    "keywords": [
+      "serigrafia",
+      "aplast",
+      "rio"
+    ],
+    "images": [
+      "1981__velero y cabaña__serigrafia__aplast__rio.jpg"
+    ]
+  },
+  {
     "year": 1980,
     "id": "1980__Cochera y caballeriza de la vieja quinta de la torre",
     "title": "Cochera y caballeriza de la vieja quinta de la torre",
@@ -7,7 +319,7 @@
     "keywords": [
       "tinta",
       "lineas",
-      "b&n",
+      "monocromatico",
       "dibujo"
     ],
     "images": [
@@ -22,12 +334,12 @@
     "notes": "",
     "keywords": [
       "tractor",
-      "campo",
+      "paisaje-rural",
       "cosecha",
       "delineado"
     ],
     "images": [
-      "1980__cosechadora y carro 17.jpg"
+      "1980__cosechadora y carro 17__paisaje-rural__tractor__aplast.jpg"
     ]
   },
   {
@@ -39,7 +351,7 @@
       "delineado"
     ],
     "images": [
-      "1980__dique 39.jpg"
+      "1980__dique 39__delineado__puerto__rio.jpg"
     ]
   },
   {
@@ -51,7 +363,7 @@
       "aplats"
     ],
     "images": [
-      "1980__el casco.jpg"
+      "1980__el casco__aplats.jpg"
     ]
   },
   {
@@ -63,7 +375,7 @@
       "aplats"
     ],
     "images": [
-      "1980__granja en la loma.jpg"
+      "1980__granja en la loma__aplats__paisaje-rural.jpg"
     ]
   },
   {
@@ -76,8 +388,8 @@
       "aplats"
     ],
     "images": [
-      "1980__La Croisette.jpg",
-      "1980__La Croisette__back.jpg"
+      "1980__La Croisette__back.jpg",
+      "1980__La Croisette__playa__aplast.jpg"
     ]
   },
   {
@@ -101,7 +413,7 @@
       "delineado"
     ],
     "images": [
-      "1980__plato y botellon rojo.jpg"
+      "1980__plato y botellon rojo__bodegón__delineado__interior.jpg"
     ]
   },
   {
@@ -113,7 +425,7 @@
       "aplats"
     ],
     "images": [
-      "1980__pueblo y sembradio.jpg"
+      "1980__pueblo y sembradio__paisaje-rural__aplast.jpg"
     ]
   },
   {
@@ -127,9 +439,9 @@
       "aplats"
     ],
     "images": [
-      "1980__Reflejos en Dinan.jpg",
       "1980__Reflejos en Dinan__back.jpg",
-      "1980__Reflejos en Dinan__firma.jpg"
+      "1980__Reflejos en Dinan__firma.jpg",
+      "1980__Reflejos en Dinan__rio__aplast.jpg"
     ]
   },
   {
@@ -137,9 +449,12 @@
     "id": "1980__reloj verde y violín",
     "alias": "reloj verde y violín",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "aplast",
+      "interior"
+    ],
     "images": [
-      "1980__reloj verde y violín.jpg"
+      "1980__reloj verde y violín__aplast__interior.jpg"
     ]
   },
   {
@@ -152,7 +467,7 @@
       "aplats"
     ],
     "images": [
-      "1980__Tiempo de cosecha.jpg",
+      "1980__Tiempo de cosecha__aplast__paisaje-rural.jpg",
       "1980__Tiempo de cosecha__back.jpg"
     ],
     "title": "Tiempo de cosecha"
@@ -167,21 +482,7 @@
       "aplats"
     ],
     "images": [
-      "1980__Tiempo de cosecha__serigrafia__129 de 150.jpg"
-    ],
-    "title": "Tiempo de cosecha"
-  },
-  {
-    "year": 1980,
-    "id": "1980__tiempo de cosecha__variante",
-    "alias": "tiempo de cosecha",
-    "notes": "",
-    "keywords": [
-      "variante",
-      "aplats"
-    ],
-    "images": [
-      "1980__Tiempo de cosecha__variante.jpg"
+      "1980__Tiempo de cosecha__serigrafia__129 de 150__paisaje-rural__aplast.jpg"
     ],
     "title": "Tiempo de cosecha"
   },
@@ -196,8 +497,22 @@
       "aplats"
     ],
     "images": [
-      "1980__Tiempo de cosecha__variante_2.jpg",
-      "1980__Tiempo de cosecha__variante_2__back.jpg"
+      "1980__Tiempo de cosecha__variante_2__back.jpg",
+      "1980__Tiempo de cosecha__variante_2__paisaje-rural__aplast.jpg"
+    ],
+    "title": "Tiempo de cosecha"
+  },
+  {
+    "year": 1980,
+    "id": "1980__tiempo de cosecha__variante",
+    "alias": "tiempo de cosecha",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "aplats"
+    ],
+    "images": [
+      "1980__Tiempo de cosecha__variante__aplast__paisaje-rural.jpg"
     ],
     "title": "Tiempo de cosecha"
   },
@@ -210,7 +525,7 @@
       "delineado"
     ],
     "images": [
-      "1979__fiat_voluntas_dei.jpg"
+      "1979__fiat_voluntas_dei__delineado__religioso.jpg"
     ]
   },
   {
@@ -222,7 +537,7 @@
       "delineado"
     ],
     "images": [
-      "1979__welcome lucas.jpg"
+      "1979__welcome lucas__delineado__paisaje-rural.jpg"
     ]
   },
   {
@@ -234,7 +549,7 @@
       "delineado"
     ],
     "images": [
-      "1978__pueblo del arco y el aljibe_2.jpg"
+      "1978__pueblo del arco y el aljibe_2__delineado__arqutectura.jpg"
     ]
   },
   {
@@ -244,11 +559,10 @@
     "notes": "Serigrafía número 19/50",
     "keywords": [
       "serigrafia",
-      "19-50",
       "aplats"
     ],
     "images": [
-      "1977__El Molino Rojo__19-50__serigrafia.jpg"
+      "1977__El Molino Rojo__19-50__serigrafia__interior__bodegón__aplast__molino.jpg.jpg"
     ]
   },
   {
@@ -261,8 +575,8 @@
       "aplats"
     ],
     "images": [
-      "1977__La Piazza d'argento.jpg",
-      "1977__La Piazza d'argento__back.jpg"
+      "1977__La Piazza d'argento__back.jpg",
+      "1977__La Piazza d'argento__plaza__paisaje-urbano__aplast.jpg"
     ]
   },
   {
@@ -278,8 +592,8 @@
       "aplats"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge.jpg",
-      "1977__Le_Moulin_Rouge__back.jpg"
+      "1977__Le_Moulin_Rouge__back.jpg",
+      "1977__Le_Moulin_Rouge__interior__bodegón__aplast__molino.jpg"
     ]
   },
   {
@@ -292,7 +606,7 @@
       "aplats"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge__serigrafia_2.jpg"
+      "1977__Le_Moulin_Rouge__serigrafia_2__interior__bodegón__aplast__molino.jpg"
     ]
   },
   {
@@ -306,7 +620,7 @@
       "delineado"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__lineas.jpg"
+      "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__interior__bodegón__delineado__molino.jpg"
     ]
   },
   {
@@ -323,7 +637,7 @@
       "delineado"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge__variante_2__invertido__lineas__blanco__rojo.jpg"
+      "1977__Le_Moulin_Rouge__variante_2__invertido__delineado__monocromatico__rojo__molino__interior__bodegón__delineado.jpg"
     ]
   },
   {
@@ -337,7 +651,7 @@
       "delineado"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge__variante__lineas.jpg"
+      "1977__Le_Moulin_Rouge__variante__delineado__interior__bodegón__molino.jpg"
     ]
   },
   {
@@ -349,7 +663,7 @@
       "delineado"
     ],
     "images": [
-      "1977__Luz De Gas.jpg"
+      "1977__Luz De Gas__delineado__figura.jpg"
     ]
   },
   {
@@ -361,7 +675,7 @@
       "delineado"
     ],
     "images": [
-      "1977__pueblo costero.jpg"
+      "1977__pueblo costero__paisaje-urbano__delineado__nautico.jpg"
     ]
   },
   {
@@ -373,7 +687,7 @@
       "delineado"
     ],
     "images": [
-      "1977__Senuf Retse Akire_Atketihcra y Arejaiv.jpg"
+      "1977__Senuf Retse Akire_Atketihcra y Arejaiv__religioso__delineado.jpg"
     ]
   },
   {
@@ -386,8 +700,8 @@
       "delineado"
     ],
     "images": [
-      "1976__Cuadro-Partido.jpg",
-      "1976__Cuadro-Partido__back.jpg"
+      "1976__Cuadro-Partido__back.jpg",
+      "1976__Cuadro-Partido__delineado__deportes.jpg"
     ]
   },
   {
@@ -399,8 +713,8 @@
       "back"
     ],
     "images": [
-      "1976__Sprét de Corp.jpg",
-      "1976__Sprét de Corp__back.jpg"
+      "1976__Sprét de Corp__back.jpg",
+      "1976__Sprét de Corp__delineado__interior__figura.jpg"
     ]
   },
   {
@@ -412,7 +726,7 @@
       "delineado"
     ],
     "images": [
-      "1975__Nuremberga 1493.jpg"
+      "1975__Nuremberga 1493__paisaje-urbano__monocromatico.jpg"
     ]
   },
   {
@@ -425,7 +739,7 @@
       "delineado"
     ],
     "images": [
-      "1975__Nuremberga 1493__variante.jpg"
+      "1975__Nuremberga 1493__variante__paisaje-urbano__monocromatico.jpg"
     ]
   },
   {
@@ -437,7 +751,7 @@
       "aplats"
     ],
     "images": [
-      "1975__pabellon al mar con piso de baldosas y bandera roja.jpg"
+      "1975__pabellon al mar con piso de baldosas y bandera roja__aplast__playa__nautico.jpg"
     ]
   },
   {
@@ -449,7 +763,7 @@
       "delineado"
     ],
     "images": [
-      "1975__pasaje con poste y ventanas.jpg"
+      "1975__pasaje con poste y ventanas__callejón__paisaje-urbano__delineado.jpg"
     ]
   },
   {
@@ -469,9 +783,12 @@
     "id": "1974__callejón",
     "alias": "callejón",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado",
+      "arqutectura"
+    ],
     "images": [
-      "1974__callejón.jpg"
+      "1974__callejón__delineado__arqutectura.jpg"
     ]
   },
   {
@@ -483,7 +800,7 @@
       "delineado"
     ],
     "images": [
-      "1974__monasterio.jpg"
+      "1974__monasterio__arquitecrua_-delineado.jpg"
     ]
   },
   {
@@ -495,7 +812,7 @@
       "delineado"
     ],
     "images": [
-      "1974__vino mandolina y reloj.jpg"
+      "1974__vino mandolina y reloj__bodegón.jpg"
     ]
   },
   {
@@ -661,7 +978,7 @@
     ],
     "images": [
       "1971__fiordo.jpg",
-      "1971__fiordo__lineas.jpg"
+      "1971__fiordo__delineado.jpg"
     ]
   },
   {
@@ -730,7 +1047,6 @@
     "title": "Caserio",
     "notes": "",
     "keywords": [
-      "239",
       "back",
       "delineado"
     ],
@@ -826,9 +1142,12 @@
     "id": "1969__almacen crash",
     "alias": "almacen crash",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado",
+      "paisaje-urbano"
+    ],
     "images": [
-      "1969__almacen crash.jpg"
+      "1969__almacen crash__delineado__paisaje-urbano.jpg"
     ]
   },
   {
@@ -951,10 +1270,10 @@
     "notes": "",
     "keywords": [
       "variante",
-      "b&n"
+      "monocromatico"
     ],
     "images": [
-      "1969__tractor_de_vapor__variante__b&n.jpg"
+      "1969__tractor_de_vapor__variante__monocromatico.jpg"
     ]
   },
   {
@@ -962,9 +1281,14 @@
     "id": "1968__astillero",
     "alias": "astillero",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "delineado",
+      "nautico",
+      "puerto",
+      "barcos"
+    ],
     "images": [
-      "1968__astillero.jpg"
+      "1968__astillero__delineado__nautico__puerto__barcos.jpg"
     ]
   },
   {
@@ -976,17 +1300,19 @@
       "variante"
     ],
     "images": [
-      "1968__S.E. en la Boca__variante.jpg"
+      "1968__S.E. en la Boca__variante__delineado__lugares.jpg"
     ]
   },
   {
     "year": 1968,
     "id": "1968__sol y reflejo",
     "alias": "sol y reflejo",
-    "notes": "",
-    "keywords": [],
+    "notes": "Este cuadro representa una pueba de estilos",
+    "keywords": [
+      "prueba"
+    ],
     "images": [
-      "1968__sol y reflejo.jpg"
+      "1968__sol y reflejo__prueba__Este cuadro representa una pueba de estilos.jpg"
     ]
   },
   {
@@ -994,9 +1320,12 @@
     "id": "1968__torre y puente blanco",
     "alias": "torre y puente blanco",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "paisaje-urbano",
+      "aplast"
+    ],
     "images": [
-      "1968__torre y puente blanco.jpg"
+      "1968__torre y puente blanco__paisaje-urbano__aplast.jpg"
     ]
   },
   {
@@ -1004,9 +1333,12 @@
     "id": "1968__torre y puente verde",
     "alias": "torre y puente verde",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "paisaje-urbano",
+      "delineado"
+    ],
     "images": [
-      "1968__torre y puente verde.jpg"
+      "1968__torre y puente verde__paisaje-urbano__delineado.jpg"
     ]
   },
   {
@@ -1014,9 +1346,13 @@
     "id": "1967__buque y grua roja",
     "alias": "buque y grua roja",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "nautico",
+      "puerto",
+      "barcos"
+    ],
     "images": [
-      "1967__buque y grua roja.jpg"
+      "1967__buque y grua roja__nautico__puerto__barcos.jpg"
     ]
   },
   {
@@ -1024,9 +1360,12 @@
     "id": "1967__en la habitación de Vermeer",
     "title": "en la habitación de Vermeer",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "figura",
+      "dibujo"
+    ],
     "images": [
-      "1967__en la habitación de Vermeer.jpg"
+      "1967__en la habitación de Vermeer__figura__dibujo.jpg"
     ]
   },
   {
@@ -1034,9 +1373,13 @@
     "id": "1967__Notre Dame de Paris",
     "title": "Notre Dame de Paris",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "dibujo",
+      "acuarela",
+      "lugares"
+    ],
     "images": [
-      "1967__Notre Dame de Paris.jpg"
+      "1967__Notre Dame de Paris__dibujo__acuarela__lugares.jpg"
     ]
   },
   {
@@ -1044,9 +1387,14 @@
     "id": "1967__S.E. en la Boca",
     "title": "S.E. en la Boca",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "dibujo",
+      "acuarela",
+      "delineado",
+      "lugares"
+    ],
     "images": [
-      "1967__S.E. en la Boca.jpg"
+      "1967__S.E. en la Boca__dibujo__acuarela__delineado__lugares.jpg"
     ]
   },
   {
@@ -1064,9 +1412,13 @@
     "id": "1960__buque travieso",
     "alias": "buque travieso",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "puerto",
+      "barcos",
+      "nautico"
+    ],
     "images": [
-      "1960__buque travieso.jpg"
+      "1960__buque travieso__puerto__barcos__nautico.jpg"
     ]
   },
   {
@@ -1074,9 +1426,12 @@
     "id": "1959__611 dep.s avd. industrias vaser argentina proy. c 17-61 1959",
     "title": "611 dep.s avd. industrias vaser argentina proy. c 17/61 1959",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1959__611_dep.s_avd._industrias_vaser_argentina_proy._c_17-61_1959.jpg"
+      "1959__611_dep.s_avd._industrias_vaser_argentina_proy._c_17-61_1959__vehiculos__automobil.jpg"
     ],
     "alias": "611 dep.s avd. industrias vaser argentina proy. c 17-61 1959"
   },
@@ -1085,9 +1440,12 @@
     "id": "1959__671-Styling Depto I.K.A. R.P.C. 285-17 6-1959",
     "title": "671-Styling Depto I.K.A. R.P.C. 285-17_6/1959",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1959__671-Styling Depto_I.K.A._R.P.C. 285-17_6-1959.jpg"
+      "1959__671-Styling Depto_I.K.A._R.P.C. 285-17_6-1959__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1095,9 +1453,12 @@
     "id": "1958__671-Styling Dep. Industrias Kaiser Argentina Proyec renault G Convert 4-1958",
     "title": "671-Styling Dep. Industrias Kaiser Argentina Proyec renault G Convert 4-1958",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1958__671-Styling Dep. Industrias Kaiser Argentina_Proyec_renault G_Convert_4-1958.jpg"
+      "1958__671-Styling Dep. Industrias Kaiser Argentina_Proyec_renault G_Convert_4-1958__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1105,9 +1466,12 @@
     "id": "1958__671-Styling Depto I.K.A. P. Renault Con. 4-1958",
     "title": "671-Styling Depto I.K.A. P. Renault Con._4/1958",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1958__671-Styling Depto_I.K.A._P. Renault Con. 4-1958.jpg"
+      "1958__671-Styling Depto_I.K.A._P. Renault Con. 4-1958__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1115,9 +1479,12 @@
     "id": "1957__Kaiser 57",
     "title": "Kaiser 57",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1957__Kaiser 57.jpg"
+      "1957__Kaiser 57__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1125,9 +1492,12 @@
     "id": "1948__Casa de Charles Dickens en Londres",
     "title": "Casa de Charles Dickens, en Londres",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "paisaje-urbano",
+      "lugares"
+    ],
     "images": [
-      "1948__Casa de Charles Dickens en Londres.jpg"
+      "1948__Casa de Charles Dickens en Londres__paisaje-urbano__lugares.jpg"
     ]
   },
   {
@@ -1135,9 +1505,13 @@
     "id": "1948__la costurera",
     "alias": "la costurera",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "dibujo",
+      "monocromatico",
+      "figura"
+    ],
     "images": [
-      "1948__la costurera.jpg"
+      "1948__la costurera__dibujo__monocromatico__figura.jpg"
     ]
   },
   {
@@ -1145,9 +1519,13 @@
     "id": "1948__la mujer del parasol",
     "alias": "la mujer del parasol",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "dibujo",
+      "monocromatico",
+      "figura"
+    ],
     "images": [
-      "1948__la mujer del parasol.jpg"
+      "1948__la mujer del parasol__dibujo__monocromatico__figura.jpg"
     ]
   },
   {
@@ -1155,9 +1533,12 @@
     "id": "1948__Plaza de los Vosgos, París - 1948",
     "title": "Plaza de los Vosgos, París - 1948",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "dibujo",
+      "paisaje-urbano"
+    ],
     "images": [
-      "1948__Plaza de los Vosgos, París - 1948.jpg"
+      "1948__Plaza de los Vosgos, París - 1948__dibujo__paisaje-urbano.jpg"
     ]
   },
   {
@@ -1165,9 +1546,12 @@
     "id": "1945__Allison",
     "title": "Allison",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "avion"
+    ],
     "images": [
-      "1945__Allison.jpg"
+      "1945__Allison__vehiculos__avion.jpg"
     ]
   },
   {
@@ -1180,7 +1564,7 @@
       "tinta"
     ],
     "images": [
-      "1944__Airalon.jpg"
+      "1944__Airalon__vehiculos__aviones__dibujo.jpg"
     ]
   },
   {
@@ -1188,9 +1572,12 @@
     "id": "1944__El La Sotta Arko",
     "title": "El La Sotta Arko",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1944__El La Sotta Arko.jpg"
+      "1944__El La Sotta Arko__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1198,9 +1585,12 @@
     "id": "1944__El La Sotta Backarat",
     "title": "El La Sotta Backarat",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1944__El La Sotta Backarat.jpg"
+      "1944__El La Sotta Backarat__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1208,9 +1598,12 @@
     "id": "1944__El La Sotta Coronet",
     "title": "El La Sotta Coronet",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1944__El La Sotta Coronet.jpg"
+      "1944__El La Sotta Coronet__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1218,9 +1611,12 @@
     "id": "1944__El La Sotta Dux",
     "title": "El La Sotta Dux",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "automobil"
+    ],
     "images": [
-      "1944__El La Sotta Dux.jpg"
+      "1944__El La Sotta Dux__vehiculos__automobil.jpg"
     ]
   },
   {
@@ -1228,9 +1624,13 @@
     "id": "1943__El La Sotta Zur",
     "title": "El La Sotta Zur",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vehiculos",
+      "aviones",
+      "dibujo"
+    ],
     "images": [
-      "1943__El La Sotta Zur.jpg"
+      "1943__El La Sotta Zur__vehiculos__aviones__dibujo.jpg"
     ]
   },
   {
@@ -1243,7 +1643,7 @@
       "tinta"
     ],
     "images": [
-      "1942__Pieza de los Niños.jpg"
+      "1942__Pieza de los Niños__bodegon__interior__dibujo.jpg"
     ]
   },
   {
@@ -1255,7 +1655,7 @@
       "acuarela"
     ],
     "images": [
-      "1941__chiqui en el puerto.jpg"
+      "1941__chiqui en el puerto__puerto__nautico__barcos__dibujo__acuearela.jpg"
     ]
   },
   {
@@ -1267,7 +1667,7 @@
       "pasteles"
     ],
     "images": [
-      "1941__Place de la Mouleque - Paris.jpg"
+      "1941__Place de la Mouleque - Paris__paisaje-urbano__plaza__dibujo.jpg"
     ]
   },
   {
@@ -1279,7 +1679,7 @@
       "tinta"
     ],
     "images": [
-      "1941__Victoria 1844-1895.jpg"
+      "1941__Victoria 1844-1895__paisaje-urbano__lugares__dibujo__monocromatico.jpg"
     ]
   }
 ]
