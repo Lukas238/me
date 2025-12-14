@@ -1,5 +1,76 @@
 [
   {
+    "year": 2000,
+    "id": "2000__barco de juncos y vanderin rojo",
+    "alias": "barco de juncos y vanderin rojo",
+    "notes": "",
+    "keywords": [
+      "_variante",
+      "nautico",
+      "barco"
+    ],
+    "images": [
+      "2000__barco de juncos y vanderin rojo___variante__nautico__barco.jpg"
+    ]
+  },
+  {
+    "year": 1999,
+    "id": "1999__block island steamboat c",
+    "alias": "block island steamboat c",
+    "notes": "",
+    "keywords": [
+      "nautico",
+      "barcos",
+      "rio"
+    ],
+    "images": [
+      "1999__block island steamboat c__nautico__barcos__rio.jpg"
+    ]
+  },
+  {
+    "year": 1999,
+    "id": "1999__botes e iglesia en puerto 2",
+    "alias": "botes e iglesia en puerto 2",
+    "notes": "",
+    "keywords": [
+      "barcos",
+      "aplast",
+      "rio"
+    ],
+    "images": [
+      "1999__botes e iglesia en puerto_2__barcos__aplast__rio.jpg"
+    ]
+  },
+  {
+    "year": 1999,
+    "id": "1999__Santa Rafaela María - Martinez 2",
+    "title": "Santa Rafaela María - Martinez 2",
+    "notes": "",
+    "keywords": [
+      "religioso",
+      "iglesia",
+      "ligares",
+      "martinez"
+    ],
+    "images": [
+      "1999__Santa Rafaela María - Martinez_2__religioso__iglesia__ligares__martinez.jpg"
+    ]
+  },
+  {
+    "year": 1998,
+    "id": "1998__barcos en dique seco",
+    "alias": "barcos en dique seco",
+    "notes": "",
+    "keywords": [
+      "nautico",
+      "aplast",
+      "rio"
+    ],
+    "images": [
+      "1998__barcos en dique seco__nautico__aplast__rio.jpg"
+    ]
+  },
+  {
     "year": 1996,
     "id": "1996__Cubismo Moscovita Calles de Moscú",
     "title": "Cubismo Moscovita Calles de Moscú",
@@ -22,12 +93,12 @@
     "notes": "Estación de Otoño",
     "keywords": [
       "variante",
-      "paisaje",
       "serie",
       "otoño",
       "estaciones",
       "aplast",
-      "notas"
+      "notas",
+      "paisaje-natural"
     ],
     "images": [
       "1996__las estaciones - otoño__variante_2__Estación de Otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
@@ -70,7 +141,7 @@
     "alias": "las estaciones - invierno",
     "notes": "Estación de invierno",
     "keywords": [
-      "paisaje",
+      "paisaje-natural",
       "serie",
       "invierno",
       "estaciones",
@@ -87,7 +158,7 @@
     "alias": "las estaciones - otoño",
     "notes": "Estación de otoño",
     "keywords": [
-      "paisaje",
+      "paisaje-natural",
       "serie",
       "otoño",
       "estaciones",
@@ -1174,10 +1245,10 @@
     "notes": "",
     "keywords": [
       "nautico",
-      "paisaej-urbano"
+      "paisaje-urbano"
     ],
     "images": [
-      "1970__travieso en dique seco__nautico__paisaej-urbano.jpg"
+      "1970__travieso en dique seco__nautico__paisaje-urbano.jpg"
     ]
   },
   {
