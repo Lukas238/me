@@ -69,10 +69,22 @@
 
     {% capture caption_html %}
     <div class="gallery__item__caption">
-      <div class="gallery__item__caption__title fw-lighter">"{{ item.title | default: item.alias | capitalize }}"</div>
+      <div class="gallery__item__caption__title fw-lighter lead">"{{ item.title | default: item.alias | capitalize }}"</div>
       <div class="gallery__item__caption__year fw-lighter">{{ item.year }}</div>
-      {% if item.notes and item.notes != "" %}
-      <div class="gallery__item__caption__notes">{{ item.notes }}</div>
+
+      {% if (item.notes and item.notes != "") or (item.keywords and item.keywords.size > 0) %}
+      <div class="gallery__item__caption__meta mt-3 fw-lighter">
+        {% if item.notes and item.notes != "" %}
+        <div class="gallery__item__caption__notes">
+          <i class="bi bi-journal-text d-inline"></i>
+          {{ item.notes }}
+        </div>
+        {% endif %}
+        {% if item.keywords.size > 0 %}
+          <div class="gallery__item__caption__keywords fw-lighter {% if (item.notes and item.notes != "")%} mt-2{% endif %}"><i class="bi bi-tag d-inline"></i> {{ item.keywords | join: ', ' }}
+          </div>
+          {% endif %}
+      </div>
       {% endif %}
     </div>
     {% endcapture %}
@@ -128,7 +140,7 @@
           {% assign img_src = "/assets/bidassoa/" | append: img %}
           <a
             href="{{ img_src }}"
-            data-fancybox="{{ group_id }}"
+            data-fancybox="all-bidassoa"
             data-caption="{{ caption | escape }}"
             class=""
           ></a>

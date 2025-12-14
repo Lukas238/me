@@ -154,6 +154,35 @@ function classifyInfoToken(token) {
   };
 }
 
+// Ordena las imágenes poniendo primero las principales (sin back/detalle/firma)
+function sortImagesWithMainFirst(images) {
+  if (!Array.isArray(images) || images.length === 0) return images;
+
+  const mainImages = [];
+  const additionalImages = [];
+
+  // Palabras clave que identifican fotos adicionales
+  const additionalKeywords = ['back', 'detalle', 'firma'];
+
+  for (const img of images) {
+    const lowerImg = img.toLowerCase();
+    const isAdditional = additionalKeywords.some(keyword => lowerImg.includes(`__${keyword}`));
+
+    if (isAdditional) {
+      additionalImages.push(img);
+    } else {
+      mainImages.push(img);
+    }
+  }
+
+  // Ordenar cada grupo alfabéticamente
+  mainImages.sort((a, b) => a.localeCompare(b));
+  additionalImages.sort((a, b) => a.localeCompare(b));
+
+  // Retornar principal primero, luego adicionales
+  return [...mainImages, ...additionalImages];
+}
+
 // Carga el JSON existente y lo agrupa por groupKey
 async function loadExistingJson() {
   try {
@@ -413,6 +442,13 @@ async function main() {
       merged.keywords = Array.from(kwSet);
     }
 
+    // Agregar keyword "notas" si el item tiene notas
+    if (merged.notes && merged.notes.trim() !== "") {
+      if (!merged.keywords.includes("notas")) {
+        merged.keywords.push("notas");
+      }
+    }
+
     // imágenes: cover + extras + respetar lo que ya había cuando se pueda
     const newImagesFromFiles = [];
 
@@ -445,7 +481,8 @@ async function main() {
       addIfValid(img);
     }
 
-    merged.images = finalImages;
+    // Ordenar imágenes: principales primero, luego adicionales
+    merged.images = sortImagesWithMainFirst(finalImages);
 
     resultItems.push(merged);
   }

@@ -80,30 +80,42 @@
 
     &__meta {
       color: #666;
-      > li{
+
+      >li {
         display: inline;
       }
     }
 
-    &__caption{
-      &__title{
+    &__caption {
+      text-align: center;
+      &__title {
         display: inline;
         font-style: italic;
         text-transform: capitalize;
       }
-      &__year{
+
+      &__year {
         display: inline;
         font-size: 0.9em;
-        &::before {
-        content: " • ";
-      }
-      }
-      &__notes{
-        margin-top: 0.5rem;
-        font-style: normal;
-        font-size: 0.9em;
-        color: #555;
 
+        &::before {
+          content: " • ";
+        }
+      }
+      &__meta{
+        max-width: 80%;
+        margin: 0 auto;
+      }
+
+      &__notes{
+        max-height: 100px;
+        overflow-y: auto;
+        text-align: center;
+      }
+      &__keywords {
+        font-size: 0.9em;
+        color: #999;
+        text-align: center;
       }
     }
 

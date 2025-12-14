@@ -11,8 +11,8 @@
       "iglesia"
     ],
     "images": [
-      "1996__Cubismo Moscovita_Calles de Moscú__back.jpg",
-      "1996__Cubismo Moscovita_Calles de Moscú__delineado__paisaje-urbano__iglesia.jpg"
+      "1996__Cubismo Moscovita_Calles de Moscú__delineado__paisaje-urbano__iglesia.jpg",
+      "1996__Cubismo Moscovita_Calles de Moscú__back.jpg"
     ]
   },
   {
@@ -26,7 +26,8 @@
       "serie",
       "otoño",
       "estaciones",
-      "aplast"
+      "aplast",
+      "notas"
     ],
     "images": [
       "1996__las estaciones - otoño__variante_2__Estación de Otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
@@ -73,7 +74,8 @@
       "serie",
       "invierno",
       "estaciones",
-      "aplast"
+      "aplast",
+      "notas"
     ],
     "images": [
       "1992__las estaciones - invierno__Estación de invierno__paisaje__serie__invierno__estaciones__aplast.jpg"
@@ -89,7 +91,8 @@
       "serie",
       "otoño",
       "estaciones",
-      "aplast"
+      "aplast",
+      "notas"
     ],
     "images": [
       "1992__las estaciones - otoño__Estación de otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
@@ -103,7 +106,8 @@
     "keywords": [
       "religioso",
       "delineado",
-      "back"
+      "back",
+      "notas"
     ],
     "images": [
       "1989__Cruz__Número 128__religioso__delineado.jpg",
@@ -152,8 +156,8 @@
       "nautico"
     ],
     "images": [
-      "1985__Dársena__back.jpg",
-      "1985__Dársena__puerto__aplast__nautico.jpg"
+      "1985__Dársena__puerto__aplast__nautico.jpg",
+      "1985__Dársena__back.jpg"
     ]
   },
   {
@@ -221,8 +225,8 @@
     ],
     "images": [
       "1983__Reflejos en Dinan__serigrafia__aplast__rio.jpg",
-      "1983__Reflejos en Dinan__serigrafia__back.jpg",
-      "1983__Reflejos en Dinan__serigrafia__back_detalle.jpg"
+      "1983__Reflejos en Dinan__serigrafia__back_detalle.jpg",
+      "1983__Reflejos en Dinan__serigrafia__back.jpg"
     ]
   },
   {
@@ -388,8 +392,8 @@
       "aplats"
     ],
     "images": [
-      "1980__La Croisette__back.jpg",
-      "1980__La Croisette__playa__aplast.jpg"
+      "1980__La Croisette__playa__aplast.jpg",
+      "1980__La Croisette__back.jpg"
     ]
   },
   {
@@ -439,9 +443,9 @@
       "aplats"
     ],
     "images": [
+      "1980__Reflejos en Dinan__rio__aplast.jpg",
       "1980__Reflejos en Dinan__back.jpg",
-      "1980__Reflejos en Dinan__firma.jpg",
-      "1980__Reflejos en Dinan__rio__aplast.jpg"
+      "1980__Reflejos en Dinan__firma.jpg"
     ]
   },
   {
@@ -479,7 +483,8 @@
     "notes": "129 de 150",
     "keywords": [
       "serigrafia",
-      "aplats"
+      "aplats",
+      "notas"
     ],
     "images": [
       "1980__Tiempo de cosecha__serigrafia__129 de 150__paisaje-rural__aplast.jpg"
@@ -497,8 +502,8 @@
       "aplats"
     ],
     "images": [
-      "1980__Tiempo de cosecha__variante_2__back.jpg",
-      "1980__Tiempo de cosecha__variante_2__paisaje-rural__aplast.jpg"
+      "1980__Tiempo de cosecha__variante_2__paisaje-rural__aplast.jpg",
+      "1980__Tiempo de cosecha__variante_2__back.jpg"
     ],
     "title": "Tiempo de cosecha"
   },
@@ -534,7 +539,8 @@
     "alias": "welcome lucas",
     "notes": "Cuadro conmemorativo del nacimiento de su nieto Lucas Dasso el 21 de diciembre de 1979.",
     "keywords": [
-      "delineado"
+      "delineado",
+      "notas"
     ],
     "images": [
       "1979__welcome lucas__delineado__paisaje-rural.jpg"
@@ -559,7 +565,8 @@
     "notes": "Serigrafía número 19/50",
     "keywords": [
       "serigrafia",
-      "aplats"
+      "aplats",
+      "notas"
     ],
     "images": [
       "1977__El Molino Rojo__19-50__serigrafia__interior__bodegón__aplast__molino.jpg.jpg"
@@ -575,8 +582,8 @@
       "aplats"
     ],
     "images": [
-      "1977__La Piazza d'argento__back.jpg",
-      "1977__La Piazza d'argento__plaza__paisaje-urbano__aplast.jpg"
+      "1977__La Piazza d'argento__plaza__paisaje-urbano__aplast.jpg",
+      "1977__La Piazza d'argento__back.jpg"
     ]
   },
   {
@@ -589,11 +596,12 @@
       "variante",
       "lineas",
       "back",
-      "aplats"
+      "aplats",
+      "notas"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge__back.jpg",
-      "1977__Le_Moulin_Rouge__interior__bodegón__aplast__molino.jpg"
+      "1977__Le_Moulin_Rouge__interior__bodegón__aplast__molino.jpg",
+      "1977__Le_Moulin_Rouge__back.jpg"
     ]
   },
   {
@@ -617,7 +625,8 @@
     "keywords": [
       "serigrafia",
       "lineas",
-      "delineado"
+      "delineado",
+      "notas"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__interior__bodegón__delineado__molino.jpg"
@@ -634,7 +643,8 @@
       "lineas",
       "blanco",
       "rojo",
-      "delineado"
+      "delineado",
+      "notas"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante_2__invertido__delineado__monocromatico__rojo__molino__interior__bodegón__delineado.jpg"
@@ -684,7 +694,8 @@
     "title": "Senuf Retse Akire Atketihcra y Arejaiv",
     "notes": "Las palabras se leen al reves y significan: \"Erika Ester Funes, Viajera y Architekta \".",
     "keywords": [
-      "delineado"
+      "delineado",
+      "notas"
     ],
     "images": [
       "1977__Senuf Retse Akire_Atketihcra y Arejaiv__religioso__delineado.jpg"
@@ -700,8 +711,8 @@
       "delineado"
     ],
     "images": [
-      "1976__Cuadro-Partido__back.jpg",
-      "1976__Cuadro-Partido__delineado__deportes.jpg"
+      "1976__Cuadro-Partido__delineado__deportes.jpg",
+      "1976__Cuadro-Partido__back.jpg"
     ]
   },
   {
@@ -713,8 +724,8 @@
       "back"
     ],
     "images": [
-      "1976__Sprét de Corp__back.jpg",
-      "1976__Sprét de Corp__delineado__interior__figura.jpg"
+      "1976__Sprét de Corp__delineado__interior__figura.jpg",
+      "1976__Sprét de Corp__back.jpg"
     ]
   },
   {
@@ -977,8 +988,8 @@
       "delineado"
     ],
     "images": [
-      "1971__fiordo.jpg",
-      "1971__fiordo__delineado.jpg"
+      "1971__fiordo__delineado.jpg",
+      "1971__fiordo.jpg"
     ]
   },
   {
@@ -1309,7 +1320,8 @@
     "alias": "sol y reflejo",
     "notes": "Este cuadro representa una pueba de estilos",
     "keywords": [
-      "prueba"
+      "prueba",
+      "notas"
     ],
     "images": [
       "1968__sol y reflejo__prueba__Este cuadro representa una pueba de estilos.jpg"
