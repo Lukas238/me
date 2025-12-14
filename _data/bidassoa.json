@@ -737,7 +737,7 @@
       "delineado"
     ],
     "images": [
-      "1975__Nuremberga 1493__paisaje-urbano__monocromatico.jpg"
+      "1975__Nuremberga 1493__paisaje-urbano__monocromatico__vista-aerea.jpg"
     ]
   },
   {
@@ -750,7 +750,7 @@
       "delineado"
     ],
     "images": [
-      "1975__Nuremberga 1493__variante__paisaje-urbano__monocromatico.jpg"
+      "1975__Nuremberga 1493__variante__paisaje-urbano__monocromatico__vista-aerea.jpg"
     ]
   },
   {
@@ -762,7 +762,7 @@
       "aplats"
     ],
     "images": [
-      "1975__pabellon al mar con piso de baldosas y bandera roja__aplast__playa__nautico.jpg"
+      "1975__pabellon al mar con piso de baldosas y bandera roja__aplast__playa__nautico__abstracto.jpg"
     ]
   },
   {
@@ -779,14 +779,15 @@
   },
   {
     "year": 1974,
-    "id": "1974__bidassoa autorretrato",
-    "alias": "bidassoa autorretrato",
+    "id": "1974__bidassoa",
+    "alias": "bidassoa",
     "notes": "",
     "keywords": [
-      "delineado"
+      "autorretrato",
+      "figura"
     ],
     "images": [
-      "1974__bidassoa_autorretrato.jpg"
+      "1974__bidassoa__autorretrato__figura.jpg"
     ]
   },
   {
@@ -799,7 +800,7 @@
       "arqutectura"
     ],
     "images": [
-      "1974__callejón__delineado__arqutectura.jpg"
+      "1974__callejón__delineado__arqutectura__paisaje-urbano.jpg"
     ]
   },
   {
@@ -811,7 +812,7 @@
       "delineado"
     ],
     "images": [
-      "1974__monasterio__arquitecrua_-delineado.jpg"
+      "1974__monasterio__arquitectura__delineado.jpg"
     ]
   },
   {
@@ -823,7 +824,7 @@
       "delineado"
     ],
     "images": [
-      "1974__vino mandolina y reloj__bodegón.jpg"
+      "1974__vino mandolina y reloj__bodegón__delineado__interior.jpg"
     ]
   },
   {
@@ -835,7 +836,7 @@
       "delineado"
     ],
     "images": [
-      "1973__techumbres.jpg"
+      "1973__techumbres__paisaje-urbano__delineado.jpg"
     ]
   },
   {
@@ -848,7 +849,7 @@
       "delineado"
     ],
     "images": [
-      "1973__Techumbres y el Arbolito.jpg",
+      "1973__Techumbres y el Arbolito__paisaje-urbano__delineado.jpg",
       "1973__Techumbres y el arbolito__back.jpg"
     ]
   },
@@ -861,7 +862,7 @@
       "delineado"
     ],
     "images": [
-      "1972__bateas de pintura.jpg"
+      "1972__bateas de pintura__figura__vista-aerea.jpg"
     ]
   },
   {
@@ -873,7 +874,7 @@
       "delineado"
     ],
     "images": [
-      "1972__el jugador.jpg"
+      "1972__el jugador__figura__plaza.jpg"
     ]
   },
   {
@@ -885,7 +886,7 @@
       "delineado"
     ],
     "images": [
-      "1972__el partido de futbol.jpg"
+      "1972__el partido de futbol__figura__deportes.jpg"
     ]
   },
   {
@@ -893,9 +894,12 @@
     "id": "1972__la estrella de belén",
     "alias": "la estrella de belén",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "religioso",
+      "delineado"
+    ],
     "images": [
-      "1972__la estrella de belén.jpg"
+      "1972__la estrella de belén__religioso__delineado.jpg"
     ]
   },
   {
@@ -907,7 +911,7 @@
       "delineado"
     ],
     "images": [
-      "1972__la huida a egipto.jpg"
+      "1972__la huida a egipto__religioso__delineado.jpg"
     ]
   },
   {
@@ -919,7 +923,7 @@
       "delineado"
     ],
     "images": [
-      "1972__la puerta.jpg"
+      "1972__la puerta__abstracto__delineado.jpg"
     ]
   },
   {
@@ -931,7 +935,7 @@
       "delineado"
     ],
     "images": [
-      "1972__Los 7.jpg"
+      "1972__Los 7__figura__musical__delineado.jpg"
     ]
   },
   {
@@ -939,9 +943,12 @@
     "id": "1971__adoración de los reyes magos",
     "alias": "adoración de los reyes magos",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "religioso",
+      "figura"
+    ],
     "images": [
-      "1971__adoración de los reyes magos.jpg"
+      "1971__adoración de los reyes magos__religioso__figura.jpg"
     ]
   },
   {
@@ -953,7 +960,7 @@
       "delineado"
     ],
     "images": [
-      "1971__el abrazo.jpg"
+      "1971__el abrazo__figuras__interior.jpg"
     ]
   },
   {
@@ -961,9 +968,12 @@
     "id": "1971__el descenso de la cruz",
     "alias": "el descenso de la cruz",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "figuras",
+      "religioso"
+    ],
     "images": [
-      "1971__el_descenso_de_la_cruz.jpg"
+      "1971__el_descenso_de_la_cruz__figuras__religioso.jpg"
     ]
   },
   {
@@ -988,8 +998,23 @@
       "delineado"
     ],
     "images": [
-      "1971__fiordo__delineado.jpg",
-      "1971__fiordo.jpg"
+      "1971__fiordo__delineado__nautico__delineado__paisaje-natural__rio.jpg"
+    ]
+  },
+  {
+    "year": 1971,
+    "id": "1971__fiordo__variante",
+    "alias": "fiordo",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "aplast",
+      "nautico",
+      "paisaje-natural",
+      "rio"
+    ],
+    "images": [
+      "1971__fiordo__variante__aplast__nautico__paisaje-natural__rio.jpg"
     ]
   },
   {
@@ -1001,19 +1026,20 @@
       "delineado"
     ],
     "images": [
-      "1971__mesa de dibujo.jpg"
+      "1971__mesa de dibujo__bodegon__interior.jpg"
     ]
   },
   {
     "year": 1971,
     "id": "1971__taller imaginario del tren",
     "alias": "taller imaginario del tren",
-    "notes": "",
+    "notes": "Pintura sobre lienzo",
     "keywords": [
-      "delineado"
+      "delineado",
+      "notas"
     ],
     "images": [
-      "1971__taller imaginario del tren.jpg"
+      "1971__taller imaginario del tren__Pintura sobre lienzo__paisaje-urbano.jpg"
     ]
   },
   {
@@ -1025,7 +1051,7 @@
       "delineado"
     ],
     "images": [
-      "1970__arreglo de flores.jpg"
+      "1970__arreglo de flores__bodegon.jpg"
     ]
   },
   {
@@ -1037,7 +1063,7 @@
       "delineado"
     ],
     "images": [
-      "1970__arreglo de flores cubistas.jpg"
+      "1970__arreglo de flores cubistas__bodegon.jpg"
     ]
   },
   {
@@ -1049,7 +1075,7 @@
       "delineado"
     ],
     "images": [
-      "1970__botellones y una flor.jpg"
+      "1970__botellones y una flor__bodegon.jpg"
     ]
   },
   {
@@ -1062,7 +1088,7 @@
       "delineado"
     ],
     "images": [
-      "1970__Caserio__239.jpg",
+      "1970__Caserio__239__paisaje-urbano__vista-aerea.jpg",
       "1970__Caserio__239__back.jpg"
     ]
   },
@@ -1075,31 +1101,7 @@
       "delineado"
     ],
     "images": [
-      "1970__el ayuntamiento.jpg"
-    ]
-  },
-  {
-    "year": 1970,
-    "id": "1970__entrada enrejada",
-    "alias": "entrada enrejada",
-    "notes": "",
-    "keywords": [
-      "aplats"
-    ],
-    "images": [
-      "1970__entrada enrejada.jpg"
-    ]
-  },
-  {
-    "year": 1970,
-    "id": "1970__entrada enrejada de cerca",
-    "alias": "entrada enrejada de cerca",
-    "notes": "",
-    "keywords": [
-      "aplats"
-    ],
-    "images": [
-      "1970__entrada enrejada de cerca.jpg"
+      "1970__el ayuntamiento__paisaje-urbano.jpg"
     ]
   },
   {
@@ -1116,14 +1118,41 @@
   },
   {
     "year": 1970,
-    "id": "1970__la garita del 17",
-    "alias": "la garita del 17",
+    "id": "1970__La Carcel del Poeta",
+    "title": "La Carcel del Poeta",
     "notes": "",
     "keywords": [
-      "delineado"
+      "abstracto",
+      "paisaje-urbano"
     ],
     "images": [
-      "1970__la garita del 17.jpg"
+      "1970__La Carcel del Poeta__abstracto__paisaje-urbano.jpg"
+    ]
+  },
+  {
+    "year": 1970,
+    "id": "1970__La Carcel del Poeta__variante",
+    "title": "La Carcel del Poeta",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "abstracto",
+      "paisaje-urbano"
+    ],
+    "images": [
+      "1970__La Carcel del Poeta__variante__abstracto__paisaje-urbano.jpg"
+    ]
+  },
+  {
+    "year": 1970,
+    "id": "1970__la garita del 17 paisaje-urbano",
+    "alias": "la garita del 17 paisaje-urbano",
+    "notes": "",
+    "keywords": [
+      "abstracto"
+    ],
+    "images": [
+      "1970__la garita del 17_paisaje-urbano__abstracto.jpg"
     ]
   },
   {
@@ -1135,7 +1164,7 @@
       "delineado"
     ],
     "images": [
-      "1970__mujer con guitarra.jpg"
+      "1970__mujer con guitarra__figura__musical__paisaje-urbano.jpg"
     ]
   },
   {
@@ -1143,9 +1172,12 @@
     "id": "1970__travieso en dique seco",
     "alias": "travieso en dique seco",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "nautico",
+      "paisaej-urbano"
+    ],
     "images": [
-      "1970__travieso en dique seco.jpg"
+      "1970__travieso en dique seco__nautico__paisaej-urbano.jpg"
     ]
   },
   {
@@ -1166,9 +1198,14 @@
     "id": "1969__gallo ingles",
     "alias": "gallo ingles",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "animales",
+      "bodegon",
+      "rural",
+      "figura"
+    ],
     "images": [
-      "1969__gallo_ingles.jpg"
+      "1969__gallo_ingles__animales__bodegon__rural__figura.jpg"
     ]
   },
   {
@@ -1176,9 +1213,12 @@
     "id": "1969__huevo frito y canario",
     "alias": "huevo frito y canario",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "bodegon",
+      "interior"
+    ],
     "images": [
-      "1969__huevo frito y canario.jpg"
+      "1969__huevo frito y canario__bodegon__interior.jpg"
     ]
   },
   {
@@ -1186,9 +1226,13 @@
     "id": "1969__iglesia y el árbol",
     "alias": "iglesia y el árbol",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "religioso",
+      "iglesia",
+      "arquitectura"
+    ],
     "images": [
-      "1969__iglesia y el árbol.jpg"
+      "1969__iglesia y el árbol__religioso__iglesia__arquitectura.jpg"
     ]
   },
   {
@@ -1196,9 +1240,12 @@
     "id": "1969__la gran ciudad",
     "alias": "la gran ciudad",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "vista-aerea",
+      "arqutectura"
+    ],
     "images": [
-      "1969__la gran ciudad.jpg"
+      "1969__la gran ciudad__vista-aerea__arqutectura.jpg"
     ]
   },
   {
@@ -1206,9 +1253,12 @@
     "id": "1969__la puerta verde",
     "alias": "la puerta verde",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "bodegon",
+      "interior"
+    ],
     "images": [
-      "1969__la puerta verde.jpg"
+      "1969__la puerta verde__bodegon__interior.jpg"
     ]
   },
   {
@@ -1216,10 +1266,14 @@
     "id": "1969__pabellon a",
     "alias": "pabellon a",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "abstracto",
+      "arquitectura"
+    ],
     "images": [
-      "1969__pabellon a.jpg"
-    ]
+      "1969__pabellon A__abstracto__arquitectura.jpg"
+    ],
+    "title": "pabellon A"
   },
   {
     "year": 1969,
@@ -1236,9 +1290,12 @@
     "id": "1969__sol y mandolina",
     "alias": "sol y mandolina",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "bodegon",
+      "musical"
+    ],
     "images": [
-      "1969__sol y mandolina.jpg"
+      "1969__sol y mandolina__bodegon__musical.jpg"
     ]
   },
   {
@@ -1246,9 +1303,11 @@
     "id": "1969__soldado",
     "alias": "soldado",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "figura"
+    ],
     "images": [
-      "1969__soldado.jpg"
+      "1969__soldado__figura.jpg"
     ]
   },
   {
@@ -1256,22 +1315,11 @@
     "id": "1969__sonrisa entre formas",
     "alias": "sonrisa entre formas",
     "notes": "",
-    "keywords": [],
-    "images": [
-      "1969__sonrisa entre formas.jpg"
-    ]
-  },
-  {
-    "year": 1969,
-    "id": "1969__tractor de vapor",
-    "alias": "tractor de vapor",
-    "notes": "",
     "keywords": [
-      "color",
-      "lineas"
+      "abstracto"
     ],
     "images": [
-      "1969__tractor_de_vapor.jpg"
+      "1969__sonrisa entre formas__abstracto.jpg"
     ]
   },
   {
@@ -1284,7 +1332,20 @@
       "monocromatico"
     ],
     "images": [
-      "1969__tractor_de_vapor__variante__monocromatico.jpg"
+      "1969__tractor_de_vapor__variante__monocromatico__tractor__vehiculos__rural.jpg"
+    ]
+  },
+  {
+    "year": 1969,
+    "id": "1969__tractor de vapor",
+    "alias": "tractor de vapor",
+    "notes": "",
+    "keywords": [
+      "color",
+      "lineas"
+    ],
+    "images": [
+      "1969__tractor_de_vapor__vehiculos__tractor__rural.jpg"
     ]
   },
   {
@@ -1311,7 +1372,7 @@
       "variante"
     ],
     "images": [
-      "1968__S.E. en la Boca__variante__delineado__lugares.jpg"
+      "1968__S.E. en la Boca__variante__delineado__lugares__paisaje-urbano.jpg"
     ]
   },
   {
@@ -1324,7 +1385,7 @@
       "notas"
     ],
     "images": [
-      "1968__sol y reflejo__prueba__Este cuadro representa una pueba de estilos.jpg"
+      "1968__sol y reflejo__prueba__Este cuadro representa una pueba de estilos__abstracto.jpg"
     ]
   },
   {
@@ -1406,7 +1467,7 @@
       "lugares"
     ],
     "images": [
-      "1967__S.E. en la Boca__dibujo__acuarela__delineado__lugares.jpg"
+      "1967__S.E. en la Boca__dibujo__acuarela__delineado__lugares__paisaje-urbano.jpg"
     ]
   },
   {
@@ -1414,9 +1475,13 @@
     "id": "1964__gallina",
     "alias": "gallina",
     "notes": "",
-    "keywords": [],
+    "keywords": [
+      "animales",
+      "bodegon",
+      "rural"
+    ],
     "images": [
-      "1964__gallina.jpg"
+      "1964__gallina__animales__bodegon__rural.jpg"
     ]
   },
   {
@@ -1443,7 +1508,7 @@
       "automobil"
     ],
     "images": [
-      "1959__611_dep.s_avd._industrias_vaser_argentina_proy._c_17-61_1959__vehiculos__automobil.jpg"
+      "1959__611_dep.s_avd._industrias_vaser_argentina_proy._c_17-61_1959__vehiculos__automobil__ika.jpg"
     ],
     "alias": "611 dep.s avd. industrias vaser argentina proy. c 17-61 1959"
   },
@@ -1457,7 +1522,7 @@
       "automobil"
     ],
     "images": [
-      "1959__671-Styling Depto_I.K.A._R.P.C. 285-17_6-1959__vehiculos__automobil.jpg"
+      "1959__671-Styling Depto_I.K.A._R.P.C. 285-17_6-1959__vehiculos__automobil__ika.jpg"
     ]
   },
   {
@@ -1470,7 +1535,7 @@
       "automobil"
     ],
     "images": [
-      "1958__671-Styling Dep. Industrias Kaiser Argentina_Proyec_renault G_Convert_4-1958__vehiculos__automobil.jpg"
+      "1958__671-Styling Dep. Industrias Kaiser Argentina_Proyec_renault G_Convert_4-1958__vehiculos__automobil__ika.jpg"
     ]
   },
   {
@@ -1483,7 +1548,7 @@
       "automobil"
     ],
     "images": [
-      "1958__671-Styling Depto_I.K.A._P. Renault Con. 4-1958__vehiculos__automobil.jpg"
+      "1958__671-Styling Depto_I.K.A._P. Renault Con. 4-1958__vehiculos__automobil__ika.jpg"
     ]
   },
   {
@@ -1496,7 +1561,7 @@
       "automobil"
     ],
     "images": [
-      "1957__Kaiser 57__vehiculos__automobil.jpg"
+      "1957__Kaiser 57__vehiculos__automobil__ika.jpg"
     ]
   },
   {
@@ -1589,7 +1654,7 @@
       "automobil"
     ],
     "images": [
-      "1944__El La Sotta Arko__vehiculos__automobil.jpg"
+      "1944__El La Sotta Arko__vehiculos__automobil__ika.jpg"
     ]
   },
   {
@@ -1602,7 +1667,7 @@
       "automobil"
     ],
     "images": [
-      "1944__El La Sotta Backarat__vehiculos__automobil.jpg"
+      "1944__El La Sotta Backarat__vehiculos__automobil__ika.jpg"
     ]
   },
   {
@@ -1615,7 +1680,7 @@
       "automobil"
     ],
     "images": [
-      "1944__El La Sotta Coronet__vehiculos__automobil.jpg"
+      "1944__El La Sotta Coronet__vehiculos__automobil__ika.jpg"
     ]
   },
   {
@@ -1628,7 +1693,7 @@
       "automobil"
     ],
     "images": [
-      "1944__El La Sotta Dux__vehiculos__automobil.jpg"
+      "1944__El La Sotta Dux__vehiculos__automobil__ika.jpg"
     ]
   },
   {
