@@ -6,8 +6,8 @@
     "notes": "",
     "keywords": [
       "variante",
-      "nautico",
-      "barco"
+      "paisaje-nautico",
+      "barcos"
     ],
     "images": [
       "2000__barco de juncos y vanderin rojo__variante__nautico__barco.jpg"
@@ -19,7 +19,7 @@
     "alias": "block island steamboat c",
     "notes": "",
     "keywords": [
-      "nautico",
+      "paisaje-nautico",
       "barcos",
       "rio"
     ],
@@ -34,7 +34,7 @@
     "notes": "",
     "keywords": [
       "barcos",
-      "aplast",
+      "aplat",
       "rio"
     ],
     "images": [
@@ -47,9 +47,9 @@
     "title": "Santa Rafaela María - Martinez 2",
     "notes": "",
     "keywords": [
-      "religioso",
+      "religion",
       "iglesia",
-      "ligares",
+      "lugares",
       "martinez"
     ],
     "images": [
@@ -62,8 +62,8 @@
     "alias": "barcos en dique seco",
     "notes": "",
     "keywords": [
-      "nautico",
-      "aplast",
+      "paisaje-nautico",
+      "aplat",
       "rio"
     ],
     "images": [
@@ -96,7 +96,7 @@
       "serie",
       "otoño",
       "estaciones",
-      "aplast",
+      "aplat",
       "notas",
       "paisaje-natural"
     ],
@@ -112,7 +112,7 @@
     "keywords": [
       "rio",
       "puerto",
-      "aplast"
+      "aplat"
     ],
     "images": [
       "1995__puerto_17-p__rio__puerto__aplast.jpg"
@@ -125,11 +125,11 @@
     "notes": "",
     "keywords": [
       "parroquia",
-      "iglecia",
-      "religioso",
+      "iglesia",
+      "religion",
       "lugares",
       "martinez",
-      "aplast"
+      "aplat"
     ],
     "images": [
       "1994__parroquia santa maria de la Lucila__parroquia__iglesia__religioso__lugares__martinez__aplast.jpg"
@@ -145,7 +145,7 @@
       "serie",
       "invierno",
       "estaciones",
-      "aplast",
+      "aplat",
       "notas"
     ],
     "images": [
@@ -162,7 +162,7 @@
       "serie",
       "otoño",
       "estaciones",
-      "aplast",
+      "aplat",
       "notas"
     ],
     "images": [
@@ -175,7 +175,7 @@
     "title": "Cruz",
     "notes": "Número 128; Número 138",
     "keywords": [
-      "religioso",
+      "religion",
       "delineado",
       "back",
       "notas"
@@ -193,7 +193,7 @@
     "keywords": [
       "bodegon",
       "interior",
-      "aplast"
+      "aplat"
     ],
     "images": [
       "1987__bol de naranjas__bodegon__interior__aplast.jpg"
@@ -205,8 +205,8 @@
     "alias": "puerto 3 tovau",
     "notes": "",
     "keywords": [
-      "aplast",
-      "nautico",
+      "aplat",
+      "paisaje-nautico",
       "puerto",
       "rio",
       "barcos"
@@ -223,8 +223,8 @@
     "keywords": [
       "back",
       "puerto",
-      "aplast",
-      "nautico"
+      "aplat",
+      "paisaje-nautico"
     ],
     "images": [
       "1985__Dársena__puerto__aplast__nautico.jpg",
@@ -250,7 +250,7 @@
     "alias": "pueblo con escaleras",
     "notes": "",
     "keywords": [
-      "aplast",
+      "aplat",
       "paisaje-urbano"
     ],
     "images": [
@@ -263,7 +263,7 @@
     "alias": "pueblo sobre pilotes",
     "notes": "",
     "keywords": [
-      "aplast",
+      "aplat",
       "paisaje-urbano"
     ],
     "images": [
@@ -277,7 +277,7 @@
     "notes": "",
     "keywords": [
       "serigrafia",
-      "aplast",
+      "aplat",
       "rio"
     ],
     "images": [
@@ -291,7 +291,7 @@
     "notes": "",
     "keywords": [
       "serigrafia",
-      "aplast",
+      "aplat",
       "rio"
     ],
     "images": [
@@ -321,7 +321,7 @@
     "title": "Granja en Bretaña",
     "notes": "",
     "keywords": [
-      "aplast",
+      "aplat",
       "paisaje-rural"
     ],
     "images": [
@@ -338,7 +338,7 @@
     "keywords": [
       "variante",
       "invertido",
-      "aplast",
+      "aplat",
       "paisaje-rural"
     ],
     "images": [
@@ -352,7 +352,7 @@
     "notes": "",
     "keywords": [
       "variante",
-      "aplast",
+      "aplat",
       "paisaje-rural"
     ],
     "images": [
@@ -365,7 +365,7 @@
     "alias": "velero y cabaña",
     "notes": "",
     "keywords": [
-      "aplast",
+      "aplat",
       "rio"
     ],
     "images": [
@@ -379,7 +379,7 @@
     "notes": "",
     "keywords": [
       "serigrafia",
-      "aplast",
+      "aplat",
       "rio"
     ],
     "images": [
@@ -392,7 +392,7 @@
     "title": "Cochera y caballeriza de la vieja quinta de la torre",
     "notes": "",
     "keywords": [
-      "tinta",
+      "tecnica-tinta",
       "lineas",
       "monocromatico",
       "dibujo"
@@ -435,7 +435,7 @@
     "alias": "el casco",
     "notes": "",
     "keywords": [
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__el casco__aplats.jpg"
@@ -447,7 +447,7 @@
     "alias": "granja en la loma",
     "notes": "",
     "keywords": [
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__granja en la loma__aplats__paisaje-rural.jpg"
@@ -460,7 +460,7 @@
     "notes": "",
     "keywords": [
       "back",
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__La Croisette__playa__aplast.jpg",
@@ -497,7 +497,7 @@
     "alias": "pueblo y sembradio",
     "notes": "",
     "keywords": [
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__pueblo y sembradio__paisaje-rural__aplast.jpg"
@@ -511,7 +511,7 @@
     "keywords": [
       "back",
       "firma",
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__Reflejos en Dinan__rio__aplast.jpg",
@@ -525,7 +525,7 @@
     "alias": "reloj verde y violín",
     "notes": "",
     "keywords": [
-      "aplast",
+      "aplat",
       "interior"
     ],
     "images": [
@@ -539,7 +539,7 @@
     "notes": "",
     "keywords": [
       "back",
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__Tiempo de cosecha__aplast__paisaje-rural.jpg",
@@ -554,7 +554,7 @@
     "notes": "129 de 150",
     "keywords": [
       "serigrafia",
-      "aplats",
+      "aplat",
       "notas"
     ],
     "images": [
@@ -570,7 +570,7 @@
     "keywords": [
       "variante",
       "back",
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__Tiempo de cosecha__variante_2__paisaje-rural__aplast.jpg",
@@ -585,7 +585,7 @@
     "notes": "",
     "keywords": [
       "variante",
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1980__Tiempo de cosecha__variante__aplast__paisaje-rural.jpg"
@@ -636,7 +636,7 @@
     "notes": "Serigrafía número 19/50",
     "keywords": [
       "serigrafia",
-      "aplats",
+      "aplat",
       "notas"
     ],
     "images": [
@@ -650,7 +650,7 @@
     "notes": "",
     "keywords": [
       "back",
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1977__La Piazza d'argento__plaza__paisaje-urbano__aplast.jpg",
@@ -667,7 +667,7 @@
       "variante",
       "lineas",
       "back",
-      "aplats",
+      "aplat",
       "notas"
     ],
     "images": [
@@ -682,7 +682,7 @@
     "notes": "",
     "keywords": [
       "serigrafia",
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__serigrafia_2__interior__bodegón__aplast__molino.jpg"
@@ -830,7 +830,7 @@
     "alias": "pabellon al mar con piso de baldosas y bandera roja",
     "notes": "",
     "keywords": [
-      "aplats"
+      "aplat"
     ],
     "images": [
       "1975__pabellon al mar con piso de baldosas y bandera roja__aplast__playa__nautico__abstracto.jpg"
@@ -855,7 +855,7 @@
     "notes": "",
     "keywords": [
       "autorretrato",
-      "figura"
+      "figura-humana"
     ],
     "images": [
       "1974__bidassoa__autorretrato__figura.jpg"
@@ -868,7 +868,7 @@
     "notes": "",
     "keywords": [
       "delineado",
-      "arqutectura"
+      "arquitectura"
     ],
     "images": [
       "1974__callejón__delineado__arqutectura__paisaje-urbano.jpg"
@@ -966,7 +966,7 @@
     "alias": "la estrella de belén",
     "notes": "",
     "keywords": [
-      "religioso",
+      "religion",
       "delineado"
     ],
     "images": [
@@ -1015,8 +1015,8 @@
     "alias": "adoración de los reyes magos",
     "notes": "",
     "keywords": [
-      "religioso",
-      "figura"
+      "religion",
+      "figura-humana"
     ],
     "images": [
       "1971__adoración de los reyes magos__religioso__figura.jpg"
@@ -1040,8 +1040,8 @@
     "alias": "el descenso de la cruz",
     "notes": "",
     "keywords": [
-      "figuras",
-      "religioso"
+      "figura-humana",
+      "religion"
     ],
     "images": [
       "1971__el_descenso_de_la_cruz__figuras__religioso.jpg"
@@ -1079,8 +1079,8 @@
     "notes": "",
     "keywords": [
       "variante",
-      "aplast",
-      "nautico",
+      "aplat",
+      "paisaje-nautico",
       "paisaje-natural",
       "rio"
     ],
@@ -1193,7 +1193,7 @@
     "title": "La Carcel del Poeta",
     "notes": "",
     "keywords": [
-      "abstracto",
+      "paisaje-abstracto",
       "paisaje-urbano"
     ],
     "images": [
@@ -1207,7 +1207,7 @@
     "notes": "",
     "keywords": [
       "variante",
-      "abstracto",
+      "paisaje-abstracto",
       "paisaje-urbano"
     ],
     "images": [
@@ -1220,7 +1220,7 @@
     "alias": "la garita del 17 paisaje-urbano",
     "notes": "",
     "keywords": [
-      "abstracto"
+      "paisaje-abstracto"
     ],
     "images": [
       "1970__la garita del 17_paisaje-urbano__abstracto.jpg"
@@ -1244,7 +1244,7 @@
     "alias": "travieso en dique seco",
     "notes": "",
     "keywords": [
-      "nautico",
+      "paisaje-nautico",
       "paisaje-urbano"
     ],
     "images": [
@@ -1273,7 +1273,7 @@
       "animales",
       "bodegon",
       "rural",
-      "figura"
+      "figura-humana"
     ],
     "images": [
       "1969__gallo_ingles__animales__bodegon__rural__figura.jpg"
@@ -1298,7 +1298,7 @@
     "alias": "iglesia y el árbol",
     "notes": "",
     "keywords": [
-      "religioso",
+      "religion",
       "iglesia",
       "arquitectura"
     ],
@@ -1313,7 +1313,7 @@
     "notes": "",
     "keywords": [
       "vista-aerea",
-      "arqutectura"
+      "arquitectura"
     ],
     "images": [
       "1969__la gran ciudad__vista-aerea__arqutectura.jpg"
@@ -1338,7 +1338,7 @@
     "alias": "pabellon a",
     "notes": "",
     "keywords": [
-      "abstracto",
+      "paisaje-abstracto",
       "arquitectura"
     ],
     "images": [
@@ -1375,7 +1375,7 @@
     "alias": "soldado",
     "notes": "",
     "keywords": [
-      "figura"
+      "figura-humana"
     ],
     "images": [
       "1969__soldado__figura.jpg"
@@ -1387,7 +1387,7 @@
     "alias": "sonrisa entre formas",
     "notes": "",
     "keywords": [
-      "abstracto"
+      "paisaje-abstracto"
     ],
     "images": [
       "1969__sonrisa entre formas__abstracto.jpg"
@@ -1426,7 +1426,7 @@
     "notes": "",
     "keywords": [
       "delineado",
-      "nautico",
+      "paisaje-nautico",
       "puerto",
       "barcos"
     ],
@@ -1466,7 +1466,7 @@
     "notes": "",
     "keywords": [
       "paisaje-urbano",
-      "aplast"
+      "aplat"
     ],
     "images": [
       "1968__torre y puente blanco__paisaje-urbano__aplast.jpg"
@@ -1491,7 +1491,7 @@
     "alias": "buque y grua roja",
     "notes": "",
     "keywords": [
-      "nautico",
+      "paisaje-nautico",
       "puerto",
       "barcos"
     ],
@@ -1505,7 +1505,7 @@
     "title": "en la habitación de Vermeer",
     "notes": "",
     "keywords": [
-      "figura",
+      "figura-humana",
       "dibujo"
     ],
     "images": [
@@ -1519,7 +1519,7 @@
     "notes": "",
     "keywords": [
       "dibujo",
-      "acuarela",
+      "tecnica-acuarela",
       "lugares"
     ],
     "images": [
@@ -1533,7 +1533,7 @@
     "notes": "",
     "keywords": [
       "dibujo",
-      "acuarela",
+      "tecnica-acuarela",
       "delineado",
       "lugares"
     ],
@@ -1563,7 +1563,7 @@
     "keywords": [
       "puerto",
       "barcos",
-      "nautico"
+      "paisaje-nautico"
     ],
     "images": [
       "1960__buque travieso__puerto__barcos__nautico.jpg"
@@ -1576,7 +1576,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1959__611_dep.s_avd._industrias_vaser_argentina_proy._c_17-61_1959__vehiculos__automobil__ika.jpg"
@@ -1590,7 +1590,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1959__671-Styling Depto_I.K.A._R.P.C. 285-17_6-1959__vehiculos__automobil__ika.jpg"
@@ -1603,7 +1603,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1958__671-Styling Dep. Industrias Kaiser Argentina_Proyec_renault G_Convert_4-1958__vehiculos__automobil__ika.jpg"
@@ -1616,7 +1616,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1958__671-Styling Depto_I.K.A._P. Renault Con. 4-1958__vehiculos__automobil__ika.jpg"
@@ -1629,7 +1629,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1957__Kaiser 57__vehiculos__automobil__ika.jpg"
@@ -1656,7 +1656,7 @@
     "keywords": [
       "dibujo",
       "monocromatico",
-      "figura"
+      "figura-humana"
     ],
     "images": [
       "1948__la costurera__dibujo__monocromatico__figura.jpg"
@@ -1670,7 +1670,7 @@
     "keywords": [
       "dibujo",
       "monocromatico",
-      "figura"
+      "figura-humana"
     ],
     "images": [
       "1948__la mujer del parasol__dibujo__monocromatico__figura.jpg"
@@ -1708,8 +1708,8 @@
     "title": "Airalon",
     "notes": "",
     "keywords": [
-      "acuarela",
-      "tinta"
+      "tecnica-acuarela",
+      "tecnica-tinta"
     ],
     "images": [
       "1944__Airalon__vehiculos__aviones__dibujo.jpg"
@@ -1722,7 +1722,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1944__El La Sotta Arko__vehiculos__automobil__ika.jpg"
@@ -1735,7 +1735,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1944__El La Sotta Backarat__vehiculos__automobil__ika.jpg"
@@ -1748,7 +1748,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1944__El La Sotta Coronet__vehiculos__automobil__ika.jpg"
@@ -1761,7 +1761,7 @@
     "notes": "",
     "keywords": [
       "vehiculos",
-      "automobil"
+      "automobiles"
     ],
     "images": [
       "1944__El La Sotta Dux__vehiculos__automobil__ika.jpg"
@@ -1787,8 +1787,8 @@
     "title": "Pieza de los Niños",
     "notes": "",
     "keywords": [
-      "acuarela",
-      "tinta"
+      "tecnica-acuarela",
+      "tecnica-tinta"
     ],
     "images": [
       "1942__Pieza de los Niños__bodegon__interior__dibujo.jpg"
@@ -1800,7 +1800,7 @@
     "alias": "chiqui en el puerto",
     "notes": "",
     "keywords": [
-      "acuarela"
+      "tecnica-acuarela"
     ],
     "images": [
       "1941__chiqui en el puerto__puerto__nautico__barcos__dibujo__acuearela.jpg"
@@ -1812,7 +1812,7 @@
     "title": "Place de la Mouleque - Paris",
     "notes": "",
     "keywords": [
-      "pasteles"
+      "tecnica-pasteles"
     ],
     "images": [
       "1941__Place de la Mouleque - Paris__paisaje-urbano__plaza__dibujo.jpg"
@@ -1824,7 +1824,7 @@
     "title": "Victoria 1844-1895",
     "notes": "",
     "keywords": [
-      "tinta"
+      "tecnica-tinta"
     ],
     "images": [
       "1941__Victoria 1844-1895__paisaje-urbano__lugares__dibujo__monocromatico.jpg"
