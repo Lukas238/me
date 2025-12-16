@@ -75,15 +75,22 @@
         </div>
 
           {% if  item.notes != "" or item.keywords.size > 0  %}
-          <div class="gallery__item__caption__meta mt-3 fw-lighter">
+          <div class="gallery__item__caption__meta">
             {% if item.notes != "" %}
-            <div class="gallery__item__caption__notes">
-              <i class="bi bi-journal-text d-inline"></i>
+            <div class="gallery__item__caption__notes mt-3 fw-lighter">
+              <h3 class="h6"><i class="bi bi-journal-text d-inline"></i> Notes</h3>
               {{ item.notes }}
             </div>
             {% endif %}
             {% if item.keywords.size > 0 %}
-            <div class="gallery__item__caption__keywords fw-lighter {% if (item.notes != "")%} mt-2{% endif %}"><i class="bi bi-tag d-inline"></i> {{ item.keywords | join: ', ' }}
+            <div class="gallery__item__caption__keywords mt-3 fw-lighter">
+              <h3 class="h6"><i class="bi bi-tag d-inline"></i> Keywords</h3>
+              {% for keyword in item.keywords %}
+                <a href="#keyword-{{ keyword | slugify }}"
+                  class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
+                  data-keyword="{{ keyword }}"
+                  style="font-size: 0.7rem;">{{ keyword }}</a>
+                {% endfor %}
             </div>
             {% endif %}
           </div>

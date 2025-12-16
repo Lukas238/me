@@ -111,15 +111,24 @@
 
       &__keywords {
         font-size: 0.9em;
-        color: #999;
       }
     }
 
   }
 
-  &__navYears a.active {
-    font-weight: bold;
-    text-decoration: none;
+  &__navYears {
+    nav {
+
+      ul {
+        max-height: calc(100vh - 45px);
+        overflow-y: auto;
+      }
+    }
+
+    a.active {
+      font-weight: bold;
+      text-decoration: none;
+    }
   }
 
 }
@@ -127,9 +136,9 @@
 
 .fancybox {
   &__container {
-      --right-col-width: 0px;
+    --right-col-width: 0px;
 
-    &.has-sidebar{
+    &.has-sidebar {
       --right-col-width: clamp(300px, 25vw, 400px);
     }
 
@@ -151,14 +160,56 @@
     }
   }
 
-  &__sidebar{
+  &__sidebar {
     overflow: auto;
-    .gallery__item__caption{
+
+    .gallery__item__caption {
       text-align: left;
-      &__meta{
+
+      &__meta {
         text-align: left;
         display: block;
+
       }
+
+      &__title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        display: block;
+      }
+
+      &__year {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        display: block;
+
+        &::before {
+          content: "";
+        }
+      }
+
+      &__notes,
+      &__keywords {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 8px;
+
+      }
+
+      &__notes {
+        max-height: 80%;
+        overflow-y: auto;
+      }
+
+      &__keywords {
+        max-height: 40%;
+        overflow-y: auto;
+
+        .badge {
+          color: #fff !important;
+        }
+      }
+
+
     }
   }
 }
