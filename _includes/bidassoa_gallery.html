@@ -265,10 +265,23 @@
         const link = e.target.closest('.keyword-filter');
         const keyword = link.dataset.keyword;
 
-        if (activeFilters.has(keyword)) {
-          activeFilters.delete(keyword);
+        // Si se presiona Ctrl/Cmd, comportamiento aditivo (agregar/quitar)
+        if (e.ctrlKey || e.metaKey) {
+          if (activeFilters.has(keyword)) {
+            activeFilters.delete(keyword);
+          } else {
+            activeFilters.add(keyword);
+          }
         } else {
-          activeFilters.add(keyword);
+          // Sin Ctrl/Cmd, seleccionar solo este keyword
+          if (activeFilters.size === 1 && activeFilters.has(keyword)) {
+            // Si ya es el único seleccionado, deseleccionar
+            activeFilters.clear();
+          } else {
+            // Reemplazar con solo este keyword
+            activeFilters.clear();
+            activeFilters.add(keyword);
+          }
         }
 
         updateHash();
