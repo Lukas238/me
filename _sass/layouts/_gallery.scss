@@ -88,6 +88,7 @@
 
     &__caption {
       text-align: center;
+
       &__title {
         display: inline;
         font-style: italic;
@@ -102,20 +103,15 @@
           content: " • ";
         }
       }
-      &__meta{
-        max-width: 80%;
-        margin: 0 auto;
+
+      &__meta {
+        display: none;
+        overflow-y: auto;
       }
 
-      &__notes{
-        max-height: 100px;
-        overflow-y: auto;
-        text-align: center;
-      }
       &__keywords {
         font-size: 0.9em;
         color: #999;
-        text-align: center;
       }
     }
 
@@ -126,4 +122,43 @@
     text-decoration: none;
   }
 
+}
+
+
+.fancybox {
+  &__container {
+      --right-col-width: 0px;
+
+    &.has-sidebar{
+      --right-col-width: clamp(300px, 25vw, 400px);
+    }
+
+    >.row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) var(--right-col-width);
+      transition: grid-template-columns 0.3s ease-in-out;
+
+      height: 100%;
+
+      >.col {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__sidebar{
+    overflow: auto;
+    .gallery__item__caption{
+      text-align: left;
+      &__meta{
+        text-align: left;
+        display: block;
+      }
+    }
+  }
 }

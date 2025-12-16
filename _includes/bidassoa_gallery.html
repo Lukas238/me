@@ -1,4 +1,3 @@
-
 <div id="gallery-bidassoa" class="gallery container-xxl">
   {% assign items = site.data.bidassoa %}
   {% assign current_year = nil %}
@@ -8,49 +7,49 @@
   <!-- Recopilar todos los keywords únicos -->
   {% assign all_keywords = "" | split: "" %}
   {% for item in items %}
-    {% if item.keywords %}
-      {% assign all_keywords = all_keywords | concat: item.keywords %}
-    {% endif %}
+  {% if item.keywords %}
+  {% assign all_keywords = all_keywords | concat: item.keywords %}
+  {% endif %}
   {% endfor %}
   {% assign unique_keywords = all_keywords | uniq | sort %}
 
   <aside class="gallery__navFilters">
-      <!-- Keywords disponibles -->
-      <div class="mb-4">
-        <div class="d-flex mb-3">
-          <h5 class="mb-0">Keywords</h5>
-          <button id="clear-filters" class="btn btn-sm btn-link text-muted p-0 ms-3" style="display: none;" title="Clear all filters">
-            <i class="bi bi-trash"></i>
-          </button>
-        </div>
-        <div id="keywords-list" class="d-flex flex-wrap gap-2">
-          {% for keyword in unique_keywords %}
-          <a href="#keyword-{{ keyword | slugify }}"
-             class="keyword-filter badge text-bg-light text-decoration-none fw-light"
-             data-keyword="{{ keyword }}">{{ keyword }}</a>
-          {% endfor %}
-        </div>
+    <!-- Keywords disponibles -->
+    <div class="mb-4">
+      <div class="d-flex mb-3">
+        <h5 class="mb-0">Keywords</h5>
+        <button id="clear-filters" class="btn btn-sm btn-link text-muted p-0 ms-3" style="display: none;" title="Clear all filters">
+          <i class="bi bi-trash"></i>
+        </button>
       </div>
+      <div id="keywords-list" class="d-flex flex-wrap gap-2">
+        {% for keyword in unique_keywords %}
+        <a href="#keyword-{{ keyword | slugify }}"
+          class="keyword-filter badge text-bg-light text-decoration-none fw-light"
+          data-keyword="{{ keyword }}">{{ keyword }}</a>
+        {% endfor %}
+      </div>
+    </div>
   </aside>
 
   <div class="gallery__content d-flex">
 
-  <aside class="gallery__navYears py-4 order-2 ps-4  pt-4">
-    <nav id="navbar-years" class="sticky-top text-end">
-      <h5 class="mb-3">Years</h5>
-      <ul class="fw-light ps-0 list-unstyled">
-        {% for year in years %}
-        <li class="ps-0"><a href="#year-{{ year }}">{{ year }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </aside>
+    <aside class="gallery__navYears py-4 order-2 ps-4  pt-4">
+      <nav id="navbar-years" class="sticky-top text-end">
+        <h5 class="mb-3">Years</h5>
+        <ul class="fw-light ps-0 list-unstyled">
+          {% for year in years %}
+          <li class="ps-0"><a href="#year-{{ year }}">{{ year }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
 
-  <div class="gallery__grid flex-grow-1">
+    <div class="gallery__grid flex-grow-1">
 
-  {% for item in items %}
+      {% for item in items %}
 
-    {% if item.year != current_year %}
+      {% if item.year != current_year %}
       {% if forloop.index0 > 0 %}
       </section> <!-- /.bidassoa-year-grid -->
       {% endif %}
@@ -61,101 +60,102 @@
       <section id="year-{{ item.year }}" class="gallery__year">
         <header class="gallery__year__header d-flex justify-content-between">
           <h2 class="gallery__year__title fw-light">{{ current_year }}</h2>
-          <a href="#gallery-bidassoa" class="link-opacity-10 link-opacity-100-hover"><i class="bi bi-arrow-bar-up"></i><div class="visually-hidden">Back to top</div></a>
+          <a href="#gallery-bidassoa" class="link-opacity-10 link-opacity-100-hover"><i class="bi bi-arrow-bar-up"></i>
+            <div class="visually-hidden">Back to top</div>
+          </a>
         </header>
-    {% endif %}
-
-    {% assign group_id = item.id | slugify %}
-
-    {% capture caption_html %}
-    <div class="gallery__item__caption">
-      <div class="gallery__item__caption__title fw-lighter lead">"{{ item.title | default: item.alias | capitalize }}"</div>
-      <div class="gallery__item__caption__year fw-lighter">{{ item.year }}</div>
-
-      {% if (item.notes and item.notes != "") or (item.keywords and item.keywords.size > 0) %}
-      <div class="gallery__item__caption__meta mt-3 fw-lighter">
-        {% if item.notes and item.notes != "" %}
-        <div class="gallery__item__caption__notes">
-          <i class="bi bi-journal-text d-inline"></i>
-          {{ item.notes }}
-        </div>
         {% endif %}
-        {% if item.keywords.size > 0 %}
-          <div class="gallery__item__caption__keywords fw-lighter {% if (item.notes and item.notes != "")%} mt-2{% endif %}"><i class="bi bi-tag d-inline"></i> {{ item.keywords | join: ', ' }}
+
+        {% assign group_id = item.id | slugify %}
+
+        {% capture caption_html %}
+        <div class="gallery__item__caption">
+          <div class="gallery__item__caption__title fw-lighter lead">"{{ item.title | default: item.alias | capitalize }}"</div>
+          <div class="gallery__item__caption__year fw-lighter">{{ item.year }}</div>
+        </div>
+
+          {% if  item.notes != "" or item.keywords.size > 0  %}
+          <div class="gallery__item__caption__meta mt-3 fw-lighter">
+            {% if item.notes != "" %}
+            <div class="gallery__item__caption__notes">
+              <i class="bi bi-journal-text d-inline"></i>
+              {{ item.notes }}
+            </div>
+            {% endif %}
+            {% if item.keywords.size > 0 %}
+            <div class="gallery__item__caption__keywords fw-lighter {% if (item.notes != "")%} mt-2{% endif %}"><i class="bi bi-tag d-inline"></i> {{ item.keywords | join: ', ' }}
+            </div>
+            {% endif %}
           </div>
           {% endif %}
-      </div>
-      {% endif %}
-    </div>
-    {% endcapture %}
+        {% endcapture %}
 
-    {% assign caption = caption_html | strip_newlines %}
+        {% assign caption = caption_html | strip_newlines %}
 
-    {% assign cover = item.images[0] %}
-    {% assign cover_src = "/assets/bidassoa/" | append: cover %}
+        {% assign cover = item.images[0] %}
+        {% assign cover_src = "/assets/bidassoa/" | append: cover %}
 
-    <article class="gallery__item" data-keywords="{{ item.keywords | join: ',' }}" data-year="{{ item.year }}">
+        <article class="gallery__item" data-keywords="{{ item.keywords | join: ',' }}" data-year="{{ item.year }}">
 
-      <div class="gallery__item__cover">
-        <a
-          href="{{ cover_src }}"
-          data-fancybox="all-bidassoa"
-          data-caption="{{ caption | escape }}"
-          class="gallery__item__cover__link">
-          <img
-            src="{{ cover_src }}"
-            alt='"{{ item.title | default: item.alias | capitalize | escape}} • {{ item.year }}"'
-            loading="lazy"
-            class="gallery__item__cover__img">
-        </a>
-      </div><!-- /.gallery__item__cover -->
+          <div class="gallery__item__cover">
+            <a
+              href="{{ cover_src }}"
+              data-fancybox="all-bidassoa"
+              data-caption="{{ caption | escape }}"
+              class="gallery__item__cover__link">
+              <img
+                src="{{ cover_src }}"
+                alt='"{{ item.title | default: item.alias | capitalize | escape}} • {{ item.year }}"'
+                loading="lazy"
+                class="gallery__item__cover__img">
+            </a>
+          </div><!-- /.gallery__item__cover -->
 
-      <header class="gallery__item__header fw-light">
-        <span class="gallery__item__title fw-lighter {% if item.alias %}--is-alias{% endif %}" {% if item.alias %}title="Alias"{% endif %}>"{{ item.title | default: item.alias }}"</span>
-        <span class="gallery__item__year">{{ item.year }}</span>
+          <header class="gallery__item__header fw-light">
+            <span class="gallery__item__title fw-lighter {% if item.alias %}--is-alias{% endif %}" {% if item.alias %}title="Alias" {% endif %}>"{{ item.title | default: item.alias }}"</span>
+            <span class="gallery__item__year">{{ item.year }}</span>
 
-        <ul class="gallery__item__meta list-unstyled">
-          {% if item.alias %}<li class="gallery__item__alias d-none">Alias.</li>{% endif %}
-          {% if item.notes != empty %}<li class="gallery__item__notas"><i class="bi bi-journal-text"></i></li>{% endif %}
+            <ul class="gallery__item__meta list-unstyled">
+              {% if item.alias %}<li class="gallery__item__alias d-none">Alias.</li>{% endif %}
+              {% if item.notes != empty %}<li class="gallery__item__notas"><i class="bi bi-journal-text"></i></li>{% endif %}
 
-          {% if item.images.size > 1%}<li class="gallery__item__gallery"><i class="bi bi-images"></i></li>{% endif %}
+              {% if item.images.size > 1%}<li class="gallery__item__gallery"><i class="bi bi-images"></i></li>{% endif %}
 
-          {% if item.keywords.size > 0 %}
-          <li class="gallery__item__keywords">
-            <i class="bi bi-tags"></i>
-            {% for keyword in item.keywords %}
-            <a href="#keyword-{{ keyword | slugify }}"
-               class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
-               data-keyword="{{ keyword }}"
-               style="font-size: 0.7rem;">{{ keyword }}</a>
+              {% if item.keywords.size > 0 %}
+              <li class="gallery__item__keywords">
+                <i class="bi bi-tags"></i>
+                {% for keyword in item.keywords %}
+                <a href="#keyword-{{ keyword | slugify }}"
+                  class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
+                  data-keyword="{{ keyword }}"
+                  style="font-size: 0.7rem;">{{ keyword }}</a>
+                {% endfor %}
+              </li>
+              {% endif %}
+            </ul>
+          </header>
+
+          {% if item.images.size > 1 %}
+          <div class="gallery__item__gallery">
+            {% for img in item.images offset:1 %}
+            {% assign img_src = "/assets/bidassoa/" | append: img %}
+            <a
+              href="{{ img_src }}"
+              data-fancybox="all-bidassoa"
+              data-caption="{{ caption | escape }}"
+              class=""></a>
             {% endfor %}
-          </li>
+          </div><!-- /.gallery__item__gallery -->
           {% endif %}
-        </ul>
-      </header>
 
-      {% if item.images.size > 1 %}
-      <div class="gallery__item__gallery">
-        {% for img in item.images offset:1 %}
-          {% assign img_src = "/assets/bidassoa/" | append: img %}
-          <a
-            href="{{ img_src }}"
-            data-fancybox="all-bidassoa"
-            data-caption="{{ caption | escape }}"
-            class=""
-          ></a>
+        </article>
         {% endfor %}
-      </div><!-- /.gallery__item__gallery -->
+
+        {% if items.size > 0 %}
+      </section> <!-- /.bidassoa-year-grid -->
       {% endif %}
 
-    </article>
-  {% endfor %}
-
-  {% if items.size > 0 %}
-    </section> <!-- /.bidassoa-year-grid -->
-  {% endif %}
-
-  </div>
+    </div>
 
   </div><!-- /.gallery__content  -->
 </div>
@@ -165,7 +165,7 @@
 
 <script>
   // Sistema de filtrado por keywords
-  (function() {
+  (function () {
     let activeFilters = new Set();
 
     // Leer filtros desde URL hash
@@ -251,7 +251,7 @@
     }
 
     // Event listeners
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
       // Click en keyword para filtrar
       if (e.target.closest('.keyword-filter')) {
         e.preventDefault();
@@ -278,56 +278,84 @@
     });
 
     // Cargar filtros al inicio
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
       loadFiltersFromHash();
       applyFilters();
     });
 
     // Escuchar cambios en el hash
-    window.addEventListener('hashchange', function() {
+    window.addEventListener('hashchange', function () {
       loadFiltersFromHash();
       applyFilters();
     });
   })();
 
   // Fancybox
-  Fancybox.bind("[data-fancybox]",{
-  Carousel: {
-    Toolbar: {
-      display: {
-        left: ["counter"],
-        middle: [
-          "zoomIn",
-          "zoomOut",
-          "toggle1to1",
-          "rotateCCW",
-          "rotateCW",
-          "flipX",
-          "flipY",
-          "reset",
-        ],
-        right: ["thumbs", "close"],
+  Fancybox.bind("[data-fancybox]", {
+    mainTpl: `
+    <dialog class="fancybox__dialog">
+      <div class="fancybox__container" tabindex="0" aria-label="{{MODAL}}">
+          <div class="fancybox__backdrop"></div>
+          <div class="row">
+            <div class="col">
+              <div class="fancybox__carousel"></div>
+            </div>
+            <div class="col bg-black text-white p-3" style="--bs-bg-opacity: .3;">
+              <div class="fancybox__sidebar"></div>
+            </div>
+          </div>
+      </div>
+    </dialog>`,
+    Carousel: {
+      Toolbar: {
+        parentEl: (toolbar) => {
+          return document.querySelector('.fancybox__toolbar');
+        },
+        items: {
+          toggleInfo: {
+            tpl: `<button class="f-button" title="Toggle info"><svg><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></button>`,
+            click: () => {
+              document.querySelector('.fancybox__container').classList.toggle('has-sidebar');
+            },
+          },
+        },
+        display: {
+          left: ["counter"],
+          middle: [
+            "zoomIn",
+            "zoomOut",
+            "toggle1to1",
+            "rotateCCW",
+            "rotateCW",
+            "flipX",
+            "flipY",
+            "reset",
+          ],
+          right: ["toggleInfo", "thumbs", "close"],
+        },
       },
     },
-  },
-  on: {
-    "Carousel.ready Carousel.change": (fancyboxRef, eventName) => {
-      // Check if the filename contains "tile"
-      const slide = Fancybox.getSlide();
-      // Now using the slide.index fetch the correct gallery item link and then the filename
 
-      const src = slide.src;
-      const filename = src.split('/').pop().toLowerCase();
-      if (filename.includes("_tile")) {
-        console.log(slide.el);
-        // Add custom css to the slide element using vanilla JS: background-image: src and repeat, and center
-        slide.el.style.backgroundImage = `url(${src})`;
-        slide.el.style.backgroundRepeat = 'repeat';
-        slide.el.style.backgroundSize = 'auto';
-        slide.el.style.backgroundPosition = 'center';
-      }
-
+    Images: {
+      zoom: true,
     },
-  },
-});
+
+    on: {
+      "Carousel.ready Carousel.change": (fancybox) => {
+        const slide = fancybox.getSlide();
+        const triggerEl = slide.triggerEl;
+
+        // Obtener el contenido del sidebar desde el atributo data-sidebar
+        const sidebarContent = triggerEl ? triggerEl.getAttribute('data-caption') : '';
+
+        // Insertar en el elemento del sidebar
+        const sidebarEl = document.querySelector('.fancybox__sidebar');
+        if (sidebarEl) {
+          sidebarEl.innerHTML = sidebarContent || '';
+        }
+      },
+    },
+
+
+  });
 </script>
