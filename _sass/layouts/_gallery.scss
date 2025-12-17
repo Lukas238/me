@@ -196,6 +196,9 @@
       }
 
       &__notes {
+        *{
+          color: #fff !important;
+        }
         max-height: 80%;
         overflow-y: auto;
       }
