@@ -42,20 +42,29 @@
     &__cover {
       position: relative;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
       transition: transform 0.2s ease;
       display: block;
       width: auto; // Se ajusta al contenido
       max-width: 100%; // No excede el grid
       max-height: 400px; // Limita imágenes muy verticales
       margin: 0 auto; // Centra en el grid
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        transform: scale(1.03);
+      }
 
       &__link{
         position: relative;
         display: block;
-        border: 6px solid #fff;
         overflow: hidden;
         height: 100%; // Llena el contenedor
+
+        // Borde con gradiente metalizado
+        border-width: 6px;
+        border-style: solid;
+        border-image: linear-gradient(70deg, #c0c0c0, #e8e8e8, #ffffff, #e8e8e8, #c0c0c0) 1;
 
         &::after {
           content: '';
@@ -70,9 +79,7 @@
       }
 
 
-      &:hover {
-        transform: scale(1.03);
-      }
+
 
       &__img {
         margin: 0;
