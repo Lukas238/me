@@ -45,17 +45,34 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       transition: transform 0.2s ease;
 
+      &__link{
+        position: relative;
+        display: block;
+        border: 6px solid #fff;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-shadow: inset -1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+
       &:hover {
         transform: scale(1.03);
       }
 
       &__img {
+        margin: 0;
 
         width: 100%;
         height: auto;
         min-height: 130px;
-
-        border: 6px solid #fff;
       }
 
     }
@@ -117,11 +134,33 @@
   }
 
   &__navYears {
+    text-align: left;
+
+    h5 {
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      padding-top: 0.2em;
+      padding-bottom: 1.2rem;
+    }
+
     nav {
 
       ul {
-        max-height: calc(100vh - 45px);
+        max-height: calc(100vh - 50px);
         overflow-y: auto;
+        font-size: .9rem;
+        text-align: left;
+
+
+        // Dos columnas cuando el listado es muy largo
+        @media (min-height: 600px) {
+          &:has(li:nth-child(15)) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 5rem;
+          }
+        }
       }
     }
 
@@ -196,9 +235,10 @@
       }
 
       &__notes {
-        *{
+        * {
           color: #fff !important;
         }
+
         max-height: 80%;
         overflow-y: auto;
       }

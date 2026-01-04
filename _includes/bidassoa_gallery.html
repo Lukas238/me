@@ -2,7 +2,22 @@
   {% assign items = site.data.bidassoa %}
   {% assign current_year = nil %}
 
-  {% assign years = site.data.bidassoa | map: 'year' | uniq | sort | reverse %}
+  {% comment %}Separar año -1 (undated) para mostrarlo primero{% endcomment %}
+  {% assign all_years = site.data.bidassoa | map: 'year' | uniq | sort | reverse %}
+  {% assign years = "" | split: "" %}
+  {% assign has_undated = false %}
+
+  {% for year in all_years %}
+    {% if year == -1 %}
+      {% assign has_undated = true %}
+    {% else %}
+      {% assign years = years | push: year %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_undated %}
+    {% assign years = years | unshift: -1 %}
+  {% endif %}
 
   <!-- Recopilar todos los keywords únicos -->
   {% assign all_keywords = "" | split: "" %}
@@ -36,10 +51,10 @@
 
     <aside class="gallery__navYears py-4 order-2 ps-4  pt-4">
       <nav id="navbar-years" class="sticky-top text-end">
-        <h5 class="mb-3">Years</h5>
+        <h5>Years</h5>
         <ul class="fw-light ps-0 list-unstyled">
           {% for year in years %}
-          <li class="ps-0"><a href="#year-{{ year }}">{{ year }}</a></li>
+          <li class="ps-0"><a href="#year-{{ year }}">{% if year == -1 %}Sin fecha{% else %}{{ year }}{% endif %}</a></li>
           {% endfor %}
         </ul>
       </nav>
@@ -59,7 +74,7 @@
 
       <section id="year-{{ item.year }}" class="gallery__year">
         <header class="gallery__year__header d-flex justify-content-between">
-          <h2 class="gallery__year__title fw-light">{{ current_year }}</h2>
+          <h2 class="gallery__year__title fw-light">{% if current_year == -1 %}Sin fecha{% else %}{{ current_year }}{% endif %}</h2>
           <a href="#gallery-bidassoa" class="link-opacity-10 link-opacity-100-hover"><i class="bi bi-arrow-bar-up"></i>
             <div class="visually-hidden">Back to top</div>
           </a>
@@ -71,7 +86,7 @@
         {% capture caption_html %}
         <div class="gallery__item__caption">
           <div class="gallery__item__caption__title fw-lighter lead">"{{ item.title | default: item.alias | capitalize }}"</div>
-          <div class="gallery__item__caption__year fw-lighter">{{ item.year }}</div>
+          <div class="gallery__item__caption__year fw-lighter">{% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}</div>
         </div>
 
           {% if  item.notes != "" or item.keywords.size > 0  %}
@@ -112,7 +127,7 @@
               class="gallery__item__cover__link">
               <img
                 src="{{ cover_src }}"
-                alt='"{{ item.title | default: item.alias | capitalize | escape}} • {{ item.year }}"'
+                alt='"{{ item.title | default: item.alias | capitalize | escape}} • {% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}"'
                 loading="lazy"
                 class="gallery__item__cover__img">
             </a>
@@ -120,7 +135,7 @@
 
           <header class="gallery__item__header fw-light">
             <span class="gallery__item__title fw-lighter {% if item.alias %}--is-alias{% endif %}" {% if item.alias %}title="Alias" {% endif %}>"{{ item.title | default: item.alias }}"</span>
-            <span class="gallery__item__year">{{ item.year }}</span>
+            <span class="gallery__item__year">{% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}</span>
 
             <ul class="gallery__item__meta list-unstyled">
               {% if item.alias %}<li class="gallery__item__alias d-none">Alias.</li>{% endif %}
