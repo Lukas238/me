@@ -85,7 +85,7 @@
 
         {% capture caption_html %}
         <div class="gallery__item__caption">
-          <div class="gallery__item__caption__title fw-lighter lead">"{{ item.title | default: item.alias | capitalize }}"</div>
+          <div class="gallery__item__caption__title fw-lighter lead {% if item.alias %}--is-alias{% endif %}">"{% if item.title %}{{ item.title }}{% else %}{{ item.alias }}{% endif %}"{% if item.alias %} (alias){% endif %}</div>
           <div class="gallery__item__caption__year fw-lighter">{% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}</div>
         </div>
 
@@ -127,14 +127,14 @@
               class="gallery__item__cover__link">
               <img
                 src="{{ cover_src }}"
-                alt='"{{ item.title | default: item.alias | capitalize | escape}} • {% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}"'
+                alt='"{% if item.title %}{{ item.title }}{% else %}{{ item.alias }}{% endif %} • {% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}"'
                 loading="lazy"
                 class="gallery__item__cover__img">
             </a>
           </div><!-- /.gallery__item__cover -->
 
           <header class="gallery__item__header fw-light">
-            <span class="gallery__item__title fw-lighter {% if item.alias %}--is-alias{% endif %}" {% if item.alias %}title="Alias" {% endif %}>"{{ item.title | default: item.alias }}"</span>
+            <span class="gallery__item__title fw-lighter {% if item.alias %}--is-alias{% endif %}" {% if item.alias %}title="Alias" {% endif %}>"{% if item.title %}{{ item.title }}{% else %}{{ item.alias }}{% endif %}"</span>
             <span class="gallery__item__year">{% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}</span>
 
             <ul class="gallery__item__meta list-unstyled">

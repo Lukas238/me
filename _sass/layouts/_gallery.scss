@@ -85,10 +85,9 @@
 
     &__title {
       font-style: italic;
-      text-transform: capitalize;
 
-      &.--is-alias::after {
-        content: "*";
+      &:not(.--is-alias) {
+        text-transform: capitalize;
       }
     }
 
@@ -115,7 +114,7 @@
       &__title {
         display: inline;
         font-style: italic;
-        text-transform: capitalize;
+
       }
 
       &__year {
@@ -221,6 +220,10 @@
         font-size: 1.5rem;
         margin-bottom: 0;
         display: block;
+
+        &:not(.--is-alias) {
+          text-transform: capitalize;
+        }
       }
 
       &__year {
