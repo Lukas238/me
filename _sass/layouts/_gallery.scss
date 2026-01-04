@@ -45,8 +45,10 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       transition: transform 0.2s ease;
       display: block;
-      width: 100%; // Ocupa todo el ancho del grid
+      width: auto; // Se ajusta al contenido
+      max-width: 100%; // No excede el grid
       max-height: 400px; // Limita imágenes muy verticales
+      margin: 0 auto; // Centra en el grid
 
       &__link{
         position: relative;
