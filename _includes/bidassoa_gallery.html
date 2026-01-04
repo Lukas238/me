@@ -119,7 +119,7 @@
 
         <article class="gallery__item" data-keywords="{{ item.keywords | join: ',' }}" data-year="{{ item.year }}">
 
-          <div class="gallery__item__cover">
+          <div class="gallery__item__cover" {% if item.width and item.height %}style="aspect-ratio: {{ item.width }} / {{ item.height }};"{% endif %}>
             <a
               href="{{ cover_src }}"
               data-fancybox="all-bidassoa"

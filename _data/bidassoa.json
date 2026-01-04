@@ -11,7 +11,9 @@
     ],
     "images": [
       "2000__barco de juncos y vanderin rojo__variante__nautico__barco.jpg"
-    ]
+    ],
+    "width": 2152,
+    "height": 1455
   },
   {
     "year": 1999,
@@ -25,7 +27,9 @@
     ],
     "images": [
       "1999__block island steamboat c__nautico__barcos__rio.jpg"
-    ]
+    ],
+    "width": 2399,
+    "height": 1623
   },
   {
     "year": 1999,
@@ -39,7 +43,9 @@
     ],
     "images": [
       "1999__botes e iglesia en puerto_2__barcos__aplast__rio.jpg"
-    ]
+    ],
+    "width": 3029,
+    "height": 2075
   },
   {
     "year": 1999,
@@ -54,7 +60,9 @@
     ],
     "images": [
       "1999__Santa Rafaela María - Martinez_2__religioso__iglesia__ligares__martinez.jpg"
-    ]
+    ],
+    "width": 2739,
+    "height": 2245
   },
   {
     "year": 1998,
@@ -68,7 +76,9 @@
     ],
     "images": [
       "1998__barcos en dique seco__nautico__aplast__rio.jpg"
-    ]
+    ],
+    "width": 1897,
+    "height": 1299
   },
   {
     "year": 1996,
@@ -84,7 +94,9 @@
     "images": [
       "1996__Cubismo Moscovita_Calles de Moscú__delineado__paisaje-urbano__iglesia.jpg",
       "1996__Cubismo Moscovita_Calles de Moscú__back.jpg"
-    ]
+    ],
+    "width": 1502,
+    "height": 1802
   },
   {
     "year": 1996,
@@ -102,7 +114,9 @@
     ],
     "images": [
       "1996__las estaciones - otoño__variante_2__Estación de Otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
-    ]
+    ],
+    "width": 1664,
+    "height": 1657
   },
   {
     "year": 1995,
@@ -116,7 +130,9 @@
     ],
     "images": [
       "1995__puerto_17-p__rio__puerto__aplast.jpg"
-    ]
+    ],
+    "width": 1711,
+    "height": 1172
   },
   {
     "year": 1994,
@@ -133,7 +149,9 @@
     ],
     "images": [
       "1994__parroquia santa maria de la Lucila__parroquia__iglesia__religioso__lugares__martinez__aplast.jpg"
-    ]
+    ],
+    "width": 1363,
+    "height": 1099
   },
   {
     "year": 1992,
@@ -150,7 +168,9 @@
     ],
     "images": [
       "1992__las estaciones - invierno__Estación de invierno__paisaje__serie__invierno__estaciones__aplast.jpg"
-    ]
+    ],
+    "width": 1788,
+    "height": 1252
   },
   {
     "year": 1992,
@@ -167,7 +187,9 @@
     ],
     "images": [
       "1992__las estaciones - otoño__Estación de otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
-    ]
+    ],
+    "width": 1669,
+    "height": 1122
   },
   {
     "year": 1989,
@@ -183,7 +205,9 @@
     "images": [
       "1989__Cruz__Número 128__religioso__delineado.jpg",
       "1989__Cruz__Número 138__back.jpg"
-    ]
+    ],
+    "width": 1635,
+    "height": 2106
   },
   {
     "year": 1987,
@@ -197,7 +221,9 @@
     ],
     "images": [
       "1987__bol de naranjas__bodegon__interior__aplast.jpg"
-    ]
+    ],
+    "width": 1440,
+    "height": 2102
   },
   {
     "year": 1986,
@@ -212,8 +238,36 @@
       "barcos"
     ],
     "images": [
-      "1986__puerto_3_tovau__aplast__nautico__puerto__rio__barcos.jpg"
-    ]
+      "1986__puerto_3_tovau__aplast__nautico__puerto__rio__barcos.jpg",
+      "1986__puerto_3_tovau__aplast__nautico__puerto__rio__barcos__detalle__firma.jpg"
+    ],
+    "width": 1848,
+    "height": 2217
+  },
+  {
+    "year": 1985,
+    "id": "1985__Aldea costera",
+    "title": "Aldea costera",
+    "notes": "P.A 7-24",
+    "keywords": [
+      "serigrafia",
+      "vista-aerea",
+      "paisaje-urbano",
+      "puerto",
+      "nautico",
+      "oleo",
+      "back",
+      "firma",
+      "notas"
+    ],
+    "images": [
+      "1985__Aldea costera__oleo__vista-aerea__paisaje-urbano__puerto__nautico.jpg",
+      "1985__Aldea costera__P.A 7-24__serigrafia__vista-aerea__paisaje-urbano__puerto__nautico.jpg",
+      "1985__Aldea costera__oleo__vista-aerea__paisaje-urbano__puerto__nautico__back.jpg",
+      "1985__Aldea costera__oleo__vista-aerea__paisaje-urbano__puerto__nautico__firma.jpg"
+    ],
+    "width": 2444,
+    "height": 2003
   },
   {
     "year": 1985,
@@ -229,7 +283,9 @@
     "images": [
       "1985__Dársena__puerto__aplast__nautico.jpg",
       "1985__Dársena__back.jpg"
-    ]
+    ],
+    "width": 1298,
+    "height": 1550
   },
   {
     "year": 1985,
@@ -238,11 +294,14 @@
     "notes": "<p><strong>Mariskonea</strong> fue un restaurante emblemático de Punta del Este, fundado en 1944 por Ascención Iturria en la Playa Brava, en la esquina de <strong>calles 26 y 21</strong>, frente a la Isla de Lobos. Reconocido por su propuesta pionera en frutos de mar y por albergar el único vivero de mariscos del país, funcionó durante décadas como un punto de referencia gastronómico y social del balneario. Tras el cierre del local original, el restaurante tuvo un breve resurgimiento en <strong>calle 21 y Gorlero</strong>, hasta su <strong>cierre definitivo en 2003</strong>. <strong>El edificio histórico de la Playa Brava fue demolido en junio de 2015 y hoy ya no existe.</strong></p><p><strong>Fuentes:</strong></p><ul><li><a href=\"https://www.maldonado.gub.uy/sites/default/files/2024-03/Mariskonea.pdf\" target=\"_blank\" rel=\"noopener\">Intendencia de Maldonado – <em>Mariskonea</em> (PDF)</a></li><li><a href=\"https://www.elobservador.com.uy/nota/revive-el-tradicional-restaurante-mariskonea-2012122113100\" target=\"_blank\" rel=\"noopener\">El Observador – &quot;Revive el tradicional restaurante Mariskonea&quot;</a></li><li><a href=\"https://bhl.org.uy/index.php/Mariskonea\" target=\"_blank\" rel=\"noopener\">Banco de Historias Locales (BHL) – Mariskonea</a></li></ul>",
     "keywords": [
       "punta_del_este",
-      "lugares"
+      "lugares",
+      "notas"
     ],
     "images": [
       "1985__taberna y vivero - mariskonea__punta_del_este__lugares.jpg"
-    ]
+    ],
+    "width": 2545,
+    "height": 1743
   },
   {
     "year": 1983,
@@ -255,7 +314,9 @@
     ],
     "images": [
       "1983__pueblo con escaleras__aplast__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1730,
+    "height": 1179
   },
   {
     "year": 1983,
@@ -268,21 +329,9 @@
     ],
     "images": [
       "1983__pueblo sobre pilotes__aplast__paisaje-urbano.jpg"
-    ]
-  },
-  {
-    "year": 1983,
-    "id": "1983__Reflejos en Dinan__serigrafia_2",
-    "title": "Reflejos en Dinan",
-    "notes": "",
-    "keywords": [
-      "serigrafia",
-      "aplat",
-      "rio"
     ],
-    "images": [
-      "1983__Reflejos en Dinan__serigrafia_2__aplast__rio.jpg"
-    ]
+    "width": 1674,
+    "height": 1369
   },
   {
     "year": 1983,
@@ -296,9 +345,49 @@
     ],
     "images": [
       "1983__Reflejos en Dinan__serigrafia__aplast__rio.jpg",
+      "1983__Reflejos en Dinan__serigrafia.jpg",
       "1983__Reflejos en Dinan__serigrafia__back_detalle.jpg",
       "1983__Reflejos en Dinan__serigrafia__back.jpg"
-    ]
+    ],
+    "width": 1626,
+    "height": 2094
+  },
+  {
+    "year": 1983,
+    "id": "1983__Reflejos en Dinan__serigrafia_2",
+    "title": "Reflejos en Dinan",
+    "notes": "",
+    "keywords": [
+      "serigrafia",
+      "aplat",
+      "rio"
+    ],
+    "images": [
+      "1983__Reflejos en Dinan__serigrafia_2__aplast__rio.jpg",
+      "1983__Reflejos en Dinan__serigrafia_2.jpg"
+    ],
+    "width": 2376,
+    "height": 2899
+  },
+  {
+    "year": 1982,
+    "id": "1982__calle belgrano al 674",
+    "alias": "calle belgrano al 674",
+    "notes": "Calle Belgrano al 600, San Isidro",
+    "keywords": [
+      "detalle",
+      "notas"
+    ],
+    "images": [
+      "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro.jpg",
+      "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro__detalle_1.jpg",
+      "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro__detalle_2.jpg",
+      "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro__detalle_3.jpg",
+      "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro__detalle_4.jpg",
+      "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro__detalle.jpg"
+    ],
+    "width": 1891,
+    "height": 1891
   },
   {
     "year": 1982,
@@ -313,7 +402,23 @@
     ],
     "images": [
       "1982__Piazza Viareggio - St. Giorgio__delineado__monocromatico__plaza__dibujo.jpg"
-    ]
+    ],
+    "width": 1649,
+    "height": 1352
+  },
+  {
+    "year": 1981,
+    "id": "1981__Granaj en Bretaña",
+    "title": "Granaj en Bretaña",
+    "notes": "",
+    "keywords": [
+      "back_1"
+    ],
+    "images": [
+      "1981__Granaj_en_Bretaña__back_1.jpg"
+    ],
+    "width": 768,
+    "height": 576
   },
   {
     "year": 1981,
@@ -326,9 +431,10 @@
     ],
     "images": [
       "1981__Granja_en_Bretaña__aplast__paisaje-rural.jpg",
-      "1981__Granja_en_Bretaña__back_1.jpg",
       "1981__Granja_en_Bretaña__back_2.jpg"
-    ]
+    ],
+    "width": 1300,
+    "height": 941
   },
   {
     "year": 1981,
@@ -342,22 +448,10 @@
       "paisaje-rural"
     ],
     "images": [
-      "1981__Granja_en_Bretaña__variante_2__invertido__aplast__paisaje-rural.jpg"
-    ]
-  },
-  {
-    "year": 1981,
-    "id": "1981__Granja en Bretaña__variante",
-    "title": "Granja en Bretaña",
-    "notes": "",
-    "keywords": [
-      "variante",
-      "aplat",
-      "paisaje-rural"
+      "1981__Granja_en_Bretaña__variante_2__invertido__aplast__paisaje-rural.jpg.jpg"
     ],
-    "images": [
-      "1981__Granja_en_Bretaña__variante__aplast__paisaje-rural.jpg"
-    ]
+    "width": 2148,
+    "height": 1761
   },
   {
     "year": 1981,
@@ -370,7 +464,9 @@
     ],
     "images": [
       "1981__velero y cabaña__aplast__rio.jpg"
-    ]
+    ],
+    "width": 2461,
+    "height": 1686
   },
   {
     "year": 1981,
@@ -384,7 +480,28 @@
     ],
     "images": [
       "1981__velero y cabaña__serigrafia__aplast__rio.jpg"
-    ]
+    ],
+    "width": 2527,
+    "height": 1731
+  },
+  {
+    "year": 1980,
+    "id": "1980__chivas R",
+    "title": "chivas R",
+    "notes": "",
+    "keywords": [
+      "bodegon",
+      "delineado",
+      "interior",
+      "detalle",
+      "firma"
+    ],
+    "images": [
+      "1980__chivas R__bodegon__delineado__interior.jpg",
+      "1980__chivas R__bodegon__delineado__interior__detalle__firma.jpg"
+    ],
+    "width": 2088,
+    "height": 1740
   },
   {
     "year": 1980,
@@ -400,7 +517,9 @@
     "images": [
       "1980__Cochera y caballeriza de la vieja quinta de la torre.jpg",
       "1980__Cochera y caballeriza de la vieja quinta de la torre__detalle.jpg"
-    ]
+    ],
+    "width": 2502,
+    "height": 2051
   },
   {
     "year": 1980,
@@ -415,7 +534,9 @@
     ],
     "images": [
       "1980__cosechadora y carro 17__paisaje-rural__tractor__aplast.jpg"
-    ]
+    ],
+    "width": 2955,
+    "height": 2109
   },
   {
     "year": 1980,
@@ -427,7 +548,9 @@
     ],
     "images": [
       "1980__dique 39__delineado__puerto__rio.jpg"
-    ]
+    ],
+    "width": 1649,
+    "height": 1352
   },
   {
     "year": 1980,
@@ -439,7 +562,9 @@
     ],
     "images": [
       "1980__el casco__aplats.jpg"
-    ]
+    ],
+    "width": 1911,
+    "height": 1274
   },
   {
     "year": 1980,
@@ -450,8 +575,11 @@
       "aplat"
     ],
     "images": [
-      "1980__granja en la loma__aplats__paisaje-rural.jpg"
-    ]
+      "1980__granja en la loma__aplats__paisaje-rural__2.jpg",
+      "1980__granja en la loma__aplats__paisaje-rural__2__firma.jpg"
+    ],
+    "width": 2986,
+    "height": 2045
   },
   {
     "year": 1980,
@@ -465,7 +593,9 @@
     "images": [
       "1980__La Croisette__playa__aplast.jpg",
       "1980__La Croisette__back.jpg"
-    ]
+    ],
+    "width": 1498,
+    "height": 1804
   },
   {
     "year": 1980,
@@ -477,19 +607,9 @@
     ],
     "images": [
       "1980__La Hora del Té__back.jpg"
-    ]
-  },
-  {
-    "year": 1980,
-    "id": "1980__plato y botellon rojo",
-    "alias": "plato y botellon rojo",
-    "notes": "",
-    "keywords": [
-      "delineado"
     ],
-    "images": [
-      "1980__plato y botellon rojo__bodegón__delineado__interior.jpg"
-    ]
+    "width": 3026,
+    "height": 2279
   },
   {
     "year": 1980,
@@ -501,7 +621,9 @@
     ],
     "images": [
       "1980__pueblo y sembradio__paisaje-rural__aplast.jpg"
-    ]
+    ],
+    "width": 1999,
+    "height": 1333
   },
   {
     "year": 1980,
@@ -517,7 +639,9 @@
       "1980__Reflejos en Dinan__rio__aplast.jpg",
       "1980__Reflejos en Dinan__back.jpg",
       "1980__Reflejos en Dinan__firma.jpg"
-    ]
+    ],
+    "width": 2034,
+    "height": 2969
   },
   {
     "year": 1980,
@@ -530,37 +654,44 @@
     ],
     "images": [
       "1980__reloj verde y violín__aplast__interior.jpg"
-    ]
+    ],
+    "width": 1698,
+    "height": 1403
+  },
+  {
+    "year": 1980,
+    "id": "1980__Tiempo de Cosecha__variante_3",
+    "title": "Tiempo de Cosecha",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "firma"
+    ],
+    "images": [
+      "1980__Tiempo de Cosecha__variante_3.jpg",
+      "1980__Tiempo de Cosecha__variante_3__firma.jpg"
+    ],
+    "width": 1873,
+    "height": 1535
   },
   {
     "year": 1980,
     "id": "1980__tiempo de cosecha",
     "alias": "tiempo de cosecha",
-    "notes": "",
+    "notes": "variante 2; 129 de 150",
     "keywords": [
       "back",
-      "aplat"
-    ],
-    "images": [
-      "1980__Tiempo de cosecha__aplast__paisaje-rural.jpg",
-      "1980__Tiempo de cosecha__back.jpg"
-    ],
-    "title": "Tiempo de cosecha"
-  },
-  {
-    "year": 1980,
-    "id": "1980__tiempo de cosecha__serigrafia",
-    "alias": "tiempo de cosecha",
-    "notes": "129 de 150",
-    "keywords": [
-      "serigrafia",
       "aplat",
       "notas"
     ],
     "images": [
-      "1980__Tiempo de cosecha__serigrafia__129 de 150__paisaje-rural__aplast.jpg"
+      "1980__Tiempo de cosecha__aplast__paisaje-rural.jpg",
+      "1980__Tiempo de cosecha__variante 2__129 de 150__serigrafia__paisaje-rural__aplast.jpg",
+      "1980__Tiempo de cosecha__back.jpg"
     ],
-    "title": "Tiempo de cosecha"
+    "title": "Tiempo de cosecha",
+    "width": 2523,
+    "height": 1803
   },
   {
     "year": 1980,
@@ -576,21 +707,9 @@
       "1980__Tiempo de cosecha__variante_2__paisaje-rural__aplast.jpg",
       "1980__Tiempo de cosecha__variante_2__back.jpg"
     ],
-    "title": "Tiempo de cosecha"
-  },
-  {
-    "year": 1980,
-    "id": "1980__tiempo de cosecha__variante",
-    "alias": "tiempo de cosecha",
-    "notes": "",
-    "keywords": [
-      "variante",
-      "aplat"
-    ],
-    "images": [
-      "1980__Tiempo de cosecha__variante__aplast__paisaje-rural.jpg"
-    ],
-    "title": "Tiempo de cosecha"
+    "title": "Tiempo de cosecha",
+    "width": 1273,
+    "height": 854
   },
   {
     "year": 1979,
@@ -602,7 +721,9 @@
     ],
     "images": [
       "1979__fiat_voluntas_dei__delineado__religioso.jpg"
-    ]
+    ],
+    "width": 1425,
+    "height": 1821
   },
   {
     "year": 1979,
@@ -615,7 +736,9 @@
     ],
     "images": [
       "1979__welcome lucas__delineado__paisaje-rural.jpg"
-    ]
+    ],
+    "width": 2013,
+    "height": 2434
   },
   {
     "year": 1978,
@@ -627,7 +750,9 @@
     ],
     "images": [
       "1978__pueblo del arco y el aljibe_2__delineado__arqutectura.jpg"
-    ]
+    ],
+    "width": 1167,
+    "height": 1704
   },
   {
     "year": 1977,
@@ -641,7 +766,9 @@
     ],
     "images": [
       "1977__El Molino Rojo__19-50__serigrafia__interior__bodegón__aplast__molino.jpg.jpg"
-    ]
+    ],
+    "width": 2333,
+    "height": 3500
   },
   {
     "year": 1977,
@@ -655,7 +782,9 @@
     "images": [
       "1977__La Piazza d'argento__plaza__paisaje-urbano__aplast.jpg",
       "1977__La Piazza d'argento__back.jpg"
-    ]
+    ],
+    "width": 1380,
+    "height": 1683
   },
   {
     "year": 1977,
@@ -672,21 +801,12 @@
     ],
     "images": [
       "1977__Le_Moulin_Rouge__interior__bodegón__aplast__molino.jpg",
+      "1977__Le_Moulin_Rouge__invertido_lineas.jpg",
+      "1977__Le_Moulin_Rouge.jpg",
       "1977__Le_Moulin_Rouge__back.jpg"
-    ]
-  },
-  {
-    "year": 1977,
-    "id": "1977__Le Moulin Rouge__serigrafia_2",
-    "title": "Le Moulin Rouge",
-    "notes": "",
-    "keywords": [
-      "serigrafia",
-      "aplat"
     ],
-    "images": [
-      "1977__Le_Moulin_Rouge__serigrafia_2__interior__bodegón__aplast__molino.jpg"
-    ]
+    "width": 1402,
+    "height": 2123
   },
   {
     "year": 1977,
@@ -700,8 +820,26 @@
       "notas"
     ],
     "images": [
-      "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__interior__bodegón__delineado__molino.jpg"
-    ]
+      "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__interior__bodegón__delineado__molino.jpg",
+      "1977__Le_Moulin_Rouge__serigrafia.jpg"
+    ],
+    "width": 2107,
+    "height": 3076
+  },
+  {
+    "year": 1977,
+    "id": "1977__Le Moulin Rouge__serigrafia_2",
+    "title": "Le Moulin Rouge",
+    "notes": "",
+    "keywords": [
+      "serigrafia",
+      "aplat"
+    ],
+    "images": [
+      "1977__Le_Moulin_Rouge__serigrafia_2__interior__bodegón__aplast__molino.jpg"
+    ],
+    "width": 1960,
+    "height": 2862
   },
   {
     "year": 1977,
@@ -719,7 +857,9 @@
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante_2__invertido__delineado__monocromatico__rojo__molino__interior__bodegón__delineado.jpg"
-    ]
+    ],
+    "width": 1686,
+    "height": 2462
   },
   {
     "year": 1977,
@@ -733,7 +873,9 @@
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante__delineado__interior__bodegón__molino.jpg"
-    ]
+    ],
+    "width": 2008,
+    "height": 3012
   },
   {
     "year": 1977,
@@ -745,7 +887,9 @@
     ],
     "images": [
       "1977__Luz De Gas__delineado__figura.jpg"
-    ]
+    ],
+    "width": 1852,
+    "height": 2257
   },
   {
     "year": 1977,
@@ -757,7 +901,9 @@
     ],
     "images": [
       "1977__pueblo costero__paisaje-urbano__delineado__nautico.jpg"
-    ]
+    ],
+    "width": 2512,
+    "height": 1721
   },
   {
     "year": 1977,
@@ -770,7 +916,9 @@
     ],
     "images": [
       "1977__Senuf Retse Akire_Atketihcra y Arejaiv__religioso__delineado.jpg"
-    ]
+    ],
+    "width": 1418,
+    "height": 2070
   },
   {
     "year": 1976,
@@ -784,7 +932,9 @@
     "images": [
       "1976__Cuadro-Partido__delineado__deportes.jpg",
       "1976__Cuadro-Partido__back.jpg"
-    ]
+    ],
+    "width": 1800,
+    "height": 2196
   },
   {
     "year": 1976,
@@ -797,7 +947,9 @@
     "images": [
       "1976__Sprét de Corp__delineado__interior__figura.jpg",
       "1976__Sprét de Corp__back.jpg"
-    ]
+    ],
+    "width": 1587,
+    "height": 1904
   },
   {
     "year": 1975,
@@ -809,7 +961,9 @@
     ],
     "images": [
       "1975__Nuremberga 1493__paisaje-urbano__monocromatico__vista-aerea.jpg"
-    ]
+    ],
+    "width": 2370,
+    "height": 1907
   },
   {
     "year": 1975,
@@ -822,7 +976,9 @@
     ],
     "images": [
       "1975__Nuremberga 1493__variante__paisaje-urbano__monocromatico__vista-aerea.jpg"
-    ]
+    ],
+    "width": 2178,
+    "height": 1785
   },
   {
     "year": 1975,
@@ -834,7 +990,9 @@
     ],
     "images": [
       "1975__pabellon al mar con piso de baldosas y bandera roja__aplast__playa__nautico__abstracto.jpg"
-    ]
+    ],
+    "width": 2491,
+    "height": 2042
   },
   {
     "year": 1975,
@@ -846,7 +1004,9 @@
     ],
     "images": [
       "1975__pasaje con poste y ventanas__callejón__paisaje-urbano__delineado.jpg"
-    ]
+    ],
+    "width": 1744,
+    "height": 2128
   },
   {
     "year": 1974,
@@ -859,7 +1019,9 @@
     ],
     "images": [
       "1974__bidassoa__autorretrato__figura.jpg"
-    ]
+    ],
+    "width": 1394,
+    "height": 1602
   },
   {
     "year": 1974,
@@ -872,7 +1034,9 @@
     ],
     "images": [
       "1974__callejón__delineado__arqutectura__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1671,
+    "height": 2005
   },
   {
     "year": 1974,
@@ -884,7 +1048,9 @@
     ],
     "images": [
       "1974__monasterio__arquitectura__delineado.jpg"
-    ]
+    ],
+    "width": 1302,
+    "height": 1572
   },
   {
     "year": 1974,
@@ -896,7 +1062,9 @@
     ],
     "images": [
       "1974__vino mandolina y reloj__bodegón__delineado__interior.jpg"
-    ]
+    ],
+    "width": 1182,
+    "height": 1725
   },
   {
     "year": 1973,
@@ -908,7 +1076,9 @@
     ],
     "images": [
       "1973__techumbres__paisaje-urbano__delineado.jpg"
-    ]
+    ],
+    "width": 1448,
+    "height": 1781
   },
   {
     "year": 1973,
@@ -922,7 +1092,9 @@
     "images": [
       "1973__Techumbres y el Arbolito__paisaje-urbano__delineado.jpg",
       "1973__Techumbres y el arbolito__back.jpg"
-    ]
+    ],
+    "width": 1760,
+    "height": 2147
   },
   {
     "year": 1972,
@@ -934,7 +1106,9 @@
     ],
     "images": [
       "1972__bateas de pintura__figura__vista-aerea.jpg"
-    ]
+    ],
+    "width": 1004,
+    "height": 1205
   },
   {
     "year": 1972,
@@ -946,7 +1120,9 @@
     ],
     "images": [
       "1972__el jugador__figura__plaza.jpg"
-    ]
+    ],
+    "width": 1979,
+    "height": 1355
   },
   {
     "year": 1972,
@@ -958,7 +1134,9 @@
     ],
     "images": [
       "1972__el partido de futbol__figura__deportes.jpg"
-    ]
+    ],
+    "width": 1722,
+    "height": 1179
   },
   {
     "year": 1972,
@@ -971,7 +1149,9 @@
     ],
     "images": [
       "1972__la estrella de belén__religioso__delineado.jpg"
-    ]
+    ],
+    "width": 2315,
+    "height": 2824
   },
   {
     "year": 1972,
@@ -983,7 +1163,9 @@
     ],
     "images": [
       "1972__la huida a egipto__religioso__delineado.jpg"
-    ]
+    ],
+    "width": 2315,
+    "height": 2824
   },
   {
     "year": 1972,
@@ -995,7 +1177,9 @@
     ],
     "images": [
       "1972__la puerta__abstracto__delineado.jpg"
-    ]
+    ],
+    "width": 1356,
+    "height": 1622
   },
   {
     "year": 1972,
@@ -1007,7 +1191,9 @@
     ],
     "images": [
       "1972__Los 7__figura__musical__delineado.jpg"
-    ]
+    ],
+    "width": 2140,
+    "height": 1466
   },
   {
     "year": 1971,
@@ -1020,7 +1206,9 @@
     ],
     "images": [
       "1971__adoración de los reyes magos__religioso__figura.jpg"
-    ]
+    ],
+    "width": 1791,
+    "height": 1227
   },
   {
     "year": 1971,
@@ -1032,7 +1220,9 @@
     ],
     "images": [
       "1971__el abrazo__figuras__interior.jpg"
-    ]
+    ],
+    "width": 1408,
+    "height": 2056
   },
   {
     "year": 1971,
@@ -1045,7 +1235,9 @@
     ],
     "images": [
       "1971__el_descenso_de_la_cruz__figuras__religioso.jpg"
-    ]
+    ],
+    "width": 1396,
+    "height": 1711
   },
   {
     "year": 1971,
@@ -1057,7 +1249,9 @@
     ],
     "images": [
       "1971__escritorio.jpg"
-    ]
+    ],
+    "width": 1275,
+    "height": 1530
   },
   {
     "year": 1971,
@@ -1070,7 +1264,9 @@
     ],
     "images": [
       "1971__fiordo__delineado__nautico__delineado__paisaje-natural__rio.jpg"
-    ]
+    ],
+    "width": 1130,
+    "height": 1432
   },
   {
     "year": 1971,
@@ -1086,7 +1282,9 @@
     ],
     "images": [
       "1971__fiordo__variante__aplast__nautico__paisaje-natural__rio.jpg"
-    ]
+    ],
+    "width": 1394,
+    "height": 1696
   },
   {
     "year": 1971,
@@ -1098,7 +1296,9 @@
     ],
     "images": [
       "1971__mesa de dibujo__bodegon__interior.jpg"
-    ]
+    ],
+    "width": 1487,
+    "height": 2172
   },
   {
     "year": 1971,
@@ -1111,7 +1311,9 @@
     ],
     "images": [
       "1971__taller imaginario del tren__Pintura sobre lienzo__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1505,
+    "height": 1244
   },
   {
     "year": 1970,
@@ -1123,7 +1325,9 @@
     ],
     "images": [
       "1970__arreglo de flores__bodegon.jpg"
-    ]
+    ],
+    "width": 1658,
+    "height": 2023
   },
   {
     "year": 1970,
@@ -1135,7 +1339,9 @@
     ],
     "images": [
       "1970__arreglo de flores cubistas__bodegon.jpg"
-    ]
+    ],
+    "width": 1434,
+    "height": 2093
   },
   {
     "year": 1970,
@@ -1147,7 +1353,9 @@
     ],
     "images": [
       "1970__botellones y una flor__bodegon.jpg"
-    ]
+    ],
+    "width": 1369,
+    "height": 1643
   },
   {
     "year": 1970,
@@ -1161,7 +1369,9 @@
     "images": [
       "1970__Caserio__239__paisaje-urbano__vista-aerea.jpg",
       "1970__Caserio__239__back.jpg"
-    ]
+    ],
+    "width": 1950,
+    "height": 1336
   },
   {
     "year": 1970,
@@ -1173,7 +1383,9 @@
     ],
     "images": [
       "1970__el ayuntamiento__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 2411,
+    "height": 1651
   },
   {
     "year": 1970,
@@ -1185,7 +1397,9 @@
     ],
     "images": [
       "1970__farol en mantel rojo y la ventana.jpg"
-    ]
+    ],
+    "width": 1828,
+    "height": 2669
   },
   {
     "year": 1970,
@@ -1198,7 +1412,9 @@
     ],
     "images": [
       "1970__La Carcel del Poeta__abstracto__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1112,
+    "height": 1334
   },
   {
     "year": 1970,
@@ -1212,7 +1428,9 @@
     ],
     "images": [
       "1970__La Carcel del Poeta__variante__abstracto__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1419,
+    "height": 1731
   },
   {
     "year": 1970,
@@ -1224,7 +1442,9 @@
     ],
     "images": [
       "1970__la garita del 17_paisaje-urbano__abstracto.jpg"
-    ]
+    ],
+    "width": 1336,
+    "height": 1625
   },
   {
     "year": 1970,
@@ -1236,7 +1456,9 @@
     ],
     "images": [
       "1970__mujer con guitarra__figura__musical__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1446,
+    "height": 2111
   },
   {
     "year": 1970,
@@ -1249,7 +1471,9 @@
     ],
     "images": [
       "1970__travieso en dique seco__nautico__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1688,
+    "height": 1156
   },
   {
     "year": 1969,
@@ -1262,7 +1486,9 @@
     ],
     "images": [
       "1969__almacen crash__delineado__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 2589,
+    "height": 1773
   },
   {
     "year": 1969,
@@ -1277,7 +1503,9 @@
     ],
     "images": [
       "1969__gallo_ingles__animales__bodegon__rural__figura.jpg"
-    ]
+    ],
+    "width": 1680,
+    "height": 2056
   },
   {
     "year": 1969,
@@ -1290,7 +1518,9 @@
     ],
     "images": [
       "1969__huevo frito y canario__bodegon__interior.jpg"
-    ]
+    ],
+    "width": 1187,
+    "height": 1733
   },
   {
     "year": 1969,
@@ -1304,7 +1534,9 @@
     ],
     "images": [
       "1969__iglesia y el árbol__religioso__iglesia__arquitectura.jpg"
-    ]
+    ],
+    "width": 2597,
+    "height": 1779
   },
   {
     "year": 1969,
@@ -1317,7 +1549,9 @@
     ],
     "images": [
       "1969__la gran ciudad__vista-aerea__arqutectura.jpg"
-    ]
+    ],
+    "width": 2455,
+    "height": 2045
   },
   {
     "year": 1969,
@@ -1330,7 +1564,9 @@
     ],
     "images": [
       "1969__la puerta verde__bodegon__interior.jpg"
-    ]
+    ],
+    "width": 2149,
+    "height": 1761
   },
   {
     "year": 1969,
@@ -1344,7 +1580,9 @@
     "images": [
       "1969__pabellon A__abstracto__arquitectura.jpg"
     ],
-    "title": "pabellon A"
+    "title": "pabellon A",
+    "width": 1482,
+    "height": 1779
   },
   {
     "year": 1969,
@@ -1354,7 +1592,9 @@
     "keywords": [],
     "images": [
       "1969__Pieza de los Chicos.jpg"
-    ]
+    ],
+    "width": 1495,
+    "height": 1824
   },
   {
     "year": 1969,
@@ -1367,7 +1607,9 @@
     ],
     "images": [
       "1969__sol y mandolina__bodegon__musical.jpg"
-    ]
+    ],
+    "width": 1525,
+    "height": 1861
   },
   {
     "year": 1969,
@@ -1379,7 +1621,9 @@
     ],
     "images": [
       "1969__soldado__figura.jpg"
-    ]
+    ],
+    "width": 1111,
+    "height": 1356
   },
   {
     "year": 1969,
@@ -1391,7 +1635,9 @@
     ],
     "images": [
       "1969__sonrisa entre formas__abstracto.jpg"
-    ]
+    ],
+    "width": 1772,
+    "height": 2126
   },
   {
     "year": 1969,
@@ -1404,7 +1650,9 @@
     ],
     "images": [
       "1969__tractor_de_vapor__variante__monocromatico__tractor__vehiculos__rural.jpg"
-    ]
+    ],
+    "width": 2423,
+    "height": 1992
   },
   {
     "year": 1969,
@@ -1417,7 +1665,9 @@
     ],
     "images": [
       "1969__tractor_de_vapor__vehiculos__tractor__rural.jpg"
-    ]
+    ],
+    "width": 2776,
+    "height": 1967
   },
   {
     "year": 1968,
@@ -1432,7 +1682,9 @@
     ],
     "images": [
       "1968__astillero__delineado__nautico__puerto__barcos.jpg"
-    ]
+    ],
+    "width": 2259,
+    "height": 1857
   },
   {
     "year": 1968,
@@ -1444,7 +1696,9 @@
     ],
     "images": [
       "1968__S.E. en la Boca__variante__delineado__lugares__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1048,
+    "height": 865
   },
   {
     "year": 1968,
@@ -1457,7 +1711,9 @@
     ],
     "images": [
       "1968__sol y reflejo__prueba__Este cuadro representa una pueba de estilos__abstracto.jpg"
-    ]
+    ],
+    "width": 1245,
+    "height": 1817
   },
   {
     "year": 1968,
@@ -1470,7 +1726,9 @@
     ],
     "images": [
       "1968__torre y puente blanco__paisaje-urbano__aplast.jpg"
-    ]
+    ],
+    "width": 1778,
+    "height": 2198
   },
   {
     "year": 1968,
@@ -1483,7 +1741,9 @@
     ],
     "images": [
       "1968__torre y puente verde__paisaje-urbano__delineado.jpg"
-    ]
+    ],
+    "width": 1680,
+    "height": 1986
   },
   {
     "year": 1967,
@@ -1497,7 +1757,9 @@
     ],
     "images": [
       "1967__buque y grua roja__nautico__puerto__barcos.jpg"
-    ]
+    ],
+    "width": 1766,
+    "height": 2125
   },
   {
     "year": 1967,
@@ -1510,7 +1772,9 @@
     ],
     "images": [
       "1967__en la habitación de Vermeer__figura__dibujo.jpg"
-    ]
+    ],
+    "width": 1246,
+    "height": 1495
   },
   {
     "year": 1967,
@@ -1524,7 +1788,9 @@
     ],
     "images": [
       "1967__Notre Dame de Paris__dibujo__acuarela__lugares.jpg"
-    ]
+    ],
+    "width": 1734,
+    "height": 2115
   },
   {
     "year": 1967,
@@ -1539,7 +1805,9 @@
     ],
     "images": [
       "1967__S.E. en la Boca__dibujo__acuarela__delineado__lugares__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 2302,
+    "height": 1918
   },
   {
     "year": 1964,
@@ -1553,7 +1821,9 @@
     ],
     "images": [
       "1964__gallina__animales__bodegon__rural.jpg"
-    ]
+    ],
+    "width": 1216,
+    "height": 1483
   },
   {
     "year": 1960,
@@ -1567,7 +1837,9 @@
     ],
     "images": [
       "1960__buque travieso__puerto__barcos__nautico.jpg"
-    ]
+    ],
+    "width": 1619,
+    "height": 1345
   },
   {
     "year": 1959,
@@ -1581,7 +1853,9 @@
     "images": [
       "1959__611_dep.s_avd._industrias_vaser_argentina_proy._c_17-61_1959__vehiculos__automobil__ika.jpg"
     ],
-    "alias": "611 dep.s avd. industrias vaser argentina proy. c 17-61 1959"
+    "alias": "611 dep.s avd. industrias vaser argentina proy. c 17-61 1959",
+    "width": 1627,
+    "height": 965
   },
   {
     "year": 1959,
@@ -1594,7 +1868,9 @@
     ],
     "images": [
       "1959__671-Styling Depto_I.K.A._R.P.C. 285-17_6-1959__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 3269,
+    "height": 1974
   },
   {
     "year": 1958,
@@ -1607,7 +1883,9 @@
     ],
     "images": [
       "1958__671-Styling Dep. Industrias Kaiser Argentina_Proyec_renault G_Convert_4-1958__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 3269,
+    "height": 1974
   },
   {
     "year": 1958,
@@ -1620,7 +1898,9 @@
     ],
     "images": [
       "1958__671-Styling Depto_I.K.A._P. Renault Con. 4-1958__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 3269,
+    "height": 1974
   },
   {
     "year": 1957,
@@ -1633,7 +1913,9 @@
     ],
     "images": [
       "1957__Kaiser 57__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 3442,
+    "height": 2025
   },
   {
     "year": 1948,
@@ -1646,7 +1928,9 @@
     ],
     "images": [
       "1948__Casa de Charles Dickens en Londres__paisaje-urbano__lugares.jpg"
-    ]
+    ],
+    "width": 1377,
+    "height": 2025
   },
   {
     "year": 1948,
@@ -1660,7 +1944,9 @@
     ],
     "images": [
       "1948__la costurera__dibujo__monocromatico__figura.jpg"
-    ]
+    ],
+    "width": 1824,
+    "height": 2663
   },
   {
     "year": 1948,
@@ -1674,7 +1960,9 @@
     ],
     "images": [
       "1948__la mujer del parasol__dibujo__monocromatico__figura.jpg"
-    ]
+    ],
+    "width": 1454,
+    "height": 2136
   },
   {
     "year": 1948,
@@ -1687,7 +1975,9 @@
     ],
     "images": [
       "1948__Plaza de los Vosgos, París - 1948__dibujo__paisaje-urbano.jpg"
-    ]
+    ],
+    "width": 1079,
+    "height": 1575
   },
   {
     "year": 1945,
@@ -1700,7 +1990,9 @@
     ],
     "images": [
       "1945__Allison__vehiculos__avion.jpg"
-    ]
+    ],
+    "width": 1693,
+    "height": 1160
   },
   {
     "year": 1944,
@@ -1713,7 +2005,9 @@
     ],
     "images": [
       "1944__Airalon__vehiculos__aviones__dibujo.jpg"
-    ]
+    ],
+    "width": 2907,
+    "height": 1991
   },
   {
     "year": 1944,
@@ -1726,7 +2020,9 @@
     ],
     "images": [
       "1944__El La Sotta Arko__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 2991,
+    "height": 2008
   },
   {
     "year": 1944,
@@ -1739,7 +2035,9 @@
     ],
     "images": [
       "1944__El La Sotta Backarat__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 1396,
+    "height": 956
   },
   {
     "year": 1944,
@@ -1752,7 +2050,9 @@
     ],
     "images": [
       "1944__El La Sotta Coronet__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 1907,
+    "height": 1306
   },
   {
     "year": 1944,
@@ -1765,7 +2065,9 @@
     ],
     "images": [
       "1944__El La Sotta Dux__vehiculos__automobil__ika.jpg"
-    ]
+    ],
+    "width": 3034,
+    "height": 2001
   },
   {
     "year": 1943,
@@ -1779,7 +2081,9 @@
     ],
     "images": [
       "1943__El La Sotta Zur__vehiculos__aviones__dibujo.jpg"
-    ]
+    ],
+    "width": 1095,
+    "height": 1594
   },
   {
     "year": 1942,
@@ -1792,7 +2096,9 @@
     ],
     "images": [
       "1942__Pieza de los Niños__bodegon__interior__dibujo.jpg"
-    ]
+    ],
+    "width": 1518,
+    "height": 2166
   },
   {
     "year": 1941,
@@ -1804,7 +2110,9 @@
     ],
     "images": [
       "1941__chiqui en el puerto__puerto__nautico__barcos__dibujo__acuearela.jpg"
-    ]
+    ],
+    "width": 1340,
+    "height": 918
   },
   {
     "year": 1941,
@@ -1816,7 +2124,9 @@
     ],
     "images": [
       "1941__Place de la Mouleque - Paris__paisaje-urbano__plaza__dibujo.jpg"
-    ]
+    ],
+    "width": 3008,
+    "height": 2005
   },
   {
     "year": 1941,
@@ -1828,6 +2138,897 @@
     ],
     "images": [
       "1941__Victoria 1844-1895__paisaje-urbano__lugares__dibujo__monocromatico.jpg"
-    ]
+    ],
+    "width": 1834,
+    "height": 2678
+  },
+  {
+    "year": -1,
+    "id": "undated__aljibe y hornero",
+    "alias": "aljibe y hornero",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__aljibe y hornero.jpg"
+    ],
+    "width": 2352,
+    "height": 1924
+  },
+  {
+    "year": -1,
+    "id": "undated__arbol en la colina amarilla",
+    "alias": "arbol en la colina amarilla",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__arbol en la colina amarilla.jpg"
+    ],
+    "width": 1103,
+    "height": 906
+  },
+  {
+    "year": -1,
+    "id": "undated__arbolito en el patio",
+    "alias": "arbolito en el patio",
+    "notes": "Regalo a Maite",
+    "keywords": [
+      "oleo",
+      "notas"
+    ],
+    "images": [
+      "undated__arbolito_en_el_patio__Regalo a Maite__oleo.jpg"
+    ],
+    "width": 479,
+    "height": 584
+  },
+  {
+    "year": -1,
+    "id": "undated__bahia",
+    "alias": "bahia",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__bahia.jpg"
+    ],
+    "width": 2577,
+    "height": 2121
+  },
+  {
+    "year": -1,
+    "id": "undated__bar",
+    "alias": "bar",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__bar.jpg"
+    ],
+    "width": 933,
+    "height": 1380
+  },
+  {
+    "year": -1,
+    "id": "undated__bar 2",
+    "alias": "bar 2",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__bar_2.jpg"
+    ],
+    "width": 1357,
+    "height": 1655
+  },
+  {
+    "year": -1,
+    "id": "undated__bar y torre",
+    "alias": "bar y torre",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__bar y torre.jpg"
+    ],
+    "width": 1763,
+    "height": 2151
+  },
+  {
+    "year": -1,
+    "id": "undated__barco anclado en la bahia",
+    "alias": "barco anclado en la bahia",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__barco anclado en la bahia.jpg"
+    ],
+    "width": 2267,
+    "height": 1858
+  },
+  {
+    "year": -1,
+    "id": "undated__barco pesquero en el mar",
+    "alias": "barco pesquero en el mar",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__barco pesquero en el mar.jpg"
+    ],
+    "width": 1709,
+    "height": 1171
+  },
+  {
+    "year": -1,
+    "id": "undated__bodegón con botella y cajas",
+    "alias": "bodegón con botella y cajas",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__bodegón con botella y cajas.jpg"
+    ],
+    "width": 1411,
+    "height": 1407
+  },
+  {
+    "year": -1,
+    "id": "undated__borges",
+    "alias": "borges",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__borges.JPG"
+    ],
+    "width": 1334,
+    "height": 1334
+  },
+  {
+    "year": -1,
+    "id": "undated__botellas",
+    "alias": "botellas",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__botellas.jpg"
+    ],
+    "width": 2433,
+    "height": 2433
+  },
+  {
+    "year": -1,
+    "id": "undated__Calle Gral. Rodriguez, entre Ayolas y Pedro de Mendoza - 1875",
+    "title": "Calle Gral. Rodriguez, entre Ayolas y Pedro de Mendoza - 1875",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__Calle Gral. Rodriguez, entre Ayolas y Pedro de Mendoza - 1875.jpg"
+    ],
+    "width": 1516,
+    "height": 1243
+  },
+  {
+    "year": -1,
+    "id": "undated__catedral",
+    "alias": "catedral",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__catedral.jpg"
+    ],
+    "width": 1170,
+    "height": 1375
+  },
+  {
+    "year": -1,
+    "id": "undated__circo",
+    "alias": "circo",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__circo.jpg"
+    ],
+    "width": 2499,
+    "height": 1712
+  },
+  {
+    "year": -1,
+    "id": "undated__cocina",
+    "alias": "cocina",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__cocina.jpg"
+    ],
+    "width": 1736,
+    "height": 1423
+  },
+  {
+    "year": -1,
+    "id": "undated__cuatro veleros",
+    "alias": "cuatro veleros",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__cuatro veleros.jpg"
+    ],
+    "width": 1591,
+    "height": 1090
+  },
+  {
+    "year": -1,
+    "id": "undated__el baluarte en el peñón",
+    "alias": "el baluarte en el peñón",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__el baluarte en el peñón.jpg"
+    ],
+    "width": 1518,
+    "height": 1244
+  },
+  {
+    "year": -1,
+    "id": "undated__El Buzón de la Casa Blanca",
+    "title": "El Buzón de la Casa Blanca",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__El Buzón de la Casa Blanca.jpg"
+    ],
+    "width": 1788,
+    "height": 1466
+  },
+  {
+    "year": -1,
+    "id": "undated__el carro lechero",
+    "alias": "el carro lechero",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__el carro lechero.jpg"
+    ],
+    "width": 1437,
+    "height": 1198
+  },
+  {
+    "year": -1,
+    "id": "undated__faro y el puente fantasma",
+    "alias": "faro y el puente fantasma",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__faro y el puente fantasma.jpg"
+    ],
+    "width": 1642,
+    "height": 1970
+  },
+  {
+    "year": -1,
+    "id": "undated__florero verde",
+    "alias": "florero verde",
+    "notes": "",
+    "keywords": [
+      "bodegon_acuarela"
+    ],
+    "images": [
+      "undated__florero_verde__bodegon_acuarela.jpg"
+    ],
+    "width": 1357,
+    "height": 2036
+  },
+  {
+    "year": -1,
+    "id": "undated__galpon y sillo",
+    "alias": "galpon y sillo",
+    "notes": "",
+    "keywords": [
+      "derigrafia"
+    ],
+    "images": [
+      "undated__galpon y sillo__derigrafia.jpg"
+    ],
+    "width": 2806,
+    "height": 1922
+  },
+  {
+    "year": -1,
+    "id": "undated__genoas",
+    "alias": "genoas",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__genoas.jpg"
+    ],
+    "width": 1278,
+    "height": 1555
+  },
+  {
+    "year": -1,
+    "id": "undated__golden gate",
+    "alias": "golden gate",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__golden gate.jpg"
+    ],
+    "width": 2016,
+    "height": 1680
+  },
+  {
+    "year": -1,
+    "id": "undated__Green and Blue",
+    "title": "Green and Blue",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__Green and Blue.jpg"
+    ],
+    "width": 1267,
+    "height": 1546
+  },
+  {
+    "year": -1,
+    "id": "undated__Green and Blue 42-50__serigrafia",
+    "title": "Green and Blue 42-50",
+    "notes": "",
+    "keywords": [
+      "serigrafia"
+    ],
+    "images": [
+      "undated__Green and Blue 42-50__serigrafia.jpg"
+    ],
+    "width": 2098,
+    "height": 2559
+  },
+  {
+    "year": -1,
+    "id": "undated__hombre con libro",
+    "alias": "hombre con libro",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__hombre con libro.jpg"
+    ],
+    "width": 1305,
+    "height": 1566
+  },
+  {
+    "year": -1,
+    "id": "undated__hotel y bar",
+    "alias": "hotel y bar",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__hotel y bar.jpg"
+    ],
+    "width": 1727,
+    "height": 2107
+  },
+  {
+    "year": -1,
+    "id": "undated__hotel y bar 2",
+    "alias": "hotel y bar 2",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__hotel y bar 2.jpg",
+      "undated__hotel y bar_2.jpg"
+    ],
+    "width": 1727,
+    "height": 2107
+  },
+  {
+    "year": -1,
+    "id": "undated__iglesia inmaculada concepción de maría",
+    "alias": "iglesia inmaculada concepción de maría",
+    "notes": "",
+    "keywords": [
+      "Zapiola"
+    ],
+    "images": [
+      "undated__iglesia inmaculada concepción de maría__Zapiola_2.jpg",
+      "undated__iglesia inmaculada concepción de maría__Zapiola.jpg"
+    ],
+    "width": 2145,
+    "height": 2617
+  },
+  {
+    "year": -1,
+    "id": "undated__IHS cristo en el cadalso",
+    "title": "IHS cristo en el cadalso",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__IHS_cristo en el cadalso.jpg"
+    ],
+    "width": 1359,
+    "height": 1866
+  },
+  {
+    "year": -1,
+    "id": "undated__junta cardán",
+    "alias": "junta cardán",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__junta cardán.jpg"
+    ],
+    "width": 1175,
+    "height": 1410
+  },
+  {
+    "year": -1,
+    "id": "undated__L'abbaye c'istercienne a Thironne - Bourgogne - XII siècle",
+    "title": "L'abbaye c'istercienne a Thironne - Bourgogne - XII siècle",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__L'abbaye c'istercienne a Thironne - Bourgogne - XII siècle.jpg"
+    ],
+    "width": 1596,
+    "height": 1308
+  },
+  {
+    "year": -1,
+    "id": "undated__la capitan",
+    "alias": "la capitan",
+    "notes": "",
+    "keywords": [
+      "incompleto"
+    ],
+    "images": [
+      "undated__la capitan__incompleto.jpg"
+    ],
+    "width": 1208,
+    "height": 1449
+  },
+  {
+    "year": -1,
+    "id": "undated__la casa angosta",
+    "alias": "la casa angosta",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__la casa angosta.jpg"
+    ],
+    "width": 402,
+    "height": 1970
+  },
+  {
+    "year": -1,
+    "id": "undated__La Casualidad en Zapiola",
+    "title": "La Casualidad en Zapiola",
+    "notes": "",
+    "keywords": [
+      "detalle",
+      "firma"
+    ],
+    "images": [
+      "undated__La Casualidad en Zapiola.jpg",
+      "undated__La Casualidad en Zapiola__detalle__firma.jpg",
+      "undated__La Casualidad en Zapiola__detalle_2.jpg",
+      "undated__La Casualidad en Zapiola__detalle_3.jpg",
+      "undated__La Casualidad en Zapiola__detalle_4.jpg",
+      "undated__La Casualidad en Zapiola__detalle_5.jpg"
+    ],
+    "width": 2381,
+    "height": 1631
+  },
+  {
+    "year": -1,
+    "id": "undated__la cocinera y la carta",
+    "alias": "la cocinera y la carta",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__la cocinera y la carta.jpg"
+    ],
+    "width": 1332,
+    "height": 1945
+  },
+  {
+    "year": -1,
+    "id": "undated__la duna y el monolito blanco",
+    "alias": "la duna y el monolito blanco",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__la duna y el monolito blanco.jpg"
+    ],
+    "width": 1631,
+    "height": 1341
+  },
+  {
+    "year": -1,
+    "id": "undated__la silla verde",
+    "alias": "la silla verde",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__la silla verde.jpg"
+    ],
+    "width": 1398,
+    "height": 1678
+  },
+  {
+    "year": -1,
+    "id": "undated__mad tugboat",
+    "alias": "mad tugboat",
+    "notes": "",
+    "keywords": [
+      "detalle",
+      "firma"
+    ],
+    "images": [
+      "undated__mad_tugboat.jpg",
+      "undated__mad_tugboat__detalle__firma.jpg"
+    ],
+    "width": 1790,
+    "height": 2184
+  },
+  {
+    "year": -1,
+    "id": "undated__mujer reclinada",
+    "alias": "mujer reclinada",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__mujer reclinada.jpg"
+    ],
+    "width": 956,
+    "height": 1166
+  },
+  {
+    "year": -1,
+    "id": "undated__musico sin cabeza",
+    "alias": "musico sin cabeza",
+    "notes": "",
+    "keywords": [
+      "aplast",
+      "figura",
+      "musica",
+      "bodegon"
+    ],
+    "images": [
+      "undated__musico sin cabeza__aplast__figura__musica__bodegon.jpg"
+    ],
+    "width": 1093,
+    "height": 1602
+  },
+  {
+    "year": -1,
+    "id": "undated__palacio y torre blanca en la plaza",
+    "alias": "palacio y torre blanca en la plaza",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__palacio y torre blanca en la plaza.jpg"
+    ],
+    "width": 1146,
+    "height": 1673
+  },
+  {
+    "year": -1,
+    "id": "undated__parador en la playa",
+    "alias": "parador en la playa",
+    "notes": "",
+    "keywords": [
+      "nautico",
+      "lugares",
+      "playa",
+      "punta-del-este",
+      "paisaje-urbano"
+    ],
+    "images": [
+      "undated__parador en la playa__nautico__lugares__playa__punta-del-este__paisaje-urbano.jpg"
+    ],
+    "width": 2559,
+    "height": 1711
+  },
+  {
+    "year": -1,
+    "id": "undated__parroquia de nuestra señora de fatima",
+    "alias": "parroquia de nuestra señora de fatima",
+    "notes": "closeup 2",
+    "keywords": [
+      "closeup",
+      "notas"
+    ],
+    "images": [
+      "undated__parroquia de nuestra señora de fatima__closeup 2.jpg",
+      "undated__parroquia de nuestra señora de fatima__closeup.jpg"
+    ],
+    "width": 1420,
+    "height": 1002
+  },
+  {
+    "year": -1,
+    "id": "undated__parroquia nuestra señora de fátima",
+    "alias": "parroquia nuestra señora de fátima",
+    "notes": "Parroquia Nuestra Señora de Fátima, San Isidro",
+    "keywords": [
+      "iglesia",
+      "notas"
+    ],
+    "images": [
+      "undated__parroquia nuestra señora de fátima__Parroquia Nuestra Señora de Fátima, San Isidro__iglesia.jpg"
+    ],
+    "width": 2899,
+    "height": 1986
+  },
+  {
+    "year": -1,
+    "id": "undated__pueblo blanco escalonado",
+    "alias": "pueblo blanco escalonado",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__pueblo blanco escalonado.jpg"
+    ],
+    "width": 1440,
+    "height": 1714
+  },
+  {
+    "year": -1,
+    "id": "undated__puerto de ciudad",
+    "alias": "puerto de ciudad",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__puerto de ciudad.jpg"
+    ],
+    "width": 1475,
+    "height": 1800
+  },
+  {
+    "year": -1,
+    "id": "undated__Puerto de Ischia__serigrafia",
+    "title": "Puerto de Ischia",
+    "notes": "",
+    "keywords": [
+      "serigrafia"
+    ],
+    "images": [
+      "undated__Puerto de Ischia__serigrafia.jpg"
+    ],
+    "width": 2313,
+    "height": 1928
+  },
+  {
+    "year": -1,
+    "id": "undated__red cabin in snow",
+    "alias": "red cabin in snow",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__red_cabin_in_snow.jpg"
+    ],
+    "width": 2106,
+    "height": 1438
+  },
+  {
+    "year": -1,
+    "id": "undated__reloj y violin",
+    "alias": "reloj y violin",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__reloj y violin.jpg"
+    ],
+    "width": 1314,
+    "height": 1577
+  },
+  {
+    "year": -1,
+    "id": "undated__Reykiavic",
+    "title": "Reykiavic",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__Reykiavic.jpg"
+    ],
+    "width": 1816,
+    "height": 2216
+  },
+  {
+    "year": -1,
+    "id": "undated__San Salvador de Bahia",
+    "title": "San Salvador de Bahia",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__San Salvador de Bahia.jpg"
+    ],
+    "width": 1724,
+    "height": 2069
+  },
+  {
+    "year": -1,
+    "id": "undated__sierras",
+    "alias": "sierras",
+    "notes": "",
+    "keywords": [
+      "recorte"
+    ],
+    "images": [
+      "undated__sierras__recorte.jpg"
+    ],
+    "width": 1282,
+    "height": 1282
+  },
+  {
+    "year": -1,
+    "id": "undated__Sol del Mediterraneo",
+    "title": "Sol del Mediterraneo",
+    "notes": "P-A 73",
+    "keywords": [
+      "serigrafia",
+      "lineas",
+      "notas"
+    ],
+    "images": [
+      "undated__Sol del Mediterraneo__P-A 73__serigrafia__lineas.jpg"
+    ],
+    "width": 2594,
+    "height": 2126
+  },
+  {
+    "year": -1,
+    "id": "undated__Sol del Mediterraneo__serigrafia",
+    "title": "Sol del Mediterraneo",
+    "notes": "",
+    "keywords": [
+      "serigrafia",
+      "aplast"
+    ],
+    "images": [
+      "undated__Sol del Mediterraneo__serigrafia__aplast.jpg"
+    ],
+    "width": 2743,
+    "height": 2248
+  },
+  {
+    "year": -1,
+    "id": "undated__space port unifished",
+    "alias": "space port unifished",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__space port_unifished.jpg"
+    ],
+    "width": 1820,
+    "height": 1247
+  },
+  {
+    "year": -1,
+    "id": "undated__telefono y ventana",
+    "alias": "telefono y ventana",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__telefono y ventana.jpg"
+    ],
+    "width": 1616,
+    "height": 1971
+  },
+  {
+    "year": -1,
+    "id": "undated__varcos anclados",
+    "alias": "varcos anclados",
+    "notes": "",
+    "keywords": [
+      "incompleto"
+    ],
+    "images": [
+      "undated__varcos anclados__incompleto.JPG"
+    ],
+    "width": 1934,
+    "height": 1426
+  },
+  {
+    "year": -1,
+    "id": "undated__velero 37-C7",
+    "title": "velero 37-C7",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__velero_37-C7.jpg"
+    ],
+    "width": 2157,
+    "height": 1798
+  },
+  {
+    "year": -1,
+    "id": "undated__veleros",
+    "alias": "veleros",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__veleros.jpg"
+    ],
+    "width": 1596,
+    "height": 1947
+  },
+  {
+    "year": -1,
+    "id": "undated__veleros__variante",
+    "alias": "veleros",
+    "notes": "",
+    "keywords": [
+      "variante",
+      "incompleto"
+    ],
+    "images": [
+      "undated__veleros__variante__incompleto.jpg"
+    ],
+    "width": 1314,
+    "height": 1599
+  },
+  {
+    "year": -1,
+    "id": "undated__vino y queso 2",
+    "alias": "vino y queso 2",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__vino y queso_2.jpg"
+    ],
+    "width": 1556,
+    "height": 1867
+  },
+  {
+    "year": -1,
+    "id": "undated__vista a la plaza",
+    "alias": "vista a la plaza",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__vista a la plaza.jpg"
+    ],
+    "width": 1302,
+    "height": 1901
+  },
+  {
+    "year": -1,
+    "id": "undated__white chair falling pot",
+    "alias": "white chair falling pot",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__white_chair_falling_pot.jpg"
+    ],
+    "width": 1815,
+    "height": 2118
+  },
+  {
+    "year": -1,
+    "id": "undated__yard 3 2",
+    "alias": "yard 3 2",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__yard 3 2.jpg"
+    ],
+    "width": 2437,
+    "height": 1625
+  },
+  {
+    "year": -1,
+    "id": "undated__yard 7",
+    "alias": "yard 7",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__yard 7.jpg"
+    ],
+    "width": 1341,
+    "height": 1118
+  },
+  {
+    "year": -1,
+    "id": "undated__yard wtf",
+    "alias": "yard wtf",
+    "notes": "",
+    "keywords": [],
+    "images": [
+      "undated__yard wtf.jpg"
+    ],
+    "width": 1388,
+    "height": 1157
   }
 ]

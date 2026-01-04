@@ -40,15 +40,20 @@
   &__item {
 
     &__cover {
-
-      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       transition: transform 0.2s ease;
+      display: block;
+      width: 100%; // Ocupa todo el ancho del grid
+      max-height: 400px; // Limita imágenes muy verticales
 
       &__link{
         position: relative;
         display: block;
         border: 6px solid #fff;
+        overflow: hidden;
+        height: 100%; // Llena el contenedor
 
         &::after {
           content: '';
@@ -58,7 +63,7 @@
           position: absolute;
           top: 0;
           left: 0;
-          box-shadow: inset -1px 1px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.3);
         }
       }
 
@@ -69,10 +74,10 @@
 
       &__img {
         margin: 0;
-
         width: 100%;
-        height: auto;
-        min-height: 130px;
+        height: 100%;
+        display: block;
+        object-fit: contain; // Para que se ajuste cuando el contenedor tiene max-height
       }
 
     }
