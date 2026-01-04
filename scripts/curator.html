@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bidassoa Keyword Curator</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1a1a1a;
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: #2a2a2a;
+      padding: 1rem;
+      border-bottom: 2px solid #3a3a3a;
+    }
+    .controls {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    button {
+      background: #4a4a4a;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover { background: #5a5a5a; }
+    button.active { background: #0066cc; }
+
+    /* Main content */
+    .content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+      padding: 1rem;
+      overflow: hidden;
+    }
+
+    /* Image viewer */
+    .image-viewer {
+      display: flex;
+      flex-direction: column;
+      background: #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .image-info {
+      padding: 1rem;
+      background: #333;
+      border-bottom: 1px solid #444;
+    }
+    .image-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: auto;
+      padding: 1rem;
+    }
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border: 3px solid #444;
+    }
+
+    /* Keywords panel */
+    .keywords-panel {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 1rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .keywords-section h3 {
+      margin-bottom: 0.5rem;
+      color: #aaa;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    .keyword-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .keyword {
+      padding: 0.5rem 1rem;
+      background: #3a3a3a;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .keyword:hover {
+      background: #4a4a4a;
+    }
+    .keyword.selected {
+      background: #0066cc;
+      border-color: #0088ff;
+    }
+    .keyword.current-image {
+      border-color: #00cc66;
+    }
+    .keyword.active-keyword {
+      border-color: #ff9900;
+      box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
+    footer {
+      background: #2a2a2a;
+      padding: 1rem;
+      border-top: 2px solid #3a3a3a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      font-size: 14px;
+    }
+    .stat-item {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .stat-label { color: #888; }
+    .stat-value { color: #fff; font-weight: bold; }
+
+    /* Hidden */
+    .hidden { display: none; }
+
+    /* File input */
+    input[type="file"] {
+      display: none;
+    }
+    label.file-label {
+      background: #0066cc;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    label.file-label:hover {
+      background: #0077dd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="controls">
+        <label for="jsonFile" class="file-label">📁 Cargar bidassoa.json</label>
+        <input type="file" id="jsonFile" accept=".json">
+
+        <label for="keywordsFile" class="file-label">🏷️ Cargar keywords.canonical.json</label>
+        <input type="file" id="keywordsFile" accept=".json">
+
+        <button id="downloadJson">💾 Guardar JSON</button>
+        <button id="prevImage">◀ Anterior</button>
+        <button id="nextImage">Siguiente ▶</button>
+      </div>
+    </header>
+
+    <main class="content" id="mainContent">
+      <div class="image-viewer">
+        <div class="image-info">
+          <h2 id="imageTitle">Sin imagen cargada</h2>
+          <p id="imageDetails" style="color: #888; margin-top: 0.5rem;">Carga el archivo bidassoa.json para comenzar</p>
+        </div>
+        <div class="image-container">
+          <img id="mainImage" src="" alt="" style="display: none;">
+        </div>
+      </div>
+
+      <div class="keywords-panel">
+        <div class="keywords-section">
+          <h3>Quick Assign (Space)</h3>
+          <select id="quickKeywordSelect" style="width: 100%; padding: 0.5rem; background: #3a3a3a; color: #fff; border: 1px solid #555; border-radius: 4px; font-size: 14px;">
+            <option value="">Seleccionar keyword...</option>
+          </select>
+        </div>
+
+        <div class="keywords-section">
+          <h3>Keywords de esta imagen</h3>
+          <div class="keyword-list" id="currentKeywords"></div>
+        </div>
+
+        <div class="keywords-section">
+          <h3>Todos los keywords disponibles</h3>
+          <div class="keyword-list" id="allKeywords"></div>
+        </div>
+
+        <div class="keywords-section" id="nonCanonicalSection" style="display: none;">
+          <h3 style="color: #ff9900;">Keywords no canónicos (en bidassoa.json)</h3>
+          <div class="keyword-list" id="nonCanonicalKeywords"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-label">Imagen:</span>
+          <span class="stat-value" id="currentIndex">0</span>
+          <span class="stat-label">de</span>
+          <span class="stat-value" id="totalImages">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Keywords:</span>
+          <span class="stat-value" id="keywordCount">0</span>
+        </div>
+      </div>
+      <div style="color: #888; font-size: 12px;">
+        <kbd>←/→</kbd> Navegar | <kbd>Click verde</kbd> Quitar | <kbd>Click gris</kbd> Agregar | <kbd>Space</kbd> Quick assign
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    let jsonData = [];
+    let currentIndex = 0;
+    let allKeywords = new Set(); // Keywords canónicos
+    let nonCanonicalKeywords = new Set(); // Keywords en bidassoa pero no canónicos
+    let hasChanges = false;
+
+    const elements = {
+      jsonFile: document.getElementById('jsonFile'),
+      keywordsFile: document.getElementById('keywordsFile'),
+      quickKeywordSelect: document.getElementById('quickKeywordSelect'),
+      downloadJson: document.getElementById('downloadJson'),
+      prevImage: document.getElementById('prevImage'),
+      nextImage: document.getElementById('nextImage'),
+      mainContent: document.getElementById('mainContent'),
+      mainImage: document.getElementById('mainImage'),
+      imageTitle: document.getElementById('imageTitle'),
+      imageDetails: document.getElementById('imageDetails'),
+      currentKeywords: document.getElementById('currentKeywords'),
+      allKeywords: document.getElementById('allKeywords'),
+      nonCanonicalKeywords: document.getElementById('nonCanonicalKeywords'),
+      nonCanonicalSection: document.getElementById('nonCanonicalSection'),
+      currentIndex: document.getElementById('currentIndex'),
+      totalImages: document.getElementById('totalImages'),
+      keywordCount: document.getElementById('keywordCount')
+    };
+
+    // Función para poblar el dropdown de keywords
+    function populateKeywordDropdown() {
+      const sorted = Array.from(allKeywords).sort();
+      elements.quickKeywordSelect.innerHTML = '<option value="">Seleccionar keyword...</option>' +
+        sorted.map(kw => `<option value="${kw}">${kw}</option>`).join('');
+    }
+
+    // Cargar keywords canónicos manualmente
+    elements.keywordsFile.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const text = await file.text();
+      const data = JSON.parse(text);
+      allKeywords = new Set(data.keywords);
+      populateKeywordDropdown();
+
+      // Recalcular no canónicos si ya hay JSON cargado
+      if (jsonData.length > 0) {
+        detectNonCanonicalKeywords();
+        updateUI();
+      }
+
+      alert(`✅ Keywords canónicos cargados: ${allKeywords.size}`);
+    });
+
+    // Detectar keywords no canónicos en el JSON
+    function detectNonCanonicalKeywords() {
+      nonCanonicalKeywords.clear();
+      jsonData.forEach(item => {
+        if (item.keywords) {
+          item.keywords.forEach(kw => {
+            if (!allKeywords.has(kw)) {
+              nonCanonicalKeywords.add(kw);
+            }
+          });
+        }
+      });
+
+      // Mostrar/ocultar sección
+      if (nonCanonicalKeywords.size > 0) {
+        elements.nonCanonicalSection.style.display = 'block';
+        console.log(`⚠️ Keywords no canónicos encontrados: ${nonCanonicalKeywords.size}`);
+      } else {
+        elements.nonCanonicalSection.style.display = 'none';
+      }
+    }
+
+    function loadJsonData(text) {
+      jsonData = JSON.parse(text);
+      detectNonCanonicalKeywords();
+      currentIndex = 0;
+      updateUI();
+      console.log(`✅ Cargado: ${jsonData.length} imágenes`);
+    }
+
+    // Cargar JSON manualmente
+    elements.jsonFile.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const text = await file.text();
+      loadJsonData(text);
+      alert(`✅ Cargado: ${jsonData.length} imágenes, ${allKeywords.size} keywords disponibles`);
+    });
+
+    // Navegación
+    elements.prevImage.addEventListener('click', () => navigate(-1));
+    elements.nextImage.addEventListener('click', () => navigate(1));
+
+    function navigate(delta) {
+      if (jsonData.length === 0) return;
+      currentIndex = (currentIndex + delta + jsonData.length) % jsonData.length;
+      updateUI();
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (jsonData.length === 0) return;
+
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        navigate(-1);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        navigate(1);
+      } else if (e.key === ' ') {
+        e.preventDefault();
+        const keyword = elements.quickKeywordSelect.value;
+        if (keyword) {
+          addKeywordToCurrentImage(keyword);
+        }
+      }
+    });
+
+    // Actualizar UI
+    function updateUI() {
+      if (jsonData.length === 0) return;
+
+      const item = jsonData[currentIndex];
+
+      // Actualizar imagen
+      const imagePath = `../assets/bidassoa/${item.images[0]}`;
+      elements.mainImage.src = imagePath;
+      elements.mainImage.style.display = 'block';
+
+      // Actualizar info
+      const title = item.title || item.alias || 'Sin título';
+      elements.imageTitle.textContent = title;
+      elements.imageDetails.textContent = `${item.year} • ${item.id} • ${item.images.length} imagen(es)`;
+
+      // Actualizar keywords actuales
+      const currentKws = item.keywords || [];
+      elements.currentKeywords.innerHTML = currentKws.length > 0
+        ? currentKws.map(kw => `<span class="keyword current-image" data-keyword="${kw}">${kw}</span>`).join('')
+        : '<span style="color: #888;">Sin keywords</span>';
+
+      // Click listeners para keywords de esta imagen (quitar)
+      document.querySelectorAll('#currentKeywords .keyword').forEach(el => {
+        el.addEventListener('click', () => {
+          const keyword = el.dataset.keyword;
+          removeKeyword(keyword);
+        });
+      });
+
+      // Actualizar lista de todos los keywords
+      const sorted = Array.from(allKeywords).sort();
+      elements.allKeywords.innerHTML = sorted.map(kw => {
+        const isInImage = currentKws.includes(kw);
+        return `<span class="keyword ${isInImage ? 'selected' : ''}" data-keyword="${kw}">${kw}</span>`;
+      }).join('');
+
+      // Click listeners para todos los keywords (toggle)
+      document.querySelectorAll('#allKeywords .keyword').forEach(el => {
+        el.addEventListener('click', () => {
+          const keyword = el.dataset.keyword;
+          toggleKeyword(keyword);
+        });
+      });
+
+      // Actualizar keywords no canónicos
+      if (nonCanonicalKeywords.size > 0) {
+        const sortedNonCanonical = Array.from(nonCanonicalKeywords).sort();
+        elements.nonCanonicalKeywords.innerHTML = sortedNonCanonical.map(kw => {
+          const isInImage = currentKws.includes(kw);
+          return `<span class="keyword ${isInImage ? 'selected' : ''}" data-keyword="${kw}" style="border-color: #ff9900;">${kw}</span>`;
+        }).join('');
+
+        // Click listeners para keywords no canónicos (toggle)
+        document.querySelectorAll('#nonCanonicalKeywords .keyword').forEach(el => {
+          el.addEventListener('click', () => {
+            const keyword = el.dataset.keyword;
+            toggleKeyword(keyword);
+          });
+        });
+      }
+
+      // Actualizar stats
+      elements.currentIndex.textContent = currentIndex + 1;
+      elements.totalImages.textContent = jsonData.length;
+      elements.keywordCount.textContent = currentKws.length;
+    }
+
+    // Toggle keyword (agregar o quitar)
+    function toggleKeyword(keyword) {
+      const item = jsonData[currentIndex];
+      if (!item.keywords) item.keywords = [];
+
+      const index = item.keywords.indexOf(keyword);
+      if (index > -1) {
+        // Ya existe, quitarlo
+        item.keywords.splice(index, 1);
+      } else {
+        // No existe, agregarlo
+        item.keywords.push(keyword);
+        item.keywords.sort();
+      }
+      
+      hasChanges = true;
+      updateUI();
+    }
+
+    // Quitar keyword
+    function removeKeyword(keyword) {
+      const item = jsonData[currentIndex];
+      if (!item.keywords) return;
+
+      const index = item.keywords.indexOf(keyword);
+      if (index > -1) {
+        item.keywords.splice(index, 1);
+        hasChanges = true;
+        updateUI();
+      }
+    }
+
+    // Agregar keyword (solo suma, no quita)
+    function addKeywordToCurrentImage(keyword) {
+      const item = jsonData[currentIndex];
+      if (!item.keywords) item.keywords = [];
+
+      if (!item.keywords.includes(keyword)) {
+        item.keywords.push(keyword);
+        item.keywords.sort();
+        hasChanges = true;
+        updateUI();
+      }
+    }
+
+// Guardar JSON (descargar archivo)
+    function saveJson() {
+      if (jsonData.length === 0) return;
+
+      const blob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'bidassoa.json';
+      a.click();
+      URL.revokeObjectURL(url);
+
+      hasChanges = false;
+      console.log('✅ JSON descargado');
+    }
+
+    // Guardar manualmente con el botón
+    elements.downloadJson.addEventListener('click', () => {
+      if (jsonData.length === 0) {
+        alert('⚠️ No hay datos para guardar');
+        return;
+      }
+
+      saveJson();
+      alert('✅ JSON descargado. Reemplaza _data/bidassoa.json con este archivo');
+    });
+
+    // Warn on close if changes
+    window.addEventListener('beforeunload', (e) => {
+      if (hasChanges) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    });
+  </script>
+</body>
+</html>
