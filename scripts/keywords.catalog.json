@@ -1,0 +1,405 @@
+{
+  "version": 1,
+  "keywords": [
+    {
+      "key": "tecnicas--oleo",
+      "type": "tecnica",
+      "detector": "manual",
+      "desc": "Pintura al óleo."
+    },
+    {
+      "key": "tecnicas--acuarela",
+      "type": "tecnica",
+      "detector": "manual",
+      "desc": "Acuarela."
+    },
+    {
+      "key": "tecnicas--tinta",
+      "type": "tecnica",
+      "detector": "manual",
+      "desc": "Tinta."
+    },
+    {
+      "key": "tecnicas--pasteles",
+      "type": "tecnica",
+      "detector": "manual",
+      "desc": "Pasteles."
+    },
+    {
+      "key": "serigrafia",
+      "type": "tecnica",
+      "detector": "manual",
+      "desc": "Serigrafía / impresión."
+    },
+    {
+      "key": "dibujo",
+      "type": "tecnica",
+      "detector": "manual",
+      "desc": "Obra basada en dibujo (grafito/lineal)."
+    },
+    {
+      "key": "delineado",
+      "type": "estilo",
+      "detector": "heuristic",
+      "desc": "Planos de color delimitados por contornos/líneas negras."
+    },
+    {
+      "key": "aplat",
+      "type": "estilo",
+      "detector": "heuristic",
+      "desc": "Planos de color sin contornos/líneas negras dominantes (aplat)."
+    },
+    {
+      "key": "monocromatico",
+      "type": "estilo",
+      "detector": "heuristic",
+      "desc": "Predominio de un solo rango cromático."
+    },
+    {
+      "key": "rojo",
+      "type": "color",
+      "detector": "heuristic",
+      "desc": "Predominio de rojos en la paleta."
+    },
+    {
+      "key": "blanco",
+      "type": "color",
+      "detector": "heuristic",
+      "desc": "Predominio de blancos / claros en la paleta."
+    },
+    {
+      "key": "paisajes--natural",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Paisaje natural: vegetación, montañas, cielo, naturaleza."
+    },
+    {
+      "key": "paisajes--rural",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Paisaje rural: campo, cultivos, caminos, granjas."
+    },
+    {
+      "key": "paisajes--urbano",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Paisaje urbano: ciudad, calles, edificios, pueblo."
+    },
+    {
+      "key": "paisajes--nautico",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Paisaje náutico: costa/mar/río/puerto/canales; puede incluir embarcaciones."
+    },
+    {
+      "key": "paisajes--abstracto",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Paisaje abstracto: vistas aéreas, composiciones tipo mapa/estructura espacial."
+    },
+    {
+      "key": "vistas--aereas",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Composición con perspectiva aérea o tipo mapa/urbanismo desde arriba."
+    },
+    {
+      "key": "bodegon",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Bodegón/naturaleza muerta: objetos (frutas, botellas, platos) en primer plano."
+    },
+    {
+      "key": "interior",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Escena en interior: ambiente puertas adentro, mobiliario, mesa, habitación."
+    },
+    {
+      "key": "escenas--de-genero",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Escena narrativa/cotidiana con personas (no retrato; no paisaje)."
+    },
+    {
+      "key": "figuras--humanas",
+      "type": "figura",
+      "detector": "clip",
+      "desc": "Figuras humanas visibles."
+    },
+    {
+      "key": "autorretrato",
+      "type": "figura",
+      "detector": "clip",
+      "desc": "Autorretrato (idealmente revisar manualmente)."
+    },
+    {
+      "key": "animales",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Animales visibles."
+    },
+    {
+      "key": "musical",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Músicos, instrumentos o escena musical."
+    },
+    {
+      "key": "religion",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Motivos religiosos: cruces, escenas/devoción."
+    },
+    {
+      "key": "iglesia",
+      "type": "lugar",
+      "detector": "clip",
+      "desc": "Iglesia/catedral/capilla/campanario."
+    },
+    {
+      "key": "parroquia",
+      "type": "lugar",
+      "detector": "clip",
+      "desc": "Parroquia o iglesia de escala barrial."
+    },
+    {
+      "key": "plaza",
+      "type": "lugar",
+      "detector": "clip",
+      "desc": "Plaza/espacio público arbolado con circulación."
+    },
+    {
+      "key": "arquitectura",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Edificaciones/elementos arquitectónicos dominantes."
+    },
+    {
+      "key": "lugares",
+      "type": "lugar",
+      "detector": "manual",
+      "desc": "Tag genérico de lugar referenciado (manual)."
+    },
+    {
+      "key": "lugares--martinez",
+      "type": "lugar",
+      "detector": "manual",
+      "desc": "Obras referidas a Martínez (manual)."
+    },
+    {
+      "key": "lugares--punta-del-este",
+      "type": "lugar",
+      "detector": "manual",
+      "desc": "Obras referidas a Punta del Este (manual)."
+    },
+    {
+      "key": "lugares--san-isidro",
+      "type": "lugar",
+      "detector": "manual",
+      "desc": "Obras referidas a San Isidro (manual)."
+    },
+    {
+      "key": "lugares--la-boca",
+      "type": "lugar",
+      "detector": "manual",
+      "desc": "Obras referidas a La Boca (manual)."
+    },
+    {
+      "key": "lugares--zapiola",
+      "type": "lugar",
+      "detector": "manual",
+      "desc": "Obras referidas a Zapiola (manual)."
+    },
+    {
+      "key": "barcos",
+      "type": "objeto",
+      "detector": "clip",
+      "desc": "Embarcaciones visibles."
+    },
+    {
+      "key": "puerto",
+      "type": "lugar",
+      "detector": "clip",
+      "desc": "Puerto, muelle, dársena, astillero, grúas."
+    },
+    {
+      "key": "rio",
+      "type": "lugar",
+      "detector": "clip",
+      "desc": "Río/canal/curso de agua."
+    },
+    {
+      "key": "vehiculos",
+      "type": "objeto",
+      "detector": "clip",
+      "desc": "Vehículos (autos/camiones/maquinaria) visibles."
+    },
+    {
+      "key": "vehiculos--tractor",
+      "type": "objeto",
+      "detector": "clip",
+      "desc": "Tractor/maquinaria agrícola visible."
+    },
+    {
+      "key": "automobiles",
+      "type": "objeto",
+      "detector": "clip",
+      "desc": "Autos como elemento principal."
+    },
+    {
+      "key": "aviones",
+      "type": "objeto",
+      "detector": "clip",
+      "desc": "Aviones/aeronaves visibles."
+    },
+    {
+      "key": "serie",
+      "type": "meta",
+      "detector": "manual",
+      "desc": "Pertenece a una serie (manual)."
+    },
+    {
+      "key": "variante",
+      "type": "meta",
+      "detector": "manual",
+      "desc": "Variante de una obra/versión alternativa (manual)."
+    },
+    {
+      "key": "prueba",
+      "type": "meta",
+      "detector": "manual",
+      "desc": "Prueba/estudio/test (manual)."
+    },
+    {
+      "key": "notas",
+      "type": "meta",
+      "detector": "manual",
+      "desc": "Tag auxiliar para notas (manual)."
+    },
+    {
+      "key": "back",
+      "type": "documental",
+      "detector": "manual",
+      "desc": "Imagen del reverso/dorso."
+    },
+    {
+      "key": "firma",
+      "type": "documental",
+      "detector": "manual",
+      "desc": "Firma visible o foto dedicada a la firma."
+    },
+    {
+      "key": "invertido",
+      "type": "documental",
+      "detector": "heuristic",
+      "desc": "Imagen rotada/invertida (orientación)."
+    },
+    {
+      "key": "invierno",
+      "type": "tiempo",
+      "detector": "clip",
+      "desc": "Motivos de invierno: nieve/frío/atmósfera invernal."
+    },
+    {
+      "key": "otono",
+      "type": "tiempo",
+      "detector": "clip",
+      "desc": "Motivos de otoño: hojas ocres/ambiente otoñal."
+    },
+    {
+      "key": "estaciones",
+      "type": "tiempo",
+      "detector": "manual",
+      "desc": "Tag genérico de estación/temporalidad (manual)."
+    },
+    {
+      "key": "cosecha",
+      "type": "tema",
+      "detector": "clip",
+      "desc": "Cosecha/actividad agrícola."
+    },
+    {
+      "key": "rural",
+      "type": "tema",
+      "detector": "manual",
+      "desc": "Rural como adjetivo general (puede aplicar fuera de paisaje)."
+    }
+  ],
+  "relationships": {
+    "vehiculos": {
+      "desc": "Keyword padre para todos los vehículos",
+      "children": ["barcos", "veleros", "botes", "aviones", "automobiles", "vehiculos--tractor"]
+    },
+    "paisajes--nautico": {
+      "desc": "Se agrega automáticamente si hay embarcaciones o puerto",
+      "children": ["barcos", "veleros", "botes", "puerto"]
+    },
+    "paisajes--urbano": {
+      "desc": "Se agrega si hay elementos arquitectónicos urbanos",
+      "children": ["arquitectura", "iglesia", "parroquia", "plaza"]
+    },
+    "paisajes--rural": {
+      "desc": "Se agrega si hay elementos rurales/campo",
+      "children": ["rural", "cosecha", "vehiculos--tractor"]
+    },
+    "paisajes--natural": {
+      "desc": "Se agrega si hay elementos naturales dominantes",
+      "children": ["rio", "estaciones", "invierno", "otono"]
+    },
+    "lugares": {
+      "desc": "Keyword padre para lugares específicos (manual)",
+      "children": ["lugares--martinez", "lugares--punta-del-este", "lugares--san-isidro", "lugares--la-boca", "lugares--zapiola"]
+    },
+    "religion": {
+      "desc": "Se agrega si hay elementos religiosos",
+      "children": ["iglesia", "parroquia"]
+    }
+  },
+  "aliases": {
+    "aplast": "aplat",
+    "aplats": "aplat",
+    "nautico": "paisajes--nautico",
+    "paisaje-nautico": "paisajes--nautico",
+    "paisaje-náutico": "paisajes--nautico",
+    "paisaje-natural": "paisajes--natural",
+    "paisaje-rural": "paisajes--rural",
+    "paisaje-urbano": "paisajes--urbano",
+    "paisaje-abstracto": "paisajes--abstracto",
+    "barco": "barcos",
+    "figura": "figuras--humanas",
+    "figuras": "figuras--humanas",
+    "figura-humana": "figuras--humanas",
+    "iglecia": "iglesia",
+    "ligares": "lugares",
+    "arqutectura": "arquitectura",
+    "automobil": "automobiles",
+    "automobile": "automobiles",
+    "religión": "religion",
+    "religioso": "religion",
+    "río": "rio",
+    "musicál": "musical",
+    "musica": "musical",
+    "técnica-oleo": "tecnicas--oleo",
+    "tecnica-oleo": "tecnicas--oleo",
+    "técnica-acuarela": "tecnicas--acuarela",
+    "tecnica-acuarela": "tecnicas--acuarela",
+    "técnica-tinta": "tecnicas--tinta",
+    "tecnica-tinta": "tecnicas--tinta",
+    "técnica-pasteles": "tecnicas--pasteles",
+    "tecnica-pasteles": "tecnicas--pasteles",
+    "oleo": "tecnicas--oleo",
+    "acuarela": "tecnicas--acuarela",
+    "tinta": "tecnicas--tinta",
+    "pasteles": "tecnicas--pasteles",
+    "lugares-martinez": "lugares--martinez",
+    "lugares-punta-del-este": "lugares--punta-del-este",
+    "lugares-san-isidro": "lugares--san-isidro",
+    "lugares-la-boca": "lugares--la-boca",
+    "lugares-zapiola": "lugares--zapiola",
+    "vehiculos-tractor": "vehiculos--tractor",
+    "escena-de-genero": "escenas--de-genero",
+    "vista-aerea": "vistas--aereas",
+    "otoño": "otono"
+  }
+}
