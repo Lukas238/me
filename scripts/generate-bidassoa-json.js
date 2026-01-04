@@ -3,6 +3,7 @@
 //
 // Formato de archivo:
 //   YYYY__TitleOrAlias[__INFO1[__INFO2...]].jpg
+//   undated__TitleOrAlias[__INFO1[__INFO2...]].jpg (year = -1)
 //
 // Reglas de INFO:
 //   - Si el PRIMER INFO es "variante" o "variante_#" -> nuevo item separado del base,
@@ -23,6 +24,7 @@
 const fs = require("fs");
 const fsp = fs.promises;
 const path = require("path");
+const sharp = require("sharp");
 
 const INPUT_DIR = path.resolve("assets/bidassoa");
 const OUTPUT_FILE = path.resolve("_data/bidassoa.json");
@@ -46,6 +48,23 @@ function humanizeName(baseName) {
 
 function isAllLowercase(str) {
   return str === str.toLowerCase();
+}
+
+// Obtiene las dimensiones de una imagen usando sharp
+async function getImageDimensions(imagePath) {
+  try {
+    const metadata = await sharp(imagePath).metadata();
+    if (metadata.width && metadata.height) {
+      return {
+        width: metadata.width,
+        height: metadata.height
+      };
+    }
+    return null;
+  } catch (err) {
+    console.warn(`No se pudo leer dimensiones de ${imagePath}:`, err.message);
+    return null;
+  }
 }
 
 // ¿Es algo tipo "variante", "variante_1", "variante_2", etc?
@@ -80,13 +99,23 @@ function canonicalizeKeyword(kw) {
 function parseFileName(fileName) {
   const name = fileName.replace(/\.[^.]+$/, ""); // sin extensión
 
-  const match = name.match(/^(\d{4})__(.+)$/);
-  if (!match) {
-    return null;
-  }
+  // Intentar primero el formato con año YYYY
+  let match = name.match(/^(\d{4})__(.+)$/);
+  let year;
+  let rest;
 
-  const year = Number(match[1]);
-  const rest = match[2];
+  if (match) {
+    year = Number(match[1]);
+    rest = match[2];
+  } else {
+    // Intentar formato con "undated" (se mantiene como string para groupKey e id)
+    match = name.match(/^undated__(.+)$/i);
+    if (!match) {
+      return null;
+    }
+    year = "undated";
+    rest = match[1];
+  }
 
   const parts = rest.split("__");
   const baseName = parts[0].normalize("NFC");
@@ -105,13 +134,14 @@ function parseFileName(fileName) {
 // Deriva la misma groupKey que usa el parse de archivos,
 // pero a partir de un item ya existente en el JSON.
 function deriveGroupKeyFromItem(item) {
-  if (!item.year) return null;
+  if (!item.year && item.year !== -1) return null;
 
   let baseRaw = (item.title || item.alias || "").normalize("NFC");
   let extraPart = null;
 
   if (item.id) {
-    const m = item.id.match(/^(\d{4})__(.+)$/);
+    // Acepta tanto YYYY como "undated" al inicio del id
+    const m = item.id.match(/^(undated|\d{4})__(.+)$/i);
     if (m) {
       const rest = m[2];
       const parts = rest.split("__");
@@ -132,7 +162,10 @@ function deriveGroupKeyFromItem(item) {
   const normBase = normalizeBaseName(baseRaw);
   const suffix = extraPart ? "__" + extraPart : "";
 
-  return `${item.year}__${normBase}${suffix}`;
+  // Convertir year -1 de vuelta a "undated" para el groupKey
+  const yearForKey = item.year === -1 ? "undated" : item.year;
+
+  return `${yearForKey}__${normBase}${suffix}`;
 }
 
 // Clasifica un token INFO como nota o keyword (variante/serigrafia ya manejados aparte)
@@ -370,6 +403,7 @@ async function main() {
 
   const resultItems = [];
 
+  // Procesar cada grupo de forma asíncrona para calcular aspect ratios
   for (const [groupKey, group] of filesByGroupKey) {
     const existing = existingByGroupKey.get(groupKey) || null;
 
@@ -387,7 +421,8 @@ async function main() {
 
     const merged = existing ? { ...existing } : {};
 
-    merged.year = group.year;
+    // Convertir "undated" a -1 para el campo year (para ordenamiento)
+    merged.year = group.year === "undated" ? -1 : group.year;
 
     // Detectar sufijo extra (variante/serigrafia) desde groupKey
     let extraPartForId = null;
@@ -484,13 +519,35 @@ async function main() {
     // Ordenar imágenes: principales primero, luego adicionales
     merged.images = sortImagesWithMainFirst(finalImages);
 
+    // Calcular dimensiones de la primera imagen
+    if (merged.images && merged.images.length > 0) {
+      const firstImage = merged.images[0];
+      const imagePath = path.join(INPUT_DIR, firstImage);
+      const imageData = await getImageDimensions(imagePath);
+
+      // Actualizar datos si cambió la primera imagen o no existe
+      if (imageData !== null) {
+        if (!existing || !existing.width || existing.images[0] !== firstImage) {
+          merged.width = imageData.width;
+          merged.height = imageData.height;
+        } else {
+          // Mantener los datos existentes si la primera imagen no cambió
+          merged.width = existing.width;
+          merged.height = existing.height;
+        }
+      }
+    }
+
     resultItems.push(merged);
   }
 
   // Ordenar por año desc, luego por título, luego por alias
   resultItems.sort((a, b) => {
     // Primero por año (descendente)
+    // -1 (convertido de undated) va al final
     if (b.year !== a.year) {
+      if (a.year === -1) return 1;
+      if (b.year === -1) return -1;
       return b.year - a.year;
     }
 
