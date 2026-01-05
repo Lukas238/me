@@ -26,7 +26,7 @@
       "desc": "Pasteles."
     },
     {
-      "key": "serigrafia",
+      "key": "tecnicas--serigrafia",
       "type": "tecnica",
       "detector": "manual",
       "desc": "Serigrafía / impresión."
@@ -392,6 +392,7 @@
     "acuarela": "tecnicas--acuarela",
     "tinta": "tecnicas--tinta",
     "pasteles": "tecnicas--pasteles",
+    "serigrafia": "tecnicas--serigrafia",
     "lugares-martinez": "lugares--martinez",
     "lugares-punta-del-este": "lugares--punta-del-este",
     "lugares-san-isidro": "lugares--san-isidro",

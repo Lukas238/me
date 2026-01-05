@@ -123,6 +123,30 @@
     .keyword.active-keyword {
       border-color: #ff9900;
       box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
+    }
+
+    /* AI Keywords comparison colors */
+    .keyword.ai-confirmed {
+      background: #28a745;
+      border-color: #28a745;
+      color: white;
+    }
+    .keyword.ai-missing {
+      background: #dc3545;
+      border-color: #dc3545;
+      color: white;
+    }
+    .keyword.ai-new {
+      background: #ffc107;
+      border-color: #ffc107;
+      color: black;
+    }
+    .keyword.ai-existing {
+      background: #6c757d;
+      border-color: #6c757d;
+      color: white;
+    }
+
     footer {
       background: #2a2a2a;
       padding: 1rem;
@@ -204,6 +228,20 @@
         </div>
 
         <div class="keywords-section">
+          <h3>AI Keywords Comparison</h3>
+          <div style="margin-bottom: 1rem;">
+            <div style="margin-bottom: 0.5rem;">
+              <strong style="color: #aaa; font-size: 12px;">Originales:</strong>
+              <div class="keyword-list" id="originalKeywords" style="margin-top: 0.25rem;"></div>
+            </div>
+            <div>
+              <strong style="color: #aaa; font-size: 12px;">AI:</strong>
+              <div class="keyword-list" id="aiKeywords" style="margin-top: 0.25rem;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="keywords-section">
           <h3>Todos los keywords disponibles</h3>
           <div class="keyword-list" id="allKeywords"></div>
         </div>
@@ -253,6 +291,8 @@
       imageTitle: document.getElementById('imageTitle'),
       imageDetails: document.getElementById('imageDetails'),
       currentKeywords: document.getElementById('currentKeywords'),
+      originalKeywords: document.getElementById('originalKeywords'),
+      aiKeywords: document.getElementById('aiKeywords'),
       allKeywords: document.getElementById('allKeywords'),
       nonCanonicalKeywords: document.getElementById('nonCanonicalKeywords'),
       nonCanonicalSection: document.getElementById('nonCanonicalSection'),
@@ -383,6 +423,40 @@
         el.addEventListener('click', () => {
           const keyword = el.dataset.keyword;
           removeKeyword(keyword);
+        });
+      });
+
+      // Actualizar AI Keywords Comparison
+      const aiKws = item.keywords_ai || [];
+      const aiKwsExtra = item.keywords_ai_extra || [];
+
+      // Renderizar keywords originales con colores
+      if (currentKws.length > 0) {
+        elements.originalKeywords.innerHTML = currentKws.map(kw => {
+          const isInAI = aiKws.includes(kw);
+          const cssClass = isInAI ? 'ai-confirmed' : 'ai-missing';
+          return `<span class="keyword ${cssClass}" data-keyword="${kw}" title="${isInAI ? 'Confirmado por IA' : 'No detectado por IA'}">${kw}</span>`;
+        }).join('');
+      } else {
+        elements.originalKeywords.innerHTML = '<span style="color: #888; font-size: 12px;">Sin keywords originales</span>';
+      }
+
+      // Renderizar keywords AI con colores
+      if (aiKws.length > 0) {
+        elements.aiKeywords.innerHTML = aiKws.map(kw => {
+          const isInOriginal = currentKws.includes(kw);
+          const cssClass = isInOriginal ? 'ai-existing' : 'ai-new';
+          return `<span class="keyword ${cssClass}" data-keyword="${kw}" title="${isInOriginal ? 'Ya existe en originales' : 'Nuevo de IA'}">${kw}</span>`;
+        }).join('');
+      } else {
+        elements.aiKeywords.innerHTML = '<span style="color: #888; font-size: 12px;">Sin keywords de IA</span>';
+      }
+
+      // Click listeners para AI keywords comparison (agregar a originales)
+      document.querySelectorAll('#originalKeywords .keyword, #aiKeywords .keyword').forEach(el => {
+        el.addEventListener('click', () => {
+          const keyword = el.dataset.keyword;
+          toggleKeyword(keyword);
         });
       });
 
