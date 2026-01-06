@@ -5,29 +5,17 @@
     "alias": "barco de juncos y vanderin rojo",
     "notes": "",
     "keywords": [
-      "variante",
+      "banderas",
       "paisajes--nautico",
-      "barcos",
+      "tecnicas--delineado",
       "vehiculos",
-      "delineado",
-      "rojo"
+      "vehiculos--barcos"
     ],
     "images": [
       "2000__barco de juncos y vanderin rojo__variante__nautico__barco.jpg"
     ],
     "width": 2152,
-    "height": 1455,
-    "keywords_ai": [
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "rojo",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "bandera",
-      "firma"
-    ]
+    "height": 1455
   },
   {
     "year": 1999,
@@ -35,33 +23,21 @@
     "alias": "block island steamboat c",
     "notes": "",
     "keywords": [
+      "banderas",
       "paisajes--nautico",
-      "barcos",
-      "veleros",
-      "botes",
-      "vehiculos",
       "puerto",
-      "delineado"
+      "tecnicas--delineado",
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--botes",
+      "vehiculos--veleros"
     ],
     "images": [
       "1999__block island steamboat c__nautico__barcos__rio.jpg"
     ],
     "width": 2399,
-    "height": 1623,
-    "keywords_ai": [
-      "barcos",
-      "botes",
-      "delineado",
-      "paisajes--nautico",
-      "puerto",
-      "vehiculos",
-      "veleros"
-    ],
-    "keywords_ai_extra": [
-      "bandera",
-      "firma",
-      "texto"
-    ]
+    "height": 1623
   },
   {
     "year": 1999,
@@ -69,41 +45,25 @@
     "alias": "botes e iglesia en puerto 2",
     "notes": "",
     "keywords": [
-      "aplat",
-      "barcos",
-      "veleros",
-      "botes",
-      "vehiculos",
+      "arquitectura",
+      "cupulas",
+      "iglesias",
       "paisajes--nautico",
       "paisajes--urbano",
-      "iglesia",
+      "reflejo",
       "religion",
       "rio",
-      "arquitectura"
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--botes",
+      "vehiculos--veleros"
     ],
     "images": [
       "1999__botes e iglesia en puerto_2__barcos__aplast__rio.jpg"
     ],
     "width": 3029,
-    "height": 2075,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "botes",
-      "iglesia",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "religion",
-      "rio",
-      "vehiculos",
-      "veleros"
-    ],
-    "keywords_ai_extra": [
-      "cupula",
-      "firma",
-      "reflejo"
-    ]
+    "height": 2075
   },
   {
     "year": 1999,
@@ -111,35 +71,21 @@
     "title": "Santa Rafaela María - Martinez 2",
     "notes": "",
     "keywords": [
-      "religion",
-      "iglesia",
-      "parroquia",
+      "arboles",
+      "arquitectura",
+      "iglesias",
+      "jardin",
       "lugares",
       "lugares--martinez",
-      "aplat",
-      "arquitectura",
-      "paisajes--urbano"
+      "parroquia",
+      "religion",
+      "tecnicas--aplat"
     ],
     "images": [
       "1999__Santa Rafaela María - Martinez_2__religioso__iglesia__ligares__martinez.jpg"
     ],
     "width": 2739,
-    "height": 2245,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "iglesia",
-      "lugares",
-      "lugares--martinez",
-      "parroquia",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "arboles",
-      "cruz",
-      "firma",
-      "jardin"
-    ]
+    "height": 2245
   },
   {
     "year": 1998,
@@ -147,35 +93,22 @@
     "alias": "barcos en dique seco",
     "notes": "",
     "keywords": [
-      "aplat",
+      "arquitectura",
+      "astillero",
+      "gruas",
       "paisajes--nautico",
       "paisajes--urbano",
-      "barcos",
-      "botes",
-      "vehiculos",
       "puerto",
-      "arquitectura"
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--botes"
     ],
     "images": [
       "1998__barcos en dique seco__nautico__aplast__rio.jpg"
     ],
     "width": 1897,
-    "height": 1299,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "botes",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "puerto",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "astillero",
-      "firma",
-      "gruas"
-    ]
+    "height": 1299
   },
   {
     "year": 1996,
@@ -183,32 +116,19 @@
     "title": "Cubismo Moscovita Calles de Moscú",
     "notes": "",
     "keywords": [
-      "back",
-      "delineado",
+      "arquitectura",
+      "cupulas",
+      "iglesias",
       "paisajes--urbano",
-      "iglesia",
       "religion",
-      "arquitectura"
+      "tecnicas--delineado"
     ],
     "images": [
       "1996__Cubismo Moscovita_Calles de Moscú__delineado__paisaje-urbano__iglesia.jpg",
       "1996__Cubismo Moscovita_Calles de Moscú__back.jpg"
     ],
     "width": 1502,
-    "height": 1802,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "iglesia",
-      "paisajes--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "barroco",
-      "cruz",
-      "cupula",
-      "firma"
-    ]
+    "height": 1802
   },
   {
     "year": 1996,
@@ -216,37 +136,20 @@
     "alias": "las estaciones - otoño",
     "notes": "Estación de Otoño",
     "keywords": [
-      "variante",
-      "serie",
-      "otono",
+      "arboles",
       "estaciones",
-      "aplat",
-      "notas",
+      "otono",
       "paisajes--natural",
       "paisajes--rural",
-      "rural",
-      "rojo"
+      "tecnicas--aplat",
+      "vallado",
+      "escenas--primer-plano"
     ],
     "images": [
       "1996__las estaciones - otoño__variante_2__Estación de Otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
     ],
     "width": 1664,
-    "height": 1657,
-    "keywords_ai": [
-      "aplat",
-      "estaciones",
-      "otono",
-      "paisajes--natural",
-      "paisajes--rural",
-      "rojo",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "arboles",
-      "cerca",
-      "firma",
-      "vallado"
-    ]
+    "height": 1657
   },
   {
     "year": 1995,
@@ -254,32 +157,21 @@
     "alias": "puerto 17-p",
     "notes": "",
     "keywords": [
-      "aplat",
-      "puerto",
-      "rio",
+      "arquitectura",
+      "edificios",
+      "muelles",
       "paisajes--nautico",
       "paisajes--urbano",
-      "arquitectura"
+      "puerto",
+      "reflejo",
+      "rio",
+      "tecnicas--aplat"
     ],
     "images": [
       "1995__puerto_17-p__rio__puerto__aplast.jpg"
     ],
     "width": 1711,
-    "height": 1172,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "puerto",
-      "rio"
-    ],
-    "keywords_ai_extra": [
-      "edificio-numerado",
-      "firma",
-      "muelle",
-      "reflejo"
-    ]
+    "height": 1172
   },
   {
     "year": 1994,
@@ -287,35 +179,21 @@
     "title": "parroquia santa maria de la Lucila",
     "notes": "",
     "keywords": [
-      "parroquia",
-      "iglesia",
-      "religion",
+      "arquitectura",
+      "campanarios",
+      "iglesias",
       "lugares",
       "lugares--martinez",
-      "aplat",
-      "arquitectura",
-      "paisajes--urbano"
+      "paisajes--urbano",
+      "parroquia",
+      "religion",
+      "tecnicas--aplat"
     ],
     "images": [
       "1994__parroquia santa maria de la Lucila__parroquia__iglesia__religioso__lugares__martinez__aplast.jpg"
     ],
     "width": 1363,
-    "height": 1099,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "iglesia",
-      "lugares",
-      "lugares--martinez",
-      "parroquia",
-      "paisajes--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "campanario",
-      "cruz",
-      "firma"
-    ]
+    "height": 1099
   },
   {
     "year": 1992,
@@ -323,37 +201,21 @@
     "alias": "las estaciones - invierno",
     "notes": "Estación de invierno",
     "keywords": [
-      "serie",
-      "invierno",
+      "arboles",
       "estaciones",
-      "delineado",
-      "notas",
+      "invierno",
+      "nieve",
       "paisajes--natural",
       "paisajes--rural",
-      "rural",
-      "blanco"
+      "tecnicas--delineado",
+      "vallado",
+      "escenas--primer-plano"
     ],
     "images": [
       "1992__las estaciones - invierno__Estación de invierno__paisaje__serie__invierno__estaciones__aplast.jpg"
     ],
     "width": 1788,
-    "height": 1252,
-    "keywords_ai": [
-      "blanco",
-      "delineado",
-      "estaciones",
-      "invierno",
-      "paisajes--natural",
-      "paisajes--rural",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "arboles",
-      "cerca",
-      "firma",
-      "nieve",
-      "vallado"
-    ]
+    "height": 1252
   },
   {
     "year": 1992,
@@ -361,37 +223,21 @@
     "alias": "las estaciones - otoño",
     "notes": "Estación de otoño",
     "keywords": [
-      "serie",
-      "otono",
+      "arboles",
       "estaciones",
-      "aplat",
-      "notas",
+      "luces",
+      "otono",
       "paisajes--natural",
       "paisajes--rural",
-      "rural",
-      "rojo"
+      "tecnicas--aplat",
+      "vallado",
+      "escenas--primer-plano"
     ],
     "images": [
       "1992__las estaciones - otoño__Estación de otoño__paisaje__serie__otoño__estaciones__aplast.jpg"
     ],
     "width": 1669,
-    "height": 1122,
-    "keywords_ai": [
-      "aplat",
-      "estaciones",
-      "otono",
-      "paisajes--natural",
-      "paisajes--rural",
-      "rojo",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "arboles",
-      "cerca",
-      "firma",
-      "sol",
-      "vallado"
-    ]
+    "height": 1122
   },
   {
     "year": 1989,
@@ -399,30 +245,18 @@
     "title": "Cruz",
     "notes": "Número 128; Número 138",
     "keywords": [
-      "religion",
-      "delineado",
-      "back",
-      "notas",
       "escenas--de-genero",
-      "figuras--humanas"
+      "escenas--figura-humana",
+      "religion",
+      "tecnicas--delineado",
+      "texto"
     ],
     "images": [
       "1989__Cruz__Número 128__religioso__delineado.jpg",
       "1989__Cruz__Número 138__back.jpg"
     ],
     "width": 1635,
-    "height": 2106,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "crucifixion",
-      "firma",
-      "texto"
-    ]
+    "height": 2106
   },
   {
     "year": 1987,
@@ -430,28 +264,18 @@
     "alias": "bol de naranjas",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior",
-      "aplat"
+      "cuadro-dentro-cuadro",
+      "escenas--bodegon",
+      "escenas--interior",
+      "mobiliario",
+      "puertas",
+      "tecnicas--aplat"
     ],
     "images": [
       "1987__bol de naranjas__bodegon__interior__aplast.jpg"
     ],
     "width": 1440,
-    "height": 2102,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "cuadro-dentro-cuadro",
-      "firma",
-      "frutas",
-      "mesa",
-      "puerta",
-      "silla"
-    ]
+    "height": 2102
   },
   {
     "year": 1986,
@@ -459,37 +283,24 @@
     "alias": "puerto 3 tovau",
     "notes": "",
     "keywords": [
-      "aplat",
+      "arquitectura",
+      "edificios",
       "paisajes--nautico",
       "paisajes--urbano",
       "puerto",
-      "barcos",
-      "botes",
+      "reflejo",
+      "tecnicas--aplat",
+      "texto",
       "vehiculos",
-      "arquitectura"
+      "vehiculos--barcos",
+      "vehiculos--botes"
     ],
     "images": [
       "1986__puerto_3_tovau__aplast__nautico__puerto__rio__barcos.jpg",
       "1986__puerto_3_tovau__aplast__nautico__puerto__rio__barcos__detalle__firma.jpg"
     ],
     "width": 1848,
-    "height": 2217,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "botes",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "puerto",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "edificio-numerado",
-      "firma",
-      "reflejo",
-      "texto"
-    ]
+    "height": 2217
   },
   {
     "year": 1985,
@@ -497,20 +308,18 @@
     "title": "Aldea costera",
     "notes": "P.A 7-24",
     "keywords": [
-      "tecnicas--serigrafia",
-      "vistas--aereas",
-      "paisajes--urbano",
-      "paisajes--nautico",
-      "puerto",
-      "barcos",
-      "botes",
-      "vehiculos",
       "arquitectura",
-      "tecnicas--oleo",
-      "aplat",
-      "back",
-      "firma",
-      "notas"
+      "cupulas",
+      "iglesias",
+      "muelles",
+      "paisajes--nautico",
+      "paisajes--urbano",
+      "puerto",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--botes",
+      "escenas--vista-aerea"
     ],
     "images": [
       "1985__Aldea costera__oleo__vista-aerea__paisaje-urbano__puerto__nautico.jpg",
@@ -519,23 +328,7 @@
       "1985__Aldea costera__oleo__vista-aerea__paisaje-urbano__puerto__nautico__firma.jpg"
     ],
     "width": 2444,
-    "height": 2003,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "botes",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "puerto",
-      "vehiculos",
-      "vistas--aereas"
-    ],
-    "keywords_ai_extra": [
-      "cupula",
-      "iglesia",
-      "muelle"
-    ]
+    "height": 2003
   },
   {
     "year": 1985,
@@ -543,35 +336,22 @@
     "title": "Dársena",
     "notes": "",
     "keywords": [
-      "back",
-      "puerto",
-      "aplat",
+      "arquitectura",
+      "faros",
+      "gruas",
       "paisajes--nautico",
       "paisajes--urbano",
-      "barcos",
+      "puerto",
+      "tecnicas--aplat",
       "vehiculos",
-      "arquitectura"
+      "vehiculos--barcos"
     ],
     "images": [
       "1985__Dársena__puerto__aplast__nautico.jpg",
       "1985__Dársena__back.jpg"
     ],
     "width": 1298,
-    "height": 1550,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "puerto",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "faro",
-      "firma",
-      "gruas"
-    ]
+    "height": 1550
   },
   {
     "year": 1985,
@@ -579,32 +359,21 @@
     "alias": "taberna y vivero - mariskonea",
     "notes": "<p><strong>Mariskonea</strong> fue un restaurante emblemático de Punta del Este, fundado en 1944 por Ascención Iturria en la Playa Brava, en la esquina de <strong>calles 26 y 21</strong>, frente a la Isla de Lobos. Reconocido por su propuesta pionera en frutos de mar y por albergar el único vivero de mariscos del país, funcionó durante décadas como un punto de referencia gastronómico y social del balneario. Tras el cierre del local original, el restaurante tuvo un breve resurgimiento en <strong>calle 21 y Gorlero</strong>, hasta su <strong>cierre definitivo en 2003</strong>. <strong>El edificio histórico de la Playa Brava fue demolido en junio de 2015 y hoy ya no existe.</strong></p><p><strong>Fuentes:</strong></p><ul><li><a href=\"https://www.maldonado.gub.uy/sites/default/files/2024-03/Mariskonea.pdf\" target=\"_blank\" rel=\"noopener\">Intendencia de Maldonado – <em>Mariskonea</em> (PDF)</a></li><li><a href=\"https://www.elobservador.com.uy/nota/revive-el-tradicional-restaurante-mariskonea-2012122113100\" target=\"_blank\" rel=\"noopener\">El Observador – &quot;Revive el tradicional restaurante Mariskonea&quot;</a></li><li><a href=\"https://bhl.org.uy/index.php/Mariskonea\" target=\"_blank\" rel=\"noopener\">Banco de Historias Locales (BHL) – Mariskonea</a></li></ul>",
     "keywords": [
+      "arboles",
+      "arquitectura",
+      "carteles",
+      "faros",
       "lugares",
       "lugares--punta-del-este",
-      "notas",
-      "aplat",
-      "arquitectura",
-      "paisajes--nautico"
+      "paisajes--nautico",
+      "tecnicas--aplat",
+      "texto"
     ],
     "images": [
       "1985__taberna y vivero - mariskonea__punta_del_este__lugares.jpg"
     ],
     "width": 2545,
-    "height": 1743,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "lugares",
-      "lugares--punta-del-este",
-      "paisajes--nautico"
-    ],
-    "keywords_ai_extra": [
-      "arboles",
-      "cartel",
-      "faro",
-      "firma",
-      "texto"
-    ]
+    "height": 1743
   },
   {
     "year": 1983,
@@ -612,24 +381,16 @@
     "alias": "pueblo con escaleras",
     "notes": "",
     "keywords": [
-      "aplat",
+      "arquitectura",
+      "escaleras",
       "paisajes--urbano",
-      "arquitectura"
+      "tecnicas--aplat"
     ],
     "images": [
       "1983__pueblo con escaleras__aplast__paisaje-urbano.jpg"
     ],
     "width": 1730,
-    "height": 1179,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "escaleras",
-      "firma"
-    ]
+    "height": 1179
   },
   {
     "year": 1983,
@@ -637,27 +398,18 @@
     "alias": "pueblo sobre pilotes",
     "notes": "",
     "keywords": [
-      "aplat",
-      "paisajes--urbano",
+      "arquitectura",
+      "montanas",
       "paisajes--nautico",
-      "arquitectura"
+      "paisajes--urbano",
+      "palafitos",
+      "tecnicas--aplat"
     ],
     "images": [
       "1983__pueblo sobre pilotes__aplast__paisaje-urbano.jpg"
     ],
     "width": 1674,
-    "height": 1369,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--nautico",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "firma",
-      "montana",
-      "palafitos"
-    ]
+    "height": 1369
   },
   {
     "year": 1983,
@@ -665,11 +417,11 @@
     "title": "Reflejos en Dinan",
     "notes": "",
     "keywords": [
-      "tecnicas--serigrafia",
-      "aplat",
-      "rio",
+      "arquitectura",
       "paisajes--urbano",
-      "arquitectura"
+      "reflejo",
+      "rio",
+      "tecnicas--aplat"
     ],
     "images": [
       "1983__Reflejos en Dinan__serigrafia__aplast__rio.jpg",
@@ -678,16 +430,7 @@
       "1983__Reflejos en Dinan__serigrafia__back.jpg"
     ],
     "width": 1626,
-    "height": 2094,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--urbano",
-      "rio"
-    ],
-    "keywords_ai_extra": [
-      "reflejo"
-    ]
+    "height": 2094
   },
   {
     "year": 1983,
@@ -695,28 +438,18 @@
     "title": "Reflejos en Dinan",
     "notes": "",
     "keywords": [
-      "tecnicas--serigrafia",
-      "aplat",
-      "rio",
+      "arquitectura",
       "paisajes--urbano",
-      "arquitectura"
+      "reflejo",
+      "rio",
+      "tecnicas--aplat"
     ],
     "images": [
       "1983__Reflejos en Dinan__serigrafia_2__aplast__rio.jpg",
       "1983__Reflejos en Dinan__serigrafia_2.jpg"
     ],
     "width": 2376,
-    "height": 2899,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--urbano",
-      "rio",
-      "rojo"
-    ],
-    "keywords_ai_extra": [
-      "reflejo"
-    ]
+    "height": 2899
   },
   {
     "year": 1982,
@@ -724,15 +457,18 @@
     "alias": "calle belgrano al 674",
     "notes": "Calle Belgrano al 600, San Isidro",
     "keywords": [
-      "detalle",
-      "notas",
+      "arboles",
+      "arquitectura",
+      "edificios",
       "lugares",
       "lugares--san-isidro",
-      "delineado",
-      "tecnicas--tinta",
-      "dibujo",
       "paisajes--urbano",
-      "arquitectura"
+      "puertas",
+      "religion",
+      "tecnicas--delineado",
+      "tecnicas--dibujo",
+      "tecnicas--tinta",
+      "texto"
     ],
     "images": [
       "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro.jpg",
@@ -743,24 +479,7 @@
       "1982__calle belgrano al 674__Calle Belgrano al 600, San Isidro__detalle.jpg"
     ],
     "width": 1891,
-    "height": 1891,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "dibujo",
-      "lugares",
-      "lugares--san-isidro",
-      "paisajes--urbano",
-      "tecnicas--tinta"
-    ],
-    "keywords_ai_extra": [
-      "arboles",
-      "cruz",
-      "edificio-numerado",
-      "porton",
-      "religion",
-      "texto"
-    ]
+    "height": 1891
   },
   {
     "year": 1982,
@@ -768,33 +487,22 @@
     "title": "Piazza Viareggio - St. Giorgio",
     "notes": "",
     "keywords": [
-      "delineado",
+      "arquitectura",
+      "cupulas",
+      "mobiliario",
       "monocromatico",
-      "plaza",
-      "dibujo",
       "paisajes--urbano",
-      "arquitectura"
+      "plaza",
+      "religion",
+      "tecnicas--delineado",
+      "tecnicas--dibujo",
+      "texto"
     ],
     "images": [
       "1982__Piazza Viareggio - St. Giorgio__delineado__monocromatico__plaza__dibujo.jpg"
     ],
     "width": 1649,
-    "height": 1352,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "dibujo",
-      "monocromatico",
-      "paisajes--urbano",
-      "plaza"
-    ],
-    "keywords_ai_extra": [
-      "barroco",
-      "cupula",
-      "firma",
-      "mesas",
-      "texto"
-    ]
+    "height": 1352
   },
   {
     "year": 1981,
@@ -802,20 +510,14 @@
     "title": "Granaj en Bretaña",
     "notes": "",
     "keywords": [
-      "back"
+      "decorativo",
+      "texto"
     ],
     "images": [
       "1981__Granaj_en_Bretaña__back_1.jpg"
     ],
     "width": 768,
-    "height": 576,
-    "keywords_ai": [
-      "back"
-    ],
-    "keywords_ai_extra": [
-      "etiqueta",
-      "texto"
-    ]
+    "height": 576
   },
   {
     "year": 1981,
@@ -823,26 +525,17 @@
     "title": "Granja en Bretaña",
     "notes": "",
     "keywords": [
-      "aplat",
+      "arquitectura",
+      "chimeneas",
       "paisajes--rural",
-      "rural",
-      "arquitectura"
+      "tecnicas--aplat"
     ],
     "images": [
       "1981__Granja_en_Bretaña__aplast__paisaje-rural.jpg",
       "1981__Granja_en_Bretaña__back_2.jpg"
     ],
     "width": 1300,
-    "height": 941,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--rural",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "chimenea"
-    ]
+    "height": 941
   },
   {
     "year": 1981,
@@ -850,27 +543,16 @@
     "title": "Granja en Bretaña",
     "notes": "",
     "keywords": [
-      "variante",
-      "invertido",
-      "aplat",
+      "arquitectura",
+      "chimeneas",
       "paisajes--rural",
-      "rural",
-      "arquitectura"
+      "tecnicas--aplat"
     ],
     "images": [
       "1981__Granja_en_Bretaña__variante_2__invertido__aplast__paisaje-rural.jpg.jpg"
     ],
     "width": 2148,
-    "height": 1761,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--rural",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "chimenea"
-    ]
+    "height": 1761
   },
   {
     "year": 1981,
@@ -878,32 +560,21 @@
     "alias": "velero y cabaña",
     "notes": "",
     "keywords": [
-      "aplat",
-      "rio",
-      "botes",
-      "vehiculos",
+      "arquitectura",
+      "banderas",
+      "casas",
       "paisajes--nautico",
-      "arquitectura"
+      "reflejo",
+      "rio",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--botes"
     ],
     "images": [
       "1981__velero y cabaña__aplast__rio.jpg"
     ],
     "width": 2461,
-    "height": 1686,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "botes",
-      "paisajes--nautico",
-      "rio",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "bandera",
-      "cabana",
-      "firma",
-      "reflejo"
-    ]
+    "height": 1686
   },
   {
     "year": 1981,
@@ -911,32 +582,21 @@
     "alias": "velero y cabaña",
     "notes": "",
     "keywords": [
-      "tecnicas--serigrafia",
-      "aplat",
-      "rio",
-      "botes",
-      "vehiculos",
+      "arquitectura",
+      "banderas",
+      "casas",
       "paisajes--nautico",
-      "arquitectura"
+      "reflejo",
+      "rio",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--botes"
     ],
     "images": [
       "1981__velero y cabaña__serigrafia__aplast__rio.jpg"
     ],
     "width": 2527,
-    "height": 1731,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "botes",
-      "paisajes--nautico",
-      "rio",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "bandera",
-      "cabana",
-      "reflejo"
-    ]
+    "height": 1731
   },
   {
     "year": 1980,
@@ -944,28 +604,17 @@
     "title": "chivas R",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "delineado",
-      "interior",
-      "detalle",
-      "firma"
+      "escenas--bodegon",
+      "escenas--interior",
+      "tecnicas--delineado",
+      "texto"
     ],
     "images": [
       "1980__chivas R__bodegon__delineado__interior.jpg",
       "1980__chivas R__bodegon__delineado__interior__detalle__firma.jpg"
     ],
     "width": 2088,
-    "height": 1740,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "botellas",
-      "frutas",
-      "texto"
-    ]
+    "height": 1740
   },
   {
     "year": 1980,
@@ -973,34 +622,23 @@
     "title": "Cochera y caballeriza de la vieja quinta de la torre",
     "notes": "",
     "keywords": [
-      "tecnicas--tinta",
-      "monocromatico",
-      "dibujo",
+      "arboles",
       "arquitectura",
+      "campanarios",
       "lugares",
-      "lugares--martinez"
+      "lugares--martinez",
+      "monocromatico",
+      "tecnicas--delineado",
+      "tecnicas--dibujo",
+      "tecnicas--tinta",
+      "texto"
     ],
     "images": [
       "1980__Cochera y caballeriza de la vieja quinta de la torre.jpg",
       "1980__Cochera y caballeriza de la vieja quinta de la torre__detalle.jpg"
     ],
     "width": 2502,
-    "height": 2051,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "dibujo",
-      "lugares",
-      "lugares--martinez",
-      "monocromatico",
-      "tecnicas--tinta"
-    ],
-    "keywords_ai_extra": [
-      "arboles",
-      "campanario",
-      "firma",
-      "texto"
-    ]
+    "height": 2051
   },
   {
     "year": 1980,
@@ -1008,30 +646,18 @@
     "alias": "cosechadora y carro 17",
     "notes": "",
     "keywords": [
-      "vehiculos--tractor",
-      "vehiculos",
-      "paisajes--rural",
-      "rural",
       "cosecha",
-      "delineado"
+      "edificios",
+      "paisajes--rural",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--tractor"
     ],
     "images": [
       "1980__cosechadora y carro 17__paisaje-rural__tractor__aplast.jpg"
     ],
     "width": 2955,
-    "height": 2109,
-    "keywords_ai": [
-      "cosecha",
-      "delineado",
-      "paisajes--rural",
-      "rural",
-      "vehiculos",
-      "vehiculos--tractor"
-    ],
-    "keywords_ai_extra": [
-      "edificio-numerado",
-      "firma"
-    ]
+    "height": 2109
   },
   {
     "year": 1980,
@@ -1039,34 +665,22 @@
     "alias": "dique 39",
     "notes": "",
     "keywords": [
-      "delineado",
-      "puerto",
-      "barcos",
-      "vehiculos",
+      "arquitectura",
+      "banderas",
+      "edificios",
       "paisajes--nautico",
       "paisajes--urbano",
-      "arquitectura"
+      "puerto",
+      "tecnicas--delineado",
+      "torres",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1980__dique 39__delineado__puerto__rio.jpg"
     ],
     "width": 1649,
-    "height": 1352,
-    "keywords_ai": [
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "puerto",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "bandera",
-      "edificio-numerado",
-      "firma",
-      "torre"
-    ]
+    "height": 1352
   },
   {
     "year": 1980,
@@ -1074,30 +688,18 @@
     "alias": "el casco",
     "notes": "",
     "keywords": [
-      "aplat",
-      "paisajes--rural",
-      "rural",
       "arquitectura",
-      "rojo"
+      "banderas",
+      "chimeneas",
+      "paisajes--rural",
+      "tecnicas--aplat",
+      "vehiculos--carro"
     ],
     "images": [
       "1980__el casco__aplats.jpg"
     ],
     "width": 1911,
-    "height": 1274,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--rural",
-      "rojo",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "bandera",
-      "chimenea",
-      "firma",
-      "vehiculos--carro"
-    ]
+    "height": 1274
   },
   {
     "year": 1980,
@@ -1105,30 +707,19 @@
     "alias": "granja en la loma",
     "notes": "",
     "keywords": [
-      "aplat",
+      "arquitectura",
+      "campanarios",
       "paisajes--rural",
-      "rural",
-      "arquitectura"
+      "religion",
+      "tecnicas--aplat",
+      "torres"
     ],
     "images": [
       "1980__granja en la loma__aplats__paisaje-rural__2.jpg",
       "1980__granja en la loma__aplats__paisaje-rural__2__firma.jpg"
     ],
     "width": 2986,
-    "height": 2045,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--rural",
-      "religion",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "campanario",
-      "cruz",
-      "firma",
-      "torre"
-    ]
+    "height": 2045
   },
   {
     "year": 1980,
@@ -1136,26 +727,18 @@
     "title": "La Croisette",
     "notes": "",
     "keywords": [
-      "back",
-      "aplat",
-      "paisajes--nautico"
+      "faros",
+      "paisajes--nautico",
+      "playa",
+      "sombrillas",
+      "tecnicas--aplat"
     ],
     "images": [
       "1980__La Croisette__playa__aplast.jpg",
       "1980__La Croisette__back.jpg"
     ],
     "width": 1498,
-    "height": 1804,
-    "keywords_ai": [
-      "aplat",
-      "paisajes--nautico"
-    ],
-    "keywords_ai_extra": [
-      "faro",
-      "firma",
-      "playa",
-      "sombrillas"
-    ]
+    "height": 1804
   },
   {
     "year": 1980,
@@ -1163,20 +746,14 @@
     "title": "La Hora del Té",
     "notes": "",
     "keywords": [
-      "back"
+      "decorativo",
+      "texto"
     ],
     "images": [
       "1980__La Hora del Té__back.jpg"
     ],
     "width": 3026,
-    "height": 2279,
-    "keywords_ai": [
-      "back"
-    ],
-    "keywords_ai_extra": [
-      "etiqueta",
-      "texto"
-    ]
+    "height": 2279
   },
   {
     "year": 1980,
@@ -1184,30 +761,19 @@
     "alias": "pueblo y sembradio",
     "notes": "",
     "keywords": [
-      "aplat",
-      "paisajes--rural",
-      "rural",
       "arquitectura",
-      "cosecha"
+      "chimeneas",
+      "cosecha",
+      "paisajes--rural",
+      "tecnicas--aplat",
+      "vallado",
+      "escenas--primer-plano"
     ],
     "images": [
       "1980__pueblo y sembradio__paisaje-rural__aplast.jpg"
     ],
     "width": 1999,
-    "height": 1333,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "cosecha",
-      "paisajes--rural",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "cerca",
-      "chimenea",
-      "firma",
-      "vallado"
-    ]
+    "height": 1333
   },
   {
     "year": 1980,
@@ -1215,12 +781,11 @@
     "title": "Reflejos en Dinan",
     "notes": "",
     "keywords": [
-      "back",
-      "firma",
-      "aplat",
-      "rio",
+      "arquitectura",
       "paisajes--urbano",
-      "arquitectura"
+      "reflejo",
+      "rio",
+      "tecnicas--aplat"
     ],
     "images": [
       "1980__Reflejos en Dinan__rio__aplast.jpg",
@@ -1228,16 +793,7 @@
       "1980__Reflejos en Dinan__firma.jpg"
     ],
     "width": 2034,
-    "height": 2969,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--urbano",
-      "rio"
-    ],
-    "keywords_ai_extra": [
-      "reflejo"
-    ]
+    "height": 2969
   },
   {
     "year": 1980,
@@ -1245,29 +801,19 @@
     "alias": "reloj verde y violín",
     "notes": "",
     "keywords": [
-      "aplat",
-      "interior",
-      "bodegon",
-      "musical"
+      "escenas--bodegon",
+      "escenas--interior",
+      "mobiliario",
+      "musica",
+      "musical",
+      "relojes",
+      "tecnicas--aplat"
     ],
     "images": [
       "1980__reloj verde y violín__aplast__interior.jpg"
     ],
     "width": 1698,
-    "height": 1403,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "interior",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "firma",
-      "muebles",
-      "reloj",
-      "silla",
-      "violin"
-    ]
+    "height": 1403
   },
   {
     "year": 1980,
@@ -1275,31 +821,19 @@
     "title": "Tiempo de Cosecha",
     "notes": "",
     "keywords": [
-      "variante",
-      "firma",
-      "aplat",
-      "paisajes--rural",
-      "rural",
+      "arquitectura",
+      "campanarios",
+      "chimeneas",
       "cosecha",
-      "arquitectura"
+      "paisajes--rural",
+      "tecnicas--aplat"
     ],
     "images": [
       "1980__Tiempo de Cosecha__variante_3.jpg",
       "1980__Tiempo de Cosecha__variante_3__firma.jpg"
     ],
     "width": 1873,
-    "height": 1535,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "cosecha",
-      "paisajes--rural",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "campanario",
-      "chimenea"
-    ]
+    "height": 1535
   },
   {
     "year": 1980,
@@ -1307,14 +841,15 @@
     "alias": "tiempo de cosecha",
     "notes": "variante 2; 129 de 150",
     "keywords": [
-      "back",
-      "aplat",
-      "notas",
-      "tecnicas--serigrafia",
-      "paisajes--rural",
-      "rural",
+      "arquitectura",
+      "campanarios",
+      "campo",
+      "chimeneas",
       "cosecha",
-      "arquitectura"
+      "grano",
+      "paisajes--rural",
+      "tecnicas--aplat",
+      "tecnicas--serigrafia"
     ],
     "images": [
       "1980__Tiempo de cosecha__aplast__paisaje-rural.jpg",
@@ -1323,21 +858,7 @@
     ],
     "title": "Tiempo de cosecha",
     "width": 2523,
-    "height": 1803,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "cosecha",
-      "paisajes--rural",
-      "rural",
-      "tecnicas--serigrafia"
-    ],
-    "keywords_ai_extra": [
-      "campanario",
-      "chimenea",
-      "campo",
-      "grano"
-    ]
+    "height": 1803
   },
   {
     "year": 1980,
@@ -1345,13 +866,14 @@
     "alias": "tiempo de cosecha",
     "notes": "",
     "keywords": [
-      "variante",
-      "back",
-      "aplat",
-      "paisajes--rural",
-      "rural",
+      "arquitectura",
+      "campanarios",
+      "campo",
+      "chimeneas",
       "cosecha",
-      "arquitectura"
+      "paisajes--rural",
+      "pueblo",
+      "tecnicas--aplat"
     ],
     "images": [
       "1980__Tiempo de cosecha__variante_2__paisaje-rural__aplast.jpg",
@@ -1359,21 +881,7 @@
     ],
     "title": "Tiempo de cosecha",
     "width": 1273,
-    "height": 854,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "cosecha",
-      "paisajes--rural",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "campanario",
-      "chimenea",
-      "pueblo",
-      "campo",
-      "cosecha"
-    ]
+    "height": 854
   },
   {
     "year": 1979,
@@ -1381,33 +889,20 @@
     "alias": "fiat voluntas dei",
     "notes": "",
     "keywords": [
-      "delineado",
-      "religion",
-      "figuras--humanas",
+      "arquitectura",
+      "cupulas",
       "escenas--de-genero",
+      "escenas--figura-humana",
+      "iglesias",
       "paisajes--urbano",
-      "arquitectura"
+      "religion",
+      "tecnicas--delineado"
     ],
     "images": [
       "1979__fiat_voluntas_dei__delineado__religioso.jpg"
     ],
     "width": 1425,
-    "height": 1821,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "paisajes--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "cupula",
-      "iglesia",
-      "hombre",
-      "mujer",
-      "pareja"
-    ]
+    "height": 1821
   },
   {
     "year": 1979,
@@ -1415,33 +910,19 @@
     "alias": "welcome lucas",
     "notes": "Cuadro conmemorativo del nacimiento de su nieto Lucas Dasso el 21 de diciembre de 1979.",
     "keywords": [
-      "delineado",
-      "notas",
-      "paisajes--rural",
-      "rural",
       "arquitectura",
-      "figuras--humanas"
+      "establo",
+      "escenas--figura-humana",
+      "granja",
+      "paisajes--rural",
+      "religion",
+      "tecnicas--delineado"
     ],
     "images": [
       "1979__welcome lucas__delineado__paisaje-rural.jpg"
     ],
     "width": 2013,
-    "height": 2434,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "figuras--humanas",
-      "paisajes--rural",
-      "rural"
-    ],
-    "keywords_ai_extra": [
-      "granja",
-      "establo",
-      "mujer",
-      "hombre",
-      "familia",
-      "conmemorativo"
-    ]
+    "height": 2434
   },
   {
     "year": 1978,
@@ -1449,27 +930,20 @@
     "alias": "pueblo del arco y el aljibe 2",
     "notes": "",
     "keywords": [
-      "delineado",
+      "aljibe",
+      "arcos",
+      "arquitectura",
+      "callejon",
+      "escaleras",
       "paisajes--urbano",
-      "arquitectura"
+      "pueblo",
+      "tecnicas--delineado"
     ],
     "images": [
       "1978__pueblo del arco y el aljibe_2__delineado__arqutectura.jpg"
     ],
     "width": 1167,
-    "height": 1704,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "arco",
-      "aljibe",
-      "pueblo",
-      "callejon",
-      "escalera"
-    ]
+    "height": 1704
   },
   {
     "year": 1977,
@@ -1477,31 +951,21 @@
     "title": "El Molino Rojo",
     "notes": "Serigrafía número 19/50",
     "keywords": [
+      "escenas--bodegon",
+      "escenas--interior",
+      "instrumentos",
+      "molino",
+      "musica",
+      "musical",
+      "tecnicas--aplat",
       "tecnicas--serigrafia",
-      "aplat",
-      "notas",
-      "bodegon",
-      "interior",
-      "musical"
+      "ventanas"
     ],
     "images": [
       "1977__El Molino Rojo__19-50__serigrafia__interior__bodegón__aplast__molino.jpg.jpg"
     ],
     "width": 2333,
-    "height": 3500,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "interior",
-      "musical",
-      "tecnicas--serigrafia"
-    ],
-    "keywords_ai_extra": [
-      "molino",
-      "guitarra",
-      "instrumento",
-      "ventana"
-    ]
+    "height": 3500
   },
   {
     "year": 1977,
@@ -1509,30 +973,21 @@
     "title": "La Piazza d'argento",
     "notes": "",
     "keywords": [
-      "back",
-      "aplat",
-      "paisajes--urbano",
       "arquitectura",
-      "lugares--italia"
+      "campanarios",
+      "edificios",
+      "lugares--italia",
+      "paisajes--urbano",
+      "plaza",
+      "tecnicas--aplat",
+      "torres"
     ],
     "images": [
       "1977__La Piazza d'argento__plaza__paisaje-urbano__aplast.jpg",
       "1977__La Piazza d'argento__back.jpg"
     ],
     "width": 1380,
-    "height": 1683,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "lugares--italia",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "plaza",
-      "edificios",
-      "torre",
-      "campanario"
-    ]
+    "height": 1683
   },
   {
     "year": 1977,
@@ -1540,15 +995,16 @@
     "title": "Le Moulin Rouge",
     "notes": "Serigrafía P-A XVII (prueba para el autor #17).",
     "keywords": [
+      "escenas--bodegon",
+      "escenas--interior",
+      "instrumentos",
+      "mobiliario",
+      "molino",
+      "musica",
+      "musical",
+      "tecnicas--aplat",
       "tecnicas--serigrafia",
-      "variante",
-      "lineas",
-      "back",
-      "aplat",
-      "notas",
-      "bodegon",
-      "interior",
-      "musical"
+      "ventanas"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__interior__bodegón__aplast__molino.jpg",
@@ -1557,21 +1013,7 @@
       "1977__Le_Moulin_Rouge__back.jpg"
     ],
     "width": 1402,
-    "height": 2123,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "interior",
-      "musical",
-      "tecnicas--serigrafia"
-    ],
-    "keywords_ai_extra": [
-      "molino",
-      "guitarra",
-      "instrumento",
-      "ventana",
-      "silla"
-    ]
+    "height": 2123
   },
   {
     "year": 1977,
@@ -1579,35 +1021,23 @@
     "title": "Le Moulin Rouge",
     "notes": "Serigrafía P-A XVII (prueba para el autor #17).",
     "keywords": [
+      "escenas--bodegon",
+      "escenas--interior",
+      "instrumentos",
+      "mobiliario",
+      "molino",
+      "musica",
+      "musical",
+      "tecnicas--delineado",
       "tecnicas--serigrafia",
-      "lineas",
-      "delineado",
-      "notas",
-      "bodegon",
-      "interior",
-      "musical"
+      "ventanas"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__serigrafia__P-A XVII__interior__bodegón__delineado__molino.jpg",
       "1977__Le_Moulin_Rouge__serigrafia.jpg"
     ],
     "width": 2107,
-    "height": 3076,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior",
-      "musical",
-      "tecnicas--serigrafia"
-    ],
-    "keywords_ai_extra": [
-      "molino",
-      "guitarra",
-      "instrumento",
-      "ventana",
-      "silla",
-      "mesa"
-    ]
+    "height": 3076
   },
   {
     "year": 1977,
@@ -1615,32 +1045,22 @@
     "title": "Le Moulin Rouge",
     "notes": "",
     "keywords": [
+      "escenas--bodegon",
+      "escenas--interior",
+      "instrumentos",
+      "mobiliario",
+      "molino",
+      "musica",
+      "musical",
+      "tecnicas--aplat",
       "tecnicas--serigrafia",
-      "aplat",
-      "bodegon",
-      "interior",
-      "musical"
+      "ventanas"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__serigrafia_2__interior__bodegón__aplast__molino.jpg"
     ],
     "width": 1960,
-    "height": 2862,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "interior",
-      "musical",
-      "tecnicas--serigrafia"
-    ],
-    "keywords_ai_extra": [
-      "molino",
-      "guitarra",
-      "instrumento",
-      "ventana",
-      "silla",
-      "mesa"
-    ]
+    "height": 2862
   },
   {
     "year": 1977,
@@ -1648,39 +1068,23 @@
     "title": "Le Moulin Rouge",
     "notes": "Belito solia hacer copias de sus cuadros y en este caso relfejo horizontalmente el original y cambio los colores principales de la imagen eligiendo resaltar el rojo del molinillo y dejar el resto en blanco. Nótese los trasos negros que delinean las formas.",
     "keywords": [
-      "variante",
-      "invertido",
-      "lineas",
-      "blanco",
-      "rojo",
-      "delineado",
-      "notas",
-      "bodegon",
-      "interior",
+      "escenas--bodegon",
+      "escenas--interior",
+      "instrumentos",
+      "mobiliario",
+      "molino",
+      "monocromatico",
+      "musica",
       "musical",
-      "monocromatico"
+      "reflejo-horizontal",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante_2__invertido__delineado__monocromatico__rojo__molino__interior__bodegón__delineado.jpg"
     ],
     "width": 1686,
-    "height": 2462,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior",
-      "monocromatico",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "molino",
-      "guitarra",
-      "instrumento",
-      "ventana",
-      "silla",
-      "mesa",
-      "reflejo-horizontal"
-    ]
+    "height": 2462
   },
   {
     "year": 1977,
@@ -1688,32 +1092,21 @@
     "title": "Le Moulin Rouge",
     "notes": "",
     "keywords": [
-      "variante",
-      "lineas",
-      "delineado",
-      "bodegon",
-      "interior",
-      "musical"
+      "escenas--bodegon",
+      "escenas--interior",
+      "instrumentos",
+      "mobiliario",
+      "molino",
+      "musica",
+      "musical",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1977__Le_Moulin_Rouge__variante__delineado__interior__bodegón__molino.jpg"
     ],
     "width": 2008,
-    "height": 3012,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "molino",
-      "guitarra",
-      "instrumento",
-      "ventana",
-      "silla",
-      "mesa"
-    ]
+    "height": 3012
   },
   {
     "year": 1977,
@@ -1721,29 +1114,17 @@
     "title": "Luz De Gas",
     "notes": "",
     "keywords": [
-      "delineado",
-      "figuras--humanas",
+      "danza",
       "escenas--de-genero",
-      "interior"
+      "escenas--interior",
+      "escenas--figura-humana",
+      "tecnicas--delineado"
     ],
     "images": [
       "1977__Luz De Gas__delineado__figura.jpg"
     ],
     "width": 1852,
-    "height": 2257,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "bailarina",
-      "mujer",
-      "danza",
-      "vestido",
-      "ballet"
-    ]
+    "height": 2257
   },
   {
     "year": 1977,
@@ -1751,33 +1132,23 @@
     "alias": "pueblo costero",
     "notes": "",
     "keywords": [
-      "delineado",
-      "paisajes--urbano",
-      "paisajes--nautico",
       "arquitectura",
+      "costa",
+      "muelles",
+      "paisajes--nautico",
+      "paisajes--urbano",
+      "puentes",
+      "puerto",
+      "tecnicas--delineado",
       "vehiculos",
-      "barcos"
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "1977__pueblo costero__paisaje-urbano__delineado__nautico.jpg"
     ],
     "width": 2512,
-    "height": 1721,
-    "keywords_ai": [
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "paisajes--urbano",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "puerto",
-      "costa",
-      "veleros",
-      "muelle",
-      "puente"
-    ]
+    "height": 1721
   },
   {
     "year": 1977,
@@ -1785,33 +1156,20 @@
     "title": "Senuf Retse Akire Atketihcra y Arejaiv",
     "notes": "Las palabras se leen al reves y significan: \"Erika Ester Funes, Viajera y Architekta \".",
     "keywords": [
-      "delineado",
-      "notas",
-      "religion",
-      "figuras--humanas",
+      "arquitectura",
+      "escenas--figura-humana",
       "paisajes--urbano",
-      "arquitectura"
+      "pueblo",
+      "religion",
+      "tecnicas--delineado",
+      "texto",
+      "ventanas"
     ],
     "images": [
       "1977__Senuf Retse Akire_Atketihcra y Arejaiv__religioso__delineado.jpg"
     ],
     "width": 1418,
-    "height": 2070,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "figuras--humanas",
-      "paisajes--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "angel",
-      "mujer",
-      "halo",
-      "pueblo",
-      "vidriera",
-      "texto"
-    ]
+    "height": 2070
   },
   {
     "year": 1976,
@@ -1819,29 +1177,20 @@
     "title": "Cuadro-Partido",
     "notes": "",
     "keywords": [
-      "back",
-      "delineado",
+      "banderas",
+      "campo",
       "deportes",
-      "abstracto"
+      "deportes--futbol",
+      "escenas--abstracto",
+      "numeros",
+      "tecnicas--delineado"
     ],
     "images": [
       "1976__Cuadro-Partido__delineado__deportes.jpg",
       "1976__Cuadro-Partido__back.jpg"
     ],
     "width": 1800,
-    "height": 2196,
-    "keywords_ai": [
-      "abstracto",
-      "delineado",
-      "deportes"
-    ],
-    "keywords_ai_extra": [
-      "futbol",
-      "campo",
-      "geometrico",
-      "banderas",
-      "numeros"
-    ]
+    "height": 2196
   },
   {
     "year": 1976,
@@ -1849,35 +1198,22 @@
     "title": "Sprét de Corp",
     "notes": "",
     "keywords": [
-      "back",
-      "delineado",
-      "figuras--humanas",
-      "interior",
+      "escenas--bodegon",
       "escenas--de-genero",
-      "vehiculos"
+      "escenas--interior",
+      "escenas--figura-humana",
+      "musica",
+      "musical",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--automovil"
     ],
     "images": [
       "1976__Sprét de Corp__delineado__interior__figura.jpg",
       "1976__Sprét de Corp__back.jpg"
     ],
     "width": 1587,
-    "height": 1904,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "interior",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "hombre",
-      "copa",
-      "guitarra",
-      "musical",
-      "automovil",
-      "traje",
-      "gafas"
-    ]
+    "height": 1904
   },
   {
     "year": 1975,
@@ -1885,32 +1221,21 @@
     "title": "Nuremberga 1493",
     "notes": "",
     "keywords": [
-      "delineado",
-      "paisajes--urbano",
       "arquitectura",
+      "lugares--alemania",
+      "lugares--nuremberg",
       "monocromatico",
-      "lugares--alemania"
+      "paisajes--urbano",
+      "tecnicas--delineado",
+      "texto",
+      "torres",
+      "escenas--vista-aerea"
     ],
     "images": [
       "1975__Nuremberga 1493__paisaje-urbano__monocromatico__vista-aerea.jpg"
     ],
     "width": 2370,
-    "height": 1907,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--alemania",
-      "monocromatico",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "medieval",
-      "vista-aerea",
-      "torres",
-      "muralla",
-      "texto",
-      "nuremberg"
-    ]
+    "height": 1907
   },
   {
     "year": 1975,
@@ -1918,34 +1243,22 @@
     "title": "Nuremberga 1493",
     "notes": "",
     "keywords": [
-      "variante",
-      "delineado",
-      "paisajes--urbano",
       "arquitectura",
+      "colorido",
+      "lugares--alemania",
+      "lugares--nuremberg",
       "monocromatico",
-      "lugares--alemania"
+      "paisajes--urbano",
+      "tecnicas--delineado",
+      "texto",
+      "torres",
+      "escenas--vista-aerea"
     ],
     "images": [
       "1975__Nuremberga 1493__variante__paisaje-urbano__monocromatico__vista-aerea.jpg"
     ],
     "width": 2178,
-    "height": 1785,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--alemania",
-      "monocromatico",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "medieval",
-      "vista-aerea",
-      "torres",
-      "muralla",
-      "texto",
-      "nuremberg",
-      "colorido"
-    ]
+    "height": 1785
   },
   {
     "year": 1975,
@@ -1953,30 +1266,20 @@
     "alias": "pabellon al mar con piso de baldosas y bandera roja",
     "notes": "",
     "keywords": [
-      "aplat",
-      "abstracto",
+      "arquitectura",
+      "banderas",
+      "edificios",
+      "escenas--abstracto",
+      "mar",
       "paisajes--nautico",
-      "arquitectura"
+      "tecnicas--aplat",
+      "vehiculos--barcos"
     ],
     "images": [
       "1975__pabellon al mar con piso de baldosas y bandera roja__aplast__playa__nautico__abstracto.jpg"
     ],
     "width": 2491,
-    "height": 2042,
-    "keywords_ai": [
-      "abstracto",
-      "aplat",
-      "arquitectura",
-      "paisajes--nautico"
-    ],
-    "keywords_ai_extra": [
-      "bandera",
-      "baldosas",
-      "mar",
-      "pabellon",
-      "geometrico",
-      "barco"
-    ]
+    "height": 2042
   },
   {
     "year": 1975,
@@ -1984,26 +1287,19 @@
     "alias": "pasaje con poste y ventanas",
     "notes": "",
     "keywords": [
-      "delineado",
+      "arquitectura",
+      "callejon",
+      "calles",
       "paisajes--urbano",
-      "arquitectura"
+      "postes",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1975__pasaje con poste y ventanas__callejón__paisaje-urbano__delineado.jpg"
     ],
     "width": 1744,
-    "height": 2128,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "callejon",
-      "ventanas",
-      "poste",
-      "calles"
-    ]
+    "height": 2128
   },
   {
     "year": 1974,
@@ -2011,36 +1307,23 @@
     "alias": "bidassoa",
     "notes": "",
     "keywords": [
-      "autorretrato",
-      "figuras--humanas",
-      "interior",
+      "escenas--autorretrato",
+      "escenas--bodegon",
       "escenas--de-genero",
-      "delineado",
-      "musical"
+      "escenas--interior",
+      "escenas--figura-humana",
+      "instrumentos",
+      "musica",
+      "musical",
+      "tecnicas--delineado",
+      "vehiculos",
+      "ventanas"
     ],
     "images": [
       "1974__bidassoa__autorretrato__figura.jpg"
     ],
     "width": 1394,
-    "height": 1602,
-    "keywords_ai": [
-      "autorretrato",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "interior",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "hombre",
-      "guitarra",
-      "instrumento",
-      "copa",
-      "gafas",
-      "ventana",
-      "traje",
-      "vehiculos"
-    ]
+    "height": 1602
   },
   {
     "year": 1974,
@@ -2048,26 +1331,19 @@
     "alias": "callejón",
     "notes": "",
     "keywords": [
-      "delineado",
       "arquitectura",
-      "paisajes--urbano"
+      "callejon",
+      "calles",
+      "escaleras",
+      "paisajes--urbano",
+      "puertas",
+      "tecnicas--delineado"
     ],
     "images": [
       "1974__callejón__delineado__arqutectura__paisaje-urbano.jpg"
     ],
     "width": 1671,
-    "height": 2005,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "callejon",
-      "calles",
-      "puertas",
-      "escalera"
-    ]
+    "height": 2005
   },
   {
     "year": 1974,
@@ -2075,30 +1351,22 @@
     "alias": "monasterio",
     "notes": "",
     "keywords": [
-      "delineado",
+      "arcos",
       "arquitectura",
+      "campanarios",
+      "iglesias",
+      "monasterio",
+      "numeros",
+      "paisajes--urbano",
       "religion",
-      "paisajes--urbano"
+      "tecnicas--delineado",
+      "torres"
     ],
     "images": [
       "1974__monasterio__arquitectura__delineado.jpg"
     ],
     "width": 1302,
-    "height": 1572,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "monasterio",
-      "iglesia",
-      "arco",
-      "torre",
-      "campanario",
-      "numero"
-    ]
+    "height": 1572
   },
   {
     "year": 1974,
@@ -2106,29 +1374,19 @@
     "alias": "vino mandolina y reloj",
     "notes": "",
     "keywords": [
-      "delineado",
-      "bodegon",
-      "interior",
-      "musical"
+      "escenas--bodegon",
+      "escenas--interior",
+      "instrumentos",
+      "musica",
+      "musical",
+      "relojes",
+      "tecnicas--delineado"
     ],
     "images": [
       "1974__vino mandolina y reloj__bodegón__delineado__interior.jpg"
     ],
     "width": 1182,
-    "height": 1725,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "mandolina",
-      "reloj",
-      "vino",
-      "botella",
-      "instrumento"
-    ]
+    "height": 1725
   },
   {
     "year": 1973,
@@ -2136,27 +1394,20 @@
     "alias": "techumbres",
     "notes": "",
     "keywords": [
-      "delineado",
+      "arquitectura",
+      "balcones",
+      "barrio",
+      "calles",
       "paisajes--urbano",
-      "arquitectura"
+      "ropa-tendida",
+      "tecnicas--delineado",
+      "texto"
     ],
     "images": [
       "1973__techumbres__paisaje-urbano__delineado.jpg"
     ],
     "width": 1448,
-    "height": 1781,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "calles",
-      "balcones",
-      "ropa-tendida",
-      "barrio",
-      "texto"
-    ]
+    "height": 1781
   },
   {
     "year": 1973,
@@ -2164,37 +1415,23 @@
     "title": "Techumbres y el Arbolito",
     "notes": "",
     "keywords": [
-      "back",
-      "delineado",
-      "paisajes--urbano",
       "arquitectura",
-      "interior",
-      "figuras--humanas",
-      "escenas--de-genero"
+      "escenas--de-genero",
+      "escenas--interior",
+      "escenas--figura-humana",
+      "mobiliario",
+      "paisajes--urbano",
+      "religion",
+      "sentado",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1973__Techumbres y el Arbolito__paisaje-urbano__delineado.jpg",
       "1973__Techumbres y el arbolito__back.jpg"
     ],
     "width": 1760,
-    "height": 2147,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "interior",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "mujer",
-      "sentada",
-      "mesa",
-      "ventana",
-      "silla",
-      "religion",
-      "crucifijo"
-    ]
+    "height": 2147
   },
   {
     "year": 1972,
@@ -2202,26 +1439,19 @@
     "alias": "bateas de pintura",
     "notes": "",
     "keywords": [
-      "delineado",
-      "abstracto",
-      "figuras--humanas"
+      "cultivos",
+      "escenas--abstracto",
+      "figuras",
+      "escenas--figura-humana",
+      "maquinaria",
+      "taller",
+      "tecnicas--delineado"
     ],
     "images": [
       "1972__bateas de pintura__figura__vista-aerea.jpg"
     ],
     "width": 1004,
-    "height": 1205,
-    "keywords_ai": [
-      "abstracto",
-      "delineado",
-      "figuras--humanas"
-    ],
-    "keywords_ai_extra": [
-      "pintura",
-      "bateas",
-      "figuras",
-      "maquinaria"
-    ]
+    "height": 1205
   },
   {
     "year": 1972,
@@ -2229,30 +1459,20 @@
     "alias": "el jugador",
     "notes": "",
     "keywords": [
-      "delineado",
-      "figuras--humanas",
+      "arquitectura",
+      "edificios",
       "escenas--de-genero",
+      "escenas--figura-humana",
+      "mobiliario",
       "paisajes--urbano",
-      "arquitectura"
+      "pueblo",
+      "tecnicas--delineado"
     ],
     "images": [
       "1972__el jugador__figura__plaza.jpg"
     ],
     "width": 1979,
-    "height": 1355,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "mesa",
-      "jugador",
-      "pueblo",
-      "edificios"
-    ]
+    "height": 1355
   },
   {
     "year": 1972,
@@ -2260,26 +1480,18 @@
     "alias": "el partido de futbol",
     "notes": "",
     "keywords": [
-      "delineado",
+      "campo",
       "deportes",
-      "figuras--humanas"
+      "deportes--futbol",
+      "escenas--figura-humana",
+      "pelota",
+      "tecnicas--delineado"
     ],
     "images": [
       "1972__el partido de futbol__figura__deportes.jpg"
     ],
     "width": 1722,
-    "height": 1179,
-    "keywords_ai": [
-      "delineado",
-      "deportes",
-      "figuras--humanas"
-    ],
-    "keywords_ai_extra": [
-      "futbol",
-      "jugadores",
-      "campo",
-      "pelota"
-    ]
+    "height": 1179
   },
   {
     "year": 1972,
@@ -2287,28 +1499,18 @@
     "alias": "la estrella de belén",
     "notes": "",
     "keywords": [
+      "arcos",
+      "arquitectura",
+      "estrella",
+      "escenas--figura-humana",
       "religion",
-      "delineado",
-      "figuras--humanas",
-      "arquitectura"
+      "tecnicas--delineado"
     ],
     "images": [
       "1972__la estrella de belén__religioso__delineado.jpg"
     ],
     "width": 2315,
-    "height": 2824,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "figuras--humanas",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "reyes-magos",
-      "estrella",
-      "arcos",
-      "corona"
-    ]
+    "height": 2824
   },
   {
     "year": 1972,
@@ -2316,32 +1518,19 @@
     "alias": "la huida a egipto",
     "notes": "",
     "keywords": [
-      "delineado",
-      "religion",
-      "figuras--humanas",
+      "animales--burro",
+      "arcos",
       "arquitectura",
+      "escenas--figura-humana",
+      "religion",
+      "tecnicas--delineado",
       "vehiculos"
     ],
     "images": [
       "1972__la huida a egipto__religioso__delineado.jpg"
     ],
     "width": 2315,
-    "height": 2824,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "figuras--humanas",
-      "religion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "sagrada-familia",
-      "burro",
-      "jose",
-      "maria",
-      "jesus",
-      "arcos"
-    ]
+    "height": 2824
   },
   {
     "year": 1972,
@@ -2349,28 +1538,19 @@
     "alias": "la puerta",
     "notes": "",
     "keywords": [
-      "delineado",
-      "abstracto",
-      "interior",
-      "bodegon"
+      "escenas--abstracto",
+      "escenas--bodegon",
+      "escenas--interior",
+      "mobiliario",
+      "puertas",
+      "relojes",
+      "tecnicas--delineado"
     ],
     "images": [
       "1972__la puerta__abstracto__delineado.jpg"
     ],
     "width": 1356,
-    "height": 1622,
-    "keywords_ai": [
-      "abstracto",
-      "bodegon",
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "puerta",
-      "reloj",
-      "mesa",
-      "silla"
-    ]
+    "height": 1622
   },
   {
     "year": 1972,
@@ -2378,28 +1558,19 @@
     "title": "Los 7",
     "notes": "",
     "keywords": [
-      "delineado",
-      "figuras--humanas",
       "escenas--de-genero",
-      "musical"
+      "escenas--figura-humana",
+      "instrumentos",
+      "musica",
+      "musical",
+      "musicos",
+      "tecnicas--delineado"
     ],
     "images": [
       "1972__Los 7__figura__musical__delineado.jpg"
     ],
     "width": 2140,
-    "height": 1466,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "grupo",
-      "musicos",
-      "septeto",
-      "instrumentos"
-    ]
+    "height": 1466
   },
   {
     "year": 1971,
@@ -2407,31 +1578,19 @@
     "alias": "adoración de los reyes magos",
     "notes": "",
     "keywords": [
-      "religion",
-      "figuras--humanas",
+      "arcos",
       "arquitectura",
-      "delineado",
-      "escenas--de-genero"
+      "escenas--de-genero",
+      "escenas--figura-humana",
+      "mobiliario",
+      "religion",
+      "tecnicas--delineado"
     ],
     "images": [
       "1971__adoración de los reyes magos__religioso__figura.jpg"
     ],
     "width": 1791,
-    "height": 1227,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "reyes-magos",
-      "adoracion",
-      "nacimiento",
-      "cuna",
-      "arcos"
-    ]
+    "height": 1227
   },
   {
     "year": 1971,
@@ -2439,28 +1598,16 @@
     "alias": "el abrazo",
     "notes": "",
     "keywords": [
-      "delineado",
-      "figuras--humanas",
       "escenas--de-genero",
-      "interior"
+      "escenas--interior",
+      "escenas--figura-humana",
+      "tecnicas--delineado"
     ],
     "images": [
       "1971__el abrazo__figuras__interior.jpg"
     ],
     "width": 1408,
-    "height": 2056,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "abrazo",
-      "pareja",
-      "familia",
-      "niño"
-    ]
+    "height": 2056
   },
   {
     "year": 1971,
@@ -2468,28 +1615,16 @@
     "alias": "el descenso de la cruz",
     "notes": "",
     "keywords": [
-      "delineado",
+      "escenas--de-genero",
+      "escenas--figura-humana",
       "religion",
-      "figuras--humanas",
-      "escenas--de-genero"
+      "tecnicas--delineado"
     ],
     "images": [
       "1971__el_descenso_de_la_cruz__figuras__religioso.jpg"
     ],
     "width": 1396,
-    "height": 1711,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "crucifixion",
-      "jesus",
-      "cruz",
-      "descendimiento"
-    ]
+    "height": 1711
   },
   {
     "year": 1971,
@@ -2497,28 +1632,19 @@
     "alias": "escritorio",
     "notes": "",
     "keywords": [
-      "delineado",
-      "interior",
-      "bodegon"
+      "escenas--bodegon",
+      "escenas--interior",
+      "libros",
+      "luces",
+      "mobiliario",
+      "numeros",
+      "tecnicas--delineado"
     ],
     "images": [
       "1971__escritorio.jpg"
     ],
     "width": 1275,
-    "height": 1530,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "escritorio",
-      "estanteria",
-      "lampara",
-      "libros",
-      "silla",
-      "numero"
-    ]
+    "height": 1530
   },
   {
     "year": 1971,
@@ -2526,30 +1652,21 @@
     "alias": "fiordo",
     "notes": "",
     "keywords": [
-      "delineado",
+      "arquitectura",
+      "costa",
+      "lago",
+      "montañas",
       "paisajes--nautico",
+      "reflejo",
+      "tecnicas--delineado",
       "vehiculos",
-      "barcos",
-      "arquitectura"
+      "vehiculos--barcos"
     ],
     "images": [
       "1971__fiordo__delineado__nautico__delineado__paisaje-natural__rio.jpg"
     ],
     "width": 1130,
-    "height": 1432,
-    "keywords_ai": [
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "montañas",
-      "fiordo",
-      "reflejo",
-      "lago"
-    ]
+    "height": 1432
   },
   {
     "year": 1971,
@@ -2557,31 +1674,21 @@
     "alias": "fiordo",
     "notes": "",
     "keywords": [
-      "aplat",
-      "paisajes--nautico",
-      "vehiculos",
-      "barcos",
       "arquitectura",
-      "variante"
+      "costa",
+      "lago",
+      "montañas",
+      "paisajes--nautico",
+      "reflejo",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1971__fiordo__variante__aplast__nautico__paisaje-natural__rio.jpg"
     ],
     "width": 1394,
-    "height": 1696,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "montañas",
-      "fiordo",
-      "reflejo",
-      "lago"
-    ]
+    "height": 1696
   },
   {
     "year": 1971,
@@ -2589,27 +1696,19 @@
     "alias": "mesa de dibujo",
     "notes": "",
     "keywords": [
-      "interior",
-      "delineado"
+      "comedor",
+      "decorativo",
+      "escenas--interior",
+      "luces",
+      "mobiliario",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1971__mesa de dibujo__bodegon__interior.jpg"
     ],
     "width": 1487,
-    "height": 2172,
-    "keywords_ai": [
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "mesa",
-      "sillas",
-      "comedor",
-      "lampara",
-      "ventana",
-      "cortina",
-      "mueble"
-    ]
+    "height": 2172
   },
   {
     "year": 1971,
@@ -2618,26 +1717,19 @@
     "notes": "Pintura sobre lienzo",
     "keywords": [
       "arquitectura",
+      "escaleras",
+      "luces",
+      "noche",
       "paisajes--urbano",
-      "delineado"
+      "pueblo",
+      "tecnicas--delineado",
+      "torres"
     ],
     "images": [
       "1971__taller imaginario del tren__Pintura sobre lienzo__paisaje-urbano.jpg"
     ],
     "width": 1505,
-    "height": 1244,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "pueblo",
-      "noche",
-      "escaleras",
-      "farola",
-      "torre"
-    ]
+    "height": 1244
   },
   {
     "year": 1970,
@@ -2645,23 +1737,15 @@
     "alias": "arreglo de flores",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior"
+      "escenas--bodegon",
+      "escenas--interior",
+      "flores"
     ],
     "images": [
       "1970__arreglo de flores__bodegon.jpg"
     ],
     "width": 1658,
-    "height": 2023,
-    "keywords_ai": [
-      "bodegon",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "flores",
-      "vaso",
-      "margaritas"
-    ]
+    "height": 2023
   },
   {
     "year": 1970,
@@ -2669,26 +1753,16 @@
     "alias": "arreglo de flores cubistas",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior",
-      "delineado"
+      "escenas--bodegon",
+      "escenas--interior",
+      "flores",
+      "tecnicas--delineado"
     ],
     "images": [
       "1970__arreglo de flores cubistas__bodegon.jpg"
     ],
     "width": 1434,
-    "height": 2093,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "flores",
-      "vaso",
-      "geometrico",
-      "circulos"
-    ]
+    "height": 2093
   },
   {
     "year": 1970,
@@ -2696,28 +1770,19 @@
     "alias": "botellones y una flor",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior",
-      "delineado"
+      "escenas--bodegon",
+      "escenas--interior",
+      "escenas--figura-humana",
+      "flores",
+      "lugares--chile",
+      "mobiliario",
+      "tecnicas--delineado"
     ],
     "images": [
       "1970__botellones y una flor__bodegon.jpg"
     ],
     "width": 1369,
-    "height": 1643,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "botellas",
-      "vino",
-      "felipe",
-      "chile",
-      "flor",
-      "mesa"
-    ]
+    "height": 1643
   },
   {
     "year": 1970,
@@ -2726,27 +1791,20 @@
     "notes": "",
     "keywords": [
       "arquitectura",
+      "campanarios",
+      "casas",
+      "colinas",
+      "iglesias",
       "paisajes--urbano",
-      "delineado"
+      "pueblo",
+      "tecnicas--delineado"
     ],
     "images": [
       "1970__Caserio__239__paisaje-urbano__vista-aerea.jpg",
       "1970__Caserio__239__back.jpg"
     ],
     "width": 1950,
-    "height": 1336,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "pueblo",
-      "colina",
-      "iglesia",
-      "campanario",
-      "casas"
-    ]
+    "height": 1336
   },
   {
     "year": 1970,
@@ -2755,26 +1813,19 @@
     "notes": "",
     "keywords": [
       "arquitectura",
+      "campanarios",
+      "ciudad",
+      "iglesias",
       "paisajes--urbano",
-      "delineado"
+      "plaza",
+      "tecnicas--delineado",
+      "torres"
     ],
     "images": [
       "1970__el ayuntamiento__paisaje-urbano.jpg"
     ],
     "width": 2411,
-    "height": 1651,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "torres",
-      "iglesia",
-      "campanario",
-      "plaza",
-      "ciudad"
-    ]
+    "height": 1651
   },
   {
     "year": 1970,
@@ -2782,28 +1833,19 @@
     "alias": "farol en mantel rojo y la ventana",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior",
-      "delineado"
+      "escenas--bodegon",
+      "escenas--interior",
+      "libros",
+      "luces",
+      "mobiliario",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1970__farol en mantel rojo y la ventana.jpg"
     ],
     "width": 1828,
-    "height": 2669,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "lampara",
-      "quinque",
-      "mesa",
-      "ventana",
-      "silla",
-      "libros"
-    ]
+    "height": 2669
   },
   {
     "year": 1970,
@@ -2811,27 +1853,18 @@
     "title": "La Carcel del Poeta",
     "notes": "",
     "keywords": [
-      "interior",
-      "ventana",
+      "arquitectura",
+      "escenas--interior",
+      "luz",
       "perspectiva",
-      "arquitectura"
+      "profundidad",
+      "ventanas"
     ],
     "images": [
       "1970__La Carcel del Poeta__abstracto__paisaje-urbano.jpg"
     ],
     "width": 1112,
-    "height": 1334,
-    "keywords_ai": [
-      "arquitectura",
-      "interior",
-      "perspectiva",
-      "ventana"
-    ],
-    "keywords_ai_extra": [
-      "geometrico",
-      "profundidad",
-      "luz"
-    ]
+    "height": 1334
   },
   {
     "year": 1970,
@@ -2839,28 +1872,18 @@
     "title": "La Carcel del Poeta",
     "notes": "",
     "keywords": [
-      "interior",
-      "ventana",
-      "perspectiva",
       "arquitectura",
-      "variante"
+      "escenas--interior",
+      "luz",
+      "perspectiva",
+      "profundidad",
+      "ventanas"
     ],
     "images": [
       "1970__La Carcel del Poeta__variante__abstracto__paisaje-urbano.jpg"
     ],
     "width": 1419,
-    "height": 1731,
-    "keywords_ai": [
-      "arquitectura",
-      "interior",
-      "perspectiva",
-      "ventana"
-    ],
-    "keywords_ai_extra": [
-      "geometrico",
-      "profundidad",
-      "luz"
-    ]
+    "height": 1731
   },
   {
     "year": 1970,
@@ -2869,26 +1892,18 @@
     "notes": "",
     "keywords": [
       "arquitectura",
-      "delineado",
-      "collage"
+      "lugares--iberia",
+      "numeros",
+      "posters",
+      "tecnicas--collage",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1970__la garita del 17_paisaje-urbano__abstracto.jpg"
     ],
     "width": 1336,
-    "height": 1625,
-    "keywords_ai": [
-      "arquitectura",
-      "collage",
-      "delineado"
-    ],
-    "keywords_ai_extra": [
-      "iberia",
-      "geometrico",
-      "numero",
-      "poster",
-      "ventana"
-    ]
+    "height": 1625
   },
   {
     "year": 1970,
@@ -2896,31 +1911,21 @@
     "alias": "mujer con guitarra",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "musical",
       "arquitectura",
-      "delineado",
-      "escenas--de-genero"
+      "cubista",
+      "escenas--de-genero",
+      "escenas--figura-humana",
+      "musica",
+      "musical",
+      "pueblo",
+      "tecnicas--delineado",
+      "vehiculos--barcos"
     ],
     "images": [
       "1970__mujer con guitarra__figura__musical__paisaje-urbano.jpg"
     ],
     "width": 1446,
-    "height": 2111,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "guitarra",
-      "mujer",
-      "cubista",
-      "pueblo",
-      "barco"
-    ]
+    "height": 2111
   },
   {
     "year": 1970,
@@ -2928,31 +1933,21 @@
     "alias": "travieso en dique seco",
     "notes": "",
     "keywords": [
-      "paisajes--nautico",
-      "vehiculos",
-      "barcos",
       "arquitectura",
-      "delineado"
+      "casetas",
+      "dique",
+      "numeros",
+      "paisajes--nautico",
+      "puerto",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1970__travieso en dique seco__nautico__paisaje-urbano.jpg"
     ],
     "width": 1688,
-    "height": 1156,
-    "keywords_ai": [
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "puerto",
-      "dique",
-      "travieso",
-      "casetas",
-      "numero"
-    ]
+    "height": 1156
   },
   {
     "year": 1969,
@@ -2960,30 +1955,22 @@
     "alias": "almacen crash",
     "notes": "",
     "keywords": [
+      "almacen",
       "arquitectura",
-      "paisajes--urbano",
+      "cables",
+      "casas",
+      "chimeneas",
+      "costa",
       "paisajes--nautico",
-      "delineado"
+      "paisajes--urbano",
+      "postes",
+      "tecnicas--delineado"
     ],
     "images": [
       "1969__almacen crash__delineado__paisaje-urbano.jpg"
     ],
     "width": 2589,
-    "height": 1773,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--nautico",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "chimeneas",
-      "almacen",
-      "costa",
-      "casas",
-      "cables",
-      "postes"
-    ]
+    "height": 1773
   },
   {
     "year": 1969,
@@ -2991,29 +1978,19 @@
     "alias": "gallo ingles",
     "notes": "",
     "keywords": [
-      "figuras--animales",
-      "delineado",
+      "animales--aves",
       "arquitectura",
-      "escenas--de-genero"
+      "banderas",
+      "decorativo",
+      "escenas--de-genero",
+      "reino-unido",
+      "tecnicas--delineado"
     ],
     "images": [
       "1969__gallo_ingles__animales__bodegon__rural__figura.jpg"
     ],
     "width": 1680,
-    "height": 2056,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--animales"
-    ],
-    "keywords_ai_extra": [
-      "gallo",
-      "bandera",
-      "reino-unido",
-      "decorativo",
-      "geometrico"
-    ]
+    "height": 2056
   },
   {
     "year": 1969,
@@ -3021,29 +1998,20 @@
     "alias": "huevo frito y canario",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior",
-      "delineado"
+      "animales--aves",
+      "escenas--bodegon",
+      "escenas--interior",
+      "huevo",
+      "jaula",
+      "mobiliario",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1969__huevo frito y canario__bodegon__interior.jpg"
     ],
     "width": 1187,
-    "height": 1733,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior"
-    ],
-    "keywords_ai_extra": [
-      "mesa",
-      "sillas",
-      "ventana",
-      "jaula",
-      "pajaro",
-      "huevo",
-      "plato"
-    ]
+    "height": 1733
   },
   {
     "year": 1969,
@@ -3051,28 +2019,20 @@
     "alias": "iglesia y el árbol",
     "notes": "",
     "keywords": [
+      "arboles",
+      "arcos",
       "arquitectura",
+      "campanarios",
+      "iglesias",
       "religion",
-      "delineado"
+      "seco",
+      "tecnicas--delineado"
     ],
     "images": [
       "1969__iglesia y el árbol__religioso__iglesia__arquitectura.jpg"
     ],
     "width": 2597,
-    "height": 1779,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "iglesia",
-      "campanario",
-      "arco",
-      "arbol",
-      "seco",
-      "tocones"
-    ]
+    "height": 1779
   },
   {
     "year": 1969,
@@ -3081,28 +2041,21 @@
     "notes": "",
     "keywords": [
       "arquitectura",
+      "escenas--figura-humana",
+      "iglesias",
       "paisajes--urbano",
-      "delineado"
+      "picis",
+      "pinte",
+      "posters",
+      "puerto",
+      "tecnicas--delineado",
+      "torres"
     ],
     "images": [
       "1969__la gran ciudad__vista-aerea__arqutectura.jpg"
     ],
     "width": 2455,
-    "height": 2045,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "torres",
-      "iglesia",
-      "posters",
-      "beba",
-      "picis",
-      "pinte",
-      "puerto"
-    ]
+    "height": 2045
   },
   {
     "year": 1969,
@@ -3110,27 +2063,20 @@
     "alias": "la puerta verde",
     "notes": "",
     "keywords": [
-      "interior",
-      "delineado",
-      "perspectiva"
+      "cuadros",
+      "escenas--interior",
+      "mobiliario",
+      "perspectiva",
+      "puertas",
+      "relojes",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1969__la puerta verde__bodegon__interior.jpg"
     ],
     "width": 2149,
-    "height": 1761,
-    "keywords_ai": [
-      "delineado",
-      "interior",
-      "perspectiva"
-    ],
-    "keywords_ai_extra": [
-      "puerta",
-      "reloj",
-      "silla",
-      "ventana",
-      "cuadros"
-    ]
+    "height": 1761
   },
   {
     "year": 1969,
@@ -3139,28 +2085,18 @@
     "notes": "",
     "keywords": [
       "arquitectura",
-      "interior",
+      "escenas--interior",
+      "escenas--figura-humana",
+      "letras",
       "perspectiva",
-      "figuras--humanas"
+      "profundidad"
     ],
     "images": [
       "1969__pabellon A__abstracto__arquitectura.jpg"
     ],
     "title": "pabellon A",
     "width": 1482,
-    "height": 1779,
-    "keywords_ai": [
-      "arquitectura",
-      "figuras--humanas",
-      "interior",
-      "perspectiva"
-    ],
-    "keywords_ai_extra": [
-      "geometrico",
-      "columnas",
-      "profundidad",
-      "letra-a"
-    ]
+    "height": 1779
   },
   {
     "year": 1969,
@@ -3168,29 +2104,21 @@
     "title": "Pieza de los Chicos",
     "notes": "",
     "keywords": [
-      "interior",
-      "delineado",
-      "vehiculos"
+      "escenas--interior",
+      "escenas--interior",
+      "flores",
+      "maquetas",
+      "mobiliario",
+      "posters",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1969__Pieza de los Chicos.jpg"
     ],
     "width": 1495,
-    "height": 1824,
-    "keywords_ai": [
-      "delineado",
-      "interior",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "taller",
-      "mesa",
-      "sillas",
-      "barcos",
-      "poster",
-      "maquetas",
-      "flores"
-    ]
+    "height": 1824
   },
   {
     "year": 1969,
@@ -3198,29 +2126,19 @@
     "alias": "sol y mandolina",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior",
+      "arquitectura",
+      "escenas--bodegon",
+      "escenas--interior",
+      "luces",
+      "musica",
       "musical",
-      "delineado"
+      "tecnicas--delineado"
     ],
     "images": [
       "1969__sol y mandolina__bodegon__musical.jpg"
     ],
     "width": 1525,
-    "height": 1861,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior",
-      "musical"
-    ],
-    "keywords_ai_extra": [
-      "mandolina",
-      "sol",
-      "cafetera",
-      "fruta",
-      "azulejos"
-    ]
+    "height": 1861
   },
   {
     "year": 1969,
@@ -3228,31 +2146,20 @@
     "alias": "soldado",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "delineado",
       "arquitectura",
-      "escenas--de-genero"
+      "banderas",
+      "cañones",
+      "escenas--de-genero",
+      "escenas--figura-humana",
+      "fortaleza",
+      "militar",
+      "tecnicas--delineado"
     ],
     "images": [
       "1969__soldado__figura.jpg"
     ],
     "width": 1111,
-    "height": 1356,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas"
-    ],
-    "keywords_ai_extra": [
-      "soldado",
-      "militar",
-      "uniforme",
-      "fusil",
-      "fortaleza",
-      "bandera",
-      "cañon"
-    ]
+    "height": 1356
   },
   {
     "year": 1969,
@@ -3260,26 +2167,16 @@
     "alias": "sonrisa entre formas",
     "notes": "",
     "keywords": [
-      "abstracto",
-      "figuras--humanas",
-      "delineado"
+      "escenas--abstracto",
+      "escenas--figura-humana",
+      "perspectiva",
+      "tecnicas--delineado"
     ],
     "images": [
       "1969__sonrisa entre formas__abstracto.jpg"
     ],
     "width": 1772,
-    "height": 2126,
-    "keywords_ai": [
-      "abstracto",
-      "delineado",
-      "figuras--humanas"
-    ],
-    "keywords_ai_extra": [
-      "geometrico",
-      "sonrisa",
-      "perspectiva",
-      "cara"
-    ]
+    "height": 2126
   },
   {
     "year": 1969,
@@ -3287,29 +2184,20 @@
     "alias": "tractor de vapor",
     "notes": "",
     "keywords": [
-      "vehiculos",
-      "delineado",
       "arquitectura",
       "monocromatico",
-      "variante"
+      "tecnicas--delineado",
+      "tinta",
+      "vapor",
+      "vehiculos",
+      "vehiculos--tractor",
+      "vehiculos--trenes"
     ],
     "images": [
       "1969__tractor_de_vapor__variante__monocromatico__tractor__vehiculos__rural.jpg"
     ],
     "width": 2423,
-    "height": 1992,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "monocromatico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "locomotora",
-      "tractor",
-      "vapor",
-      "tinta"
-    ]
+    "height": 1992
   },
   {
     "year": 1969,
@@ -3317,26 +2205,19 @@
     "alias": "tractor de vapor",
     "notes": "",
     "keywords": [
+      "arquitectura",
+      "ruedas",
+      "tecnicas--delineado",
+      "vapor",
       "vehiculos",
-      "delineado",
-      "arquitectura"
+      "vehiculos--tractor",
+      "vehiculos--trenes"
     ],
     "images": [
       "1969__tractor_de_vapor__vehiculos__tractor__rural.jpg"
     ],
     "width": 2776,
-    "height": 1967,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "locomotora",
-      "tractor",
-      "vapor",
-      "ruedas"
-    ]
+    "height": 1967
   },
   {
     "year": 1968,
@@ -3344,31 +2225,19 @@
     "alias": "astillero",
     "notes": "",
     "keywords": [
-      "paisajes--nautico",
-      "vehiculos",
-      "barcos",
       "arquitectura",
-      "delineado"
+      "astillero",
+      "paisajes--nautico",
+      "puerto",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1968__astillero__delineado__nautico__puerto__barcos.jpg"
     ],
     "width": 2259,
-    "height": 1857,
-    "keywords_ai": [
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "astillero",
-      "puerto",
-      "varadero",
-      "velas",
-      "mastiles"
-    ]
+    "height": 1857
   },
   {
     "year": 1968,
@@ -3376,28 +2245,20 @@
     "title": "S.E. en la Boca",
     "notes": "",
     "keywords": [
+      "arcos",
       "arquitectura",
+      "calles",
+      "cantina",
+      "hotel",
       "paisajes--urbano",
-      "delineado",
-      "variante"
+      "perspectiva",
+      "tecnicas--delineado"
     ],
     "images": [
       "1968__S.E. en la Boca__variante__delineado__lugares__paisaje-urbano.jpg"
     ],
     "width": 1048,
-    "height": 865,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "calle",
-      "arco",
-      "perspectiva",
-      "hotel",
-      "cantina"
-    ]
+    "height": 865
   },
   {
     "year": 1968,
@@ -3405,25 +2266,15 @@
     "alias": "sol y reflejo",
     "notes": "Este cuadro representa una pueba de estilos",
     "keywords": [
-      "abstracto",
-      "geometrico"
+      "escenas--abstracto",
+      "oro",
+      "reflejo"
     ],
     "images": [
       "1968__sol y reflejo__prueba__Este cuadro representa una pueba de estilos__abstracto.jpg"
     ],
     "width": 1245,
-    "height": 1817,
-    "keywords_ai": [
-      "abstracto",
-      "geometrico"
-    ],
-    "keywords_ai_extra": [
-      "circular",
-      "concentrico",
-      "reflejo",
-      "oro",
-      "rojo"
-    ]
+    "height": 1817
   },
   {
     "year": 1968,
@@ -3431,28 +2282,19 @@
     "alias": "torre y puente blanco",
     "notes": "",
     "keywords": [
+      "arcos",
       "arquitectura",
+      "fortaleza",
       "perspectiva",
-      "ventana",
-      "aplat"
+      "tecnicas--aplat",
+      "torres",
+      "ventanas"
     ],
     "images": [
       "1968__torre y puente blanco__paisaje-urbano__aplast.jpg"
     ],
     "width": 1778,
-    "height": 2198,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "perspectiva",
-      "ventana"
-    ],
-    "keywords_ai_extra": [
-      "fortaleza",
-      "torre",
-      "arcos",
-      "ojo-de-buey"
-    ]
+    "height": 2198
   },
   {
     "year": 1968,
@@ -3460,29 +2302,19 @@
     "alias": "torre y puente verde",
     "notes": "",
     "keywords": [
+      "arcos",
       "arquitectura",
+      "fortaleza",
       "perspectiva",
-      "ventana",
-      "delineado",
-      "variante"
+      "tecnicas--delineado",
+      "torres",
+      "ventanas"
     ],
     "images": [
       "1968__torre y puente verde__paisaje-urbano__delineado.jpg"
     ],
     "width": 1680,
-    "height": 1986,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "perspectiva",
-      "ventana"
-    ],
-    "keywords_ai_extra": [
-      "fortaleza",
-      "torre",
-      "arcos",
-      "ojo-de-buey"
-    ]
+    "height": 1986
   },
   {
     "year": 1967,
@@ -3490,32 +2322,23 @@
     "alias": "buque y grua roja",
     "notes": "",
     "keywords": [
-      "paisajes--nautico",
-      "vehiculos",
-      "barcos",
       "arquitectura",
-      "delineado"
+      "banderas",
+      "dique",
+      "gruas",
+      "industrial",
+      "numeros",
+      "paisajes--nautico",
+      "puerto",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1967__buque y grua roja__nautico__puerto__barcos.jpg"
     ],
     "width": 1766,
-    "height": 2125,
-    "keywords_ai": [
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "grua",
-      "puerto",
-      "dique",
-      "numero",
-      "bandera",
-      "industrial"
-    ]
+    "height": 2125
   },
   {
     "year": 1967,
@@ -3523,31 +2346,21 @@
     "title": "en la habitación de Vermeer",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "interior",
-      "bodegon",
+      "cuadros",
+      "escenas--bodegon",
+      "escenas--de-genero",
+      "escenas--interior",
+      "escenas--figura-humana",
+      "mobiliario",
       "tecnicas--acuarela",
-      "escenas--de-genero"
+      "ventanas",
+      "vermeer"
     ],
     "images": [
       "1967__en la habitación de Vermeer__figura__dibujo.jpg"
     ],
     "width": 1246,
-    "height": 1495,
-    "keywords_ai": [
-      "bodegon",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "interior",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "vermeer",
-      "mujer",
-      "mesa",
-      "ventana",
-      "cuadro"
-    ]
+    "height": 1495
   },
   {
     "year": 1967,
@@ -3556,27 +2369,16 @@
     "notes": "",
     "keywords": [
       "arquitectura",
+      "lugares--francia",
+      "lugares--paris",
       "religion",
-      "tecnicas--acuarela",
-      "lugares--francia"
+      "tecnicas--acuarela"
     ],
     "images": [
       "1967__Notre Dame de Paris__dibujo__acuarela__lugares.jpg"
     ],
     "width": 1734,
-    "height": 2115,
-    "keywords_ai": [
-      "arquitectura",
-      "lugares--francia",
-      "religion",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "notre-dame",
-      "paris",
-      "gotico",
-      "roseton"
-    ]
+    "height": 2115
   },
   {
     "year": 1967,
@@ -3584,32 +2386,22 @@
     "title": "S.E. en la Boca",
     "notes": "",
     "keywords": [
+      "arcos",
       "arquitectura",
+      "calles",
+      "cantina",
+      "hotel",
+      "lugares--argentina",
       "paisajes--urbano",
-      "delineado",
+      "perspectiva",
       "tecnicas--acuarela",
-      "lugares--argentina"
+      "tecnicas--delineado"
     ],
     "images": [
       "1967__S.E. en la Boca__dibujo__acuarela__delineado__lugares__paisaje-urbano.jpg"
     ],
     "width": 2302,
-    "height": 1918,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--argentina",
-      "paisajes--urbano",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "calle",
-      "arco",
-      "perspectiva",
-      "hotel",
-      "cantina",
-      "boca"
-    ]
+    "height": 1918
   },
   {
     "year": 1964,
@@ -3617,27 +2409,18 @@
     "alias": "gallina",
     "notes": "",
     "keywords": [
-      "figuras--animales",
-      "bodegon",
+      "animales--aves",
       "arquitectura",
-      "escenas--de-genero"
+      "escenas--bodegon",
+      "escenas--de-genero",
+      "huevo",
+      "numeros"
     ],
     "images": [
       "1964__gallina__animales__bodegon__rural.jpg"
     ],
     "width": 1216,
-    "height": 1483,
-    "keywords_ai": [
-      "arquitectura",
-      "bodegon",
-      "escenas--de-genero",
-      "figuras--animales"
-    ],
-    "keywords_ai_extra": [
-      "gallina",
-      "huevo",
-      "numero"
-    ]
+    "height": 1483
   },
   {
     "year": 1960,
@@ -3645,29 +2428,19 @@
     "alias": "buque travieso",
     "notes": "",
     "keywords": [
-      "paisajes--nautico",
-      "vehiculos",
-      "barcos",
       "arquitectura",
-      "delineado"
+      "paisajes--nautico",
+      "puerto",
+      "reflejo",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1960__buque travieso__puerto__barcos__nautico.jpg"
     ],
     "width": 1619,
-    "height": 1345,
-    "keywords_ai": [
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "puerto",
-      "varadero",
-      "reflejo"
-    ]
+    "height": 1345
   },
   {
     "year": 1959,
@@ -3675,24 +2448,17 @@
     "title": "611 dep.s avd. industrias vaser argentina proy. c 17/61 1959",
     "notes": "",
     "keywords": [
+      "numeros",
+      "tecnicas--ilustracion",
       "vehiculos",
-      "tecnicas--ilustracion"
+      "vehiculos--automovil"
     ],
     "images": [
       "1959__611_dep.s_avd._industrias_vaser_argentina_proy._c_17-61_1959__vehiculos__automobil__ika.jpg"
     ],
     "alias": "611 dep.s avd. industrias vaser argentina proy. c 17-61 1959",
     "width": 1627,
-    "height": 965,
-    "keywords_ai": [
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "furgoneta",
-      "camioneta",
-      "numero"
-    ]
+    "height": 965
   },
   {
     "year": 1959,
@@ -3700,25 +2466,16 @@
     "title": "671-Styling Depto I.K.A. R.P.C. 285-17_6/1959",
     "notes": "",
     "keywords": [
-      "vehiculos",
+      "escenas--figura-humana",
       "tecnicas--ilustracion",
-      "figuras--humanas"
+      "vehiculos",
+      "vehiculos--automovil"
     ],
     "images": [
       "1959__671-Styling Depto_I.K.A._R.P.C. 285-17_6-1959__vehiculos__automobil__ika.jpg"
     ],
     "width": 3269,
-    "height": 1974,
-    "keywords_ai": [
-      "figuras--humanas",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "auto",
-      "convertible",
-      "pareja"
-    ]
+    "height": 1974
   },
   {
     "year": 1958,
@@ -3726,24 +2483,16 @@
     "title": "671-Styling Dep. Industrias Kaiser Argentina Proyec renault G Convert 4-1958",
     "notes": "",
     "keywords": [
+      "militar",
+      "tecnicas--ilustracion",
       "vehiculos",
-      "tecnicas--ilustracion"
+      "vehiculos--automovil"
     ],
     "images": [
       "1958__671-Styling Dep. Industrias Kaiser Argentina_Proyec_renault G_Convert_4-1958__vehiculos__automobil__ika.jpg"
     ],
     "width": 3269,
-    "height": 1974,
-    "keywords_ai": [
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "auto",
-      "convertible",
-      "kaiser",
-      "argentina"
-    ]
+    "height": 1974
   },
   {
     "year": 1958,
@@ -3751,30 +2500,18 @@
     "title": "671-Styling Depto I.K.A. P. Renault Con._4/1958",
     "notes": "",
     "keywords": [
-      "vehiculos",
+      "escenas--figura-humana",
       "tecnicas--ilustracion",
-      "figuras--humanas"
+      "texto",
+      "vehiculos",
+      "vehiculos--automovil",
+      "vintage"
     ],
     "images": [
       "1958__671-Styling Depto_I.K.A._P. Renault Con. 4-1958__vehiculos__automobil__ika.jpg"
     ],
     "width": 3269,
-    "height": 1974,
-    "keywords_ai": [
-      "figuras--humanas",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "automovil",
-      "convertible",
-      "renault",
-      "pareja",
-      "hombre",
-      "mujer",
-      "vintage",
-      "texto"
-    ]
+    "height": 1974
   },
   {
     "year": 1957,
@@ -3782,26 +2519,19 @@
     "title": "Kaiser 57",
     "notes": "",
     "keywords": [
+      "arquitectura",
+      "militar",
+      "tecnicas--ilustracion",
+      "texto",
       "vehiculos",
-      "tecnicas--ilustracion"
+      "vehiculos--automovil",
+      "vintage"
     ],
     "images": [
       "1957__Kaiser 57__vehiculos__automobil__ika.jpg"
     ],
     "width": 3442,
-    "height": 2025,
-    "keywords_ai": [
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "automovil",
-      "kaiser",
-      "vintage",
-      "clasico",
-      "texto",
-      "1957"
-    ]
+    "height": 2025
   },
   {
     "year": 1948,
@@ -3809,30 +2539,21 @@
     "title": "Casa de Charles Dickens, en Londres",
     "notes": "",
     "keywords": [
-      "paisajes--urbano",
       "arquitectura",
+      "balcones",
+      "fachadas",
       "lugares--inglaterra",
-      "delineado"
+      "lugares--londres",
+      "paisajes--urbano",
+      "plantas",
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "1948__Casa de Charles Dickens en Londres__paisaje-urbano__lugares.jpg"
     ],
     "width": 1377,
-    "height": 2025,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--inglaterra",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "londres",
-      "fachada",
-      "ventanas",
-      "balcon",
-      "plantas",
-      "historico"
-    ]
+    "height": 2025
   },
   {
     "year": 1948,
@@ -3840,29 +2561,18 @@
     "alias": "la costurera",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
       "escenas--de-genero",
-      "delineado",
-      "monocromatico"
+      "escenas--figura-humana",
+      "monocromatico",
+      "sentado",
+      "taller",
+      "tecnicas--delineado"
     ],
     "images": [
       "1948__la costurera__dibujo__monocromatico__figura.jpg"
     ],
     "width": 1824,
-    "height": 2663,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "monocromatico"
-    ],
-    "keywords_ai_extra": [
-      "mujer",
-      "costura",
-      "gorro",
-      "vestido",
-      "sentada"
-    ]
+    "height": 2663
   },
   {
     "year": 1948,
@@ -3870,30 +2580,17 @@
     "alias": "la mujer del parasol",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
+      "decorativo",
       "escenas--de-genero",
-      "delineado",
-      "monocromatico"
+      "escenas--figura-humana",
+      "monocromatico",
+      "tecnicas--delineado"
     ],
     "images": [
       "1948__la mujer del parasol__dibujo__monocromatico__figura.jpg"
     ],
     "width": 1454,
-    "height": 2136,
-    "keywords_ai": [
-      "delineado",
-      "escenas--de-genero",
-      "figuras--humanas",
-      "monocromatico"
-    ],
-    "keywords_ai_extra": [
-      "mujer",
-      "geisha",
-      "abanico",
-      "oriental",
-      "kimono",
-      "asia"
-    ]
+    "height": 2136
   },
   {
     "year": 1948,
@@ -3901,30 +2598,22 @@
     "title": "Plaza de los Vosgos, París - 1948",
     "notes": "",
     "keywords": [
-      "paisajes--urbano",
+      "arcos",
       "arquitectura",
+      "banderas",
+      "edificios",
+      "escenas--figura-humana",
       "lugares--francia",
-      "delineado"
+      "lugares--paris",
+      "paisajes--urbano",
+      "plaza",
+      "tecnicas--delineado"
     ],
     "images": [
       "1948__Plaza de los Vosgos, París - 1948__dibujo__paisaje-urbano.jpg"
     ],
     "width": 1079,
-    "height": 1575,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--francia",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "paris",
-      "arco",
-      "plaza",
-      "edificio",
-      "bandera",
-      "figuras--humanas"
-    ]
+    "height": 1575
   },
   {
     "year": 1945,
@@ -3932,29 +2621,19 @@
     "title": "Allison",
     "notes": "",
     "keywords": [
-      "vehiculos",
-      "aviones",
+      "motor",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado"
+      "texto",
+      "vehiculos",
+      "vehiculos--aviones",
+      "vehiculos--barcos"
     ],
     "images": [
       "1945__Allison__vehiculos__avion.jpg"
     ],
     "width": 1693,
-    "height": 1160,
-    "keywords_ai": [
-      "aviones",
-      "delineado",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "avion-carreras",
-      "helice",
-      "texto",
-      "mecanico",
-      "motor"
-    ]
+    "height": 1160
   },
   {
     "year": 1944,
@@ -3962,29 +2641,19 @@
     "title": "Airalon",
     "notes": "",
     "keywords": [
-      "vehiculos",
-      "aviones",
+      "motor",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado"
+      "texto",
+      "vehiculos",
+      "vehiculos--aviones",
+      "vehiculos--barcos"
     ],
     "images": [
       "1944__Airalon__vehiculos__aviones__dibujo.jpg"
     ],
     "width": 2907,
-    "height": 1991,
-    "keywords_ai": [
-      "aviones",
-      "delineado",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "avion-combate",
-      "helice",
-      "texto",
-      "tecnico",
-      "motor"
-    ]
+    "height": 1991
   },
   {
     "year": 1944,
@@ -3992,29 +2661,20 @@
     "title": "El La Sotta Arko",
     "notes": "",
     "keywords": [
-      "vehiculos",
+      "casas",
+      "montanas",
+      "nieve",
+      "paisajes--rural",
       "tecnicas--ilustracion",
-      "paisajes--rural"
+      "vehiculos",
+      "vehiculos--automovil",
+      "vintage"
     ],
     "images": [
       "1944__El La Sotta Arko__vehiculos__automobil__ika.jpg"
     ],
     "width": 2991,
-    "height": 2008,
-    "keywords_ai": [
-      "paisajes--rural",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "automovil",
-      "convertible",
-      "rojo",
-      "montanas",
-      "nieve",
-      "chalet",
-      "vintage"
-    ]
+    "height": 2008
   },
   {
     "year": 1944,
@@ -4022,30 +2682,20 @@
     "title": "El La Sotta Backarat",
     "notes": "",
     "keywords": [
-      "vehiculos",
-      "tecnicas--ilustracion",
+      "arquitectura",
+      "edificios",
+      "lujo",
       "paisajes--urbano",
-      "arquitectura"
+      "tecnicas--ilustracion",
+      "vehiculos",
+      "vehiculos--automovil",
+      "vintage"
     ],
     "images": [
       "1944__El La Sotta Backarat__vehiculos__automobil__ika.jpg"
     ],
     "width": 1396,
-    "height": 956,
-    "keywords_ai": [
-      "arquitectura",
-      "paisajes--urbano",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "automovil",
-      "sedan",
-      "azul",
-      "edificio",
-      "vintage",
-      "lujo"
-    ]
+    "height": 956
   },
   {
     "year": 1944,
@@ -4053,28 +2703,19 @@
     "title": "El La Sotta Coronet",
     "notes": "",
     "keywords": [
-      "vehiculos",
+      "arquitectura",
+      "ciencia-ficcion",
+      "edificios",
       "tecnicas--ilustracion",
-      "arquitectura"
+      "vehiculos",
+      "vehiculos--automovil",
+      "vintage"
     ],
     "images": [
       "1944__El La Sotta Coronet__vehiculos__automobil__ika.jpg"
     ],
     "width": 1907,
-    "height": 1306,
-    "keywords_ai": [
-      "arquitectura",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "automovil",
-      "futurista",
-      "azul",
-      "castillo",
-      "vintage",
-      "aerodinamico"
-    ]
+    "height": 1306
   },
   {
     "year": 1944,
@@ -4082,29 +2723,20 @@
     "title": "El La Sotta Dux",
     "notes": "",
     "keywords": [
-      "vehiculos",
+      "arquitectura",
+      "dorado",
+      "edificios",
+      "nieve",
       "tecnicas--ilustracion",
-      "arquitectura"
+      "vehiculos",
+      "vehiculos--automovil",
+      "vintage"
     ],
     "images": [
       "1944__El La Sotta Dux__vehiculos__automobil__ika.jpg"
     ],
     "width": 3034,
-    "height": 2001,
-    "keywords_ai": [
-      "arquitectura",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "automovil",
-      "convertible",
-      "marron",
-      "dorado",
-      "edificio",
-      "nieve",
-      "vintage"
-    ]
+    "height": 2001
   },
   {
     "year": 1943,
@@ -4112,29 +2744,19 @@
     "title": "El La Sotta Zur",
     "notes": "",
     "keywords": [
-      "vehiculos",
-      "aviones",
+      "motor",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado"
+      "texto",
+      "vehiculos",
+      "vehiculos--aviones",
+      "vehiculos--barcos"
     ],
     "images": [
       "1943__El La Sotta Zur__vehiculos__aviones__dibujo.jpg"
     ],
     "width": 1095,
-    "height": 1594,
-    "keywords_ai": [
-      "aviones",
-      "delineado",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "avion-deportivo",
-      "helice",
-      "motor",
-      "texto",
-      "amarillo"
-    ]
+    "height": 1594
   },
   {
     "year": 1942,
@@ -4142,31 +2764,21 @@
     "title": "Pieza de los Niños",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "interior",
-      "delineado",
-      "vehiculos"
+      "escenas--bodegon",
+      "escenas--interior",
+      "luces",
+      "mobiliario",
+      "modelos",
+      "planos",
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1942__Pieza de los Niños__bodegon__interior__dibujo.jpg"
     ],
     "width": 1518,
-    "height": 2166,
-    "keywords_ai": [
-      "bodegon",
-      "delineado",
-      "interior",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "barcos",
-      "modelos",
-      "escritorio",
-      "mano",
-      "planos",
-      "lampara",
-      "silla"
-    ]
+    "height": 2166
   },
   {
     "year": 1941,
@@ -4174,32 +2786,22 @@
     "alias": "chiqui en el puerto",
     "notes": "",
     "keywords": [
-      "vehiculos",
-      "barcos",
+      "banderas",
+      "escenas--figura-humana",
+      "muelles",
       "paisajes--nautico",
+      "puerto",
+      "recipientes",
       "tecnicas--acuarela",
-      "delineado"
+      "tecnicas--delineado",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "1941__chiqui en el puerto__puerto__nautico__barcos__dibujo__acuearela.jpg"
     ],
     "width": 1340,
-    "height": 918,
-    "keywords_ai": [
-      "barcos",
-      "delineado",
-      "paisajes--nautico",
-      "tecnicas--acuarela",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "puerto",
-      "muelle",
-      "bandera",
-      "figuras--humanas",
-      "cajas",
-      "darsena"
-    ]
+    "height": 918
   },
   {
     "year": 1941,
@@ -4207,30 +2809,22 @@
     "title": "Place de la Mouleque - Paris",
     "notes": "",
     "keywords": [
-      "paisajes--urbano",
+      "arboles",
       "arquitectura",
+      "edificios",
+      "escenas--figura-humana",
+      "luces",
       "lugares--francia",
-      "delineado"
+      "lugares--paris",
+      "paisajes--urbano",
+      "plaza",
+      "tecnicas--delineado"
     ],
     "images": [
       "1941__Place de la Mouleque - Paris__paisaje-urbano__plaza__dibujo.jpg"
     ],
     "width": 3008,
-    "height": 2005,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--francia",
-      "paisajes--urbano"
-    ],
-    "keywords_ai_extra": [
-      "paris",
-      "plaza",
-      "arboles",
-      "edificios",
-      "farola",
-      "figuras--humanas"
-    ]
+    "height": 2005
   },
   {
     "year": 1941,
@@ -4238,29 +2832,20 @@
     "title": "Victoria 1844-1895",
     "notes": "",
     "keywords": [
-      "lugares--europa",
       "arquitectura",
+      "cupulas",
+      "lugares--europa",
+      "monocromatico",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado"
+      "texto",
+      "ventanas"
     ],
     "images": [
       "1941__Victoria 1844-1895__paisaje-urbano__lugares__dibujo__monocromatico.jpg"
     ],
     "width": 1834,
-    "height": 2678,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--europa",
-      "tecnicas--ilustracion"
-    ],
-    "keywords_ai_extra": [
-      "cupula",
-      "texto",
-      "ventanas",
-      "edificio-historico",
-      "monocromatico"
-    ]
+    "height": 2678
   },
   {
     "year": -1,
@@ -4268,29 +2853,19 @@
     "alias": "aljibe y hornero",
     "notes": "",
     "keywords": [
-      "lugares--rural",
-      "aplat",
+      "arboles",
       "arquitectura",
-      "arboles"
+      "granja",
+      "paisajes--rural",
+      "pozo",
+      "sombras",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__aljibe y hornero.jpg"
     ],
     "width": 2352,
-    "height": 1924,
-    "keywords_ai": [
-      "aplat",
-      "arboles",
-      "arquitectura",
-      "lugares--rural"
-    ],
-    "keywords_ai_extra": [
-      "granja",
-      "pozo",
-      "arbol-sin-hojas",
-      "formas-geometricas",
-      "sombras"
-    ]
+    "height": 1924
   },
   {
     "year": -1,
@@ -4298,29 +2873,19 @@
     "alias": "arbol en la colina amarilla",
     "notes": "",
     "keywords": [
-      "paisajes--campestre",
       "arboles",
-      "aplat",
-      "cielo"
+      "campo",
+      "cielos",
+      "horizontes",
+      "minimalista",
+      "paisajes--rural",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__arbol en la colina amarilla.jpg"
     ],
     "width": 1103,
-    "height": 906,
-    "keywords_ai": [
-      "aplat",
-      "arboles",
-      "cielo",
-      "paisajes--campestre"
-    ],
-    "keywords_ai_extra": [
-      "arbol-sin-hojas",
-      "campo-amarillo",
-      "cielo-purpura",
-      "horizonte",
-      "minimalista"
-    ]
+    "height": 906
   },
   {
     "year": 1981,
@@ -4328,30 +2893,21 @@
     "title": "Patios de Martinez",
     "notes": "Regalo a Maite",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "edificios",
+      "paisajes--urbano",
+      "pueblo",
+      "sombras",
+      "techos",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "1981__Patios de Martinez.jpg",
       "1981__Patios de Martinez__back.jpg"
     ],
     "width": 2635,
-    "height": 3206,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "pueblo",
-      "ventanas",
-      "techos",
-      "sombras",
-      "edificios"
-    ]
+    "height": 3206
   },
   {
     "year": -1,
@@ -4359,30 +2915,22 @@
     "alias": "bahia",
     "notes": "",
     "keywords": [
+      "atardecer",
+      "horizontes",
+      "islas",
+      "mar",
       "paisajes--nautico",
-      "barcos",
-      "aplat",
-      "islas"
+      "siluetas",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "undated__bahia.jpg"
     ],
     "width": 2577,
-    "height": 2121,
-    "keywords_ai": [
-      "aplat",
-      "barcos",
-      "islas",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "velero",
-      "siluetas",
-      "horizonte",
-      "atardecer",
-      "mar"
-    ]
+    "height": 2121
   },
   {
     "year": -1,
@@ -4390,30 +2938,20 @@
     "alias": "bar",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "fachadas",
+      "paisajes--urbano",
+      "plantas",
+      "tecnicas--aplat",
+      "texto",
+      "toldos",
+      "ventanas"
     ],
     "images": [
       "undated__bar.jpg"
     ],
     "width": 933,
-    "height": 1380,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "fachada",
-      "ventanas",
-      "toldos",
-      "ladrillo",
-      "texto",
-      "planta"
-    ]
+    "height": 1380
   },
   {
     "year": -1,
@@ -4421,30 +2959,20 @@
     "alias": "bar 2",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "fachadas",
+      "paisajes--urbano",
+      "plantas",
+      "tecnicas--aplat",
+      "texto",
+      "toldos",
+      "ventanas"
     ],
     "images": [
       "undated__bar_2.jpg"
     ],
     "width": 1357,
-    "height": 1655,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "fachada",
-      "ventanas",
-      "toldos",
-      "ladrillo",
-      "texto",
-      "planta"
-    ]
+    "height": 1655
   },
   {
     "year": -1,
@@ -4452,32 +2980,22 @@
     "alias": "bar y torre",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
-      "lugares--costero",
       "arquitectura",
-      "aplat",
-      "religion"
+      "banderas",
+      "iglesias",
+      "lugares--costero",
+      "paisajes--urbano",
+      "pueblo",
+      "religion",
+      "tecnicas--aplat",
+      "texto",
+      "torres"
     ],
     "images": [
       "undated__bar y torre.jpg"
     ],
     "width": 1763,
-    "height": 2151,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "lugares--costero",
-      "lugares--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "pueblo",
-      "torre",
-      "iglesia",
-      "bandera",
-      "formas-geometricas",
-      "texto"
-    ]
+    "height": 2151
   },
   {
     "year": -1,
@@ -4485,30 +3003,22 @@
     "alias": "barco anclado en la bahia",
     "notes": "",
     "keywords": [
-      "paisajes--nautico",
-      "barcos",
+      "horizontes",
       "lugares--tropical",
-      "aplat"
+      "mar",
+      "montañas",
+      "paisajes--nautico",
+      "palmeras",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "undated__barco anclado en la bahia.jpg"
     ],
     "width": 2267,
-    "height": 1858,
-    "keywords_ai": [
-      "aplat",
-      "barcos",
-      "lugares--tropical",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "palmeras",
-      "montañas",
-      "velero",
-      "horizonte",
-      "mar"
-    ]
+    "height": 1858
   },
   {
     "year": -1,
@@ -4516,28 +3026,20 @@
     "alias": "barco pesquero en el mar",
     "notes": "",
     "keywords": [
+      "costa",
+      "horizontes",
+      "mar",
+      "montañas",
       "paisajes--nautico",
-      "barcos",
-      "aplat"
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__barco pesquero en el mar.jpg"
     ],
     "width": 1709,
-    "height": 1171,
-    "keywords_ai": [
-      "aplat",
-      "barcos",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "carguero",
-      "montañas",
-      "costa",
-      "mar",
-      "horizonte"
-    ]
+    "height": 1171
   },
   {
     "year": -1,
@@ -4545,27 +3047,17 @@
     "alias": "bodegón con botella y cajas",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "aplat",
-      "formas-geometricas"
+      "escenas--bodegon",
+      "recipientes",
+      "sombras",
+      "tecnicas--aplat",
+      "texto"
     ],
     "images": [
       "undated__bodegón con botella y cajas.jpg"
     ],
     "width": 1411,
-    "height": 1407,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "botellas",
-      "caja",
-      "patron-geometrico",
-      "sombras",
-      "texto"
-    ]
+    "height": 1407
   },
   {
     "year": -1,
@@ -4573,29 +3065,17 @@
     "alias": "borges",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "tecnicas--ilustracion",
-      "delineado",
-      "retratos"
+      "escenas--retrato",
+      "escenas--figura-humana",
+      "tecnicas--crosshatching",
+      "tecnicas--delineado",
+      "tecnicas--ilustracion"
     ],
     "images": [
       "undated__borges.JPG"
     ],
     "width": 1334,
-    "height": 1334,
-    "keywords_ai": [
-      "delineado",
-      "figuras--humanas",
-      "retratos",
-      "tecnicas--ilustracion"
-    ],
-    "keywords_ai_extra": [
-      "hombre",
-      "anciano",
-      "retrato-masculino",
-      "crosshatching",
-      "camisa"
-    ]
+    "height": 1334
   },
   {
     "year": -1,
@@ -4603,27 +3083,18 @@
     "alias": "botellas",
     "notes": "",
     "keywords": [
-      "abstracto",
-      "formas-geometricas",
-      "aplat"
+      "composicion",
+      "escenas--abstracto",
+      "escenas--bodegon",
+      "musica",
+      "tecnicas--aplat",
+      "tecnicas--cubismo"
     ],
     "images": [
       "undated__botellas.jpg"
     ],
     "width": 2433,
-    "height": 2433,
-    "keywords_ai": [
-      "abstracto",
-      "aplat",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "musica",
-      "guitarra",
-      "botellas",
-      "cubismo",
-      "composicion"
-    ]
+    "height": 2433
   },
   {
     "year": -1,
@@ -4631,31 +3102,22 @@
     "title": "Calle Gral. Rodriguez, entre Ayolas y Pedro de Mendoza - 1875",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
+      "cielos",
+      "edificios",
+      "muelles",
+      "paisajes--urbano",
       "tecnicas--acuarela",
-      "delineado"
+      "tecnicas--delineado",
+      "texto",
+      "vehiculos--barcos",
+      "vias-tren"
     ],
     "images": [
       "undated__Calle Gral. Rodriguez, entre Ayolas y Pedro de Mendoza - 1875.jpg"
     ],
     "width": 1516,
-    "height": 1243,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--urbano",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "edificios",
-      "muelle",
-      "barcos",
-      "vias-tren",
-      "cielo",
-      "texto",
-      "historico"
-    ]
+    "height": 1243
   },
   {
     "year": -1,
@@ -4663,31 +3125,21 @@
     "alias": "catedral",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
+      "campanas",
+      "iglesias",
+      "paisajes--urbano",
+      "pueblo",
       "religion",
-      "aplat",
-      "formas-geometricas"
+      "tecnicas--aplat",
+      "torres",
+      "ventanas"
     ],
     "images": [
       "undated__catedral.jpg"
     ],
     "width": 1170,
-    "height": 1375,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "iglesia",
-      "torre",
-      "campanas",
-      "pueblo",
-      "ventanas"
-    ]
+    "height": 1375
   },
   {
     "year": -1,
@@ -4695,33 +3147,22 @@
     "alias": "circo",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
-      "vehiculos",
-      "formas-geometricas",
-      "aplat",
-      "figuras--humanas"
+      "banderas",
+      "escaleras",
+      "espectaculo",
+      "escenas--figura-humana",
+      "luces",
+      "noria",
+      "paisajes--urbano",
+      "tecnicas--aplat",
+      "texto",
+      "vehiculos"
     ],
     "images": [
       "undated__circo.jpg"
     ],
     "width": 2499,
-    "height": 1712,
-    "keywords_ai": [
-      "aplat",
-      "figuras--humanas",
-      "formas-geometricas",
-      "lugares--urbano",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "feria",
-      "noria",
-      "circo",
-      "escalera",
-      "banderas",
-      "texto",
-      "luces"
-    ]
+    "height": 1712
   },
   {
     "year": -1,
@@ -4729,29 +3170,20 @@
     "alias": "cocina",
     "notes": "",
     "keywords": [
-      "interiores",
-      "aplat",
-      "formas-geometricas"
+      "arquitectura",
+      "cocina",
+      "escenas--interior",
+      "luces",
+      "mesada",
+      "plantas",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "undated__cocina.jpg"
     ],
     "width": 1736,
-    "height": 1423,
-    "keywords_ai": [
-      "aplat",
-      "formas-geometricas",
-      "interiores"
-    ],
-    "keywords_ai_extra": [
-      "cocina",
-      "estufa",
-      "mesada",
-      "azulejos",
-      "lampara",
-      "ventana",
-      "plantas"
-    ]
+    "height": 1423
   },
   {
     "year": -1,
@@ -4759,32 +3191,23 @@
     "alias": "cuatro veleros",
     "notes": "",
     "keywords": [
-      "lugares--costero",
-      "barcos",
+      "arboles",
       "arquitectura",
-      "aplat",
-      "arboles"
+      "banderas",
+      "casas",
+      "lugares--costero",
+      "muelles",
+      "pueblo",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "undated__cuatro veleros.jpg"
     ],
     "width": 1591,
-    "height": 1090,
-    "keywords_ai": [
-      "aplat",
-      "arboles",
-      "arquitectura",
-      "barcos",
-      "lugares--costero",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "veleros",
-      "pueblo",
-      "casas",
-      "muelle",
-      "banderas"
-    ]
+    "height": 1090
   },
   {
     "year": -1,
@@ -4792,28 +3215,21 @@
     "alias": "el baluarte en el peñón",
     "notes": "",
     "keywords": [
-      "paisajes--nautico",
       "arquitectura",
-      "aplat"
+      "fortaleza",
+      "horizontes",
+      "islas",
+      "montañas",
+      "paisajes--nautico",
+      "siluetas",
+      "tecnicas--aplat",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__el baluarte en el peñón.jpg"
     ],
     "width": 1518,
-    "height": 1244,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--nautico"
-    ],
-    "keywords_ai_extra": [
-      "fortaleza",
-      "isla",
-      "siluetas",
-      "barco",
-      "montañas",
-      "horizonte"
-    ]
+    "height": 1244
   },
   {
     "year": -1,
@@ -4821,30 +3237,20 @@
     "title": "El Buzón de la Casa Blanca",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "buzon",
+      "casas",
+      "paisajes--urbano",
+      "pueblo",
+      "sombras",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "undated__El Buzón de la Casa Blanca.jpg"
     ],
     "width": 1788,
-    "height": 1466,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "pueblo",
-      "casas",
-      "buzon",
-      "ventanas",
-      "sombras",
-      "muro"
-    ]
+    "height": 1466
   },
   {
     "year": -1,
@@ -4852,29 +3258,19 @@
     "alias": "el carro lechero",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
+      "animales--buey",
+      "escenas--abstracto",
+      "escenas--figura-humana",
+      "tecnicas--aplat",
+      "texto",
       "vehiculos",
-      "aplat",
-      "formas-geometricas"
+      "vehiculos--carro"
     ],
     "images": [
       "undated__el carro lechero.jpg"
     ],
     "width": 1437,
-    "height": 1198,
-    "keywords_ai": [
-      "aplat",
-      "figuras--humanas",
-      "formas-geometricas",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "carreta",
-      "buey",
-      "personas",
-      "abstracto",
-      "texto"
-    ]
+    "height": 1198
   },
   {
     "year": -1,
@@ -4882,31 +3278,23 @@
     "alias": "faro y el puente fantasma",
     "notes": "",
     "keywords": [
-      "paisajes--nautico",
       "arquitectura",
-      "aplat",
-      "barcos"
+      "banderas",
+      "faros",
+      "islas",
+      "montañas",
+      "paisajes--nautico",
+      "puentes",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "undated__faro y el puente fantasma.jpg"
     ],
     "width": 1642,
-    "height": 1970,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "paisajes--nautico",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "faro",
-      "isla",
-      "puente",
-      "veleros",
-      "montañas",
-      "banderas"
-    ]
+    "height": 1970
   },
   {
     "year": -1,
@@ -4914,27 +3302,16 @@
     "alias": "florero verde",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "tecnicas--acuarela",
-      "flores"
+      "escenas--bodegon",
+      "flores",
+      "recipientes",
+      "tecnicas--acuarela"
     ],
     "images": [
       "undated__florero_verde__bodegon_acuarela.jpg"
     ],
     "width": 1357,
-    "height": 2036,
-    "keywords_ai": [
-      "bodegon",
-      "flores",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "florero",
-      "jarron",
-      "flores-blancas",
-      "flores-rosas",
-      "acuarela"
-    ]
+    "height": 2036
   },
   {
     "year": -1,
@@ -4942,29 +3319,20 @@
     "alias": "galpon y sillo",
     "notes": "",
     "keywords": [
-      "lugares--rural",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "edificios",
+      "granja",
+      "industrial",
+      "minimalista",
+      "paisajes--rural",
+      "silo",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__galpon y sillo__derigrafia.jpg"
     ],
     "width": 2806,
-    "height": 1922,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--rural"
-    ],
-    "keywords_ai_extra": [
-      "granja",
-      "silo",
-      "edificios",
-      "industrial",
-      "minimalista"
-    ]
+    "height": 1922
   },
   {
     "year": -1,
@@ -4972,28 +3340,19 @@
     "alias": "genoas",
     "notes": "",
     "keywords": [
-      "barcos",
-      "aplat",
-      "formas-geometricas"
+      "deportes",
+      "mar",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros",
+      "velas"
     ],
     "images": [
       "undated__genoas.jpg"
     ],
     "width": 1278,
-    "height": 1555,
-    "keywords_ai": [
-      "aplat",
-      "barcos",
-      "formas-geometricas",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "veleros",
-      "spinnaker",
-      "velas-coloridas",
-      "competencia",
-      "mar"
-    ]
+    "height": 1555
   },
   {
     "year": -1,
@@ -5001,32 +3360,23 @@
     "alias": "golden gate",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
+      "casas",
+      "costa",
+      "iglesias",
+      "montañas",
       "paisajes--nautico",
+      "paisajes--urbano",
+      "puentes",
       "tecnicas--acuarela",
-      "delineado"
+      "tecnicas--delineado",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__golden gate.jpg"
     ],
     "width": 2016,
-    "height": 1680,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--urbano",
-      "paisajes--nautico",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "puente",
-      "montañas",
-      "bahia",
-      "casas",
-      "iglesias",
-      "barcos"
-    ]
+    "height": 1680
   },
   {
     "year": -1,
@@ -5034,27 +3384,19 @@
     "title": "Green and Blue",
     "notes": "",
     "keywords": [
-      "paisajes--campestre",
-      "aplat",
-      "formas-geometricas"
+      "banderas",
+      "deportes--golf",
+      "minimalista",
+      "paisajes--rural",
+      "tecnicas--aplat",
+      "texto",
+      "vegetacion"
     ],
     "images": [
       "undated__Green and Blue.jpg"
     ],
     "width": 1267,
-    "height": 1546,
-    "keywords_ai": [
-      "aplat",
-      "formas-geometricas",
-      "paisajes--campestre"
-    ],
-    "keywords_ai_extra": [
-      "golf",
-      "banderas",
-      "cesped",
-      "minimalista",
-      "texto"
-    ]
+    "height": 1546
   },
   {
     "year": -1,
@@ -5062,29 +3404,20 @@
     "title": "Green and Blue 42-50",
     "notes": "",
     "keywords": [
-      "paisajes--campestre",
-      "aplat",
-      "formas-geometricas",
-      "tecnicas--serigrafia"
+      "banderas",
+      "deportes--golf",
+      "minimalista",
+      "paisajes--rural",
+      "tecnicas--aplat",
+      "tecnicas--serigrafia",
+      "texto",
+      "vegetacion"
     ],
     "images": [
       "undated__Green and Blue 42-50__serigrafia.jpg"
     ],
     "width": 2098,
-    "height": 2559,
-    "keywords_ai": [
-      "aplat",
-      "formas-geometricas",
-      "paisajes--campestre",
-      "tecnicas--serigrafia"
-    ],
-    "keywords_ai_extra": [
-      "golf",
-      "banderas",
-      "cesped",
-      "minimalista",
-      "texto"
-    ]
+    "height": 2559
   },
   {
     "year": -1,
@@ -5092,30 +3425,20 @@
     "alias": "hombre con libro",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "retratos",
-      "aplat",
-      "formas-geometricas"
+      "cubista",
+      "escenas--interior",
+      "escenas--retrato",
+      "escenas--figura-humana",
+      "libros",
+      "sentado",
+      "tecnicas--aplat",
+      "texto"
     ],
     "images": [
       "undated__hombre con libro.jpg"
     ],
     "width": 1305,
-    "height": 1566,
-    "keywords_ai": [
-      "aplat",
-      "figuras--humanas",
-      "formas-geometricas",
-      "retratos"
-    ],
-    "keywords_ai_extra": [
-      "hombre",
-      "libro",
-      "sentado",
-      "interior",
-      "cubista",
-      "texto"
-    ]
+    "height": 1566
   },
   {
     "year": -1,
@@ -5123,30 +3446,21 @@
     "alias": "hotel y bar",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
+      "arboles",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "fachadas",
+      "hotel",
+      "mobiliario",
+      "paisajes--urbano",
+      "tecnicas--aplat",
+      "texto",
+      "ventanas"
     ],
     "images": [
       "undated__hotel y bar.jpg"
     ],
     "width": 1727,
-    "height": 2107,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "hotel",
-      "fachada",
-      "ventanas",
-      "arbol",
-      "texto",
-      "banco"
-    ]
+    "height": 2107
   },
   {
     "year": -1,
@@ -5154,31 +3468,22 @@
     "alias": "hotel y bar 2",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
+      "arboles",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "fachadas",
+      "hotel",
+      "mobiliario",
+      "paisajes--urbano",
+      "tecnicas--aplat",
+      "texto",
+      "ventanas"
     ],
     "images": [
       "undated__hotel y bar 2.jpg",
       "undated__hotel y bar_2.jpg"
     ],
     "width": 1727,
-    "height": 2107,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "hotel",
-      "fachada",
-      "ventanas",
-      "arbol",
-      "texto",
-      "banco"
-    ]
+    "height": 2107
   },
   {
     "year": -1,
@@ -5186,33 +3491,22 @@
     "alias": "iglesia inmaculada concepción de maría",
     "notes": "",
     "keywords": [
-      "religion",
       "arquitectura",
+      "iglesias",
+      "paisajes--urbano",
+      "palmeras",
+      "puertas",
+      "religion",
       "tecnicas--acuarela",
-      "delineado",
-      "lugares--urbano"
+      "tecnicas--delineado",
+      "ventanas"
     ],
     "images": [
       "undated__iglesia inmaculada concepción de maría__Zapiola_2.jpg",
       "undated__iglesia inmaculada concepción de maría__Zapiola.jpg"
     ],
     "width": 2145,
-    "height": 2617,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--urbano",
-      "religion",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "iglesia",
-      "palmera",
-      "reja",
-      "puerta",
-      "columnas",
-      "frontis"
-    ]
+    "height": 2617
   },
   {
     "year": -1,
@@ -5220,30 +3514,17 @@
     "title": "IHS cristo en el cadalso",
     "notes": "",
     "keywords": [
+      "escenas--figura-humana",
+      "montañas",
       "religion",
-      "figuras--humanas",
-      "aplat",
-      "formas-geometricas"
+      "tecnicas--aplat",
+      "texto"
     ],
     "images": [
       "undated__IHS_cristo en el cadalso.jpg"
     ],
     "width": 1359,
-    "height": 1866,
-    "keywords_ai": [
-      "aplat",
-      "figuras--humanas",
-      "formas-geometricas",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "cristo",
-      "crucifixion",
-      "cruz",
-      "halo",
-      "texto",
-      "montaña"
-    ]
+    "height": 1866
   },
   {
     "year": -1,
@@ -5251,27 +3532,18 @@
     "alias": "junta cardán",
     "notes": "",
     "keywords": [
-      "abstracto",
-      "formas-geometricas",
-      "aplat"
+      "cubista",
+      "escenas--abstracto",
+      "industrial",
+      "letras",
+      "tecnicas--aplat",
+      "texto"
     ],
     "images": [
       "undated__junta cardán.jpg"
     ],
     "width": 1175,
-    "height": 1410,
-    "keywords_ai": [
-      "abstracto",
-      "aplat",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "mecanico",
-      "industrial",
-      "texto",
-      "cubista",
-      "letras"
-    ]
+    "height": 1410
   },
   {
     "year": -1,
@@ -5279,32 +3551,20 @@
     "title": "L'abbaye c'istercienne a Thironne - Bourgogne - XII siècle",
     "notes": "",
     "keywords": [
-      "lugares--europa",
       "arquitectura",
+      "edificios",
+      "iglesias",
+      "lugares--europa",
+      "monasterio",
       "religion",
       "tecnicas--acuarela",
-      "delineado"
+      "tecnicas--delineado"
     ],
     "images": [
       "undated__L'abbaye c'istercienne a Thironne - Bourgogne - XII siècle.jpg"
     ],
     "width": 1596,
-    "height": 1308,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--europa",
-      "religion",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "monasterio",
-      "abadia",
-      "iglesia",
-      "edificios",
-      "gotico",
-      "medieval"
-    ]
+    "height": 1308
   },
   {
     "year": -1,
@@ -5312,28 +3572,19 @@
     "alias": "la capitan",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
+      "escaleras",
+      "escenas--interior",
+      "escenas--figura-humana",
+      "lineas",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado"
+      "texto"
     ],
     "images": [
       "undated__la capitan__incompleto.jpg"
     ],
     "width": 1208,
-    "height": 1449,
-    "keywords_ai": [
-      "delineado",
-      "figuras--humanas",
-      "tecnicas--ilustracion"
-    ],
-    "keywords_ai_extra": [
-      "mujer",
-      "sombrero",
-      "interior",
-      "escalera",
-      "texto",
-      "lineas"
-    ]
+    "height": 1449
   },
   {
     "year": -1,
@@ -5341,29 +3592,20 @@
     "alias": "la casa angosta",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "casas",
+      "chimeneas",
+      "minimalista",
+      "paisajes--urbano",
+      "sombras",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "undated__la casa angosta.jpg"
     ],
     "width": 402,
-    "height": 1970,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "casa",
-      "ventanas",
-      "chimenea",
-      "minimalista",
-      "sombras"
-    ]
+    "height": 1970
   },
   {
     "year": -1,
@@ -5371,10 +3613,15 @@
     "title": "La Casualidad en Zapiola",
     "notes": "",
     "keywords": [
-      "lugares--rural",
       "arquitectura",
-      "aplat",
-      "vehiculos"
+      "edificios",
+      "granja",
+      "paisajes--rural",
+      "plantas",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--tractor",
+      "escenas--primer-plano"
     ],
     "images": [
       "undated__La Casualidad en Zapiola.jpg",
@@ -5385,20 +3632,7 @@
       "undated__La Casualidad en Zapiola__detalle_5.jpg"
     ],
     "width": 2381,
-    "height": 1631,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "lugares--rural",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "granja",
-      "galpones",
-      "tractor",
-      "cerca",
-      "planta"
-    ]
+    "height": 1631
   },
   {
     "year": -1,
@@ -5406,28 +3640,18 @@
     "alias": "la cocinera y la carta",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "aplat",
-      "formas-geometricas"
+      "cubista",
+      "decorativo",
+      "escenas--bodegon",
+      "escenas--figura-humana",
+      "sentado",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__la cocinera y la carta.jpg"
     ],
     "width": 1332,
-    "height": 1945,
-    "keywords_ai": [
-      "aplat",
-      "figuras--humanas",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "mujer",
-      "cocinera",
-      "carta",
-      "cubista",
-      "sentada",
-      "botella"
-    ]
+    "height": 1945
   },
   {
     "year": -1,
@@ -5435,27 +3659,19 @@
     "alias": "la duna y el monolito blanco",
     "notes": "",
     "keywords": [
-      "paisajes--campestre",
       "arquitectura",
-      "aplat"
+      "desierto",
+      "edificios",
+      "minimalista",
+      "monolito",
+      "paisajes--rural",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__la duna y el monolito blanco.jpg"
     ],
     "width": 1631,
-    "height": 1341,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "paisajes--campestre"
-    ],
-    "keywords_ai_extra": [
-      "dunas",
-      "edificio",
-      "monolito",
-      "minimalista",
-      "desierto"
-    ]
+    "height": 1341
   },
   {
     "year": -1,
@@ -5463,28 +3679,19 @@
     "alias": "la silla verde",
     "notes": "",
     "keywords": [
-      "interiores",
-      "aplat",
-      "formas-geometricas"
+      "decorativo",
+      "escenas--bodegon",
+      "escenas--interior",
+      "mobiliario",
+      "plantas",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "undated__la silla verde.jpg"
     ],
     "width": 1398,
-    "height": 1678,
-    "keywords_ai": [
-      "aplat",
-      "formas-geometricas",
-      "interiores"
-    ],
-    "keywords_ai_extra": [
-      "ventana",
-      "cortina",
-      "silla",
-      "mesa",
-      "planta",
-      "botella"
-    ]
+    "height": 1678
   },
   {
     "year": -1,
@@ -5492,29 +3699,21 @@
     "alias": "mad tugboat",
     "notes": "",
     "keywords": [
-      "barcos",
-      "aplat",
-      "lugares--costero"
+      "banderas",
+      "chimeneas",
+      "lugares--costero",
+      "reflejo",
+      "tecnicas--aplat",
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__mad_tugboat.jpg",
       "undated__mad_tugboat__detalle__firma.jpg"
     ],
     "width": 1790,
-    "height": 2184,
-    "keywords_ai": [
-      "aplat",
-      "barcos",
-      "lugares--costero",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "remolcador",
-      "reflejo",
-      "banderas",
-      "chimenea",
-      "texto"
-    ]
+    "height": 2184
   },
   {
     "year": -1,
@@ -5522,27 +3721,17 @@
     "alias": "mujer reclinada",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "aplat",
-      "formas-geometricas"
+      "cubista",
+      "escenas--interior",
+      "escenas--figura-humana",
+      "sentado",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__mujer reclinada.jpg"
     ],
     "width": 956,
-    "height": 1166,
-    "keywords_ai": [
-      "aplat",
-      "figuras--humanas",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "mujer",
-      "recostada",
-      "cubista",
-      "interior",
-      "cama"
-    ]
+    "height": 1166
   },
   {
     "year": -1,
@@ -5550,29 +3739,19 @@
     "alias": "musico sin cabeza",
     "notes": "",
     "keywords": [
-      "figuras--humanas",
-      "bodegon",
-      "aplat",
-      "formas-geometricas"
+      "cubista",
+      "escenas--abstracto",
+      "escenas--bodegon",
+      "escenas--figura-humana",
+      "musica",
+      "musicos",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__musico sin cabeza__aplast__figura__musica__bodegon.jpg"
     ],
     "width": 1093,
-    "height": 1602,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "figuras--humanas",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "musico",
-      "guitarra",
-      "botellas",
-      "cubista",
-      "abstracto"
-    ]
+    "height": 1602
   },
   {
     "year": -1,
@@ -5580,31 +3759,21 @@
     "alias": "palacio y torre blanca en la plaza",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
+      "arcos",
       "arquitectura",
+      "edificios",
+      "iglesias",
+      "paisajes--urbano",
+      "plaza",
       "religion",
-      "aplat",
-      "formas-geometricas"
+      "tecnicas--aplat",
+      "torres"
     ],
     "images": [
       "undated__palacio y torre blanca en la plaza.jpg"
     ],
     "width": 1146,
-    "height": 1673,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "torre",
-      "iglesia",
-      "edificios",
-      "plaza",
-      "arcos"
-    ]
+    "height": 1673
   },
   {
     "year": -1,
@@ -5612,28 +3781,21 @@
     "alias": "parador en la playa",
     "notes": "",
     "keywords": [
-      "lugares--costero",
       "arquitectura",
-      "aplat"
+      "banderas",
+      "campamento",
+      "escaleras",
+      "lugares--costero",
+      "playa",
+      "sombrillas",
+      "tecnicas--aplat",
+      "escenas--primer-plano"
     ],
     "images": [
       "undated__parador en la playa__nautico__lugares__playa__punta-del-este__paisaje-urbano.jpg"
     ],
     "width": 2559,
-    "height": 1711,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "lugares--costero"
-    ],
-    "keywords_ai_extra": [
-      "playa",
-      "carpas",
-      "sombrillas",
-      "banderas",
-      "escalera",
-      "cerca"
-    ]
+    "height": 1711
   },
   {
     "year": -1,
@@ -5641,30 +3803,21 @@
     "alias": "parroquia de nuestra señora de fatima",
     "notes": "closeup 2",
     "keywords": [
-      "religion",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "campanarios",
+      "campanas",
+      "iglesias",
+      "religion",
+      "techos",
+      "tecnicas--aplat",
+      "torres"
     ],
     "images": [
       "undated__parroquia de nuestra señora de fatima__closeup 2.jpg",
       "undated__parroquia de nuestra señora de fatima__closeup.jpg"
     ],
     "width": 1420,
-    "height": 1002,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "iglesia",
-      "torre",
-      "campanario",
-      "campanas",
-      "techos-naranjas"
-    ]
+    "height": 1002
   },
   {
     "year": -1,
@@ -5672,29 +3825,20 @@
     "alias": "parroquia nuestra señora de fátima",
     "notes": "Parroquia Nuestra Señora de Fátima, San Isidro",
     "keywords": [
-      "religion",
+      "arboles",
       "arquitectura",
-      "aplat",
-      "arboles"
+      "campanarios",
+      "escaleras",
+      "iglesias",
+      "religion",
+      "tecnicas--aplat",
+      "torres"
     ],
     "images": [
       "undated__parroquia nuestra señora de fátima__Parroquia Nuestra Señora de Fátima, San Isidro__iglesia.jpg"
     ],
     "width": 2899,
-    "height": 1986,
-    "keywords_ai": [
-      "aplat",
-      "arboles",
-      "arquitectura",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "iglesia",
-      "torre",
-      "campanario",
-      "arboles",
-      "escalera"
-    ]
+    "height": 1986
   },
   {
     "year": -1,
@@ -5702,29 +3846,20 @@
     "alias": "pueblo blanco escalonado",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "casas",
+      "escaleras",
+      "minimalista",
+      "paisajes--urbano",
+      "sombras",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "undated__pueblo blanco escalonado.jpg"
     ],
     "width": 1440,
-    "height": 1714,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "casas-blancas",
-      "escaleras",
-      "ventanas",
-      "sombras",
-      "minimalista"
-    ]
+    "height": 1714
   },
   {
     "year": -1,
@@ -5732,34 +3867,23 @@
     "alias": "puerto de ciudad",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
-      "lugares--costero",
       "arquitectura",
-      "aplat",
-      "formas-geometricas",
-      "religion"
+      "edificios",
+      "faros",
+      "iglesias",
+      "lugares--costero",
+      "paisajes--urbano",
+      "puerto",
+      "religion",
+      "tecnicas--aplat",
+      "texto",
+      "torres"
     ],
     "images": [
       "undated__puerto de ciudad.jpg"
     ],
     "width": 1475,
-    "height": 1800,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas",
-      "lugares--costero",
-      "lugares--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "puerto",
-      "faros",
-      "iglesias",
-      "torres",
-      "edificios",
-      "texto"
-    ]
+    "height": 1800
   },
   {
     "year": -1,
@@ -5767,32 +3891,22 @@
     "title": "Puerto de Ischia",
     "notes": "",
     "keywords": [
-      "lugares--costero",
-      "barcos",
       "arquitectura",
-      "aplat",
-      "tecnicas--serigrafia"
+      "casas",
+      "iglesias",
+      "lugares--costero",
+      "muelles",
+      "puerto",
+      "tecnicas--aplat",
+      "tecnicas--serigrafia",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__Puerto de Ischia__serigrafia.jpg"
     ],
     "width": 2313,
-    "height": 1928,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "lugares--costero",
-      "tecnicas--serigrafia",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "puerto",
-      "muelles",
-      "barcos",
-      "iglesia",
-      "casas"
-    ]
+    "height": 1928
   },
   {
     "year": -1,
@@ -5801,27 +3915,19 @@
     "notes": "",
     "keywords": [
       "arquitectura",
-      "aplat",
-      "formas-geometricas"
+      "banderas",
+      "casas",
+      "chimeneas",
+      "invierno",
+      "nieve",
+      "tecnicas--aplat",
+      "escenas--primer-plano"
     ],
     "images": [
       "undated__red_cabin_in_snow.jpg"
     ],
     "width": 2106,
-    "height": 1438,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "casa-roja",
-      "nieve",
-      "chimeneas",
-      "bandera",
-      "cerca",
-      "invierno"
-    ]
+    "height": 1438
   },
   {
     "year": -1,
@@ -5829,27 +3935,19 @@
     "alias": "reloj y violin",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "formas-geometricas",
-      "aplat"
+      "cubista",
+      "escenas--bodegon",
+      "luces",
+      "mobiliario",
+      "musica",
+      "relojes",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__reloj y violin.jpg"
     ],
     "width": 1314,
-    "height": 1577,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "reloj",
-      "violin",
-      "muebles",
-      "lampara",
-      "cubista"
-    ]
+    "height": 1577
   },
   {
     "year": -1,
@@ -5857,30 +3955,21 @@
     "title": "Reykiavic",
     "notes": "",
     "keywords": [
-      "lugares--costero",
-      "barcos",
       "arquitectura",
-      "aplat"
+      "casas",
+      "iglesias",
+      "lugares--costero",
+      "muelles",
+      "puerto",
+      "tecnicas--aplat",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__Reykiavic.jpg"
     ],
     "width": 1816,
-    "height": 2216,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "lugares--costero",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "puerto",
-      "muelles",
-      "casas",
-      "iglesia",
-      "barcos"
-    ]
+    "height": 2216
   },
   {
     "year": -1,
@@ -5888,32 +3977,22 @@
     "title": "San Salvador de Bahia",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
+      "calles",
+      "ciudad",
+      "edificios",
+      "iglesias",
+      "paisajes--urbano",
       "religion",
       "tecnicas--acuarela",
-      "delineado"
+      "tecnicas--delineado",
+      "torres"
     ],
     "images": [
       "undated__San Salvador de Bahia.jpg"
     ],
     "width": 1724,
-    "height": 2069,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "lugares--urbano",
-      "religion",
-      "tecnicas--acuarela"
-    ],
-    "keywords_ai_extra": [
-      "iglesia",
-      "torres",
-      "calles",
-      "edificios",
-      "empedrado",
-      "ciudad"
-    ]
+    "height": 2069
   },
   {
     "year": -1,
@@ -5921,24 +4000,18 @@
     "alias": "sierras",
     "notes": "",
     "keywords": [
-      "paisajes--campestre",
-      "aplat"
+      "colinas",
+      "horizontes",
+      "minimalista",
+      "montañas",
+      "paisajes--rural",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__sierras__recorte.jpg"
     ],
     "width": 1282,
-    "height": 1282,
-    "keywords_ai": [
-      "aplat",
-      "paisajes--campestre"
-    ],
-    "keywords_ai_extra": [
-      "montañas",
-      "colinas",
-      "minimalista",
-      "horizontes"
-    ]
+    "height": 1282
   },
   {
     "year": -1,
@@ -5946,30 +4019,22 @@
     "title": "Sol del Mediterraneo",
     "notes": "P-A 73",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
+      "iglesias",
+      "mercado",
+      "paisajes--urbano",
+      "pueblo",
       "religion",
-      "aplat"
+      "tecnicas--aplat",
+      "texto",
+      "toldos",
+      "torres"
     ],
     "images": [
       "undated__Sol del Mediterraneo__P-A 73__serigrafia__lineas.jpg"
     ],
     "width": 2594,
-    "height": 2126,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "lugares--urbano",
-      "religion"
-    ],
-    "keywords_ai_extra": [
-      "pueblo",
-      "torres",
-      "iglesias",
-      "toldos",
-      "mercado",
-      "texto"
-    ]
+    "height": 2126
   },
   {
     "year": -1,
@@ -5977,31 +4042,22 @@
     "title": "Sol del Mediterraneo",
     "notes": "",
     "keywords": [
-      "lugares--urbano",
       "arquitectura",
+      "iglesias",
+      "mercado",
+      "paisajes--urbano",
+      "pueblo",
       "religion",
-      "aplat",
-      "tecnicas--serigrafia"
+      "tecnicas--aplat",
+      "tecnicas--serigrafia",
+      "toldos",
+      "torres"
     ],
     "images": [
       "undated__Sol del Mediterraneo__serigrafia__aplast.jpg"
     ],
     "width": 2743,
-    "height": 2248,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "lugares--urbano",
-      "religion",
-      "tecnicas--serigrafia"
-    ],
-    "keywords_ai_extra": [
-      "pueblo",
-      "torres",
-      "iglesias",
-      "toldos",
-      "mercado"
-    ]
+    "height": 2248
   },
   {
     "year": -1,
@@ -6009,27 +4065,17 @@
     "alias": "space port unifished",
     "notes": "",
     "keywords": [
+      "arquitectura",
+      "ciencia-ficcion",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado",
-      "arquitectura"
+      "texto"
     ],
     "images": [
       "undated__space port_unifished.jpg"
     ],
     "width": 1820,
-    "height": 1247,
-    "keywords_ai": [
-      "arquitectura",
-      "delineado",
-      "tecnicas--ilustracion"
-    ],
-    "keywords_ai_extra": [
-      "cohetes",
-      "naves-espaciales",
-      "futuro",
-      "ciencia-ficcion",
-      "texto"
-    ]
+    "height": 1247
   },
   {
     "year": -1,
@@ -6037,28 +4083,20 @@
     "alias": "telefono y ventana",
     "notes": "",
     "keywords": [
-      "interiores",
-      "aplat",
-      "formas-geometricas"
+      "cubista",
+      "escenas--bodegon",
+      "escenas--interior",
+      "mobiliario",
+      "sombras",
+      "tecnicas--aplat",
+      "telefono",
+      "ventanas"
     ],
     "images": [
       "undated__telefono y ventana.jpg"
     ],
     "width": 1616,
-    "height": 1971,
-    "keywords_ai": [
-      "aplat",
-      "formas-geometricas",
-      "interiores"
-    ],
-    "keywords_ai_extra": [
-      "telefono",
-      "ventana",
-      "mesa",
-      "botellas",
-      "cubista",
-      "sombras"
-    ]
+    "height": 1971
   },
   {
     "year": -1,
@@ -6066,28 +4104,19 @@
     "alias": "varcos anclados",
     "notes": "",
     "keywords": [
-      "barcos",
+      "lineas",
+      "muelles",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado"
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__varcos anclados__incompleto.JPG"
     ],
     "width": 1934,
-    "height": 1426,
-    "keywords_ai": [
-      "barcos",
-      "delineado",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "barcos-pesqueros",
-      "muelle",
-      "lineas",
-      "texto",
-      "incompleto"
-    ]
+    "height": 1426
   },
   {
     "year": -1,
@@ -6095,31 +4124,22 @@
     "title": "velero 37-C7",
     "notes": "",
     "keywords": [
-      "barcos",
+      "edificios",
+      "faros",
+      "lugares--costero",
+      "puerto",
       "tecnicas--acuarela",
-      "delineado",
-      "lugares--costero"
+      "tecnicas--delineado",
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "undated__velero_37-C7.jpg"
     ],
     "width": 2157,
-    "height": 1798,
-    "keywords_ai": [
-      "barcos",
-      "delineado",
-      "lugares--costero",
-      "tecnicas--acuarela",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "velero",
-      "velas",
-      "faro",
-      "puerto",
-      "texto",
-      "edificios"
-    ]
+    "height": 1798
   },
   {
     "year": -1,
@@ -6127,28 +4147,19 @@
     "alias": "veleros",
     "notes": "",
     "keywords": [
-      "barcos",
-      "aplat",
-      "figuras--humanas"
+      "escenas--figura-humana",
+      "tecnicas--aplat",
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros",
+      "velas"
     ],
     "images": [
       "undated__veleros.jpg"
     ],
     "width": 1596,
-    "height": 1947,
-    "keywords_ai": [
-      "aplat",
-      "barcos",
-      "figuras--humanas",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "velero",
-      "velas-coloridas",
-      "tripulacion",
-      "spinnaker",
-      "texto"
-    ]
+    "height": 1947
   },
   {
     "year": -1,
@@ -6156,31 +4167,20 @@
     "alias": "veleros",
     "notes": "",
     "keywords": [
-      "barcos",
+      "escenas--figura-humana",
+      "tecnicas--delineado",
       "tecnicas--ilustracion",
-      "delineado",
-      "figuras--humanas"
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros",
+      "velas"
     ],
     "images": [
       "undated__veleros__variante__incompleto.jpg"
     ],
     "width": 1314,
-    "height": 1599,
-    "keywords_ai": [
-      "barcos",
-      "delineado",
-      "figuras--humanas",
-      "tecnicas--ilustracion",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "velero",
-      "velas",
-      "tripulacion",
-      "spinnaker",
-      "texto",
-      "incompleto"
-    ]
+    "height": 1599
   },
   {
     "year": -1,
@@ -6188,28 +4188,16 @@
     "alias": "vino y queso 2",
     "notes": "",
     "keywords": [
-      "bodegon",
-      "aplat",
-      "formas-geometricas"
+      "escenas--bodegon",
+      "pimientos",
+      "recipientes",
+      "tecnicas--aplat"
     ],
     "images": [
       "undated__vino y queso_2.jpg"
     ],
     "width": 1556,
-    "height": 1867,
-    "keywords_ai": [
-      "aplat",
-      "bodegon",
-      "formas-geometricas"
-    ],
-    "keywords_ai_extra": [
-      "botellas",
-      "verduras",
-      "frutas",
-      "cesta",
-      "queso",
-      "pimientos"
-    ]
+    "height": 1867
   },
   {
     "year": -1,
@@ -6217,31 +4205,21 @@
     "alias": "vista a la plaza",
     "notes": "",
     "keywords": [
-      "interiores",
-      "lugares--urbano",
+      "arcos",
       "arquitectura",
-      "aplat"
+      "balcones",
+      "escenas--interior",
+      "mobiliario",
+      "paisajes--urbano",
+      "pueblo",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "undated__vista a la plaza.jpg"
     ],
     "width": 1302,
-    "height": 1901,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "interiores",
-      "lugares--urbano"
-    ],
-    "keywords_ai_extra": [
-      "balcon",
-      "ventana",
-      "arco",
-      "silla",
-      "mesa",
-      "vista",
-      "pueblo"
-    ]
+    "height": 1901
   },
   {
     "year": -1,
@@ -6249,28 +4227,20 @@
     "alias": "white chair falling pot",
     "notes": "",
     "keywords": [
-      "interiores",
-      "aplat",
-      "formas-geometricas"
+      "damero",
+      "escenas--interior",
+      "mobiliario",
+      "plantas",
+      "recipientes",
+      "relojes",
+      "tecnicas--aplat",
+      "ventanas"
     ],
     "images": [
       "undated__white_chair_falling_pot.jpg"
     ],
     "width": 1815,
-    "height": 2118,
-    "keywords_ai": [
-      "aplat",
-      "formas-geometricas",
-      "interiores"
-    ],
-    "keywords_ai_extra": [
-      "silla",
-      "ventana",
-      "reloj",
-      "planta",
-      "maceta",
-      "damero"
-    ]
+    "height": 2118
   },
   {
     "year": -1,
@@ -6278,33 +4248,23 @@
     "alias": "yard 3 2",
     "notes": "",
     "keywords": [
-      "barcos",
       "arquitectura",
-      "aplat",
-      "formas-geometricas",
-      "delineado"
+      "astillero",
+      "banderas",
+      "edificios",
+      "taller",
+      "tecnicas--aplat",
+      "tecnicas--delineado",
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "undated__yard 3 2.jpg"
     ],
     "width": 2437,
-    "height": 1625,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "formas-geometricas",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "astillero",
-      "velero",
-      "edificios",
-      "caballetes",
-      "texto",
-      "banderas"
-    ]
+    "height": 1625
   },
   {
     "year": -1,
@@ -6312,33 +4272,23 @@
     "alias": "yard 7",
     "notes": "",
     "keywords": [
-      "barcos",
       "arquitectura",
-      "aplat",
-      "formas-geometricas",
-      "delineado"
+      "astillero",
+      "banderas",
+      "edificios",
+      "taller",
+      "tecnicas--aplat",
+      "tecnicas--delineado",
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos",
+      "vehiculos--veleros"
     ],
     "images": [
       "undated__yard 7.jpg"
     ],
     "width": 1341,
-    "height": 1118,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "formas-geometricas",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "astillero",
-      "velero",
-      "edificios",
-      "caballetes",
-      "texto",
-      "banderas"
-    ]
+    "height": 1118
   },
   {
     "year": -1,
@@ -6346,32 +4296,21 @@
     "alias": "yard wtf",
     "notes": "",
     "keywords": [
-      "barcos",
       "arquitectura",
-      "aplat",
-      "formas-geometricas",
-      "delineado"
+      "astillero",
+      "banderas",
+      "edificios",
+      "puerto",
+      "tecnicas--aplat",
+      "tecnicas--delineado",
+      "texto",
+      "vehiculos",
+      "vehiculos--barcos"
     ],
     "images": [
       "undated__yard wtf.jpg"
     ],
     "width": 1388,
-    "height": 1157,
-    "keywords_ai": [
-      "aplat",
-      "arquitectura",
-      "barcos",
-      "delineado",
-      "formas-geometricas",
-      "vehiculos"
-    ],
-    "keywords_ai_extra": [
-      "astillero",
-      "barcos",
-      "edificios",
-      "puerto",
-      "texto",
-      "banderas"
-    ]
+    "height": 1157
   }
 ]
