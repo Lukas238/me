@@ -1,8 +1,8 @@
 <div id="gallery-bidassoa" class="gallery container-xxl">
-  {% assign items = site.data.bidassoa %}
-  {% assign current_year = nil %}
+  {% comment %}Ordenar items: primero por año (descendente, -1 primero), luego por título dentro de cada año{% endcomment %}
+  {% assign items = "" | split: "" %}
 
-  {% comment %}Separar año -1 (undated) para mostrarlo primero{% endcomment %}
+  {% comment %}Obtener todos los años únicos ordenados{% endcomment %}
   {% assign all_years = site.data.bidassoa | map: 'year' | uniq | sort | reverse %}
   {% assign years = "" | split: "" %}
   {% assign has_undated = false %}
@@ -19,7 +19,32 @@
     {% assign years = years | unshift: -1 %}
   {% endif %}
 
-  <!-- Recopilar todos los keywords únicos -->
+  {% comment %}Procesar cada año en orden y ordenar items por título dentro de cada año{% endcomment %}
+  {% for year in years %}
+    {% assign year_items = site.data.bidassoa | where: "year", year %}
+
+    {% comment %}Separar por título vs alias y ordenar{% endcomment %}
+    {% assign items_with_title = "" | split: "" %}
+    {% assign items_with_alias = "" | split: "" %}
+
+    {% for item in year_items %}
+      {% if item.title and item.title != "" %}
+        {% assign items_with_title = items_with_title | push: item %}
+      {% else %}
+        {% assign items_with_alias = items_with_alias | push: item %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign items_with_title = items_with_title | sort: 'title' %}
+    {% assign items_with_alias = items_with_alias | sort: 'alias' %}
+    {% assign sorted_year_items = items_with_title | concat: items_with_alias %}
+
+    {% assign items = items | concat: sorted_year_items %}
+  {% endfor %}
+
+  {% assign current_year = nil %}
+
+  <!-- Recopilar todos los keywords únicos (AI + AI extra) -->
   {% assign all_keywords = "" | split: "" %}
   {% for item in items %}
   {% if item.keywords %}
@@ -27,6 +52,29 @@
   {% endif %}
   {% endfor %}
   {% assign unique_keywords = all_keywords | uniq | sort %}
+
+  {% comment %}Agrupar keywords por categoría{% endcomment %}
+  {% assign grouped_keywords = "" | split: "" %}
+  {% assign ungrouped_keywords = "" | split: "" %}
+
+  {% for keyword in unique_keywords %}
+    {% if keyword contains "--" %}
+      {% assign grouped_keywords = grouped_keywords | push: keyword %}
+    {% else %}
+      {% assign ungrouped_keywords = ungrouped_keywords | push: keyword %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %}Crear estructura de grupos{% endcomment %}
+  {% assign groups = "" | split: "" %}
+  {% for keyword in grouped_keywords %}
+    {% assign parts = keyword | split: "--" %}
+    {% assign group = parts[0] %}
+    {% unless groups contains group %}
+      {% assign groups = groups | push: group %}
+    {% endunless %}
+  {% endfor %}
+  {% assign groups = groups | sort %}
 
   <aside class="gallery__navFilters">
     <!-- Keywords disponibles -->
@@ -37,12 +85,48 @@
           <i class="bi bi-trash"></i>
         </button>
       </div>
-      <div id="keywords-list" class="d-flex flex-wrap gap-2">
-        {% for keyword in unique_keywords %}
-        <a href="#keyword-{{ keyword | slugify }}"
-          class="keyword-filter badge text-bg-light text-decoration-none fw-light"
-          data-keyword="{{ keyword }}">{{ keyword }}</a>
+      <div id="keywords-list" class="d-flex flex-column gap-3">
+        {% comment %}Keywords agrupadas - fluyen en línea{% endcomment %}
+        <div class="keyword-groups">
+          <div class="d-flex flex-wrap gap-2 align-items-baseline">
+            {% for group in groups %}
+              <a href="#keyword-_{{ group }}"
+                class="keyword-filter fw-bold text-muted small text-decoration-none"
+                data-keyword="_{{ group }}"
+                style="cursor: pointer;">{{ group | capitalize }}:</a>
+              {% for keyword in grouped_keywords %}
+                {% assign parts = keyword | split: "--" %}
+                {% if parts[0] == group %}
+                  <a href="#keyword-{{ keyword | slugify }}"
+                    class="keyword-filter badge text-bg-light text-decoration-none fw-light"
+                    data-keyword="{{ keyword }}">{{ parts[1] }}</a>
+                {% endif %}
+              {% endfor %}
+              {% unless forloop.last %}
+                <span class="text-muted mx-1">•</span>
+              {% endunless %}
+            {% endfor %}
+          </div>
+        </div>
+
+        {% comment %}Keywords sin grupo (ocultar los que empiezan con _){% endcomment %}
+        {% assign visible_ungrouped = "" | split: "" %}
+        {% for keyword in ungrouped_keywords %}
+          {% unless keyword contains "_" %}
+            {% assign visible_ungrouped = visible_ungrouped | push: keyword %}
+          {% endunless %}
         {% endfor %}
+        {% if visible_ungrouped.size > 0 %}
+        <div class="keyword-group">
+          <div class="d-flex flex-wrap gap-2">
+            {% for keyword in visible_ungrouped %}
+            <a href="#keyword-{{ keyword | slugify }}"
+              class="keyword-filter badge text-bg-light text-decoration-none fw-light"
+              data-keyword="{{ keyword }}">{{ keyword }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
   </aside>
@@ -89,7 +173,11 @@
           <div class="gallery__item__caption__year fw-lighter">{% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}</div>
         </div>
 
-          {% if  item.notes != "" or item.keywords.size > 0  %}
+          {% assign combined_keywords_size = 0 %}
+          {% if item.keywords %}
+            {% assign combined_keywords_size = item.keywords.size %}
+          {% endif %}
+          {% if  item.notes != "" or combined_keywords_size > 0  %}
           <div class="gallery__item__caption__meta">
             {% if item.notes != "" %}
             <div class="gallery__item__caption__notes mt-3 fw-lighter">
@@ -97,15 +185,62 @@
               {{ item.notes }}
             </div>
             {% endif %}
-            {% if item.keywords.size > 0 %}
+            {% if combined_keywords_size > 0 %}
             <div class="gallery__item__caption__keywords mt-3 fw-lighter">
               <h3 class="h6"><i class="bi bi-tag d-inline"></i> Keywords</h3>
-              {% for keyword in item.keywords %}
-                <a href="#keyword-{{ keyword | slugify }}"
-                  class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
-                  data-keyword="{{ keyword }}"
-                  style="font-size: 0.7rem;">{{ keyword }}</a>
-                {% endfor %}
+              {% comment %}Keywords ya están ordenados y unificados{% endcomment %}
+              {% assign all_item_keywords = item.keywords | default: empty_array %}
+
+              {% comment %}Agrupar por padres{% endcomment %}
+              {% assign keyword_groups = "" | split: "" %}
+              {% assign ungrouped = "" | split: "" %}
+              {% assign processed_groups = "" | split: "" %}
+
+              {% for keyword in all_item_keywords %}
+                {% if keyword contains "--" %}
+                  {% assign parts = keyword | split: "--" %}
+                  {% assign parent = parts[0] %}
+                  {% unless processed_groups contains parent %}
+                    {% assign processed_groups = processed_groups | push: parent %}
+                    {% assign keyword_groups = keyword_groups | push: parent %}
+                  {% endunless %}
+                {% else %}
+                  {% assign ungrouped = ungrouped | push: keyword %}
+                {% endif %}
+              {% endfor %}
+
+              {% comment %}Mostrar keywords sin grupo primero{% endcomment %}
+              {% if ungrouped.size > 0 %}
+                <div class="mb-1">
+                  {% for keyword in ungrouped %}
+                    <a href="#keyword-{{ keyword | slugify }}"
+                      class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
+                      data-keyword="{{ keyword }}"
+                      style="font-size: 0.7rem;">{{ keyword }}</a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+              {% comment %}Mostrar grupos con título{% endcomment %}
+              {% for group in keyword_groups %}
+                <div class="mb-1">
+                  <a href="#keyword-_{{ group }}"
+                    class="keyword-filter text-muted text-decoration-none"
+                    data-keyword="_{{ group }}"
+                    style="cursor: pointer;">{{ group | capitalize }}:</a>
+                  {% for keyword in all_item_keywords %}
+                    {% if keyword contains "--" %}
+                      {% assign parts = keyword | split: "--" %}
+                      {% if parts[0] == group %}
+                        <a href="#keyword-{{ keyword | slugify }}"
+                          class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
+                          data-keyword="{{ keyword }}"
+                          style="font-size: 0.7rem;">{{ parts[1] }}</a>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endfor %}
             </div>
             {% endif %}
           </div>
@@ -117,7 +252,8 @@
         {% assign cover = item.images[0] %}
         {% assign cover_src = "/assets/bidassoa/" | append: cover %}
 
-        <article class="gallery__item" data-keywords="{{ item.keywords | join: ',' }}" data-year="{{ item.year }}">
+        {% assign combined_keywords = item.keywords | default: empty_array %}
+        <article class="gallery__item" data-keywords="{{ combined_keywords | join: ',' }}" data-year="{{ item.year }}">
 
           <div class="gallery__item__cover" {% if item.width and item.height %}style="aspect-ratio: {{ item.width }} / {{ item.height }};"{% endif %}>
             <a
@@ -127,7 +263,7 @@
               class="gallery__item__cover__link">
               <img
                 src="{{ cover_src }}"
-                alt='"{% if item.title %}{{ item.title }}{% else %}{{ item.alias }}{% endif %} • {% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}"'
+                alt="{{ item.title | default: item.alias | escape }} • {% if item.year == -1 %}Sin fecha{% else %}{{ item.year }}{% endif %}"
                 loading="lazy"
                 class="gallery__item__cover__img">
             </a>
@@ -143,14 +279,60 @@
 
               {% if item.images.size > 1%}<li class="gallery__item__gallery"><i class="bi bi-images"></i></li>{% endif %}
 
-              {% if item.keywords.size > 0 %}
+              {% if combined_keywords_size > 0 %}
               <li class="gallery__item__keywords">
-                <i class="bi bi-tags"></i>
-                {% for keyword in item.keywords %}
-                <a href="#keyword-{{ keyword | slugify }}"
-                  class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
-                  data-keyword="{{ keyword }}"
-                  style="font-size: 0.7rem;">{{ keyword }}</a>
+                {% comment %}Keywords ya están ordenados y unificados{% endcomment %}
+                {% assign all_item_keywords = item.keywords | default: empty_array %}
+
+                {% comment %}Agrupar por padres{% endcomment %}
+                {% assign keyword_groups = "" | split: "" %}
+                {% assign ungrouped = "" | split: "" %}
+                {% assign processed_groups = "" | split: "" %}
+
+                {% for keyword in all_item_keywords %}
+                  {% if keyword contains "--" %}
+                    {% assign parts = keyword | split: "--" %}
+                    {% assign parent = parts[0] %}
+                    {% unless processed_groups contains parent %}
+                      {% assign processed_groups = processed_groups | push: parent %}
+                      {% assign keyword_groups = keyword_groups | push: parent %}
+                    {% endunless %}
+                  {% else %}
+                    {% assign ungrouped = ungrouped | push: keyword %}
+                  {% endif %}
+                {% endfor %}
+
+                {% comment %}Mostrar keywords sin grupo primero{% endcomment %}
+                {% if ungrouped.size > 0 %}
+                  <div class="d-block">
+                    {% for keyword in ungrouped %}
+                      <a href="#keyword-{{ keyword | slugify }}"
+                        class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
+                        data-keyword="{{ keyword }}"
+                        style="font-size: 0.7rem;">{{ keyword }}</a>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                {% comment %}Mostrar grupos con título{% endcomment %}
+                {% for group in keyword_groups %}
+                  <div class="d-block">
+                    <a href="#keyword-_{{ group }}"
+                      class="keyword-filter text-muted text-decoration-none"
+                      data-keyword="_{{ group }}"
+                      style="cursor: pointer; font-size: 0.7rem; color: #6c757d !important;">{{ group | capitalize }}:</a>
+                    {% for keyword in all_item_keywords %}
+                      {% if keyword contains "--" %}
+                        {% assign parts = keyword | split: "--" %}
+                        {% if parts[0] == group %}
+                          <a href="#keyword-{{ keyword | slugify }}"
+                            class="keyword-filter badge text-bg-light text-decoration-none fw-light me-1"
+                            data-keyword="{{ keyword }}"
+                            style="font-size: 0.7rem;">{{ parts[1] }}</a>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
                 {% endfor %}
               </li>
               {% endif %}
@@ -230,9 +412,14 @@
         const itemKeywords = item.dataset.keywords ? item.dataset.keywords.split(',') : [];
 
         // Un item es visible si tiene TODOS los keywords activos (AND logic)
-        const hasAllFilters = Array.from(activeFilters).every(filter =>
-          itemKeywords.includes(filter)
-        );
+        // Si el filtro empieza con _, buscar cualquier hijo de ese padre
+        const hasAllFilters = Array.from(activeFilters).every(filter => {
+          if (filter.startsWith('_')) {
+            const parent = filter.substring(1);
+            return itemKeywords.some(kw => kw.startsWith(parent + '--') || kw === filter);
+          }
+          return itemKeywords.includes(filter);
+        });
 
         if (hasAllFilters) {
           item.style.display = '';
@@ -262,12 +449,26 @@
       // Actualizar estado de keywords en la lista
       document.querySelectorAll('.keyword-filter').forEach(link => {
         const keyword = link.dataset.keyword;
-        if (activeFilters.has(keyword)) {
-          link.classList.remove('text-bg-light');
-          link.classList.add('text-bg-secondary');
+        const isActive = activeFilters.has(keyword);
+
+        if (keyword.startsWith('_')) {
+          // Estilo para keywords padre
+          if (isActive) {
+            link.style.fontWeight = 'bold';
+            link.style.color = '#000';
+          } else {
+            link.style.fontWeight = 'bold';
+            link.style.color = '';
+          }
         } else {
-          link.classList.remove('text-bg-secondary');
-          link.classList.add('text-bg-light');
+          // Estilo para keywords normales
+          if (isActive) {
+            link.classList.remove('text-bg-light');
+            link.classList.add('text-bg-secondary');
+          } else {
+            link.classList.remove('text-bg-secondary');
+            link.classList.add('text-bg-light');
+          }
         }
       });
     }
