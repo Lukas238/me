@@ -86,25 +86,22 @@
         </button>
       </div>
       <div id="keywords-list" class="d-flex flex-column gap-3">
-        {% comment %}Keywords agrupadas - fluyen en línea{% endcomment %}
+        {% comment %}Keywords agrupadas - columnas automáticas con flow vertical{% endcomment %}
         <div class="keyword-groups">
-          <div class="d-flex flex-wrap gap-2 align-items-baseline">
+          <div style="column-width: 180px; column-gap: 1.5rem;">
             {% for group in groups %}
               <a href="#keyword-_{{ group }}"
-                class="keyword-filter fw-bold text-muted small text-decoration-none"
+                class="keyword-filter fw-bold text-muted small text-decoration-none d-block mb-1"
                 data-keyword="_{{ group }}"
                 style="cursor: pointer;">{{ group | capitalize }}:</a>
               {% for keyword in grouped_keywords %}
                 {% assign parts = keyword | split: "--" %}
                 {% if parts[0] == group %}
                   <a href="#keyword-{{ keyword | slugify }}"
-                    class="keyword-filter badge text-bg-light text-decoration-none fw-light"
+                    class="keyword-filter badge text-bg-light text-decoration-none fw-light d-inline-block mb-1"
                     data-keyword="{{ keyword }}">{{ parts[1] }}</a>
                 {% endif %}
               {% endfor %}
-              {% unless forloop.last %}
-                <span class="text-muted mx-1">•</span>
-              {% endunless %}
             {% endfor %}
           </div>
         </div>
@@ -118,12 +115,23 @@
         {% endfor %}
         {% if visible_ungrouped.size > 0 %}
         <div class="keyword-group">
-          <div class="d-flex flex-wrap gap-2">
-            {% for keyword in visible_ungrouped %}
-            <a href="#keyword-{{ keyword | slugify }}"
-              class="keyword-filter badge text-bg-light text-decoration-none fw-light"
-              data-keyword="{{ keyword }}">{{ keyword }}</a>
-            {% endfor %}
+          <button class="btn btn-link text-muted p-0 text-decoration-none d-flex align-items-center gap-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#ungroupedKeywords"
+                  aria-expanded="false"
+                  aria-controls="ungroupedKeywords">
+            <small>Otros keywords</small>
+            <i class="bi bi-chevron-down" style="font-size: 0.8rem;"></i>
+          </button>
+          <div class="collapse mt-2" id="ungroupedKeywords">
+            <div class="d-flex flex-wrap gap-2">
+              {% for keyword in visible_ungrouped %}
+              <a href="#keyword-{{ keyword | slugify }}"
+                class="keyword-filter badge text-bg-light text-decoration-none fw-light"
+                data-keyword="{{ keyword }}">{{ keyword }}</a>
+              {% endfor %}
+            </div>
           </div>
         </div>
         {% endif %}
@@ -446,8 +454,8 @@
       // Mostrar/ocultar botón de clear
       clearBtn.style.display = activeFilters.size > 0 ? 'block' : 'none';
 
-      // Actualizar estado de keywords en la lista
-      document.querySelectorAll('.keyword-filter').forEach(link => {
+      // Actualizar estado de keywords en la lista de filtros
+      document.querySelectorAll('.gallery__navFilters .keyword-filter').forEach(link => {
         const keyword = link.dataset.keyword;
         const isActive = activeFilters.has(keyword);
 
@@ -455,10 +463,12 @@
           // Estilo para keywords padre
           if (isActive) {
             link.style.fontWeight = 'bold';
-            link.style.color = '#000';
+            link.style.color = '#212529';
+            link.style.textDecoration = 'underline';
           } else {
             link.style.fontWeight = 'bold';
             link.style.color = '';
+            link.style.textDecoration = 'none';
           }
         } else {
           // Estilo para keywords normales
@@ -467,6 +477,37 @@
             link.classList.add('text-bg-secondary');
           } else {
             link.classList.remove('text-bg-secondary');
+            link.classList.add('text-bg-light');
+          }
+        }
+      });
+
+      // Actualizar estado de todos los keywords (en filtros, captions y modal)
+      document.querySelectorAll('.keyword-filter').forEach(link => {
+        const keyword = link.dataset.keyword;
+        const isActive = activeFilters.has(keyword) ||
+                        (keyword && !keyword.startsWith('_') &&
+                         Array.from(activeFilters).some(f => f.startsWith('_') && keyword.startsWith(f.substring(1) + '--')));
+
+        // Determinar si está en la lista de filtros o en una obra
+        const isInFilterList = link.closest('.gallery__navFilters');
+
+        if (keyword.startsWith('_')) {
+          // Estilo para keywords padre
+          if (isActive) {
+            link.style.color = '#212529';
+            link.style.textDecoration = 'underline';
+          } else {
+            link.style.color = isInFilterList ? '' : '#6c757d';
+            link.style.textDecoration = 'none';
+          }
+        } else {
+          // Estilo para keywords normales - mismo color gris para todos
+          if (isActive) {
+            link.classList.remove('text-bg-light', 'text-bg-dark');
+            link.classList.add('text-bg-secondary');
+          } else {
+            link.classList.remove('text-bg-dark', 'text-bg-secondary');
             link.classList.add('text-bg-light');
           }
         }
@@ -588,10 +629,24 @@
         const sidebarEl = document.querySelector('.fancybox__sidebar');
         if (sidebarEl) {
           sidebarEl.innerHTML = sidebarContent || '';
+          // Actualizar estilos de keywords activos después de insertar el contenido
+          setTimeout(() => updateActiveFiltersUI(), 0);
         }
       },
     },
 
 
   });
+
+  // Rotar chevron en collapse de keywords sin agrupar
+  const ungroupedToggle = document.querySelector('[data-bs-target="#ungroupedKeywords"]');
+  if (ungroupedToggle) {
+    const chevron = ungroupedToggle.querySelector('.bi-chevron-down');
+    document.getElementById('ungroupedKeywords').addEventListener('show.bs.collapse', () => {
+      chevron.style.transform = 'rotate(180deg)';
+    });
+    document.getElementById('ungroupedKeywords').addEventListener('hide.bs.collapse', () => {
+      chevron.style.transform = 'rotate(0deg)';
+    });
+  }
 </script>
