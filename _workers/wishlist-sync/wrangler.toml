@@ -1,0 +1,14 @@
+name = "wishlist-sync"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Cron Triggers - Ejecutar sync automáticamente
+# Syntax: https://developers.cloudflare.com/workers/configuration/cron-triggers/
+[triggers]
+crons = [
+  "0 8 1 * *"  # Mensual: día 1 de cada mes a las 8:00 UTC (5:00 AM Argentina)
+]
+
+# Variables de entorno (configurar con wrangler secret put)
+# GOOGLE_SHEET_ID              - ID del Google Sheet
+# GOOGLE_APPS_SCRIPT_URL       - URL del Apps Script deployment
