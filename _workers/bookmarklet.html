@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist Bookmarklet</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .bookmarklet-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: move;
+    }
+
+    .bookmarklet-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .instructions {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+
+    .instructions h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .instructions ol {
+      line-height: 1.8;
+    }
+
+    .instructions code {
+      background: #e9ecef;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+    }
+
+    .note {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 6px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .note strong {
+      color: #856404;
+    }
+
+    .demo {
+      margin-top: 30px;
+      padding: 20px;
+      background: #e7f3ff;
+      border-radius: 8px;
+      border-left: 4px solid #2196F3;
+    }
+
+    .demo h3 {
+      margin-top: 0;
+      color: #1976D2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Wishlist Bookmarklet</h1>
+    <p class="subtitle">Agrega productos a tu wishlist desde cualquier página web</p>
+
+    <p><strong>Arrastra este botón a tu barra de marcadores:</strong></p>
+    <a href="javascript:(function()%7Bif(window.wishlistWidget)%7Bwindow.wishlistWidget.toggle()%3Breturn%7D%3Bconst%20s%3Ddocument.createElement('script')%3Bs.src%3D'https%3A%2F%2Fwishlist-sync.dassolucas.workers.dev%2Fbookmarklet.js'%3Bs.onload%3D()%3D%3Ewindow.wishlistWidget.show()%3Bdocument.head.appendChild(s)%7D)()" class="bookmarklet-button">
+      ➕ Add to Wishlist
+    </a>
+
+    <div class="instructions">
+      <h2>📖 Instrucciones de Uso</h2>
+      <ol>
+        <li><strong>Arrastra el botón</strong> "Add to Wishlist" a tu barra de marcadores del navegador</li>
+        <li><strong>Navega</strong> a cualquier página de producto (Amazon, MercadoLibre, etc.)</li>
+        <li><strong>Haz click</strong> en el bookmarklet de tu barra de marcadores</li>
+        <li><strong>Usa los botones 🎯</strong> para seleccionar elementos:
+          <ul>
+            <li>Click en 🎯 junto a "Title"</li>
+            <li>Luego click en el título del producto en la página</li>
+            <li>El texto se copiará automáticamente</li>
+            <li>Repite para imagen, notas, etc.</li>
+          </ul>
+        </li>
+        <li><strong>Edita manualmente</strong> cualquier campo si es necesario</li>
+        <li><strong>Preview</strong>: La imagen seleccionada se muestra a 250x250</li>
+        <li><strong>Guarda</strong> con el botón "Save to Wishlist"</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>💡 Tip:</strong> La URL del producto se detecta automáticamente. Los campos son editables, así que siempre puedes ajustar lo que seleccionaste.
+    </div>
+
+    <div class="demo">
+      <h3>🎬 Cómo Funciona el Target 🎯</h3>
+      <ol>
+        <li>Click en el botón 🎯 al lado del campo que quieres completar</li>
+        <li>El cursor cambia y la página se oscurece ligeramente</li>
+        <li>Los elementos sobre los que pasas el mouse se resaltan con un borde azul</li>
+        <li>Click en el elemento que quieres capturar</li>
+        <li>
+          <ul>
+            <li><strong>Title/Notes:</strong> Copia el texto del elemento</li>
+            <li><strong>Image:</strong> Copia la URL de la imagen (src o background)</li>
+          </ul>
+        </li>
+        <li>¡El campo se completa automáticamente!</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    // Minimal demo of how the bookmarklet appears
+    console.log('Wishlist Bookmarklet ready! Drag the button to your bookmarks bar.');
+  </script>
+</body>
+</html>

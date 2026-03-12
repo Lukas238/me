@@ -19,6 +19,28 @@ Las credenciales sensibles están en **`credentials.json`** (encriptado con git-
 - **Google Sheet:** https://docs.google.com/spreadsheets/d/1KrrTKZGPQ8CI4NrWIBVSL8EvueVZOpo4xSXkjeX2mtI/
 - **Amazon Wishlist:** https://www.amazon.com/hz/wishlist/ls/35A8QWIZ90CH
 
+## 📚 Bookmarklet - Add to Wishlist
+
+**Agrega productos desde cualquier página web con un  click.**
+
+Ver guía completa: [BOOKMARKLET.md](./BOOKMARKLET.md) | Demo: [bookmarklet.html](./bookmarklet.html)
+
+### Quick Start
+
+1. Abre [bookmarklet.html](./bookmarklet.html) en tu navegador
+2. Arrastra el botón "➕ Add to Wishlist" a tu barra de marcadores
+3. Navega a cualquier página de producto
+4. Click en el bookmarklet
+5. Usa los botones 🎯 para capturar título, imagen, notas
+6. Save → Los productos van al tab "others" de tu Google Sheet
+
+**Features:**
+- 🎯 Target mode para seleccionar elementos de la página
+- 🖼️ Preview de imagen 250x250 en tiempo real
+- ✏️ Edición manual de todos los campos
+- 🔗 Auto-detección de URL del producto
+- ⌨️ Shortcuts (ESC para cerrar)
+
 ## Arquitectura
 
 Un solo worker (`wishlist-sync`) con arquitectura modular:

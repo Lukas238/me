@@ -13,6 +13,7 @@
 
 import * as amazonScraper from './scrapers/amazon.js';
 import { readProducts, writeProducts } from './storage/index.js';
+import { BOOKMARKLET_CODE } from './bookmarklet-content.js';
 
 const SCRAPERS = {
   amazon: amazonScraper
@@ -38,6 +39,11 @@ export default {
 
       // GET requests
       if (request.method === 'GET') {
+        // GET /bookmarklet.js → Serve bookmarklet script
+        if (path === '/bookmarklet.js') {
+          return await handleBookmarklet();
+        }
+
         // GET /sync or /sync/:source → Scrape and write
         if (path.startsWith('/sync')) {
           const source = path.split('/')[2]; // /sync/amazon → "amazon"
@@ -240,6 +246,21 @@ async function handleManualProduct(request, env) {
       details: error.message
     }, 500);
   }
+}
+
+/**
+ * GET /bookmarklet.js
+ * Serve the bookmarklet JavaScript code
+ */
+async function handleBookmarklet() {
+  return new Response(BOOKMARKLET_CODE, {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/javascript; charset=utf-8',
+      'Access-Control-Allow-Origin': '*',
+      'Cache-Control': 'public, max-age=3600'
+    }
+  });
 }
 
 /**
