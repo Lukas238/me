@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page - Bookmarklet Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #333;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 10px;
+    }
+
+    .product-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      display: flex;
+      gap: 20px;
+      background: #f9f9f9;
+    }
+
+    .product-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e0e0e0;
+      flex-shrink: 0;
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .product-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #333;
+      margin: 0 0 10px 0;
+    }
+
+    .product-price {
+      font-size: 28px;
+      color: #B12704;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .product-description {
+      color: #666;
+      margin: 15px 0;
+    }
+
+    .availability {
+      color: #067D62;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .instructions {
+      background: #fff3cd;
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px 0;
+    }
+
+    .instructions h2 {
+      margin-top: 0;
+      color: #856404;
+    }
+
+    .instructions ol {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    .instructions li {
+      margin: 10px 0;
+    }
+
+    code {
+      background: #e9ecef;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .highlight {
+      background: #e7f3ff;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 Mechanical Keyboard - Test Product</h1>
+
+  <div class="instructions">
+    <h2>🧪 Test del Bookmarklet</h2>
+    <p>Esta página es un ejemplo simulado de producto para probar el bookmarklet.</p>
+    
+    <ol>
+      <li>Asegúrate de tener el bookmarklet <strong>"Add to Wishlist"</strong> en tu barra de marcadores</li>
+      <li><strong>Haz click</strong> en el bookmarklet</li>
+      <li>Usa los botones <span class="highlight">🎯</span> para capturar:
+        <ul>
+          <li><strong>Title:</strong> Click en "Mechanical Keyboard Gaming RGB" abajo</li>
+          <li><strong>Image:</strong> Click en la imagen del producto</li>
+          <li><strong>Notes:</strong> Click en el precio o descripción</li>
+        </ul>
+      </li>
+      <li>Verás el preview de la imagen en el widget</li>
+      <li>Edita los campos si quieres</li>
+      <li>Click en <strong>"💾 Save to Wishlist"</strong></li>
+      <li>Verifica en tu <a href="https://docs.google.com/spreadsheets/d/1KrrTKZGPQ8CI4NrWIBVSL8EvueVZOpo4xSXkjeX2mtI/" target="_blank">Google Sheet</a> (tab "others")</li>
+    </ol>
+  </div>
+
+  <div class="product-card">
+    <img 
+      src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop" 
+      alt="Mechanical Keyboard"
+      class="product-image"
+    />
+    
+    <div class="product-details">
+      <h2 class="product-title">Mechanical Keyboard Gaming RGB - 87 Keys TKL</h2>
+      
+      <div class="product-price">$129.99</div>
+      
+      <div class="availability">✓ In Stock</div>
+      
+      <div class="product-description">
+        <strong>Hot-swappable mechanical keyboard</strong> with RGB backlight, 
+        87 keys tenkeyless design, perfect for gaming and productivity. 
+        Features Gateron Brown switches, aluminum frame, and USB-C connectivity.
+      </div>
+
+      <div class="product-description">
+        <strong>Key Features:</strong>
+        <ul>
+          <li>Hot-swappable switches (Gateron Brown included)</li>
+          <li>RGB backlight with 16.8 million colors</li>
+          <li>Aluminum alloy frame</li>
+          <li>TKL (87 keys) compact design</li>
+          <li>USB-C cable (detachable)</li>
+          <li>N-key rollover</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 40px; padding: 20px; background: #e7f3ff; border-radius: 8px;">
+    <h3>💡 Tips para Probar</h3>
+    <ul>
+      <li>Prueba capturar el <strong>título</strong> clickeando en "Mechanical Keyboard Gaming RGB"</li>
+      <li>Prueba capturar la <strong>imagen</strong> clickeando directamente en ella</li>
+      <li>Prueba capturar el <strong>precio</strong> ($129.99) como nota</li>
+      <li>O prueba capturar la <strong>descripción completa</strong> con las features</li>
+      <li>También puedes <strong>editar manualmente</strong> cualquier campo</li>
+    </ul>
+  </div>
+
+  <div style="margin-top: 40px; padding: 20px; background: #f0f0f0; border-radius: 8px; text-align: center;">
+    <p><strong>¿No tienes el bookmarklet instalado?</strong></p>
+    <p>Abre <a href="bookmarklet.html" target="_blank"><strong>bookmarklet.html</strong></a> y arrastra el botón a tu barra de marcadores</p>
+  </div>
+</body>
+</html>
