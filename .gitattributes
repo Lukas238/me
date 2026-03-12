@@ -1,0 +1,3 @@
+# Encryption with git-crypt
+# Credentials and sensitive files
+_workers/credentials.json filter=git-crypt diff=git-crypt
