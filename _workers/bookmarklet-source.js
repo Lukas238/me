@@ -26,21 +26,21 @@
           <label>Title</label>
           <div class="input-group">
             <input type="text" id="title" placeholder="Title"/>
-            <button class="target-btn" data-field="title">🎯</button>
+            <button class="target-btn" data-field="title">&gt;</button>
           </div>
         </div>
         <div class="form-row">
           <label>Notes</label>
           <div class="input-group">
             <textarea id="notes" placeholder="Notes" rows="2"></textarea>
-            <button class="target-btn" data-field="notes">🎯</button>
+            <button class="target-btn" data-field="notes">&gt;</button>
           </div>
         </div>
         <div class="form-row">
           <label>Image</label>
           <div class="input-group">
             <input type="text" id="image_url" placeholder="URL"/>
-            <button class="target-btn" data-field="image_url">🎯</button>
+            <button class="target-btn" data-field="image_url">&gt;</button>
           </div>
         </div>
         <div class="image-preview-container">
@@ -186,24 +186,26 @@
     }
 
     .target-btn {
-      background: #000;
+      background: #fff;
       border: 1px solid #000;
-      color: #fff;
-      font-size: 10px;
+      color: #000;
+      font-size: 12px;
       width: 24px;
       height: 24px;
       cursor: pointer;
       flex-shrink: 0;
       padding: 0;
+      font-weight: bold;
     }
 
     .target-btn:hover {
-      background: #333;
+      background: #000;
+      color: #fff;
     }
 
     .target-btn.active {
-      background: #fff;
-      color: #000;
+      background: #000;
+      color: #fff;
       animation: blink 1s infinite;
     }
 
@@ -413,7 +415,6 @@
       document.body.classList.add('wishlist-target-mode');
       document.querySelector(`[data-field="${field}"]`)?.classList.add('active');
       this.showStatus('Click on an element to capture...', 'info');
-      this.collapse(); // Collapse widget when entering target mode
     },
 
     exitTargetMode() {
@@ -426,7 +427,6 @@
       document.querySelectorAll('.target-btn.active').forEach(btn => {
         btn.classList.remove('active');
       });
-      this.expand(); // Expand widget when exiting target mode
     },
 
     captureElement(element) {
@@ -537,8 +537,8 @@
         this.dragState.startY = e.clientY;
 
         const rect = this.container.getBoundingClientRect();
-        this.dragState.initialX = rect.left + rect.width / 2 - window.innerWidth / 2;
-        this.dragState.initialY = rect.top + rect.height / 2 - window.innerHeight / 2;
+        this.dragState.initialX = rect.right;
+        this.dragState.initialY = rect.top;
 
         e.preventDefault();
       });
@@ -549,10 +549,11 @@
         const deltaX = e.clientX - this.dragState.startX;
         const deltaY = e.clientY - this.dragState.startY;
 
-        const newX = this.dragState.initialX + deltaX;
-        const newY = this.dragState.initialY + deltaY;
+        const newRight = window.innerWidth - this.dragState.initialX - deltaX;
+        const newTop = this.dragState.initialY + deltaY;
 
-        this.container.style.transform = `translate(calc(-50% + ${newX}px), calc(-50% + ${newY}px))`;
+        this.container.style.right = `${newRight}px`;
+        this.container.style.top = `${newTop}px`;
       });
 
       document.addEventListener('mouseup', () => {
