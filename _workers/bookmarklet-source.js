@@ -32,7 +32,14 @@
     // MercadoLibre Argentina
     'mercadolibre.com.ar': {
       title: '.ui-pdp-title',
-      image: '.ui-pdp-gallery__figure__image[data-index="0"]'
+      image: '.ui-pdp-gallery__figure__image',
+      imageFn: (el) => {
+        // Try different attributes that ML might use
+        return el.getAttribute('src') || 
+               el.getAttribute('data-src') || 
+               el.getAttribute('data-zoom') || 
+               el.src;
+      }
     },
     // Amazon
     'amazon.com': {
@@ -71,26 +78,32 @@
   // Auto-detect and fill fields based on site configuration
   function autoDetectFields() {
     const baseDomain = getBaseDomain(window.location.href);
+    console.log('[Wishlist] Base domain:', baseDomain);
     if (!baseDomain || !SITES_CONFIG[baseDomain]) {
+      console.log('[Wishlist] No config found for domain');
       return null; // No config for this site
     }
 
     const config = SITES_CONFIG[baseDomain];
+    console.log('[Wishlist] Using config:', config);
     const result = { title: null, image: null };
 
     // Try to get title
     if (config.title) {
       const titleEl = document.querySelector(config.title);
+      console.log('[Wishlist] Title element:', titleEl);
       if (titleEl) {
         result.title = config.titleFn
           ? config.titleFn(titleEl)
           : titleEl.textContent?.trim() || titleEl.innerText?.trim();
+        console.log('[Wishlist] Title extracted:', result.title);
       }
     }
 
     // Try to get image
     if (config.image) {
       const imageEl = document.querySelector(config.image);
+      console.log('[Wishlist] Image element:', imageEl);
       if (imageEl) {
         if (config.imageFn) {
           result.image = config.imageFn(imageEl);
@@ -103,9 +116,11 @@
             result.image = img.getAttribute(config.imageAttr || 'src') || img.src;
           }
         }
+        console.log('[Wishlist] Image extracted:', result.image);
       }
     }
 
+    console.log('[Wishlist] Detection result:', result);
     return result;
   }
 
@@ -486,16 +501,21 @@
       // Show Auto button if site is configured
       const baseDomain = getBaseDomain(window.location.href);
       const autoBtn = document.getElementById('wishlist-auto');
+      console.log('[Wishlist] Showing widget, base domain:', baseDomain);
       if (baseDomain && SITES_CONFIG[baseDomain]) {
         autoBtn.style.display = 'block';
         // Auto-detect fields on load
+        console.log('[Wishlist] Site configured, attempting auto-detection...');
         const detected = autoDetectFields();
+        console.log('[Wishlist] Detected data:', detected);
         if (detected) {
           if (detected.title && !this.fields.title.value) {
             this.fields.title.value = detected.title;
+            console.log('[Wishlist] Title filled:', detected.title);
           }
           if (detected.image && !this.fields.image_url.value) {
             this.fields.image_url.value = detected.image;
+            console.log('[Wishlist] Image filled:', detected.image);
           }
         }
       } else {
