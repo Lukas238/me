@@ -65,29 +65,26 @@
     try {
       const hostname = new URL(url).hostname;
       console.log('[Wishlist DEBUG] Full hostname:', hostname);
-      const parts = hostname.split('.');
-      console.log('[Wishlist DEBUG] Hostname parts:', parts);
       
-      if (parts.length >= 2) {
-        // Check for second-level domains (SLD) like .com.ar, .co.uk, .com.au
-        const sldPrefixes = ['com', 'co', 'org', 'gov', 'edu', 'net', 'ac'];
-        const lastPart = parts[parts.length - 1];
-        const secondLastPart = parts.length >= 3 ? parts[parts.length - 2] : null;
-        
-        console.log('[Wishlist DEBUG] Last part:', lastPart, 'Second-to-last:', secondLastPart);
-        
-        // If second-to-last is an SLD prefix (like "com" in "com.ar"), take 3 parts
-        if (secondLastPart && sldPrefixes.includes(secondLastPart)) {
-          const domain = parts.slice(-3).join('.');
-          console.log('[Wishlist DEBUG] Detected SLD, extracted domain (3 parts):', domain);
-          return domain;
+      // Check for second-level domains (SLD) like .com.ar, .co.uk, .com.au
+      const sldPattern = /\.(com|co|org|gov|edu|net|ac)\.[a-z]{2,3}$/i;
+      
+      if (sldPattern.test(hostname)) {
+        // Extract last 3 parts for SLD domains
+        const match = hostname.match(/([^.]+\.(com|co|org|gov|edu|net|ac)\.[a-z]{2,3})$/i);
+        if (match) {
+          console.log('[Wishlist DEBUG] Detected SLD, extracted domain:', match[1]);
+          return match[1];
         }
-        
-        // Otherwise take 2 parts
-        const domain = parts.slice(-2).join('.');
-        console.log('[Wishlist DEBUG] Extracted domain (2 parts):', domain);
-        return domain;
       }
+      
+      // Extract last 2 parts for regular domains
+      const match = hostname.match(/([^.]+\.[^.]+)$/);
+      if (match) {
+        console.log('[Wishlist DEBUG] Extracted domain:', match[1]);
+        return match[1];
+      }
+      
       return hostname;
     } catch (e) {
       console.error('[Wishlist ERROR] Failed to parse URL:', e);
