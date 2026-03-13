@@ -26,21 +26,21 @@
           <label>Title</label>
           <div class="input-group">
             <input type="text" id="title" placeholder="Title"/>
-            <button class="target-btn" data-field="title">◎</button>
+            <button class="target-btn" data-field="title"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/></svg></button>
           </div>
         </div>
         <div class="form-row">
           <label>Notes</label>
           <div class="input-group">
             <textarea id="notes" placeholder="Notes" rows="2"></textarea>
-            <button class="target-btn" data-field="notes">◎</button>
+            <button class="target-btn" data-field="notes"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/></svg></button>
           </div>
         </div>
         <div class="form-row">
           <label>Image</label>
           <div class="input-group">
             <input type="text" id="image_url" placeholder="URL"/>
-            <button class="target-btn" data-field="image_url">◎</button>
+            <button class="target-btn" data-field="image_url"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/></svg></button>
           </div>
         </div>
         <div class="image-preview-container">
@@ -196,6 +196,13 @@
       flex-shrink: 0;
       padding: 0;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .target-btn svg {
+      display: block;
     }
 
     .target-btn:hover {
