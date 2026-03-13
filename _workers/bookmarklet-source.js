@@ -65,12 +65,27 @@
     try {
       const hostname = new URL(url).hostname;
       console.log('[Wishlist DEBUG] Full hostname:', hostname);
-      // Match domain.tld or subdomain.domain.tld
       const parts = hostname.split('.');
       console.log('[Wishlist DEBUG] Hostname parts:', parts);
+      
       if (parts.length >= 2) {
+        // Check for second-level domains (SLD) like .com.ar, .co.uk, .com.au
+        const sldPrefixes = ['com', 'co', 'org', 'gov', 'edu', 'net', 'ac'];
+        const lastPart = parts[parts.length - 1];
+        const secondLastPart = parts.length >= 3 ? parts[parts.length - 2] : null;
+        
+        console.log('[Wishlist DEBUG] Last part:', lastPart, 'Second-to-last:', secondLastPart);
+        
+        // If second-to-last is an SLD prefix (like "com" in "com.ar"), take 3 parts
+        if (secondLastPart && sldPrefixes.includes(secondLastPart)) {
+          const domain = parts.slice(-3).join('.');
+          console.log('[Wishlist DEBUG] Detected SLD, extracted domain (3 parts):', domain);
+          return domain;
+        }
+        
+        // Otherwise take 2 parts
         const domain = parts.slice(-2).join('.');
-        console.log('[Wishlist DEBUG] Extracted domain:', domain);
+        console.log('[Wishlist DEBUG] Extracted domain (2 parts):', domain);
         return domain;
       }
       return hostname;
@@ -87,7 +102,7 @@
     const baseDomain = getBaseDomain(window.location.href);
     console.log('[Wishlist DEBUG] Base domain result:', baseDomain);
     console.log('[Wishlist DEBUG] Available configs:', Object.keys(SITES_CONFIG));
-    
+
     if (!baseDomain || !SITES_CONFIG[baseDomain]) {
       console.log('[Wishlist DEBUG] ❌ No config found for domain:', baseDomain);
       return null; // No config for this site
@@ -529,7 +544,7 @@
       const autoBtn = document.getElementById('wishlist-auto');
       console.log('[Wishlist DEBUG] Base domain for show():', baseDomain);
       console.log('[Wishlist DEBUG] Is site configured?', baseDomain && SITES_CONFIG[baseDomain]);
-      
+
       if (baseDomain && SITES_CONFIG[baseDomain]) {
         autoBtn.style.display = 'block';
         console.log('[Wishlist DEBUG] ✓ Site configured, scheduling auto-detection in 1s...');
