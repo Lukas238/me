@@ -4,37 +4,129 @@ title: Wishlist
 permalink: /wishlist/
 ---
 
-# Wishlist
-My ever-growing list of wants and desires. Browse at your own risk! (You might find something you want too.)
+<style>
+  /* Masonry grid layout */
+  #wishlist-container__list {
+    column-count: 4;
+    column-gap: 20px;
+    padding: 0;
+  }
 
+  @media (max-width: 1200px) {
+    #wishlist-container__list {
+      column-count: 3;
+    }
+  }
 
+  @media (max-width: 768px) {
+    #wishlist-container__list {
+      column-count: 2;
+      column-gap: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #wishlist-container__list {
+      column-count: 1;
+    }
+  }
+
+  /* Product card styling */
+  .wishlist-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .wishlist-item__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .wishlist-item__link:hover {
+    transform: translateY(-2px);
+  }
+
+  .wishlist-item__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .wishlist-item__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  .wishlist-item__link:hover .wishlist-item__image {
+    opacity: 0.9;
+  }
+
+  .wishlist-item__title {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0 4px;
+    color: #333;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .wishlist-item__link:hover .wishlist-item__title {
+    color: #000;
+  }
+
+  /* Placeholder for items without images */
+  .wishlist-item__no-image {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9ecef;
+    color: #6c757d;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  /* Loading spinner */
+  #wishlist-container .spinner-wrapper {
+    text-align: center;
+    padding: 60px 0;
+  }
+</style>
+
+<h1>Wishlist</h1>
+<p class="lead">My ever-growing list of wants and desires. Browse at your own risk! (You might find something you want too.)</p>
 
 <div id="wishlist-container">
-  <div id="wishlist-container__list" class="row">  
-    <div class="col-auto mx-auto my-5">
+  <div id="wishlist-container__list">  
+    <div class="spinner-wrapper">
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    </div>
+  </div>
 </div>
 
 
 <!-- Template for the product card -->
 <script id="product-card-template" type="text/template">
-    <div class="m-wishlist col-auto">
-        <div class="card mb-3" style="width: 18rem;">
-            <a href="@@link@@" target="_blank" style="min-height: 200px; display: inline-flex;">
-                <img src="@@img@@" class="m-wishlist__thumb card-img-top" alt="" style="align-self: center;" width="135">
-            </a>
-            <div class="card-body">
-                <h5 class="m-wishlist__title card-title h6">
-                    <a class="icon-link icon-link-hover fs-6" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="@@link@@" target="_blank">
-                        @@title@@
-                    </a>
-                </h5>
-            </div>
-        </div>
+    <div class="wishlist-item">
+        <a href="@@link@@" target="_blank" rel="noopener" class="wishlist-item__link">
+            @@image@@
+            <h3 class="wishlist-item__title">@@title@@</h3>
+        </a>
     </div>
 </script>
 
@@ -125,7 +217,7 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
   async function renderProductList() {
     const wishlistContainer = document.getElementById('wishlist-container__list');
     if (!wishlistContainer) {
-      console.error("Element with ID 'wishlist-container' not found.");
+      console.error("Element with ID 'wishlist-container__list' not found.");
       return;
     }
 
@@ -146,12 +238,19 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
       // Render the products as HTML
       let cardsListHtml = '';
       combinedProducts.forEach(product => {
+        // Generate image HTML
+        let imageHtml = '';
+        if (product.img && product.img.trim() !== '') {
+          imageHtml = `<div class="wishlist-item__image-wrapper"><img src="${product.img}" alt="${product.title}" class="wishlist-item__image" loading="lazy"></div>`;
+        } else {
+          imageHtml = `<div class="wishlist-item__no-image">No image</div>`;
+        }
 
         // Populate the template with data
         let cardHtml = template
-            .replace('@@title@@', product.title || '')
-            .replace(/@@img@@/g, product.img || '')
-            .replace(/@@link@@/g, product.link || '');
+            .replace('@@title@@', product.title || 'Untitled')
+            .replace('@@image@@', imageHtml)
+            .replace(/@@link@@/g, product.link || '#');
 
         cardsListHtml += cardHtml;
       });
