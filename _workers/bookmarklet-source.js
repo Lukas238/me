@@ -488,6 +488,16 @@
       const autoBtn = document.getElementById('wishlist-auto');
       if (baseDomain && SITES_CONFIG[baseDomain]) {
         autoBtn.style.display = 'block';
+        // Auto-detect fields on load
+        const detected = autoDetectFields();
+        if (detected) {
+          if (detected.title && !this.fields.title.value) {
+            this.fields.title.value = detected.title;
+          }
+          if (detected.image && !this.fields.image_url.value) {
+            this.fields.image_url.value = detected.image;
+          }
+        }
       } else {
         autoBtn.style.display = 'none';
       }
