@@ -43,19 +43,16 @@ permalink: /wishlist/
     display: block;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .wishlist-item__link:hover {
-    transform: translateY(-2px);
   }
 
   .wishlist-item__image-wrapper {
     position: relative;
     overflow: hidden;
-    background: #f5f5f5;
-    border-radius: 4px;
+    background: #fff;
+    border-radius: 8px;
     margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
   }
 
   .wishlist-item__image {
@@ -65,8 +62,12 @@ permalink: /wishlist/
     transition: opacity 0.3s ease;
   }
 
+  .wishlist-item__link:hover .wishlist-item__image-wrapper {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.1);
+  }
+
   .wishlist-item__link:hover .wishlist-item__image {
-    opacity: 0.9;
+    opacity: 0.95;
   }
 
   .wishlist-item__title {
@@ -92,11 +93,13 @@ permalink: /wishlist/
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e9ecef;
-    color: #6c757d;
+    background: #f8f9fa;
+    color: #adb5bd;
     font-size: 0.875rem;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
   }
 
   /* Loading spinner */
