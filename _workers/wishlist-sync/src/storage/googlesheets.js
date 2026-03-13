@@ -6,7 +6,7 @@
  * - Writing: Google Apps Script web app
  */
 
-const ALL_SOURCES = ['amazon', 'mercadolibre', 'others'];
+const ALL_SOURCES = ['amazon', 'mercadolibre', 'user_list'];
 
 /**
  * Read products from Google Sheet

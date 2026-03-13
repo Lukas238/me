@@ -184,7 +184,7 @@
 
     // Fallback to tag name + attributes
     let selector = element.tagName.toLowerCase();
-    
+
     // Add common identifying attributes
     const attrs = ['data-testid', 'data-id', 'name', 'type', 'role'];
     for (const attr of attrs) {
@@ -698,7 +698,7 @@
 
       const field = this.currentTargetField;
       const input = this.fields[field];
-      
+
       // Log suggested selector for future site configuration
       const selector = generateSelector(element);
       console.log(`[Wishlist CAPTURE] ${field}: "${selector}"`);

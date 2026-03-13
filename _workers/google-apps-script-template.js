@@ -16,7 +16,7 @@
  * ESTRUCTURA DEL SHEET:
  * - Tab "amazon": Productos de Amazon
  * - Tab "mercadolibre": Productos de MercadoLibre
- * - Tab "others": Otros productos
+ * - Tab "user_list": Productos agregados manualmente por el usuario
  * - Tab "config": Configuración (tokens, etc.)
  *
  * COLUMNAS (productos):
@@ -64,7 +64,7 @@ function doPost(e) {
       return handleConfig(targetSheet, config);
     }
 
-    // Manejar productos (amazon, mercadolibre, others)
+    // Manejar productos (amazon, mercadolibre, user_list)
     const products = data.products;
     if (!products || !Array.isArray(products)) {
       return createResponse({
@@ -129,37 +129,82 @@ function handleConfig(sheet, configArray) {
  * Manejar actualización de productos
  */
 function handleProducts(sheet, source, products) {
-  // Limpiar contenido existente
-  sheet.clear();
-
-  // Escribir header
   const headers = ['date_added', 'title', 'notes', 'image_url', 'product_url'];
-  sheet.appendRow(headers);
 
-  // Formatear header (negrita, fondo gris)
-  const headerRange = sheet.getRange(1, 1, 1, headers.length);
-  headerRange.setFontWeight('bold');
-  headerRange.setBackground('#f3f3f3');
+  // Verificar si la hoja está vacía o no tiene header
+  const lastRow = sheet.getLastRow();
+  const isEmptySheet = lastRow === 0;
 
-  // Escribir productos
-  if (products.length > 0) {
-    products.forEach(product => {
-      sheet.appendRow([
-        product.date_added || new Date().toISOString().split('T')[0],
-        product.title || '',
-        product.notes || '',
-        product.image_url || '',
-        product.product_url || ''
-      ]);
-    });
+  // Behavior diferente según el source:
+  // - amazon, mercadolibre: sobrescribir completo (clear + write)
+  // - user_list: append (agregar al final)
 
-    // Auto-resize columnas
-    for (let i = 1; i <= headers.length; i++) {
-      sheet.autoResizeColumn(i);
+  if (source === 'user_list') {
+    // MODO APPEND: Agregar productos al final de la lista
+
+    // Si la hoja está vacía, crear el header
+    if (isEmptySheet) {
+      sheet.appendRow(headers);
+      const headerRange = sheet.getRange(1, 1, 1, headers.length);
+      headerRange.setFontWeight('bold');
+      headerRange.setBackground('#f3f3f3');
+      sheet.setFrozenRows(1);
     }
 
-    // Congelar fila de header
-    sheet.setFrozenRows(1);
+    // Agregar productos al final
+    if (products.length > 0) {
+      products.forEach(product => {
+        sheet.appendRow([
+          product.date_added || new Date().toISOString().split('T')[0],
+          product.title || '',
+          product.notes || '',
+          product.image_url || '',
+          product.product_url || ''
+        ]);
+      });
+
+      // Auto-resize columnas si es la primera vez
+      if (isEmptySheet) {
+        for (let i = 1; i <= headers.length; i++) {
+          sheet.autoResizeColumn(i);
+        }
+      }
+    }
+
+  } else {
+    // MODO SOBRESCRITURA: Reemplazar todo el contenido (amazon, mercadolibre)
+
+    // Limpiar contenido existente
+    sheet.clear();
+
+    // Escribir header
+    sheet.appendRow(headers);
+
+    // Formatear header (negrita, fondo gris)
+    const headerRange = sheet.getRange(1, 1, 1, headers.length);
+    headerRange.setFontWeight('bold');
+    headerRange.setBackground('#f3f3f3');
+
+    // Escribir productos
+    if (products.length > 0) {
+      products.forEach(product => {
+        sheet.appendRow([
+          product.date_added || new Date().toISOString().split('T')[0],
+          product.title || '',
+          product.notes || '',
+          product.image_url || '',
+          product.product_url || ''
+        ]);
+      });
+
+      // Auto-resize columnas
+      for (let i = 1; i <= headers.length; i++) {
+        sheet.autoResizeColumn(i);
+      }
+
+      // Congelar fila de header
+      sheet.setFrozenRows(1);
+    }
   }
 
   // Registrar en log

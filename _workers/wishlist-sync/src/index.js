@@ -18,7 +18,7 @@ const SCRAPERS = {
   amazon: amazonScraper
 };
 
-const ALL_SOURCES = ['amazon', 'others'];
+const ALL_SOURCES = ['amazon', 'user_list'];
 
 export default {
   async fetch(request, env) {
@@ -200,7 +200,7 @@ async function handleSyncInternal(source, env) {
 
 /**
  * POST /
- * Add manual product to "others" source
+ * Add manual product to "user_list" source
  */
 async function handleManualProduct(request, env) {
   try {
@@ -219,9 +219,9 @@ async function handleManualProduct(request, env) {
       product_url: data.product_url || ''
     };
 
-    // Write to "others" source
+    // Write to "user_list" source
     const result = await writeProducts(
-      'others',
+      'user_list',
       [product],
       env.GOOGLE_APPS_SCRIPT_URL
     );
