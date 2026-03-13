@@ -1,4 +1,20 @@
 // Wishlist Bookmarklet - Source Code (Readable Version)
+// 
+// HOW TO ADD NEW SITES TO AUTO-DETECTION:
+// 1. Open this file (bookmarklet-source.js)
+// 2. Find the SITES_CONFIG object below
+// 3. Add new entry with the base domain as key
+// 4. Provide CSS selectors for title and image
+// 5. Run: node regenerate-bookmarklet.js
+// 6. Commit and push changes
+//
+// Example:
+// 'newsite.com': {
+//   title: '.product-name',        // CSS selector for title
+//   image: '.product-photo img',   // CSS selector for image
+//   imageAttr: 'data-src'          // optional: attribute to use for image URL
+// }
+//
 (function() {
   'use strict';
 
@@ -9,6 +25,89 @@
   }
 
   const WORKER_URL = 'https://wishlist-sync.dassolucas.workers.dev/';
+
+  // Sites configuration dictionary
+  // Add new sites here with CSS selectors or custom functions
+  const SITES_CONFIG = {
+    // MercadoLibre Argentina
+    'mercadolibre.com.ar': {
+      title: '.ui-pdp-title',
+      image: '.ui-pdp-gallery__figure img',
+      imageAttr: 'data-src' // some sites use data-src instead of src
+    },
+    // Amazon
+    'amazon.com': {
+      title: '#productTitle',
+      image: '#landingImage'
+    },
+    'amazon.com.ar': {
+      title: '#productTitle',
+      image: '#landingImage'
+    },
+    // Add more sites as needed
+    // 'example.com': {
+    //   title: '.product-title',
+    //   image: '.product-image img',
+    //   titleFn: (el) => el.textContent.trim(), // optional custom extractor
+    //   imageFn: (el) => el.src // optional custom extractor
+    // }
+  };
+
+  // Get base domain from URL
+  function getBaseDomain(url) {
+    try {
+      const hostname = new URL(url).hostname;
+      // Match domain.tld or subdomain.domain.tld
+      const parts = hostname.split('.');
+      if (parts.length >= 2) {
+        return parts.slice(-2).join('.');
+      }
+      return hostname;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Auto-detect and fill fields based on site configuration
+  function autoDetectFields() {
+    const baseDomain = getBaseDomain(window.location.href);
+    if (!baseDomain || !SITES_CONFIG[baseDomain]) {
+      return null; // No config for this site
+    }
+
+    const config = SITES_CONFIG[baseDomain];
+    const result = { title: null, image: null };
+
+    // Try to get title
+    if (config.title) {
+      const titleEl = document.querySelector(config.title);
+      if (titleEl) {
+        result.title = config.titleFn 
+          ? config.titleFn(titleEl)
+          : titleEl.textContent?.trim() || titleEl.innerText?.trim();
+      }
+    }
+
+    // Try to get image
+    if (config.image) {
+      const imageEl = document.querySelector(config.image);
+      if (imageEl) {
+        if (config.imageFn) {
+          result.image = config.imageFn(imageEl);
+        } else if (imageEl.tagName === 'IMG') {
+          result.image = imageEl.getAttribute(config.imageAttr || 'src') || imageEl.src;
+        } else {
+          // Try to find img inside element
+          const img = imageEl.querySelector('img');
+          if (img) {
+            result.image = img.getAttribute(config.imageAttr || 'src') || img.src;
+          }
+        }
+      }
+    }
+
+    return result;
+  }
 
   // Widget HTML
   const widgetHTML = `
@@ -371,6 +470,19 @@
     show() {
       this.container.style.display = 'block';
       this.fields.product_url.value = window.location.href;
+      
+      // Auto-detect fields if site is configured
+      const detected = autoDetectFields();
+      if (detected) {
+        if (detected.title && !this.fields.title.value) {
+          this.fields.title.value = detected.title;
+          this.showStatus('✓ Auto-detected from site', 'success');
+        }
+        if (detected.image && !this.fields.image_url.value) {
+          this.fields.image_url.value = detected.image;
+        }
+      }
+      
       this.updatePreview();
       this.expand();
     },
