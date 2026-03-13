@@ -736,7 +736,8 @@
   document.querySelectorAll('.target-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      widget.enterTargetMode(e.target.dataset.field);
+      const field = e.currentTarget.dataset.field;
+      widget.enterTargetMode(field);
     });
   });
 
