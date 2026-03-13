@@ -113,7 +113,7 @@ El campo Title es obligatorio. Asegúrate de completarlo antes de guardar.
 ## 🔧 Arquitectura Técnica
 
 El bookmarklet es **completamente autocontenido** (~16KB minificado):
-1. **No carga scripts externos** - Todo el código (HTML, CSS, JS) está inline
+1. **No carga scripts externos** - Todo el código (HTML, CSS, JS) está inline en el bookmarklet
 2. **Compatible con CSP estricta** - Funciona en MercadoLibre, Amazon, etc.
 3. Inyecta un `<style>` tag con todo el CSS minificado
 4. Inyecta un `<div>` con el widget HTML
@@ -122,7 +122,22 @@ El bookmarklet es **completamente autocontenido** (~16KB minificado):
 7. Al guardar, hace un `POST /` al worker con los datos del producto
 8. El worker guarda en Google Sheet (tab "others")
 
-### Código del Bookmarklet (sin minificar)
+### Estructura del Bookmarklet
+
+```
+bookmarklet.html          ← Página con el botón para instalar (drag & drop)
+├─ Botón "Add to Wishlist"
+└─ href="javascript:(...)"  ← ~16KB de código inline minificado
+     ├─ HTML del widget (~1KB)
+     ├─ CSS del widget (~8KB)
+     └─ JavaScript (~7KB)
+         ├─ Widget controller
+         ├─ Event listeners
+         ├─ Target mode logic
+         └─ Save to API
+```
+
+### Código del Bookmarklet (estructura simplificada)
 
 El bookmarklet minificado (~16KB) contiene todo este código comprimido:
 
