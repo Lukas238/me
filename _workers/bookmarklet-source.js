@@ -35,9 +35,9 @@
       image: '.ui-pdp-gallery__figure__image',
       imageFn: (el) => {
         // Try different attributes that ML might use
-        return el.getAttribute('src') || 
-               el.getAttribute('data-src') || 
-               el.getAttribute('data-zoom') || 
+        return el.getAttribute('src') ||
+               el.getAttribute('data-src') ||
+               el.getAttribute('data-zoom') ||
                el.src;
       }
     },
@@ -504,20 +504,24 @@
       console.log('[Wishlist] Showing widget, base domain:', baseDomain);
       if (baseDomain && SITES_CONFIG[baseDomain]) {
         autoBtn.style.display = 'block';
-        // Auto-detect fields on load
-        console.log('[Wishlist] Site configured, attempting auto-detection...');
-        const detected = autoDetectFields();
-        console.log('[Wishlist] Detected data:', detected);
-        if (detected) {
-          if (detected.title && !this.fields.title.value) {
-            this.fields.title.value = detected.title;
-            console.log('[Wishlist] Title filled:', detected.title);
+        // Auto-detect fields after a delay to allow page to load
+        console.log('[Wishlist] Site configured, will attempt auto-detection in 1s...');
+        setTimeout(() => {
+          console.log('[Wishlist] Attempting auto-detection...');
+          const detected = autoDetectFields();
+          console.log('[Wishlist] Detected data:', detected);
+          if (detected) {
+            if (detected.title && !this.fields.title.value) {
+              this.fields.title.value = detected.title;
+              console.log('[Wishlist] Title filled:', detected.title);
+            }
+            if (detected.image && !this.fields.image_url.value) {
+              this.fields.image_url.value = detected.image;
+              console.log('[Wishlist] Image filled:', detected.image);
+              this.updatePreview();
+            }
           }
-          if (detected.image && !this.fields.image_url.value) {
-            this.fields.image_url.value = detected.image;
-            console.log('[Wishlist] Image filled:', detected.image);
-          }
-        }
+        }, 1000);
       } else {
         autoBtn.style.display = 'none';
       }
