@@ -1,5 +1,5 @@
 // Wishlist Bookmarklet - Source Code (Readable Version)
-// 
+//
 // HOW TO ADD NEW SITES TO AUTO-DETECTION:
 // 1. Open this file (bookmarklet-source.js)
 // 2. Find the SITES_CONFIG object below
@@ -82,7 +82,7 @@
     if (config.title) {
       const titleEl = document.querySelector(config.title);
       if (titleEl) {
-        result.title = config.titleFn 
+        result.title = config.titleFn
           ? config.titleFn(titleEl)
           : titleEl.textContent?.trim() || titleEl.innerText?.trim();
       }
@@ -149,6 +149,7 @@
         </div>
       </div>
       <div class="widget-footer">
+        <button class="btn btn-auto" id="wishlist-auto" style="display:none;">Auto</button>
         <button class="btn btn-cancel" id="wishlist-cancel">Cancel</button>
         <button class="btn btn-save" id="wishlist-save">Save</button>
       </div>
@@ -367,6 +368,17 @@
       letter-spacing: 0.5px;
     }
 
+    .btn-auto {
+      background: #fff;
+      color: #000;
+      margin-right: auto;
+    }
+
+    .btn-auto:hover {
+      background: #000;
+      color: #fff;
+    }
+
     .btn-cancel {
       background: #fff;
       color: #000;
@@ -470,21 +482,14 @@
     show() {
       this.container.style.display = 'block';
       this.fields.product_url.value = window.location.href;
-      
-      // Auto-detect fields if site is configured
-      const detected = autoDetectFields();
-      if (detected) {
-        if (detected.title && !this.fields.title.value) {
-          this.fields.title.value = detected.title;
-          this.showStatus('✓ Auto-detected from site', 'success');
-        }
-        if (detected.image && !this.fields.image_url.value) {
-          this.fields.image_url.value = detected.image;
-        }
-      }
-      
-      this.updatePreview();
-      this.expand();
+
+      // Show Auto button if site is configured
+      const baseDomain = getBaseDomain(window.location.href);
+      const autoBtn = document.getElementById('wishlist-auto');
+      if (baseDomain && SITES_CONFIG[baseDomain]) {
+        autoBtn.style.display = 'block';
+      } else {
+        autoBtn.style.display = 'none';
     },
 
     hide() {
@@ -498,6 +503,26 @@
       this.fields.notes.value = '';
       this.fields.image_url.value = '';
       this.updatePreview();
+    },
+
+    autoFillFields() {
+      const detected = autoDetectFields();
+      if (detected) {
+        if (detected.title) {
+          this.fields.title.value = detected.title;
+        }
+        if (detected.image) {
+          this.fields.image_url.value = detected.image;
+          this.updatePreview();
+        }
+        if (detected.title || detected.image) {
+          this.showStatus('✓ Auto-detected from site', 'success');
+        } else {
+          this.showStatus('✗ No data found on page', 'error');
+        }
+      } else {
+        this.showStatus('✗ Site not configured', 'error');
+      }
     },
 
     toggle() {
@@ -690,6 +715,7 @@
   document.getElementById('wishlist-close').addEventListener('click', () => widget.hide());
   document.getElementById('wishlist-cancel').addEventListener('click', () => widget.hide());
   document.getElementById('wishlist-save').addEventListener('click', () => widget.save());
+  document.getElementById('wishlist-auto').addEventListener('click', () => widget.autoFillFields());
   widget.fields.image_url.addEventListener('input', () => widget.updatePreview());
 
   // Target buttons
