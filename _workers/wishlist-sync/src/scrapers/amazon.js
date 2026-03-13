@@ -77,11 +77,16 @@ async function parseItems(content) {
     const link = 'https://www.amazon.com' + $(element).find('h2 > a').attr('href');
     let img = $(element).find('a > img').attr('src');
 
-    // Improve image quality: replace small image size with larger one
-    // Amazon uses ._SLxx_ pattern to specify size (e.g., ._SL75_, ._SL160_)
-    // Replace with ._SL500_ for better quality (500x500 max)
+    // Improve image quality: Amazon uses different size patterns in URLs
+    // Patterns: ._SLxx_, ._SSxx_, ._AC_USxx_, etc.
+    // Replace any size pattern with no size restriction to get largest available
     if (img) {
-      img = img.replace(/\._S[LX]\d+_/, '._SL500_');
+      // Remove size restrictions from Amazon image URLs
+      // This gets the full-size image instead of thumbnails
+      img = img
+        .replace(/\._S[LSX]\d+_/g, '')  // Remove ._SL75_, ._SS135_, ._SX300_, etc.
+        .replace(/\._AC_US\d+_/g, '._AC_')  // Remove ._AC_US40_ etc, keep ._AC_
+        .replace(/\._SR\d+,\d+_/g, '');  // Remove ._SR135,135_, etc.
     }
 
     if (title && link && img) {
