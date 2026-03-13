@@ -23,7 +23,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
           <h2>📚 Add to Wishlist</h2>
           <button class="close-btn" id="wishlist-close">✕</button>
         </div>
-        
+
         <div class="widget-body">
           <div class="form-row">
             <label>Product URL</label>
@@ -348,7 +348,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
   const widget = {
     overlay: document.getElementById('wishlist-widget-overlay'),
     container: document.getElementById('wishlist-widget'),
-    
+
     fields: {
       product_url: document.getElementById('product_url'),
       title: document.getElementById('title'),
@@ -395,7 +395,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
       this.targetMode = true;
       this.currentTargetField = fieldName;
       document.body.classList.add('wishlist-target-mode');
-      
+
       // Highlight active button
       const btn = document.querySelector(\\\`[data-field="\${fieldName}"]\\\`);
       btn?.classList.add('active');
@@ -408,7 +408,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
       this.targetMode = false;
       this.currentTargetField = null;
       document.body.classList.remove('wishlist-target-mode');
-      
+
       // Remove all highlights
       document.querySelectorAll('.wishlist-target-highlight').forEach(el => {
         el.classList.remove('wishlist-target-highlight');
@@ -429,7 +429,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
       if (fieldName === 'image_url') {
         // Capture image URL
         let imageUrl = null;
-        
+
         if (element.tagName === 'IMG') {
           imageUrl = element.src || element.dataset.src;
         } else {
@@ -471,7 +471,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
     showStatus(message, type) {
       this.status.textContent = message;
       this.status.className = \\\`status-message \${type}\\\`;
-      
+
       if (type !== 'info') {
         setTimeout(() => {
           this.status.style.display = 'none';
@@ -511,7 +511,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
 
         if (response.ok && result.success) {
           this.showStatus('✓ Saved to wishlist!', 'success');
-          
+
           // Clear form after 1 second
           setTimeout(() => {
             this.fields.title.value = '';
@@ -552,7 +552,7 @@ export const BOOKMARKLET_CODE = `// Wishlist Widget Bookmarklet
   // Global event listeners for target mode
   document.addEventListener('mouseover', (e) => {
     if (!widget.targetMode) return;
-    
+
     // Don't highlight the widget itself
     if (widget.container.contains(e.target)) return;
 

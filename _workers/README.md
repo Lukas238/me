@@ -21,7 +21,7 @@ Las credenciales sensibles están en **`credentials.json`** (encriptado con git-
 
 ## 📚 Bookmarklet - Add to Wishlist
 
-**Agrega productos desde cualquier página web con un  click.**
+**Agrega productos desde cualquier página web con un click. Completamente autocontenido, funciona incluso con CSP estricta (MercadoLibre, Amazon, etc.).**
 
 Ver guía completa: [BOOKMARKLET.md](./BOOKMARKLET.md) | Demo: [bookmarklet.html](./bookmarklet.html)
 
@@ -40,6 +40,8 @@ Ver guía completa: [BOOKMARKLET.md](./BOOKMARKLET.md) | Demo: [bookmarklet.html
 - ✏️ Edición manual de todos los campos
 - 🔗 Auto-detección de URL del producto
 - ⌨️ Shortcuts (ESC para cerrar)
+- ✅ Completamente autocontenido (~16KB inline, no carga scripts externos)
+- 🔒 Compatible con CSP estricta (funciona en MercadoLibre, Amazon, etc.)
 
 ## Arquitectura
 
