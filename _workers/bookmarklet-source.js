@@ -26,21 +26,21 @@
           <label>Title</label>
           <div class="input-group">
             <input type="text" id="title" placeholder="Title"/>
-            <button class="target-btn" data-field="title">🞋</button>
+            <button class="target-btn" data-field="title">◎</button>
           </div>
         </div>
         <div class="form-row">
           <label>Notes</label>
           <div class="input-group">
             <textarea id="notes" placeholder="Notes" rows="2"></textarea>
-            <button class="target-btn" data-field="notes">🞋</button>
+            <button class="target-btn" data-field="notes">◎</button>
           </div>
         </div>
         <div class="form-row">
           <label>Image</label>
           <div class="input-group">
             <input type="text" id="image_url" placeholder="URL"/>
-            <button class="target-btn" data-field="image_url">🞋</button>
+            <button class="target-btn" data-field="image_url">◎</button>
           </div>
         </div>
         <div class="image-preview-container">
