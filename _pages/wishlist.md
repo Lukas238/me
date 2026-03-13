@@ -44,7 +44,7 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
 <script>
   const boardUrl = 'https://trello.com/b/NjOxqya1.json';
-  const awsWishlistUrl = 'https://aws-wishlist-scrapper-worker.dassolucas.workers.dev/?url=https://www.amazon.com/hz/wishlist/ls/35A8QWIZ90CH?type=wishlist&filter=unpurchased&sort=priority&viewType=list';
+  const wishlistWorkerUrl = 'https://wishlist-sync.dassolucas.workers.dev/';
   
   // Function to fetch JSON data
   async function fetchJson(url) {
@@ -95,6 +95,31 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
     }
   }
 
+  // Function to process wishlist worker data
+  async function processWishlistWorkerData() {
+    try {
+      const data = await fetchJson(wishlistWorkerUrl);
+      console.log('Wishlist worker data:', data);
+      
+      // Combine amazon and user_list arrays
+      const allProducts = [
+        ...(data.amazon || []),
+        ...(data.user_list || [])
+      ];
+      
+      // Transform to match our template format
+      return allProducts.map(product => ({
+        title: product.title || '',
+        link: product.product_url || '',
+        img: product.image_url || '',
+        description: product.notes || ''
+      }));
+    } catch (error) {
+      console.error('Error fetching or processing wishlist worker data:', error);
+      return [];
+    }
+  }
+
 
   // Function to render the combined product list
   async function renderProductList() {
@@ -106,12 +131,14 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
 
     try {
       const trelloProducts = await processTrelloData();
-      console.log(trelloProducts);
-      const awsProducts = await fetchJson(awsWishlistUrl);
-      console.log(awsProducts);
+      console.log('Trello products:', trelloProducts);
+      
+      const wishlistProducts = await processWishlistWorkerData();
+      console.log('Wishlist worker products:', wishlistProducts);
 
-      // Merge the two product lists
-      const combinedProducts = [...trelloProducts, ...awsProducts];
+      // Merge all product lists (Trello + Amazon + user_list)
+      const combinedProducts = [...trelloProducts, ...wishlistProducts];
+      console.log('Combined products:', combinedProducts.length);
 
       // Get the template
       const template = document.getElementById('product-card-template').textContent;
@@ -123,8 +150,8 @@ My ever-growing list of wants and desires. Browse at your own risk! (You might f
         // Populate the template with data
         let cardHtml = template
             .replace('@@title@@', product.title || '')
-            .replace(/@@img@@/g, product.img)
-            .replace(/@@link@@/g, product.link);
+            .replace(/@@img@@/g, product.img || '')
+            .replace(/@@link@@/g, product.link || '');
 
         cardsListHtml += cardHtml;
       });

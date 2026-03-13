@@ -32,7 +32,7 @@ Ver guía completa: [BOOKMARKLET.md](./BOOKMARKLET.md) | Demo: [bookmarklet.html
 3. Navega a cualquier página de producto
 4. Click en el bookmarklet
 5. Usa los botones 🎯 para capturar título, imagen, notas
-6. Save → Los productos van al tab "others" de tu Google Sheet
+6. Save → Los productos van al tab "user_list" de tu Google Sheet
 
 **Features:**
 - 🎯 Target mode para seleccionar elementos de la página
@@ -42,6 +42,7 @@ Ver guía completa: [BOOKMARKLET.md](./BOOKMARKLET.md) | Demo: [bookmarklet.html
 - ⌨️ Shortcuts (ESC para cerrar)
 - ✅ Completamente autocontenido (~16KB inline, no carga scripts externos)
 - 🔒 Compatible con CSP estricta (funciona en MercadoLibre, Amazon, etc.)
+- 📝 Los productos van al tab "user_list" de tu Google Sheet
 
 ## Arquitectura
 
@@ -83,7 +84,7 @@ Response:
       "product_url": "https://..."
     }
   ],
-  "others": []
+  "user_list": []
 }
 ```
 
@@ -106,7 +107,7 @@ Response (array directo):
 ]
 ```
 
-Sources válidos: `amazon`, `others`
+Sources válidos: `amazon`, `user_list`
 
 ### GET /sync/:source - Scrape y guarda un source
 
@@ -169,14 +170,14 @@ Response:
   },
   "storageResponse": {
     "success": true,
-    "source": "others",
+    "source": "user_list",
     "count": 1,
     "timestamp": "2026-03-12T17:24:47.126Z"
   }
 }
 ```
 
-Los productos manuales se guardan en el source `others`.
+Los productos manuales se guardan en el source `user_list`.
 
 ## Setup
 
@@ -187,7 +188,7 @@ El worker guarda los productos en Google Sheets. Para configurarlo:
 **📝 Ver guía completa:** [SETUP-STORAGE.md](./SETUP-STORAGE.md)
 
 **Pasos rápidos:**
-1. Crear Google Sheet con tabs: `amazon`, `others` (y opcionalmente `mercadolibre` vacío)
+1. Crear Google Sheet con tabs: `amazon`, `user_list` (y opcionalmente `mercadolibre` vacío)
 2. Deploy Google Apps Script desde `google-apps-script-template.js`
 3. Configurar secrets: `GOOGLE_SHEET_ID` y `GOOGLE_APPS_SCRIPT_URL`
 
@@ -242,7 +243,7 @@ curl -X POST "https://wishlist-sync.dassolucas.workers.dev/" \
 
 ### 6. Ver productos manuales
 ```bash
-curl "https://wishlist-sync.dassolucas.workers.dev/others" | jq
+curl "https://wishlist-sync.dassolucas.workers.dev/user_list" | jq
 ```
 
 ## Deploy
@@ -275,6 +276,6 @@ npx wrangler tail
 - **Cron Job:** Sync automático mensual (día 1 de cada mes a las 8:00 UTC)
 - **Storage abstraction:** Fácil migrar de Google Sheets a otra DB (cambiar import en storage/index.js)
 - **Formato normalizado:** `{ date_added, title, notes, image_url, product_url }`
-- **Entrada manual:** POST / para agregar productos de cualquier fuente al tab "others"
+- **Entrada manual:** POST / para agregar productos de cualquier fuente al tab "user_list"
 - **CORS:** Abierto (`Access-Control-Allow-Origin: *`)
 - **Plan Gratuito:** Todo funciona con el plan gratuito de Cloudflare Workers
