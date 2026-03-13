@@ -32,8 +32,7 @@
     // MercadoLibre Argentina
     'mercadolibre.com.ar': {
       title: '.ui-pdp-title',
-      image: '.ui-pdp-gallery__figure img',
-      imageAttr: 'data-src' // some sites use data-src instead of src
+      image: '.ui-pdp-gallery__figure__image[data-index="0"]'
     },
     // Amazon
     'amazon.com': {
@@ -48,6 +47,7 @@
     // 'example.com': {
     //   title: '.product-title',
     //   image: '.product-image img',
+    //   imageAttr: 'data-src' // optional custom extractor
     //   titleFn: (el) => el.textContent.trim(), // optional custom extractor
     //   imageFn: (el) => el.src // optional custom extractor
     // }
