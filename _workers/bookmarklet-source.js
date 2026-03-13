@@ -64,49 +64,69 @@
   function getBaseDomain(url) {
     try {
       const hostname = new URL(url).hostname;
+      console.log('[Wishlist DEBUG] Full hostname:', hostname);
       // Match domain.tld or subdomain.domain.tld
       const parts = hostname.split('.');
+      console.log('[Wishlist DEBUG] Hostname parts:', parts);
       if (parts.length >= 2) {
-        return parts.slice(-2).join('.');
+        const domain = parts.slice(-2).join('.');
+        console.log('[Wishlist DEBUG] Extracted domain:', domain);
+        return domain;
       }
       return hostname;
     } catch (e) {
+      console.error('[Wishlist ERROR] Failed to parse URL:', e);
       return null;
     }
   }
 
   // Auto-detect and fill fields based on site configuration
   function autoDetectFields() {
+    console.log('[Wishlist DEBUG] === AUTO-DETECTION STARTED ===');
+    console.log('[Wishlist DEBUG] Current URL:', window.location.href);
     const baseDomain = getBaseDomain(window.location.href);
-    console.log('[Wishlist] Base domain:', baseDomain);
+    console.log('[Wishlist DEBUG] Base domain result:', baseDomain);
+    console.log('[Wishlist DEBUG] Available configs:', Object.keys(SITES_CONFIG));
+    
     if (!baseDomain || !SITES_CONFIG[baseDomain]) {
-      console.log('[Wishlist] No config found for domain');
+      console.log('[Wishlist DEBUG] ❌ No config found for domain:', baseDomain);
       return null; // No config for this site
     }
 
     const config = SITES_CONFIG[baseDomain];
-    console.log('[Wishlist] Using config:', config);
+    console.log('[Wishlist DEBUG] ✓ Using config:', config);
     const result = { title: null, image: null };
 
     // Try to get title
     if (config.title) {
+      console.log('[Wishlist DEBUG] Searching for title with selector:', config.title);
       const titleEl = document.querySelector(config.title);
-      console.log('[Wishlist] Title element:', titleEl);
+      console.log('[Wishlist DEBUG] Title element found:', titleEl);
       if (titleEl) {
         result.title = config.titleFn
           ? config.titleFn(titleEl)
           : titleEl.textContent?.trim() || titleEl.innerText?.trim();
-        console.log('[Wishlist] Title extracted:', result.title);
+        console.log('[Wishlist DEBUG] ✓ Title extracted:', result.title);
+      } else {
+        console.log('[Wishlist DEBUG] ❌ Title element not found');
       }
     }
 
     // Try to get image
     if (config.image) {
+      console.log('[Wishlist DEBUG] Searching for image with selector:', config.image);
       const imageEl = document.querySelector(config.image);
-      console.log('[Wishlist] Image element:', imageEl);
+      console.log('[Wishlist DEBUG] Image element found:', imageEl);
       if (imageEl) {
         if (config.imageFn) {
+          console.log('[Wishlist DEBUG] Using custom imageFn');
           result.image = config.imageFn(imageEl);
+          console.log('[Wishlist DEBUG] Image attributes:', {
+            src: imageEl.getAttribute('src'),
+            dataSrc: imageEl.getAttribute('data-src'),
+            dataZoom: imageEl.getAttribute('data-zoom'),
+            imgSrc: imageEl.src
+          });
         } else if (imageEl.tagName === 'IMG') {
           result.image = imageEl.getAttribute(config.imageAttr || 'src') || imageEl.src;
         } else {
@@ -116,11 +136,14 @@
             result.image = img.getAttribute(config.imageAttr || 'src') || img.src;
           }
         }
-        console.log('[Wishlist] Image extracted:', result.image);
+        console.log('[Wishlist DEBUG] ✓ Image extracted:', result.image);
+      } else {
+        console.log('[Wishlist DEBUG] ❌ Image element not found');
       }
     }
 
-    console.log('[Wishlist] Detection result:', result);
+    console.log('[Wishlist DEBUG] === DETECTION COMPLETE ===');
+    console.log('[Wishlist DEBUG] Final result:', result);
     return result;
   }
 
@@ -164,6 +187,7 @@
         </div>
       </div>
       <div class="widget-footer">
+        <button class="btn btn-debug" id="wishlist-debug" style="background:#ffeb3b;color:#000;border:2px solid #f57c00;">🔍 Debug</button>
         <button class="btn btn-auto" id="wishlist-auto" style="display:none;">Auto</button>
         <button class="btn btn-cancel" id="wishlist-cancel">Cancel</button>
         <button class="btn btn-save" id="wishlist-save">Save</button>
@@ -495,39 +519,47 @@
     },
 
     show() {
+      console.log('[Wishlist DEBUG] === WIDGET SHOW CALLED ===');
       this.container.style.display = 'block';
       this.fields.product_url.value = window.location.href;
+      console.log('[Wishlist DEBUG] URL field set to:', window.location.href);
 
       // Show Auto button if site is configured
       const baseDomain = getBaseDomain(window.location.href);
       const autoBtn = document.getElementById('wishlist-auto');
-      console.log('[Wishlist] Showing widget, base domain:', baseDomain);
+      console.log('[Wishlist DEBUG] Base domain for show():', baseDomain);
+      console.log('[Wishlist DEBUG] Is site configured?', baseDomain && SITES_CONFIG[baseDomain]);
+      
       if (baseDomain && SITES_CONFIG[baseDomain]) {
         autoBtn.style.display = 'block';
+        console.log('[Wishlist DEBUG] ✓ Site configured, scheduling auto-detection in 1s...');
         // Auto-detect fields after a delay to allow page to load
-        console.log('[Wishlist] Site configured, will attempt auto-detection in 1s...');
         setTimeout(() => {
-          console.log('[Wishlist] Attempting auto-detection...');
+          console.log('[Wishlist DEBUG] === TIMEOUT TRIGGERED - RUNNING AUTO-DETECTION ===');
           const detected = autoDetectFields();
-          console.log('[Wishlist] Detected data:', detected);
+          console.log('[Wishlist DEBUG] Detection returned:', detected);
           if (detected) {
             if (detected.title && !this.fields.title.value) {
               this.fields.title.value = detected.title;
-              console.log('[Wishlist] Title filled:', detected.title);
+              console.log('[Wishlist DEBUG] ✓ Title field filled');
             }
             if (detected.image && !this.fields.image_url.value) {
               this.fields.image_url.value = detected.image;
-              console.log('[Wishlist] Image filled:', detected.image);
+              console.log('[Wishlist DEBUG] ✓ Image field filled');
               this.updatePreview();
             }
+          } else {
+            console.log('[Wishlist DEBUG] ❌ No data detected');
           }
         }, 1000);
       } else {
         autoBtn.style.display = 'none';
+        console.log('[Wishlist DEBUG] ❌ Site not configured for auto-detection');
       }
 
       this.updatePreview();
       this.expand();
+      console.log('[Wishlist DEBUG] === WIDGET SHOW COMPLETE ===');
     },
 
     hide() {
@@ -754,6 +786,20 @@
   document.getElementById('wishlist-cancel').addEventListener('click', () => widget.hide());
   document.getElementById('wishlist-save').addEventListener('click', () => widget.save());
   document.getElementById('wishlist-auto').addEventListener('click', () => widget.autoFillFields());
+  document.getElementById('wishlist-debug').addEventListener('click', () => {
+    console.log('[Wishlist DEBUG] === DEBUG BUTTON CLICKED ===');
+    const detected = autoDetectFields();
+    if (detected) {
+      if (detected.title) widget.fields.title.value = detected.title;
+      if (detected.image) {
+        widget.fields.image_url.value = detected.image;
+        widget.updatePreview();
+      }
+      widget.showStatus('✓ Debug detection complete - check console', 'success');
+    } else {
+      widget.showStatus('✗ Debug detection failed - check console', 'error');
+    }
+  });
   widget.fields.image_url.addEventListener('input', () => widget.updatePreview());
 
   // Target buttons
