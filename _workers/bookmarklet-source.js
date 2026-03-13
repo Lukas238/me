@@ -403,11 +403,13 @@
     collapse() {
       this.collapsed = true;
       this.container.classList.add('collapsed');
+      this.overlay.style.display = 'none';
     },
 
     expand() {
       this.collapsed = false;
       this.container.classList.remove('collapsed');
+      this.overlay.style.display = 'flex';
     },
 
     updatePreview() {
