@@ -42,7 +42,7 @@
     'amazon.com.ar': {
       title: '#productTitle',
       image: '#landingImage'
-    },
+    }
     // Add more sites as needed
     // 'example.com': {
     //   title: '.product-title',
@@ -490,6 +490,10 @@
         autoBtn.style.display = 'block';
       } else {
         autoBtn.style.display = 'none';
+      }
+
+      this.updatePreview();
+      this.expand();
     },
 
     hide() {
