@@ -65,10 +65,10 @@
     try {
       const hostname = new URL(url).hostname;
       console.log('[Wishlist DEBUG] Full hostname:', hostname);
-      
+
       // Check for second-level domains (SLD) like .com.ar, .co.uk, .com.au
       const sldPattern = /\.(com|co|org|gov|edu|net|ac)\.[a-z]{2,3}$/i;
-      
+
       if (sldPattern.test(hostname)) {
         // Extract last 3 parts for SLD domains
         const match = hostname.match(/([^.]+\.(com|co|org|gov|edu|net|ac)\.[a-z]{2,3})$/i);
@@ -77,14 +77,14 @@
           return match[1];
         }
       }
-      
+
       // Extract last 2 parts for regular domains
       const match = hostname.match(/([^.]+\.[^.]+)$/);
       if (match) {
         console.log('[Wishlist DEBUG] Extracted domain:', match[1]);
         return match[1];
       }
-      
+
       return hostname;
     } catch (e) {
       console.error('[Wishlist ERROR] Failed to parse URL:', e);
@@ -159,6 +159,45 @@
     return result;
   }
 
+  // Generate CSS selector for an element
+  function generateSelector(element) {
+    // If element has an ID, use it
+    if (element.id) {
+      return `#${element.id}`;
+    }
+
+    // Try to use classes if available
+    if (element.className && typeof element.className === 'string') {
+      const classes = element.className.trim().split(/\s+/).filter(c => c);
+      if (classes.length > 0) {
+        // Try just the first class or first two classes
+        const classSelector = classes.slice(0, 2).map(c => `.${c}`).join('');
+        // Check if this selector is unique
+        const matches = document.querySelectorAll(classSelector);
+        if (matches.length === 1) {
+          return classSelector;
+        }
+        // If not unique, add tag name
+        return `${element.tagName.toLowerCase()}${classSelector}`;
+      }
+    }
+
+    // Fallback to tag name + attributes
+    let selector = element.tagName.toLowerCase();
+    
+    // Add common identifying attributes
+    const attrs = ['data-testid', 'data-id', 'name', 'type', 'role'];
+    for (const attr of attrs) {
+      const value = element.getAttribute(attr);
+      if (value) {
+        selector += `[${attr}="${value}"]`;
+        break;
+      }
+    }
+
+    return selector;
+  }
+
   // Widget HTML
   const widgetHTML = `
     <div id="wishlist-widget">
@@ -199,7 +238,6 @@
         </div>
       </div>
       <div class="widget-footer">
-        <button class="btn btn-debug" id="wishlist-debug" style="background:#ffeb3b;color:#000;border:2px solid #f57c00;">🔍 Debug</button>
         <button class="btn btn-auto" id="wishlist-auto" style="display:none;">Auto</button>
         <button class="btn btn-cancel" id="wishlist-cancel">Cancel</button>
         <button class="btn btn-save" id="wishlist-save">Save</button>
@@ -660,6 +698,11 @@
 
       const field = this.currentTargetField;
       const input = this.fields[field];
+      
+      // Log suggested selector for future site configuration
+      const selector = generateSelector(element);
+      console.log(`[Wishlist CAPTURE] ${field}: "${selector}"`);
+      console.log('[Wishlist CAPTURE] Element:', element);
 
       if (field === 'image_url') {
         let imageUrl = null;
@@ -798,20 +841,6 @@
   document.getElementById('wishlist-cancel').addEventListener('click', () => widget.hide());
   document.getElementById('wishlist-save').addEventListener('click', () => widget.save());
   document.getElementById('wishlist-auto').addEventListener('click', () => widget.autoFillFields());
-  document.getElementById('wishlist-debug').addEventListener('click', () => {
-    console.log('[Wishlist DEBUG] === DEBUG BUTTON CLICKED ===');
-    const detected = autoDetectFields();
-    if (detected) {
-      if (detected.title) widget.fields.title.value = detected.title;
-      if (detected.image) {
-        widget.fields.image_url.value = detected.image;
-        widget.updatePreview();
-      }
-      widget.showStatus('✓ Debug detection complete - check console', 'success');
-    } else {
-      widget.showStatus('✗ Debug detection failed - check console', 'error');
-    }
-  });
   widget.fields.image_url.addEventListener('input', () => widget.updatePreview());
 
   // Target buttons
