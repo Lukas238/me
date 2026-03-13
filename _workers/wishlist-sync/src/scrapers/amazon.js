@@ -75,7 +75,14 @@ async function parseItems(content) {
   $('li.g-item-sortable').each((index, element) => {
     const title = $(element).find('h2 > a').attr('title');
     const link = 'https://www.amazon.com' + $(element).find('h2 > a').attr('href');
-    const img = $(element).find('a > img').attr('src');
+    let img = $(element).find('a > img').attr('src');
+
+    // Improve image quality: replace small image size with larger one
+    // Amazon uses ._SLxx_ pattern to specify size (e.g., ._SL75_, ._SL160_)
+    // Replace with ._SL500_ for better quality (500x500 max)
+    if (img) {
+      img = img.replace(/\._S[LX]\d+_/, '._SL500_');
+    }
 
     if (title && link && img) {
       items.push({ title, link, img });
