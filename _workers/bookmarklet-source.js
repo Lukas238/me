@@ -12,48 +12,46 @@
 
   // Widget HTML
   const widgetHTML = `
-    <div id="wishlist-widget-overlay"></div>
     <div id="wishlist-widget">
       <div class="widget-header" id="wishlist-header">
-        <h2>📚 Add to Wishlist</h2>
+        <h2>+ Wishlist</h2>
         <button class="close-btn" id="wishlist-close">✕</button>
       </div>
       <div class="widget-body">
         <div class="form-row">
-          <label>Product URL</label>
+          <label>URL</label>
           <input type="text" id="product_url" readonly/>
         </div>
         <div class="form-row">
-          <label>Title *</label>
+          <label>Title</label>
           <div class="input-group">
-            <input type="text" id="title" placeholder="Product title"/>
+            <input type="text" id="title" placeholder="Title"/>
             <button class="target-btn" data-field="title">🎯</button>
           </div>
         </div>
         <div class="form-row">
           <label>Notes</label>
           <div class="input-group">
-            <textarea id="notes" placeholder="Optional notes" rows="2"></textarea>
+            <textarea id="notes" placeholder="Notes" rows="2"></textarea>
             <button class="target-btn" data-field="notes">🎯</button>
           </div>
         </div>
         <div class="form-row">
-          <label>Image URL</label>
+          <label>Image</label>
           <div class="input-group">
-            <input type="text" id="image_url" placeholder="Product image URL"/>
+            <input type="text" id="image_url" placeholder="URL"/>
             <button class="target-btn" data-field="image_url">🎯</button>
           </div>
         </div>
         <div class="image-preview-container">
-          <label>Image Preview</label>
           <div id="image-preview" class="image-preview">
-            <span class="preview-placeholder">No image selected</span>
+            <span class="preview-placeholder">No image</span>
           </div>
         </div>
       </div>
       <div class="widget-footer">
         <button class="btn btn-cancel" id="wishlist-cancel">Cancel</button>
-        <button class="btn btn-save" id="wishlist-save">💾 Save to Wishlist</button>
+        <button class="btn btn-save" id="wishlist-save">Save</button>
       </div>
       <div id="wishlist-status" class="status-message"></div>
     </div>
@@ -61,39 +59,25 @@
 
   // Widget CSS
   const widgetCSS = `
-    #wishlist-widget-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.5);
-      z-index: 999998;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     #wishlist-widget {
       position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #f5f5f5;
+      top: 10px;
+      right: 10px;
+      background: #fff;
       border: 2px solid #000;
-      width: 90%;
-      max-width: 500px;
-      max-height: 90vh;
+      width: 280px;
+      max-height: calc(100vh - 20px);
       overflow: hidden;
       z-index: 999999;
       font-family: 'Courier New', Courier, monospace;
-      transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+      font-size: 11px;
+      box-shadow: 4px 4px 0 #000;
     }
 
     #wishlist-widget.collapsed {
-      width: 300px;
+      width: 280px;
       height: auto;
-      max-height: 40px;
+      max-height: 32px;
       overflow: hidden;
     }
 
@@ -104,9 +88,9 @@
     }
 
     .widget-header {
-      background: #000;
-      color: #0f0;
-      padding: 10px 15px;
+      background: #fff;
+      color: #000;
+      padding: 6px 10px;
       border-bottom: 2px solid #000;
       display: flex;
       justify-content: space-between;
@@ -121,57 +105,58 @@
 
     .widget-header h2 {
       margin: 0;
-      font-size: 14px;
-      font-weight: normal;
+      font-size: 11px;
+      font-weight: bold;
       pointer-events: none;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
     #wishlist-widget.collapsed .widget-header h2 {
-      font-size: 12px;
+      font-size: 10px;
     }
 
     .close-btn {
       background: transparent;
-      border: 1px solid #0f0;
-      color: #0f0;
-      font-size: 16px;
-      width: 24px;
-      height: 24px;
+      border: 1px solid #000;
+      color: #000;
+      font-size: 14px;
+      width: 20px;
+      height: 20px;
       cursor: pointer;
       line-height: 1;
       pointer-events: auto;
+      padding: 0;
     }
 
     .close-btn:hover {
-      background: #0f0;
-      color: #000;
+      background: #000;
+      color: #fff;
     }
 
     .widget-body {
-      padding: 15px;
-      max-height: calc(90vh - 200px);
+      padding: 10px;
+      max-height: calc(100vh - 100px);
       overflow-y: auto;
       background: #fff;
     }
 
     .form-row {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
 
     .form-row label {
       display: block;
-      margin-bottom: 3px;
-      font-weight: normal;
+      margin-bottom: 2px;
+      font-weight: bold;
       color: #000;
-      font-size: 12px;
+      font-size: 9px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
     .input-group {
       display: flex;
-      gap: 5px;
+      gap: 4px;
     }
 
     .input-group input,
@@ -182,21 +167,21 @@
     #wishlist-widget input,
     #wishlist-widget textarea {
       width: 100%;
-      padding: 8px;
+      padding: 4px 6px;
       border: 1px solid #000;
       background: #fff;
-      font-size: 12px;
+      font-size: 10px;
       font-family: 'Courier New', Courier, monospace;
     }
 
     #wishlist-widget input:focus,
     #wishlist-widget textarea:focus {
-      outline: 2px solid #000;
-      outline-offset: 1px;
+      outline: 1px solid #000;
+      outline-offset: 0;
     }
 
     #wishlist-widget input[readonly] {
-      background: #e0e0e0;
+      background: #f0f0f0;
       color: #666;
     }
 
@@ -204,11 +189,12 @@
       background: #000;
       border: 1px solid #000;
       color: #fff;
-      font-size: 12px;
-      width: 32px;
-      height: 32px;
+      font-size: 10px;
+      width: 24px;
+      height: 24px;
       cursor: pointer;
       flex-shrink: 0;
+      padding: 0;
     }
 
     .target-btn:hover {
@@ -227,19 +213,18 @@
     }
 
     .image-preview-container {
-      margin-top: 15px;
+      margin-top: 8px;
     }
 
     .image-preview {
-      width: 200px;
-      height: 200px;
+      width: 100%;
+      height: 80px;
       border: 1px solid #000;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 8px;
       overflow: hidden;
-      background: #fff;
+      background: #f5f5f5;
     }
 
     .image-preview img {
@@ -250,28 +235,28 @@
 
     .preview-placeholder {
       color: #999;
-      font-size: 11px;
+      font-size: 9px;
       text-transform: uppercase;
     }
 
     .widget-footer {
-      padding: 15px;
+      padding: 8px 10px;
       border-top: 2px solid #000;
       display: flex;
-      gap: 8px;
+      gap: 6px;
       justify-content: flex-end;
-      background: #f5f5f5;
+      background: #fff;
     }
 
     .btn {
-      padding: 8px 16px;
+      padding: 4px 10px;
       border: 1px solid #000;
-      font-size: 12px;
-      font-weight: normal;
+      font-size: 10px;
+      font-weight: bold;
       cursor: pointer;
       font-family: 'Courier New', Courier, monospace;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
     .btn-cancel {
@@ -280,12 +265,12 @@
     }
 
     .btn-cancel:hover {
-      background: #e0e0e0;
+      background: #f0f0f0;
     }
 
     .btn-save {
       background: #000;
-      color: #0f0;
+      color: #fff;
     }
 
     .btn-save:hover {
@@ -298,30 +283,33 @@
     }
 
     .status-message {
-      padding: 10px 15px;
-      font-size: 11px;
+      padding: 6px 10px;
+      font-size: 9px;
       text-align: center;
       display: none;
       font-family: 'Courier New', Courier, monospace;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
     .status-message.success {
-      background: #0f0;
-      color: #000;
+      background: #d4edda;
+      color: #155724;
+      border-top: 1px solid #c3e6cb;
       display: block;
     }
 
     .status-message.error {
-      background: #f00;
-      color: #fff;
+      background: #f8d7da;
+      color: #721c24;
+      border-top: 1px solid #f5c6cb;
       display: block;
     }
 
     .status-message.info {
-      background: #000;
-      color: #0f0;
+      background: #d1ecf1;
+      color: #0c5460;
+      border-top: 1px solid #bee5eb;
       display: block;
     }
 
@@ -350,7 +338,6 @@
 
   // Widget controller
   const widget = {
-    overlay: document.getElementById('wishlist-widget-overlay'),
     container: document.getElementById('wishlist-widget'),
     header: document.getElementById('wishlist-header'),
     fields: {
@@ -373,7 +360,6 @@
     },
 
     show() {
-      this.overlay.style.display = 'flex';
       this.container.style.display = 'block';
       this.fields.product_url.value = window.location.href;
       this.updatePreview();
@@ -381,7 +367,6 @@
     },
 
     hide() {
-      this.overlay.style.display = 'none';
       this.container.style.display = 'none';
       this.exitTargetMode();
       this.clearFields();
@@ -395,7 +380,7 @@
     },
 
     toggle() {
-      if (this.overlay.style.display === 'none' || !this.overlay.style.display) {
+      if (this.container.style.display === 'none' || !this.container.style.display) {
         this.show();
       } else {
         this.hide();
@@ -405,13 +390,11 @@
     collapse() {
       this.collapsed = true;
       this.container.classList.add('collapsed');
-      this.overlay.style.display = 'none';
     },
 
     expand() {
       this.collapsed = false;
       this.container.classList.remove('collapsed');
-      this.overlay.style.display = 'flex';
     },
 
     updatePreview() {
@@ -619,19 +602,12 @@
     }
   }, true);
 
-  // Close on overlay click
-  widget.overlay.addEventListener('click', (e) => {
-    if (e.target === widget.overlay) {
-      widget.hide();
-    }
-  });
-
   // ESC key handling
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (widget.targetMode) {
         widget.exitTargetMode();
-      } else if (widget.overlay.style.display !== 'none') {
+      } else if (widget.container.style.display !== 'none') {
         widget.hide();
       }
     }
