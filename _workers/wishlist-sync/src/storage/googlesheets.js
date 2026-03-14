@@ -6,13 +6,13 @@
  * - Writing: Google Apps Script web app
  */
 
-const ALL_SOURCES = ['amazon', 'mercadolibre', 'user_list'];
+const ALL_SOURCES = ['amazon', 'user_list'];
 
 /**
  * Read products from Google Sheet
- * @param {string|string[]} sources - Source name(s) to read ('amazon', 'mercadolibre', 'others', or array of them)
+ * @param {string|string[]} sources - Source name(s) to read ('amazon', 'user_list', or array of them)
  * @param {string} sheetId - Google Sheet ID
- * @returns {Promise<Object>} - { amazon: [...], mercadolibre: [...], others: [...] }
+ * @returns {Promise<Object>} - { amazon: [...], user_list: [...] }
  */
 export async function readProducts(sources, sheetId) {
   if (!sheetId) {
@@ -49,19 +49,36 @@ export async function readProducts(sources, sheetId) {
 
       const data = JSON.parse(jsonText);
 
-      // Parse rows (skip header row)
-      const rows = data.table.rows.slice(1);
+      // Google Sheets API already separates headers (in table.cols) from data (in table.rows)
+      // No need to skip first row - it's already data, not a header
+      const rows = data.table.rows;
 
-      result[source] = rows.map(row => {
+      console.log(`[${source}] Total rows from sheet:`, rows.length);
+
+      const products = rows.map((row, index) => {
         const cells = row.c || [];
-        return {
+        const product = {
           date_added: cells[0]?.v || '',
           title: cells[1]?.v || '',
           notes: cells[2]?.v || '',
           image_url: cells[3]?.v || '',
           product_url: cells[4]?.v || ''
         };
-      }).filter(p => p.title); // Filter empty products
+
+        // Log empty titles for debugging
+        if (!product.title) {
+          console.warn(`[${source}] Row ${index + 2} has empty title:`, {
+            date_added: product.date_added,
+            product_url: product.product_url,
+            cells: cells.map(c => c?.v)
+          });
+        }
+
+        return product;
+      });
+
+      // Don't filter out empty titles - return all rows, let the consumer decide
+      result[source] = products;
 
     } catch (error) {
       console.error(`Error reading source ${source}:`, error);
@@ -74,7 +91,7 @@ export async function readProducts(sources, sheetId) {
 
 /**
  * Write products to Google Sheet
- * @param {string} source - Source name ('amazon', 'mercadolibre', 'others')
+ * @param {string} source - Source name ('amazon', 'user_list')
  * @param {Array} products - Array of products to write
  * @param {string} appsScriptUrl - Google Apps Script deployment URL
  * @returns {Promise<Object>} - Response from Apps Script
