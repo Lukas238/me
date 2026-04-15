@@ -60,6 +60,7 @@ permalink: /wishlist/
     height: auto;
     display: block;
     transition: opacity 0.3s ease;
+    margin-botton: none;
   }
 
   .wishlist-item__link:hover .wishlist-item__image-wrapper {
@@ -138,7 +139,6 @@ permalink: /wishlist/
 <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 
 <script>
-  const boardUrl = 'https://trello.com/b/NjOxqya1.json';
   const wishlistWorkerUrl = 'https://wishlist-sync.dassolucas.workers.dev/';
   
   // Function to fetch JSON data
@@ -146,48 +146,6 @@ permalink: /wishlist/
     // Use axios here
     const response = await axios.get(url);
     return response.data;
-  }
-
-  // Function to process Trello data
-  async function processTrelloData() {
-    try {
-      const boardData = await fetchJson(boardUrl);
-      if (boardData.lists && boardData.lists.length > 0) {
-        const firstListId = boardData.lists[0].id;
-        return boardData.cards.filter(card => card.idList === firstListId).map(card => {
-          let description = card.desc || '';
-          let url = '';
-          const urlRegex = /(https?:\/\/[^\s]+)/g;
-          const urlMatch = description.match(urlRegex);
-
-          if (urlMatch && urlMatch.length > 0) {
-            url = urlMatch[0];
-            description = description.replace(url, '').trim();
-          }
-
-          let thumb = null;
-          if (card.attachments && card.attachments.length > 0) {
-            const imageAttachment = card.attachments.find(attachment => attachment.url && attachment.name);
-            if (imageAttachment) {
-              thumb = imageAttachment.url;
-            }
-          }
-
-          return {
-            title: card.name,
-            link: url,
-            img: thumb,
-            description: description
-          };
-        });
-      } else {
-        console.warn("No lists found on the Trello board.");
-        return [];
-      }
-    } catch (error) {
-      console.error('Error fetching or processing Trello data:', error);
-      return [];
-    }
   }
 
   // Function to process wishlist worker data
@@ -207,7 +165,8 @@ permalink: /wishlist/
         title: product.title || '',
         link: product.product_url || '',
         img: product.image_url || '',
-        description: product.notes || ''
+        description: product.notes || '',
+        date_added: product.date_added || null
       }));
     } catch (error) {
       console.error('Error fetching or processing wishlist worker data:', error);
@@ -225,22 +184,29 @@ permalink: /wishlist/
     }
 
     try {
-      const trelloProducts = await processTrelloData();
-      console.log('Trello products:', trelloProducts);
-      
-      const wishlistProducts = await processWishlistWorkerData();
-      console.log('Wishlist worker products:', wishlistProducts);
+      const products = await processWishlistWorkerData();
+      console.log('Total products:', products.length);
 
-      // Merge all product lists (Trello + Amazon + user_list)
-      const combinedProducts = [...trelloProducts, ...wishlistProducts];
-      console.log('Combined products:', combinedProducts.length);
+      // Sort by date_added (newest first)
+      // Products without date_added will be at the end
+      products.sort((a, b) => {
+        if (!a.date_added && !b.date_added) return 0;
+        if (!a.date_added) return 1;
+        if (!b.date_added) return -1;
+        return new Date(b.date_added) - new Date(a.date_added);
+      });
+
+      console.log('Products sorted by date:', products.slice(0, 5).map(p => ({
+        title: p.title?.substring(0, 30),
+        date: p.date_added
+      })));
 
       // Get the template
       const template = document.getElementById('product-card-template').textContent;
 
       // Render the products as HTML
       let cardsListHtml = '';
-      combinedProducts.forEach(product => {
+      products.forEach(product => {
         // Generate image HTML
         let imageHtml = '';
         if (product.img && product.img.trim() !== '') {
