@@ -305,7 +305,6 @@ title: Comment-A-Media
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script>
-const MEDIA_LIST_URL = 'https://sheets.googleapis.com/v4/spreadsheets/1v73TEfD1V4ndy3COZ93_bG9uNj-04AyaT62sVueSTqU/values/MediaList!A4:I?key=AIzaSyDRHquLZE6dgnCqLideV0gFmaEqhjGKzqI';
 // URL ofuscada con Base64
 const ENCODED_SUBMIT_URL = 'aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3bWpyc1g1WGhtYVRrUTEwQkVYWWZIX0NfNzVrZlo1ak4xc25CUjNZWmhLZWxENmVUcUNpczFZVEkxVzBmbE1vZU0vZXhlYw==';
 
@@ -313,26 +312,11 @@ const ENCODED_SUBMIT_URL = 'aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5
 function decodeUrl(encoded) {
   return atob(encoded);
 }
-let mediaList = [];
+let mediaList = {{ site.data.media | jsonify }};
 
 async function loadMediaList() {
   try {
-    const response = await fetch(MEDIA_LIST_URL);
-    if (!response.ok) throw new Error('Failed to fetch');
-    const data = await response.json();
-    if (data.values && data.values.length > 0) {
-      mediaList = data.values.map(row => ({
-        id: row[0] || '',
-        type: row[1] || '',
-        status: row[2] || '',
-        title: row[3] || '',
-        year: row[4] || '',
-        rating: row[5] || '',
-        tags: row[6] || '',
-        tmdb_id: row[7] || '',
-        tmdb_poster_url: row[8] || ''
-      }));
-      
+    if (mediaList.length > 0) {
       // Verificar si hay ID en la URL
       const urlParams = new URLSearchParams(window.location.search);
       const mediaId = urlParams.get('id');

@@ -683,6 +683,14 @@ title: Media Gallery
         <input type="radio" class="btn-check" name="mediaType" id="typeSeries" value="series" autocomplete="off">
         <label class="btn btn-outline-secondary" for="typeSeries">Series</label>
       </div>
+      <div class="btn-group ms-2" role="group" aria-label="Watched filter">
+        <input type="radio" class="btn-check" name="watchedFilter" id="watchedAll" value="all" autocomplete="off" checked>
+        <label class="btn btn-outline-secondary" for="watchedAll">All</label>
+        <input type="radio" class="btn-check" name="watchedFilter" id="watchedYes" value="yes" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="watchedYes">Watched</label>
+        <input type="radio" class="btn-check" name="watchedFilter" id="watchedNo" value="no" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="watchedNo">To watch</label>
+      </div>
     </div>
 
     <div class="filter-active-message" id="filterActiveMessage">
@@ -721,55 +729,13 @@ title: Media Gallery
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-// URLs ofuscadas con Base64
-const ENCODED_MEDIA_LIST_URL = 'aHR0cHM6Ly9zaGVldHMuZ29vZ2xlYXBpcy5jb20vdjQvc3ByZWFkc2hlZXRzLzF2NzNURWZEMVY0bmR5M0NPWjkzX2JHOXVOai0wNEF5YVQ2MnNWdWVTVHFVL3ZhbHVlcy9NZWRpYUxpc3QhQTQ6ST9rZXk9QUl6YVN5RFJIcXVMWkU2ZGduQ3FMaWRlVjBnRm1hRXFoakdLenFJ';
-const ENCODED_FEEDBACK_URL = 'aHR0cHM6Ly9zaGVldHMuZ29vZ2xlYXBpcy5jb20vdjQvc3ByZWFkc2hlZXRzLzF2NzNURWZEMVY0bmR5M0NPWjkzX2JHOXVOai0wNEF5YVQ2MnNWdWVTVHFVL3ZhbHVlcy9GZWVkYmFjayFBMjpHP2tleT1BSXphU3lEUkhxdUxaRTZkZ25DcUxpZGVWMGdGbWFFcWhqR0t6cUk=';
+let mediaList = {{ site.data.media | jsonify }};
+let feedbackList = Object.values({{ site.data.comments.media | jsonify }} || {});
 
-function decodeUrl(encoded) {
-  return atob(encoded);
-}
-
-let mediaList = [];
-let feedbackList = [];
+const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 
 async function loadMediaList() {
   try {
-    // Cargar lista de media
-    const mediaResponse = await fetch(decodeUrl(ENCODED_MEDIA_LIST_URL));
-    if (!mediaResponse.ok) throw new Error('Failed to fetch media list');
-    const mediaData = await mediaResponse.json();
-    
-    // Cargar feedback
-    const feedbackResponse = await fetch(decodeUrl(ENCODED_FEEDBACK_URL));
-    if (!feedbackResponse.ok) throw new Error('Failed to fetch feedback');
-    const feedbackData = await feedbackResponse.json();
-    
-    if (mediaData.values && mediaData.values.length > 0) {
-      mediaList = mediaData.values.map(row => ({
-        id: row[0] || '',
-        type: row[1] || '',
-        status: row[2] || '',
-        title: row[3] || '',
-        year: row[4] || '',
-        rating: row[5] || '',
-        tags: row[6] || '',
-        tmdb_id: row[7] || '',
-        tmdb_poster_url: row[8] || ''
-      }));
-    }
-    
-    if (feedbackData.values && feedbackData.values.length > 0) {
-      feedbackList = feedbackData.values.map(row => ({
-        id: row[0] || '',
-        type: row[1] || '',
-        title: row[2] || '',
-        rating: parseInt(row[3]) || 0,
-        comment: row[4] || '',
-        author: row[5] || '',
-        timestamp: row[6] || ''
-      }));
-    }
-    
     // Verificar si hay filtro en la URL al cargar
     if (window.location.hash && window.location.hash.includes('tag=')) {
       // Esperar un poco y aplicar el filtro
@@ -836,7 +802,7 @@ function updateActiveFilterTag() {
 }
 
 function renderGallery(type) {
-  const filtered = mediaList.filter(item => item.type === type && item.year);
+  const filtered = mediaList.filter(item => item.type === type && item.year && matchesWatched(item));
   
   // Actualizar mensaje de filtro
   updateFilterMessage(type, filtered.length, null);
@@ -930,6 +896,11 @@ $(function() {
     populateFilterTags();
     // Limpiar filtro al cambiar tipo
     window.location.hash = '';
+  });
+
+  // Re-render keeping the active tag filter, if any
+  $('input[name="watchedFilter"]').on('change', function() {
+    applyFilterFromHash();
   });
   
   // Toggle filter section
@@ -1052,6 +1023,9 @@ function checkAndOpenCardFromUrl() {
   // Cambiar al tipo correcto (movie/series)
   $(`input[name="mediaType"][value="${item.type}"]`).prop('checked', true);
   
+  // Un item oculto por el filtro de watched no se podría abrir
+  if (!matchesWatched(item)) $('#watchedAll').prop('checked', true);
+  
   // Renderizar galería si hay filtro de tag
   if (params.has('tag')) {
     const tag = decodeURIComponent(params.get('tag'));
@@ -1095,10 +1069,18 @@ function checkAndOpenCardFromUrl() {
   }, 200);
 }
 
+function matchesWatched(item) {
+  const mode = $('input[name="watchedFilter"]:checked').val();
+  if (mode === 'yes') return item.watched === true;
+  if (mode === 'no') return item.watched !== true;
+  return true;
+}
+
 function filterGalleryByTag(tag, type) {
   const filtered = mediaList.filter(item => 
     item.type === type && 
     item.year &&
+    matchesWatched(item) &&
     item.tags && 
     item.tags.toLowerCase().includes(tag.toLowerCase())
   );
@@ -1190,12 +1172,12 @@ function updateFilterMessage(type, count, tag) {
 
 function buildMediaCard($item, item) {
   // Código duplicado de renderGallery - construir card info
-  const itemComments = feedbackList.filter(f => f.id === item.id);
+  const itemComments = feedbackList.filter(f => f.media_id === item.id);
   const avgRating = itemComments.length > 0 
     ? `⭐ ${Math.round(itemComments.reduce((sum, c) => sum + c.rating, 0) / itemComments.length)}/5 (${itemComments.length} ${itemComments.length === 1 ? 'vote' : 'votes'})`
     : '<span style="color: #adb5bd; font-size: 0.875rem;">No ratings yet</span>';
   
-  const statusBadge = getStatusBadge(item.status);
+  const statusBadge = getStatusBadge(item);
   const tmdbUrl = item.tmdb_id ? `https://www.themoviedb.org/${item.type === 'movie' ? 'movie' : 'tv'}/${item.tmdb_id}` : '';
   const tmdbLink = tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noopener noreferrer" class="tmdb-link" title="View on TMDb"><i class="bi bi-eye"></i></a>` : '';
   const ageRating = item.rating ? `<span class="age-rating">${item.rating}</span>` : '';
@@ -1256,11 +1238,11 @@ function buildMediaCard($item, item) {
         <div class="comment-item">
           <div class="comment-meta">
             <div>
-              <span class="comment-author">${comment.author}</span>${dateSeparator}${date ? `<span class="comment-date">${date}</span>` : ''}
+              <span class="comment-author">${escapeHtml(comment.author)}</span>${dateSeparator}${date ? `<span class="comment-date">${date}</span>` : ''}
             </div>
             <span class="comment-rating">${ratingDisplay}</span>
           </div>
-          <div class="comment-text">${comment.comment}</div>
+          <div class="comment-text">${escapeHtml(comment.comment)}</div>
         </div>
         `;
       }).join('')}
@@ -1342,13 +1324,10 @@ function buildMediaCard($item, item) {
   });
 }
 
-function getStatusBadge(status) {
-  const statusMap = {
-    'watched': '<span class="badge bg-success">Watched</span>',
-    'watching': '<span class="badge bg-primary">Watching</span>',
-    'pending': '<span class="badge bg-secondary">Pending</span>'
-  };
-  return statusMap[status] || '<span class="badge bg-secondary">Yet to see</span>';
+function getStatusBadge(item) {
+  if (item.watched === true) return '<span class="badge bg-success">Watched</span>';
+  if (item.status === 'watching') return '<span class="badge bg-primary">Watching</span>';
+  return '<span class="badge bg-secondary">Yet to see</span>';
 }
 
 $(function() {

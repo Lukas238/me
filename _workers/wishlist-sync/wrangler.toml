@@ -9,6 +9,13 @@ crons = [
   "0 8 1 * *"  # Mensual: día 1 de cada mes a las 8:00 UTC (5:00 AM Argentina)
 ]
 
+# Acceso del dueño con passkey (no son secretos; la clave pública es pública)
+[vars]
+ALLOWED_ORIGINS = "https://me.c238.com.ar"
+PASSKEYS = "[]"  # pegar acá el JSON que muestra /wishlist/#setup
+
 # Variables de entorno (configurar con wrangler secret put)
+# SESSION_SECRET               - string aleatorio largo (firma challenges y sesiones)
+# OWNER_USER / OWNER_PASSWORD  - usuario y clave del login por password
 # GOOGLE_SHEET_ID              - ID del Google Sheet
 # GOOGLE_APPS_SCRIPT_URL       - URL del Apps Script deployment

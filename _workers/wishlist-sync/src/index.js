@@ -8,11 +8,18 @@
  * - GET /:source           → Read products from specific source (amazon, others)
  * - GET /sync              → Scrape all sources and save to storage
  * - GET /sync/:source      → Scrape specific source and save to storage
+ * - GET /admin/challenge   → New passkey challenge
+ * - POST /admin/login      → Verify passkey assertion, return session token
+ * - POST /admin/password   → Verify user/password, return session token
+ * - GET /admin/session     → Verify session token and return sheet URL
  * - POST /                 → Add manual product to "others"
+ *
+ * /sync* and /admin/session require `Authorization: Bearer <session token>` (see auth.js).
  */
 
 import * as amazonScraper from './scrapers/amazon.js';
 import { readProducts, writeProducts } from './storage/index.js';
+import { createChallenge, loginWithPasskey, loginWithPassword, verifyOwner } from './auth.js';
 
 const SCRAPERS = {
   amazon: amazonScraper
@@ -36,10 +43,39 @@ export default {
         return await handleManualProduct(request, env);
       }
 
+      // POST /admin/login → Passkey assertion for session token
+      if (request.method === 'POST' && path === '/admin/login') {
+        const token = await loginWithPasskey(env, await request.json());
+        if (!token) return jsonResponse({ error: 'Unauthorized' }, 401);
+        return jsonResponse({ token });
+      }
+
+      // POST /admin/password → User/password for session token
+      if (request.method === 'POST' && path === '/admin/password') {
+        const token = await loginWithPassword(env, await request.json());
+        if (!token) return jsonResponse({ error: 'Unauthorized' }, 401);
+        return jsonResponse({ token });
+      }
+
       // GET requests
       if (request.method === 'GET') {
-        // GET /sync or /sync/:source → Scrape and write
+        if (path === '/admin/challenge') {
+          return jsonResponse({ challenge: await createChallenge(env) });
+        }
+
+        // GET /admin/session → Owner check + sheet link
+        if (path === '/admin/session') {
+          if (!(await verifyOwner(request, env))) return jsonResponse({ error: 'Unauthorized' }, 401);
+          return jsonResponse({
+            sheetUrl: `https://docs.google.com/spreadsheets/d/${env.GOOGLE_SHEET_ID}/edit`
+          });
+        }
+
+        // GET /sync or /sync/:source → Scrape and write (owner only)
         if (path.startsWith('/sync')) {
+          if (!(await verifyOwner(request, env))) {
+            return jsonResponse({ error: 'Unauthorized' }, 401);
+          }
           const source = path.split('/')[2]; // /sync/amazon → "amazon"
           return await handleSync(source, env);
         }
@@ -250,7 +286,7 @@ function handleCORS() {
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type'
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization'
     }
   });
 }

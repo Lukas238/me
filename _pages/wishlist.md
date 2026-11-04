@@ -4,227 +4,17 @@ title: Wishlist
 permalink: /wishlist/
 ---
 
-<style>
-  /* Masonry grid layout */
-  #wishlist-container__list {
-    column-count: 4;
-    column-gap: 20px;
-    padding: 0;
-  }
-
-  @media (max-width: 1200px) {
-    #wishlist-container__list {
-      column-count: 3;
-    }
-  }
-
-  @media (max-width: 768px) {
-    #wishlist-container__list {
-      column-count: 2;
-      column-gap: 15px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    #wishlist-container__list {
-      column-count: 1;
-    }
-  }
-
-  /* Product card styling */
-  .wishlist-item {
-    break-inside: avoid;
-    margin-bottom: 20px;
-    display: inline-block;
-    width: 100%;
-    border: 1px solid #2a2a2a;
-    position: relative;
-    background: #fff;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  }
-
-  .wishlist-item:hover {
-    border-color: #000;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 4px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  }
-
-  .wishlist-item__link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-  }
-
-  .wishlist-item__image-wrapper {
-    position: relative;
-    overflow: hidden;
-    background: #f5f5f5;
-    border-bottom: 1px solid #2a2a2a;
-    min-height: 150px;
-    max-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .wishlist-item__image-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 48px;
-    height: 48px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ccc"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>');
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-  }
-
-  .wishlist-item__image-wrapper.loaded::before {
-    opacity: 0;
-  }
-
-  .wishlist-item__meta {
-    border-top: 1px solid #2a2a2a;
-    padding: 0;
-    margin: 0;
-  }
-
-  .wishlist-item__meta ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    min-height: 1.4em;
-  }
-
-  .wishlist-item__meta li {
-    padding: 0.4em 0.8em;
-    font-size: 0.7em;
-    color: #999;
-  }
-
-  .wishlist-item__meta li.info-button-container {
-    padding: 0;
-    display: flex;
-    align-items: stretch;
-  }
-
-  .wishlist-item__meta li:not(:first-child) {
-    border-left: 1px solid #2a2a2a;
-  }
-
-  .wishlist-item__meta li.date-added {
-    margin-right: auto;
-  }
-
-  .wishlist-item__info-button {
-    background: none;
-    border: none;
-    padding: 0.4em 0.8em;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease;
-    height: 100%;
-  }
-
-  .wishlist-item__info-button:hover {
-    background: #1a1a1a;
-  }
-
-  .wishlist-item__info-button svg {
-    width: 16px;
-    height: 16px;
-    fill: #999;
-    transition: fill 0.2s ease;
-  }
-
-  .wishlist-item:hover .wishlist-item__info-button svg {
-    fill: #1a1a1a;
-  }
-
-  .wishlist-item__info-button:hover svg {
-    fill: #fff !important;
-  }
-
-  .wishlist-item__image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    display: block;
-    transition: opacity 0.3s ease;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 1;
-    opacity: 0;
-    object-fit: contain;
-  }
-
-  .wishlist-item__image.loaded {
-    opacity: 1;
-  }
-
-  .wishlist-item__link:hover .wishlist-item__image.loaded {
-    opacity: 0.95;
-  }
-
-  .wishlist-item__title {
-    font-size: 0.8em;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0.4em .8em;
-    color: #999;
-    min-height: 1em;
-    font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
-    font-weight: 300;
-    transition: color 0.2s ease;
-  }
-
-  .wishlist-item:hover .wishlist-item__title {
-    color: #1a1a1a;
-  }
-
-  /* Placeholder for items without images */
-  .wishlist-item__no-image {
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f8f9fa;
-    color: #adb5bd;
-    font-size: 0.875rem;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
-    border: 1px solid #e9ecef;
-  }
-
-  /* Loading spinner */
-  #wishlist-container .spinner-wrapper {
-    text-align: center;
-    padding: 60px 0;
-  }
-
-  /* Summary info */
-  .wishlist-summary {
-    font-size: 0.85em;
-    color: #666;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
-  }
-</style>
-
 <h1>Wishlist</h1>
 <p class="lead">My ever-growing list of wants and desires. Browse at your own risk!</p>
 <p class="wishlist-summary" id="wishlist-summary"></p>
+
+<!-- Owner-only controls: hidden until the worker accepts the session token saved by /login/ -->
+<div id="wishlist-admin" class="wishlist-admin" hidden>
+  <a id="wishlist-admin__sheet" href="#" target="_blank" rel="noopener">Open sheet</a>
+  <button type="button" data-sync="amazon">Sync Amazon</button>
+  <button type="button" id="wishlist-admin__lock">Log out</button>
+  <span id="wishlist-admin__status"></span>
+</div>
 
 <div id="wishlist-container">
   <div id="wishlist-container__list">  
@@ -507,4 +297,62 @@ permalink: /wishlist/
 
   // Call the render function
   renderProductList();
+</script>
+
+<script>
+  // Owner-only controls. The session token is saved by /login/.
+  (function () {
+    const TOKEN_KEY = 'wishlistAdminToken';
+
+    if (!localStorage.getItem(TOKEN_KEY)) return;
+
+    const bar = document.getElementById('wishlist-admin');
+    const statusEl = document.getElementById('wishlist-admin__status');
+
+    const authHeaders = () => ({ Authorization: 'Bearer ' + localStorage.getItem(TOKEN_KEY) });
+
+    function lock() {
+      localStorage.removeItem(TOKEN_KEY);
+      bar.hidden = true;
+    }
+
+    // The worker decides whether the token is still valid
+    async function showControls() {
+      try {
+        const res = await axios.get(wishlistWorkerUrl + 'admin/session', { headers: authHeaders() });
+        document.getElementById('wishlist-admin__sheet').href = res.data.sheetUrl;
+        bar.hidden = false;
+      } catch (e) {
+        lock();
+      }
+    }
+
+    async function runSync(source) {
+      const buttons = bar.querySelectorAll('button');
+      buttons.forEach(b => b.disabled = true);
+      statusEl.textContent = 'Syncing...';
+      try {
+        const res = await axios.get(wishlistWorkerUrl + 'sync/' + source, { headers: authHeaders() });
+        statusEl.textContent = (res.data.results || [])
+          .map(r => r.source + ': ' + (r.success ? r.count + ' items' : 'failed'))
+          .join(', ');
+        renderProductList();
+      } catch (e) {
+        if (e.response && e.response.status === 401) {
+          lock();
+        } else {
+          statusEl.textContent = 'Sync failed';
+        }
+      } finally {
+        buttons.forEach(b => b.disabled = false);
+      }
+    }
+
+    bar.querySelectorAll('[data-sync]').forEach(btn => {
+      btn.addEventListener('click', () => runSync(btn.dataset.sync));
+    });
+    document.getElementById('wishlist-admin__lock').addEventListener('click', lock);
+
+    showControls();
+  })();
 </script>
