@@ -4,6 +4,14 @@
     "title": "Test",
     "tags": [],
     "notes": "",
+    "image_url": "",
+    "product_url": "https://dash.cloudflare.com/449ed5cb0f3def6bd64f4d0cd3139a63/workers/kv/namespaces/e2e1a06349bc4f30af02ffd7936adf0b"
+  },
+  {
+    "date_added": "2026-11-05",
+    "title": "Test",
+    "tags": [],
+    "notes": "",
     "image_url": "https://m.media-amazon.com/images/I/71CfNyvr+TL._SY522_.jpg",
     "product_url": "https://me.c238.com.ar/wishlist/"
   },
