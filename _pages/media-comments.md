@@ -285,6 +285,11 @@ title: Comment-A-Media
       <label for="author" class="form-label fw-semibold fs-5">Tu Nombre</label>
       <input type="text" id="author" name="author" class="form-control" placeholder="Anónimo" disabled>
     </div>
+    <div class="mb-4">
+      <label for="familyCode" class="form-label fw-semibold fs-5">Código familiar</label>
+      <input type="password" id="familyCode" name="familyCode" class="form-control" autocomplete="off" required>
+    </div>
+    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;">
     <div class="d-grid">
       <button type="submit" class="btn btn-dark btn-lg" disabled>
         Enviar Comentario
@@ -305,13 +310,9 @@ title: Comment-A-Media
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script>
-// URL ofuscada con Base64
-const ENCODED_SUBMIT_URL = 'aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3bWpyc1g1WGhtYVRrUTEwQkVYWWZIX0NfNzVrZlo1ak4xc25CUjNZWmhLZWxENmVUcUNpczFZVEkxVzBmbE1vZU0vZXhlYw==';
+const COMMENTS_WORKER_URL = 'https://comments-inbox.dassolucas.workers.dev/';
+const CODE_KEY = 'commentsFamilyCode';
 
-
-function decodeUrl(encoded) {
-  return atob(encoded);
-}
 let mediaList = {{ site.data.media | jsonify }};
 
 async function loadMediaList() {
@@ -414,26 +415,27 @@ function showMessage(type, text) {
 
 async function submitForm(formData) {
   try {
-    const submitUrl = decodeUrl(ENCODED_SUBMIT_URL);
-    
-    const response = await fetch(submitUrl, {
+    const response = await fetch(COMMENTS_WORKER_URL, {
       method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
     });
-    
-    return { success: true };
+    if (response.ok) return { success: true };
+
+    const messages = {
+      401: 'Código familiar incorrecto.',
+      429: 'Demasiados intentos. Esperá un minuto y probá de nuevo.'
+    };
+    return { success: false, status: response.status, message: messages[response.status] || 'Error al enviar. Por favor, intentá de nuevo.' };
   } catch (error) {
     console.error('Error en submit:', error);
-    return { success: false, error: error.message };
+    return { success: false, message: 'Error al enviar. Por favor, intentá de nuevo.' };
   }
 }
 
 $(function() {
   // Inicializar campos deshabilitados hasta que se seleccione un título
+  $('#familyCode').val(localStorage.getItem(CODE_KEY) || '');
   $('#starDisplay').addClass('disabled');
   $('#ratingGroup').addClass('disabled');
   $('#commentSection, #authorSection').addClass('disabled');
@@ -474,20 +476,23 @@ $(function() {
     $('#starDisplay').addClass('disabled');
     
     const formData = {
-      type: $('input[name="type"]:checked').val(),
-      title: $('#title option:selected').text(),
-      author: $('#author').val() || 'Anónimo',
-      comment: $('#comment').val() || '',
+      kind: 'media',
+      target: $('#mediaId').val(),
       rating: $('input[name="rating"]:checked').val(),
-      id: $('#mediaId').val()
+      comment: $('#comment').val() || '',
+      author: $('#author').val() || 'Anónimo',
+      code: $('#familyCode').val(),
+      website: $('#website').val()
     };
     
     const result = await submitForm(formData);
     
     $btn.text('Enviar Comentario');
     if (result.success) {
-      showMessage('success','¡Gracias! Tu comentario ha sido guardado.');
+      localStorage.setItem(CODE_KEY, formData.code);
+      showMessage('success','¡Gracias! Tu comentario se envió y aparecerá en la galería en un minuto.');
       this.reset();
+      $('#familyCode').val(localStorage.getItem(CODE_KEY) || '');
       $('.star-item').removeClass('filled');
       $('#starDisplay').addClass('disabled');
       $('#ratingGroup').addClass('disabled');
@@ -503,7 +508,8 @@ $(function() {
       // Rehabilitar los radio buttons de tipo
       $('input[name="type"]').prop('disabled', false);
     } else {
-      showMessage('error','Error al enviar. Por favor, intentá de nuevo.');
+      if (result.status === 401) localStorage.removeItem(CODE_KEY);
+      showMessage('error', result.message);
       // Rehabilitar todo si hubo error
       $('input[name="type"], #title, input[name="rating"], #comment, #author').prop('disabled', false);
       $('#starDisplay').removeClass('disabled');

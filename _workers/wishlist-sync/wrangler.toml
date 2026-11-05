@@ -1,21 +1,13 @@
 name = "wishlist-sync"
 main = "src/index.js"
 compatibility_date = "2024-01-01"
+account_id = "449ed5cb0f3def6bd64f4d0cd3139a63"
 
-# Cron Triggers - Ejecutar sync automáticamente
-# Syntax: https://developers.cloudflare.com/workers/configuration/cron-triggers/
-[triggers]
-crons = [
-  "0 8 1 * *"  # Mensual: día 1 de cada mes a las 8:00 UTC (5:00 AM Argentina)
-]
-
-# Acceso del dueño con passkey (no son secretos; la clave pública es pública)
 [vars]
-ALLOWED_ORIGINS = "https://me.c238.com.ar"
-PASSKEYS = "[]"  # pegar acá el JSON que muestra /wishlist/#setup
+GITHUB_REPO = "Lukas238/me"
+GITHUB_BRANCH = "master"
 
-# Variables de entorno (configurar con wrangler secret put)
-# SESSION_SECRET               - string aleatorio largo (firma challenges y sesiones)
-# OWNER_USER / OWNER_PASSWORD  - usuario y clave del login por password
-# GOOGLE_SHEET_ID              - ID del Google Sheet
-# GOOGLE_APPS_SCRIPT_URL       - URL del Apps Script deployment
+# Config compartida entre workers. Claves usadas acá: wishlist_key, github_token
+[[kv_namespaces]]
+binding = "SITE_CONFIG"
+id = "e2e1a06349bc4f30af02ffd7936adf0b"

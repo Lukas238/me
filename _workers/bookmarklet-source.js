@@ -25,6 +25,8 @@
   }
 
   const WORKER_URL = 'https://wishlist-sync.dassolucas.workers.dev/';
+  // Filled in by scripts/build-bookmarklet.js; never commit the real key
+  const WISHLIST_KEY = '__WISHLIST_KEY__';
 
   // Sites configuration dictionary
   // Add new sites here with CSS selectors or custom functions
@@ -215,6 +217,12 @@
           <div class="input-group">
             <input type="text" id="title" placeholder="Title"/>
             <button class="target-btn" data-field="title"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/></svg></button>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Tags</label>
+          <div class="input-group">
+            <input type="text" id="tags" placeholder="tag1, tag2"/>
           </div>
         </div>
         <div class="form-row">
@@ -552,6 +560,7 @@
     fields: {
       product_url: document.getElementById('product_url'),
       title: document.getElementById('title'),
+      tags: document.getElementById('tags'),
       notes: document.getElementById('notes'),
       image_url: document.getElementById('image_url')
     },
@@ -620,6 +629,7 @@
 
     clearFields() {
       this.fields.title.value = '';
+      this.fields.tags.value = '';
       this.fields.notes.value = '';
       this.fields.image_url.value = '';
       this.updatePreview();
@@ -754,6 +764,7 @@
       const data = {
         title: this.fields.title.value.trim(),
         product_url: this.fields.product_url.value.trim(),
+        tags: this.fields.tags.value.trim(),
         notes: this.fields.notes.value.trim(),
         image_url: this.fields.image_url.value.trim()
       };
@@ -770,7 +781,7 @@
       try {
         const response = await fetch(WORKER_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', 'X-Wishlist-Key': WISHLIST_KEY },
           body: JSON.stringify(data)
         });
 

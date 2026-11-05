@@ -1,23 +1,15 @@
 {
-  "name": "wishlist-workers",
+  "name": "site-workers",
   "version": "1.0.0",
-  "description": "Cloudflare Workers for wishlist management",
+  "description": "Cloudflare Workers for the site: wishlist and comments inboxes",
   "private": true,
   "scripts": {
-    "dev:amazon": "cd amazon-scraper && wrangler dev",
-    "dev:mercadolibre": "cd mercadolibre-scraper && wrangler dev",
-    "dev:sheets": "cd sheets-proxy && wrangler dev",
-    "dev:sync": "cd sync-wishlist && wrangler dev",
-    "deploy:amazon": "cd amazon-scraper && wrangler deploy",
-    "deploy:mercadolibre": "cd mercadolibre-scraper && wrangler deploy",
-    "deploy:sheets": "cd sheets-proxy && wrangler deploy",
-    "deploy:sync": "cd sync-wishlist && wrangler deploy",
-    "deploy:all": "npm run deploy:amazon && npm run deploy:mercadolibre && npm run deploy:sheets && npm run deploy:sync"
+    "dev:wishlist": "cd wishlist-sync && wrangler dev",
+    "dev:comments": "cd comments-worker && wrangler dev",
+    "deploy:wishlist": "cd wishlist-sync && wrangler deploy",
+    "deploy:comments": "cd comments-worker && wrangler deploy"
   },
   "devDependencies": {
-    "wrangler": "^3.0.0"
-  },
-  "dependencies": {
-    "cheerio": "^1.2.0"
+    "wrangler": "^4.158.0"
   }
 }

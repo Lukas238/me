@@ -1,0 +1,29 @@
+name = "comments-inbox"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+account_id = "449ed5cb0f3def6bd64f4d0cd3139a63"
+
+[vars]
+GITHUB_REPO = "Lukas238/me"
+GITHUB_BRANCH = "master"
+ALLOWED_ORIGINS = "https://me.c238.com.ar,http://localhost:4000,http://127.0.0.1:4000"
+
+# Rate limiting (needs wrangler >= 4.36). Limits are approximate and per Cloudflare location.
+[[ratelimits]]
+name = "IP_LIMITER"
+namespace_id = "2001"
+  [ratelimits.simple]
+  limit = 10
+  period = 60
+
+[[ratelimits]]
+name = "GLOBAL_LIMITER"
+namespace_id = "2002"
+  [ratelimits.simple]
+  limit = 30
+  period = 60
+
+# Config compartida entre workers. Claves: github_token, family_code
+[[kv_namespaces]]
+binding = "SITE_CONFIG"
+id = "e2e1a06349bc4f30af02ffd7936adf0b"
