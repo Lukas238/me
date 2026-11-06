@@ -8,7 +8,29 @@ permalink: /wishlist/
 <p class="lead">My ever-growing list of wants and desires. Browse at your own risk!</p>
 <p class="wishlist-summary" id="wishlist-summary"></p>
 
-<div id="wishlist-tags" class="wishlist-tags" hidden></div>
+<div class="gallery-controls">
+  <div class="gallery-control">
+    <span class="gallery-control__label">Sort by</span>
+    <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
+      <input type="radio" class="btn-check" name="wishlistSort" id="wishlistSortAdded" value="added" autocomplete="off" checked>
+      <label class="btn btn-outline-secondary" for="wishlistSortAdded">Added</label>
+      <input type="radio" class="btn-check" name="wishlistSort" id="wishlistSortTitle" value="title" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="wishlistSortTitle">Title</label>
+    </div>
+  </div>
+  <div class="gallery-control">
+    <span class="gallery-control__label">Tags</span>
+    <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#wishlist-tags-panel" aria-expanded="false" aria-controls="wishlist-tags-panel">
+      Browse <i class="bi bi-chevron-down"></i>
+    </button>
+  </div>
+</div>
+
+<div id="active-filters"></div>
+
+<div class="collapse" id="wishlist-tags-panel">
+  <div id="wishlist-tags"></div>
+</div>
 
 <div id="wishlist-container">
   <div id="wishlist-container__list">  
@@ -39,7 +61,7 @@ permalink: /wishlist/
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
 
 <script>
   // Items live in _data/wishlist.json, embedded at build time
@@ -47,7 +69,6 @@ permalink: /wishlist/
 
   const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const safeUrl = u => /^https?:\/\//i.test(u || '') ? escapeHtml(u) : '';
-  const tagKey = tag => tag.toLowerCase();
 
   // YYYY-MM-DD is read as local time so the day doesn't shift with the timezone
   function parseDate(dateString) {
@@ -75,48 +96,17 @@ permalink: /wishlist/
       }));
   }
 
-  // View state lives in the URL hash so it can be shared: #tag=garden&group=1
-  function readState() {
-    const params = new URLSearchParams(location.hash.slice(1));
-    return { tag: params.get('tag') || '', group: params.get('group') === '1' };
-  }
+  // Sort order and the tag filter both live in the URL hash: #tag=garden,tools&sort=title
+  const readSort = () => GalleryState.get('sort') === 'title' ? 'title' : 'added';
 
-  function stateHref(state) {
-    const params = new URLSearchParams();
-    if (state.tag) params.set('tag', state.tag);
-    if (state.group) params.set('group', '1');
-    return '#' + params.toString();
-  }
+  const tagFilter = GalleryTags.create({
+    mount: '#wishlist-tags',
+    chipsMount: '#active-filters',
+    getItems: () => processWishlistData().map(product => product.tags),
+    onChange: () => renderProductList()
+  });
 
-  // Unique tags (case-insensitive) with counts: most used first, then alphabetical
-  function buildTagIndex(products) {
-    const index = new Map();
-    products.forEach(product => {
-      new Set(product.tags.map(tagKey)).forEach(key => {
-        const name = product.tags.find(t => tagKey(t) === key);
-        const entry = index.get(key) || { key, name, count: 0 };
-        entry.count++;
-        index.set(key, entry);
-      });
-    });
-    return [...index.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
-  }
-
-  function renderTagBar(tagIndex, total, state) {
-    const bar = document.getElementById('wishlist-tags');
-    bar.hidden = tagIndex.length === 0;
-    if (tagIndex.length === 0) return;
-
-    const chip = (label, count, href, active, extraClass = '') =>
-      `<a href="${href}" class="wishlist-tag ${extraClass} ${active ? 'is-active' : ''}">${escapeHtml(label)}${count === null ? '' : ` <span>${count}</span>`}</a>`;
-
-    bar.innerHTML =
-      chip('All', total, stateHref({ tag: '', group: state.group }), state.tag === '') +
-      tagIndex.map(t => chip(t.name, t.count, stateHref({ tag: t.name, group: state.group }), tagKey(state.tag) === t.key)).join('') +
-      chip('Group by tag', null, stateHref({ tag: state.tag, group: !state.group }), state.group, 'wishlist-tag--toggle');
-  }
-
-  function buildCard(product, template, state) {
+  function buildCard(product, template) {
     const hasNotes = product.description && product.description.trim() !== '';
 
     const imageHtml = product.img
@@ -134,7 +124,7 @@ permalink: /wishlist/
     }
 
     const tagsHtml = product.tags.length
-      ? `<div class="wishlist-item__tags">${product.tags.map(t => `<a href="${stateHref({ tag: t, group: state.group })}" class="wishlist-item__tag">${escapeHtml(t)}</a>`).join('')}</div>`
+      ? `<div class="wishlist-item__tags">${product.tags.map(t => `<button type="button" class="wishlist-item__tag" data-add-tag="${escapeHtml(t)}">${escapeHtml(t)}</button>`).join('')}</div>`
       : '';
 
     // Replacement callbacks avoid "$&"-style patterns in titles being interpreted
@@ -146,20 +136,6 @@ permalink: /wishlist/
       .replace(/@@link@@/g, () => product.link || '#');
   }
 
-  // Groups to render: one per tag (an item shows under each of its tags), plus untagged
-  function buildGroups(visible, tagIndex, state) {
-    if (state.tag) {
-      return [{ name: state.tag, items: visible }];
-    }
-    const groups = tagIndex.map(t => ({
-      name: t.name,
-      items: visible.filter(p => p.tags.some(x => tagKey(x) === t.key))
-    }));
-    const untagged = visible.filter(p => p.tags.length === 0);
-    if (untagged.length) groups.push({ name: 'Untagged', items: untagged });
-    return groups;
-  }
-
   function renderProductList() {
     const wishlistContainer = document.getElementById('wishlist-container__list');
     if (!wishlistContainer) {
@@ -169,10 +145,11 @@ permalink: /wishlist/
 
     try {
       const products = processWishlistData();
-      const state = readState();
+      const sort = readSort();
 
-      // Newest first; items without a date go last
+      // Added: newest first, items without a date last. Title: alphabetical.
       products.sort((a, b) => {
+        if (sort === 'title') return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
         const dateA = parseDate(a.date_added);
         const dateB = parseDate(b.date_added);
         if (!dateA && !dateB) return 0;
@@ -181,33 +158,24 @@ permalink: /wishlist/
         return dateB - dateA;
       });
 
-      const tagIndex = buildTagIndex(products);
-      renderTagBar(tagIndex, products.length, state);
-
-      const visible = state.tag
-        ? products.filter(p => p.tags.some(t => tagKey(t) === tagKey(state.tag)))
-        : products;
+      const visible = products.filter(p => tagFilter.matches(p.tags));
 
       const summaryEl = document.getElementById('wishlist-summary');
       if (summaryEl) {
         const lastUpdate = products.find(p => p.date_added)?.date_added;
         let summaryText = `${visible.length} item${visible.length !== 1 ? 's' : ''}`;
-        if (state.tag) summaryText += ` tagged "${state.tag}"`;
+        if (tagFilter.selected.length) summaryText += ` tagged "${tagFilter.selected.join(' + ')}"`;
         const formattedDate = lastUpdate && formatDate(lastUpdate);
         if (formattedDate) summaryText += ` - Last update: ${formattedDate}`;
         summaryEl.textContent = summaryText;
       }
 
       const template = document.getElementById('product-card-template').textContent;
-      const cards = items => items.map(p => buildCard(p, template, state)).join('');
+      const cards = items => items.map(p => buildCard(p, template)).join('');
 
-      wishlistContainer.classList.toggle('is-grouped', state.group);
+      document.querySelector(`input[name="wishlistSort"][value="${sort}"]`).checked = true;
       if (visible.length === 0) {
         wishlistContainer.innerHTML = '<p>No items found.</p>';
-      } else if (state.group) {
-        wishlistContainer.innerHTML = buildGroups(visible, tagIndex, state).map(group =>
-          `<section class="wishlist-group"><h2 class="wishlist-group__title">${escapeHtml(group.name)} <small>${group.items.length}</small></h2><div class="wishlist-list">${cards(group.items)}</div></section>`
-        ).join('');
       } else {
         wishlistContainer.innerHTML = cards(visible);
       }
@@ -251,6 +219,22 @@ permalink: /wishlist/
     }
   }
 
-  window.addEventListener('hashchange', renderProductList);
+  document.querySelectorAll('input[name="wishlistSort"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      GalleryState.set('sort', radio.value === 'added' ? null : radio.value);
+      renderProductList();
+    });
+  });
+
+  // A tag on a card adds itself to the filter
+  document.getElementById('wishlist-container').addEventListener('click', (e) => {
+    const tag = e.target.closest('[data-add-tag]');
+    if (tag) tagFilter.select(tag.dataset.addTag);
+  });
+
+  window.addEventListener('hashchange', () => {
+    tagFilter.syncFromHash();
+    renderProductList();
+  });
   renderProductList();
 </script>

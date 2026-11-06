@@ -424,6 +424,9 @@ async function main() {
     // Convertir "undated" a -1 para el campo year (para ordenamiento)
     merged.year = group.year === "undated" ? -1 : group.year;
 
+    // Fecha en que se agregó la obra (se conserva la de los items existentes)
+    if (!merged.added) merged.added = new Date().toLocaleDateString("en-CA");
+
     // Detectar sufijo extra (variante/serigrafia) desde groupKey
     let extraPartForId = null;
     const gkParts = groupKey.split("__");

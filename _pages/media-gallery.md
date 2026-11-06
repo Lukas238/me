@@ -416,105 +416,9 @@ title: Media Gallery
     margin-left: 10px;
   }
 
-  .media-type-toggle {
-    margin-bottom: 0;
-  }
-
-  .media-type-toggle .btn-check:checked + .btn {
-    background-color: #495057;
-    border-color: #495057;
-    color: #fff;
-  }
-
   #navbar-years a.active {
     font-weight: bold;
     text-decoration: none;
-  }
-
-  .filter-toggle-btn {
-    background-color: transparent;
-    border: none;
-    color: #6c757d;
-    padding: 0;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-decoration: underline;
-  }
-
-  .filter-toggle-btn:hover {
-    color: #495057;
-    text-decoration: underline;
-  }
-
-  .filter-section {
-    background-color: transparent;
-    border-top: 1px solid #e9ecef;
-    border-bottom: 1px solid #e9ecef;
-    border-radius: 0;
-    padding: 12px 0;
-    margin-bottom: 20px;
-    display: none;
-  }
-
-  .filter-section.show {
-    display: block;
-  }
-
-  .filter-tags-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  .filter-tag-btn {
-    padding: 2px 8px;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 3px;
-    font-size: 0.7rem;
-    color: #6c757d;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-
-  .filter-tag-btn:hover {
-    background-color: #e9ecef;
-    color: #495057;
-    border-color: #adb5bd;
-  }
-
-  .filter-tag-btn.active {
-    background-color: #495057;
-    color: #fff !important;
-    border-color: #495057;
-  }
-
-  .filter-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .filter-header h6 {
-    margin: 0;
-    font-size: 0.7rem;
-    color: #adb5bd;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: 600;
-  }
-
-  .filter-header a {
-    font-size: 0.7rem;
-    color: #adb5bd;
-    text-decoration: none;
-  }
-
-  .filter-header a:hover {
-    color: #6c757d;
-    text-decoration: underline;
   }
 
   .filter-active-message {
@@ -535,30 +439,6 @@ title: Media Gallery
   .filter-active-message .icon {
     margin-right: 6px;
     color: #adb5bd;
-  }
-
-  .filter-controls {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .filter-separator {
-    color: #dee2e6;
-    font-size: 0.8rem;
-  }
-
-  .clear-filter-btn {
-    font-size: 0.8rem;
-    color: #6c757d;
-    text-decoration: none;
-    padding: 0;
-    transition: all 0.2s ease;
-  }
-
-  .clear-filter-btn:hover {
-    color: #495057;
-    text-decoration: underline;
   }
 
   /* Pantalla completa con 1 columna - cuando el ancho es pequeño O el alto es menor a 525px */
@@ -670,44 +550,60 @@ title: Media Gallery
 </style>
 
 <h1 class="mb-2">Media Gallery</h1>
-<p class="mb-4">Our collection of movies and series to watch together, organized by year.</p>
+<p class="mb-4">Our collection of movies and series to watch together, organized your way.</p>
 
 <div class="media-overlay" id="mediaOverlay"></div>
 
 <div class="container-xxl d-flex">
   <div class="flex-grow-1">
-    <div class="text-center media-type-toggle">
-      <div class="btn-group" role="group" aria-label="Media type selector">
-        <input type="radio" class="btn-check" name="mediaType" id="typeMovies" value="movie" autocomplete="off" checked>
-        <label class="btn btn-outline-secondary" for="typeMovies">Movies</label>
-        <input type="radio" class="btn-check" name="mediaType" id="typeSeries" value="series" autocomplete="off">
-        <label class="btn btn-outline-secondary" for="typeSeries">Series</label>
+    <div class="gallery-controls">
+      <div class="gallery-control">
+        <span class="gallery-control__label">Type</span>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Media type selector">
+          <input type="radio" class="btn-check" name="mediaType" id="typeMovies" value="movie" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="typeMovies">Movies</label>
+          <input type="radio" class="btn-check" name="mediaType" id="typeSeries" value="series" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="typeSeries">Series</label>
+        </div>
       </div>
-      <div class="btn-group ms-2" role="group" aria-label="Watched filter">
-        <input type="radio" class="btn-check" name="watchedFilter" id="watchedAll" value="all" autocomplete="off" checked>
-        <label class="btn btn-outline-secondary" for="watchedAll">All</label>
-        <input type="radio" class="btn-check" name="watchedFilter" id="watchedYes" value="yes" autocomplete="off">
-        <label class="btn btn-outline-secondary" for="watchedYes">Watched</label>
-        <input type="radio" class="btn-check" name="watchedFilter" id="watchedNo" value="no" autocomplete="off">
-        <label class="btn btn-outline-secondary" for="watchedNo">To watch</label>
+      <div class="gallery-control">
+        <span class="gallery-control__label">Show</span>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Watched filter">
+          <input type="radio" class="btn-check" name="watchedFilter" id="watchedAll" value="all" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="watchedAll">All</label>
+          <input type="radio" class="btn-check" name="watchedFilter" id="watchedYes" value="yes" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="watchedYes">Watched</label>
+          <input type="radio" class="btn-check" name="watchedFilter" id="watchedNo" value="no" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="watchedNo">To watch</label>
+        </div>
       </div>
+      <div class="gallery-control">
+        <span class="gallery-control__label">Sort by</span>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
+          <input type="radio" class="btn-check" name="sortBy" id="sortYear" value="year" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="sortYear">Year</label>
+          <input type="radio" class="btn-check" name="sortBy" id="sortTitle" value="title" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="sortTitle">Title</label>
+        </div>
+      </div>
+      <div class="gallery-control">
+        <span class="gallery-control__label">Tags</span>
+        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#tags-panel" aria-expanded="false" aria-controls="tags-panel">
+          Browse <i class="bi bi-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="active-filters"></div>
+
+    <div class="collapse" id="tags-panel">
+      <div id="media-tags"></div>
     </div>
 
     <div class="filter-active-message" id="filterActiveMessage">
       <div class="message-text">
         <span class="icon">›</span>
         <span id="filterMessageText">Loading...</span>
-      </div>
-      <div class="filter-controls">
-        <a href="#" class="clear-filter-btn" id="clearFilterBtnTop" style="display: none;">Clear</a>
-        <span class="filter-separator" id="filterSeparator" style="display: none;">|</span>
-        <a href="#" class="filter-toggle-btn" id="filterToggleBtn">Filter by Tags</a>
-      </div>
-    </div>
-
-    <div class="filter-section" id="filterSection">
-      <div class="filter-tags-list" id="filterTagsList">
-        <!-- Tags will be populated here -->
       </div>
     </div>
 
@@ -724,9 +620,13 @@ title: Media Gallery
   </aside>
 </div>
 
-<!-- JS: Bootstrap, jQuery -->
+<p class="text-center text-muted small mt-5">
+  Movie and series information and posters come from <a href="https://www.themoviedb.org" target="_blank" rel="noopener noreferrer">The Movie Database (TMDB)</a>. This site uses the TMDB API but is not endorsed or certified by TMDB.
+</p>
+
+<!-- JS: jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
 
 <script>
 let mediaList = {{ site.data.media | jsonify }};
@@ -734,150 +634,120 @@ let feedbackList = Object.values({{ site.data.comments.media | jsonify }} || {})
 
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 
-async function loadMediaList() {
-  try {
-    // Verificar si hay filtro en la URL al cargar
-    if (window.location.hash && window.location.hash.includes('tag=')) {
-      // Esperar un poco y aplicar el filtro
-      setTimeout(() => {
-        applyFilterFromHash();
-        updateActiveFilterTag();
-      }, 50);
-    } else {
-      // Sin filtro, mostrar galería normal
-      renderGallery('movie');
-      populateFilterTags();
-    }
-    
-    // Verificar si hay un ID en la URL para abrir automáticamente
-    checkAndOpenCardFromUrl();
-  } catch (error) {
-    console.error('Error loading data:', error);
-    $('#mediaLoading').text('Error loading data.');
-  }
+const currentType = () => $('input[name="mediaType"]:checked').val();
+const tagsOf = item => item.tags ? item.tags.split(';').map(t => t.trim()).filter(Boolean) : [];
+const hashParams = () => new URLSearchParams(location.hash.includes('=') ? location.hash.slice(1) : '');
+
+// Items that the Type / Show / Group controls let through, before any tag is applied
+function itemsInScope() {
+  const mode = $('input[name="sortBy"]:checked').val() || 'year';
+  return mediaList.filter(item => item.type === currentType() && (mode !== 'year' || item.year) && matchesWatched(item));
 }
 
-function populateFilterTags() {
-  const currentType = $('input[name="mediaType"]:checked').val();
-  const filtered = mediaList.filter(item => item.type === currentType);
-  
-  // Obtener todos los tags únicos
-  const tagsSet = new Set();
-  filtered.forEach(item => {
-    if (item.tags) {
-      item.tags.split(';').forEach(tag => {
-        const trimmed = tag.trim();
-        if (trimmed) tagsSet.add(trimmed);
-      });
-    }
-  });
-  
-  const tags = Array.from(tagsSet).sort();
-  
-  const $tagsList = $('#filterTagsList');
-  $tagsList.empty();
-  
-  if (tags.length === 0) {
-    $tagsList.html('<p class="text-muted mb-0" style="font-size: 0.75rem;">No tags available</p>');
-    return;
-  }
-  
-  tags.forEach(tag => {
-    const $btn = $(`<a href="#tag=${encodeURIComponent(tag)}&type=${currentType}" class="filter-tag-btn" data-tag="${tag}" data-type="${currentType}">${tag}</a>`);
-    $tagsList.append($btn);
-  });
-  
-  // Marcar tag activo si hay filtro
-  updateActiveFilterTag();
+// Shared tag filter (assets/js/gallery-tags.js); created once the page is ready
+let tagFilter;
+
+// Type / Show / Group changed: the tag counts follow, then the list is redrawn
+function renderGallery() {
+  tagFilter.refresh();
+  renderMedia();
 }
 
-function updateActiveFilterTag() {
-  $('.filter-tag-btn').removeClass('active');
-  const hash = window.location.hash.substring(1);
-  if (hash.startsWith('tag=')) {
-    const params = new URLSearchParams(hash);
-    const tag = decodeURIComponent(params.get('tag'));
-    $(`.filter-tag-btn[data-tag="${tag}"]`).addClass('active');
-  }
+function applyTypeFromHash() {
+  const type = hashParams().get('type') === 'series' ? 'series' : 'movie';
+  $(`input[name="mediaType"][value="${type}"]`).prop('checked', true);
 }
 
-function renderGallery(type) {
-  const filtered = mediaList.filter(item => item.type === type && item.year && matchesWatched(item));
-  
-  // Actualizar mensaje de filtro
-  updateFilterMessage(type, filtered.length, null);
-  
-  // Agrupar por año
-  const byYear = {};
-  filtered.forEach(item => {
-    if (!byYear[item.year]) {
-      byYear[item.year] = [];
-    }
-    byYear[item.year].push(item);
+function closeExpandedCard() {
+  $('.media-item.expanded').remove();
+  $('#mediaOverlay').removeClass('active');
+  $('body').removeClass('modal-open');
+}
+
+// Year sort: each item belongs to exactly one group (its year). Title sort: a single list.
+function buildGroups(items, mode) {
+  if (mode === 'year') {
+    const byYear = {};
+    items.forEach(item => (byYear[item.year] = byYear[item.year] || []).push(item));
+    return Object.keys(byYear).sort((a, b) => b - a).map(year => ({ id: `year-${year}`, label: year, items: byYear[year] }));
+  }
+
+  return [{ id: 'group-all', label: null, items }];
+}
+
+function buildItemElement(item) {
+  const posterUrl = item.tmdb_poster_url
+    ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}`
+    : '';
+
+  const $item = $('<div class="media-item"></div>');
+  const $poster = $('<div class="poster"></div>');
+
+  if (posterUrl) {
+    $poster.append(`<img src="${posterUrl}" alt="${item.title}" loading="lazy">`);
+  }
+
+  $item.append($poster);
+
+  // Agregar rating de edad si existe
+  const ageRatingText = item.rating ? `<span style="color: #dee2e6; margin: 0 4px;">•</span><span class="age-rating-inline">${item.rating}</span>` : '';
+  $item.append(`<div class="title">${item.title}${ageRatingText}</div>`);
+
+  // Usar helper para construir el card
+  buildMediaCard($item, item);
+  return $item;
+}
+
+function renderMedia() {
+  const type = currentType();
+  const mode = $('input[name="sortBy"]:checked').val() || 'year';
+  const typeLabel = type === 'movie' ? 'movies' : 'series';
+  const selectedTags = tagFilter.selected;
+
+  const filtered = itemsInScope().filter(item => tagFilter.matches(tagsOf(item)));
+
+  updateFilterMessage(type, filtered.length, selectedTags);
+
+  const groups = buildGroups(filtered, mode);
+
+  // Year navigation (hidden when there are no groups)
+  $('#navbar-years').toggle(mode === 'year' && groups.length > 0);
+  const $nav = $('#yearsList');
+  $nav.empty();
+  groups.filter(group => group.label !== null).forEach(group => {
+    $nav.append(`<li class="ps-0"><a href="#${group.id}" data-target="${group.id}">${escapeHtml(group.label)}</a></li>`);
   });
-  
-  // Ordenar años descendente
-  const years = Object.keys(byYear).sort((a, b) => b - a);
-  
-  // Actualizar sidebar de años
-  const $yearsList = $('#yearsList');
-  $yearsList.empty();
-  years.forEach(year => {
-    $yearsList.append(`<li class="ps-0"><a href="#year-${year}">${year}</a></li>`);
-  });
-  
+
   $('#mediaLoading').hide();
   const $container = $('#mediaGallery');
   $container.empty();
-  
-  if (years.length === 0) {
-    $container.html('<p class="text-muted text-center py-5">No content available.</p>');
-    return;
+
+  if (filtered.length === 0) {
+    $container.html(selectedTags.length
+      ? `<p class="text-muted text-center py-5">No ${typeLabel} found tagged "${escapeHtml(selectedTags.join(' + '))}".</p>`
+      : '<p class="text-muted text-center py-5">No content available.</p>');
   }
-  
-  years.forEach(year => {
-    const items = byYear[year];
-    items.sort((a, b) => a.title.localeCompare(b.title));
-    
-    const $yearDiv = $('<div class="year-gallery"></div>').attr('id', `year-${year}`);
-    const count = items.length;
-    const itemLabel = type === 'movie' ? (count > 1 ? 'movies' : 'movie') : (count > 1 ? 'series' : 'series');
-    const $header = $(`<header><h2 class="year-gallery-title fw-light d-inline">${year}</h2><span class="year-count">${count} ${itemLabel}</span></header>`);
-    $yearDiv.append($header);
-    
-    items.forEach(item => {
-      const posterUrl = item.tmdb_poster_url 
-        ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}` 
-        : '';
-      
-      const $item = $('<div class="media-item"></div>');
-      const $poster = $('<div class="poster"></div>');
-      
-      if (posterUrl) {
-        $poster.append(`<img src="${posterUrl}" alt="${item.title}" loading="lazy">`);
-      }
-      
-      $item.append($poster);
-      
-      // Agregar rating de edad si existe
-      const ageRatingText = item.rating ? `<span style="color: #dee2e6; margin: 0 4px;">•</span><span class="age-rating-inline">${item.rating}</span>` : '';
-      $item.append(`<div class="title">${item.title}${ageRatingText}</div>`);
-      
-      // Usar helper para construir el card
-      buildMediaCard($item, item);
-      
-      $yearDiv.append($item);
-    });
-    
-    $container.append($yearDiv);
+
+  groups.forEach(group => {
+    const items = group.items.slice().sort((a, b) => a.title.localeCompare(b.title));
+
+    const $group = $('<div class="year-gallery"></div>').attr('id', group.id);
+    if (group.label !== null) {
+      const count = items.length;
+      const itemLabel = type === 'movie' ? (count > 1 ? 'movies' : 'movie') : 'series';
+      $group.append(`<header><h2 class="year-gallery-title fw-light d-inline">${escapeHtml(group.label)}</h2><span class="year-count">${count} ${itemLabel}</span></header>`);
+    }
+
+    items.forEach(item => $group.append(buildItemElement(item)));
+    $container.append($group);
   });
-  
+
   // Click en overlay para cerrar
   $('#mediaOverlay').off('click').on('click', function() {
     $('.media-item.expanded').remove();
     $(this).removeClass('active');
     $('body').removeClass('modal-open');
-    
+
     // Quitar ID de la URL
     const currentHash = window.location.hash.substring(1);
     const params = new URLSearchParams(currentHash);
@@ -888,121 +758,63 @@ function renderGallery(type) {
 }
 
 $(function() {
-  loadMediaList();
-  
-  $('input[name="mediaType"]').on('change', function() {
-    const type = $(this).val();
-    renderGallery(type);
-    populateFilterTags();
-    // Limpiar filtro al cambiar tipo
-    window.location.hash = '';
+  const savedGroup = localStorage.getItem('mediaSortBy');
+  if (savedGroup) $(`input[name="sortBy"][value="${savedGroup}"]`).prop('checked', true);
+  applyTypeFromHash();
+
+  tagFilter = GalleryTags.create({
+    mount: '#media-tags',
+    chipsMount: '#active-filters',
+    getItems: () => itemsInScope().map(tagsOf),
+    onChange: () => renderMedia()
   });
 
-  // Re-render keeping the active tag filter, if any
-  $('input[name="watchedFilter"]').on('change', function() {
-    applyFilterFromHash();
+  renderMedia();
+  checkAndOpenCardFromUrl();
+
+  $('input[name="mediaType"]').on('change', function() {
+    GalleryState.set('type', $(this).val() === 'movie' ? null : $(this).val());
+    renderGallery();
   });
-  
-  // Toggle filter section
-  $('#filterToggleBtn').on('click', function(e) {
+
+  $('input[name="watchedFilter"]').on('change', renderGallery);
+
+  $('input[name="sortBy"]').on('change', function() {
+    localStorage.setItem('mediaSortBy', $(this).val());
+    renderGallery();
+  });
+
+  // Sidebar links scroll in place so an active tag filter stays in the URL
+  $(document).on('click', '#yearsList a', function(e) {
     e.preventDefault();
-    $('#filterSection').toggleClass('show');
+    document.getElementById($(this).data('target'))?.scrollIntoView({ behavior: 'smooth' });
   });
-  
-  // Clear filter
-  $('#clearFilterBtnTop').on('click', function(e) {
-    e.preventDefault();
-    window.location.hash = '';
-    $('.filter-tag-btn').removeClass('active');
-    $('#filterSection').removeClass('show');
-  });
-  
-  // Click en filter tags
-  $(document).on('click', '.filter-tag-btn', function(e) {
-    e.preventDefault();
-    const tag = $(this).data('tag');
-    const type = $(this).data('type');
-    
-    // Si ya está activo, limpiar filtro
-    if ($(this).hasClass('active')) {
-      window.location.hash = '';
-      return;
-    }
-    
-    // Cerrar card expandida si está abierta
-    $('.media-item.expanded').remove();
-    $('#mediaOverlay').removeClass('active');
-    $('body').removeClass('modal-open');
-    
-    // Actualizar URL
-    window.location.hash = `tag=${encodeURIComponent(tag)}&type=${type}`;
-    
-    // Filtrar galería
-    filterGalleryByTag(tag, type);
-    updateActiveFilterTag();
-  });
-  
-  // Manejar click en tags dentro de cards
+
+  // A tag on an open card adds itself to the filter
   $(document).on('click', '.tag-item', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    const tag = $(this).data('tag');
-    const type = $(this).data('type');
-    
-    // Cerrar card expandida si está abierta
-    $('.media-item.expanded').remove();
-    $('#mediaOverlay').removeClass('active');
-    $('body').removeClass('modal-open');
-    
-    // Actualizar URL
-    window.location.hash = `tag=${encodeURIComponent(tag)}&type=${type}`;
-    
-    // Filtrar galería
-    filterGalleryByTag(tag, type);
-    updateActiveFilterTag();
+    closeExpandedCard();
+    GalleryState.set('id', null);
+    tagFilter.select($(this).attr('data-tag'));
   });
-  
-  // Manejar cambios en el hash (navegación atrás/adelante)
+
+  // Back / forward
   $(window).on('hashchange', function() {
-    const hash = window.location.hash.substring(1);
-    const params = new URLSearchParams(hash);
-    
-    // Si hay un ID pero no hay card abierta, abrir
+    const params = hashParams();
+
+    // An id but no open card: open it. No id but an open card: close it.
     if (params.has('id') && !$('.media-item.expanded').length) {
       checkAndOpenCardFromUrl();
+      return;
     }
-    // Si no hay ID pero hay card abierta, cerrar
-    else if (!params.has('id') && $('.media-item.expanded').length) {
-      $('.media-item.expanded').remove();
-      $('#mediaOverlay').removeClass('active');
-      $('body').removeClass('modal-open');
-    }
-    
-    applyFilterFromHash();
-    updateActiveFilterTag();
+    if (!params.has('id')) closeExpandedCard();
+
+    applyTypeFromHash();
+    tagFilter.syncFromHash();
+    renderGallery();
   });
 });
-
-function applyFilterFromHash() {
-  const hash = window.location.hash.substring(1);
-  if (hash.startsWith('tag=')) {
-    const params = new URLSearchParams(hash);
-    const tag = decodeURIComponent(params.get('tag'));
-    const type = params.get('type');
-    
-    if (tag && type) {
-      // Cambiar toggle si es necesario
-      $(`input[name="mediaType"][value="${type}"]`).prop('checked', true);
-      filterGalleryByTag(tag, type);
-      populateFilterTags();
-    }
-  } else {
-    // Sin filtro, mostrar todo
-    const currentType = $('input[name="mediaType"]:checked').val();
-    renderGallery(currentType);
-    populateFilterTags();
-  }
-}
 
 function checkAndOpenCardFromUrl() {
   const hash = window.location.hash.substring(1);
@@ -1022,18 +834,14 @@ function checkAndOpenCardFromUrl() {
   
   // Cambiar al tipo correcto (movie/series)
   $(`input[name="mediaType"][value="${item.type}"]`).prop('checked', true);
-  
+  GalleryState.set('type', item.type === 'movie' ? null : item.type);
+
   // Un item oculto por el filtro de watched no se podría abrir
   if (!matchesWatched(item)) $('#watchedAll').prop('checked', true);
-  
-  // Renderizar galería si hay filtro de tag
-  if (params.has('tag')) {
-    const tag = decodeURIComponent(params.get('tag'));
-    filterGalleryByTag(tag, item.type);
-  } else {
-    renderGallery(item.type);
-  }
-  
+
+  tagFilter.syncFromHash();
+  renderGallery();
+
   // Esperar a que se renderice la galería y luego abrir el card
   setTimeout(() => {
     // Cerrar cualquier card abierto primero
@@ -1076,98 +884,12 @@ function matchesWatched(item) {
   return true;
 }
 
-function filterGalleryByTag(tag, type) {
-  const filtered = mediaList.filter(item => 
-    item.type === type && 
-    item.year &&
-    matchesWatched(item) &&
-    item.tags && 
-    item.tags.toLowerCase().includes(tag.toLowerCase())
-  );
-  
-  // Actualizar mensaje de filtro
-  updateFilterMessage(type, filtered.length, tag);
-  
-  // Usar la misma lógica de renderGallery pero con datos filtrados
-  const byYear = {};
-  filtered.forEach(item => {
-    if (!byYear[item.year]) {
-      byYear[item.year] = [];
-    }
-    byYear[item.year].push(item);
-  });
-  
-  const years = Object.keys(byYear).sort((a, b) => b - a);
-  
-  // Actualizar sidebar
-  const $yearsList = $('#yearsList');
-  $yearsList.empty();
-  years.forEach(year => {
-    $yearsList.append(`<li class="ps-0"><a href="#year-${year}">${year}</a></li>`);
-  });
-  
-  $('#mediaLoading').hide();
-  const $container = $('#mediaGallery');
-  $container.empty();
-  
-  if (years.length === 0) {
-    $container.html(`<p class="text-muted text-center py-5">No ${type === 'movie' ? 'movies' : 'series'} found with tag "${tag}".</p>`);
-    return;
-  }
-  
-  years.forEach(year => {
-    const items = byYear[year];
-    items.sort((a, b) => a.title.localeCompare(b.title));
-    
-    const $yearDiv = $('<div class="year-gallery"></div>').attr('id', `year-${year}`);
-    const count = items.length;
-    const itemLabel = type === 'movie' ? (count > 1 ? 'movies' : 'movie') : (count > 1 ? 'series' : 'series');
-    const $header = $(`<header><h2 class="year-gallery-title fw-light d-inline">${year}</h2><span class="year-count">${count} ${itemLabel}</span></header>`);
-    $yearDiv.append($header);
-    
-    items.forEach(item => {
-      const posterUrl = item.tmdb_poster_url 
-        ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}` 
-        : '';
-      
-      const $item = $('<div class="media-item"></div>');
-      const $poster = $('<div class="poster"></div>');
-      
-      if (posterUrl) {
-        $poster.append(`<img src="${posterUrl}" alt="${item.title}" loading="lazy">`);
-      }
-      
-      $item.append($poster);
-      
-      // Agregar rating de edad si existe
-      const ageRatingText = item.rating ? `<span style="color: #dee2e6; margin: 0 4px;">•</span><span class="age-rating-inline">${item.rating}</span>` : '';
-      $item.append(`<div class="title">${item.title}${ageRatingText}</div>`);
-      
-      // Reutilizar la lógica de construcción del card
-      buildMediaCard($item, item);
-      
-      $yearDiv.append($item);
-    });
-    
-    $container.append($yearDiv);
-  });
-}
-
-function updateFilterMessage(type, count, tag) {
-  const itemLabel = type === 'movie' ? (count > 1 ? 'movies' : 'movie') : (count > 1 ? 'series' : 'series');
-  const $messageText = $('#filterMessageText');
-  const $clearBtn = $('#clearFilterBtnTop');
-  const $separator = $('#filterSeparator');
-  
-  if (tag) {
-    $messageText.html(`Showing <strong>${count}</strong> ${itemLabel} tagged with "<strong>${tag}</strong>"`);
-    $clearBtn.show();
-    $separator.show();
-  } else {
-    $messageText.html(`Showing <strong>${count}</strong> ${itemLabel}`);
-    $clearBtn.hide();
-    $separator.hide();
-  }
+function updateFilterMessage(type, count, tags) {
+  const itemLabel = type === 'movie' ? (count > 1 ? 'movies' : 'movie') : 'series';
+  const message = tags.length
+    ? `Showing <strong>${count}</strong> ${itemLabel} tagged with "<strong>${escapeHtml(tags.join(' + '))}</strong>"`
+    : `Showing <strong>${count}</strong> ${itemLabel}`;
+  $('#filterMessageText').html(message);
 }
 
 function buildMediaCard($item, item) {
@@ -1195,7 +917,7 @@ function buildMediaCard($item, item) {
   const tagsHtml = tags.length > 0 ? `
     <div class="tags-section">
       <h6><i class="bi bi-tags"></i></h6>
-      <div class="tags-container">${tags.map(tag => `<a href="#tag=${encodeURIComponent(tag)}&type=${item.type}" class="tag-item" data-tag="${tag}" data-type="${item.type}">${tag}</a>`).join('')}</div>
+      <div class="tags-container">${tags.map(tag => `<a href="#tag=${encodeURIComponent(tag)}" class="tag-item" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
     </div>
   ` : '';
   
@@ -1330,11 +1052,4 @@ function getStatusBadge(item) {
   return '<span class="badge bg-secondary">Yet to see</span>';
 }
 
-$(function() {
-  loadMediaList();
-  
-  $('input[name="mediaType"]').on('change', function() {
-    renderGallery($(this).val());
-  });
-});
 </script>

@@ -16,7 +16,7 @@
   {% endfor %}
 
   {% if has_undated %}
-    {% assign years = years | unshift: -1 %}
+    {% assign years = years | push: -1 %}
   {% endif %}
 
   {% comment %}Procesar cada año en orden y ordenar items por título dentro de cada año{% endcomment %}
@@ -44,100 +44,40 @@
 
   {% assign current_year = nil %}
 
-  <!-- Recopilar todos los keywords únicos (AI + AI extra) -->
-  {% assign all_keywords = "" | split: "" %}
-  {% for item in items %}
-  {% if item.keywords %}
-  {% assign all_keywords = all_keywords | concat: item.keywords %}
-  {% endif %}
-  {% endfor %}
-  {% assign unique_keywords = all_keywords | uniq | sort %}
-
-  {% comment %}Agrupar keywords por categoría{% endcomment %}
-  {% assign grouped_keywords = "" | split: "" %}
-  {% assign ungrouped_keywords = "" | split: "" %}
-
-  {% for keyword in unique_keywords %}
-    {% if keyword contains "--" %}
-      {% assign grouped_keywords = grouped_keywords | push: keyword %}
-    {% else %}
-      {% assign ungrouped_keywords = ungrouped_keywords | push: keyword %}
-    {% endif %}
-  {% endfor %}
-
-  {% comment %}Crear estructura de grupos{% endcomment %}
-  {% assign groups = "" | split: "" %}
-  {% for keyword in grouped_keywords %}
-    {% assign parts = keyword | split: "--" %}
-    {% assign group = parts[0] %}
-    {% unless groups contains group %}
-      {% assign groups = groups | push: group %}
-    {% endunless %}
-  {% endfor %}
-  {% assign groups = groups | sort %}
-
-  <aside class="gallery__navFilters">
-    <!-- Keywords disponibles -->
-    <div class="mb-4">
-      <div class="d-flex mb-3">
-        <h5 class="mb-0">Keywords</h5>
-        <button id="clear-filters" class="btn btn-sm btn-link text-muted p-0 ms-3" style="display: none;" title="Clear all filters">
-          <i class="bi bi-trash"></i>
-        </button>
-      </div>
-      <div id="keywords-list" class="d-flex flex-column gap-3">
-        {% comment %}Keywords agrupadas - columnas automáticas con flow vertical{% endcomment %}
-        <div class="keyword-groups">
-          <div style="column-width: 180px; column-gap: 1.5rem;">
-            {% for group in groups %}
-              <a href="#keyword-_{{ group }}"
-                class="keyword-filter fw-bold text-muted small text-decoration-none d-block mb-1"
-                data-keyword="_{{ group }}"
-                style="cursor: pointer;">{{ group | capitalize }}:</a>
-              {% for keyword in grouped_keywords %}
-                {% assign parts = keyword | split: "--" %}
-                {% if parts[0] == group %}
-                  <a href="#keyword-{{ keyword | slugify }}"
-                    class="keyword-filter badge text-bg-light text-decoration-none fw-light d-inline-block mb-1"
-                    data-keyword="{{ keyword }}">{{ parts[1] }}</a>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          </div>
-        </div>
-
-        {% comment %}Keywords sin grupo (ocultar los que empiezan con _){% endcomment %}
-        {% assign visible_ungrouped = "" | split: "" %}
-        {% for keyword in ungrouped_keywords %}
-          {% unless keyword contains "_" %}
-            {% assign visible_ungrouped = visible_ungrouped | push: keyword %}
-          {% endunless %}
-        {% endfor %}
-        {% if visible_ungrouped.size > 0 %}
-        <div class="keyword-group">
-          <button class="btn btn-link text-muted p-0 text-decoration-none d-flex align-items-center gap-1"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ungroupedKeywords"
-                  aria-expanded="false"
-                  aria-controls="ungroupedKeywords">
-            <small>Otros keywords</small>
-            <i class="bi bi-chevron-down" style="font-size: 0.8rem;"></i>
-          </button>
-          <div class="collapse mt-2" id="ungroupedKeywords">
-            <div class="d-flex flex-wrap gap-2">
-              {% for keyword in visible_ungrouped %}
-              <a href="#keyword-{{ keyword | slugify }}"
-                class="keyword-filter badge text-bg-light text-decoration-none fw-light"
-                data-keyword="{{ keyword }}">{{ keyword }}</a>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-        {% endif %}
+  <div class="gallery-controls">
+    <div class="gallery-control">
+      <span class="gallery-control__label">Sort by</span>
+      <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
+        <input type="radio" class="btn-check" name="sortBy" id="sortYear" value="year" autocomplete="off" checked>
+        <label class="btn btn-outline-secondary" for="sortYear">Year</label>
+        <input type="radio" class="btn-check" name="sortBy" id="sortTitle" value="title" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="sortTitle">Title</label>
+        <input type="radio" class="btn-check" name="sortBy" id="sortAdded" value="added" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="sortAdded">Added</label>
       </div>
     </div>
-  </aside>
+    <div class="gallery-control">
+      <span class="gallery-control__label">Details</span>
+      <div class="btn-group btn-group-sm" role="group" aria-label="Details">
+        <input type="radio" class="btn-check" name="details" id="detailsShow" value="show" autocomplete="off" checked>
+        <label class="btn btn-outline-secondary" for="detailsShow">Show</label>
+        <input type="radio" class="btn-check" name="details" id="detailsHide" value="hide" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="detailsHide">Hide</label>
+      </div>
+    </div>
+    <div class="gallery-control">
+      <span class="gallery-control__label">Tags</span>
+      <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#keywords-panel" aria-expanded="false" aria-controls="keywords-panel">
+        Browse <i class="bi bi-chevron-down"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="active-filters" class="gallery-active-filters" hidden></div>
+
+  <div class="collapse" id="keywords-panel">
+    <div id="keywords-list"></div>
+  </div>
 
   <div class="gallery__content d-flex">
 
@@ -195,7 +135,7 @@
             {% endif %}
             {% if combined_keywords_size > 0 %}
             <div class="gallery__item__caption__keywords mt-3 fw-lighter">
-              <h3 class="h6"><i class="bi bi-tag d-inline"></i> Keywords</h3>
+              <h3 class="h6"><i class="bi bi-tag d-inline"></i> Tags</h3>
               {% comment %}Keywords ya están ordenados y unificados{% endcomment %}
               {% assign all_item_keywords = item.keywords | default: empty_array %}
 
@@ -261,7 +201,7 @@
         {% assign cover_src = "/assets/bidassoa/" | append: cover %}
 
         {% assign combined_keywords = item.keywords | default: empty_array %}
-        <article class="gallery__item" data-keywords="{{ combined_keywords | join: ',' }}" data-year="{{ item.year }}">
+        <article class="gallery__item" data-id="{{ item.id | slugify }}" data-keywords="{{ combined_keywords | join: ',' }}" data-year="{{ item.year }}" data-added="{{ item.added }}">
 
           <div class="gallery__item__cover" {% if item.width and item.height %}style="aspect-ratio: {{ item.width }} / {{ item.height }};"{% endif %}>
             <a
@@ -375,194 +315,157 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 
+<script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/gallery-masonry.js' | relative_url }}"></script>
+
 <script>
-  // Sistema de filtrado por keywords
+  // Keyword filter: the shared tag component does the selection, this page only shows/hides works
   (function () {
-    let activeFilters = new Set();
+    const articles = Array.from(document.querySelectorAll('.gallery__item'));
+    const keywordsOf = article => article.dataset.keywords ? article.dataset.keywords.split(',') : [];
+    const prettify = text => text.charAt(0).toUpperCase() + text.slice(1).replace(/-/g, ' ');
 
-    // Leer filtros desde URL hash
-    function loadFiltersFromHash() {
-      const hash = window.location.hash.substring(1);
-      if (!hash) {
-        activeFilters.clear();
-        return;
-      }
-
-      // Parsear keywords desde el hash: #keyword-variante,keyword-serigrafia
-      if (hash.startsWith('keyword-')) {
-        const keywords = hash.substring(8).split(',').map(k => decodeURIComponent(k));
-        activeFilters = new Set(keywords);
-      }
+    // Old links used #keyword-a,b; the shared format is #tag=a,b
+    function migrateLegacyHash() {
+      const hash = location.hash.slice(1);
+      if (!hash.startsWith('keyword-')) return;
+      const keywords = hash.slice(8).split(',').map(k => decodeURIComponent(k));
+      history.replaceState(null, '', location.pathname + location.search);
+      GalleryState.set('tag', keywords.join(','));
     }
+    migrateLegacyHash();
 
-    // Actualizar URL hash con filtros activos
-    function updateHash() {
-      if (activeFilters.size === 0) {
-        history.replaceState(null, '', window.location.pathname + window.location.search);
-      } else {
-        const keywords = Array.from(activeFilters).map(k => encodeURIComponent(k)).join(',');
-        history.replaceState(null, '', `#keyword-${keywords}`);
-      }
-    }
+    const tags = GalleryTags.create({
+      mount: '#keywords-list',
+      chipsMount: '#active-filters',
+      // Internal ungrouped keywords start with "_" and are not offered
+      getItems: () => articles.map(keywordsOf).map(list => list.filter(k => k.includes('--') || !k.includes('_'))),
+      groupOf: keyword => keyword.includes('--') ? keyword.split('--')[0] : null,
+      labelOf: keyword => prettify(keyword.includes('--') ? keyword.split('--')[1] : keyword),
+      chipLabelOf: keyword => keyword.startsWith('_')
+        ? prettify(keyword.slice(1)) + ' (all)'
+        : keyword.split('--').map(prettify).join(': '),
+      onChange: () => applyFilters()
+    });
 
-    // Aplicar filtros a la galería
+    // Show the works that have every selected keyword, and hide the years left empty
     function applyFilters() {
-      const items = document.querySelectorAll('.gallery__item');
-      let visibleCount = 0;
-
-      items.forEach(item => {
-        if (activeFilters.size === 0) {
-          item.style.display = '';
-          visibleCount++;
-          return;
-        }
-
-        const itemKeywords = item.dataset.keywords ? item.dataset.keywords.split(',') : [];
-
-        // Un item es visible si tiene TODOS los keywords activos (AND logic)
-        // Si el filtro empieza con _, buscar cualquier hijo de ese padre
-        const hasAllFilters = Array.from(activeFilters).every(filter => {
-          if (filter.startsWith('_')) {
-            const parent = filter.substring(1);
-            return itemKeywords.some(kw => kw.startsWith(parent + '--') || kw === filter);
-          }
-          return itemKeywords.includes(filter);
-        });
-
-        if (hasAllFilters) {
-          item.style.display = '';
-          visibleCount++;
-        } else {
-          item.style.display = 'none';
-        }
+      articles.forEach(article => {
+        article.style.display = tags.matches(keywordsOf(article)) ? '' : 'none';
       });
 
-      // Ocultar años sin items visibles
-      const years = document.querySelectorAll('.gallery__year');
-      years.forEach(yearSection => {
-        const visibleItems = yearSection.querySelectorAll('.gallery__item[style=""], .gallery__item:not([style*="display: none"])');
-        yearSection.style.display = visibleItems.length > 0 ? '' : 'none';
+      document.querySelectorAll('.gallery__year').forEach(section => {
+        const anyVisible = Array.from(section.querySelectorAll('.gallery__item')).some(a => a.style.display !== 'none');
+        section.style.display = anyVisible ? '' : 'none';
       });
 
       updateActiveFiltersUI();
     }
 
-    // Actualizar UI de filtros activos
+    // Keyword links inside captions and the Fancybox sidebar mirror the selection
     function updateActiveFiltersUI() {
-      const clearBtn = document.getElementById('clear-filters');
-
-      // Mostrar/ocultar botón de clear
-      clearBtn.style.display = activeFilters.size > 0 ? 'block' : 'none';
-
-      // Actualizar estado de keywords en la lista de filtros
-      document.querySelectorAll('.gallery__navFilters .keyword-filter').forEach(link => {
-        const keyword = link.dataset.keyword;
-        const isActive = activeFilters.has(keyword);
-
-        if (keyword.startsWith('_')) {
-          // Estilo para keywords padre
-          if (isActive) {
-            link.style.fontWeight = 'bold';
-            link.style.color = '#212529';
-            link.style.textDecoration = 'underline';
-          } else {
-            link.style.fontWeight = 'bold';
-            link.style.color = '';
-            link.style.textDecoration = 'none';
-          }
-        } else {
-          // Estilo para keywords normales
-          if (isActive) {
-            link.classList.remove('text-bg-light');
-            link.classList.add('text-bg-secondary');
-          } else {
-            link.classList.remove('text-bg-secondary');
-            link.classList.add('text-bg-light');
-          }
-        }
-      });
-
-      // Actualizar estado de todos los keywords (en filtros, captions y modal)
+      const selected = tags.selected.map(s => s.toLowerCase());
       document.querySelectorAll('.keyword-filter').forEach(link => {
-        const keyword = link.dataset.keyword;
-        const isActive = activeFilters.has(keyword) ||
-                        (keyword && !keyword.startsWith('_') &&
-                         Array.from(activeFilters).some(f => f.startsWith('_') && keyword.startsWith(f.substring(1) + '--')));
+        const keyword = link.dataset.keyword.toLowerCase();
+        const isParent = keyword.startsWith('_');
+        const isActive = selected.includes(keyword) ||
+          (!isParent && selected.some(f => f.startsWith('_') && keyword.startsWith(f.slice(1) + '--')));
 
-        // Determinar si está en la lista de filtros o en una obra
-        const isInFilterList = link.closest('.gallery__navFilters');
-
-        if (keyword.startsWith('_')) {
-          // Estilo para keywords padre
-          if (isActive) {
-            link.style.color = '#212529';
-            link.style.textDecoration = 'underline';
-          } else {
-            link.style.color = isInFilterList ? '' : '#6c757d';
-            link.style.textDecoration = 'none';
-          }
+        if (isParent) {
+          link.style.color = isActive ? '#212529' : '#6c757d';
+          link.style.textDecoration = isActive ? 'underline' : 'none';
         } else {
-          // Estilo para keywords normales - mismo color gris para todos
-          if (isActive) {
-            link.classList.remove('text-bg-light', 'text-bg-dark');
-            link.classList.add('text-bg-secondary');
-          } else {
-            link.classList.remove('text-bg-dark', 'text-bg-secondary');
-            link.classList.add('text-bg-light');
-          }
+          link.classList.toggle('text-bg-secondary', isActive);
+          link.classList.toggle('text-bg-light', !isActive);
         }
       });
     }
 
-    // Event listeners
+    // Clicking a keyword on a work adds it to (or removes it from) the filter
     document.addEventListener('click', function (e) {
-      // Click en keyword para filtrar
-      if (e.target.closest('.keyword-filter')) {
-        e.preventDefault();
-        const link = e.target.closest('.keyword-filter');
-        const keyword = link.dataset.keyword;
-
-        // Si se presiona Ctrl/Cmd, comportamiento aditivo (agregar/quitar)
-        if (e.ctrlKey || e.metaKey) {
-          if (activeFilters.has(keyword)) {
-            activeFilters.delete(keyword);
-          } else {
-            activeFilters.add(keyword);
-          }
-        } else {
-          // Sin Ctrl/Cmd, seleccionar solo este keyword
-          if (activeFilters.size === 1 && activeFilters.has(keyword)) {
-            // Si ya es el único seleccionado, deseleccionar
-            activeFilters.clear();
-          } else {
-            // Reemplazar con solo este keyword
-            activeFilters.clear();
-            activeFilters.add(keyword);
-          }
-        }
-
-        updateHash();
-        applyFilters();
-      }
-
-      // Click en clear all
-      if (e.target.closest('#clear-filters')) {
-        e.preventDefault();
-        activeFilters.clear();
-        updateHash();
-        applyFilters();
-      }
+      const link = e.target.closest('.keyword-filter');
+      if (!link) return;
+      e.preventDefault();
+      tags.toggle(link.dataset.keyword);
     });
 
-    // Cargar filtros al inicio
-    window.addEventListener('load', function () {
-      loadFiltersFromHash();
-      applyFilters();
+    // ---- Sort: by year (one section per year), or one flat list by title or by date added ----
+    const galleryEl = document.getElementById('gallery-bidassoa');
+    let sortMode = 'year';
+    const masonry = GalleryMasonry.create({ container: galleryEl.querySelector('.gallery__grid'), getItems: () => articles });
+
+    const titleOf = article => article.querySelector('.gallery__item__title').textContent.replace(/"/g, '');
+
+    // Flat grid items are ordered with CSS `order`, so the works never move in the DOM
+    function setSort(mode) {
+      sortMode = mode;
+      galleryEl.classList.toggle('is-flat', mode !== 'year');
+      const byTitle = (a, b) => titleOf(a).localeCompare(titleOf(b), undefined, { sensitivity: 'base' });
+      const ranked = mode === 'title' ? articles.slice().sort(byTitle)
+        : mode === 'added' ? articles.slice().sort((a, b) => b.dataset.added.localeCompare(a.dataset.added) || byTitle(a, b))
+        : [];
+      articles.forEach(article => { article.style.order = ''; });
+      ranked.forEach((article, i) => { article.style.order = i; });
+      if (mode === 'year') masonry.disable(); else masonry.enable();
+    }
+
+    // ---- Details: the title, year and tags under each work can be hidden ----
+    function initDetails() {
+      const apply = show => galleryEl.classList.toggle('hide-details', !show);
+
+      document.querySelectorAll('input[name="details"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          localStorage.setItem('bidassoaDetails', radio.value);
+          apply(radio.value === 'show');
+        });
+      });
+
+      const saved = localStorage.getItem('bidassoaDetails');
+      const radio = saved && document.querySelector('input[name="details"][value="' + saved + '"]');
+      if (radio) radio.checked = true;
+      apply(document.querySelector('input[name="details"]:checked').value === 'show');
+    }
+
+    function initSort() {
+      document.querySelectorAll('input[name="sortBy"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          localStorage.setItem('bidassoaSortBy', radio.value);
+          setSort(radio.value);
+        });
+      });
+
+      const saved = localStorage.getItem('bidassoaSortBy');
+      const radio = saved && document.querySelector('input[name="sortBy"][value="' + saved + '"]');
+      if (radio) radio.checked = true;
+      setSort(document.querySelector('input[name="sortBy"]:checked').value);
+    }
+
+    // Years stay in the sidebar in every mode: sorted by title, they jump to the first work of that year
+    document.addEventListener('click', function (e) {
+      const link = e.target.closest('.gallery__navYears a');
+      if (!link || sortMode === 'year') return;
+      e.preventDefault();
+      const year = link.getAttribute('href').replace('#year-', '');
+      const target = articles
+        .filter(el => el.dataset.year === year && el.style.display !== 'none')
+        .sort((a, b) => Number(a.style.order) - Number(b.style.order))[0];
+      target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
-    // Escuchar cambios en el hash
+    window.updateActiveFiltersUI = updateActiveFiltersUI;
+
+    applyFilters();
+
+    window.addEventListener('load', () => {
+      initSort();
+      initDetails();
+    });
+
     window.addEventListener('hashchange', function () {
-      loadFiltersFromHash();
+      migrateLegacyHash();
+      // Plain anchors (#year-2020) don't change the filter
+      if (location.hash && !location.hash.includes('=')) return;
+      tags.syncFromHash();
       applyFilters();
     });
   })();
@@ -638,15 +541,4 @@
 
   });
 
-  // Rotar chevron en collapse de keywords sin agrupar
-  const ungroupedToggle = document.querySelector('[data-bs-target="#ungroupedKeywords"]');
-  if (ungroupedToggle) {
-    const chevron = ungroupedToggle.querySelector('.bi-chevron-down');
-    document.getElementById('ungroupedKeywords').addEventListener('show.bs.collapse', () => {
-      chevron.style.transform = 'rotate(180deg)';
-    });
-    document.getElementById('ungroupedKeywords').addEventListener('hide.bs.collapse', () => {
-      chevron.style.transform = 'rotate(0deg)';
-    });
-  }
 </script>

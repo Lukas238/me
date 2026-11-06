@@ -26,6 +26,7 @@
   }
 
   .bg-thumb img {
+    display: block;
     width: 100%;
     height: auto;
     min-height: 130px;
@@ -42,7 +43,35 @@
     font-weight: bold;
     text-decoration: none;
   }
+
+  /* Sorted by added date: the year grids dissolve into one grid, headers and year list go away */
+  #bg-gallery.is-flat .bg-years {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  #bg-gallery.is-flat .year-gallery {
+    display: contents;
+  }
+
+  #bg-gallery.is-flat .year-gallery > header,
+  #bg-gallery.is-flat > aside {
+    display: none !important; /* header carries Bootstrap's d-flex (!important) */
+  }
 </style>
+
+<div class="gallery-controls">
+  <div class="gallery-control">
+    <span class="gallery-control__label">Sort by</span>
+    <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
+      <input type="radio" class="btn-check" name="bgSortBy" id="bgSortYear" value="year" autocomplete="off" checked>
+      <label class="btn btn-outline-secondary" for="bgSortYear">Year</label>
+      <input type="radio" class="btn-check" name="bgSortBy" id="bgSortAdded" value="added" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="bgSortAdded">Added</label>
+    </div>
+  </div>
+</div>
 
 <div id="bg-gallery" class="bg-gallery container-xxl d-flex">
 
@@ -78,7 +107,7 @@
   </aside>
 
 
-  <div>
+  <div class="bg-years">
     {% comment %} Loop through years and show files {% endcomment %}
     {% for year in years %}
     <div id="year-{{ year }}" class="year-gallery">
@@ -116,6 +145,37 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="{{ '/assets/js/gallery-masonry.js' | relative_url }}"></script>
+<script>
+  // Year: one section per year. Added: one flat list, newest first (the file name starts with its date).
+  (function () {
+    const gallery = document.getElementById('bg-gallery');
+    const thumbs = Array.from(gallery.querySelectorAll('.bg-thumb'));
+    const masonry = GalleryMasonry.create({ container: gallery.querySelector('.bg-years'), getItems: () => thumbs });
+    const newestFirst = thumbs.slice().sort((a, b) => b.querySelector('img').alt.localeCompare(a.querySelector('img').alt));
+
+    const apply = (mode) => {
+      gallery.classList.toggle('is-flat', mode === 'added');
+      thumbs.forEach(thumb => { thumb.style.order = ''; });
+      if (mode === 'added') newestFirst.forEach((thumb, i) => { thumb.style.order = i; });
+      if (mode === 'added') masonry.enable(); else masonry.disable();
+    };
+
+    const saved = localStorage.getItem('bgSortBy');
+    if (saved) {
+      const radio = document.querySelector(`input[name="bgSortBy"][value="${saved}"]`);
+      if (radio) radio.checked = true;
+    }
+    apply(document.querySelector('input[name="bgSortBy"]:checked').value);
+
+    document.querySelectorAll('input[name="bgSortBy"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        localStorage.setItem('bgSortBy', radio.value);
+        apply(radio.value);
+      });
+    });
+  })();
+</script>
 <script>
   Fancybox.bind("[data-fancybox]",{
   Carousel: {

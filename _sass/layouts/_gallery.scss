@@ -1,6 +1,170 @@
 @import "https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css";
 
+// Toolbar shared by the gallery pages (labelled button groups)
+.gallery-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 14px 28px;
+  margin: 1.5rem 0 1rem;
+
+  .gallery-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  .gallery-control__label {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #adb5bd;
+  }
+
+  .btn,
+  .form-select {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 0.2rem 0.75rem;
+  }
+
+  .form-select {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    min-width: 9rem;
+  }
+
+  .btn-check:checked + .btn {
+    background-color: #495057;
+    border-color: #495057;
+    color: #fff;
+  }
+}
+
+// Selected tags shown as removable chips
+.gallery-active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 1rem 0;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+// Shared tag filter (assets/js/gallery-tags.js): chips in a collapsible panel
+.gallery-tag {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  border: 1px solid #2a2a2a;
+  padding: 2px 10px;
+  background: #fff;
+  color: #2a2a2a !important; // base.scss forces link colors with !important
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  span {
+    opacity: 0.6;
+    margin-left: 2px;
+  }
+
+  &:hover,
+  &.is-active {
+    background: #2a2a2a;
+    color: #fff !important;
+  }
+
+  &.is-empty {
+    opacity: 0.35;
+    border-style: dashed;
+    cursor: not-allowed;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.gallery-tag--group {
+  border-color: transparent;
+  background: transparent;
+  font-weight: 600;
+  padding-left: 0;
+  margin-right: 4px;
+  text-transform: capitalize;
+
+  &:hover,
+  &.is-active {
+    border-color: #2a2a2a;
+    padding-left: 10px;
+  }
+}
+
+.gallery-tags--panel {
+  max-height: 45vh;
+  overflow-y: auto;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+
+  .gallery-tags__group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0.75rem;
+  }
+
+  .gallery-tags__title {
+    flex-basis: 100%;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #adb5bd;
+  }
+}
+
+// Masonry (assets/js/gallery-masonry.js): 1px rows, each item spans its own height
+.is-masonry {
+  grid-auto-rows: 1px;
+  row-gap: 0 !important;
+}
+
 .gallery {
+
+  &.hide-details .gallery__item__header {
+    display: none;
+  }
+
+  // Ungrouped: the year sections dissolve into one grid
+  &.is-flat {
+    .gallery__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      align-content: start;
+    }
+
+    .gallery__year {
+      display: contents;
+    }
+
+    .gallery__year__header {
+      display: none !important; // the header carries Bootstrap's d-flex (!important)
+    }
+  }
 
   &__filterNav {
     margin-bottom: 1.5rem;
