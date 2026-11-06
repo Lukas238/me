@@ -45,6 +45,10 @@ On Mac with M1 chip, you might need to install the `eventmachine` gem with speci
 gem install eventmachine -v '1.2.7' -- --with-ldflags="-Wl,-undefined,dynamic_lookup"
 ```
 
+### Adding movies and series
+
+Add `{ "title": "...", "year": "..." }` (plus `"type": "series"` for a series) to `_data/media.json` and run `npm run media:fetch` (add `-- --dry-run` to preview). It completes the id, genres, rating and poster from TMDb, using `TMDB_TOKEN` from `.env` (see `.env.example`). If you edit `media.json` on GitHub instead, the `Complete media entries` workflow does the same on push (it needs a `TMDB_TOKEN` repository secret) and then assigns an id to anything TMDb could not complete, using `scripts/add-media-ids.js`. Check its log for entries marked "not found".
+
 ## Structure
 
 *   Here are the main files of the template:

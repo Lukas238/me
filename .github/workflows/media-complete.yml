@@ -1,4 +1,4 @@
-name: Assign media IDs
+name: Complete media entries
 
 on:
   push:
@@ -10,25 +10,34 @@ permissions:
   pages: write
 
 jobs:
-  assign-ids:
+  complete-media:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
+      # Fills genres, rating, poster and id from TMDb for entries that only have title + year.
+      # A failure here must not block the id step below, so the log is the place to look for "not found" entries.
+      - name: Complete entries from TMDb
+        continue-on-error: true
+        env:
+          TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
+        run: node scripts/fetch-tmdb.js
+
+      # Entries TMDb could not complete still get an id
       - run: node scripts/add-media-ids.js
 
       # Pushes made with GITHUB_TOKEN don't trigger the Pages build, so request it explicitly
-      - name: Commit new IDs and rebuild Pages
+      - name: Commit completed entries and rebuild Pages
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet; then
-            echo "No new IDs needed"
+            echo "Nothing to complete"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "Assign IDs to new media entries"
+          git commit -am "Complete new media entries"
           git pull --rebase
           git push
           gh api -X POST "repos/${{ github.repository }}/pages/builds"

@@ -15,7 +15,7 @@ La cuenta de Cloudflare está fijada con `account_id` en cada `wrangler.toml`.
 
 Agrega productos a `_data/wishlist.json` desde cualquier página. Guía de uso: [BOOKMARKLET.md](./BOOKMARKLET.md).
 
-**Instalación:** desde la raíz del repo corre `node scripts/build-bookmarklet.js`, escribe la `wishlist_key` cuando la pida (está en el KV `SITE_CONFIG`) y pega el resultado (empieza con `javascript:`) como URL de un marcador nuevo. En macOS también queda copiado al portapapeles. La clave no se guarda en ningún archivo. El código fuente es [bookmarklet-source.js](./bookmarklet-source.js).
+**Instalación:** desde la raíz del repo corre `node scripts/build-bookmarklet.js`; toma `WISHLIST_KEY` del `.env` (ignorado por git; si no está, la pide) y pega el resultado (empieza con `javascript:`) como URL de un marcador nuevo. En macOS también queda copiado al portapapeles. El `.env` también guarda como respaldo `FAMILY_CODE` y `GITHUB_TOKEN` (los que usan los workers desde el KV `SITE_CONFIG`); ningún script los lee. La plantilla es `.env.example`. El código fuente es [bookmarklet-source.js](./bookmarklet-source.js).
 
 ## Deploy
 

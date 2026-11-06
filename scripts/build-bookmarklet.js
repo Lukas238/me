@@ -1,13 +1,15 @@
 // Builds the bookmarklet with your WISHLIST_KEY and prints it, ready to paste as a bookmark URL.
-// Usage: node scripts/build-bookmarklet.js   (or WISHLIST_KEY=... node scripts/build-bookmarklet.js)
-// The key is never written to disk; it lives in the SITE_CONFIG KV namespace (wishlist_key).
+// Usage: node scripts/build-bookmarklet.js
+// The key comes from WISHLIST_KEY in the env or in .env (git-ignored); if missing it is asked for.
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 const { spawnSync } = require('child_process');
+const { loadEnv } = require('./lib/env');
 
 async function getKey() {
-  if (process.env.WISHLIST_KEY) return process.env.WISHLIST_KEY.trim();
+  const fromEnv = loadEnv().WISHLIST_KEY;
+  if (fromEnv) return fromEnv.trim();
   // Prompt goes to stderr so stdout carries only the bookmarklet
   const rl = readline.createInterface({ input: process.stdin, output: process.stderr });
   const key = await new Promise(resolve => rl.question('WISHLIST_KEY: ', resolve));
