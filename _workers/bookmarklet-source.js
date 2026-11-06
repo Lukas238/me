@@ -94,70 +94,54 @@
     }
   }
 
-  // Auto-detect and fill fields based on site configuration
+  function metaContent(selector) {
+    return document.querySelector(selector)?.getAttribute('content')?.trim() || null;
+  }
+
+  // Lazy-loading placeholders (data: URIs) are not usable image URLs
+  const httpUrl = (url) => (url && /^https?:\/\//i.test(url) ? url : null);
+
+  // Auto-detect title and image: site-specific selectors first, then generic page metadata
   function autoDetectFields() {
-    console.log('[Wishlist DEBUG] === AUTO-DETECTION STARTED ===');
-    console.log('[Wishlist DEBUG] Current URL:', window.location.href);
-    const baseDomain = getBaseDomain(window.location.href);
-    console.log('[Wishlist DEBUG] Base domain result:', baseDomain);
-    console.log('[Wishlist DEBUG] Available configs:', Object.keys(SITES_CONFIG));
-
-    if (!baseDomain || !SITES_CONFIG[baseDomain]) {
-      console.log('[Wishlist DEBUG] ❌ No config found for domain:', baseDomain);
-      return null; // No config for this site
-    }
-
-    const config = SITES_CONFIG[baseDomain];
-    console.log('[Wishlist DEBUG] ✓ Using config:', config);
+    const config = SITES_CONFIG[getBaseDomain(window.location.href)] || {};
     const result = { title: null, image: null };
 
-    // Try to get title
     if (config.title) {
-      console.log('[Wishlist DEBUG] Searching for title with selector:', config.title);
       const titleEl = document.querySelector(config.title);
-      console.log('[Wishlist DEBUG] Title element found:', titleEl);
       if (titleEl) {
         result.title = config.titleFn
           ? config.titleFn(titleEl)
-          : titleEl.textContent?.trim() || titleEl.innerText?.trim();
-        console.log('[Wishlist DEBUG] ✓ Title extracted:', result.title);
-      } else {
-        console.log('[Wishlist DEBUG] ❌ Title element not found');
+          : titleEl.textContent?.trim() || titleEl.innerText?.trim() || null;
       }
     }
 
-    // Try to get image
     if (config.image) {
-      console.log('[Wishlist DEBUG] Searching for image with selector:', config.image);
       const imageEl = document.querySelector(config.image);
-      console.log('[Wishlist DEBUG] Image element found:', imageEl);
       if (imageEl) {
+        const img = imageEl.tagName === 'IMG' ? imageEl : imageEl.querySelector('img');
         if (config.imageFn) {
-          console.log('[Wishlist DEBUG] Using custom imageFn');
-          result.image = config.imageFn(imageEl);
-          console.log('[Wishlist DEBUG] Image attributes:', {
-            src: imageEl.getAttribute('src'),
-            dataSrc: imageEl.getAttribute('data-src'),
-            dataZoom: imageEl.getAttribute('data-zoom'),
-            imgSrc: imageEl.src
-          });
-        } else if (imageEl.tagName === 'IMG') {
-          result.image = imageEl.getAttribute(config.imageAttr || 'src') || imageEl.src;
-        } else {
-          // Try to find img inside element
-          const img = imageEl.querySelector('img');
-          if (img) {
-            result.image = img.getAttribute(config.imageAttr || 'src') || img.src;
-          }
+          result.image = httpUrl(config.imageFn(imageEl));
+        } else if (img) {
+          result.image = httpUrl(img.getAttribute(config.imageAttr || 'src')) || httpUrl(img.src);
         }
-        console.log('[Wishlist DEBUG] ✓ Image extracted:', result.image);
-      } else {
-        console.log('[Wishlist DEBUG] ❌ Image element not found');
       }
     }
 
-    console.log('[Wishlist DEBUG] === DETECTION COMPLETE ===');
-    console.log('[Wishlist DEBUG] Final result:', result);
+    // Generic fallbacks for sites without (or with outdated) selectors
+    if (!result.title) {
+      result.title = metaContent('meta[property="og:title"]')
+        || metaContent('meta[name="twitter:title"]')
+        || document.querySelector('h1')?.textContent?.trim()
+        || document.title.trim()
+        || null;
+    }
+    if (!result.image) {
+      result.image = httpUrl(metaContent('meta[property="og:image"]'))
+        || httpUrl(metaContent('meta[name="twitter:image"]'))
+        || httpUrl(document.querySelector('link[rel="image_src"]')?.href);
+    }
+
+    console.log('[Wishlist] Auto-detected:', result);
     return result;
   }
 
@@ -554,18 +538,22 @@
   document.body.appendChild(wrapper);
 
   // Widget controller
+  // Lookups are scoped to the widget: host pages reuse ids like #title (Amazon does)
+  const root = document.getElementById('wishlist-widget');
+  const $ = (selector) => root.querySelector(selector);
+
   const widget = {
-    container: document.getElementById('wishlist-widget'),
-    header: document.getElementById('wishlist-header'),
+    container: root,
+    header: $('#wishlist-header'),
     fields: {
-      product_url: document.getElementById('product_url'),
-      title: document.getElementById('title'),
-      tags: document.getElementById('tags'),
-      notes: document.getElementById('notes'),
-      image_url: document.getElementById('image_url')
+      product_url: $('#product_url'),
+      title: $('#title'),
+      tags: $('#tags'),
+      notes: $('#notes'),
+      image_url: $('#image_url')
     },
-    preview: document.getElementById('image-preview'),
-    status: document.getElementById('wishlist-status'),
+    preview: $('#image-preview'),
+    status: $('#wishlist-status'),
     targetMode: false,
     currentTargetField: null,
     collapsed: false,
@@ -583,38 +571,21 @@
       this.fields.product_url.value = window.location.href;
       console.log('[Wishlist DEBUG] URL field set to:', window.location.href);
 
-      // Show Auto button if site is configured
-      const baseDomain = getBaseDomain(window.location.href);
-      const autoBtn = document.getElementById('wishlist-auto');
-      console.log('[Wishlist DEBUG] Base domain for show():', baseDomain);
-      console.log('[Wishlist DEBUG] Is site configured?', baseDomain && SITES_CONFIG[baseDomain]);
+      $('#wishlist-auto').style.display = 'block';
 
-      if (baseDomain && SITES_CONFIG[baseDomain]) {
-        autoBtn.style.display = 'block';
-        console.log('[Wishlist DEBUG] ✓ Site configured, scheduling auto-detection in 1s...');
-        // Auto-detect fields after a delay to allow page to load
-        setTimeout(() => {
-          console.log('[Wishlist DEBUG] === TIMEOUT TRIGGERED - RUNNING AUTO-DETECTION ===');
-          const detected = autoDetectFields();
-          console.log('[Wishlist DEBUG] Detection returned:', detected);
-          if (detected) {
-            if (detected.title && !this.fields.title.value) {
-              this.fields.title.value = detected.title;
-              console.log('[Wishlist DEBUG] ✓ Title field filled');
-            }
-            if (detected.image && !this.fields.image_url.value) {
-              this.fields.image_url.value = detected.image;
-              console.log('[Wishlist DEBUG] ✓ Image field filled');
-              this.updatePreview();
-            }
-          } else {
-            console.log('[Wishlist DEBUG] ❌ No data detected');
-          }
-        }, 1000);
-      } else {
-        autoBtn.style.display = 'none';
-        console.log('[Wishlist DEBUG] ❌ Site not configured for auto-detection');
-      }
+      // Wait for the page to render; try again once if nothing useful was found
+      const fill = () => {
+        const detected = autoDetectFields();
+        if (detected.title && !this.fields.title.value) {
+          this.fields.title.value = detected.title;
+        }
+        if (detected.image && !this.fields.image_url.value) {
+          this.fields.image_url.value = detected.image;
+          this.updatePreview();
+        }
+        return Boolean(detected.title && detected.image);
+      };
+      setTimeout(() => { if (!fill()) setTimeout(fill, 2500); }, 1000);
 
       this.updatePreview();
       this.expand();
@@ -637,21 +608,17 @@
 
     autoFillFields() {
       const detected = autoDetectFields();
-      if (detected) {
-        if (detected.title) {
-          this.fields.title.value = detected.title;
-        }
-        if (detected.image) {
-          this.fields.image_url.value = detected.image;
-          this.updatePreview();
-        }
-        if (detected.title || detected.image) {
-          this.showStatus('✓ Auto-detected from site', 'success');
-        } else {
-          this.showStatus('✗ No data found on page', 'error');
-        }
+      if (detected.title) {
+        this.fields.title.value = detected.title;
+      }
+      if (detected.image) {
+        this.fields.image_url.value = detected.image;
+        this.updatePreview();
+      }
+      if (detected.title || detected.image) {
+        this.showStatus('✓ Auto-detected from page', 'success');
       } else {
-        this.showStatus('✗ Site not configured', 'error');
+        this.showStatus('✗ No data found on page', 'error');
       }
     },
 
@@ -687,7 +654,7 @@
       this.targetMode = true;
       this.currentTargetField = field;
       document.body.classList.add('wishlist-target-mode');
-      document.querySelector(`[data-field="${field}"]`)?.classList.add('active');
+      this.container.querySelector(`[data-field="${field}"]`)?.classList.add('active');
       this.showStatus('Click on an element to capture...', 'info');
     },
 
@@ -774,7 +741,7 @@
         return;
       }
 
-      const saveBtn = document.getElementById('wishlist-save');
+      const saveBtn = $('#wishlist-save');
       saveBtn.disabled = true;
       saveBtn.textContent = 'Saving...';
 
@@ -848,14 +815,14 @@
   widget.initDrag();
 
   // Event listeners
-  document.getElementById('wishlist-close').addEventListener('click', () => widget.hide());
-  document.getElementById('wishlist-cancel').addEventListener('click', () => widget.hide());
-  document.getElementById('wishlist-save').addEventListener('click', () => widget.save());
-  document.getElementById('wishlist-auto').addEventListener('click', () => widget.autoFillFields());
+  root.querySelector('#wishlist-close').addEventListener('click', () => widget.hide());
+  root.querySelector('#wishlist-cancel').addEventListener('click', () => widget.hide());
+  root.querySelector('#wishlist-save').addEventListener('click', () => widget.save());
+  root.querySelector('#wishlist-auto').addEventListener('click', () => widget.autoFillFields());
   widget.fields.image_url.addEventListener('input', () => widget.updatePreview());
 
   // Target buttons
-  document.querySelectorAll('.target-btn').forEach(btn => {
+  root.querySelectorAll('.target-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const field = e.currentTarget.dataset.field;
@@ -876,11 +843,11 @@
     e.target.classList.add('wishlist-target-highlight');
   });
 
-  // Click to capture
-  document.addEventListener('click', (e) => {
+  // Click to capture (window + capture phase runs before most page handlers)
+  window.addEventListener('click', (e) => {
     if (widget.targetMode && !widget.container.contains(e.target)) {
       e.preventDefault();
-      e.stopPropagation();
+      e.stopImmediatePropagation();
       widget.captureElement(e.target);
     }
   }, true);
