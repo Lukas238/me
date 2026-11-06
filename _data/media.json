@@ -637,5 +637,918 @@
   },
   {
     "title": "Rob Roy"
+  },
+  {
+    "title": "Star Trek: The Motion Picture",
+    "year": "1979",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek II: The Wrath of Khan",
+    "year": "1982",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek III: The Search for Spock",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek IV: The Voyage Home",
+    "year": "1986",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek V: The Final Frontier",
+    "year": "1989",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek VI: The Undiscovered Country",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek: The Next Generation",
+    "year": "1987",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek: Deep Space Nine",
+    "year": "1993",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek: Generations",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek: Voyager",
+    "year": "1995",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek: First Contact",
+    "year": "1996",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek: Insurrection",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek: Enterprise",
+    "year": "2001",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek: Nemesis",
+    "year": "2002",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek: Discovery",
+    "year": "2017",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek: Picard",
+    "year": "2020",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek: Lower Decks",
+    "year": "2020",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek: Prodigy",
+    "year": "2021",
+    "type": "series"
+  },
+  {
+    "title": "Star Trek",
+    "year": "2009",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek Into Darkness",
+    "year": "2013",
+    "type": "movie"
+  },
+  {
+    "title": "Star Trek Beyond",
+    "year": "2016",
+    "type": "movie"
+  },
+  {
+    "title": "RoboCop",
+    "year": "1987",
+    "type": "movie"
+  },
+  {
+    "title": "RoboCop 2",
+    "year": "1990",
+    "type": "movie"
+  },
+  {
+    "title": "RoboCop 3",
+    "year": "1993",
+    "type": "movie"
+  },
+  {
+    "title": "Rob Roy",
+    "year": "1995",
+    "type": "movie"
+  },
+  {
+    "title": "Gladiator",
+    "year": "2000",
+    "type": "movie"
+  },
+  {
+    "title": "The Last Starfighter",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "Batteries Not Included",
+    "year": "1987",
+    "type": "movie"
+  },
+  {
+    "title": "Gremlins",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "Labyrinth",
+    "year": "1986",
+    "type": "movie"
+  },
+  {
+    "title": "Braveheart",
+    "year": "1995",
+    "type": "movie"
+  },
+  {
+    "title": "Tron",
+    "year": "1982",
+    "type": "movie"
+  },
+  {
+    "title": "Hackers",
+    "year": "1995",
+    "type": "movie"
+  },
+  {
+    "title": "The Mask of Zorro",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "Independence Day",
+    "year": "1996",
+    "type": "movie"
+  },
+  {
+    "title": "The Fifth Element",
+    "year": "1997",
+    "type": "movie"
+  },
+  {
+    "title": "Total Recall",
+    "year": "1990",
+    "type": "movie"
+  },
+  {
+    "title": "Contact",
+    "year": "1997",
+    "type": "movie"
+  },
+  {
+    "title": "The Last of the Mohicans",
+    "year": "1992",
+    "type": "movie"
+  },
+  {
+    "title": "Johnny Mnemonic",
+    "year": "1995",
+    "type": "movie"
+  },
+  {
+    "title": "Jurassic Park",
+    "year": "1993",
+    "type": "movie"
+  },
+  {
+    "title": "Starship Troopers",
+    "year": "1997",
+    "type": "movie"
+  },
+  {
+    "title": "Armageddon",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "The Patriot",
+    "year": "2000",
+    "type": "movie"
+  },
+  {
+    "title": "Robin Hood: Prince of Thieves",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "Time Bandits",
+    "year": "1981",
+    "type": "movie"
+  },
+  {
+    "title": "Innerspace",
+    "year": "1987",
+    "type": "movie"
+  },
+  {
+    "title": "The Adventures of Baron Munchausen",
+    "year": "1988",
+    "type": "movie"
+  },
+  {
+    "title": "Brazil",
+    "year": "1985",
+    "type": "movie"
+  },
+  {
+    "title": "Honey, I Blew Up the Kid",
+    "year": "1992",
+    "type": "movie"
+  },
+  {
+    "title": "The Witches",
+    "year": "1990",
+    "type": "movie"
+  },
+  {
+    "title": "The Rocketeer",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "The Abyss",
+    "year": "1989",
+    "type": "movie"
+  },
+  {
+    "title": "Sphere",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "The Shadow",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "The Hunt for Red October",
+    "year": "1990",
+    "type": "movie"
+  },
+  {
+    "title": "The Mummy",
+    "year": "1999",
+    "type": "movie"
+  },
+  {
+    "title": "Men in Black II",
+    "year": "2002",
+    "type": "movie"
+  },
+  {
+    "title": "Jumanji",
+    "year": "1995",
+    "type": "movie"
+  },
+  {
+    "title": "The Truman Show",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "Top Gun",
+    "year": "1986",
+    "type": "movie"
+  },
+  {
+    "title": "Dances with Wolves",
+    "year": "1990",
+    "type": "movie"
+  },
+  {
+    "title": "Waterworld",
+    "year": "1995",
+    "type": "movie"
+  },
+  {
+    "title": "Frank Herbert's Dune",
+    "year": "2000",
+    "type": "series"
+  },
+  {
+    "title": "Mad Max",
+    "year": "1979",
+    "type": "movie"
+  },
+  {
+    "title": "The Empire Strikes Back",
+    "year": "1980",
+    "type": "movie"
+  },
+  {
+    "title": "The Blues Brothers",
+    "year": "1980",
+    "type": "movie"
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "year": "1981",
+    "type": "movie"
+  },
+  {
+    "title": "The Evil Dead",
+    "year": "1981",
+    "type": "movie"
+  },
+  {
+    "title": "Mad Max 2: The Road Warrior",
+    "year": "1981",
+    "type": "movie"
+  },
+  {
+    "title": "Chariots of Fire",
+    "year": "1981",
+    "type": "movie"
+  },
+  {
+    "title": "The Thing",
+    "year": "1982",
+    "type": "movie"
+  },
+  {
+    "title": "Gandhi",
+    "year": "1982",
+    "type": "movie"
+  },
+  {
+    "title": "Return of the Jedi",
+    "year": "1983",
+    "type": "movie"
+  },
+  {
+    "title": "The Right Stuff",
+    "year": "1983",
+    "type": "movie"
+  },
+  {
+    "title": "Ghostbusters",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "The Terminator",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "Amadeus",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "The Karate Kid",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "Aliens",
+    "year": "1986",
+    "type": "movie"
+  },
+  {
+    "title": "Platoon",
+    "year": "1986",
+    "type": "movie"
+  },
+  {
+    "title": "Stand by Me",
+    "year": "1986",
+    "type": "movie"
+  },
+  {
+    "title": "Predator",
+    "year": "1987",
+    "type": "movie"
+  },
+  {
+    "title": "Lethal Weapon",
+    "year": "1987",
+    "type": "movie"
+  },
+  {
+    "title": "Die Hard",
+    "year": "1988",
+    "type": "movie"
+  },
+  {
+    "title": "Akira",
+    "year": "1988",
+    "type": "movie"
+  },
+  {
+    "title": "Who Framed Roger Rabbit",
+    "year": "1988",
+    "type": "movie"
+  },
+  {
+    "title": "The Little Mermaid",
+    "year": "1989",
+    "type": "movie"
+  },
+  {
+    "title": "Batman",
+    "year": "1989",
+    "type": "movie"
+  },
+  {
+    "title": "Dead Poets Society",
+    "year": "1989",
+    "type": "movie"
+  },
+  {
+    "title": "Edward Scissorhands",
+    "year": "1990",
+    "type": "movie"
+  },
+  {
+    "title": "Beauty and the Beast",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "Point Break",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "Aladdin",
+    "year": "1992",
+    "type": "movie"
+  },
+  {
+    "title": "Batman Returns",
+    "year": "1992",
+    "type": "movie"
+  },
+  {
+    "title": "Schindler's List",
+    "year": "1993",
+    "type": "movie"
+  },
+  {
+    "title": "The Nightmare Before Christmas",
+    "year": "1993",
+    "type": "movie"
+  },
+  {
+    "title": "The Fugitive",
+    "year": "1993",
+    "type": "movie"
+  },
+  {
+    "title": "The Lion King",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "Forrest Gump",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "Léon: The Professional",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "Toy Story",
+    "year": "1995",
+    "type": "movie"
+  },
+  {
+    "title": "The Rock",
+    "year": "1996",
+    "type": "movie"
+  },
+  {
+    "title": "Titanic",
+    "year": "1997",
+    "type": "movie"
+  },
+  {
+    "title": "Good Will Hunting",
+    "year": "1997",
+    "type": "movie"
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "Blade",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "Fight Club",
+    "year": "1999",
+    "type": "movie"
+  },
+  {
+    "title": "The Sixth Sense",
+    "year": "1999",
+    "type": "movie"
+  },
+  {
+    "title": "Toy Story 2",
+    "year": "1999",
+    "type": "movie"
+  },
+  {
+    "title": "Memento",
+    "year": "2000",
+    "type": "movie"
+  },
+  {
+    "title": "Crouching Tiger Hidden Dragon",
+    "year": "2000",
+    "type": "movie"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": "2001",
+    "type": "movie"
+  },
+  {
+    "title": "Shrek",
+    "year": "2001",
+    "type": "movie"
+  },
+  {
+    "title": "Amélie",
+    "year": "2001",
+    "type": "movie"
+  },
+  {
+    "title": "Monsters Inc.",
+    "year": "2001",
+    "type": "movie"
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": "2002",
+    "type": "movie"
+  },
+  {
+    "title": "City of God",
+    "year": "2002",
+    "type": "movie"
+  },
+  {
+    "title": "28 Days Later",
+    "year": "2002",
+    "type": "movie"
+  },
+  {
+    "title": "Catch Me If You Can",
+    "year": "2002",
+    "type": "movie"
+  },
+  {
+    "title": "Spider-Man",
+    "year": "2002",
+    "type": "movie"
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": "2003",
+    "type": "movie"
+  },
+  {
+    "title": "Finding Nemo",
+    "year": "2003",
+    "type": "movie"
+  },
+  {
+    "title": "Kill Bill: Vol. 1",
+    "year": "2003",
+    "type": "movie"
+  },
+  {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "year": "2003",
+    "type": "movie"
+  },
+  {
+    "title": "Shaun of the Dead",
+    "year": "2004",
+    "type": "movie"
+  },
+  {
+    "title": "Kill Bill: Vol. 2",
+    "year": "2004",
+    "type": "movie"
+  },
+  {
+    "title": "Batman Begins",
+    "year": "2005",
+    "type": "movie"
+  },
+  {
+    "title": "Sin City",
+    "year": "2005",
+    "type": "movie"
+  },
+  {
+    "title": "V for Vendetta",
+    "year": "2005",
+    "type": "movie"
+  },
+  {
+    "title": "The Prestige",
+    "year": "2006",
+    "type": "movie"
+  },
+  {
+    "title": "Children of Men",
+    "year": "2006",
+    "type": "movie"
+  },
+  {
+    "title": "Casino Royale",
+    "year": "2006",
+    "type": "movie"
+  },
+  {
+    "title": "Ratatouille",
+    "year": "2007",
+    "type": "movie"
+  },
+  {
+    "title": "The Dark Knight",
+    "year": "2008",
+    "type": "movie"
+  },
+  {
+    "title": "WALL-E",
+    "year": "2008",
+    "type": "movie"
+  },
+  {
+    "title": "Iron Man",
+    "year": "2008",
+    "type": "movie"
+  },
+  {
+    "title": "Inglourious Basterds",
+    "year": "2009",
+    "type": "movie"
+  },
+  {
+    "title": "Up",
+    "year": "2009",
+    "type": "movie"
+  },
+  {
+    "title": "Avatar",
+    "year": "2009",
+    "type": "movie"
+  },
+  {
+    "title": "District 9",
+    "year": "2009",
+    "type": "movie"
+  },
+  {
+    "title": "Coraline",
+    "year": "2009",
+    "type": "movie"
+  },
+  {
+    "title": "Inception",
+    "year": "2010",
+    "type": "movie"
+  },
+  {
+    "title": "Tangled",
+    "year": "2010",
+    "type": "movie"
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows - Part 2",
+    "year": "2011",
+    "type": "movie"
+  },
+  {
+    "title": "The Avengers",
+    "year": "2012",
+    "type": "movie"
+  },
+  {
+    "title": "Django Unchained",
+    "year": "2012",
+    "type": "movie"
+  },
+  {
+    "title": "The Dark Knight Rises",
+    "year": "2012",
+    "type": "movie"
+  },
+  {
+    "title": "Frozen",
+    "year": "2013",
+    "type": "movie"
+  },
+  {
+    "title": "Gravity",
+    "year": "2013",
+    "type": "movie"
+  },
+  {
+    "title": "Interstellar",
+    "year": "2014",
+    "type": "movie"
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": "2014",
+    "type": "movie"
+  },
+  {
+    "title": "Arrival",
+    "year": "2016",
+    "type": "movie"
+  },
+  {
+    "title": "Coco",
+    "year": "2017",
+    "type": "movie"
+  },
+  {
+    "title": "Green Book",
+    "year": "2018",
+    "type": "movie"
+  },
+  {
+    "title": "Dune",
+    "year": "2021",
+    "type": "movie"
+  },
+  {
+    "title": "Encanto",
+    "year": "2021",
+    "type": "movie"
+  },
+  {
+    "title": "The Mitchells vs. the Machines",
+    "year": "2021",
+    "type": "movie"
+  },
+  {
+    "title": "Dune: Part Two",
+    "year": "2024",
+    "type": "movie"
+  },
+  {
+    "title": "Inside Out 2",
+    "year": "2024",
+    "type": "movie"
+  },
+  {
+    "title": "Donald in Mathmagic Land",
+    "year": "1959",
+    "type": "movie"
+  },
+  {
+    "title": "Chitty Chitty Bang Bang",
+    "year": "1968",
+    "type": "movie"
+  },
+  {
+    "title": "The Phantom Tollbooth",
+    "year": "1970",
+    "type": "movie"
+  },
+  {
+    "title": "Bedknobs and Broomsticks",
+    "year": "1971",
+    "type": "movie"
+  },
+  {
+    "title": "Alice in Wonderland",
+    "year": "1951",
+    "type": "movie"
+  },
+  {
+    "title": "The Sword in the Stone",
+    "year": "1963",
+    "type": "movie"
+  },
+  {
+    "title": "The Adventures of Milo and Otis",
+    "title_es": "Chatrán",
+    "year": "1986",
+    "type": "movie"
+  },
+  {
+    "title": "Benji",
+    "year": "1974",
+    "type": "movie"
+  },
+  {
+    "title": "The Love Bug",
+    "year": "1969",
+    "type": "movie"
+  },
+  {
+    "title": "Herbie Rides Again",
+    "year": "1974",
+    "type": "movie"
+  },
+  {
+    "title": "ALF",
+    "year": "1986",
+    "type": "series"
+  },
+  {
+    "title": "Dragon Ball",
+    "year": "1986",
+    "type": "series"
+  },
+  {
+    "title": "Dragon Ball Z",
+    "year": "1989",
+    "type": "series"
+  },
+  {
+    "title": "Robotech",
+    "year": "1985",
+    "type": "series"
+  },
+  {
+    "title": "Captain Tsubasa",
+    "title_es": "Super Campeones",
+    "year": "1983",
+    "type": "series"
+  },
+  {
+    "title": "Saint Seiya",
+    "title_es": "Los Caballeros del Zodiaco",
+    "year": "1986",
+    "type": "series"
+  },
+  {
+    "title": "Doctor Who",
+    "year": "2005",
+    "type": "series"
   }
 ]
