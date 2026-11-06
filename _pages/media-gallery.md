@@ -52,6 +52,26 @@ title: Media Gallery
     object-fit: cover;
   }
 
+  /* Entries without a poster yet (only title + year) */
+  .poster-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    color: #adb5bd;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    overflow: hidden;
+  }
+
+  .poster-placeholder i {
+    font-size: 2.2rem;
+  }
+
   .media-item .title {
     margin-top: 8px;
     font-size: 0.875rem;
@@ -629,10 +649,17 @@ title: Media Gallery
 <script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
 
 <script>
-let mediaList = {{ site.data.media | jsonify }};
+let mediaList = ({{ site.data.media | jsonify }}).map(item => ({ ...item, type: item.type || 'movie' }));
 let feedbackList = Object.values({{ site.data.comments.media | jsonify }} || {});
 
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+
+// Spanish title when there is one, otherwise the original
+const displayTitle = item => item.title_es || item.title;
+
+// Stand-in for the poster while TMDb data is missing
+const posterPlaceholder = item =>
+  `<div class="poster-placeholder"><i class="bi ${item.type === 'series' ? 'bi-tv' : 'bi-film'}"></i><span>${escapeHtml(displayTitle(item))}</span></div>`;
 
 const currentType = () => $('input[name="mediaType"]:checked').val();
 const tagsOf = item => item.tags ? item.tags.split(';').map(t => t.trim()).filter(Boolean) : [];
@@ -684,14 +711,16 @@ function buildItemElement(item) {
   const $poster = $('<div class="poster"></div>');
 
   if (posterUrl) {
-    $poster.append(`<img src="${posterUrl}" alt="${item.title}" loading="lazy">`);
+    $poster.append(`<img src="${posterUrl}" alt="${displayTitle(item)}" loading="lazy">`);
+  } else {
+    $poster.append(posterPlaceholder(item));
   }
 
   $item.append($poster);
 
   // Agregar rating de edad si existe
   const ageRatingText = item.rating ? `<span style="color: #dee2e6; margin: 0 4px;">•</span><span class="age-rating-inline">${item.rating}</span>` : '';
-  $item.append(`<div class="title">${item.title}${ageRatingText}</div>`);
+  $item.append(`<div class="title">${displayTitle(item)}${ageRatingText}</div>`);
 
   // Usar helper para construir el card
   buildMediaCard($item, item);
@@ -729,7 +758,7 @@ function renderMedia() {
   }
 
   groups.forEach(group => {
-    const items = group.items.slice().sort((a, b) => a.title.localeCompare(b.title));
+    const items = group.items.slice().sort((a, b) => displayTitle(a).localeCompare(displayTitle(b)));
 
     const $group = $('<div class="year-gallery"></div>').attr('id', group.id);
     if (group.label !== null) {
@@ -862,7 +891,7 @@ function checkAndOpenCardFromUrl() {
       if ($cardContainer.length) {
         // Verificar el ID comparando con el título
         const cardTitle = $cardContainer.find('.card-header-info h3').text();
-        if (item.title === cardTitle) {
+        if (displayTitle(item) === cardTitle) {
           // Hacer click para abrir
           $this.find('.poster').first().trigger('click');
           found = true;
@@ -907,7 +936,7 @@ function buildMediaCard($item, item) {
   // Construir metadata con bullets
   const metaParts = [];
   if (ageRating) metaParts.push(ageRating);
-  metaParts.push(`<span>${item.year}</span>`);
+  if (item.year) metaParts.push(`<span>${item.year}</span>`);
   metaParts.push(`<span class="card-rating">${avgRating}</span>`);
   if (statusBadge) metaParts.push(statusBadge);
   if (tmdbLink) metaParts.push(tmdbLink);
@@ -924,7 +953,7 @@ function buildMediaCard($item, item) {
   // Separar header info y comentarios
   const headerInfoHtml = `
     <div class="card-header-info">
-      <h3>${item.title}</h3>
+      <h3>${displayTitle(item)}</h3>
       <div class="card-meta">
         ${metaHtml}
       </div>
@@ -932,12 +961,15 @@ function buildMediaCard($item, item) {
     ${tagsHtml}
   `;
   
+  // Comments need an id, which entries still being completed don't have yet
+  const commentLink = (cls, label) => item.id ? `<a href="/media-comments/?id=${item.id}" class="${cls}">${label}</a>` : '';
+
   const commentsHtml = `
     <div class="comments-section">
     ${itemComments.length > 0 ? `
       <div class="d-flex justify-content-between align-items-baseline mb-3">
         <h6 class="mb-0" style="font-size: 0.875rem; color: #6c757d;">Comments (${itemComments.length})</h6>
-        <a href="/media-comments/?id=${item.id}" class="add-comment-link">+ Add yours</a>
+        ${commentLink('add-comment-link', '+ Add yours')}
       </div>
       ${itemComments.map(comment => {
         const date = comment.timestamp ? new Date(comment.timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
@@ -971,7 +1003,7 @@ function buildMediaCard($item, item) {
     ` : `
       <div class="text-center py-3">
         <p class="text-muted mb-2" style="font-size: 0.875rem;">No comments yet.</p>
-        <a href="/media-comments/?id=${item.id}" class="add-comment-link">Be the first to comment</a>
+        ${commentLink('add-comment-link', 'Be the first to comment')}
       </div>
     `}
     </div>
@@ -983,8 +1015,8 @@ function buildMediaCard($item, item) {
     : '';
   
   const posterHtml = posterUrl 
-    ? `<img src="${posterUrl}" alt="${item.title}" loading="lazy">`
-    : '';
+    ? `<img src="${posterUrl}" alt="${displayTitle(item)}" loading="lazy">`
+    : posterPlaceholder(item);
   
   const $cardContainer = $(`
     <div class="card-container">
@@ -994,7 +1026,7 @@ function buildMediaCard($item, item) {
       </div>
       <div class="card-info-section">
         <div class="card-header-info">
-          <h3>${item.title}</h3>
+          <h3>${displayTitle(item)}</h3>
           <div class="card-meta">
             ${metaHtml}
           </div>
@@ -1022,11 +1054,13 @@ function buildMediaCard($item, item) {
     $('#mediaOverlay').addClass('active');
     $('body').addClass('modal-open');
     
-    // Agregar ID a la URL
-    const currentHash = window.location.hash.substring(1);
-    const params = new URLSearchParams(currentHash);
-    params.set('id', item.id);
-    window.history.pushState(null, '', `#${params.toString()}`);
+    // Agregar ID a la URL (entries without an id yet have no link)
+    if (item.id) {
+      const currentHash = window.location.hash.substring(1);
+      const params = new URLSearchParams(currentHash);
+      params.set('id', item.id);
+      window.history.pushState(null, '', `#${params.toString()}`);
+    }
     
     $clone.find('.poster').off('click');
     

@@ -1,106 +1,217 @@
-- Add movie Rob Roy
-- Add Gladiator
-- Add All Star treck movies
-- Add Star Trek Series TNG, DS9, Voyager, Enterprise, Discovery, Picard, Lower Decks, Prodigy, and Kelvin Timeline.
-- Add movie The Last Starfighter 1984
-- Add movie Batteries Not Included 1987
-- Add movie Gremlins 1984
-- Add movie Labyrinth 1986
-- Add movie Braveheart 1995
-- Add movie All RoboCop movies
-- Add movie Tron (1982)
-- Add movie Hackers (1995)
-- Add movie WarGames (1983)
-- Add movie The Mask of Zorro (1998):
-- Add movie Independence Day (1996)
-- Add movie The Fifth Element (1997)
-- Add movie Total Recall (1990)
-- Add movie Contact (1997):
-- Add movie The Last of the Mohicans (1992)
-- Add movie Johnny Mnemonic (1995)
-- Add movie Jurassic Park (1993)
-- Add movie Starship Troopers (1997)
-- Add movie Armageddon (1998)
-- Add movie The Patriot (2000)
-- Add movie Robin Hood: Prince of Thieves
-- Add movie Time Bandits (1981):
-- Add movie Innerspace (1987)
-- Add movie The Adventures of Baron Munchausen (1988)
-- Add movie Brazil (1985)
-- Add movie Honey, I Blew Up the Kid (1992)
-- Add movie The Witches (1990)
-- Add movie The Rocketeer (1991)
-- Add movie The Abyss (1989)
-- Add movie Sphere (1998)
-- Add movie The Shadow (1994)
-- Add movie The Hunt for Red October (1990)
-- Add movie The Mummy (1999)
-- Add movie Men in Black II (2002)
-- Add movie Jumanji (1995)
-- Add movie The Truman Show (1998)
-- Dune miniseries
-- Top Gun
-- Mad Max 1
-- Waterworld
-- Dance with Wolves
-- Add these -> 1980: The Empire Strikes Back, The Blues Brothers
-- Add these -> 1981: Raiders of the Lost Ark, The Evil Dead, Mad Max 2: The Road Warrior, Chariots of Fire
-- Add these -> 1982: Blade Runner, The Thing, Gandhi
-- Add these -> 1983: Return of the Jedi, The Right Stuff
-- Add these -> 1984: Ghostbusters, The Terminator, Amadeus, The Karate Kid
-- Add these -> 1985: Back to the Future, The Goonies
-- Add these -> 1986: Aliens, Platoon, Stand by Me, Top Gun
-- Add these -> 1987: Predator, RoboCop, Lethal Weapon
-- Add these -> 1988: Die Hard, Beetlejuice, Akira, Who Framed Roger Rabbit
-- Add these -> 1989: The Little Mermaid, Indiana Jones and the Last Crusade, Batman, Dead Poets Society
-- Add these -> 1990: Edward Scissorhands, Total Recall, The Hunt for Red October
-- Add these -> 1991: Beauty and the Beast, Terminator 2: Judgment Day, The Silence of the Lambs, Hook, The Point Break
-- Add these -> 1992: Aladdin, The Last of the Mohicans, Batman Returns
-- Add these -> 1993: Jurassic Park, Schindler's List, The Nightmare Before Christmas, Groundhog Day, The Fugitive
-- Add these -> 1994: The Lion King, Pulp Fiction, The Shawshank Redemption, Forrest Gump, Léon: The Professional
-- Add these -> 1995: Toy Story, Braveheart
-- Add these -> 1996: Independence Day, The Rock
-- Add these -> 1997: Titanic, The Fifth Element, Good Will Hunting, Men in Black
-- Add these -> 1998: Saving Private Ryan, The Truman Show, The Big Lebowski, Blade
-- Add these -> 1999: The Matrix, Fight Club, The Sixth Sense, Toy Story 2
-- Add these -> 2000: Gladiator, Memento, Crouching Tiger Hidden Dragon
-- Add these -> 2001: Spirited Away, The Lord of the Rings: The Fellowship of the Ring, Shrek, Amélie, Monsters Inc.
-- Add these -> 2002: The Lord of the Rings: The Two Towers, City of God, 28 Days Later, Catch Me If You Can ,Spider-Man
-- Add these -> 2003: The Lord of the Rings: The Return of the King, Finding Nemo, Kill Bill: Vol. 1, Pirates of the Caribbean: The Curse of the Black Pearl
-- Add these -> 2004: The Incredibles, Shaun of the Dead, Kill Bill: Vol. 2
-- Add these -> 2005: Batman Begins, Sin City, V for Vendetta
-- Add these -> 2006: The Prestige, Children of Men, Casino Royale
-- Add these -> 2007: Ratatouille
-- Add these -> 2008: The Dark Knight, WALL-E, Iron Man
-- Add these -> 2009: Inglourious Basterds, Up, Avatar, District 9, Coraline
-- Add these -> 2010: Inception, Tangled
-- Add these -> 2011: Harry Potter and the Deathly Hallows – Part 2,
-- Add these -> 2012: The Avengers, Django Unchained, The Dark Knight Rises
-- Add these -> 2013: Frozen, Gravity
-- Add these -> 2014: Interstellar, The Grand Budapest Hotel
-- Add these -> 2015: Inside Out,
-- Add these -> 2016: Moana, Arrival
-- Add these -> 2017: Coco
-- Add these -> 2018: The Green Book
-- Add these -> 2021: Dune, Encanto, The Mitchells vs. the Machines
-- Add these -> 2024: Dune: Part Two, Inside Out 2
-- The Phantom Tollbooth
-- Donald in Mathmagic Land
-- Bedknobs and Broomsticks
-- Chitty Chitty Bang Bang
-- Alice in Wonderland (1951)
-- The Sword in the Stone (1963)
-- Chatrán (The Adventures of Milo and Otis)
-- Benji (1974)
-- The Love Bug 1969
-- Herbie Rides Again 1974
-- Alf tv serie.
-- Dragon Ball tv serie
-- Dragon Ball Z tv serie
-- Robotech tv serie
-- Super Campeones tv serie
-- Caballeros del Zodiaco tv serie
-- Dr Who (Seasons 5 to 10 in particular).
+Star Trek: The Motion Picture (1979)
+Star Trek II: The Wrath of Khan (1982)
+Star Trek III: The Search for Spock (1984)
+Star Trek IV: The Voyage Home (1986)
+Star Trek V: The Final Frontier (1989)
+Star Trek VI: The Undiscovered Country (1991)
+Star Trek: The Next Generation (1987) - Series
+Star Trek: Deep Space Nine (1993) - Series
+Star Trek: Generations (1994) - Movie
+Star Trek: Voyager (1995) - Series
+Star Trek: First Contact (1996) - Movie
+Star Trek: Insurrection (1998) - Movie
+Star Trek: Enterprise (2001) - Series
+Star Trek: Nemesis (2002) - Movie
+Star Trek: Discovery (2017) - Series
+Star Trek: Picard (2020) - Series
+Star Trek: Lower Decks (2020) - Series
+Star Trek: Prodigy (2021) - Series
+Star Trek (2009)
+Star Trek Into Darkness (2013)
+Star Trek Beyond (2016)
+RoboCop (1987)
+RoboCop 2 (1990)
+RoboCop 3 (1993)
+Rob Roy 1995
+Add Gladiator 2000
+The Last Starfighter 1984
+Batteries Not Included 1987
+Gremlins 1984
+Labyrinth 1986
+Braveheart 1995
+Tron (1982)
+Hackers (1995)
+WarGames (1983)
+The Mask of Zorro (1998):
+Independence Day (1996)
+The Fifth Element (1997)
+Total Recall (1990)
+Contact (1997):
+The Last of the Mohicans (1992)
+Johnny Mnemonic (1995)
+Jurassic Park (1993)
+Starship Troopers (1997)
+Armageddon (1998)
+The Patriot (2000)
+Robin Hood: Prince of Thieves
+Time Bandits (1981)
+Innerspace (1987)
+The Adventures of Baron Munchausen (1988)
+Brazil (1985)
+Honey, I Blew Up the Kid (1992)
+The Witches (1990)
+The Rocketeer (1991)
+The Abyss (1989)
+Sphere (1998)
+The Shadow (1994)
+The Hunt for Red October (1990)
+The Mummy (1999)
+Men in Black II (2002)
+Jumanji (1995)
+The Truman Show (1998)
+Top Gun (1986)
+Dances with Wolves (1990)
+Waterworld (1995)
+Frank Herbert's Dune (2000)
+Mad Max (1979)
+The Empire Strikes Back (1980)
+The Blues Brothers (1980)
+Raiders of the Lost Ark (1981)
+The Evil Dead (1981)
+Mad Max 2: The Road Warrior (1981)
+Chariots of Fire (1981)
+Blade Runner (1982)
+The Thing (1982)
+Gandhi (1982)
+Return of the Jedi (1983)
+The Right Stuff (1983)
+Ghostbusters (1984)
+The Terminator (1984)
+Amadeus (1984)
+The Karate Kid (1984)
+Back to the Future (1985)
+The Goonies (1985)
+Aliens (1986)
+Platoon (1986)
+Stand by Me (1986)
+Top Gun (1986)
+Predator (1987)
+RoboCop (1987)
+Lethal Weapon (1987)
+Die Hard (1988)
+Beetlejuice (1988)
+Akira (1988)
+Who Framed Roger Rabbit (1988)
+The Little Mermaid (1989)
+Indiana Jones and the Last Crusade (1989)
+Batman (1989)
+Dead Poets Society (1989)
+Edward Scissorhands (1990)
+Total Recall (1990)
+The Hunt for Red October (1990)
+Beauty and the Beast (1991)
+Terminator 2: Judgment Day (1991)
+The Silence of the Lambs (1991)
+Hook (1991)
+The Point Break (1991)
+Aladdin (1992)
+The Last of the Mohicans (1992)
+Batman Returns (1992)
+Jurassic Park (1993)
+Schindler's List (1993)
+The Nightmare Before Christmas (1993)
+Groundhog Day (1993)
+The Fugitive (1993)
+The Lion King (1994)
+Pulp Fiction (1994)
+The Shawshank Redemption (1994)
+Forrest Gump (1994)
+Léon: The Professional (1994)
+Toy Story (1995)
+Braveheart (1995)
+Independence Day (1996)
+The Rock (1996)
+Titanic (1997)
+The Fifth Element (1997)
+Good Will Hunting (1997)
+Men in Black (1997)
+Saving Private Ryan (1998)
+The Truman Show (1998)
+The Big Lebowski (1998)
+Blade (1998)
+The Matrix (1999)
+Fight Club (1999)
+The Sixth Sense (1999)
+Toy Story 2 (1999)
+Gladiator (2000)
+Memento (2000)
+Crouching Tiger Hidden Dragon (2000)
+Spirited Away (2001)
+The Lord of the Rings: The Fellowship of the Ring (2001)
+Shrek (2001)
+Amélie (2001)
+Monsters Inc. (2001)
+The Lord of the Rings: The Two Towers (2002)
+City of God (2002)
+28 Days Later (2002)
+Catch Me If You Can (2002)
+Spider-Man (2002)
+The Lord of the Rings: The Return of the King (2003)
+Finding Nemo (2003)
+Kill Bill: Vol. 1 (2003)
+Pirates of the Caribbean: The Curse of the Black Pearl (2003)
+The Incredibles (2004)
+Shaun of the Dead (2004)
+Kill Bill: Vol. 2 (2004)
+Batman Begins (2005)
+Sin City (2005)
+V for Vendetta (2005)
+The Prestige (2006)
+Children of Men (2006)
+Casino Royale (2006)
+Ratatouille (2007)
+The Dark Knight (2008)
+WALL-E (2008)
+Iron Man (2008)
+Inglourious Basterds (2009)
+Up (2009)
+Avatar (2009)
+District 9 (2009)
+Coraline (2009)
+Inception (2010)
+Tangled (2010)
+Harry Potter and the Deathly Hallows - Part 2 (2011)
+The Avengers (2012)
+Django Unchained (2012)
+The Dark Knight Rises (2012)
+Frozen (2013)
+Gravity (2013)
+Interstellar (2014)
+The Grand Budapest Hotel (2014)
+Inside Out (2015)
+Moana (2016)
+Arrival (2016)
+Coco (2017)
+The Green Book (2018)
+Dune (2021)
+Encanto (2021)
+The Mitchells vs. the Machines (2021)
+Dune: Part Two (2024)
+Inside Out 2 (2024)
+Donald in Mathmagic Land (1959)
+Chitty Chitty Bang Bang (1968)
+The Phantom Tollbooth (1970)
+Bedknobs and Broomsticks (1971)
+Alice in Wonderland (1951)
+The Sword in the Stone (1963)
+Chatrán (The Adventures of Milo and Otis) (1986)
+Benji (1974)
+The Love Bug 1969
+Herbie Rides Again 1974
+ALF (1986)
+Dragon Ball (1986)
+Dragon Ball Z (1989)
+Robotech (1985)
+Super Campeones (Captain Tsubasa) (1983)
+Los Caballeros del Zodiaco (Saint Seiya) (1986)
+Doctor Who: Season 5 (2010)
+Doctor Who: Season 6 (2011)
+Doctor Who: Season 7 (2012)
+Doctor Who: Season 8 (2014)
+Doctor Who: Season 9 (2015)
+Doctor Who: Season 10 (2017)
+
+
 
 - we need a script to automatically retrive movie and TV series information from TMDB to populate the item fields, and retrive the cover image hash.jpg.
 - Download and transcribe the page 127 about Bidassoa from https://www.scribd.com/document/392108944/Cordova-Ituburu-80-Anos-de-Pintura-Argentina-Del-Pre-impresionismo-a-La-Novisima-Figuracion#page=127 Here is the text extracted:

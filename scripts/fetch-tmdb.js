@@ -2,7 +2,9 @@
 // Completes the entries of _data/media.json that are missing TMDb data (tmdb_id, poster, tags, rating).
 // Add { "title": "...", "year": "1984" } (optionally "type": "series") and run this script.
 //
-//   node scripts/fetch-tmdb.js [--dry-run] [--file path/to/media.json]
+//   node scripts/fetch-tmdb.js [--dry-run] [--limit N] [--file path/to/media.json]
+//
+// --limit N stops after N entries are completed (not-found ones don't count), so a big list can be done in batches.
 //
 // Token: a TMDb "API Read Access Token" in the TMDB_TOKEN env var or in a .env file at the repo root.
 
@@ -13,7 +15,7 @@ const { loadEnv } = require('./lib/env');
 
 const LANG = loadEnv().TMDB_LANG || 'en-US';
 const COUNTRY = 'US'; // certification source for the age rating
-const FIELD_ORDER = ['id', 'type', 'status', 'watched', 'title', 'year', 'rating', 'tags', 'tmdb_id', 'tmdb_poster_url'];
+const FIELD_ORDER = ['id', 'type', 'status', 'watched', 'title', 'title_es', 'year', 'rating', 'tags', 'tmdb_id', 'tmdb_poster_url'];
 
 const MOVIE_AGE = { G: '0+', PG: '7+', 'PG-13': '13+', R: '17+', 'NC-17': '18+' };
 const TV_AGE = { 'TV-Y': '0+', 'TV-Y7': '7+', 'TV-G': '0+', 'TV-PG': '10+', 'TV-14': '14+', 'TV-MA': '17+' };
@@ -21,6 +23,12 @@ const TV_AGE = { 'TV-Y': '0+', 'TV-Y7': '7+', 'TV-G': '0+', 'TV-PG': '10+', 'TV-
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const fileArg = args.includes('--file') ? args[args.indexOf('--file') + 1] : null;
+const limitArg = args.find(a => a.startsWith('--limit'));
+const limit = limitArg ? Number(limitArg.includes('=') ? limitArg.split('=')[1] : args[args.indexOf('--limit') + 1]) : Infinity;
+if (!(limit >= 1) || (limit !== Infinity && !Number.isInteger(limit))) {
+  console.error('--limit needs a positive whole number, e.g. --limit 20');
+  process.exit(1);
+}
 const mediaFile = path.resolve(fileArg || path.join(__dirname, '..', '_data', 'media.json'));
 
 const isEmpty = value => value === undefined || value === null || value === '';
@@ -146,6 +154,7 @@ async function main() {
   const notFound = [];
 
   for (const item of pending) {
+    if (updated >= limit) break;
     const label = `${item.title} (${item.year || '?'})`;
     if (isEmpty(item.year) && isEmpty(item.tmdb_id)) {
       console.log(`- ${label}: needs a year or a tmdb_id, skipped`);
@@ -173,6 +182,8 @@ async function main() {
 
   if (updated && !dryRun) fs.writeFileSync(mediaFile, JSON.stringify(items, null, 2) + '\n');
   console.log(`\n${updated} completed, ${notFound.length} not found${dryRun ? ' (dry run, nothing written)' : ''}`);
+  const left = pending.length - updated - notFound.length;
+  if (updated >= limit && left > 0) console.log(`${left} still pending, run it again for the next batch`);
 }
 
 main().catch(err => {

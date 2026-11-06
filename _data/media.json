@@ -636,919 +636,2199 @@
     "tmdb_poster_url": "zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg"
   },
   {
-    "title": "Rob Roy"
-  },
-  {
-    "title": "Star Trek: The Motion Picture",
-    "year": "1979",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek II: The Wrath of Khan",
-    "year": "1982",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek III: The Search for Spock",
-    "year": "1984",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek IV: The Voyage Home",
-    "year": "1986",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek V: The Final Frontier",
-    "year": "1989",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek VI: The Undiscovered Country",
-    "year": "1991",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek: The Next Generation",
-    "year": "1987",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek: Deep Space Nine",
-    "year": "1993",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek: Generations",
-    "year": "1994",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek: Voyager",
-    "year": "1995",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek: First Contact",
-    "year": "1996",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek: Insurrection",
-    "year": "1998",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek: Enterprise",
-    "year": "2001",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek: Nemesis",
-    "year": "2002",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek: Discovery",
-    "year": "2017",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek: Picard",
-    "year": "2020",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek: Lower Decks",
-    "year": "2020",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek: Prodigy",
-    "year": "2021",
-    "type": "series"
-  },
-  {
-    "title": "Star Trek",
-    "year": "2009",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek Into Darkness",
-    "year": "2013",
-    "type": "movie"
-  },
-  {
-    "title": "Star Trek Beyond",
-    "year": "2016",
-    "type": "movie"
-  },
-  {
-    "title": "RoboCop",
-    "year": "1987",
-    "type": "movie"
-  },
-  {
-    "title": "RoboCop 2",
-    "year": "1990",
-    "type": "movie"
-  },
-  {
-    "title": "RoboCop 3",
-    "year": "1993",
-    "type": "movie"
-  },
-  {
+    "id": "bee3126e-dd38-4f7b-af5b-c689984fe1a3",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Rob Roy",
     "year": "1995",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Adventure; History; Drama; Action; War",
+    "tmdb_id": "11780",
+    "tmdb_poster_url": "kWI2rF6RAnRtEjfBlZgsXumgOm5.jpg"
   },
   {
+    "id": "7d55f755-c18d-474f-ae0b-3b268cc3637a",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: The Motion Picture",
+    "year": "1979",
+    "rating": "0+",
+    "tags": "Science Fiction; Adventure; Mystery",
+    "tmdb_id": "152",
+    "tmdb_poster_url": "wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg"
+  },
+  {
+    "id": "ef722d1e-60c9-4362-aeff-cbc2d6994057",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek II: The Wrath of Khan",
+    "year": "1982",
+    "rating": "7+",
+    "tags": "Action; Adventure; Science Fiction",
+    "tmdb_id": "154",
+    "tmdb_poster_url": "uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg"
+  },
+  {
+    "id": "c8133bcf-e07e-4515-891d-674764351de7",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek III: The Search for Spock",
+    "year": "1984",
+    "rating": "7+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "157",
+    "tmdb_poster_url": "yqEj0oPfKBMCz7YcCARHDgH7VFm.jpg"
+  },
+  {
+    "id": "d00e0ce3-6749-4f0c-8bf8-f90fe31a9b1c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek IV: The Voyage Home",
+    "year": "1986",
+    "rating": "7+",
+    "tags": "Science Fiction; Adventure",
+    "tmdb_id": "168",
+    "tmdb_poster_url": "xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg"
+  },
+  {
+    "id": "ce229909-dabf-4a97-8577-19db9f822773",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek V: The Final Frontier",
+    "year": "1989",
+    "rating": "7+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "172",
+    "tmdb_poster_url": "uiXr41VLYsuug3CZbFrKLSNahuZ.jpg"
+  },
+  {
+    "id": "6ccbd332-a4c0-49cc-9126-02623d3af338",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek VI: The Undiscovered Country",
+    "year": "1991",
+    "rating": "7+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "174",
+    "tmdb_poster_url": "tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg"
+  },
+  {
+    "id": "e5b895da-c46c-45e7-a92e-5e769e0654e2",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: The Next Generation",
+    "year": "1987",
+    "rating": "10+",
+    "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama; Mystery",
+    "tmdb_id": "655",
+    "tmdb_poster_url": "vkLzXddgUKH5VcpnYiRzpJFrZhz.jpg"
+  },
+  {
+    "id": "ad510464-7c57-4511-a40c-ecbe96ef1b21",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Deep Space Nine",
+    "year": "1993",
+    "rating": "10+",
+    "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+    "tmdb_id": "580",
+    "tmdb_poster_url": "vE6138ykaEXQkCSEHyuBIgfGlUZ.jpg"
+  },
+  {
+    "id": "29410fe5-5ffd-4654-a597-7a4591895f59",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Generations",
+    "year": "1994",
+    "rating": "7+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "193",
+    "tmdb_poster_url": "wqU1XiJgvgJVrFCWjZEqat3icMT.jpg"
+  },
+  {
+    "id": "0e66409d-964d-4c8e-976d-bdd3bb740f26",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Voyager",
+    "year": "1995",
+    "rating": "10+",
+    "tags": "Sci-Fi & Fantasy; Drama; Action & Adventure",
+    "tmdb_id": "1855",
+    "tmdb_poster_url": "gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
+  },
+  {
+    "id": "9fdf25b5-8fa5-4cd4-aabc-4bdba7efdd6b",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: First Contact",
+    "year": "1996",
+    "rating": "13+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "199",
+    "tmdb_poster_url": "kYsoZC7BWVYOs2B7P1l6yck7hEG.jpg"
+  },
+  {
+    "id": "24dc48ea-1640-4bb4-aac7-619c8664e8bd",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Insurrection",
+    "year": "1998",
+    "rating": "7+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "200",
+    "tmdb_poster_url": "xQCMAHeg5M9HpDIqanYbWdr4brB.jpg"
+  },
+  {
+    "id": "dac2bb48-3b64-41ed-9509-7c9919af59ce",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Enterprise",
+    "year": "2001",
+    "rating": "10+",
+    "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+    "tmdb_id": "314",
+    "tmdb_poster_url": "tsbBTABtNgu0ycsFpnIhiQ5woOM.jpg"
+  },
+  {
+    "id": "b85cc7d7-ef90-40fe-b4d7-e112e6b958b2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Nemesis",
+    "year": "2002",
+    "rating": "13+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "201",
+    "tmdb_poster_url": "cldAwhvBmOv9jrd3bXWuqRHoXyq.jpg"
+  },
+  {
+    "id": "b8558d68-cf0d-451e-817c-11554cbfd0ac",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Discovery",
+    "year": "2017",
+    "rating": "14+",
+    "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+    "tmdb_id": "67198",
+    "tmdb_poster_url": "xwpOHgym48Ftz7fbJq5te5xoiwu.jpg"
+  },
+  {
+    "id": "952a651c-7ccd-4a61-9b9a-29b190e9ce58",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Picard",
+    "year": "2020",
+    "rating": "17+",
+    "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+    "tmdb_id": "85949",
+    "tmdb_poster_url": "nIlAKIrLKxOeoEnc0Urb65yNCp.jpg"
+  },
+  {
+    "id": "43eed06e-1ed6-4246-9357-8f46973ed256",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Lower Decks",
+    "year": "2020",
+    "rating": "14+",
+    "tags": "Sci-Fi & Fantasy; Animation; Comedy",
+    "tmdb_id": "85948",
+    "tmdb_poster_url": "i7Em3r7KCyNfkOwMkyqN8UMvK8S.jpg"
+  },
+  {
+    "id": "2135034c-812d-4a58-890b-e44220c299af",
+    "type": "series",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek: Prodigy",
+    "year": "2021",
+    "rating": "7+",
+    "tags": "Animation; Sci-Fi & Fantasy; Kids",
+    "tmdb_id": "106393",
+    "tmdb_poster_url": "Aqub3PSzLm2F398vitkbkxjopjO.jpg"
+  },
+  {
+    "id": "dfe2fead-aeaa-42d8-ac50-d1ba6b5f160b",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek",
+    "year": "2009",
+    "rating": "13+",
+    "tags": "Science Fiction; Action; Adventure",
+    "tmdb_id": "13475",
+    "tmdb_poster_url": "lV5OpzAss1z06YNagOVap1I35mH.jpg"
+  },
+  {
+    "id": "3b57bb76-9c20-43c9-a5ad-a5d09e2dc846",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek Into Darkness",
+    "year": "2013",
+    "rating": "13+",
+    "tags": "Action; Adventure; Science Fiction",
+    "tmdb_id": "54138",
+    "tmdb_poster_url": "Aim3kVNh1MPIxPEFeJrl9e9Uf1a.jpg"
+  },
+  {
+    "id": "d9a89fc0-668b-46ad-adf0-dd5e16196527",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Star Trek Beyond",
+    "year": "2016",
+    "rating": "13+",
+    "tags": "Action; Adventure; Science Fiction",
+    "tmdb_id": "188927",
+    "tmdb_poster_url": "wI5VghYNYLktDRPUa5rrVcVA1h7.jpg"
+  },
+  {
+    "id": "e822ae49-0afd-413d-a872-0168d84ba663",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "RoboCop",
+    "year": "1987",
+    "rating": "17+",
+    "tags": "Action; Thriller; Science Fiction",
+    "tmdb_id": "5548",
+    "tmdb_poster_url": "hHtOgGb3NihlyRATHlKPaFApbrd.jpg"
+  },
+  {
+    "id": "b3735adb-6dd1-492a-a5fa-57c9f30732ee",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "RoboCop 2",
+    "year": "1990",
+    "rating": "17+",
+    "tags": "Action; Science Fiction; Thriller",
+    "tmdb_id": "5549",
+    "tmdb_poster_url": "nhqBxhOJXUJeFsyLxTFkctH9H5F.jpg"
+  },
+  {
+    "id": "b57003c8-6201-4552-ae61-28837338873f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "RoboCop 3",
+    "year": "1993",
+    "rating": "13+",
+    "tags": "Action; Science Fiction; Thriller",
+    "tmdb_id": "5550",
+    "tmdb_poster_url": "ppLSSwCuC5ERRWbu9H3R8SPL9AM.jpg"
+  },
+  {
+    "id": "bb579336-2bea-4b29-8f0c-c810efac99d3",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Rob Roy",
+    "year": "1995",
+    "rating": "17+",
+    "tags": "Adventure; History; Drama; Action; War",
+    "tmdb_id": "11780",
+    "tmdb_poster_url": "kWI2rF6RAnRtEjfBlZgsXumgOm5.jpg"
+  },
+  {
+    "id": "2132bd97-83ce-46e3-8238-b949473a4760",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Gladiator",
     "year": "2000",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Drama; Adventure",
+    "tmdb_id": "98",
+    "tmdb_poster_url": "aDb548BOkFfI4nFm0kx8A3Ezh7H.jpg"
   },
   {
+    "id": "6b9033b5-dc6a-4d24-8287-82ce945c4504",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Last Starfighter",
     "year": "1984",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Science Fiction; Action",
+    "tmdb_id": "11884",
+    "tmdb_poster_url": "A7oAHTjtYnIEQjJs62IONRufooq.jpg"
   },
   {
+    "id": "276d8214-9d78-40b8-96c6-980ad0326d03",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Batteries Not Included",
     "year": "1987",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Family; Comedy; Science Fiction",
+    "tmdb_id": "11548",
+    "tmdb_poster_url": "8NkpnpdLd8J6zCR8ZGTeGTur4uO.jpg"
   },
   {
+    "id": "2b020cc3-072d-46d4-ae37-397a9ed97644",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Gremlins",
     "year": "1984",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Fantasy; Horror; Comedy",
+    "tmdb_id": "927",
+    "tmdb_poster_url": "6m0F7fsXjQvUbCZrPWcJNrjvIui.jpg"
   },
   {
+    "id": "02ee1c98-8dea-432a-ad61-cfde39c19b3f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Labyrinth",
     "year": "1986",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Family; Fantasy",
+    "tmdb_id": "13597",
+    "tmdb_poster_url": "pejayhTVBEL4w8YKSfrhOjjWVlH.jpg"
   },
   {
+    "id": "cfcd66ec-5294-4823-874d-1b0a28d9bbf6",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Braveheart",
     "year": "1995",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "History; Drama; War",
+    "tmdb_id": "197",
+    "tmdb_poster_url": "or1gBugydmjToAEq7OZY0owwFk.jpg"
   },
   {
+    "id": "fb6c87e9-c836-409a-9617-018eea36aaa4",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Tron",
     "year": "1982",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Science Fiction; Action; Adventure",
+    "tmdb_id": "97",
+    "tmdb_poster_url": "jigY9B6TKz4qlfikZcd18qtzTK4.jpg"
   },
   {
+    "id": "519715aa-c5f1-4208-b951-9b22e518520f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Hackers",
     "year": "1995",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Crime; Thriller; Drama",
+    "tmdb_id": "10428",
+    "tmdb_poster_url": "qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
   },
   {
+    "id": "33c274ac-d594-45ee-8e20-9b2d89169058",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Mask of Zorro",
     "year": "1998",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Adventure",
+    "tmdb_id": "9342",
+    "tmdb_poster_url": "bdMufwGDDzqu4kTSQwrKc5WR4bu.jpg"
   },
   {
+    "id": "6d71c9cd-339b-4922-a10b-0a8089058d3b",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Independence Day",
     "year": "1996",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Adventure; Science Fiction",
+    "tmdb_id": "602",
+    "tmdb_poster_url": "p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg"
   },
   {
+    "id": "4cc0854c-7d0c-4543-8746-038e76f0fd3e",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Fifth Element",
     "year": "1997",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Action; Adventure",
+    "tmdb_id": "18",
+    "tmdb_poster_url": "fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg"
   },
   {
+    "id": "38f3fe02-8f97-473c-9947-af20fe9b0c2a",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Total Recall",
     "year": "1990",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Adventure; Science Fiction",
+    "tmdb_id": "861",
+    "tmdb_poster_url": "wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg"
   },
   {
+    "id": "ebd80941-5ea6-4ddd-bfe5-9c6820143504",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Contact",
     "year": "1997",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Drama; Science Fiction; Mystery",
+    "tmdb_id": "686",
+    "tmdb_poster_url": "bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg"
   },
   {
+    "id": "a00cee96-8e44-4d86-b55b-45e254bfc102",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Last of the Mohicans",
     "year": "1992",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "History; War; Drama",
+    "tmdb_id": "9361",
+    "tmdb_poster_url": "qzJMPWRtZveBkxXOv3ucWhoJuyj.jpg"
   },
   {
+    "id": "1747fdf8-7ddc-4c00-95b2-c81b11d59226",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Johnny Mnemonic",
     "year": "1995",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Science Fiction; Action; Adventure",
+    "tmdb_id": "9886",
+    "tmdb_poster_url": "iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg"
   },
   {
+    "id": "051fda45-19ad-4c47-812f-9f4372f8385c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Jurassic Park",
     "year": "1993",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Science Fiction",
+    "tmdb_id": "329",
+    "tmdb_poster_url": "d9mtMGQDLANKieb9PbD3yK7xxzo.jpg"
   },
   {
+    "id": "f5b46c17-0ebf-4b81-95c7-f6751487b957",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Starship Troopers",
     "year": "1997",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Adventure; Action; Thriller; Science Fiction",
+    "tmdb_id": "563",
+    "tmdb_poster_url": "cxCmv23O7p3hyHwqoktHYkZcGsY.jpg"
   },
   {
+    "id": "0efbbc11-0db7-4197-b68c-63412e3d0c88",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Armageddon",
     "year": "1998",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Science Fiction; Adventure",
+    "tmdb_id": "95",
+    "tmdb_poster_url": "eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg"
   },
   {
+    "id": "8eb909ba-66b8-408b-a4ac-c3e786fe99bf",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Patriot",
     "year": "2000",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "War; History; Drama",
+    "tmdb_id": "2024",
+    "tmdb_poster_url": "fWZd815QxUCUcrWQZwUkAp9ljG.jpg"
   },
   {
+    "id": "1c81f18f-bcc6-452e-8348-556b2f0774a4",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Robin Hood: Prince of Thieves",
     "year": "1991",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Adventure; Drama",
+    "tmdb_id": "8367",
+    "tmdb_poster_url": "hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg"
   },
   {
+    "id": "d89e220c-66ed-4b68-b37c-b2a446c20656",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Time Bandits",
     "year": "1981",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Family; Fantasy; Science Fiction; Adventure; Comedy",
+    "tmdb_id": "36819",
+    "tmdb_poster_url": "4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
   },
   {
+    "id": "3362d3cb-7739-4adb-99ae-4344c46163de",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Innerspace",
     "year": "1987",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Action; Comedy; Science Fiction",
+    "tmdb_id": "2614",
+    "tmdb_poster_url": "nuK4HEeIByWg1BSJrXAAQ4pIAJW.jpg"
   },
   {
+    "id": "6a4b039e-c81d-4b43-8553-7739502fe76c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Adventures of Baron Munchausen",
     "year": "1988",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Fantasy; Adventure; Comedy",
+    "tmdb_id": "14506",
+    "tmdb_poster_url": "oiOwGRqwrKpg1EMUlPgRjVC49bn.jpg"
   },
   {
+    "id": "fde6d739-a2af-4e69-a0a1-3399e7a2b913",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Brazil",
     "year": "1985",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Comedy; Science Fiction",
+    "tmdb_id": "68",
+    "tmdb_poster_url": "2w09J0KUnVtJvqPYu8N63XjAyCR.jpg"
   },
   {
+    "id": "958799be-84d8-4d87-a6fd-edf1e85cb4f7",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Honey, I Blew Up the Kid",
     "year": "1992",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Comedy; Family; Science Fiction",
+    "tmdb_id": "11158",
+    "tmdb_poster_url": "4EGqDo2pP2ZL0TCcYDGnwsU8liQ.jpg"
   },
   {
+    "id": "01a0d7b8-097c-4535-9876-b7a2b2e7af74",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Witches",
     "year": "1990",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Fantasy; Family; Horror",
+    "tmdb_id": "10166",
+    "tmdb_poster_url": "mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg"
   },
   {
+    "id": "31139d54-573a-4034-b140-3c140f5dc4ff",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Rocketeer",
     "year": "1991",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Science Fiction",
+    "tmdb_id": "10249",
+    "tmdb_poster_url": "2tDFRESFwKww1LHRE8W1Exj9edH.jpg"
   },
   {
+    "id": "27d1bbc0-e524-4cf0-a168-6b9915493448",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Abyss",
     "year": "1989",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Thriller; Science Fiction",
+    "tmdb_id": "2756",
+    "tmdb_poster_url": "2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg"
   },
   {
+    "id": "8585482c-f6a6-4a07-ba0f-680b1f112683",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Sphere",
     "year": "1998",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Mystery; Thriller",
+    "tmdb_id": "10153",
+    "tmdb_poster_url": "reR7C7EYe3DiHm5OYpA0ACUMDld.jpg"
   },
   {
+    "id": "61ff0675-b7d8-46fa-8f7e-59596b42fb6b",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Shadow",
     "year": "1994",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Fantasy; Action; Crime; Adventure",
+    "tmdb_id": "8850",
+    "tmdb_poster_url": "xAbFJH3vQYZvUyzzGAtG4OLy492.jpg"
   },
   {
+    "id": "b9744aa7-5e1d-4c29-a36b-73bfd557e154",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Hunt for Red October",
     "year": "1990",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Thriller",
+    "tmdb_id": "1669",
+    "tmdb_poster_url": "yVl7zidse4KiWtGMqHFtZCx4X3N.jpg"
   },
   {
+    "id": "c60ccb8f-a3de-438b-b388-114c01ddfc66",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Mummy",
     "year": "1999",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Action; Fantasy",
+    "tmdb_id": "564",
+    "tmdb_poster_url": "yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg"
   },
   {
+    "id": "7f6eef68-499b-4ec3-9f22-721838c0353d",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Men in Black II",
     "year": "2002",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Comedy; Science Fiction",
+    "tmdb_id": "608",
+    "tmdb_poster_url": "enA22EPyzc2WQ1VVyY7zxresQQr.jpg"
   },
   {
+    "id": "eea15e3d-5b17-4e07-b88f-8ea99272bdd8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Jumanji",
     "year": "1995",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Fantasy; Family",
+    "tmdb_id": "8844",
+    "tmdb_poster_url": "bdHG5Mo83VPobeZZdlSz0Y7HQHB.jpg"
   },
   {
+    "id": "6116a6f8-2b8b-4909-9afb-16fa918e45f8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Truman Show",
     "year": "1998",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Comedy; Drama",
+    "tmdb_id": "37165",
+    "tmdb_poster_url": "vuza0WqY239yBXOadKlGwJsZJFE.jpg"
   },
   {
+    "id": "7d9ac721-32f5-459e-838e-60ae96175292",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Top Gun",
     "year": "1986",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Action; Drama; Romance",
+    "tmdb_id": "744",
+    "tmdb_poster_url": "xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg"
   },
   {
+    "id": "2eb9ec8b-0908-4380-aee9-3f7dc7b9790a",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Dances with Wolves",
     "year": "1990",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Drama; Western",
+    "tmdb_id": "581",
+    "tmdb_poster_url": "hw0ZEHAaTqTxSXGVwUFX7uvanSA.jpg"
   },
   {
+    "id": "1c44c896-13ff-4dd6-ab6e-2f5c86d1f0f3",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Waterworld",
     "year": "1995",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Action",
+    "tmdb_id": "9804",
+    "tmdb_poster_url": "X4UyUO5jgzs3c5YafnmYKLKKYw.jpg"
   },
   {
+    "id": "7fd364e8-8e5d-4a72-8d7e-9d0196b32d26",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "Frank Herbert's Dune",
     "year": "2000",
-    "type": "series"
+    "rating": "14+",
+    "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+    "tmdb_id": "19566",
+    "tmdb_poster_url": "iIf5XeuuBKPtG6H7MfWLirbJGrQ.jpg"
   },
   {
+    "id": "01d7e4a7-7b03-4a36-8d28-0a2168ff179f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Mad Max",
     "year": "1979",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Science Fiction",
+    "tmdb_id": "9659",
+    "tmdb_poster_url": "5LrI4GiCSrChgkdskVZiwv643Kg.jpg"
   },
   {
+    "id": "bef7a779-b59d-4cf5-b51c-26a119f055d1",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Empire Strikes Back",
     "year": "1980",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Action; Science Fiction",
+    "tmdb_id": "1891",
+    "tmdb_poster_url": "nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg"
   },
   {
+    "id": "dc9188d4-7b72-4c01-b1d2-20dcb1926a97",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Blues Brothers",
     "year": "1980",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Music; Comedy; Action; Adventure",
+    "tmdb_id": "525",
+    "tmdb_poster_url": "b0hq1d2d7FIvRGNLewKLm79JNTK.jpg"
   },
   {
+    "id": "2677d5c5-bb21-4882-bc4a-dff2b4404dd0",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Raiders of the Lost Ark",
     "year": "1981",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Action",
+    "tmdb_id": "85",
+    "tmdb_poster_url": "ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
   },
   {
+    "id": "d882a3c9-d442-490c-bbf1-2f08af1eb594",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Evil Dead",
     "year": "1981",
-    "type": "movie"
+    "rating": "18+",
+    "tags": "Horror",
+    "tmdb_id": "764",
+    "tmdb_poster_url": "54C1qdaiSijIU5NeNb4WsPJdNkG.jpg"
   },
   {
+    "id": "249223d6-ef95-42d9-96a0-b051fbbc6fb8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Mad Max 2: The Road Warrior",
     "year": "1981",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Science Fiction",
+    "tmdb_id": "8810",
+    "tmdb_poster_url": "l1KVEhkGDpWRzQ0VqIhZqDDuOim.jpg"
   },
   {
+    "id": "06fbda83-9676-4357-a5ad-4385709159f1",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Chariots of Fire",
     "year": "1981",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Drama; History",
+    "tmdb_id": "9443",
+    "tmdb_poster_url": "qnRaum8k0HqGRml2i7OawFqUtEb.jpg"
   },
   {
+    "id": "81dc201c-b4a5-4dfb-bc02-e3f94448fc4f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Thing",
     "year": "1982",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Horror; Mystery; Science Fiction",
+    "tmdb_id": "1091",
+    "tmdb_poster_url": "tzGY49kseSE9QAKk47uuDGwnSCu.jpg"
   },
   {
+    "id": "a6c2897a-f983-4d9e-ba33-7157a3f32b6c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Gandhi",
     "year": "1982",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Drama; History",
+    "tmdb_id": "783",
+    "tmdb_poster_url": "rOXftt7SluxskrFrvU7qFJa5zeN.jpg"
   },
   {
+    "id": "8b28f1e2-cb96-45c6-8a25-270a78f0cfdb",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Return of the Jedi",
     "year": "1983",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Adventure; Action; Science Fiction",
+    "tmdb_id": "1892",
+    "tmdb_poster_url": "jQYlydvHm3kUix1f8prMucrplhm.jpg"
   },
   {
+    "id": "153667a2-d854-4da6-bbad-d8c6829e9d8f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Right Stuff",
     "year": "1983",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Drama; History",
+    "tmdb_id": "9549",
+    "tmdb_poster_url": "htEr0vyHbU7FMr8qvTguTmaTvES.jpg"
   },
   {
+    "id": "f76da05e-80b3-4335-926f-b44a130a6bcc",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Ghostbusters",
     "year": "1984",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Comedy; Fantasy",
+    "tmdb_id": "620",
+    "tmdb_poster_url": "7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg"
   },
   {
+    "id": "7cb89ca2-37ca-4fa2-858d-c0ec1ca1b5d0",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Terminator",
     "year": "1984",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Science Fiction",
+    "tmdb_id": "218",
+    "tmdb_poster_url": "qvktm0BHcnmDpul4Hz01GIazWPr.jpg"
   },
   {
+    "id": "a497a35d-8480-43fc-8b4d-1cad6cb60c86",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Amadeus",
     "year": "1984",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Drama; History; Music",
+    "tmdb_id": "279",
+    "tmdb_poster_url": "gQRfiyfGvr1az0quaYyMram3Aqt.jpg"
   },
   {
+    "id": "fd1358ae-bd6e-43c9-a240-188b53ffd51f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Karate Kid",
     "year": "1984",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Action; Drama; Family",
+    "tmdb_id": "1885",
+    "tmdb_poster_url": "1mp4ViklKvA0WXXsNvNx0RBuiit.jpg"
   },
   {
+    "id": "f9319ece-9f69-4b7b-83e4-63a422c3696f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Aliens",
     "year": "1986",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Science Fiction",
+    "tmdb_id": "679",
+    "tmdb_poster_url": "r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
   },
   {
+    "id": "d3c39846-368b-466e-88a4-ac385ddee97d",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Platoon",
     "year": "1986",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; War; Action",
+    "tmdb_id": "792",
+    "tmdb_poster_url": "m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg"
   },
   {
+    "id": "1847849a-efcc-4e6f-b436-7cef852b0a7b",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Stand by Me",
     "year": "1986",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; Adventure",
+    "tmdb_id": "235",
+    "tmdb_poster_url": "vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg"
   },
   {
+    "id": "04948c6f-5991-4c3e-85c4-862a65e39ae5",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Predator",
     "year": "1987",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Science Fiction; Action; Adventure; Thriller",
+    "tmdb_id": "106",
+    "tmdb_poster_url": "k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg"
   },
   {
+    "id": "56c73b9e-ed3a-40f7-8837-4814b6b3ff18",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Lethal Weapon",
     "year": "1987",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Crime",
+    "tmdb_id": "941",
+    "tmdb_poster_url": "6gt44oqb4nE8vflPElffeGwsHVl.jpg"
   },
   {
+    "id": "321545c9-f59d-49c7-a092-0adbff7eb21e",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Die Hard",
     "year": "1988",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller",
+    "tmdb_id": "562",
+    "tmdb_poster_url": "7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg"
   },
   {
+    "id": "b73d3cae-d043-456d-ba9c-6ca422667d57",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Akira",
     "year": "1988",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Animation; Science Fiction; Action",
+    "tmdb_id": "149",
+    "tmdb_poster_url": "neZ0ykEsPqxamsX6o5QNUFILQrz.jpg"
   },
   {
+    "id": "2dedb706-edb0-44a6-8ad0-ee8f050543d6",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Who Framed Roger Rabbit",
     "year": "1988",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Fantasy; Animation; Comedy; Crime",
+    "tmdb_id": "856",
+    "tmdb_poster_url": "lYfRc57Kx9VgLZ48iulu0HKnM15.jpg"
   },
   {
+    "id": "afff2908-8148-4603-b443-3c5621fa8e17",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Little Mermaid",
     "year": "1989",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Family; Fantasy",
+    "tmdb_id": "10144",
+    "tmdb_poster_url": "plcZXvI310FkbwIptvd6rqk63LP.jpg"
   },
   {
+    "id": "ddee52b3-a95c-4985-a850-086c1341b8de",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Batman",
     "year": "1989",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Fantasy; Action; Crime",
+    "tmdb_id": "268",
+    "tmdb_poster_url": "cij4dd21v2Rk2YtUQbV5kW69WB2.jpg"
   },
   {
+    "id": "43cd8832-b789-436a-baab-55fa36458868",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Dead Poets Society",
     "year": "1989",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Drama",
+    "tmdb_id": "207",
+    "tmdb_poster_url": "erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg"
   },
   {
+    "id": "6d4f6664-38bb-471c-949b-1e3d5f416db4",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Edward Scissorhands",
     "year": "1990",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Fantasy; Drama; Romance",
+    "tmdb_id": "162",
+    "tmdb_poster_url": "e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg"
   },
   {
+    "id": "6598d6dc-b0dc-43b4-b71b-3e7ea6c875d0",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Beauty and the Beast",
     "year": "1991",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Romance; Family; Animation; Fantasy",
+    "tmdb_id": "10020",
+    "tmdb_poster_url": "hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg"
   },
   {
+    "id": "5242fd29-e68e-4f36-9152-ca89572667b0",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Terminator 2: Judgment Day",
     "year": "1991",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Science Fiction",
+    "tmdb_id": "280",
+    "tmdb_poster_url": "jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg"
   },
   {
+    "id": "80577d73-1682-4b9b-92e2-1e2c6f1c7e3f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Silence of the Lambs",
     "year": "1991",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Crime; Thriller; Drama",
+    "tmdb_id": "274",
+    "tmdb_poster_url": "uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
   },
   {
+    "id": "c372cdcd-286d-49a9-b720-c1714acfece5",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Point Break",
     "year": "1991",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Crime",
+    "tmdb_id": "1089",
+    "tmdb_poster_url": "tlbERIghrQ4oofqlbF7H0K0EYnx.jpg"
   },
   {
+    "id": "cff3de4f-13d7-410b-bcd9-3bf037a3d068",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Aladdin",
     "year": "1992",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Family; Adventure; Fantasy; Romance",
+    "tmdb_id": "812",
+    "tmdb_poster_url": "eLFfl7vS8dkeG1hKp5mwbm37V83.jpg"
   },
   {
+    "id": "89899e6a-315e-48dd-847c-56c18c77ad04",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Batman Returns",
     "year": "1992",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Fantasy",
+    "tmdb_id": "364",
+    "tmdb_poster_url": "jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg"
   },
   {
+    "id": "6c812ec1-a0b2-4f11-b5ef-70c06c0aee6a",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Schindler's List",
     "year": "1993",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; History; War",
+    "tmdb_id": "424",
+    "tmdb_poster_url": "sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
   },
   {
+    "id": "f0338337-8ea3-4779-a4ee-d2afaa7f2199",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Nightmare Before Christmas",
     "year": "1993",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Fantasy; Animation; Family",
+    "tmdb_id": "9479",
+    "tmdb_poster_url": "oQffRNjK8e19rF7xVYEN8ew0j7b.jpg"
   },
   {
+    "id": "01ac3476-54df-4b1c-809b-c1f62453d2d8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Fugitive",
     "year": "1993",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Thriller; Drama",
+    "tmdb_id": "5503",
+    "tmdb_poster_url": "b3rEtLKyOnF89mcK75GXDXdmOEf.jpg"
   },
   {
+    "id": "edf9e1da-8148-4726-8e2f-d0fc2df66454",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Lion King",
     "year": "1994",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Family; Drama",
+    "tmdb_id": "8587",
+    "tmdb_poster_url": "sKCr78MXSLixwmZ8DyJLrpMsd15.jpg"
   },
   {
+    "id": "045c07c6-fdb3-467a-a699-c30c9ed3d807",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Pulp Fiction",
     "year": "1994",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Thriller; Crime; Comedy",
+    "tmdb_id": "680",
+    "tmdb_poster_url": "vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg"
   },
   {
+    "id": "778b7116-a1b2-430b-852c-968df8742b96",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Shawshank Redemption",
     "year": "1994",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; Crime",
+    "tmdb_id": "278",
+    "tmdb_poster_url": "9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
   },
   {
+    "id": "7e09a5c4-4c49-4f5d-96e2-4d61c883254e",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Forrest Gump",
     "year": "1994",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Comedy; Drama; Romance",
+    "tmdb_id": "13",
+    "tmdb_poster_url": "saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
   },
   {
+    "id": "96442c3c-5b83-4e59-a809-9f7f5ccfd851",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Léon: The Professional",
     "year": "1994",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Crime; Drama; Action",
+    "tmdb_id": "101",
+    "tmdb_poster_url": "bxB2q91nKYp8JNzqE7t7TWBVupB.jpg"
   },
   {
+    "id": "85e56d46-dcea-4302-a4cd-fcb5f77f8a16",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Toy Story",
     "year": "1995",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Family; Comedy; Animation; Adventure",
+    "tmdb_id": "862",
+    "tmdb_poster_url": "uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg"
   },
   {
+    "id": "1c216c0f-99d2-4aa6-96b1-76282b523c0f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Rock",
     "year": "1996",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Adventure; Thriller",
+    "tmdb_id": "9802",
+    "tmdb_poster_url": "eBcoxveWzzXQrCrwWMGAROcqgpP.jpg"
   },
   {
+    "id": "bfd76b4a-df0a-421b-be85-c00e337695f8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Titanic",
     "year": "1997",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Drama; Romance",
+    "tmdb_id": "597",
+    "tmdb_poster_url": "9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
   },
   {
+    "id": "5eea6020-a8b8-4559-98c6-1338fd8bc462",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Good Will Hunting",
     "year": "1997",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama",
+    "tmdb_id": "489",
+    "tmdb_poster_url": "z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg"
   },
   {
+    "id": "dd8f0d5b-481b-4595-971b-224a893b2c45",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Saving Private Ryan",
     "year": "1998",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "War; Drama; History",
+    "tmdb_id": "857",
+    "tmdb_poster_url": "uqx37cS8cpHg8U35f9U5IBlrCV3.jpg"
   },
   {
+    "id": "36b369f6-db00-49d5-b72e-5c7938b504cf",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Big Lebowski",
     "year": "1998",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Comedy; Crime",
+    "tmdb_id": "115",
+    "tmdb_poster_url": "3bv6WAp6BSxxYvB5ozKFUYuRA8C.jpg"
   },
   {
+    "id": "756eb73f-8d15-4362-bf99-7ea264528d62",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Blade",
     "year": "1998",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Horror; Action",
+    "tmdb_id": "36647",
+    "tmdb_poster_url": "oWT70TvbsmQaqyphCZpsnQR7R32.jpg"
   },
   {
+    "id": "d1dcf3bc-35f8-4fee-a8e2-2004bee23345",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Fight Club",
     "year": "1999",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; Thriller",
+    "tmdb_id": "550",
+    "tmdb_poster_url": "jSziioSwPVrOy9Yow3XhWIBDjq1.jpg"
   },
   {
+    "id": "053a0d72-4b30-4950-a5d7-e9eb24d78139",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Sixth Sense",
     "year": "1999",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Mystery; Thriller; Drama",
+    "tmdb_id": "745",
+    "tmdb_poster_url": "vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg"
   },
   {
+    "id": "72cb2736-d1b4-4259-9a9d-6eff05ffb628",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Toy Story 2",
     "year": "1999",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Comedy; Family",
+    "tmdb_id": "863",
+    "tmdb_poster_url": "4rbcp3ng8n1MKHjpeqW0L7Fnpzz.jpg"
   },
   {
+    "id": "4a9afcf8-1609-42a7-936e-e75aeae2acff",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Memento",
     "year": "2000",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Mystery; Thriller",
+    "tmdb_id": "77",
+    "tmdb_poster_url": "nzlv62aC0octS5AklAiWpXLX9Z0.jpg"
   },
   {
+    "id": "aecc6ce4-5b17-4dfa-9f5f-656fc575dec9",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Crouching Tiger Hidden Dragon",
     "year": "2000",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Romance; Drama; Action",
+    "tmdb_id": "146",
+    "tmdb_poster_url": "iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg"
   },
   {
+    "id": "83f611a2-979c-4b4e-b73a-a16c872650a6",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Lord of the Rings: The Fellowship of the Ring",
     "year": "2001",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Fantasy; Action",
+    "tmdb_id": "120",
+    "tmdb_poster_url": "6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
   },
   {
+    "id": "5b12d5e5-8b71-486d-b482-66aa2a0add83",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Shrek",
     "year": "2001",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Comedy; Fantasy; Adventure; Family",
+    "tmdb_id": "808",
+    "tmdb_poster_url": "iB64vpL3dIObOtMZgX3RqdVdQDc.jpg"
   },
   {
+    "id": "53a3c726-5dcd-4b74-938b-df79b9e81f41",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Amélie",
     "year": "2001",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Comedy; Romance",
+    "tmdb_id": "194",
+    "tmdb_poster_url": "nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg"
   },
   {
+    "id": "d0035503-9773-4fb9-a1e9-636729fc4305",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Monsters Inc.",
     "year": "2001",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Comedy; Family; Fantasy",
+    "tmdb_id": "585",
+    "tmdb_poster_url": "wFSpyMsp7H0ttERbxY7Trlv8xry.jpg"
   },
   {
+    "id": "3f2ddff2-8227-45a5-b282-ee63c1fc5ed2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Lord of the Rings: The Two Towers",
     "year": "2002",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Fantasy; Action",
+    "tmdb_id": "121",
+    "tmdb_poster_url": "5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"
   },
   {
+    "id": "7b9225b0-cf80-4d98-ae3d-6f3fe05b524a",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "City of God",
     "year": "2002",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; Crime",
+    "tmdb_id": "598",
+    "tmdb_poster_url": "k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg"
   },
   {
+    "id": "1580b844-7afa-4295-b7b0-319b79265cde",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "28 Days Later",
     "year": "2002",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Horror; Thriller; Science Fiction",
+    "tmdb_id": "170",
+    "tmdb_poster_url": "sQckQRt17VaWbo39GIu0TMOiszq.jpg"
   },
   {
+    "id": "6a14bba7-1a2e-4531-aeae-8bad6b01a3b5",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Catch Me If You Can",
     "year": "2002",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Drama; Crime",
+    "tmdb_id": "640",
+    "tmdb_poster_url": "ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg"
   },
   {
+    "id": "61885119-045a-4e5a-b7b4-9f6d93eacccb",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Spider-Man",
     "year": "2002",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Science Fiction",
+    "tmdb_id": "557",
+    "tmdb_poster_url": "or6XJBVpcEbIkma0V9zshnbEtx4.jpg"
   },
   {
+    "id": "a5673591-3598-421d-8e3c-54334dba46cc",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Lord of the Rings: The Return of the King",
     "year": "2003",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Fantasy; Action",
+    "tmdb_id": "122",
+    "tmdb_poster_url": "rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
   },
   {
+    "id": "a966a3b4-e89b-4790-82b6-1ecef83ba484",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Finding Nemo",
     "year": "2003",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Family; Adventure",
+    "tmdb_id": "12",
+    "tmdb_poster_url": "eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg"
   },
   {
+    "id": "e0f33017-5a4a-4ec0-935a-15f74f0afb96",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Kill Bill: Vol. 1",
     "year": "2003",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Crime",
+    "tmdb_id": "24",
+    "tmdb_poster_url": "v7TaX8kXMXs5yFFGR41guUDNcnB.jpg"
   },
   {
+    "id": "85ab144e-5a0b-488a-9fe5-c42b647e07d4",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
     "year": "2003",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Fantasy; Action",
+    "tmdb_id": "22",
+    "tmdb_poster_url": "poHwCZeWzJCShH7tOjg8RIoyjcw.jpg"
   },
   {
+    "id": "df432588-630d-47de-8085-39b74804c0cb",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Shaun of the Dead",
     "year": "2004",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Horror; Comedy",
+    "tmdb_id": "747",
+    "tmdb_poster_url": "dgXPhzNJH8HFTBjXPB177yNx6RI.jpg"
   },
   {
+    "id": "4f071b0b-b2c1-4bc9-8769-5229e7ac6613",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Kill Bill: Vol. 2",
     "year": "2004",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Crime; Thriller",
+    "tmdb_id": "393",
+    "tmdb_poster_url": "2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg"
   },
   {
+    "id": "790d6708-841c-42ea-b178-fbc9a50cb1f5",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Batman Begins",
     "year": "2005",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Drama; Crime; Action",
+    "tmdb_id": "272",
+    "tmdb_poster_url": "sPX89Td70IDDjVr85jdSBb4rWGr.jpg"
   },
   {
+    "id": "468627cf-d918-4bc8-8199-5e5d8f9a35bd",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Sin City",
     "year": "2005",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Crime; Thriller",
+    "tmdb_id": "187",
+    "tmdb_poster_url": "i66G50wATMmPrvpP95f0XP6ZdVS.jpg"
   },
   {
+    "id": "c411b595-16bc-4f08-b2dc-622b6fa75fa9",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "V for Vendetta",
     "year": "2005",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Thriller; Science Fiction",
+    "tmdb_id": "752",
+    "tmdb_poster_url": "1avD1JeaRiJX5M4ahPdZPypGoGN.jpg"
   },
   {
+    "id": "f7c796bf-7b74-46e8-8617-4a24e9b6148f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Prestige",
     "year": "2006",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Drama; Mystery; Science Fiction",
+    "tmdb_id": "1124",
+    "tmdb_poster_url": "Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg"
   },
   {
+    "id": "9be2095d-2387-451b-9ea5-6195f2a51535",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Children of Men",
     "year": "2006",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Science Fiction; Thriller; Action",
+    "tmdb_id": "9693",
+    "tmdb_poster_url": "k9IAS4TehZFcKi4HVByxZNPfqex.jpg"
   },
   {
+    "id": "e73369d5-eca4-458c-9186-f1f7d0028eab",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Casino Royale",
     "year": "2006",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Action; Thriller",
+    "tmdb_id": "36557",
+    "tmdb_poster_url": "lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
   },
   {
+    "id": "f4ade1e4-3571-4ac6-9b26-0fc5500f47a5",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Ratatouille",
     "year": "2007",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Comedy; Family; Fantasy",
+    "tmdb_id": "2062",
+    "tmdb_poster_url": "t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
   },
   {
+    "id": "2fc77c88-aeb6-4e18-9d72-b5d1522c538e",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Dark Knight",
     "year": "2008",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Thriller; Crime",
+    "tmdb_id": "155",
+    "tmdb_poster_url": "qJ2tW6WMUDux911r6m7haRef0WH.jpg"
   },
   {
+    "id": "452ff17b-9760-4c9a-b4a1-dac9bf349386",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "WALL-E",
     "year": "2008",
-    "type": "movie"
+    "tags": "Animation",
+    "tmdb_id": "877268",
+    "tmdb_poster_url": "pJfm3EggGLZToce08Obf7HQHXrP.jpg"
   },
   {
+    "id": "cfc7d715-77b7-48e7-ba49-d5f8da3b1cd2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Iron Man",
     "year": "2008",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Science Fiction; Adventure",
+    "tmdb_id": "1726",
+    "tmdb_poster_url": "78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
   },
   {
+    "id": "ca1c9211-16da-4444-abef-5321a50b4e98",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Inglourious Basterds",
     "year": "2009",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; Thriller; War",
+    "tmdb_id": "16869",
+    "tmdb_poster_url": "aupnPtagH9JVBuMrGEanf4iqXEQ.jpg"
   },
   {
+    "id": "b0cb94d1-ba88-4d62-b971-a581d572f6c8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Up",
     "year": "2009",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Comedy; Family; Adventure",
+    "tmdb_id": "14160",
+    "tmdb_poster_url": "mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg"
   },
   {
+    "id": "6c10eb09-450d-485c-b8d5-b88d8301b7cb",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Avatar",
     "year": "2009",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Action; Adventure",
+    "tmdb_id": "19995",
+    "tmdb_poster_url": "gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg"
   },
   {
+    "id": "7c5885e3-2288-44d7-9dc3-bfae2405482e",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "District 9",
     "year": "2009",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Science Fiction",
+    "tmdb_id": "17654",
+    "tmdb_poster_url": "tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg"
   },
   {
+    "id": "aafed57b-4c40-40d5-aeec-0d7fbbae8253",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Coraline",
     "year": "2009",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Family; Fantasy; Horror",
+    "tmdb_id": "14836",
+    "tmdb_poster_url": "4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
   },
   {
+    "id": "56fbf0d0-8c7c-46c1-8b27-f079d3a71b6b",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Inception",
     "year": "2010",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Science Fiction; Crime",
+    "tmdb_id": "27205",
+    "tmdb_poster_url": "xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
   },
   {
+    "id": "89825a3b-4e2f-4fc9-b382-dc53e63e7df2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Tangled",
     "year": "2010",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Family; Adventure",
+    "tmdb_id": "38757",
+    "tmdb_poster_url": "ym7Kst6a4uodryxqbGOxmewF235.jpg"
   },
   {
+    "id": "741ec482-11cc-4bb3-9f31-b047fcd913bb",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Deathly Hallows - Part 2",
     "year": "2011",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "12444",
+    "tmdb_poster_url": "iGoXIpQb7Pot00EEdwpwPajheZ5.jpg"
   },
   {
+    "id": "6b323e6e-7c45-4d43-a5d6-4c630adfe0c0",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Avengers",
     "year": "2012",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Action; Adventure",
+    "tmdb_id": "24428",
+    "tmdb_poster_url": "RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
   },
   {
+    "id": "71050b6a-f6cd-412a-a1ae-337e3cd2a535",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Django Unchained",
     "year": "2012",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Drama; Western",
+    "tmdb_id": "68718",
+    "tmdb_poster_url": "7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg"
   },
   {
+    "id": "9d74f473-10f5-4c10-beec-4f40ed042607",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Dark Knight Rises",
     "year": "2012",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Crime; Thriller",
+    "tmdb_id": "49026",
+    "tmdb_poster_url": "hr0L2aueqlP2BYUblTTjmtn0hw4.jpg"
   },
   {
+    "id": "c583e598-29e0-47f6-9227-047648ac8658",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Frozen",
     "year": "2013",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Family; Adventure; Fantasy",
+    "tmdb_id": "109445",
+    "tmdb_poster_url": "itAKcobTYGpYT8Phwjd8c9hleTo.jpg"
   },
   {
+    "id": "3e02b850-3752-4500-8311-1fbd7f994e48",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Gravity",
     "year": "2013",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Thriller; Drama",
+    "tmdb_id": "49047",
+    "tmdb_poster_url": "kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
   },
   {
+    "id": "3bd8d2b5-1685-4480-8140-a64fd111c293",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Interstellar",
     "year": "2014",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Adventure; Drama; Science Fiction",
+    "tmdb_id": "157336",
+    "tmdb_poster_url": "yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg"
   },
   {
+    "id": "73fd617e-71c4-4425-bf65-0638650274ea",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Grand Budapest Hotel",
     "year": "2014",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Comedy; Drama",
+    "tmdb_id": "120467",
+    "tmdb_poster_url": "eWdyYQreja6JGCzqHWXpWHDrrPo.jpg"
   },
   {
+    "id": "6f15903f-fba3-460a-ac32-adff5bdf69b9",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Arrival",
     "year": "2016",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Drama; Science Fiction; Mystery",
+    "tmdb_id": "329865",
+    "tmdb_poster_url": "pEzNVQfdzYDzVK0XqxERIw2x2se.jpg"
   },
   {
+    "id": "99f7eca6-5bcf-47d4-9b4d-d4523fc333e2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Coco",
     "year": "2017",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Family; Animation; Music; Adventure",
+    "tmdb_id": "354912",
+    "tmdb_poster_url": "6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
   },
   {
+    "id": "22c387fb-de92-4180-9db7-e0e08b054aec",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Green Book",
     "year": "2018",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Drama; Comedy; History",
+    "tmdb_id": "490132",
+    "tmdb_poster_url": "7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg"
   },
   {
+    "id": "49d1d335-2c01-4a3d-a628-f9f69a9f2fd0",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Dune",
     "year": "2021",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Adventure",
+    "tmdb_id": "438631",
+    "tmdb_poster_url": "v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg"
   },
   {
+    "id": "eaf74f31-0fbe-4bc3-b5d2-e58dcde6432c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Encanto",
     "year": "2021",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Comedy; Family; Fantasy",
+    "tmdb_id": "568124",
+    "tmdb_poster_url": "4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
   },
   {
+    "id": "6f836d29-c329-4b38-911b-f941dbd9b00d",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Mitchells vs. the Machines",
     "year": "2021",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Adventure; Comedy",
+    "tmdb_id": "501929",
+    "tmdb_poster_url": "mI2Di7HmskQQ34kz0iau6J1vr70.jpg"
   },
   {
+    "id": "41e0f63f-3f82-4124-a2da-5c3118431ba1",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Dune: Part Two",
     "year": "2024",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Adventure",
+    "tmdb_id": "693134",
+    "tmdb_poster_url": "6izwz7rsy95ARzTR3poZ8H6c5pp.jpg"
   },
   {
+    "id": "87723ceb-c1ec-434c-af04-7800eb62a418",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Inside Out 2",
     "year": "2024",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Animation; Adventure; Comedy; Family",
+    "tmdb_id": "1022789",
+    "tmdb_poster_url": "vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
   },
   {
+    "id": "00009410-098a-41f9-8be8-388f166249a1",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Donald in Mathmagic Land",
     "year": "1959",
-    "type": "movie"
+    "tags": "Animation; Fantasy; Family; Comedy",
+    "tmdb_id": "19715",
+    "tmdb_poster_url": "dKyvrSVysFobPPmMHqyStvrJRqc.jpg"
   },
   {
+    "id": "60b4a3cc-54d3-456e-9b8f-65f5d0848b15",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Chitty Chitty Bang Bang",
     "year": "1968",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Family; Adventure; Fantasy; Comedy",
+    "tmdb_id": "11708",
+    "tmdb_poster_url": "wJ62FzGeCAs6PjCIK1as6xzdIY5.jpg"
   },
   {
+    "id": "bf450448-78fb-4e28-8dfb-b333a4cd9d18",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Phantom Tollbooth",
     "year": "1970",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Adventure; Comedy; Fantasy; Family",
+    "tmdb_id": "28476",
+    "tmdb_poster_url": "totkDxL4QApB4xFr7gc1EdGkz7J.jpg"
   },
   {
+    "id": "95dd3842-5f92-4f0f-9078-a02ccb77cbd2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Bedknobs and Broomsticks",
     "year": "1971",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Family; Animation; Fantasy",
+    "tmdb_id": "12335",
+    "tmdb_poster_url": "1BBzsThIZ06UmjZ3rChYGZhJtFQ.jpg"
   },
   {
+    "id": "ffc68423-13aa-4cc0-85c5-8e7f187ea988",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Alice in Wonderland",
     "year": "1951",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Family; Fantasy; Adventure",
+    "tmdb_id": "12092",
+    "tmdb_poster_url": "20cvfwfaFqNbe9Fc3VEHJuPRxmn.jpg"
   },
   {
+    "id": "081a5568-b4aa-4cec-a7de-e8ec84a638b8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Sword in the Stone",
     "year": "1963",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Animation; Family; Fantasy",
+    "tmdb_id": "9078",
+    "tmdb_poster_url": "7lyeeuhGAJSNXYEW34S8mJ1bwI8.jpg"
   },
   {
+    "id": "5e47c677-629b-4084-9051-82e7c51196bf",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Adventures of Milo and Otis",
     "title_es": "Chatrán",
     "year": "1986",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Adventure; Drama; Family",
+    "tmdb_id": "47951",
+    "tmdb_poster_url": "imHIqEfWRZuJ2vLow0UJ9aqjyEO.jpg"
   },
   {
+    "id": "8c6f181d-ab93-4431-9553-d535ff98f6cb",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Benji",
     "year": "1974",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Adventure; Family; Romance",
+    "tmdb_id": "23069",
+    "tmdb_poster_url": "aSowNmq4bZrmfazhQBePyNF8A2E.jpg"
   },
   {
+    "id": "04ff08f1-aecd-4bf8-bb7e-6bc475210d67",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Love Bug",
     "year": "1969",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Comedy; Family; Fantasy",
+    "tmdb_id": "14136",
+    "tmdb_poster_url": "9Lc1efdYZUZia2zsRWcUkiD1KdN.jpg"
   },
   {
+    "id": "41bd581c-ddcc-4bf9-8653-309fa7cf235f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Herbie Rides Again",
     "year": "1974",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Romance; Comedy; Family; Fantasy",
+    "tmdb_id": "10869",
+    "tmdb_poster_url": "1k14PPykkUQfhjn3xXDrc55lfHl.jpg"
   },
   {
+    "id": "2d933c59-74ba-4c54-b541-f56838bfbad6",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "ALF",
     "year": "1986",
-    "type": "series"
+    "rating": "0+",
+    "tags": "Comedy; Family; Sci-Fi & Fantasy",
+    "tmdb_id": "4658",
+    "tmdb_poster_url": "shRed7ZrCRjdIMEYNx2YBVFkkNu.jpg"
   },
   {
+    "id": "acf2ca0e-c610-4ba5-9e75-d1f26e9fd5d9",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "Dragon Ball",
     "year": "1986",
-    "type": "series"
+    "rating": "10+",
+    "tags": "Animation; Action & Adventure; Sci-Fi & Fantasy",
+    "tmdb_id": "12609",
+    "tmdb_poster_url": "onCLyCOgszTIyyVs2XKYSkKPOPG.jpg"
   },
   {
+    "id": "4b3ac5d0-49fa-4841-90d4-5df29129ef5a",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "Dragon Ball Z",
     "year": "1989",
-    "type": "series"
+    "rating": "14+",
+    "tags": "Animation; Sci-Fi & Fantasy; Action & Adventure",
+    "tmdb_id": "12971",
+    "tmdb_poster_url": "oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg"
   },
   {
+    "id": "620b19e4-6136-468f-9467-0b8f9aa3bf66",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "Robotech",
     "year": "1985",
-    "type": "series"
+    "tags": "Animation; Drama; Sci-Fi & Fantasy",
+    "tmdb_id": "2192",
+    "tmdb_poster_url": "f3SIr4To9Tuie4I9D2U41XsIbpC.jpg"
   },
   {
+    "id": "1dd32af6-1e64-4156-b053-8b65369b0cd6",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "Captain Tsubasa",
     "title_es": "Super Campeones",
     "year": "1983",
-    "type": "series"
+    "rating": "0+",
+    "tags": "Comedy; Drama; Animation",
+    "tmdb_id": "25707",
+    "tmdb_poster_url": "qHVVaYYlD509eh1V4LYE0M927uw.jpg"
   },
   {
+    "id": "4efeecbd-b050-4167-8b5f-8e058b144431",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "Saint Seiya",
     "title_es": "Los Caballeros del Zodiaco",
     "year": "1986",
-    "type": "series"
+    "rating": "10+",
+    "tags": "Animation; Drama; Action & Adventure; Sci-Fi & Fantasy",
+    "tmdb_id": "42444",
+    "tmdb_poster_url": "dhtiYYbob8saEUFWle3aWgVY28M.jpg"
   },
   {
+    "id": "2289f4c2-a580-4505-98ee-97916f894f07",
+    "type": "series",
+    "status": "",
+    "watched": false,
     "title": "Doctor Who",
     "year": "2005",
-    "type": "series"
+    "rating": "10+",
+    "tags": "Action & Adventure; Drama; Sci-Fi & Fantasy",
+    "tmdb_id": "57243",
+    "tmdb_poster_url": "lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg"
   }
 ]
