@@ -2832,31 +2832,87 @@
     "tmdb_poster_url": "lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg"
   },
   {
+    "id": "7d96d673-745d-428e-978b-ee9b5611938c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Sorcerer's Stone",
-    "year": "2001"
+    "year": "2001",
+    "rating": "7+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "671",
+    "tmdb_poster_url": "wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
   },
   {
+    "id": "2ba82aeb-1986-4a78-ac77-e32433f0511f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Chamber of Secrets",
-    "year": "2002"
+    "year": "2002",
+    "rating": "7+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "672",
+    "tmdb_poster_url": "sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg"
   },
   {
+    "id": "05339433-0012-4600-8893-172351bc66c0",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Prisoner of Azkaban",
-    "year": "2004"
+    "year": "2004",
+    "rating": "7+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "673",
+    "tmdb_poster_url": "aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg"
   },
   {
+    "id": "7919fb21-a12a-41fb-b2cf-f753d355be55",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Goblet of Fire",
-    "year": "2005"
+    "year": "2005",
+    "rating": "13+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "674",
+    "tmdb_poster_url": "fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg"
   },
   {
+    "id": "73b67c0b-742a-41a7-bcba-3a2e499cac16",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Order of the Phoenix",
-    "year": "2007"
+    "year": "2007",
+    "rating": "13+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "675",
+    "tmdb_poster_url": "5aOyriWkPec0zUDxmHFP9qMmBaj.jpg"
   },
   {
+    "id": "a5515288-b3b4-44b2-aa7d-f4fba16445bb",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Half-Blood Prince",
-    "year": "2009"
+    "year": "2009",
+    "rating": "7+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "767",
+    "tmdb_poster_url": "z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg"
   },
   {
+    "id": "d59666a8-918b-4003-aa9a-48c4d6f1dd50",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Harry Potter and the Deathly Hallows - Part 1",
-    "year": "2010"
+    "year": "2010",
+    "rating": "13+",
+    "tags": "Adventure; Fantasy",
+    "tmdb_id": "12444",
+    "tmdb_poster_url": "iGoXIpQb7Pot00EEdwpwPajheZ5.jpg"
   }
 ]
