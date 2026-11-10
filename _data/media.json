@@ -3013,58 +3013,134 @@
     "tmdb_poster_url": "5QmMhHdKpJ2eQp5i8NqopzGbw9r.jpg"
   },
   {
+    "id": "56f53deb-9e5f-4dea-9f92-5aa47f9a36b8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Airplane!",
     "year": "1980",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Comedy",
+    "tmdb_id": "813",
+    "tmdb_poster_url": "7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
   },
   {
+    "id": "1c49d806-1e76-4a3d-8717-707d73ec7c3c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Top Secret!",
     "year": "1984",
-    "type": "movie"
+    "rating": "7+",
+    "tags": "Comedy",
+    "tmdb_id": "8764",
+    "tmdb_poster_url": "hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg"
   },
   {
+    "id": "a7d5ecac-e80c-402e-ad09-a96d321d66d2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Naked Gun: From the Files of Police Squad!",
     "year": "1988",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Comedy; Crime",
+    "tmdb_id": "37136",
+    "tmdb_poster_url": "zT0mhZqZQJE1gSY5Eg9qcGP4NYo.jpg"
   },
   {
+    "id": "ea29146e-1918-443b-a296-5401c636dbc3",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Hot Shots!",
     "year": "1991",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Action; Comedy; War",
+    "tmdb_id": "9595",
+    "tmdb_poster_url": "koLIB5263emHxewmwgBBK26vjeS.jpg"
   },
   {
+    "id": "92569ef6-42e0-40a8-ae18-3fd0709ecfb6",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Dumb and Dumber",
     "year": "1994",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Comedy",
+    "tmdb_id": "8467",
+    "tmdb_poster_url": "4LdpBXiCyGKkR8FGHgjKlphrfUc.jpg"
   },
   {
+    "id": "0eec25b2-d18a-4bf3-b0fd-6761ff5ff806",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Austin Powers: International Man of Mystery",
     "year": "1997",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Comedy; Crime",
+    "tmdb_id": "816",
+    "tmdb_poster_url": "5uD4dxNX8JKFjWKYMHyOsqhi5pN.jpg"
   },
   {
+    "id": "66641724-aed7-4a73-8b9c-b38db91e443c",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Kung Fu Hustle",
     "year": "2004",
-    "type": "movie"
+    "rating": "17+",
+    "tags": "Action; Comedy; Crime; Fantasy",
+    "tmdb_id": "9470",
+    "tmdb_poster_url": "exbyTbrvRUDKN2mcNEuVor4VFQW.jpg"
   },
   {
+    "id": "6d0df7bf-dab4-42cd-8e7a-27b2b3de6e42",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "Gattaca",
     "year": "1998",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Drama",
+    "tmdb_id": "782",
+    "tmdb_poster_url": "eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg"
   },
   {
+    "id": "a89e8559-765f-4073-9c9e-c68cdbe3e2ec",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "2001: A Space Odyssey",
     "year": "1968",
-    "type": "movie"
+    "rating": "0+",
+    "tags": "Science Fiction; Mystery; Adventure",
+    "tmdb_id": "62",
+    "tmdb_poster_url": "ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
   },
   {
+    "id": "86547b52-50c1-4236-8520-05009e09d6a6",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Man from Earth",
     "year": "2008",
-    "type": "movie"
+    "tags": "Science Fiction; Drama",
+    "tmdb_id": "13363",
+    "tmdb_poster_url": "V086R82gNgWrotaXZFO4JhdgB1.jpg"
   },
   {
+    "id": "26266faa-b867-4dbb-9425-6238755c4973",
+    "type": "movie",
+    "status": "",
+    "watched": false,
     "title": "The Martian",
     "year": "2015",
-    "type": "movie"
+    "rating": "13+",
+    "tags": "Science Fiction; Drama; Adventure",
+    "tmdb_id": "286217",
+    "tmdb_poster_url": "5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg"
   }
 ]
