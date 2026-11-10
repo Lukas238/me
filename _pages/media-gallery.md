@@ -586,61 +586,59 @@ title: Media Gallery
 
 <div class="container-xxl d-flex">
   <div class="flex-grow-1">
-    <div class="gallery-controls">
-      <div class="gallery-control">
-        <span class="gallery-control__label">Type</span>
-        <div class="btn-group btn-group-sm" role="group" aria-label="Media type selector">
+    <div class="media-toolbar">
+      <div class="media-toolbar__row">
+        <div class="btn-group" role="group" aria-label="Media type">
           <input type="radio" class="btn-check" name="mediaType" id="typeMovies" value="movie" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="typeMovies" title="Movies" aria-label="Movies"><i class="bi bi-film"></i></label>
+          <label class="btn btn-outline-secondary" for="typeMovies" title="Movies"><i class="bi bi-film"></i> Movies</label>
           <input type="radio" class="btn-check" name="mediaType" id="typeSeries" value="series" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="typeSeries" title="Series" aria-label="Series"><i class="bi bi-tv"></i></label>
+          <label class="btn btn-outline-secondary" for="typeSeries" title="Series"><i class="bi bi-tv"></i> Series</label>
         </div>
+
+        <div class="input-group media-toolbar__search">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="search" class="form-control" id="mediaSearch" placeholder="Search by title" title="Search by title" aria-label="Search by title" autocomplete="off">
+        </div>
+
+        <button class="btn btn-outline-secondary" type="button" title="Browse tags" data-bs-toggle="collapse" data-bs-target="#tags-panel" aria-expanded="false" aria-controls="tags-panel"><i class="bi bi-tags"></i> Tags</button>
       </div>
-      <div class="gallery-control">
-        <span class="gallery-control__label">Show</span>
+
+      <div class="media-toolbar__row media-toolbar__row--secondary">
         <div class="btn-group btn-group-sm" role="group" aria-label="Watched filter">
           <input type="radio" class="btn-check" name="watchedFilter" id="watchedAll" value="all" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="watchedAll" title="All" aria-label="All"><i class="bi bi-collection"></i></label>
+          <label class="btn btn-outline-secondary" for="watchedAll" title="All">All</label>
           <input type="radio" class="btn-check" name="watchedFilter" id="watchedYes" value="yes" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="watchedYes" title="Watched" aria-label="Watched"><i class="bi bi-check2-circle"></i></label>
+          <label class="btn btn-outline-secondary" for="watchedYes" title="Watched"><i class="bi bi-check2-circle"></i> Watched</label>
           <input type="radio" class="btn-check" name="watchedFilter" id="watchedNo" value="no" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="watchedNo" title="To watch" aria-label="To watch"><i class="bi bi-bookmark"></i></label>
+          <label class="btn btn-outline-secondary" for="watchedNo" title="To watch"><i class="bi bi-bookmark"></i> To watch</label>
         </div>
-      </div>
-      <div class="gallery-control">
-        <span class="gallery-control__label">Favorites</span>
+
         <input type="checkbox" class="btn-check" id="favoriteFilter" autocomplete="off">
-        <label class="btn btn-sm btn-outline-secondary" for="favoriteFilter" title="Favorites only" aria-label="Favorites only"><i class="bi bi-heart"></i></label>
-      </div>
-      <div class="gallery-control">
-        <span class="gallery-control__label">Rating</span>
-        <select class="form-select form-select-sm" id="ratingFilter" aria-label="Age rating"></select>
-      </div>
-      <div class="gallery-control">
-        <span class="gallery-control__label">Sort by</span>
-        <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
-          <input type="radio" class="btn-check" name="sortBy" id="sortYear" value="year" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="sortYear" title="Sort by year" aria-label="Sort by year"><i class="bi bi-calendar3"></i></label>
-          <input type="radio" class="btn-check" name="sortBy" id="sortTitle" value="title" autocomplete="off">
-        <label class="btn btn-outline-secondary" for="sortTitle" title="Sort by title" aria-label="Sort by title"><i class="bi bi-sort-alpha-down"></i></label>
+        <label class="btn btn-sm btn-outline-secondary media-toolbar__fav" for="favoriteFilter" title="Favorites only"><i class="bi bi-heart"></i> Favorites</label>
+
+        <select class="form-select form-select-sm media-toolbar__rating" id="ratingFilter" title="Age rating" aria-label="Age rating"></select>
+
+        <div class="media-toolbar__spacer"></div>
+
+        <div class="media-toolbar__group">
+          <span class="media-toolbar__label">Sort</span>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
+            <input type="radio" class="btn-check" name="sortBy" id="sortYear" value="year" autocomplete="off" checked>
+            <label class="btn btn-outline-secondary" for="sortYear" title="Sort by year"><i class="bi bi-calendar3"></i> Year</label>
+            <input type="radio" class="btn-check" name="sortBy" id="sortTitle" value="title" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="sortTitle" title="Sort by title"><i class="bi bi-sort-alpha-down"></i> Title</label>
+          </div>
         </div>
-      </div>
-      <div class="gallery-control">
-        <span class="gallery-control__label">View</span>
-        <div class="btn-group btn-group-sm" role="group" aria-label="View">
-          <input type="radio" class="btn-check" name="viewMode" id="viewSections" value="sections" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="viewSections" title="Sections" aria-label="Sections"><i class="bi bi-view-stacked"></i></label>
-          <input type="radio" class="btn-check" name="viewMode" id="viewWall" value="wall" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="viewWall" title="Wall" aria-label="Wall"><i class="bi bi-grid-3x3-gap-fill"></i></label>
+
+        <div class="media-toolbar__group">
+          <span class="media-toolbar__label">View</span>
+          <div class="btn-group btn-group-sm" role="group" aria-label="View">
+            <input type="radio" class="btn-check" name="viewMode" id="viewSections" value="sections" autocomplete="off" checked>
+            <label class="btn btn-outline-secondary" for="viewSections" title="Grouped in sections" aria-label="Sections"><i class="bi bi-view-stacked"></i></label>
+            <input type="radio" class="btn-check" name="viewMode" id="viewWall" value="wall" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="viewWall" title="One continuous wall" aria-label="Wall"><i class="bi bi-grid-3x3-gap-fill"></i></label>
+          </div>
         </div>
-      </div>
-      <div class="gallery-control">
-        <span class="gallery-control__label">Search</span>
-        <input type="search" class="form-control form-control-sm" id="mediaSearch" placeholder="Title..." aria-label="Search by title" autocomplete="off">
-      </div>
-      <div class="gallery-control">
-        <span class="gallery-control__label">Tags</span>
-        <button class="btn btn-sm btn-outline-secondary" type="button" title="Browse tags" aria-label="Browse tags" data-bs-toggle="collapse" data-bs-target="#tags-panel" aria-expanded="false" aria-controls="tags-panel"><i class="bi bi-tags"></i></button>
       </div>
     </div>
 

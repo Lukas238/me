@@ -57,6 +57,87 @@
   }
 }
 
+// Media gallery toolbar: primary row (type, search, tags) and a quieter row of filters and display options
+.media-toolbar {
+  margin: 1.5rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .btn,
+  .form-select,
+  .form-control,
+  .input-group-text {
+    font-size: 0.85rem;
+  }
+
+  .btn .bi {
+    margin-right: 0.25rem;
+    vertical-align: -0.1em;
+  }
+
+  .btn[aria-expanded="true"],
+  .btn-check:checked + .btn {
+    background-color: #495057;
+    border-color: #495057;
+    color: #fff;
+  }
+
+  // Favorites toggle reads as "on" with the heart color
+  .btn-check:checked + .media-toolbar__fav {
+    background-color: #dc3545;
+    border-color: #dc3545;
+
+    .bi::before {
+      content: "\F415"; // bi-heart-fill
+    }
+  }
+}
+
+.media-toolbar__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+
+  &--secondary {
+    padding-top: 12px;
+    border-top: 1px solid #e9ecef;
+  }
+}
+
+.media-toolbar__search {
+  flex: 1 1 220px;
+  width: auto;
+
+  .input-group-text {
+    background: #fff;
+    color: #adb5bd;
+  }
+}
+
+.media-toolbar .media-toolbar__rating {
+  width: auto;
+  min-width: 8.5rem;
+}
+
+.media-toolbar__spacer {
+  flex: 1 1 0;
+}
+
+.media-toolbar__group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.media-toolbar__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #adb5bd;
+}
+
 // Selected tags shown as removable chips
 .gallery-active-filters {
   display: flex;
