@@ -79,6 +79,11 @@ title: Media Gallery
     line-height: 1.3;
   }
 
+  .fav-mark {
+    color: #dc3545;
+    font-size: 0.75rem;
+  }
+
   .media-item .title .age-rating-inline {
     color: #adb5bd;
     font-size: 0.75rem;
@@ -441,6 +446,11 @@ title: Media Gallery
     text-decoration: none;
   }
 
+  #navbar-years ul {
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
+
   .filter-active-message {
     font-size: 0.8rem;
     color: #6c757d;
@@ -581,21 +591,26 @@ title: Media Gallery
         <span class="gallery-control__label">Type</span>
         <div class="btn-group btn-group-sm" role="group" aria-label="Media type selector">
           <input type="radio" class="btn-check" name="mediaType" id="typeMovies" value="movie" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="typeMovies">Movies</label>
+          <label class="btn btn-outline-secondary" for="typeMovies" title="Movies" aria-label="Movies"><i class="bi bi-film"></i></label>
           <input type="radio" class="btn-check" name="mediaType" id="typeSeries" value="series" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="typeSeries">Series</label>
+          <label class="btn btn-outline-secondary" for="typeSeries" title="Series" aria-label="Series"><i class="bi bi-tv"></i></label>
         </div>
       </div>
       <div class="gallery-control">
         <span class="gallery-control__label">Show</span>
         <div class="btn-group btn-group-sm" role="group" aria-label="Watched filter">
           <input type="radio" class="btn-check" name="watchedFilter" id="watchedAll" value="all" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="watchedAll">All</label>
+          <label class="btn btn-outline-secondary" for="watchedAll" title="All" aria-label="All"><i class="bi bi-collection"></i></label>
           <input type="radio" class="btn-check" name="watchedFilter" id="watchedYes" value="yes" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="watchedYes">Watched</label>
+          <label class="btn btn-outline-secondary" for="watchedYes" title="Watched" aria-label="Watched"><i class="bi bi-check2-circle"></i></label>
           <input type="radio" class="btn-check" name="watchedFilter" id="watchedNo" value="no" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="watchedNo">To watch</label>
+          <label class="btn btn-outline-secondary" for="watchedNo" title="To watch" aria-label="To watch"><i class="bi bi-bookmark"></i></label>
         </div>
+      </div>
+      <div class="gallery-control">
+        <span class="gallery-control__label">Favorites</span>
+        <input type="checkbox" class="btn-check" id="favoriteFilter" autocomplete="off">
+        <label class="btn btn-sm btn-outline-secondary" for="favoriteFilter" title="Favorites only" aria-label="Favorites only"><i class="bi bi-heart"></i></label>
       </div>
       <div class="gallery-control">
         <span class="gallery-control__label">Rating</span>
@@ -605,16 +620,27 @@ title: Media Gallery
         <span class="gallery-control__label">Sort by</span>
         <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
           <input type="radio" class="btn-check" name="sortBy" id="sortYear" value="year" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="sortYear">Year</label>
+          <label class="btn btn-outline-secondary" for="sortYear" title="Sort by year" aria-label="Sort by year"><i class="bi bi-calendar3"></i></label>
           <input type="radio" class="btn-check" name="sortBy" id="sortTitle" value="title" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="sortTitle">Title</label>
+        <label class="btn btn-outline-secondary" for="sortTitle" title="Sort by title" aria-label="Sort by title"><i class="bi bi-sort-alpha-down"></i></label>
         </div>
       </div>
       <div class="gallery-control">
+        <span class="gallery-control__label">View</span>
+        <div class="btn-group btn-group-sm" role="group" aria-label="View">
+          <input type="radio" class="btn-check" name="viewMode" id="viewSections" value="sections" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="viewSections" title="Sections" aria-label="Sections"><i class="bi bi-view-stacked"></i></label>
+          <input type="radio" class="btn-check" name="viewMode" id="viewWall" value="wall" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="viewWall" title="Wall" aria-label="Wall"><i class="bi bi-grid-3x3-gap-fill"></i></label>
+        </div>
+      </div>
+      <div class="gallery-control">
+        <span class="gallery-control__label">Search</span>
+        <input type="search" class="form-control form-control-sm" id="mediaSearch" placeholder="Title..." aria-label="Search by title" autocomplete="off">
+      </div>
+      <div class="gallery-control">
         <span class="gallery-control__label">Tags</span>
-        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#tags-panel" aria-expanded="false" aria-controls="tags-panel">
-          Browse <i class="bi bi-chevron-down"></i>
-        </button>
+        <button class="btn btn-sm btn-outline-secondary" type="button" title="Browse tags" aria-label="Browse tags" data-bs-toggle="collapse" data-bs-target="#tags-panel" aria-expanded="false" aria-controls="tags-panel"><i class="bi bi-tags"></i></button>
       </div>
     </div>
 
@@ -661,6 +687,13 @@ const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;
 // Spanish title when there is one, otherwise the original
 const displayTitle = item => item.title_es || item.title;
 
+// Index letter of a title: A-Z, or 0 for numbers and symbols
+const letterOf = item => {
+  const first = displayTitle(item).normalize('NFD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
+  return /[A-Z]/.test(first) ? first : '0';
+};
+const INDEX_LETTERS = ['0', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+
 // Stand-in for the poster while TMDb data is missing
 const posterPlaceholder = item =>
   `<div class="poster-placeholder"><i class="bi ${item.type === 'series' ? 'bi-tv' : 'bi-film'}"></i><span>${escapeHtml(displayTitle(item))}</span></div>`;
@@ -669,11 +702,21 @@ const currentType = () => $('input[name="mediaType"]:checked').val();
 const tagsOf = item => item.tags ? item.tags.split(';').map(t => t.trim()).filter(Boolean) : [];
 const hashParams = () => new URLSearchParams(location.hash.includes('=') ? location.hash.slice(1) : '');
 
-// Items that the Type / Show / Group controls let through, before any tag is applied
+// Items that the Type / Show / Rating / Sort / Search controls let through, before any tag is applied
 function itemsInScope() {
   const mode = $('input[name="sortBy"]:checked').val() || 'year';
-  return mediaList.filter(item => item.type === currentType() && (mode !== 'year' || item.year) && matchesWatched(item) && matchesRating(item));
+  return mediaList.filter(item => item.type === currentType() && (mode !== 'year' || item.year) && matchesWatched(item) && matchesFavorite(item) && matchesRating(item) && matchesSearch(item));
 }
+
+// Accent- and case-insensitive match on the shown title and the original one
+const plain = text => String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+function matchesSearch(item) {
+  const query = plain($('#mediaSearch').val().trim());
+  return !query || plain(`${displayTitle(item)} ${item.title}`).includes(query);
+}
+
+const viewValue = () => $('input[name="viewMode"]:checked').val() || 'sections';
 
 const ratingValue = () => $('#ratingFilter').val() || 'all';
 
@@ -716,15 +759,24 @@ function closeExpandedCard() {
   $('body').removeClass('modal-open');
 }
 
-// Year sort: each item belongs to exactly one group (its year). Title sort: a single list.
-function buildGroups(items, mode) {
-  if (mode === 'year') {
-    const byYear = {};
-    items.forEach(item => (byYear[item.year] = byYear[item.year] || []).push(item));
-    return Object.keys(byYear).sort((a, b) => b - a).map(year => ({ id: `year-${year}`, label: year, items: byYear[year] }));
-  }
+// The group an item belongs to follows the sort: its year, or the first letter of its title
+const groupKeyOf = (item, sort) => sort === 'year' ? String(item.year) : letterOf(item);
 
-  return [{ id: 'group-all', label: null, items }];
+// Groups in sort order (years newest first, letters 0-9 then A-Z); items inside a group are by title
+function buildGroups(items, sort) {
+  const byKey = new Map();
+  items.forEach(item => {
+    const key = groupKeyOf(item, sort);
+    if (!byKey.has(key)) byKey.set(key, []);
+    byKey.get(key).push(item);
+  });
+
+  const keys = [...byKey.keys()].sort(sort === 'year' ? (a, b) => b - a : (a, b) => INDEX_LETTERS.indexOf(a) - INDEX_LETTERS.indexOf(b));
+  return keys.map(key => ({
+    key,
+    label: sort === 'year' || key !== '0' ? key : '0-9',
+    items: byKey.get(key).slice().sort((a, b) => displayTitle(a).localeCompare(displayTitle(b)))
+  }));
 }
 
 function buildItemElement(item) {
@@ -745,7 +797,8 @@ function buildItemElement(item) {
 
   // Agregar rating de edad si existe
   const ageRatingText = item.rating ? `<span style="color: #dee2e6; margin: 0 4px;">•</span><span class="age-rating-inline">${item.rating}</span>` : '';
-  $item.append(`<div class="title">${displayTitle(item)}${ageRatingText}</div>`);
+  const favMark = item.favorite === true ? '<i class="bi bi-heart-fill fav-mark" title="Favorite"></i> ' : '';
+  $item.append(`<div class="title">${favMark}${displayTitle(item)}${ageRatingText}</div>`);
 
   // Usar helper para construir el card
   buildMediaCard($item, item);
@@ -764,35 +817,63 @@ function renderMedia() {
 
   const groups = buildGroups(filtered, mode);
 
-  // Year navigation (hidden when there are no groups)
-  $('#navbar-years').toggle(mode === 'year' && groups.length > 0);
+  // Sidebar index: years when sorted by year, 0-9 and A-Z when sorted by title
+  $('#navbar-years').toggle(groups.length > 0);
+  $('#navbar-years h5').text(mode === 'year' ? 'Years' : 'Index');
   const $nav = $('#yearsList');
   $nav.empty();
-  groups.filter(group => group.label !== null).forEach(group => {
-    $nav.append(`<li class="ps-0"><a href="#${group.id}" data-target="${group.id}">${escapeHtml(group.label)}</a></li>`);
-  });
+  if (mode === 'year') {
+    groups.forEach(group => {
+      $nav.append(`<li class="ps-0"><a href="#" data-key="${escapeHtml(group.key)}">${escapeHtml(group.label)}</a></li>`);
+    });
+  } else {
+    const present = new Set(groups.map(group => group.key));
+    INDEX_LETTERS.forEach(letter => {
+      const label = letter === '0' ? '0-9' : letter;
+      $nav.append(present.has(letter)
+        ? `<li class="ps-0"><a href="#" data-key="${letter}">${label}</a></li>`
+        : `<li class="ps-0 text-muted opacity-25">${label}</li>`);
+    });
+  }
 
   $('#mediaLoading').hide();
   const $container = $('#mediaGallery');
   $container.empty();
 
   if (filtered.length === 0) {
+    const query = $('#mediaSearch').val().trim();
     $container.html(selectedTags.length
       ? `<p class="text-muted text-center py-5">No ${typeLabel} found tagged "${escapeHtml(selectedTags.join(' + '))}".</p>`
-      : '<p class="text-muted text-center py-5">No content available.</p>');
+      : query
+        ? `<p class="text-muted text-center py-5">No ${typeLabel} match "${escapeHtml(query)}".</p>`
+        : '<p class="text-muted text-center py-5">No content available.</p>');
   }
 
-  groups.forEach(group => {
-    const items = group.items.slice().sort((a, b) => displayTitle(a).localeCompare(displayTitle(b)));
+  // Sections: one block per group with its header. Wall: everything in a single grid, in the same order.
+  const blocks = viewValue() === 'sections'
+    ? groups
+    : [{ key: null, label: null, items: groups.flatMap(group => group.items) }];
 
-    const $group = $('<div class="year-gallery"></div>').attr('id', group.id);
+  blocks.forEach(group => {
+    const $group = $('<div class="year-gallery"></div>');
+    if (group.key !== null) $group.attr('data-key', group.key);
     if (group.label !== null) {
-      const count = items.length;
+      const count = group.items.length;
       const itemLabel = type === 'movie' ? (count > 1 ? 'movies' : 'movie') : 'series';
       $group.append(`<header><h2 class="year-gallery-title fw-light d-inline">${escapeHtml(group.label)}</h2><span class="year-count">${count} ${itemLabel}</span></header>`);
     }
 
-    items.forEach(item => $group.append(buildItemElement(item)));
+    // The first item of each group is where the sidebar index jumps to in the wall view
+    const seen = new Set();
+    group.items.forEach(item => {
+      const $el = buildItemElement(item);
+      const key = groupKeyOf(item, mode);
+      if (!seen.has(key)) {
+        seen.add(key);
+        $el.attr('data-anchor', key);
+      }
+      $group.append($el);
+    });
     $container.append($group);
   });
 
@@ -814,6 +895,9 @@ function renderMedia() {
 $(function() {
   const savedGroup = localStorage.getItem('mediaSortBy');
   if (savedGroup) $(`input[name="sortBy"][value="${savedGroup}"]`).prop('checked', true);
+  const savedView = localStorage.getItem('mediaView');
+  if (savedView) $(`input[name="viewMode"][value="${savedView}"]`).prop('checked', true);
+  $('#mediaSearch').val(GalleryState.get('q') || '');
   applyTypeFromHash();
   populateRatings();
 
@@ -839,16 +923,35 @@ $(function() {
   });
 
   $('input[name="watchedFilter"]').on('change', renderGallery);
+  $('#favoriteFilter').on('change', renderGallery);
 
   $('input[name="sortBy"]').on('change', function() {
     localStorage.setItem('mediaSortBy', $(this).val());
     renderGallery();
   });
 
+  $('input[name="viewMode"]').on('change', function() {
+    localStorage.setItem('mediaView', $(this).val());
+    renderMedia();
+  });
+
+  let searchTimer;
+  $('#mediaSearch').on('input', function() {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      GalleryState.set('q', $('#mediaSearch').val().trim() || null);
+      renderGallery();
+    }, 150);
+  });
+
   // Sidebar links scroll in place so an active tag filter stays in the URL
   $(document).on('click', '#yearsList a', function(e) {
     e.preventDefault();
-    document.getElementById($(this).data('target'))?.scrollIntoView({ behavior: 'smooth' });
+    const key = $(this).attr('data-key');
+    const target = viewValue() === 'sections'
+      ? document.querySelector(`#mediaGallery .year-gallery[data-key="${key}"]`)
+      : document.querySelector(`#mediaGallery .media-item[data-anchor="${key}"]`);
+    target?.scrollIntoView({ behavior: 'smooth' });
   });
 
   // A tag on an open card adds itself to the filter
@@ -873,6 +976,7 @@ $(function() {
 
     applyTypeFromHash();
     populateRatings();
+    $('#mediaSearch').val(GalleryState.get('q') || '');
     tagFilter.syncFromHash();
     renderGallery();
   });
@@ -907,6 +1011,7 @@ function checkAndOpenCardFromUrl() {
 
   // Un item oculto por el filtro de watched no se podría abrir
   if (!matchesWatched(item)) $('#watchedAll').prop('checked', true);
+  if (!matchesFavorite(item)) $('#favoriteFilter').prop('checked', false);
 
   tagFilter.syncFromHash();
   renderGallery();
@@ -946,6 +1051,10 @@ function checkAndOpenCardFromUrl() {
   }, 200);
 }
 
+function matchesFavorite(item) {
+  return !$('#favoriteFilter').is(':checked') || item.favorite === true;
+}
+
 function matchesWatched(item) {
   const mode = $('input[name="watchedFilter"]:checked').val();
   if (mode === 'yes') return item.watched === true;
@@ -979,6 +1088,7 @@ function buildMediaCard($item, item) {
   if (item.year) metaParts.push(`<span>${item.year}</span>`);
   metaParts.push(`<span class="card-rating">${avgRating}</span>`);
   if (statusBadge) metaParts.push(statusBadge);
+  if (item.favorite === true) metaParts.push('<i class="bi bi-heart-fill fav-mark" title="Favorite"></i>');
   if (tmdbLink) metaParts.push(tmdbLink);
   const metaHtml = metaParts.join(' <span style="color: #adb5bd;">•</span> ');
   

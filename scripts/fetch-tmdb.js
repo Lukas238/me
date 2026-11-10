@@ -15,7 +15,7 @@ const { loadEnv } = require('./lib/env');
 
 const LANG = loadEnv().TMDB_LANG || 'en-US';
 const COUNTRY = 'US'; // certification source for the age rating
-const FIELD_ORDER = ['id', 'type', 'status', 'watched', 'title', 'title_es', 'year', 'rating', 'tags', 'tmdb_id', 'tmdb_poster_url'];
+const FIELD_ORDER = ['id', 'type', 'status', 'watched', 'favorite', 'title', 'title_es', 'year', 'rating', 'tags', 'tmdb_id', 'tmdb_poster_url'];
 
 const MOVIE_AGE = { G: '0+', PG: '7+', 'PG-13': '13+', R: '17+', 'NC-17': '18+' };
 const TV_AGE = { 'TV-Y': '0+', 'TV-Y7': '7+', 'TV-G': '0+', 'TV-PG': '10+', 'TV-14': '14+', 'TV-MA': '17+' };
@@ -126,6 +126,7 @@ function fill(item, kind, data) {
   set('type', kind === 'tv' ? 'series' : 'movie');
   if (next.status === undefined) next.status = '';
   if (next.watched === undefined) next.watched = false;
+  if (next.favorite === undefined) next.favorite = false;
   set('rating', ageRating(kind, data));
   set('tags', (data.genres || []).map(g => g.name).join('; '));
   set('tmdb_id', String(data.id));

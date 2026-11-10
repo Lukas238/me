@@ -13,16 +13,14 @@ permalink: /wishlist/
     <span class="gallery-control__label">Sort by</span>
     <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
       <input type="radio" class="btn-check" name="wishlistSort" id="wishlistSortAdded" value="added" autocomplete="off" checked>
-      <label class="btn btn-outline-secondary" for="wishlistSortAdded">Added</label>
+      <label class="btn btn-outline-secondary" for="wishlistSortAdded" title="Sort by date added" aria-label="Sort by date added"><i class="bi bi-clock-history"></i></label>
       <input type="radio" class="btn-check" name="wishlistSort" id="wishlistSortTitle" value="title" autocomplete="off">
-      <label class="btn btn-outline-secondary" for="wishlistSortTitle">Title</label>
+      <label class="btn btn-outline-secondary" for="wishlistSortTitle" title="Sort by title" aria-label="Sort by title"><i class="bi bi-sort-alpha-down"></i></label>
     </div>
   </div>
   <div class="gallery-control">
     <span class="gallery-control__label">Tags</span>
-    <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#wishlist-tags-panel" aria-expanded="false" aria-controls="wishlist-tags-panel">
-      Browse <i class="bi bi-chevron-down"></i>
-    </button>
+    <button class="btn btn-sm btn-outline-secondary" type="button" title="Browse tags" aria-label="Browse tags" data-bs-toggle="collapse" data-bs-target="#wishlist-tags-panel" aria-expanded="false" aria-controls="wishlist-tags-panel"><i class="bi bi-tags"></i></button>
   </div>
 </div>
 
