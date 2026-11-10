@@ -112,7 +112,7 @@
     "type": "movie",
     "status": "",
     "watched": false,
-    "title": "Short Circuit 2 s",
+    "title": "Short Circuit 2",
     "year": "1988",
     "rating": "7+",
     "tags": "Comedy; Family; Science Fiction; Drama",
@@ -617,7 +617,7 @@
     "status": "",
     "watched": false,
     "title": "Monty Python and the Holy Grail",
-    "year": "1979",
+    "year": "1975",
     "rating": "7+",
     "tags": "Adventure; Comedy; Fantasy",
     "tmdb_id": "762",
@@ -934,18 +934,6 @@
     "tags": "Action; Science Fiction; Thriller",
     "tmdb_id": "5550",
     "tmdb_poster_url": "ppLSSwCuC5ERRWbu9H3R8SPL9AM.jpg"
-  },
-  {
-    "id": "bb579336-2bea-4b29-8f0c-c810efac99d3",
-    "type": "movie",
-    "status": "",
-    "watched": false,
-    "title": "Rob Roy",
-    "year": "1995",
-    "rating": "17+",
-    "tags": "Adventure; History; Drama; Action; War",
-    "tmdb_id": "11780",
-    "tmdb_poster_url": "kWI2rF6RAnRtEjfBlZgsXumgOm5.jpg"
   },
   {
     "id": "2132bd97-83ce-46e3-8238-b949473a4760",
@@ -1469,7 +1457,7 @@
     "status": "",
     "watched": false,
     "title": "The Evil Dead",
-    "year": "1981",
+    "year": "1983",
     "rating": "18+",
     "tags": "Horror",
     "tmdb_id": "764",
@@ -2334,9 +2322,10 @@
     "watched": false,
     "title": "WALL-E",
     "year": "2008",
-    "tags": "Animation",
-    "tmdb_id": "877268",
-    "tmdb_poster_url": "pJfm3EggGLZToce08Obf7HQHXrP.jpg"
+    "rating": "0+",
+    "tags": "Animation; Family; Science Fiction",
+    "tmdb_id": "10681",
+    "tmdb_poster_url": "hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg"
   },
   {
     "id": "cfc7d715-77b7-48e7-ba49-d5f8da3b1cd2",
@@ -2443,8 +2432,8 @@
     "year": "2011",
     "rating": "13+",
     "tags": "Adventure; Fantasy",
-    "tmdb_id": "12444",
-    "tmdb_poster_url": "iGoXIpQb7Pot00EEdwpwPajheZ5.jpg"
+    "tmdb_id": "12445",
+    "tmdb_poster_url": "c54HpQmuwXjHq2C9wmoACjxoom3.jpg"
   },
   {
     "id": "6b323e6e-7c45-4d43-a5d6-4c630adfe0c0",
@@ -2836,7 +2825,7 @@
     "type": "movie",
     "status": "",
     "watched": false,
-    "title": "Harry Potter and the Sorcerer's Stone",
+    "title": "Harry Potter and the Philosopher's Stone",
     "year": "2001",
     "rating": "7+",
     "tags": "Adventure; Fantasy",
@@ -2914,5 +2903,168 @@
     "tags": "Adventure; Fantasy",
     "tmdb_id": "12444",
     "tmdb_poster_url": "iGoXIpQb7Pot00EEdwpwPajheZ5.jpg"
+  },
+  {
+    "id": "3a9ac684-c1cc-4930-b2dc-b7c5b0f2d03e",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Multiplicity",
+    "year": "1996",
+    "rating": "13+",
+    "tags": "Comedy; Fantasy; Science Fiction; Romance",
+    "tmdb_id": "9304",
+    "tmdb_poster_url": "rlG2vi85uSEwWigVTtqDecVFTxR.jpg"
+  },
+  {
+    "id": "da6245b5-1813-4547-aa9d-7febb0eb8bf2",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Monty Python's Life of Brian",
+    "year": "1979",
+    "rating": "17+",
+    "tags": "Comedy",
+    "tmdb_id": "583",
+    "tmdb_poster_url": "lSSA64WF0M0BXnjwr2quMh6shCl.jpg"
+  },
+  {
+    "id": "36ab6acc-227f-4724-999b-42aa1f6a30be",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "The Producers",
+    "year": "1967",
+    "rating": "7+",
+    "tags": "Comedy",
+    "tmdb_id": "30197",
+    "tmdb_poster_url": "9qCIkNWGuRj5lMyeOXwJs8z9nRz.jpg"
+  },
+  {
+    "id": "ab32dbb1-5a80-4efb-b9e3-26461e1d6d0f",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Blazing Saddles",
+    "year": "1974",
+    "rating": "17+",
+    "tags": "Western; Comedy",
+    "tmdb_id": "11072",
+    "tmdb_poster_url": "vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg"
+  },
+  {
+    "id": "0ecd8fe2-0c59-4016-abeb-9d67f677385a",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Young Frankenstein",
+    "year": "1974",
+    "rating": "7+",
+    "tags": "Comedy",
+    "tmdb_id": "3034",
+    "tmdb_poster_url": "3BvvVKPg9yucChlSvQtJxAbLmj9.jpg"
+  },
+  {
+    "id": "df468035-99f6-458f-b391-4276ac7746d8",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "History of the World, Part I",
+    "year": "1981",
+    "rating": "17+",
+    "tags": "Comedy",
+    "tmdb_id": "10156",
+    "tmdb_poster_url": "1bMaEfI76yrGjCSDquCippAFIDI.jpg"
+  },
+  {
+    "id": "c6710e29-5660-449f-8c4b-9b48de1acc79",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Spaceballs",
+    "year": "1987",
+    "rating": "7+",
+    "tags": "Comedy; Science Fiction",
+    "tmdb_id": "957",
+    "tmdb_poster_url": "kNbaxEsnCyWBTfANVPHayujBsxp.jpg"
+  },
+  {
+    "id": "58b9f89a-b354-42cf-a9e2-ed0c40318702",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Robin Hood: Men in Tights",
+    "year": "1993",
+    "rating": "13+",
+    "tags": "Comedy",
+    "tmdb_id": "8005",
+    "tmdb_poster_url": "woexOLEkUlYsPLLuZRK6LjZaF38.jpg"
+  },
+  {
+    "id": "2ede44b6-0586-44b4-8cdb-3030cf366cf3",
+    "type": "movie",
+    "status": "",
+    "watched": false,
+    "title": "Dracula: Dead and Loving It",
+    "year": "1995",
+    "rating": "13+",
+    "tags": "Comedy; Horror",
+    "tmdb_id": "12110",
+    "tmdb_poster_url": "5QmMhHdKpJ2eQp5i8NqopzGbw9r.jpg"
+  },
+  {
+    "title": "Airplane!",
+    "year": "1980",
+    "type": "movie"
+  },
+  {
+    "title": "Top Secret!",
+    "year": "1984",
+    "type": "movie"
+  },
+  {
+    "title": "The Naked Gun: From the Files of Police Squad!",
+    "year": "1988",
+    "type": "movie"
+  },
+  {
+    "title": "Hot Shots!",
+    "year": "1991",
+    "type": "movie"
+  },
+  {
+    "title": "Dumb and Dumber",
+    "year": "1994",
+    "type": "movie"
+  },
+  {
+    "title": "Austin Powers: International Man of Mystery",
+    "year": "1997",
+    "type": "movie"
+  },
+  {
+    "title": "Kung Fu Hustle",
+    "year": "2004",
+    "type": "movie"
+  },
+  {
+    "title": "Gattaca",
+    "year": "1998",
+    "type": "movie"
+  },
+  {
+    "title": "2001: A Space Odyssey",
+    "year": "1968",
+    "type": "movie"
+  },
+  {
+    "title": "The Man from Earth",
+    "year": "2008",
+    "type": "movie"
+  },
+  {
+    "title": "The Martian",
+    "year": "2015",
+    "type": "movie"
   }
 ]

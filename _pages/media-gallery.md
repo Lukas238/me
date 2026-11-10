@@ -598,6 +598,10 @@ title: Media Gallery
         </div>
       </div>
       <div class="gallery-control">
+        <span class="gallery-control__label">Rating</span>
+        <select class="form-select form-select-sm" id="ratingFilter" aria-label="Age rating"></select>
+      </div>
+      <div class="gallery-control">
         <span class="gallery-control__label">Sort by</span>
         <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
           <input type="radio" class="btn-check" name="sortBy" id="sortYear" value="year" autocomplete="off" checked>
@@ -668,7 +672,28 @@ const hashParams = () => new URLSearchParams(location.hash.includes('=') ? locat
 // Items that the Type / Show / Group controls let through, before any tag is applied
 function itemsInScope() {
   const mode = $('input[name="sortBy"]:checked').val() || 'year';
-  return mediaList.filter(item => item.type === currentType() && (mode !== 'year' || item.year) && matchesWatched(item));
+  return mediaList.filter(item => item.type === currentType() && (mode !== 'year' || item.year) && matchesWatched(item) && matchesRating(item));
+}
+
+const ratingValue = () => $('#ratingFilter').val() || 'all';
+
+function matchesRating(item) {
+  const value = ratingValue();
+  if (value === 'all') return true;
+  return value === 'none' ? !item.rating : item.rating === value;
+}
+
+// The rating list follows the current type; a rating that type doesn't have falls back to All
+function populateRatings() {
+  const wanted = GalleryState.get('rating') || 'all';
+  const ofType = mediaList.filter(item => item.type === currentType());
+  const ratings = [...new Set(ofType.map(item => item.rating).filter(Boolean))].sort((a, b) => parseInt(a) - parseInt(b));
+  const options = [['all', 'All ratings'], ...ratings.map(r => [r, r]), ...(ofType.some(item => !item.rating) ? [['none', 'No rating']] : [])];
+
+  $('#ratingFilter').html(options.map(([value, label]) => `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`).join(''));
+  const valid = options.some(([value]) => value === wanted);
+  $('#ratingFilter').val(valid ? wanted : 'all');
+  if (!valid) GalleryState.set('rating', null);
 }
 
 // Shared tag filter (assets/js/gallery-tags.js); created once the page is ready
@@ -790,6 +815,7 @@ $(function() {
   const savedGroup = localStorage.getItem('mediaSortBy');
   if (savedGroup) $(`input[name="sortBy"][value="${savedGroup}"]`).prop('checked', true);
   applyTypeFromHash();
+  populateRatings();
 
   tagFilter = GalleryTags.create({
     mount: '#media-tags',
@@ -803,6 +829,12 @@ $(function() {
 
   $('input[name="mediaType"]').on('change', function() {
     GalleryState.set('type', $(this).val() === 'movie' ? null : $(this).val());
+    populateRatings();
+    renderGallery();
+  });
+
+  $('#ratingFilter').on('change', function() {
+    GalleryState.set('rating', $(this).val() === 'all' ? null : $(this).val());
     renderGallery();
   });
 
@@ -840,6 +872,7 @@ $(function() {
     if (!params.has('id')) closeExpandedCard();
 
     applyTypeFromHash();
+    populateRatings();
     tagFilter.syncFromHash();
     renderGallery();
   });
@@ -864,6 +897,13 @@ function checkAndOpenCardFromUrl() {
   // Cambiar al tipo correcto (movie/series)
   $(`input[name="mediaType"][value="${item.type}"]`).prop('checked', true);
   GalleryState.set('type', item.type === 'movie' ? null : item.type);
+  populateRatings();
+
+  // Un item oculto por el filtro de rating tampoco se podría abrir
+  if (!matchesRating(item)) {
+    GalleryState.set('rating', null);
+    populateRatings();
+  }
 
   // Un item oculto por el filtro de watched no se podría abrir
   if (!matchesWatched(item)) $('#watchedAll').prop('checked', true);
