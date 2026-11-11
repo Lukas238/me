@@ -1,4 +1,4 @@
-.year-gallery {
+#mediaGallery .year-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.year-gallery header {
+#mediaGallery .year-gallery header {
   grid-column: 1 / -1;
   width: 100%;
   margin: 30px 0 20px 0;
@@ -431,12 +431,12 @@ body.modal-open {
   margin-left: 10px;
 }
 
-#navbar-years a.active {
+#yearsList a.active {
   font-weight: bold;
   text-decoration: none;
 }
 
-#navbar-years ul {
+#yearsList {
   max-height: calc(100vh - 6rem);
   overflow-y: auto;
 }
@@ -535,7 +535,7 @@ body.modal-open {
     min-height: 200px;
   }
 
-  .year-gallery {
+  #mediaGallery .year-gallery {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 15px;
   }
@@ -550,7 +550,7 @@ body.modal-open {
 }
 
 @media (max-width: 480px) {
-  .year-gallery {
+  #mediaGallery .year-gallery {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 12px;
   }
