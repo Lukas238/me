@@ -76,6 +76,37 @@ collections:
         label: Contenido
         widget: markdown
 
+  # WISHLIST
+  - name: wishlist
+    label: 🎁 Wishlist
+    folder: _data/wishlist
+    format: json
+    create: true
+    slug: "{{date_added}}-{{title}}"
+    fields:
+      - name: date_added
+        label: Fecha agregada
+        widget: date
+      - name: title
+        label: Título del producto
+        widget: string
+      - name: image_url
+        label: URL de la imagen
+        widget: string
+        required: false
+      - name: product_url
+        label: URL del producto
+        widget: string
+        required: false
+      - name: tags
+        label: Etiquetas
+        widget: list
+        required: false
+      - name: notes
+        label: Notas
+        widget: text
+        required: false
+
   # PELÍCULAS
   - name: movies
     label: 🎬 Películas
