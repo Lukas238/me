@@ -1,11 +1,6 @@
 backend:
   name: local
 
-i18n:
-  structure: single_file
-  locales: [es]
-  default_locale: es
-
 media_folder: assets/uploads
 public_folder: /assets/uploads
 
@@ -33,7 +28,6 @@ collections:
       - name: body
         label: Contenido
         widget: markdown
-        modes: ['raw', 'rich_text']
 
   - name: posts
     label: Posts
@@ -77,29 +71,3 @@ collections:
       - name: body
         label: Contenido
         widget: markdown
-        modes: ['raw', 'rich_text']
-
-  - name: site_config
-    label: Configuración del sitio
-    files:
-      - name: config
-        label: Configuración principal
-        file: _config.yml
-        format: yaml-frontmatter
-        fields:
-          - name: title
-            label: Título del sitio
-            widget: string
-          - name: description
-            label: Descripción del sitio
-            widget: text
-          - name: url
-            label: URL del sitio
-            widget: string
-          - name: baseurl
-            label: Base URL
-            widget: string
-          - name: google_analytics
-            label: Google Analytics ID
-            widget: string
-            required: false
