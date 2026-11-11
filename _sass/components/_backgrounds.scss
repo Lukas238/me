@@ -1,0 +1,57 @@
+// Backgrounds gallery: one grid per year, or a single masonry wall
+#bg-gallery .year-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.bg-gallery header {
+  grid-column: 1 / -1;
+  /* Span all columns */
+  width: 100%;
+  margin: 20px 0 10px 0;
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+
+  a {
+    opacity: var(--bs-link-opacity);
+  }
+}
+
+.bg-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 130px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+#bg-gallery #navbar-years a.active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+// Wall view: the year grids dissolve into one grid and the headers go away
+#bg-gallery.is-flat {
+  .bg-years {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .year-gallery {
+    display: contents;
+  }
+
+  .year-gallery > header {
+    display: none !important; // the header carries Bootstrap's d-flex (!important)
+  }
+}
