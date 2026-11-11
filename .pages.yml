@@ -31,10 +31,7 @@ content:
     type: file
     path: _data/bidassoa.json
     format: json
-    list:
-      collapsible:
-        collapsed: true
-        summary: "{year} · {alias}"
+    list: true
     fields:
       - { name: id, label: ID, type: string }
       - { name: title, label: Título, type: string }
@@ -53,10 +50,7 @@ content:
     type: file
     path: _data/media.json
     format: json
-    list:
-      collapsible:
-        collapsed: true
-        summary: "{title} ({year}) · {type}"
+    list: true
     fields:
       - { name: id, label: ID, type: string }
       - name: type
@@ -86,6 +80,7 @@ content:
     label: Comentarios de media
     type: collection
     path: _data/comments/media
+    format: json
     fields:
       - { name: media_id, label: Media ID, type: string }
       - { name: rating, label: Rating, type: number }
@@ -99,10 +94,7 @@ content:
     type: file
     path: _data/wishlist.json
     format: json
-    list:
-      collapsible:
-        collapsed: true
-        summary: "{title}"
+    list: true
     fields:
       - { name: title, label: Título, type: string }
       - { name: date_added, label: Fecha agregado, type: string }
