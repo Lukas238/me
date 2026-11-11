@@ -115,6 +115,14 @@ collections:
     format: json
     create: true
     slug: "{{title}}-{{year}}"
+    summary_fields:
+      - label: Poster
+        field: tmdb_poster_url
+      - label: Título
+        field: title
+      - label: Año
+        field: year
+    summary: "{{title}} ({{year}})"
     fields:
       - name: id
         label: ID
@@ -160,7 +168,9 @@ collections:
         required: false
       - name: tmdb_poster_url
         label: URL del póster (TMDB)
-        widget: string
+        widget: image
+        media_folder: ""
+        public_folder: https://image.tmdb.org/t/p/w200
         required: false
 
   # BIDASSOA
