@@ -28,55 +28,29 @@ content:
   # --- Bidassoa ---
   - name: bidassoa
     label: Bidassoa (obras)
-    type: collection
+    type: file
     path: _data/bidassoa.json
     format: json
-    view:
-      fields: [year, title, alias, added]
-      primary: alias
-      sort: [year, added]
-      default:
-        sort: year
-        order: desc
+    list: true
     fields:
       - { name: id, label: ID, type: string }
       - { name: title, label: Título, type: string }
       - { name: alias, label: Alias, type: string }
       - { name: year, label: Año, type: number }
       - { name: notes, label: Notas, type: text }
-      - name: keywords
-        label: Keywords
-        type: string
-        list: true
-      - name: images
-        label: Imágenes
-        type: string
-        list: true
+      - { name: keywords, label: Keywords, type: string, list: true }
+      - { name: images, label: Imágenes, type: string, list: true }
       - { name: width, label: Ancho, type: number }
       - { name: height, label: Alto, type: number }
       - { name: added, label: Agregado, type: string }
 
-  - name: keywords
-    label: Keywords canónicas
-    type: file
-    path: _data/keywords.canonical.json
-    format: json
-    fields:
-      - name: keywords
-        label: Keywords
-        type: string
-        list: true
-
   # --- Media (pelis/series) ---
   - name: media
     label: Media (pelis/series)
-    type: collection
+    type: file
     path: _data/media.json
     format: json
-    view:
-      fields: [title, type, year, rating, watched, status]
-      primary: title
-      sort: [title, year]
+    list: true
     fields:
       - { name: id, label: ID, type: string }
       - name: type
@@ -123,23 +97,14 @@ content:
   # --- Wishlist ---
   - name: wishlist
     label: Wishlist
-    type: collection
+    type: file
     path: _data/wishlist.json
     format: json
-    view:
-      fields: [title, tags, date_added]
-      primary: title
-      sort: [date_added, title]
-      default:
-        sort: date_added
-        order: desc
+    list: true
     fields:
       - { name: title, label: Título, type: string }
       - { name: date_added, label: Fecha agregado, type: string }
-      - name: tags
-        label: Tags
-        type: string
-        list: true
+      - { name: tags, label: Tags, type: string, list: true }
       - { name: notes, label: Notas, type: text }
       - { name: image_url, label: Imagen (URL), type: string }
       - { name: product_url, label: Producto (URL), type: string }
