@@ -82,6 +82,7 @@ collections:
     folder: _data/wishlist
     format: json
     create: true
+    thumbnail: cover
     slug: "{{date_added}}-{{title}}"
     fields:
       - name: date_added
@@ -91,9 +92,9 @@ collections:
       - name: title
         label: Título del producto
         widget: string
-      - name: image_url
-        label: URL de la imagen
-        widget: string
+      - name: cover
+        label: Imagen
+        widget: image
         required: false
       - name: product_url
         label: URL del producto
