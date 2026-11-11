@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="{{ '/assets/css/media-gallery.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+<div class="media-overlay" id="mediaOverlay"></div>
+
+<div class="container-xxl d-flex">
+  <div class="flex-grow-1">
+    <div class="media-toolbar">
+      <div class="media-toolbar__row">
+        <div class="btn-group" role="group" aria-label="Media type">
+          <input type="radio" class="btn-check" name="mediaType" id="typeMovies" value="movie" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="typeMovies" title="Movies"><i class="bi bi-film"></i> Movies</label>
+          <input type="radio" class="btn-check" name="mediaType" id="typeSeries" value="series" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="typeSeries" title="Series"><i class="bi bi-tv"></i> Series</label>
+        </div>
+
+        <div class="input-group media-toolbar__search">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="search" class="form-control" id="mediaSearch" placeholder="Search by title" title="Search by title" aria-label="Search by title" autocomplete="off">
+        </div>
+
+        <button class="btn btn-outline-secondary" type="button" title="Browse tags" data-bs-toggle="collapse" data-bs-target="#tags-panel" aria-expanded="false" aria-controls="tags-panel"><i class="bi bi-tags"></i> Tags</button>
+      </div>
+
+      <div class="media-toolbar__row media-toolbar__row--secondary">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Watched filter">
+          <input type="radio" class="btn-check" name="watchedFilter" id="watchedAll" value="all" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="watchedAll" title="All">All</label>
+          <input type="radio" class="btn-check" name="watchedFilter" id="watchedYes" value="yes" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="watchedYes" title="Watched"><i class="bi bi-check2-circle"></i> Watched</label>
+          <input type="radio" class="btn-check" name="watchedFilter" id="watchedNo" value="no" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="watchedNo" title="To watch"><i class="bi bi-bookmark"></i> To watch</label>
+        </div>
+
+        <input type="checkbox" class="btn-check" id="favoriteFilter" autocomplete="off">
+        <label class="btn btn-sm btn-outline-secondary media-toolbar__fav" for="favoriteFilter" title="Favorites only"><i class="bi bi-heart"></i> Favorites</label>
+
+        <select class="form-select form-select-sm media-toolbar__rating" id="ratingFilter" title="Age rating" aria-label="Age rating"></select>
+
+        <div class="media-toolbar__spacer"></div>
+
+        <div class="media-toolbar__group">
+          <span class="media-toolbar__label">Sort</span>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
+            <input type="radio" class="btn-check" name="sortBy" id="sortYear" value="year" autocomplete="off" checked>
+            <label class="btn btn-outline-secondary" for="sortYear" title="Sort by year"><i class="bi bi-calendar3"></i> Year</label>
+            <input type="radio" class="btn-check" name="sortBy" id="sortTitle" value="title" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="sortTitle" title="Sort by title"><i class="bi bi-sort-alpha-down"></i> Title</label>
+          </div>
+        </div>
+
+        <div class="media-toolbar__group">
+          <span class="media-toolbar__label">View</span>
+          <div class="btn-group btn-group-sm" role="group" aria-label="View">
+            <input type="radio" class="btn-check" name="viewMode" id="viewSections" value="sections" autocomplete="off" checked>
+            <label class="btn btn-outline-secondary" for="viewSections" title="Grouped in sections" aria-label="Sections"><i class="bi bi-view-stacked"></i></label>
+            <input type="radio" class="btn-check" name="viewMode" id="viewWall" value="wall" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="viewWall" title="One continuous wall" aria-label="Wall"><i class="bi bi-grid-3x3-gap-fill"></i></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="active-filters"></div>
+
+    <div class="collapse" id="tags-panel">
+      <div id="media-tags"></div>
+    </div>
+
+    <div class="filter-active-message" id="filterActiveMessage">
+      <div class="message-text">
+        <span class="icon">›</span>
+        <span id="filterMessageText">Loading...</span>
+      </div>
+    </div>
+
+    <div class="loading" id="mediaLoading">Loading...</div>
+    <div id="mediaGallery"></div>
+  </div>
+
+  <aside class="py-4 order-2 ps-4 pt-4">
+    <nav id="navbar-years" class="sticky-top text-end">
+      <h5 class="mb-3">Years</h5>
+      <ul class="fw-light ps-0 list-unstyled" id="yearsList">
+      </ul>
+    </nav>
+  </aside>
+</div>
+
+<script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
+<script>
+  window.mediaGalleryData = {
+    media: Object.values({{ site.data.media | jsonify }}),
+    feedback: Object.values({{ site.data.comments.media | jsonify }} || {})
+  };
+</script>
+{% comment %}defer: jQuery is loaded by foot.html, after the page content{% endcomment %}
+<script src="{{ '/assets/js/media-gallery.js' | relative_url }}" defer></script>
