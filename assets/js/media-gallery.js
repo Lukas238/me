@@ -20,7 +20,15 @@ const posterPlaceholder = item =>
   `<div class="poster-placeholder"><i class="bi ${item.type === 'series' ? 'bi-tv' : 'bi-film'}"></i><span>${escapeHtml(displayTitle(item))}</span></div>`;
 
 const currentType = () => $('input[name="mediaType"]:checked').val();
-const tagsOf = item => item.tags ? item.tags.split(';').map(t => t.trim()).filter(Boolean) : [];
+const tagsOf = item => {
+  if (!item.tags) return [];
+  // Handle both array and string formats
+  if (Array.isArray(item.tags)) {
+    return item.tags.map(t => t.trim()).filter(Boolean);
+  }
+  // Legacy string format: "tag1; tag2; tag3"
+  return item.tags.split(';').map(t => t.trim()).filter(Boolean);
+};
 const hashParams = () => new URLSearchParams(location.hash.includes('=') ? location.hash.slice(1) : '');
 
 // Items that the Type / Show / Rating / Sort / Search controls let through, before any tag is applied
@@ -422,7 +430,7 @@ function buildMediaCard($item, item) {
   if (tmdbLink) metaParts.push(tmdbLink);
   const metaHtml = metaParts.join(' <span style="color: #adb5bd;">•</span> ');
 
-  const tags = item.tags ? item.tags.split(';').map(tag => tag.trim()).filter(tag => tag) : [];
+  const tags = !item.tags ? [] : Array.isArray(item.tags) ? item.tags : item.tags.split(';').map(tag => tag.trim());
   const tagsHtml = tags.length > 0 ? `
     <div class="tags-section">
       <h6><i class="bi bi-tags"></i></h6>
