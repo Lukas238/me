@@ -86,7 +86,8 @@ collections:
     fields:
       - name: date_added
         label: Fecha agregada
-        widget: date
+        widget: datetime
+        type: date
       - name: title
         label: Título del producto
         widget: string
@@ -151,8 +152,8 @@ collections:
         required: false
       - name: tags
         label: Géneros/Etiquetas
-        widget: text
-        hint: "Separados por punto y coma (;)"
+        widget: list
+        required: false
       - name: tmdb_id
         label: ID de TMDB
         widget: string
@@ -189,7 +190,7 @@ collections:
         required: false
       - name: tags
         label: Etiquetas
-        widget: text
+        widget: list
         required: false
 
   # CONFIGURACIÓN DEL SITIO
