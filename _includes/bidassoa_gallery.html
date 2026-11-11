@@ -58,13 +58,18 @@
       </div>
     </div>
     <div class="gallery-control">
-      <span class="gallery-control__label">Details</span>
-      <div class="btn-group btn-group-sm" role="group" aria-label="Details">
-        <input type="radio" class="btn-check" name="details" id="detailsShow" value="show" autocomplete="off" checked>
-        <label class="btn btn-outline-secondary" for="detailsShow" title="Show details" aria-label="Show details"><i class="bi bi-eye"></i></label>
-        <input type="radio" class="btn-check" name="details" id="detailsHide" value="hide" autocomplete="off">
-        <label class="btn btn-outline-secondary" for="detailsHide" title="Hide details" aria-label="Hide details"><i class="bi bi-eye-slash"></i></label>
+      <span class="gallery-control__label">View</span>
+      <div class="btn-group btn-group-sm" role="group" aria-label="View">
+        <input type="radio" class="btn-check" name="viewMode" id="viewSections" value="sections" autocomplete="off" checked>
+        <label class="btn btn-outline-secondary" for="viewSections" title="Grouped in sections" aria-label="Sections"><i class="bi bi-view-stacked"></i></label>
+        <input type="radio" class="btn-check" name="viewMode" id="viewWall" value="wall" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="viewWall" title="One continuous wall" aria-label="Wall"><i class="bi bi-grid-3x3-gap-fill"></i></label>
       </div>
+    </div>
+    <div class="gallery-control">
+      <span class="gallery-control__label">Filter</span>
+      <input type="checkbox" class="btn-check" id="notesFilter" autocomplete="off">
+      <label class="btn btn-sm btn-outline-secondary" for="notesFilter" title="Only works with notes" aria-label="Only works with notes"><i class="bi bi-journal-text"></i></label>
     </div>
     <div class="gallery-control">
       <span class="gallery-control__label">Tags</span>
@@ -103,7 +108,7 @@
       {% assign current_year = item.year %}
 
 
-      <section id="year-{{ item.year }}" class="gallery__year">
+      <section id="year-{{ item.year }}" class="gallery__year" data-key="{{ item.year }}">
         <header class="gallery__year__header d-flex justify-content-between">
           <h2 class="gallery__year__title fw-light">{% if current_year == -1 %}Sin fecha{% else %}{{ current_year }}{% endif %}</h2>
           <a href="#gallery-bidassoa" class="link-opacity-10 link-opacity-100-hover"><i class="bi bi-arrow-bar-up"></i>
@@ -200,7 +205,7 @@
         {% assign cover_src = "/assets/bidassoa/" | append: cover %}
 
         {% assign combined_keywords = item.keywords | default: empty_array %}
-        <article class="gallery__item" data-id="{{ item.id | slugify }}" data-keywords="{{ combined_keywords | join: ',' }}" data-year="{{ item.year }}" data-added="{{ item.added }}">
+        <article class="gallery__item" data-id="{{ item.id | slugify }}" data-keywords="{{ combined_keywords | join: ',' }}" data-year="{{ item.year }}" data-added="{{ item.added }}" data-has-notes="{% if item.notes and item.notes != '' %}1{% endif %}">
 
           <div class="gallery__item__cover" {% if item.width and item.height %}style="aspect-ratio: {{ item.width }} / {{ item.height }};"{% endif %}>
             <a
@@ -322,6 +327,8 @@
   (function () {
     const articles = Array.from(document.querySelectorAll('.gallery__item'));
     const keywordsOf = article => article.dataset.keywords ? article.dataset.keywords.split(',') : [];
+    const notesOnly = () => document.getElementById('notesFilter').checked;
+    const inScope = article => !notesOnly() || article.dataset.hasNotes === '1';
     const prettify = text => text.charAt(0).toUpperCase() + text.slice(1).replace(/-/g, ' ');
 
     // Old links used #keyword-a,b; the shared format is #tag=a,b
@@ -338,7 +345,7 @@
       mount: '#keywords-list',
       chipsMount: '#active-filters',
       // Internal ungrouped keywords start with "_" and are not offered
-      getItems: () => articles.map(keywordsOf).map(list => list.filter(k => k.includes('--') || !k.includes('_'))),
+      getItems: () => articles.filter(inScope).map(keywordsOf).map(list => list.filter(k => k.includes('--') || !k.includes('_'))),
       groupOf: keyword => keyword.includes('--') ? keyword.split('--')[0] : null,
       labelOf: keyword => prettify(keyword.includes('--') ? keyword.split('--')[1] : keyword),
       chipLabelOf: keyword => keyword.startsWith('_')
@@ -350,7 +357,7 @@
     // Show the works that have every selected keyword, and hide the years left empty
     function applyFilters() {
       articles.forEach(article => {
-        article.style.display = tags.matches(keywordsOf(article)) ? '' : 'none';
+        article.style.display = inScope(article) && tags.matches(keywordsOf(article)) ? '' : 'none';
       });
 
       document.querySelectorAll('.gallery__year').forEach(section => {
@@ -358,6 +365,7 @@
         section.style.display = anyVisible ? '' : 'none';
       });
 
+      buildNav();
       updateActiveFiltersUI();
     }
 
@@ -380,6 +388,12 @@
       });
     }
 
+    // Tag counts follow the notes filter, so a tag with no works left is dimmed
+    document.getElementById('notesFilter').addEventListener('change', () => {
+      tags.refresh();
+      applyFilters();
+    });
+
     // Clicking a keyword on a work adds it to (or removes it from) the filter
     document.addEventListener('click', function (e) {
       const link = e.target.closest('.keyword-filter');
@@ -388,67 +402,147 @@
       tags.toggle(link.dataset.keyword);
     });
 
-    // ---- Sort: by year (one section per year), or one flat list by title or by date added ----
+    // ---- Sort and view ----
+    // Sort: year (sections by year), title (sections by letter, as in the media gallery) or date added (no groups).
+    // View: sections (grouped, with details under each work) or wall (one masonry grid, no headers, no details).
     const galleryEl = document.getElementById('gallery-bidassoa');
+    const gridEl = galleryEl.querySelector('.gallery__grid');
+    const navEl = galleryEl.querySelector('.gallery__navYears');
+    const pageOrder = articles.slice(); // as rendered: year (newest first), then title
+    const yearSections = new Map(Array.from(gridEl.querySelectorAll(':scope > .gallery__year')).map(s => [s.dataset.key, s]));
+    const INDEX_LETTERS = ['0', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
     let sortMode = 'year';
-    const masonry = GalleryMasonry.create({ container: galleryEl.querySelector('.gallery__grid'), getItems: () => articles });
+    let viewMode = 'sections';
+    const masonry = GalleryMasonry.create({ container: gridEl, getItems: () => articles });
 
-    const titleOf = article => article.querySelector('.gallery__item__title').textContent.replace(/"/g, '');
+    const titleOf = article => article.querySelector('.gallery__item__title').textContent.replace(/"/g, '').trim();
+    const byTitle = (a, b) => titleOf(a).localeCompare(titleOf(b), undefined, { sensitivity: 'base' });
 
-    // Flat grid items are ordered with CSS `order`, so the works never move in the DOM
-    function setSort(mode) {
-      sortMode = mode;
-      galleryEl.classList.toggle('is-flat', mode !== 'year');
-      const byTitle = (a, b) => titleOf(a).localeCompare(titleOf(b), undefined, { sensitivity: 'base' });
-      const ranked = mode === 'title' ? articles.slice().sort(byTitle)
-        : mode === 'added' ? articles.slice().sort((a, b) => b.dataset.added.localeCompare(a.dataset.added) || byTitle(a, b))
-        : [];
-      articles.forEach(article => { article.style.order = ''; });
-      ranked.forEach((article, i) => { article.style.order = i; });
-      if (mode === 'year') masonry.disable(); else masonry.enable();
+    // Index letter of a title: A-Z, or 0 for numbers and symbols
+    const letterOf = article => {
+      const first = titleOf(article).normalize('NFD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
+      return /[A-Z]/.test(first) ? first : '0';
+    };
+
+    // The group a work belongs to follows the sort: its letter by title, otherwise its year
+    const groupKeyOf = article => sortMode === 'title' ? letterOf(article) : article.dataset.year;
+    const isGrouped = () => viewMode === 'sections' && sortMode !== 'added';
+
+    // Sorted by title the works live in letter sections; otherwise they sit in their year section
+    function placeArticles() {
+      const hasLetters = gridEl.querySelector(':scope > .gallery__year--letter');
+
+      if (isGrouped() && sortMode === 'title') {
+        gridEl.querySelectorAll(':scope > .gallery__year--letter').forEach(section => section.remove());
+        const byLetter = new Map();
+        articles.slice().sort(byTitle).forEach(article => {
+          const letter = letterOf(article);
+          if (!byLetter.has(letter)) byLetter.set(letter, []);
+          byLetter.get(letter).push(article);
+        });
+        INDEX_LETTERS.filter(letter => byLetter.has(letter)).forEach(letter => {
+          const section = document.createElement('section');
+          section.className = 'gallery__year gallery__year--letter';
+          section.id = 'letter-' + letter;
+          section.dataset.key = letter;
+          section.innerHTML = '<header class="gallery__year__header d-flex justify-content-between">'
+            + '<h2 class="gallery__year__title fw-light">' + (letter === '0' ? '0-9' : letter) + '</h2>'
+            + '<a href="#gallery-bidassoa" class="link-opacity-10 link-opacity-100-hover"><i class="bi bi-arrow-bar-up"></i><div class="visually-hidden">Back to top</div></a>'
+            + '</header>';
+          section.append(...byLetter.get(letter));
+          gridEl.appendChild(section);
+        });
+      } else if (hasLetters) {
+        pageOrder.forEach(article => yearSections.get(article.dataset.year).appendChild(article));
+        gridEl.querySelectorAll(':scope > .gallery__year--letter').forEach(section => section.remove());
+      }
     }
 
-    // ---- Details: the title, year and tags under each work can be hidden ----
-    function initDetails() {
-      const apply = show => galleryEl.classList.toggle('hide-details', !show);
+    // Flat grid items are ordered with CSS `order`; sections never reorder the works
+    function applyLayout() {
+      placeArticles();
+      galleryEl.classList.toggle('is-flat', !isGrouped());
+      galleryEl.classList.toggle('hide-details', viewMode === 'wall');
 
-      document.querySelectorAll('input[name="details"]').forEach(radio => {
+      const ranked = isGrouped() ? []
+        : sortMode === 'title' ? articles.slice().sort(byTitle)
+        : sortMode === 'added' ? articles.slice().sort((a, b) => b.dataset.added.localeCompare(a.dataset.added) || byTitle(a, b))
+        : pageOrder;
+      articles.forEach(article => { article.style.order = ''; });
+      ranked.forEach((article, i) => { article.style.order = i; });
+
+      if (isGrouped()) masonry.disable(); else masonry.enable();
+      applyFilters();
+    }
+
+    // Sidebar index: years (only those with works shown) or 0-9 and A-Z when sorted by title
+    function buildNav() {
+      const visible = articles.filter(article => article.style.display !== 'none');
+      navEl.querySelector('h5').textContent = sortMode === 'title' ? 'Index' : 'Years';
+      navEl.style.display = visible.length ? '' : 'none';
+
+      let items;
+      if (sortMode === 'title') {
+        const present = new Set(visible.map(letterOf));
+        items = INDEX_LETTERS.map(letter => {
+          const label = letter === '0' ? '0-9' : letter;
+          return present.has(letter)
+            ? '<li class="ps-0"><a href="#" data-key="' + letter + '">' + label + '</a></li>'
+            : '<li class="ps-0 text-muted opacity-25">' + label + '</li>';
+        });
+      } else {
+        const years = Array.from(new Set(visible.map(article => Number(article.dataset.year))))
+          .sort((a, b) => a === -1 ? 1 : b === -1 ? -1 : b - a);
+        items = years.map(year => '<li class="ps-0"><a href="#" data-key="' + year + '">' + (year === -1 ? 'Sin fecha' : year) + '</a></li>');
+      }
+      const list = navEl.querySelector('ul');
+      list.classList.toggle('is-index', sortMode === 'title');
+      list.innerHTML = items.join('');
+    }
+
+    function initView() {
+      document.querySelectorAll('input[name="viewMode"]').forEach(radio => {
         radio.addEventListener('change', () => {
-          localStorage.setItem('bidassoaDetails', radio.value);
-          apply(radio.value === 'show');
+          localStorage.setItem('bidassoaView', radio.value);
+          viewMode = radio.value;
+          applyLayout();
         });
       });
 
-      const saved = localStorage.getItem('bidassoaDetails');
-      const radio = saved && document.querySelector('input[name="details"][value="' + saved + '"]');
+      const saved = localStorage.getItem('bidassoaView');
+      const radio = saved && document.querySelector('input[name="viewMode"][value="' + saved + '"]');
       if (radio) radio.checked = true;
-      apply(document.querySelector('input[name="details"]:checked').value === 'show');
+      viewMode = document.querySelector('input[name="viewMode"]:checked').value;
     }
 
     function initSort() {
       document.querySelectorAll('input[name="sortBy"]').forEach(radio => {
         radio.addEventListener('change', () => {
           localStorage.setItem('bidassoaSortBy', radio.value);
-          setSort(radio.value);
+          sortMode = radio.value;
+          applyLayout();
         });
       });
 
       const saved = localStorage.getItem('bidassoaSortBy');
       const radio = saved && document.querySelector('input[name="sortBy"][value="' + saved + '"]');
       if (radio) radio.checked = true;
-      setSort(document.querySelector('input[name="sortBy"]:checked').value);
+      sortMode = document.querySelector('input[name="sortBy"]:checked').value;
+      applyLayout();
     }
 
-    // Years stay in the sidebar in every mode: sorted by title, they jump to the first work of that year
+    // Sidebar links scroll in place so an active tag filter stays in the URL
     document.addEventListener('click', function (e) {
       const link = e.target.closest('.gallery__navYears a');
-      if (!link || sortMode === 'year') return;
+      if (!link) return;
       e.preventDefault();
-      const year = link.getAttribute('href').replace('#year-', '');
-      const target = articles
-        .filter(el => el.dataset.year === year && el.style.display !== 'none')
-        .sort((a, b) => Number(a.style.order) - Number(b.style.order))[0];
-      target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const key = link.dataset.key;
+      const target = isGrouped()
+        ? gridEl.querySelector('.gallery__year[data-key="' + key + '"]')
+        : articles
+          .filter(article => article.style.display !== 'none' && groupKeyOf(article) === key)
+          .sort((a, b) => Number(a.style.order) - Number(b.style.order))[0];
+      target?.scrollIntoView({ behavior: 'smooth', block: isGrouped() ? 'start' : 'center' });
     });
 
     window.updateActiveFiltersUI = updateActiveFiltersUI;
@@ -456,8 +550,8 @@
     applyFilters();
 
     window.addEventListener('load', () => {
+      initView();
       initSort();
-      initDetails();
     });
 
     window.addEventListener('hashchange', function () {

@@ -417,9 +417,9 @@
         text-align: left;
 
 
-        // Dos columnas cuando el listado es muy largo
+        // Dos columnas cuando el listado es muy largo; el índice A-Z siempre va en una columna
         @media (min-height: 600px) {
-          &:has(li:nth-child(15)) {
+          &:has(li:nth-child(15)):not(.is-index) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;

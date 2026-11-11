@@ -1,6 +1,7 @@
 // Media gallery page. Data comes from window.mediaGalleryData (see _pages/media-gallery.md).
 let mediaList = window.mediaGalleryData.media.map(item => ({ ...item, type: item.type || 'movie' }));
 let feedbackList = window.mediaGalleryData.feedback;
+const commentedIds = new Set(feedbackList.map(f => f.media_id));
 
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 
@@ -25,7 +26,7 @@ const hashParams = () => new URLSearchParams(location.hash.includes('=') ? locat
 // Items that the Type / Show / Rating / Sort / Search controls let through, before any tag is applied
 function itemsInScope() {
   const mode = $('input[name="sortBy"]:checked').val() || 'year';
-  return mediaList.filter(item => item.type === currentType() && (mode !== 'year' || item.year) && matchesWatched(item) && matchesFavorite(item) && matchesRating(item) && matchesSearch(item));
+  return mediaList.filter(item => item.type === currentType() && (mode !== 'year' || item.year) && matchesWatched(item) && matchesFavorite(item) && matchesCommented(item) && matchesRating(item) && matchesSearch(item));
 }
 
 // Accent- and case-insensitive match on the shown title and the original one
@@ -243,7 +244,11 @@ $(function() {
   });
 
   $('input[name="watchedFilter"]').on('change', renderGallery);
-  $('#favoriteFilter').on('change', renderGallery);
+  // Favorites and comments are alternative views of the list, so turning one on turns the other off
+  $('#favoriteFilter, #commentedFilter').on('change', function() {
+    if (this.checked) $('#favoriteFilter, #commentedFilter').not(this).prop('checked', false);
+    renderGallery();
+  });
 
   $('input[name="sortBy"]').on('change', function() {
     localStorage.setItem('mediaSortBy', $(this).val());
@@ -305,19 +310,19 @@ $(function() {
 function checkAndOpenCardFromUrl() {
   const hash = window.location.hash.substring(1);
   if (!hash) return;
-  
+
   const params = new URLSearchParams(hash);
   const itemId = params.get('id');
-  
+
   if (!itemId) return;
-  
+
   // Buscar el item en mediaList
   const item = mediaList.find(i => i.id === itemId);
   if (!item) {
     console.warn(`Item with ID ${itemId} not found`);
     return;
   }
-  
+
   // Cambiar al tipo correcto (movie/series)
   $(`input[name="mediaType"][value="${item.type}"]`).prop('checked', true);
   GalleryState.set('type', item.type === 'movie' ? null : item.type);
@@ -332,6 +337,7 @@ function checkAndOpenCardFromUrl() {
   // Un item oculto por el filtro de watched no se podría abrir
   if (!matchesWatched(item)) $('#watchedAll').prop('checked', true);
   if (!matchesFavorite(item)) $('#favoriteFilter').prop('checked', false);
+  if (!matchesCommented(item)) $('#commentedFilter').prop('checked', false);
 
   tagFilter.syncFromHash();
   renderGallery();
@@ -342,17 +348,17 @@ function checkAndOpenCardFromUrl() {
     $('.media-item.expanded').remove();
     $('#mediaOverlay').removeClass('active');
     $('body').removeClass('modal-open');
-    
+
     // Buscar el elemento en el DOM por ID exacto
     const $items = $('.media-item');
     let found = false;
-    
+
     $items.each(function() {
       if (found) return false;
-      
+
       const $this = $(this);
       const $cardContainer = $this.find('.card-container');
-      
+
       if ($cardContainer.length) {
         // Verificar el ID comparando con el título
         const cardTitle = $cardContainer.find('.card-header-info h3').text();
@@ -364,7 +370,7 @@ function checkAndOpenCardFromUrl() {
         }
       }
     });
-    
+
     if (!found) {
       console.warn(`Could not find DOM element for item ${itemId}`);
     }
@@ -373,6 +379,10 @@ function checkAndOpenCardFromUrl() {
 
 function matchesFavorite(item) {
   return !$('#favoriteFilter').is(':checked') || item.favorite === true;
+}
+
+function matchesCommented(item) {
+  return !$('#commentedFilter').is(':checked') || commentedIds.has(item.id);
 }
 
 function matchesWatched(item) {
@@ -393,15 +403,15 @@ function updateFilterMessage(type, count, tags) {
 function buildMediaCard($item, item) {
   // Código duplicado de renderGallery - construir card info
   const itemComments = feedbackList.filter(f => f.media_id === item.id);
-  const avgRating = itemComments.length > 0 
+  const avgRating = itemComments.length > 0
     ? `⭐ ${Math.round(itemComments.reduce((sum, c) => sum + c.rating, 0) / itemComments.length)}/5 (${itemComments.length} ${itemComments.length === 1 ? 'vote' : 'votes'})`
     : '<span style="color: #adb5bd; font-size: 0.875rem;">No ratings yet</span>';
-  
+
   const statusBadge = getStatusBadge(item);
   const tmdbUrl = item.tmdb_id ? `https://www.themoviedb.org/${item.type === 'movie' ? 'movie' : 'tv'}/${item.tmdb_id}` : '';
   const tmdbLink = tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noopener noreferrer" class="tmdb-link" title="View on TMDb"><i class="bi bi-eye"></i></a>` : '';
   const ageRating = item.rating ? `<span class="age-rating">${item.rating}</span>` : '';
-  
+
   // Construir metadata con bullets
   const metaParts = [];
   if (ageRating) metaParts.push(ageRating);
@@ -411,7 +421,7 @@ function buildMediaCard($item, item) {
   if (item.favorite === true) metaParts.push('<i class="bi bi-heart-fill fav-mark" title="Favorite"></i>');
   if (tmdbLink) metaParts.push(tmdbLink);
   const metaHtml = metaParts.join(' <span style="color: #adb5bd;">•</span> ');
-  
+
   const tags = item.tags ? item.tags.split(';').map(tag => tag.trim()).filter(tag => tag) : [];
   const tagsHtml = tags.length > 0 ? `
     <div class="tags-section">
@@ -419,7 +429,7 @@ function buildMediaCard($item, item) {
       <div class="tags-container">${tags.map(tag => `<a href="#tag=${encodeURIComponent(tag)}" class="tag-item" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
     </div>
   ` : '';
-  
+
   // Separar header info y comentarios
   const headerInfoHtml = `
     <div class="card-header-info">
@@ -430,7 +440,7 @@ function buildMediaCard($item, item) {
     </div>
     ${tagsHtml}
   `;
-  
+
   // Comments need an id, which entries still being completed don't have yet
   const commentLink = (cls, label) => item.id ? `<a href="/media-comments/?id=${item.id}" class="${cls}">${label}</a>` : '';
 
@@ -444,7 +454,7 @@ function buildMediaCard($item, item) {
       ${itemComments.map(comment => {
         const date = comment.timestamp ? new Date(comment.timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
         const rating = comment.rating || 0;
-        
+
         // Crear estrellas llenas y vacías
         let starsHtml = '';
         for (let i = 1; i <= 5; i++) {
@@ -454,10 +464,10 @@ function buildMediaCard($item, item) {
             starsHtml += '<i class="bi bi-star-fill star-empty"></i>';
           }
         }
-        
+
         const ratingDisplay = `<span class="stars">${starsHtml}</span><span class="rating-text">(${rating}/5)</span>`;
         const dateSeparator = date ? '<span style="color: #adb5bd; margin: 0 4px;">•</span>' : '';
-        
+
         return `
         <div class="comment-item">
           <div class="comment-meta">
@@ -478,16 +488,16 @@ function buildMediaCard($item, item) {
     `}
     </div>
   `;
-  
+
   // Estructura nueva: poster, info y comentarios como hermanos
-  const posterUrl = item.tmdb_poster_url 
-    ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}` 
+  const posterUrl = item.tmdb_poster_url
+    ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}`
     : '';
-  
-  const posterHtml = posterUrl 
+
+  const posterHtml = posterUrl
     ? `<img src="${posterUrl}" alt="${displayTitle(item)}" loading="lazy">`
     : posterPlaceholder(item);
-  
+
   const $cardContainer = $(`
     <div class="card-container">
       <button class="card-close-btn" title="Close">&times;</button>
@@ -508,22 +518,22 @@ function buildMediaCard($item, item) {
       </div>
     </div>
   `);
-  
+
   $item.append($cardContainer);
-  
+
   // Click en poster para expandir
   $item.find('.poster').on('click', function(e) {
     e.stopPropagation();
-    
+
     // Cerrar cualquier card existente primero
     $('.media-item.expanded').remove();
-    
+
     const $clone = $item.clone(true);
     $clone.addClass('expanded');
     $('body').append($clone);
     $('#mediaOverlay').addClass('active');
     $('body').addClass('modal-open');
-    
+
     // Agregar ID a la URL (entries without an id yet have no link)
     if (item.id) {
       const currentHash = window.location.hash.substring(1);
@@ -531,15 +541,15 @@ function buildMediaCard($item, item) {
       params.set('id', item.id);
       window.history.pushState(null, '', `#${params.toString()}`);
     }
-    
+
     $clone.find('.poster').off('click');
-    
+
     $clone.find('.card-close-btn').on('click', function(e) {
       e.stopPropagation();
       $clone.remove();
       $('#mediaOverlay').removeClass('active');
       $('body').removeClass('modal-open');
-      
+
       // Quitar ID de la URL
       const currentHash = window.location.hash.substring(1);
       const params = new URLSearchParams(currentHash);
