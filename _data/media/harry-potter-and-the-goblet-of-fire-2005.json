@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Harry Potter and the Goblet of Fire",
   "year": "2005",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Fantasy"
   ],
   "tmdb_id": "674",
+  "tmdb_poster_url": "fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg"
 }

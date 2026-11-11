@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Matrix",
   "year": "1999",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "603",
+  "tmdb_poster_url": "dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/p96dm7sCMn4VYAStA6siNz30G1r.jpg"
 }

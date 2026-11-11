@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Léon: The Professional",
   "year": "1994",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "101",
+  "tmdb_poster_url": "bxB2q91nKYp8JNzqE7t7TWBVupB.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/bxB2q91nKYp8JNzqE7t7TWBVupB.jpg"
 }

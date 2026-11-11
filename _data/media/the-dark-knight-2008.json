@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Dark Knight",
   "year": "2008",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "155",
+  "tmdb_poster_url": "qJ2tW6WMUDux911r6m7haRef0WH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
 }

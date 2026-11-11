@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Dead Poets Society",
   "year": "1989",
   "rating": "7+",
@@ -10,5 +11,6 @@
     "Drama"
   ],
   "tmdb_id": "207",
+  "tmdb_poster_url": "erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg"
 }

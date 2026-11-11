@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Good Will Hunting",
   "year": "1997",
   "rating": "17+",
@@ -10,5 +11,6 @@
     "Drama"
   ],
   "tmdb_id": "489",
+  "tmdb_poster_url": "z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg"
 }

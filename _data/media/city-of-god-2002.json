@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "City of God",
   "year": "2002",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Crime"
   ],
   "tmdb_id": "598",
+  "tmdb_poster_url": "k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg"
 }

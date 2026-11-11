@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Last Starfighter",
   "year": "1984",
   "rating": "7+",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "11884",
+  "tmdb_poster_url": "A7oAHTjtYnIEQjJs62IONRufooq.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg"
 }

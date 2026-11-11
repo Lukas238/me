@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Sixth Sense",
   "year": "1999",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "745",
+  "tmdb_poster_url": "vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg"
 }

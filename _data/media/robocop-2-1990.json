@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "RoboCop 2",
   "year": "1990",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Thriller"
   ],
   "tmdb_id": "5549",
+  "tmdb_poster_url": "nhqBxhOJXUJeFsyLxTFkctH9H5F.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nhqBxhOJXUJeFsyLxTFkctH9H5F.jpg"
 }

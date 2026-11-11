@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Fifth Element",
   "year": "1997",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Adventure"
   ],
   "tmdb_id": "18",
+  "tmdb_poster_url": "fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg"
 }

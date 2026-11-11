@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Johnny Mnemonic",
   "year": "1995",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Adventure"
   ],
   "tmdb_id": "9886",
+  "tmdb_poster_url": "iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg"
 }

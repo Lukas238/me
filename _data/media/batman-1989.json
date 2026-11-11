@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Batman",
   "year": "1989",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "268",
+  "tmdb_poster_url": "cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg"
 }

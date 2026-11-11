@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Beauty and the Beast",
   "year": "1991",
   "rating": "0+",
@@ -13,5 +14,6 @@
     "Fantasy"
   ],
   "tmdb_id": "10020",
+  "tmdb_poster_url": "hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Herbie Rides Again",
   "year": "1974",
   "rating": "0+",
@@ -13,5 +14,6 @@
     "Fantasy"
   ],
   "tmdb_id": "10869",
+  "tmdb_poster_url": "1k14PPykkUQfhjn3xXDrc55lfHl.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/1k14PPykkUQfhjn3xXDrc55lfHl.jpg"
 }

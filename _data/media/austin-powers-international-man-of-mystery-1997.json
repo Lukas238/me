@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Austin Powers: International Man of Mystery",
   "year": "1997",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Crime"
   ],
   "tmdb_id": "816",
+  "tmdb_poster_url": "5uD4dxNX8JKFjWKYMHyOsqhi5pN.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/5uD4dxNX8JKFjWKYMHyOsqhi5pN.jpg"
 }

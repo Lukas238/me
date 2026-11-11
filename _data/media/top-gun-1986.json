@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Top Gun",
   "year": "1986",
   "rating": "7+",
@@ -12,5 +13,6 @@
     "Romance"
   ],
   "tmdb_id": "744",
+  "tmdb_poster_url": "xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg"
 }

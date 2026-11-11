@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: Enterprise",
   "year": "2001",
   "rating": "10+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "314",
+  "tmdb_poster_url": "tsbBTABtNgu0ycsFpnIhiQ5woOM.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/tsbBTABtNgu0ycsFpnIhiQ5woOM.jpg"
 }

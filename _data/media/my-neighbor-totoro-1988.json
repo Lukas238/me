@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": true,
+  "favorite": false,
   "title": "My Neighbor Totoro",
   "year": "1988",
   "rating": "0+",
@@ -12,5 +13,6 @@
     "Family"
   ],
   "tmdb_id": "8392",
+  "tmdb_poster_url": "rtGDOeG9LzoerkDGZF9dnVeLppL.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
 }

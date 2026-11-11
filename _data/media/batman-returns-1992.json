@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Batman Returns",
   "year": "1992",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Fantasy"
   ],
   "tmdb_id": "364",
+  "tmdb_poster_url": "jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg"
 }

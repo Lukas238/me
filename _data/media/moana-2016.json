@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": true,
+  "favorite": false,
   "title": "Moana",
   "year": "2016",
   "rating": "7+",
@@ -13,5 +14,6 @@
     "Animation"
   ],
   "tmdb_id": "277834",
+  "tmdb_poster_url": "m5MDZOIFEFlxGiLuAzWzFSsWcye.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9tzN8sPbyod2dsa0lwuvrwBDWra.jpg"
 }

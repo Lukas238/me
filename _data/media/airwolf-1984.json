@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Airwolf",
   "year": "1984",
   "rating": "10+",
@@ -11,5 +12,6 @@
     "Sci-Fi & Fantasy"
   ],
   "tmdb_id": "2119",
+  "tmdb_poster_url": "4PAN7zPqmR9b73een97WkxqCTQN.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/4PAN7zPqmR9b73een97WkxqCTQN.jpg"
 }

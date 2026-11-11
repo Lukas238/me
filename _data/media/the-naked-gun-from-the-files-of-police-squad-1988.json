@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Naked Gun: From the Files of Police Squad!",
   "year": "1988",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Crime"
   ],
   "tmdb_id": "37136",
+  "tmdb_poster_url": "zT0mhZqZQJE1gSY5Eg9qcGP4NYo.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/zT0mhZqZQJE1gSY5Eg9qcGP4NYo.jpg"
 }

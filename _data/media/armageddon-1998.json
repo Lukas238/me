@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Armageddon",
   "year": "1998",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Adventure"
   ],
   "tmdb_id": "95",
+  "tmdb_poster_url": "eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg"
 }

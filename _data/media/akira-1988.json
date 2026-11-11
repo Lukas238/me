@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Akira",
   "year": "1988",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "149",
+  "tmdb_poster_url": "neZ0ykEsPqxamsX6o5QNUFILQrz.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg"
 }

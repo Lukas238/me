@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Right Stuff",
   "year": "1983",
   "rating": "7+",
@@ -11,5 +12,6 @@
     "History"
   ],
   "tmdb_id": "9549",
+  "tmdb_poster_url": "htEr0vyHbU7FMr8qvTguTmaTvES.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/htEr0vyHbU7FMr8qvTguTmaTvES.jpg"
 }

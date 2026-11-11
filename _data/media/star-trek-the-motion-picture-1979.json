@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: The Motion Picture",
   "year": "1979",
   "rating": "0+",
@@ -12,5 +13,6 @@
     "Mystery"
   ],
   "tmdb_id": "152",
+  "tmdb_poster_url": "wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg"
 }

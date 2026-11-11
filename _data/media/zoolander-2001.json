@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Zoolander",
   "year": "2001",
   "rating": "13+",
@@ -10,5 +11,6 @@
     "Comedy"
   ],
   "tmdb_id": "9398",
+  "tmdb_poster_url": "qdrbSneHZjJG2Dj0hhBxzzAo4HB.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qdrbSneHZjJG2Dj0hhBxzzAo4HB.jpg"
 }

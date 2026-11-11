@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "RoboCop",
   "year": "1987",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "5548",
+  "tmdb_poster_url": "hHtOgGb3NihlyRATHlKPaFApbrd.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/hHtOgGb3NihlyRATHlKPaFApbrd.jpg"
 }

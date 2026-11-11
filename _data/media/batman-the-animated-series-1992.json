@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Batman: The Animated Series",
   "year": "1992",
   "rating": "10+",
@@ -13,5 +14,6 @@
     "Mystery"
   ],
   "tmdb_id": "2098",
+  "tmdb_poster_url": "lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg"
 }

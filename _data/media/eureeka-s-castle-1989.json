@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Eureeka's Castle",
   "year": "1989",
   "rating": "7+",
@@ -11,5 +12,6 @@
     "Comedy"
   ],
   "tmdb_id": "403",
+  "tmdb_poster_url": "yg9FX5LfZmbib88NkU5sM0y4wnD.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yg9FX5LfZmbib88NkU5sM0y4wnD.jpg"
 }

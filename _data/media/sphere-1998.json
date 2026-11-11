@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Sphere",
   "year": "1998",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Thriller"
   ],
   "tmdb_id": "10153",
+  "tmdb_poster_url": "reR7C7EYe3DiHm5OYpA0ACUMDld.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/reR7C7EYe3DiHm5OYpA0ACUMDld.jpg"
 }

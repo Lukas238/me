@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "MacGyver",
   "year": "1985",
   "rating": "10+",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "2875",
+  "tmdb_poster_url": "zhgJNHbFxGkqdsKdkZLBrDWagOv.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/zhgJNHbFxGkqdsKdkZLBrDWagOv.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: Generations",
   "year": "1994",
   "rating": "7+",
@@ -13,5 +14,6 @@
     "Thriller"
   ],
   "tmdb_id": "193",
+  "tmdb_poster_url": "wqU1XiJgvgJVrFCWjZEqat3icMT.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wqU1XiJgvgJVrFCWjZEqat3icMT.jpg"
 }

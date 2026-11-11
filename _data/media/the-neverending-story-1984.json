@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": true,
+  "favorite": false,
   "title": "The NeverEnding Story",
   "year": "1984",
   "rating": "7+",
@@ -13,5 +14,6 @@
     "Drama"
   ],
   "tmdb_id": "34584",
+  "tmdb_poster_url": "ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg"
 }

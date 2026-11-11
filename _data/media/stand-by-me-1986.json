@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Stand by Me",
   "year": "1986",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Adventure"
   ],
   "tmdb_id": "235",
+  "tmdb_poster_url": "vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg"
 }

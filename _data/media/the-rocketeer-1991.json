@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Rocketeer",
   "year": "1991",
   "rating": "7+",
@@ -11,5 +12,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "10249",
+  "tmdb_poster_url": "2tDFRESFwKww1LHRE8W1Exj9edH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Lion King",
   "year": "1994",
   "rating": "0+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "8587",
+  "tmdb_poster_url": "sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg"
 }

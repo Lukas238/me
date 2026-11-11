@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Sin City",
   "year": "2005",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "187",
+  "tmdb_poster_url": "i66G50wATMmPrvpP95f0XP6ZdVS.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/i66G50wATMmPrvpP95f0XP6ZdVS.jpg"
 }

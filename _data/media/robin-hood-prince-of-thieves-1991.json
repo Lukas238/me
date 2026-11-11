@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Robin Hood: Prince of Thieves",
   "year": "1991",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "8367",
+  "tmdb_poster_url": "hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg"
 }

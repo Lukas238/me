@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Gravity",
   "year": "2013",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "49047",
+  "tmdb_poster_url": "kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
 }

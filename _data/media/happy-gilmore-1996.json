@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Happy Gilmore",
   "year": "1996",
   "rating": "13+",
@@ -10,5 +11,6 @@
     "Comedy"
   ],
   "tmdb_id": "9614",
+  "tmdb_poster_url": "4RnCeRzvI1xk5tuNWjpDKzSnJDk.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/4RnCeRzvI1xk5tuNWjpDKzSnJDk.jpg"
 }

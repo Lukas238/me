@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Catch Me If You Can",
   "year": "2002",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Crime"
   ],
   "tmdb_id": "640",
+  "tmdb_poster_url": "ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg"
 }

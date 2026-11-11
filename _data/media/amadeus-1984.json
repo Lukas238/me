@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Amadeus",
   "year": "1984",
   "rating": "7+",
@@ -12,5 +13,6 @@
     "Music"
   ],
   "tmdb_id": "279",
+  "tmdb_poster_url": "gQRfiyfGvr1az0quaYyMram3Aqt.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/gQRfiyfGvr1az0quaYyMram3Aqt.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: Lower Decks",
   "year": "2020",
   "rating": "14+",
@@ -12,5 +13,6 @@
     "Comedy"
   ],
   "tmdb_id": "85948",
+  "tmdb_poster_url": "i7Em3r7KCyNfkOwMkyqN8UMvK8S.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/i7Em3r7KCyNfkOwMkyqN8UMvK8S.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Batman Begins",
   "year": "2005",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "272",
+  "tmdb_poster_url": "sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/sPX89Td70IDDjVr85jdSBb4rWGr.jpg"
 }

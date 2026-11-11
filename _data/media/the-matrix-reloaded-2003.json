@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Matrix Reloaded",
   "year": "2003",
   "rating": "17+",
@@ -13,5 +14,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "604",
+  "tmdb_poster_url": "8xEVAe84zlL9rkfYT6dZXero4KK.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg"
 }

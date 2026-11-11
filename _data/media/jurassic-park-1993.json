@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Jurassic Park",
   "year": "1993",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "329",
+  "tmdb_poster_url": "d9mtMGQDLANKieb9PbD3yK7xxzo.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/d9mtMGQDLANKieb9PbD3yK7xxzo.jpg"
 }

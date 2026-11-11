@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Hackers",
   "year": "1995",
   "rating": "13+",
@@ -13,5 +14,6 @@
     "Drama"
   ],
   "tmdb_id": "10428",
+  "tmdb_poster_url": "qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Arrival",
   "year": "2016",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Mystery"
   ],
   "tmdb_id": "329865",
+  "tmdb_poster_url": "pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg"
 }

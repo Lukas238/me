@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Dodgeball: A True Underdog Story",
   "year": "2004",
   "rating": "13+",
@@ -10,5 +11,6 @@
     "Comedy"
   ],
   "tmdb_id": "9472",
+  "tmdb_poster_url": "r8KbNHkkwFXLjV1suGwm0Qjure5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/r8KbNHkkwFXLjV1suGwm0Qjure5.jpg"
 }
