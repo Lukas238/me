@@ -31,7 +31,10 @@ content:
     type: file
     path: _data/bidassoa.json
     format: json
-    list: true
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{year} · {alias}"
     fields:
       - { name: id, label: ID, type: string }
       - { name: title, label: Título, type: string }
@@ -50,7 +53,10 @@ content:
     type: file
     path: _data/media.json
     format: json
-    list: true
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{title} ({year}) · {type}"
     fields:
       - { name: id, label: ID, type: string }
       - name: type
@@ -80,16 +86,9 @@ content:
     label: Comentarios de media
     type: collection
     path: _data/comments/media
-    format: json
-    view:
-      fields: [media_id, rating, author, timestamp]
-      sort: [timestamp]
-      default:
-        sort: timestamp
-        order: desc
     fields:
       - { name: media_id, label: Media ID, type: string }
-      - { name: rating, label: Rating, type: number, options: { min: 1, max: 5 } }
+      - { name: rating, label: Rating, type: number }
       - { name: author, label: Autor, type: string }
       - { name: comment, label: Comentario, type: text }
       - { name: timestamp, label: Fecha, type: string }
@@ -100,11 +99,19 @@ content:
     type: file
     path: _data/wishlist.json
     format: json
-    list: true
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{title}"
     fields:
       - { name: title, label: Título, type: string }
       - { name: date_added, label: Fecha agregado, type: string }
-      - { name: tags, label: Tags, type: string, list: true }
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          values: [books, drawing, edc, garden, keyboard, maker, math, music, networking, printer, tech, tools, toys, woodworking]
       - { name: notes, label: Notas, type: text }
       - { name: image_url, label: Imagen (URL), type: string }
       - { name: product_url, label: Producto (URL), type: string }
