@@ -1,0 +1,145 @@
+media:
+  input: assets
+  output: /assets
+
+content:
+  # --- Páginas ---
+  - name: home
+    label: Home (About me)
+    type: file
+    path: index.md
+    fields:
+      - { name: body, label: Contenido, type: rich-text }
+
+  - name: pages
+    label: Páginas
+    type: collection
+    path: _pages
+    format: yaml-frontmatter
+    subfolders: false
+    view:
+      fields: [title, permalink]
+    fields:
+      - { name: title, label: Título, type: string }
+      - { name: layout, label: Layout, type: string, default: base }
+      - { name: permalink, label: Permalink, type: string }
+      - { name: body, label: Contenido, type: code, options: { format: html } }
+
+  # --- Bidassoa ---
+  - name: bidassoa
+    label: Bidassoa (obras)
+    type: collection
+    path: _data/bidassoa.json
+    format: json
+    view:
+      fields: [year, title, alias, added]
+      primary: alias
+      sort: [year, added]
+      default:
+        sort: year
+        order: desc
+    fields:
+      - { name: id, label: ID, type: string }
+      - { name: title, label: Título, type: string }
+      - { name: alias, label: Alias, type: string }
+      - { name: year, label: Año, type: number }
+      - { name: notes, label: Notas, type: text }
+      - name: keywords
+        label: Keywords
+        type: string
+        list: true
+      - name: images
+        label: Imágenes
+        type: string
+        list: true
+      - { name: width, label: Ancho, type: number }
+      - { name: height, label: Alto, type: number }
+      - { name: added, label: Agregado, type: string }
+
+  - name: keywords
+    label: Keywords canónicas
+    type: file
+    path: _data/keywords.canonical.json
+    format: json
+    fields:
+      - name: keywords
+        label: Keywords
+        type: string
+        list: true
+
+  # --- Media (pelis/series) ---
+  - name: media
+    label: Media (pelis/series)
+    type: collection
+    path: _data/media.json
+    format: json
+    view:
+      fields: [title, type, year, rating, watched, status]
+      primary: title
+      sort: [title, year]
+    fields:
+      - { name: id, label: ID, type: string }
+      - name: type
+        label: Tipo
+        type: select
+        options:
+          values: [movie, series]
+      - { name: title, label: Título, type: string }
+      - { name: title_es, label: Título (ES), type: string }
+      - { name: year, label: Año, type: string }
+      - name: rating
+        label: Rating
+        type: select
+        options:
+          values: ["0+", "7+", "10+", "13+", "14+", "17+", "18+"]
+      - { name: tags, label: Tags (separados por ;), type: string }
+      - { name: watched, label: Vista, type: boolean }
+      - name: status
+        label: Estado
+        type: select
+        options:
+          values: ["", watching]
+      - { name: tmdb_id, label: TMDB ID, type: string }
+      - { name: tmdb_poster_url, label: TMDB poster, type: string }
+
+  - name: media_comments
+    label: Comentarios de media
+    type: collection
+    path: _data/comments/media
+    format: json
+    view:
+      fields: [media_id, rating, author, timestamp]
+      sort: [timestamp]
+      default:
+        sort: timestamp
+        order: desc
+    fields:
+      - { name: media_id, label: Media ID, type: string }
+      - { name: rating, label: Rating, type: number, options: { min: 1, max: 5 } }
+      - { name: author, label: Autor, type: string }
+      - { name: comment, label: Comentario, type: text }
+      - { name: timestamp, label: Fecha, type: string }
+
+  # --- Wishlist ---
+  - name: wishlist
+    label: Wishlist
+    type: collection
+    path: _data/wishlist.json
+    format: json
+    view:
+      fields: [title, tags, date_added]
+      primary: title
+      sort: [date_added, title]
+      default:
+        sort: date_added
+        order: desc
+    fields:
+      - { name: title, label: Título, type: string }
+      - { name: date_added, label: Fecha agregado, type: string }
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - { name: notes, label: Notas, type: text }
+      - { name: image_url, label: Imagen (URL), type: string }
+      - { name: product_url, label: Producto (URL), type: string }
