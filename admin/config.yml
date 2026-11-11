@@ -114,11 +114,8 @@ collections:
     folder: _data/media
     format: json
     create: true
+    thumbnail: cover
     slug: "{{title}}-{{year}}"
-    summary_fields:
-      - tmdb_poster_url
-      - title
-      - year
     summary: "{{title}} ({{year}})"
     fields:
       - name: id
@@ -130,7 +127,6 @@ collections:
         options:
           - movie
           - series
-          - documentary
       - name: title
         label: Título
         widget: string
@@ -163,11 +159,9 @@ collections:
         label: ID de TMDB
         widget: string
         required: false
-      - name: tmdb_poster_url
-        label: URL del póster (TMDB)
+      - name: cover
+        label: Póster
         widget: image
-        media_folder: ""
-        public_folder: https://image.tmdb.org/t/p/w200
         required: false
 
   # BIDASSOA
@@ -222,5 +216,3 @@ collections:
             label: Google Analytics ID
             widget: string
             required: false
-
-

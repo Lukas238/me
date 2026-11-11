@@ -109,15 +109,15 @@ function buildGroups(items, sort) {
 }
 
 function buildItemElement(item) {
-  const posterUrl = item.tmdb_poster_url
-    ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}`
+  const coverUrl = item.cover
+    ? (item.cover.startsWith('http') ? item.cover : `https://image.tmdb.org/t/p/w500/${item.cover}`)
     : '';
 
   const $item = $('<div class="media-item"></div>');
   const $poster = $('<div class="poster"></div>');
 
-  if (posterUrl) {
-    $poster.append(`<img src="${posterUrl}" alt="${displayTitle(item)}" loading="lazy">`);
+  if (coverUrl) {
+    $poster.append(`<img src="${coverUrl}" alt="${displayTitle(item)}" loading="lazy">`);
   } else {
     $poster.append(posterPlaceholder(item));
   }
@@ -498,12 +498,12 @@ function buildMediaCard($item, item) {
   `;
 
   // Estructura nueva: poster, info y comentarios como hermanos
-  const posterUrl = item.tmdb_poster_url
-    ? `https://image.tmdb.org/t/p/w500/${item.tmdb_poster_url}`
+  const coverUrl = item.cover
+    ? (item.cover.startsWith('http') ? item.cover : `https://image.tmdb.org/t/p/w500/${item.cover}`)
     : '';
 
-  const posterHtml = posterUrl
-    ? `<img src="${posterUrl}" alt="${displayTitle(item)}" loading="lazy">`
+  const posterHtml = coverUrl
+    ? `<img src="${coverUrl}" alt="${displayTitle(item)}" loading="lazy">`
     : posterPlaceholder(item);
 
   const $cardContainer = $(`
