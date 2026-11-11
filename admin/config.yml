@@ -100,7 +100,7 @@ collections:
       - name: year
         label: Año
         widget: number
-        value_type: string
+        value_type: int/string
       - name: rating
         label: Clasificación
         widget: select
@@ -147,7 +147,7 @@ collections:
       - name: year
         label: Año
         widget: number
-        value_type: string
+        value_type: int/string
       - name: artist
         label: Artista
         widget: string
