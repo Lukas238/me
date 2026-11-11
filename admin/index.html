@@ -1,138 +1,379 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS - Lucas Dasso</title>
-  </head>
-  <body>
-    <!-- Decap CMS App -->
-    <script src="https://unpkg.com/decap-cms@^2.10.0/dist/decap-cms.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .sidebar h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .menu {
+            list-style: none;
+        }
+        
+        .menu li {
+            margin: 10px 0;
+        }
+        
+        .menu button {
+            width: 100%;
+            padding: 10px 15px;
+            background: #34495e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: left;
+            transition: background 0.2s;
+        }
+        
+        .menu button:hover {
+            background: #3498db;
+        }
+        
+        .menu button.active {
+            background: #3498db;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .editor-area {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 300px;
+            font-family: monospace;
+        }
+        
+        button.btn {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+            transition: background 0.2s;
+        }
+        
+        button.btn:hover {
+            background: #2980b9;
+        }
+        
+        button.btn-danger {
+            background: #e74c3c;
+        }
+        
+        button.btn-danger:hover {
+            background: #c0392b;
+        }
+        
+        .message {
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: none;
+        }
+        
+        .message.show {
+            display: block;
+        }
+        
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .info-box {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>📝 CMS</h1>
+            <ul class="menu">
+                <li><button onclick="showSection('pages')">📄 Páginas</button></li>
+                <li><button onclick="showSection('posts')">📝 Posts</button></li>
+                <li><button onclick="showSection('info')" style="margin-top: 20px;">ℹ️ Información</button></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div class="message" id="message"></div>
+            
+            <!-- Páginas Section -->
+            <div id="pages-section" class="editor-area">
+                <h2>Editar Páginas</h2>
+                <div class="info-box">
+                    ℹ️ <strong>Nota:</strong> Esta es una interfaz de demostración. 
+                    Para editar pages, usa tu editor de texto preferido o Git directamente.
+                </div>
+                <p>Archivos disponibles en <code>_pages/</code>:</p>
+                <ul id="pages-list" style="margin: 15px 0; padding-left: 20px;"></ul>
+            </div>
+            
+            <!-- Posts Section -->
+            <div id="posts-section" class="editor-area" style="display: none;">
+                <h2>Crear/Editar Posts</h2>
+                <div class="info-box">
+                    ℹ️ <strong>Nota:</strong> Los posts se guardan en <code>_posts/</code> 
+                    con el formato: <code>YYYY-MM-DD-slug.md</code>
+                </div>
+                <form onsubmit="savePost(event)">
+                    <div class="form-group">
+                        <label>Título *</label>
+                        <input type="text" id="postTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Slug *</label>
+                        <input type="text" id="postSlug" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha *</label>
+                        <input type="date" id="postDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Autor</label>
+                        <input type="text" id="postAuthor" value="Lucas Dasso">
+                    </div>
+                    <div class="form-group">
+                        <label>Categorías (separadas por comas)</label>
+                        <input type="text" id="postCategories">
+                    </div>
+                    <div class="form-group">
+                        <label>Etiquetas (separadas por comas)</label>
+                        <input type="text" id="postTags">
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <input type="text" id="postDescription">
+                    </div>
+                    <div class="form-group">
+                        <label>Contenido (Markdown) *</label>
+                        <textarea id="postContent" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">💾 Guardar Post</button>
+                </form>
+            </div>
+            
+            <!-- Info Section -->
+            <div id="info-section" class="editor-area" style="display: none;">
+                <h2>ℹ️ Información</h2>
+                <div class="info-box">
+                    <h3>Bienvenido al CMS</h3>
+                    <p>Esta es una interfaz web simple para gestionar tu contenido Jekyll.</p>
+                    
+                    <h4 style="margin-top: 15px;">Ubicaciones de archivos:</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li><code>_pages/</code> - Páginas estáticas</li>
+                        <li><code>_posts/</code> - Artículos de blog</li>
+                        <li><code>assets/uploads/</code> - Imágenes y medios</li>
+                    </ul>
+                    
+                    <h4 style="margin-top: 15px;">Cómo usar:</h4>
+                    <ol style="margin: 10px 0; padding-left: 20px;">
+                        <li>Edita los archivos Markdown directamente en tu editor de texto</li>
+                        <li>O usa esta interfaz para crear posts nuevos</li>
+                        <li>Guarda los cambios y haz commit a Git</li>
+                        <li>Los cambios se despliegan automáticamente</li>
+                    </ol>
+                    
+                    <h4 style="margin-top: 15px;">Formato de Front Matter:</h4>
+                    <pre style="background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; margin: 10px 0;">---
+layout: post
+title: Título del artículo
+author: Lucas Dasso
+date: 2026-11-11 18:00:00
+categories: [blog]
+tags: [ejemplo]
+---
+
+Contenido aquí...</pre>
+                    
+                    <h4 style="margin-top: 15px;">Para producción:</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>Este CMS es para desarrollo local</li>
+                        <li>Para editar en producción, edita directamente en GitHub</li>
+                        <li>O configura un backend más avanzado como Netlify CMS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script>
-      // Configure CMS
-      CMS.init({
-        config: {
-          backend: {
-            name: 'local'
-          },
-          media_folder: 'assets/uploads',
-          public_folder: '/assets/uploads',
-          collections: [
-            {
-              name: 'pages',
-              label: 'Páginas',
-              folder: '_pages',
-              format: 'frontmatter',
-              create: true,
-              fields: [
-                {
-                  name: 'layout',
-                  label: 'Layout',
-                  widget: 'hidden',
-                  default: 'base'
-                },
-                {
-                  name: 'title',
-                  label: 'Título',
-                  widget: 'string'
-                },
-                {
-                  name: 'permalink',
-                  label: 'Permanente',
-                  widget: 'string'
-                },
-                {
-                  name: 'description',
-                  label: 'Descripción',
-                  widget: 'text',
-                  required: false
-                },
-                {
-                  name: 'body',
-                  label: 'Contenido',
-                  widget: 'markdown'
-                }
-              ]
-            },
-            {
-              name: 'posts',
-              label: 'Posts',
-              folder: '_posts',
-              format: 'frontmatter',
-              create: true,
-              slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
-              fields: [
-                {
-                  name: 'layout',
-                  label: 'Layout',
-                  widget: 'hidden',
-                  default: 'post'
-                },
-                {
-                  name: 'title',
-                  label: 'Título',
-                  widget: 'string'
-                },
-                {
-                  name: 'author',
-                  label: 'Autor',
-                  widget: 'string',
-                  default: 'Lucas Dasso'
-                },
-                {
-                  name: 'date',
-                  label: 'Fecha',
-                  widget: 'datetime'
-                },
-                {
-                  name: 'categories',
-                  label: 'Categorías',
-                  widget: 'list',
-                  required: false
-                },
-                {
-                  name: 'tags',
-                  label: 'Etiquetas',
-                  widget: 'list',
-                  required: false
-                },
-                {
-                  name: 'image',
-                  label: 'Imagen destacada',
-                  widget: 'image',
-                  required: false
-                },
-                {
-                  name: 'description',
-                  label: 'Descripción',
-                  widget: 'text',
-                  required: false
-                },
-                {
-                  name: 'body',
-                  label: 'Contenido',
-                  widget: 'markdown'
-                }
-              ]
+        function showSection(section) {
+            // Hide all sections
+            document.getElementById('pages-section').style.display = 'none';
+            document.getElementById('posts-section').style.display = 'none';
+            document.getElementById('info-section').style.display = 'none';
+            
+            // Show selected section
+            document.getElementById(section + '-section').style.display = 'block';
+            
+            // Update active button
+            document.querySelectorAll('.menu button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Load pages list if needed
+            if (section === 'pages') {
+                loadPages();
             }
-          ]
         }
-      });
+        
+        function loadPages() {
+            const pagesList = document.getElementById('pages-list');
+            pagesList.innerHTML = `
+                <li>backgrounds.md</li>
+                <li>bidassoa.md</li>
+                <li>media-comments.md</li>
+                <li>media-gallery.md</li>
+                <li>wishlist.md</li>
+            `;
+        }
+        
+        function savePost(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('postTitle').value;
+            const slug = document.getElementById('postSlug').value;
+            const date = document.getElementById('postDate').value;
+            const author = document.getElementById('postAuthor').value;
+            const categories = document.getElementById('postCategories').value;
+            const tags = document.getElementById('postTags').value;
+            const description = document.getElementById('postDescription').value;
+            const content = document.getElementById('postContent').value;
+            
+            // Format date from YYYY-MM-DD to YYYY-MM-DD HH:MM:SS
+            const dateTime = date + ' 00:00:00';
+            
+            // Build front matter
+            let frontMatter = `---
+layout: post
+title: ${title}
+author: ${author}
+date: ${dateTime}`;
+            
+            if (categories) {
+                frontMatter += `\ncategories: [${categories.split(',').map(c => c.trim()).join(', ')}]`;
+            }
+            if (tags) {
+                frontMatter += `\ntags: [${tags.split(',').map(t => t.trim()).join(', ')}]`;
+            }
+            if (description) {
+                frontMatter += `\ndescription: ${description}`;
+            }
+            
+            frontMatter += '\n---\n\n';
+            
+            const fullContent = frontMatter + content;
+            
+            // Show message
+            const message = document.getElementById('message');
+            message.textContent = `✅ Contenido preparado. Crea el archivo: _posts/${date}-${slug}.md`;
+            message.className = 'message show success';
+            
+            // Copy to clipboard for easy access
+            navigator.clipboard.writeText(fullContent).then(() => {
+                console.log('Contenido copiado al portapapeles');
+            });
+            
+            // Show in console
+            console.log('=== NUEVO POST ===');
+            console.log(`Archivo: _posts/${date}-${slug}.md`);
+            console.log('Contenido:');
+            console.log(fullContent);
+            console.log('=================');
+        }
+        
+        // Load pages on startup
+        window.addEventListener('load', () => {
+            loadPages();
+            // Set today's date as default
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('postDate').value = today;
+        });
     </script>
-
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-      }
-    </style>
-  </body>
+</body>
 </html>
+
 
 
