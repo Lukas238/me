@@ -1,5 +1,7 @@
 backend:
-  name: local
+  name: github
+  repo: Lukas238/me
+  branch: main
 
 media_folder: assets/uploads
 public_folder: /assets/uploads
@@ -71,3 +73,4 @@ collections:
       - name: body
         label: Contenido
         widget: markdown
+
