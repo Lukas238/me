@@ -6,7 +6,12 @@
   "title": "Groundhog Day",
   "year": "1993",
   "rating": "7+",
-  "tags": "Romance; Fantasy; Drama; Comedy",
+  "tags": [
+    "Romance",
+    "Fantasy",
+    "Drama",
+    "Comedy"
+  ],
   "tmdb_id": "137",
   "tmdb_poster_url": "gCgt1WARPZaXnq523ySQEUKinCs.jpg"
 }

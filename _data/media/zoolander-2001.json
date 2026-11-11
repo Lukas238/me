@@ -6,7 +6,9 @@
   "title": "Zoolander",
   "year": "2001",
   "rating": "13+",
-  "tags": "Comedy",
+  "tags": [
+    "Comedy"
+  ],
   "tmdb_id": "9398",
   "tmdb_poster_url": "qdrbSneHZjJG2Dj0hhBxzzAo4HB.jpg"
 }

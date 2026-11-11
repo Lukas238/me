@@ -6,7 +6,12 @@
   "title": "Multiplicity",
   "year": "1996",
   "rating": "13+",
-  "tags": "Comedy; Fantasy; Science Fiction; Romance",
+  "tags": [
+    "Comedy",
+    "Fantasy",
+    "Science Fiction",
+    "Romance"
+  ],
   "tmdb_id": "9304",
   "tmdb_poster_url": "rlG2vi85uSEwWigVTtqDecVFTxR.jpg"
 }

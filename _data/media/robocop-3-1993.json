@@ -6,7 +6,11 @@
   "title": "RoboCop 3",
   "year": "1993",
   "rating": "13+",
-  "tags": "Action; Science Fiction; Thriller",
+  "tags": [
+    "Action",
+    "Science Fiction",
+    "Thriller"
+  ],
   "tmdb_id": "5550",
   "tmdb_poster_url": "ppLSSwCuC5ERRWbu9H3R8SPL9AM.jpg"
 }

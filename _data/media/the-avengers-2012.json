@@ -6,7 +6,11 @@
   "title": "The Avengers",
   "year": "2012",
   "rating": "13+",
-  "tags": "Science Fiction; Action; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure"
+  ],
   "tmdb_id": "24428",
   "tmdb_poster_url": "RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Terminator 2: Judgment Day",
   "year": "1991",
   "rating": "17+",
-  "tags": "Action; Thriller; Science Fiction",
+  "tags": [
+    "Action",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "280",
   "tmdb_poster_url": "jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg"
 }

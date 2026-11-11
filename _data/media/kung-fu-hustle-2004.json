@@ -6,7 +6,12 @@
   "title": "Kung Fu Hustle",
   "year": "2004",
   "rating": "17+",
-  "tags": "Action; Comedy; Crime; Fantasy",
+  "tags": [
+    "Action",
+    "Comedy",
+    "Crime",
+    "Fantasy"
+  ],
   "tmdb_id": "9470",
   "tmdb_poster_url": "exbyTbrvRUDKN2mcNEuVor4VFQW.jpg"
 }

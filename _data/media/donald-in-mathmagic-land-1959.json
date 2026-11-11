@@ -5,7 +5,12 @@
   "watched": false,
   "title": "Donald in Mathmagic Land",
   "year": "1959",
-  "tags": "Animation; Fantasy; Family; Comedy",
+  "tags": [
+    "Animation",
+    "Fantasy",
+    "Family",
+    "Comedy"
+  ],
   "tmdb_id": "19715",
   "tmdb_poster_url": "dKyvrSVysFobPPmMHqyStvrJRqc.jpg"
 }

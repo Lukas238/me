@@ -6,7 +6,11 @@
   "title": "The Fifth Element",
   "year": "1997",
   "rating": "13+",
-  "tags": "Science Fiction; Action; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure"
+  ],
   "tmdb_id": "18",
   "tmdb_poster_url": "fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Star Trek: Deep Space Nine",
   "year": "1993",
   "rating": "10+",
-  "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama"
+  ],
   "tmdb_id": "580",
   "tmdb_poster_url": "vE6138ykaEXQkCSEHyuBIgfGlUZ.jpg"
 }

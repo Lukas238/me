@@ -6,7 +6,11 @@
   "title": "Star Trek: The Motion Picture",
   "year": "1979",
   "rating": "0+",
-  "tags": "Science Fiction; Adventure; Mystery",
+  "tags": [
+    "Science Fiction",
+    "Adventure",
+    "Mystery"
+  ],
   "tmdb_id": "152",
   "tmdb_poster_url": "wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg"
 }

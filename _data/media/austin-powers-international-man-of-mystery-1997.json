@@ -6,7 +6,10 @@
   "title": "Austin Powers: International Man of Mystery",
   "year": "1997",
   "rating": "13+",
-  "tags": "Comedy; Crime",
+  "tags": [
+    "Comedy",
+    "Crime"
+  ],
   "tmdb_id": "816",
   "tmdb_poster_url": "5uD4dxNX8JKFjWKYMHyOsqhi5pN.jpg"
 }

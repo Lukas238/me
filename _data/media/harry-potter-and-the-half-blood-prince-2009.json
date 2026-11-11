@@ -6,7 +6,10 @@
   "title": "Harry Potter and the Half-Blood Prince",
   "year": "2009",
   "rating": "7+",
-  "tags": "Adventure; Fantasy",
+  "tags": [
+    "Adventure",
+    "Fantasy"
+  ],
   "tmdb_id": "767",
   "tmdb_poster_url": "z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg"
 }

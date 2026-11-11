@@ -7,7 +7,12 @@
   "title_es": "Los Caballeros del Zodiaco",
   "year": "1986",
   "rating": "10+",
-  "tags": "Animation; Drama; Action & Adventure; Sci-Fi & Fantasy",
+  "tags": [
+    "Animation",
+    "Drama",
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
+  ],
   "tmdb_id": "42444",
   "tmdb_poster_url": "dhtiYYbob8saEUFWle3aWgVY28M.jpg"
 }

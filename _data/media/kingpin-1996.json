@@ -6,7 +6,9 @@
   "title": "Kingpin",
   "year": "1996",
   "rating": "13+",
-  "tags": "Comedy",
+  "tags": [
+    "Comedy"
+  ],
   "tmdb_id": "11543",
   "tmdb_poster_url": "lVpejjxzBujSjLpxQ7hGe1s0wP2.jpg"
 }

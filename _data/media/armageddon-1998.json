@@ -6,7 +6,11 @@
   "title": "Armageddon",
   "year": "1998",
   "rating": "13+",
-  "tags": "Action; Science Fiction; Adventure",
+  "tags": [
+    "Action",
+    "Science Fiction",
+    "Adventure"
+  ],
   "tmdb_id": "95",
   "tmdb_poster_url": "eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg"
 }

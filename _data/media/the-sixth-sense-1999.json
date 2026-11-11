@@ -6,7 +6,11 @@
   "title": "The Sixth Sense",
   "year": "1999",
   "rating": "13+",
-  "tags": "Mystery; Thriller; Drama",
+  "tags": [
+    "Mystery",
+    "Thriller",
+    "Drama"
+  ],
   "tmdb_id": "745",
   "tmdb_poster_url": "vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg"
 }

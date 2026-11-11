@@ -6,7 +6,10 @@
   "title": "Airwolf",
   "year": "1984",
   "rating": "10+",
-  "tags": "Action & Adventure; Sci-Fi & Fantasy",
+  "tags": [
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
+  ],
   "tmdb_id": "2119",
   "tmdb_poster_url": "4PAN7zPqmR9b73een97WkxqCTQN.jpg"
 }

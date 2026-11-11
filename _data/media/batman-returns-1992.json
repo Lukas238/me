@@ -6,7 +6,10 @@
   "title": "Batman Returns",
   "year": "1992",
   "rating": "13+",
-  "tags": "Action; Fantasy",
+  "tags": [
+    "Action",
+    "Fantasy"
+  ],
   "tmdb_id": "364",
   "tmdb_poster_url": "jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg"
 }

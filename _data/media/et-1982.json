@@ -6,7 +6,12 @@
   "title": "ET",
   "year": "1982",
   "rating": "7+",
-  "tags": "Science Fiction; Adventure; Family; Fantasy",
+  "tags": [
+    "Science Fiction",
+    "Adventure",
+    "Family",
+    "Fantasy"
+  ],
   "tmdb_id": "601",
   "tmdb_poster_url": "an0nD6uq6byfxXCfk6lQBzdL2J1.jpg"
 }

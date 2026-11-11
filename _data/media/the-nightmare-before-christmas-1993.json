@@ -6,7 +6,11 @@
   "title": "The Nightmare Before Christmas",
   "year": "1993",
   "rating": "7+",
-  "tags": "Fantasy; Animation; Family",
+  "tags": [
+    "Fantasy",
+    "Animation",
+    "Family"
+  ],
   "tmdb_id": "9479",
   "tmdb_poster_url": "oQffRNjK8e19rF7xVYEN8ew0j7b.jpg"
 }

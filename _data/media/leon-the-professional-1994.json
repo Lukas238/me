@@ -6,7 +6,11 @@
   "title": "Léon: The Professional",
   "year": "1994",
   "rating": "17+",
-  "tags": "Crime; Drama; Action",
+  "tags": [
+    "Crime",
+    "Drama",
+    "Action"
+  ],
   "tmdb_id": "101",
   "tmdb_poster_url": "bxB2q91nKYp8JNzqE7t7TWBVupB.jpg"
 }

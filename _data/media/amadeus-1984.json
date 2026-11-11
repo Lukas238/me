@@ -6,7 +6,11 @@
   "title": "Amadeus",
   "year": "1984",
   "rating": "7+",
-  "tags": "Drama; History; Music",
+  "tags": [
+    "Drama",
+    "History",
+    "Music"
+  ],
   "tmdb_id": "279",
   "tmdb_poster_url": "gQRfiyfGvr1az0quaYyMram3Aqt.jpg"
 }

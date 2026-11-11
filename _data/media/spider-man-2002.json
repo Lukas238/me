@@ -6,7 +6,10 @@
   "title": "Spider-Man",
   "year": "2002",
   "rating": "13+",
-  "tags": "Action; Science Fiction",
+  "tags": [
+    "Action",
+    "Science Fiction"
+  ],
   "tmdb_id": "557",
   "tmdb_poster_url": "or6XJBVpcEbIkma0V9zshnbEtx4.jpg"
 }

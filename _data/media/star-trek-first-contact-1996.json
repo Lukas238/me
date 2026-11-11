@@ -6,7 +6,12 @@
   "title": "Star Trek: First Contact",
   "year": "1996",
   "rating": "13+",
-  "tags": "Science Fiction; Action; Adventure; Thriller",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure",
+    "Thriller"
+  ],
   "tmdb_id": "199",
   "tmdb_poster_url": "kYsoZC7BWVYOs2B7P1l6yck7hEG.jpg"
 }

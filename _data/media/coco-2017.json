@@ -6,7 +6,12 @@
   "title": "Coco",
   "year": "2017",
   "rating": "7+",
-  "tags": "Family; Animation; Music; Adventure",
+  "tags": [
+    "Family",
+    "Animation",
+    "Music",
+    "Adventure"
+  ],
   "tmdb_id": "354912",
   "tmdb_poster_url": "6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
 }

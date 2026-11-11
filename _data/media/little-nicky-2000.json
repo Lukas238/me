@@ -6,7 +6,10 @@
   "title": "Little Nicky",
   "year": "2000",
   "rating": "13+",
-  "tags": "Comedy; Fantasy",
+  "tags": [
+    "Comedy",
+    "Fantasy"
+  ],
   "tmdb_id": "9678",
   "tmdb_poster_url": "AudA8gnTWSBWXBHSBHnr3HHUXXM.jpg"
 }

@@ -6,7 +6,10 @@
   "title": "Catch Me If You Can",
   "year": "2002",
   "rating": "13+",
-  "tags": "Drama; Crime",
+  "tags": [
+    "Drama",
+    "Crime"
+  ],
   "tmdb_id": "640",
   "tmdb_poster_url": "ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg"
 }

@@ -6,7 +6,10 @@
   "title": "City of God",
   "year": "2002",
   "rating": "17+",
-  "tags": "Drama; Crime",
+  "tags": [
+    "Drama",
+    "Crime"
+  ],
   "tmdb_id": "598",
   "tmdb_poster_url": "k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg"
 }

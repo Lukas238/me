@@ -6,7 +6,12 @@
   "title": "Hook",
   "year": "1991",
   "rating": "7+",
-  "tags": "Adventure; Fantasy; Comedy; Family",
+  "tags": [
+    "Adventure",
+    "Fantasy",
+    "Comedy",
+    "Family"
+  ],
   "tmdb_id": "879",
   "tmdb_poster_url": "a6rB1lGXoGms7gWxRfJneQmAjNV.jpg"
 }

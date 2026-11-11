@@ -6,7 +6,12 @@
   "title": "Starship Troopers",
   "year": "1997",
   "rating": "17+",
-  "tags": "Adventure; Action; Thriller; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Action",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "563",
   "tmdb_poster_url": "cxCmv23O7p3hyHwqoktHYkZcGsY.jpg"
 }

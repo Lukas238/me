@@ -6,7 +6,11 @@
   "title": "Star Trek: Enterprise",
   "year": "2001",
   "rating": "10+",
-  "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama"
+  ],
   "tmdb_id": "314",
   "tmdb_poster_url": "tsbBTABtNgu0ycsFpnIhiQ5woOM.jpg"
 }

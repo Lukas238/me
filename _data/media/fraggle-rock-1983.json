@@ -6,7 +6,12 @@
   "title": "Fraggle Rock",
   "year": "1983",
   "rating": "0+",
-  "tags": "Kids; Family; Sci-Fi & Fantasy; Comedy",
+  "tags": [
+    "Kids",
+    "Family",
+    "Sci-Fi & Fantasy",
+    "Comedy"
+  ],
   "tmdb_id": "2957",
   "tmdb_poster_url": "nyvNej9aHC2wydFflPMrASS6MF7.jpg"
 }

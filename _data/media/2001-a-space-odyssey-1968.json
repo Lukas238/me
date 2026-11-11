@@ -6,7 +6,11 @@
   "title": "2001: A Space Odyssey",
   "year": "1968",
   "rating": "0+",
-  "tags": "Science Fiction; Mystery; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Mystery",
+    "Adventure"
+  ],
   "tmdb_id": "62",
   "tmdb_poster_url": "ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
 }

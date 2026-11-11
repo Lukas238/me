@@ -6,7 +6,10 @@
   "title": "Harry Potter and the Deathly Hallows - Part 1",
   "year": "2010",
   "rating": "13+",
-  "tags": "Adventure; Fantasy",
+  "tags": [
+    "Adventure",
+    "Fantasy"
+  ],
   "tmdb_id": "12444",
   "tmdb_poster_url": "iGoXIpQb7Pot00EEdwpwPajheZ5.jpg"
 }

@@ -7,7 +7,11 @@
   "title_es": "Chatrán",
   "year": "1986",
   "rating": "0+",
-  "tags": "Adventure; Drama; Family",
+  "tags": [
+    "Adventure",
+    "Drama",
+    "Family"
+  ],
   "tmdb_id": "47951",
   "tmdb_poster_url": "imHIqEfWRZuJ2vLow0UJ9aqjyEO.jpg"
 }

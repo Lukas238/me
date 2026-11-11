@@ -6,7 +6,11 @@
   "title": "The Lord of the Rings: The Fellowship of the Ring",
   "year": "2001",
   "rating": "13+",
-  "tags": "Adventure; Fantasy; Action",
+  "tags": [
+    "Adventure",
+    "Fantasy",
+    "Action"
+  ],
   "tmdb_id": "120",
   "tmdb_poster_url": "6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Short Circuit",
   "year": "1986",
   "rating": "7+",
-  "tags": "Science Fiction; Comedy; Family",
+  "tags": [
+    "Science Fiction",
+    "Comedy",
+    "Family"
+  ],
   "tmdb_id": "2605",
   "tmdb_poster_url": "e3eimdUK6lLe0iaSlLrYVQF3yeL.jpg"
 }

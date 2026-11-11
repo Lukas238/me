@@ -6,7 +6,12 @@
   "title": "Frozen",
   "year": "2013",
   "rating": "7+",
-  "tags": "Animation; Family; Adventure; Fantasy",
+  "tags": [
+    "Animation",
+    "Family",
+    "Adventure",
+    "Fantasy"
+  ],
   "tmdb_id": "109445",
   "tmdb_poster_url": "itAKcobTYGpYT8Phwjd8c9hleTo.jpg"
 }

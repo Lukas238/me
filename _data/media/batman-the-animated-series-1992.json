@@ -6,7 +6,12 @@
   "title": "Batman: The Animated Series",
   "year": "1992",
   "rating": "10+",
-  "tags": "Action & Adventure; Animation; Drama; Mystery",
+  "tags": [
+    "Action & Adventure",
+    "Animation",
+    "Drama",
+    "Mystery"
+  ],
   "tmdb_id": "2098",
   "tmdb_poster_url": "lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg"
 }

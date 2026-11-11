@@ -6,7 +6,10 @@
   "title": "Gandhi",
   "year": "1982",
   "rating": "7+",
-  "tags": "Drama; History",
+  "tags": [
+    "Drama",
+    "History"
+  ],
   "tmdb_id": "783",
   "tmdb_poster_url": "rOXftt7SluxskrFrvU7qFJa5zeN.jpg"
 }

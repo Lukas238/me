@@ -6,7 +6,11 @@
   "title": "Robin Hood: Prince of Thieves",
   "year": "1991",
   "rating": "13+",
-  "tags": "Action; Adventure; Drama",
+  "tags": [
+    "Action",
+    "Adventure",
+    "Drama"
+  ],
   "tmdb_id": "8367",
   "tmdb_poster_url": "hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg"
 }

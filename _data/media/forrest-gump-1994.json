@@ -6,7 +6,11 @@
   "title": "Forrest Gump",
   "year": "1994",
   "rating": "13+",
-  "tags": "Comedy; Drama; Romance",
+  "tags": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
   "tmdb_id": "13",
   "tmdb_poster_url": "saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
 }

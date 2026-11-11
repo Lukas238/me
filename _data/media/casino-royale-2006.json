@@ -6,7 +6,11 @@
   "title": "Casino Royale",
   "year": "2006",
   "rating": "13+",
-  "tags": "Adventure; Action; Thriller",
+  "tags": [
+    "Adventure",
+    "Action",
+    "Thriller"
+  ],
   "tmdb_id": "36557",
   "tmdb_poster_url": "lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
 }

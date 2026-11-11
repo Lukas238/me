@@ -6,7 +6,12 @@
   "title": "Ratatouille",
   "year": "2007",
   "rating": "0+",
-  "tags": "Animation; Comedy; Family; Fantasy",
+  "tags": [
+    "Animation",
+    "Comedy",
+    "Family",
+    "Fantasy"
+  ],
   "tmdb_id": "2062",
   "tmdb_poster_url": "t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
 }

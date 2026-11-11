@@ -6,7 +6,11 @@
   "title": "The Rock",
   "year": "1996",
   "rating": "17+",
-  "tags": "Action; Adventure; Thriller",
+  "tags": [
+    "Action",
+    "Adventure",
+    "Thriller"
+  ],
   "tmdb_id": "9802",
   "tmdb_poster_url": "eBcoxveWzzXQrCrwWMGAROcqgpP.jpg"
 }

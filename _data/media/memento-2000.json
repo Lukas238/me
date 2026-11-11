@@ -6,7 +6,10 @@
   "title": "Memento",
   "year": "2000",
   "rating": "17+",
-  "tags": "Mystery; Thriller",
+  "tags": [
+    "Mystery",
+    "Thriller"
+  ],
   "tmdb_id": "77",
   "tmdb_poster_url": "nzlv62aC0octS5AklAiWpXLX9Z0.jpg"
 }

@@ -6,7 +6,13 @@
   "title": "DuckTales",
   "year": "1987",
   "rating": "7+",
-  "tags": "Animation; Mystery; Sci-Fi & Fantasy; Comedy; Kids",
+  "tags": [
+    "Animation",
+    "Mystery",
+    "Sci-Fi & Fantasy",
+    "Comedy",
+    "Kids"
+  ],
   "tmdb_id": "720",
   "tmdb_poster_url": "muplnM90daPCQ5Bn1olcwN1EO22.jpg"
 }

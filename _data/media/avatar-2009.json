@@ -6,7 +6,11 @@
   "title": "Avatar",
   "year": "2009",
   "rating": "13+",
-  "tags": "Science Fiction; Action; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure"
+  ],
   "tmdb_id": "19995",
   "tmdb_poster_url": "gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg"
 }

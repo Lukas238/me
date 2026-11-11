@@ -6,7 +6,10 @@
   "title": "Fight Club",
   "year": "1999",
   "rating": "17+",
-  "tags": "Drama; Thriller",
+  "tags": [
+    "Drama",
+    "Thriller"
+  ],
   "tmdb_id": "550",
   "tmdb_poster_url": "jSziioSwPVrOy9Yow3XhWIBDjq1.jpg"
 }

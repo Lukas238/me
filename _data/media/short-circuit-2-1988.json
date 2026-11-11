@@ -6,7 +6,12 @@
   "title": "Short Circuit 2",
   "year": "1988",
   "rating": "7+",
-  "tags": "Comedy; Family; Science Fiction; Drama",
+  "tags": [
+    "Comedy",
+    "Family",
+    "Science Fiction",
+    "Drama"
+  ],
   "tmdb_id": "11966",
   "tmdb_poster_url": "648hPsOYVZCI44e4jZgvMUfBtTY.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Star Trek II: The Wrath of Khan",
   "year": "1982",
   "rating": "7+",
-  "tags": "Action; Adventure; Science Fiction",
+  "tags": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
   "tmdb_id": "154",
   "tmdb_poster_url": "uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg"
 }

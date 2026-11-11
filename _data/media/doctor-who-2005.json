@@ -6,7 +6,11 @@
   "title": "Doctor Who",
   "year": "2005",
   "rating": "10+",
-  "tags": "Action & Adventure; Drama; Sci-Fi & Fantasy",
+  "tags": [
+    "Action & Adventure",
+    "Drama",
+    "Sci-Fi & Fantasy"
+  ],
   "tmdb_id": "57243",
   "tmdb_poster_url": "lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg"
 }

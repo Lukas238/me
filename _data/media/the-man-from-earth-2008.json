@@ -5,7 +5,10 @@
   "watched": false,
   "title": "The Man from Earth",
   "year": "2008",
-  "tags": "Science Fiction; Drama",
+  "tags": [
+    "Science Fiction",
+    "Drama"
+  ],
   "tmdb_id": "13363",
   "tmdb_poster_url": "V086R82gNgWrotaXZFO4JhdgB1.jpg"
 }

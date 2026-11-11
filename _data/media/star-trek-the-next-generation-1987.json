@@ -6,7 +6,12 @@
   "title": "Star Trek: The Next Generation",
   "year": "1987",
   "rating": "10+",
-  "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama; Mystery",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama",
+    "Mystery"
+  ],
   "tmdb_id": "655",
   "tmdb_poster_url": "vkLzXddgUKH5VcpnYiRzpJFrZhz.jpg"
 }

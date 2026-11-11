@@ -6,7 +6,11 @@
   "title": "The Sword in the Stone",
   "year": "1963",
   "rating": "0+",
-  "tags": "Animation; Family; Fantasy",
+  "tags": [
+    "Animation",
+    "Family",
+    "Fantasy"
+  ],
   "tmdb_id": "9078",
   "tmdb_poster_url": "7lyeeuhGAJSNXYEW34S8mJ1bwI8.jpg"
 }

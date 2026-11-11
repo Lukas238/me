@@ -6,7 +6,10 @@
   "title": "The Matrix",
   "year": "1999",
   "rating": "17+",
-  "tags": "Action; Science Fiction",
+  "tags": [
+    "Action",
+    "Science Fiction"
+  ],
   "tmdb_id": "603",
   "tmdb_poster_url": "p96dm7sCMn4VYAStA6siNz30G1r.jpg"
 }

@@ -6,7 +6,12 @@
   "title": "The Matrix Revolutions",
   "year": "2003",
   "rating": "17+",
-  "tags": "Adventure; Action; Thriller; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Action",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "605",
   "tmdb_poster_url": "t1wm4PgOQ8e4z1C6tk1yDNrps4T.jpg"
 }

@@ -6,7 +6,12 @@
   "title": "The NeverEnding Story II: The Next Chapter",
   "year": "1990",
   "rating": "7+",
-  "tags": "Family; Fantasy; Adventure; Drama",
+  "tags": [
+    "Family",
+    "Fantasy",
+    "Adventure",
+    "Drama"
+  ],
   "tmdb_id": "34636",
   "tmdb_poster_url": "bRSLCuO2B6owYBtUwGYGqWZCVo6.jpg"
 }

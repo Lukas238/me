@@ -6,7 +6,11 @@
   "title": "Jumanji",
   "year": "1995",
   "rating": "7+",
-  "tags": "Adventure; Fantasy; Family",
+  "tags": [
+    "Adventure",
+    "Fantasy",
+    "Family"
+  ],
   "tmdb_id": "8844",
   "tmdb_poster_url": "bdHG5Mo83VPobeZZdlSz0Y7HQHB.jpg"
 }

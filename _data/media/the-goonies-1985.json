@@ -6,7 +6,11 @@
   "title": "The Goonies",
   "year": "1985",
   "rating": "7+",
-  "tags": "Adventure; Comedy; Family",
+  "tags": [
+    "Adventure",
+    "Comedy",
+    "Family"
+  ],
   "tmdb_id": "9340",
   "tmdb_poster_url": "eBU7gCjTCj9n2LTxvCSIXXOvHkD.jpg"
 }

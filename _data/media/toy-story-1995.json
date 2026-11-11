@@ -6,7 +6,12 @@
   "title": "Toy Story",
   "year": "1995",
   "rating": "0+",
-  "tags": "Family; Comedy; Animation; Adventure",
+  "tags": [
+    "Family",
+    "Comedy",
+    "Animation",
+    "Adventure"
+  ],
   "tmdb_id": "862",
   "tmdb_poster_url": "uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg"
 }

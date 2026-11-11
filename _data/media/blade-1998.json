@@ -6,7 +6,10 @@
   "title": "Blade",
   "year": "1998",
   "rating": "17+",
-  "tags": "Horror; Action",
+  "tags": [
+    "Horror",
+    "Action"
+  ],
   "tmdb_id": "36647",
   "tmdb_poster_url": "oWT70TvbsmQaqyphCZpsnQR7R32.jpg"
 }

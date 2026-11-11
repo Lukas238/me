@@ -6,7 +6,11 @@
   "title": "The Abyss",
   "year": "1989",
   "rating": "13+",
-  "tags": "Adventure; Thriller; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "2756",
   "tmdb_poster_url": "2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg"
 }

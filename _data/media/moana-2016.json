@@ -6,7 +6,12 @@
   "title": "Moana",
   "year": "2016",
   "rating": "7+",
-  "tags": "Adventure; Comedy; Family; Animation",
+  "tags": [
+    "Adventure",
+    "Comedy",
+    "Family",
+    "Animation"
+  ],
   "tmdb_id": "277834",
   "tmdb_poster_url": "9tzN8sPbyod2dsa0lwuvrwBDWra.jpg"
 }

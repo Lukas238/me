@@ -6,7 +6,12 @@
   "title": "Knight Rider",
   "year": "1982",
   "rating": "10+",
-  "tags": "Action & Adventure; Drama; Sci-Fi & Fantasy; Crime",
+  "tags": [
+    "Action & Adventure",
+    "Drama",
+    "Sci-Fi & Fantasy",
+    "Crime"
+  ],
   "tmdb_id": "2384",
   "tmdb_poster_url": "t57NXzTrwp5rnPXiaX4BThrDxt1.jpg"
 }

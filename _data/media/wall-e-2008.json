@@ -6,7 +6,11 @@
   "title": "WALL-E",
   "year": "2008",
   "rating": "0+",
-  "tags": "Animation; Family; Science Fiction",
+  "tags": [
+    "Animation",
+    "Family",
+    "Science Fiction"
+  ],
   "tmdb_id": "10681",
   "tmdb_poster_url": "hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg"
 }

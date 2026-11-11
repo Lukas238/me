@@ -6,7 +6,11 @@
   "title": "Free Willy",
   "year": "1993",
   "rating": "7+",
-  "tags": "Family; Adventure; Drama",
+  "tags": [
+    "Family",
+    "Adventure",
+    "Drama"
+  ],
   "tmdb_id": "1634",
   "tmdb_poster_url": "9iBgd9gi9ztWiVcYSG6zl8wDFBN.jpg"
 }

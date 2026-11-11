@@ -6,7 +6,10 @@
   "title": "Spaceballs",
   "year": "1987",
   "rating": "7+",
-  "tags": "Comedy; Science Fiction",
+  "tags": [
+    "Comedy",
+    "Science Fiction"
+  ],
   "tmdb_id": "957",
   "tmdb_poster_url": "kNbaxEsnCyWBTfANVPHayujBsxp.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Children of Men",
   "year": "2006",
   "rating": "17+",
-  "tags": "Science Fiction; Thriller; Action",
+  "tags": [
+    "Science Fiction",
+    "Thriller",
+    "Action"
+  ],
   "tmdb_id": "9693",
   "tmdb_poster_url": "k9IAS4TehZFcKi4HVByxZNPfqex.jpg"
 }

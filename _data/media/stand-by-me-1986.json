@@ -6,7 +6,10 @@
   "title": "Stand by Me",
   "year": "1986",
   "rating": "17+",
-  "tags": "Drama; Adventure",
+  "tags": [
+    "Drama",
+    "Adventure"
+  ],
   "tmdb_id": "235",
   "tmdb_poster_url": "vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg"
 }

@@ -6,7 +6,14 @@
   "title": "Amazing Stories",
   "year": "1985",
   "rating": "10+",
-  "tags": "Sci-Fi & Fantasy; Drama; Comedy; Family; Mystery; Crime",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Drama",
+    "Comedy",
+    "Family",
+    "Mystery",
+    "Crime"
+  ],
   "tmdb_id": "1026",
   "tmdb_poster_url": "66Utyft9WHPQJSU7f7MbEB72dkc.jpg"
 }

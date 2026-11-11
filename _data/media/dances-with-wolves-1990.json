@@ -6,7 +6,11 @@
   "title": "Dances with Wolves",
   "year": "1990",
   "rating": "13+",
-  "tags": "Adventure; Drama; Western",
+  "tags": [
+    "Adventure",
+    "Drama",
+    "Western"
+  ],
   "tmdb_id": "581",
   "tmdb_poster_url": "hw0ZEHAaTqTxSXGVwUFX7uvanSA.jpg"
 }

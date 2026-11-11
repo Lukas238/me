@@ -6,7 +6,11 @@
   "title": "Saving Private Ryan",
   "year": "1998",
   "rating": "17+",
-  "tags": "War; Drama; History",
+  "tags": [
+    "War",
+    "Drama",
+    "History"
+  ],
   "tmdb_id": "857",
   "tmdb_poster_url": "uqx37cS8cpHg8U35f9U5IBlrCV3.jpg"
 }

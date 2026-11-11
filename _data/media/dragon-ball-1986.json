@@ -6,7 +6,11 @@
   "title": "Dragon Ball",
   "year": "1986",
   "rating": "10+",
-  "tags": "Animation; Action & Adventure; Sci-Fi & Fantasy",
+  "tags": [
+    "Animation",
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
+  ],
   "tmdb_id": "12609",
   "tmdb_poster_url": "onCLyCOgszTIyyVs2XKYSkKPOPG.jpg"
 }

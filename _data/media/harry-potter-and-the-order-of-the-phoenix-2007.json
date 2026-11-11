@@ -6,7 +6,10 @@
   "title": "Harry Potter and the Order of the Phoenix",
   "year": "2007",
   "rating": "13+",
-  "tags": "Adventure; Fantasy",
+  "tags": [
+    "Adventure",
+    "Fantasy"
+  ],
   "tmdb_id": "675",
   "tmdb_poster_url": "5aOyriWkPec0zUDxmHFP9qMmBaj.jpg"
 }

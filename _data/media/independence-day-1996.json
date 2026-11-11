@@ -6,7 +6,11 @@
   "title": "Independence Day",
   "year": "1996",
   "rating": "13+",
-  "tags": "Action; Adventure; Science Fiction",
+  "tags": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
   "tmdb_id": "602",
   "tmdb_poster_url": "p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "The Terminator",
   "year": "1984",
   "rating": "17+",
-  "tags": "Action; Thriller; Science Fiction",
+  "tags": [
+    "Action",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "218",
   "tmdb_poster_url": "qvktm0BHcnmDpul4Hz01GIazWPr.jpg"
 }

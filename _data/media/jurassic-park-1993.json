@@ -6,7 +6,10 @@
   "title": "Jurassic Park",
   "year": "1993",
   "rating": "13+",
-  "tags": "Adventure; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Science Fiction"
+  ],
   "tmdb_id": "329",
   "tmdb_poster_url": "d9mtMGQDLANKieb9PbD3yK7xxzo.jpg"
 }

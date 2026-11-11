@@ -6,7 +6,10 @@
   "title": "Blazing Saddles",
   "year": "1974",
   "rating": "17+",
-  "tags": "Western; Comedy",
+  "tags": [
+    "Western",
+    "Comedy"
+  ],
   "tmdb_id": "11072",
   "tmdb_poster_url": "vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg"
 }

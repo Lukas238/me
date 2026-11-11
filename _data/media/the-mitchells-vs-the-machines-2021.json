@@ -6,7 +6,11 @@
   "title": "The Mitchells vs. the Machines",
   "year": "2021",
   "rating": "7+",
-  "tags": "Animation; Adventure; Comedy",
+  "tags": [
+    "Animation",
+    "Adventure",
+    "Comedy"
+  ],
   "tmdb_id": "501929",
   "tmdb_poster_url": "mI2Di7HmskQQ34kz0iau6J1vr70.jpg"
 }

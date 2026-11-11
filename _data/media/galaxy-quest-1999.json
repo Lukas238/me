@@ -6,7 +6,11 @@
   "title": "Galaxy Quest",
   "year": "1999",
   "rating": "7+",
-  "tags": "Comedy; Science Fiction; Adventure",
+  "tags": [
+    "Comedy",
+    "Science Fiction",
+    "Adventure"
+  ],
   "tmdb_id": "926",
   "tmdb_poster_url": "fZXSwgZknp81vmciTb86rw0MejV.jpg"
 }

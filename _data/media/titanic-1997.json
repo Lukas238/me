@@ -6,7 +6,10 @@
   "title": "Titanic",
   "year": "1997",
   "rating": "13+",
-  "tags": "Drama; Romance",
+  "tags": [
+    "Drama",
+    "Romance"
+  ],
   "tmdb_id": "597",
   "tmdb_poster_url": "9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
 }

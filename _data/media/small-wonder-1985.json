@@ -6,7 +6,10 @@
   "title": "Small Wonder",
   "year": "1985",
   "rating": "0+",
-  "tags": "Comedy; Family",
+  "tags": [
+    "Comedy",
+    "Family"
+  ],
   "tmdb_id": "2898",
   "tmdb_poster_url": "beaMCxE00CGMSk6MVCcvhZkwqSV.jpg"
 }

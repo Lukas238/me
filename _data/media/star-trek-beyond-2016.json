@@ -6,7 +6,11 @@
   "title": "Star Trek Beyond",
   "year": "2016",
   "rating": "13+",
-  "tags": "Action; Adventure; Science Fiction",
+  "tags": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
   "tmdb_id": "188927",
   "tmdb_poster_url": "wI5VghYNYLktDRPUa5rrVcVA1h7.jpg"
 }

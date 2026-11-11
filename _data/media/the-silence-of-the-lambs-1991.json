@@ -6,7 +6,11 @@
   "title": "The Silence of the Lambs",
   "year": "1991",
   "rating": "17+",
-  "tags": "Crime; Thriller; Drama",
+  "tags": [
+    "Crime",
+    "Thriller",
+    "Drama"
+  ],
   "tmdb_id": "274",
   "tmdb_poster_url": "uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
 }

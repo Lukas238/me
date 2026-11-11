@@ -6,7 +6,10 @@
   "title": "Indiana Jones and the Last Crusade",
   "year": "1989",
   "rating": "13+",
-  "tags": "Adventure; Action",
+  "tags": [
+    "Adventure",
+    "Action"
+  ],
   "tmdb_id": "89",
   "tmdb_poster_url": "sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Braveheart",
   "year": "1995",
   "rating": "17+",
-  "tags": "History; Drama; War",
+  "tags": [
+    "History",
+    "Drama",
+    "War"
+  ],
   "tmdb_id": "197",
   "tmdb_poster_url": "or1gBugydmjToAEq7OZY0owwFk.jpg"
 }

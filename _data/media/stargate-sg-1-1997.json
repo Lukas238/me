@@ -6,7 +6,10 @@
   "title": "Stargate SG-1",
   "year": "1997",
   "rating": "10+",
-  "tags": "Sci-Fi & Fantasy; Action & Adventure",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure"
+  ],
   "tmdb_id": "4629",
   "tmdb_poster_url": "dQjmI7XxI47v8IM2MUysHG0LuU2.jpg"
 }

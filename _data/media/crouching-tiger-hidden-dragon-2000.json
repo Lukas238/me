@@ -6,7 +6,11 @@
   "title": "Crouching Tiger Hidden Dragon",
   "year": "2000",
   "rating": "13+",
-  "tags": "Romance; Drama; Action",
+  "tags": [
+    "Romance",
+    "Drama",
+    "Action"
+  ],
   "tmdb_id": "146",
   "tmdb_poster_url": "iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg"
 }

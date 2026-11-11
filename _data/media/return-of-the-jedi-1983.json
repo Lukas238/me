@@ -6,7 +6,11 @@
   "title": "Return of the Jedi",
   "year": "1983",
   "rating": "7+",
-  "tags": "Adventure; Action; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Action",
+    "Science Fiction"
+  ],
   "tmdb_id": "1892",
   "tmdb_poster_url": "jQYlydvHm3kUix1f8prMucrplhm.jpg"
 }

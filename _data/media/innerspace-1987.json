@@ -6,7 +6,11 @@
   "title": "Innerspace",
   "year": "1987",
   "rating": "7+",
-  "tags": "Action; Comedy; Science Fiction",
+  "tags": [
+    "Action",
+    "Comedy",
+    "Science Fiction"
+  ],
   "tmdb_id": "2614",
   "tmdb_poster_url": "nuK4HEeIByWg1BSJrXAAQ4pIAJW.jpg"
 }

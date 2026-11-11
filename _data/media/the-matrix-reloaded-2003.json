@@ -6,7 +6,12 @@
   "title": "The Matrix Reloaded",
   "year": "2003",
   "rating": "17+",
-  "tags": "Adventure; Action; Thriller; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Action",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "604",
   "tmdb_poster_url": "9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg"
 }

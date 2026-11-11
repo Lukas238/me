@@ -6,7 +6,11 @@
   "title": "Frank Herbert's Dune",
   "year": "2000",
   "rating": "14+",
-  "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama"
+  ],
   "tmdb_id": "19566",
   "tmdb_poster_url": "iIf5XeuuBKPtG6H7MfWLirbJGrQ.jpg"
 }

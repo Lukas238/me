@@ -6,7 +6,11 @@
   "title": "Hot Shots!",
   "year": "1991",
   "rating": "13+",
-  "tags": "Action; Comedy; War",
+  "tags": [
+    "Action",
+    "Comedy",
+    "War"
+  ],
   "tmdb_id": "9595",
   "tmdb_poster_url": "koLIB5263emHxewmwgBBK26vjeS.jpg"
 }

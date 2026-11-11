@@ -6,7 +6,12 @@
   "title": "Star Trek: Generations",
   "year": "1994",
   "rating": "7+",
-  "tags": "Science Fiction; Action; Adventure; Thriller",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure",
+    "Thriller"
+  ],
   "tmdb_id": "193",
   "tmdb_poster_url": "wqU1XiJgvgJVrFCWjZEqat3icMT.jpg"
 }

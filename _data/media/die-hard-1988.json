@@ -6,7 +6,10 @@
   "title": "Die Hard",
   "year": "1988",
   "rating": "17+",
-  "tags": "Action; Thriller",
+  "tags": [
+    "Action",
+    "Thriller"
+  ],
   "tmdb_id": "562",
   "tmdb_poster_url": "7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg"
 }

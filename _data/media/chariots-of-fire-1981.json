@@ -6,7 +6,10 @@
   "title": "Chariots of Fire",
   "year": "1981",
   "rating": "7+",
-  "tags": "Drama; History",
+  "tags": [
+    "Drama",
+    "History"
+  ],
   "tmdb_id": "9443",
   "tmdb_poster_url": "qnRaum8k0HqGRml2i7OawFqUtEb.jpg"
 }

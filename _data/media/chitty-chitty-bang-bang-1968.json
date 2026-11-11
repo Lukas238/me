@@ -6,7 +6,12 @@
   "title": "Chitty Chitty Bang Bang",
   "year": "1968",
   "rating": "0+",
-  "tags": "Family; Adventure; Fantasy; Comedy",
+  "tags": [
+    "Family",
+    "Adventure",
+    "Fantasy",
+    "Comedy"
+  ],
   "tmdb_id": "11708",
   "tmdb_poster_url": "wJ62FzGeCAs6PjCIK1as6xzdIY5.jpg"
 }

@@ -6,7 +6,10 @@
   "title": "Harry Potter and the Prisoner of Azkaban",
   "year": "2004",
   "rating": "7+",
-  "tags": "Adventure; Fantasy",
+  "tags": [
+    "Adventure",
+    "Fantasy"
+  ],
   "tmdb_id": "673",
   "tmdb_poster_url": "aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg"
 }

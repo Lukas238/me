@@ -6,7 +6,11 @@
   "title": "The Dark Knight Rises",
   "year": "2012",
   "rating": "13+",
-  "tags": "Action; Crime; Thriller",
+  "tags": [
+    "Action",
+    "Crime",
+    "Thriller"
+  ],
   "tmdb_id": "49026",
   "tmdb_poster_url": "hr0L2aueqlP2BYUblTTjmtn0hw4.jpg"
 }

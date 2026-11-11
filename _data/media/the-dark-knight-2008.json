@@ -6,7 +6,11 @@
   "title": "The Dark Knight",
   "year": "2008",
   "rating": "13+",
-  "tags": "Action; Thriller; Crime",
+  "tags": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
   "tmdb_id": "155",
   "tmdb_poster_url": "qJ2tW6WMUDux911r6m7haRef0WH.jpg"
 }

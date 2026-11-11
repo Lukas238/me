@@ -6,7 +6,11 @@
   "title": "Star Trek: Discovery",
   "year": "2017",
   "rating": "14+",
-  "tags": "Sci-Fi & Fantasy; Action & Adventure; Drama",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama"
+  ],
   "tmdb_id": "67198",
   "tmdb_poster_url": "xwpOHgym48Ftz7fbJq5te5xoiwu.jpg"
 }

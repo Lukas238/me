@@ -6,7 +6,13 @@
   "title": "Pinky and the Brain",
   "year": "1995",
   "rating": "7+",
-  "tags": "Animation; Comedy; Family; Sci-Fi & Fantasy; Kids",
+  "tags": [
+    "Animation",
+    "Comedy",
+    "Family",
+    "Sci-Fi & Fantasy",
+    "Kids"
+  ],
   "tmdb_id": "2228",
   "tmdb_poster_url": "msVySCL9hRGaWFA0c3Bvx9WJFVV.jpg"
 }

@@ -6,7 +6,12 @@
   "title": "Star Trek: Nemesis",
   "year": "2002",
   "rating": "13+",
-  "tags": "Science Fiction; Action; Adventure; Thriller",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure",
+    "Thriller"
+  ],
   "tmdb_id": "201",
   "tmdb_poster_url": "cldAwhvBmOv9jrd3bXWuqRHoXyq.jpg"
 }

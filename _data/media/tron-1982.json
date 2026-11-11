@@ -6,7 +6,11 @@
   "title": "Tron",
   "year": "1982",
   "rating": "7+",
-  "tags": "Science Fiction; Action; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure"
+  ],
   "tmdb_id": "97",
   "tmdb_poster_url": "jigY9B6TKz4qlfikZcd18qtzTK4.jpg"
 }

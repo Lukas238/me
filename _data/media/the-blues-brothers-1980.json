@@ -6,7 +6,12 @@
   "title": "The Blues Brothers",
   "year": "1980",
   "rating": "17+",
-  "tags": "Music; Comedy; Action; Adventure",
+  "tags": [
+    "Music",
+    "Comedy",
+    "Action",
+    "Adventure"
+  ],
   "tmdb_id": "525",
   "tmdb_poster_url": "b0hq1d2d7FIvRGNLewKLm79JNTK.jpg"
 }

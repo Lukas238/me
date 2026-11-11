@@ -6,7 +6,9 @@
   "title": "Dumb and Dumber",
   "year": "1994",
   "rating": "13+",
-  "tags": "Comedy",
+  "tags": [
+    "Comedy"
+  ],
   "tmdb_id": "8467",
   "tmdb_poster_url": "4LdpBXiCyGKkR8FGHgjKlphrfUc.jpg"
 }

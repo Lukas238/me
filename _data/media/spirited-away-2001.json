@@ -6,7 +6,11 @@
   "title": "Spirited Away",
   "year": "2001",
   "rating": "7+",
-  "tags": "Animation; Family; Fantasy",
+  "tags": [
+    "Animation",
+    "Family",
+    "Fantasy"
+  ],
   "tmdb_id": "129",
   "tmdb_poster_url": "laXrmaTRuroArSPfsGlvTbeWxVA.jpg"
 }

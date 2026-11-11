@@ -6,7 +6,13 @@
   "title": "Rob Roy",
   "year": "1995",
   "rating": "17+",
-  "tags": "Adventure; History; Drama; Action; War",
+  "tags": [
+    "Adventure",
+    "History",
+    "Drama",
+    "Action",
+    "War"
+  ],
   "tmdb_id": "11780",
   "tmdb_poster_url": "kWI2rF6RAnRtEjfBlZgsXumgOm5.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
   "year": "2003",
   "rating": "13+",
-  "tags": "Adventure; Fantasy; Action",
+  "tags": [
+    "Adventure",
+    "Fantasy",
+    "Action"
+  ],
   "tmdb_id": "22",
   "tmdb_poster_url": "poHwCZeWzJCShH7tOjg8RIoyjcw.jpg"
 }

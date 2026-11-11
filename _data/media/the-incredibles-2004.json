@@ -6,7 +6,12 @@
   "title": "The Incredibles",
   "year": "2004",
   "rating": "7+",
-  "tags": "Action; Adventure; Animation; Family",
+  "tags": [
+    "Action",
+    "Adventure",
+    "Animation",
+    "Family"
+  ],
   "tmdb_id": "9806",
   "tmdb_poster_url": "2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg"
 }

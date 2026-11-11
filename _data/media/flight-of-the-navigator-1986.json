@@ -6,7 +6,11 @@
   "title": "Flight of the Navigator",
   "year": "1986",
   "rating": "7+",
-  "tags": "Family; Science Fiction; Adventure",
+  "tags": [
+    "Family",
+    "Science Fiction",
+    "Adventure"
+  ],
   "tmdb_id": "10122",
   "tmdb_poster_url": "tdRgQWMximj0tL6OWu9kRTtePmI.jpg"
 }

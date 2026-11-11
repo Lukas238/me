@@ -6,7 +6,11 @@
   "title": "Arrival",
   "year": "2016",
   "rating": "13+",
-  "tags": "Drama; Science Fiction; Mystery",
+  "tags": [
+    "Drama",
+    "Science Fiction",
+    "Mystery"
+  ],
   "tmdb_id": "329865",
   "tmdb_poster_url": "pEzNVQfdzYDzVK0XqxERIw2x2se.jpg"
 }

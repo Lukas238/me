@@ -6,7 +6,10 @@
   "title": "Dracula: Dead and Loving It",
   "year": "1995",
   "rating": "13+",
-  "tags": "Comedy; Horror",
+  "tags": [
+    "Comedy",
+    "Horror"
+  ],
   "tmdb_id": "12110",
   "tmdb_poster_url": "5QmMhHdKpJ2eQp5i8NqopzGbw9r.jpg"
 }

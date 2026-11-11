@@ -6,7 +6,13 @@
   "title": "Shrek",
   "year": "2001",
   "rating": "7+",
-  "tags": "Animation; Comedy; Fantasy; Adventure; Family",
+  "tags": [
+    "Animation",
+    "Comedy",
+    "Fantasy",
+    "Adventure",
+    "Family"
+  ],
   "tmdb_id": "808",
   "tmdb_poster_url": "iB64vpL3dIObOtMZgX3RqdVdQDc.jpg"
 }

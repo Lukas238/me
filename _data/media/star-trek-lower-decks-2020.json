@@ -6,7 +6,11 @@
   "title": "Star Trek: Lower Decks",
   "year": "2020",
   "rating": "14+",
-  "tags": "Sci-Fi & Fantasy; Animation; Comedy",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Animation",
+    "Comedy"
+  ],
   "tmdb_id": "85948",
   "tmdb_poster_url": "i7Em3r7KCyNfkOwMkyqN8UMvK8S.jpg"
 }

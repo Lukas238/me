@@ -6,7 +6,10 @@
   "title": "Django Unchained",
   "year": "2012",
   "rating": "17+",
-  "tags": "Drama; Western",
+  "tags": [
+    "Drama",
+    "Western"
+  ],
   "tmdb_id": "68718",
   "tmdb_poster_url": "7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg"
 }

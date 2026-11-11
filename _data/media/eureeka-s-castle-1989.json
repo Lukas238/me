@@ -6,7 +6,10 @@
   "title": "Eureeka's Castle",
   "year": "1989",
   "rating": "7+",
-  "tags": "Kids; Comedy",
+  "tags": [
+    "Kids",
+    "Comedy"
+  ],
   "tmdb_id": "403",
   "tmdb_poster_url": "yg9FX5LfZmbib88NkU5sM0y4wnD.jpg"
 }

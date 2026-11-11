@@ -6,7 +6,11 @@
   "title": "MacGyver",
   "year": "1985",
   "rating": "10+",
-  "tags": "Drama; Action & Adventure; Crime",
+  "tags": [
+    "Drama",
+    "Action & Adventure",
+    "Crime"
+  ],
   "tmdb_id": "2875",
   "tmdb_poster_url": "zhgJNHbFxGkqdsKdkZLBrDWagOv.jpg"
 }

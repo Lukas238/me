@@ -6,7 +6,10 @@
   "title": "The Rocketeer",
   "year": "1991",
   "rating": "7+",
-  "tags": "Adventure; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Science Fiction"
+  ],
   "tmdb_id": "10249",
   "tmdb_poster_url": "2tDFRESFwKww1LHRE8W1Exj9edH.jpg"
 }

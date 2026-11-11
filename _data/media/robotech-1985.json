@@ -5,7 +5,11 @@
   "watched": false,
   "title": "Robotech",
   "year": "1985",
-  "tags": "Animation; Drama; Sci-Fi & Fantasy",
+  "tags": [
+    "Animation",
+    "Drama",
+    "Sci-Fi & Fantasy"
+  ],
   "tmdb_id": "2192",
   "tmdb_poster_url": "f3SIr4To9Tuie4I9D2U41XsIbpC.jpg"
 }

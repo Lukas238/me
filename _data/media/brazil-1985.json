@@ -6,7 +6,10 @@
   "title": "Brazil",
   "year": "1985",
   "rating": "17+",
-  "tags": "Comedy; Science Fiction",
+  "tags": [
+    "Comedy",
+    "Science Fiction"
+  ],
   "tmdb_id": "68",
   "tmdb_poster_url": "2w09J0KUnVtJvqPYu8N63XjAyCR.jpg"
 }

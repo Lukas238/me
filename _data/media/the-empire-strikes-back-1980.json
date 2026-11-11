@@ -6,7 +6,11 @@
   "title": "The Empire Strikes Back",
   "year": "1980",
   "rating": "7+",
-  "tags": "Adventure; Action; Science Fiction",
+  "tags": [
+    "Adventure",
+    "Action",
+    "Science Fiction"
+  ],
   "tmdb_id": "1891",
   "tmdb_poster_url": "nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg"
 }

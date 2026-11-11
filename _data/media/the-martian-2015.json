@@ -6,7 +6,11 @@
   "title": "The Martian",
   "year": "2015",
   "rating": "13+",
-  "tags": "Science Fiction; Drama; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Drama",
+    "Adventure"
+  ],
   "tmdb_id": "286217",
   "tmdb_poster_url": "5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg"
 }

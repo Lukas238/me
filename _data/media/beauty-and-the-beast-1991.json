@@ -6,7 +6,12 @@
   "title": "Beauty and the Beast",
   "year": "1991",
   "rating": "0+",
-  "tags": "Romance; Family; Animation; Fantasy",
+  "tags": [
+    "Romance",
+    "Family",
+    "Animation",
+    "Fantasy"
+  ],
   "tmdb_id": "10020",
   "tmdb_poster_url": "hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg"
 }

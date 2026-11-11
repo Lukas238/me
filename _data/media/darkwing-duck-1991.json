@@ -6,7 +6,13 @@
   "title": "Darkwing Duck",
   "year": "1991",
   "rating": "7+",
-  "tags": "Action & Adventure; Animation; Comedy; Family; Kids",
+  "tags": [
+    "Action & Adventure",
+    "Animation",
+    "Comedy",
+    "Family",
+    "Kids"
+  ],
   "tmdb_id": "3319",
   "tmdb_poster_url": "1gJMSXS0gwM8gDJnzVSITcxbQc.jpg"
 }

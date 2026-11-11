@@ -6,7 +6,11 @@
   "title": "The Last Starfighter",
   "year": "1984",
   "rating": "7+",
-  "tags": "Adventure; Science Fiction; Action",
+  "tags": [
+    "Adventure",
+    "Science Fiction",
+    "Action"
+  ],
   "tmdb_id": "11884",
   "tmdb_poster_url": "A7oAHTjtYnIEQjJs62IONRufooq.jpg"
 }

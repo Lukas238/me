@@ -6,7 +6,11 @@
   "title": "Tangled",
   "year": "2010",
   "rating": "7+",
-  "tags": "Animation; Family; Adventure",
+  "tags": [
+    "Animation",
+    "Family",
+    "Adventure"
+  ],
   "tmdb_id": "38757",
   "tmdb_poster_url": "ym7Kst6a4uodryxqbGOxmewF235.jpg"
 }

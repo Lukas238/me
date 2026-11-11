@@ -6,7 +6,11 @@
   "title": "The Prestige",
   "year": "2006",
   "rating": "13+",
-  "tags": "Drama; Mystery; Science Fiction",
+  "tags": [
+    "Drama",
+    "Mystery",
+    "Science Fiction"
+  ],
   "tmdb_id": "1124",
   "tmdb_poster_url": "Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg"
 }

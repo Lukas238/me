@@ -6,7 +6,11 @@
   "title": "Gravity",
   "year": "2013",
   "rating": "13+",
-  "tags": "Science Fiction; Thriller; Drama",
+  "tags": [
+    "Science Fiction",
+    "Thriller",
+    "Drama"
+  ],
   "tmdb_id": "49047",
   "tmdb_poster_url": "kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
 }

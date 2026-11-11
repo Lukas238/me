@@ -6,7 +6,11 @@
   "title": "Green Book",
   "year": "2018",
   "rating": "13+",
-  "tags": "Drama; Comedy; History",
+  "tags": [
+    "Drama",
+    "Comedy",
+    "History"
+  ],
   "tmdb_id": "490132",
   "tmdb_poster_url": "7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg"
 }

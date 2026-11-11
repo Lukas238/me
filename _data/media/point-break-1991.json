@@ -6,7 +6,11 @@
   "title": "Point Break",
   "year": "1991",
   "rating": "17+",
-  "tags": "Action; Thriller; Crime",
+  "tags": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
   "tmdb_id": "1089",
   "tmdb_poster_url": "tlbERIghrQ4oofqlbF7H0K0EYnx.jpg"
 }

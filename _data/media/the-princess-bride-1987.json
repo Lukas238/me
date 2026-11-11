@@ -6,7 +6,13 @@
   "title": "The Princess Bride",
   "year": "1987",
   "rating": "7+",
-  "tags": "Adventure; Family; Fantasy; Comedy; Romance",
+  "tags": [
+    "Adventure",
+    "Family",
+    "Fantasy",
+    "Comedy",
+    "Romance"
+  ],
   "tmdb_id": "2493",
   "tmdb_poster_url": "2FC9L9MrjBoGHYjYZjdWQdopVYb.jpg"
 }

@@ -6,7 +6,12 @@
   "title": "Encanto",
   "year": "2021",
   "rating": "7+",
-  "tags": "Animation; Comedy; Family; Fantasy",
+  "tags": [
+    "Animation",
+    "Comedy",
+    "Family",
+    "Fantasy"
+  ],
   "tmdb_id": "568124",
   "tmdb_poster_url": "4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
 }

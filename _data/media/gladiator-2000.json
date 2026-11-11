@@ -6,7 +6,11 @@
   "title": "Gladiator",
   "year": "2000",
   "rating": "17+",
-  "tags": "Action; Drama; Adventure",
+  "tags": [
+    "Action",
+    "Drama",
+    "Adventure"
+  ],
   "tmdb_id": "98",
   "tmdb_poster_url": "aDb548BOkFfI4nFm0kx8A3Ezh7H.jpg"
 }

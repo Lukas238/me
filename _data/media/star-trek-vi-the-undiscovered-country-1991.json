@@ -6,7 +6,12 @@
   "title": "Star Trek VI: The Undiscovered Country",
   "year": "1991",
   "rating": "7+",
-  "tags": "Science Fiction; Action; Adventure; Thriller",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure",
+    "Thriller"
+  ],
   "tmdb_id": "174",
   "tmdb_poster_url": "tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg"
 }

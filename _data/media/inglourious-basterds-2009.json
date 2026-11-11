@@ -6,7 +6,11 @@
   "title": "Inglourious Basterds",
   "year": "2009",
   "rating": "17+",
-  "tags": "Drama; Thriller; War",
+  "tags": [
+    "Drama",
+    "Thriller",
+    "War"
+  ],
   "tmdb_id": "16869",
   "tmdb_poster_url": "aupnPtagH9JVBuMrGEanf4iqXEQ.jpg"
 }

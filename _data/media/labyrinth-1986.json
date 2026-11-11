@@ -6,7 +6,11 @@
   "title": "Labyrinth",
   "year": "1986",
   "rating": "7+",
-  "tags": "Adventure; Family; Fantasy",
+  "tags": [
+    "Adventure",
+    "Family",
+    "Fantasy"
+  ],
   "tmdb_id": "13597",
   "tmdb_poster_url": "pejayhTVBEL4w8YKSfrhOjjWVlH.jpg"
 }

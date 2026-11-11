@@ -6,7 +6,11 @@
   "title": "Star Trek: Prodigy",
   "year": "2021",
   "rating": "7+",
-  "tags": "Animation; Sci-Fi & Fantasy; Kids",
+  "tags": [
+    "Animation",
+    "Sci-Fi & Fantasy",
+    "Kids"
+  ],
   "tmdb_id": "106393",
   "tmdb_poster_url": "Aqub3PSzLm2F398vitkbkxjopjO.jpg"
 }

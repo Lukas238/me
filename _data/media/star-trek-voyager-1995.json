@@ -6,7 +6,11 @@
   "title": "Star Trek: Voyager",
   "year": "1995",
   "rating": "10+",
-  "tags": "Sci-Fi & Fantasy; Drama; Action & Adventure",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Drama",
+    "Action & Adventure"
+  ],
   "tmdb_id": "1855",
   "tmdb_poster_url": "gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
 }

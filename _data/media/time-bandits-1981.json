@@ -6,7 +6,13 @@
   "title": "Time Bandits",
   "year": "1981",
   "rating": "7+",
-  "tags": "Family; Fantasy; Science Fiction; Adventure; Comedy",
+  "tags": [
+    "Family",
+    "Fantasy",
+    "Science Fiction",
+    "Adventure",
+    "Comedy"
+  ],
   "tmdb_id": "36819",
   "tmdb_poster_url": "4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
 }

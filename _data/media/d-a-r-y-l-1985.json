@@ -6,7 +6,11 @@
   "title": "D.A.R.Y.L.",
   "year": "1985",
   "rating": "7+",
-  "tags": "Family; Science Fiction; Action",
+  "tags": [
+    "Family",
+    "Science Fiction",
+    "Action"
+  ],
   "tmdb_id": "16248",
   "tmdb_poster_url": "87huhTOQijJy0pLhusZfest1MoZ.jpg"
 }

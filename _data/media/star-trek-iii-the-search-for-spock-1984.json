@@ -6,7 +6,12 @@
   "title": "Star Trek III: The Search for Spock",
   "year": "1984",
   "rating": "7+",
-  "tags": "Science Fiction; Action; Adventure; Thriller",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure",
+    "Thriller"
+  ],
   "tmdb_id": "157",
   "tmdb_poster_url": "yqEj0oPfKBMCz7YcCARHDgH7VFm.jpg"
 }

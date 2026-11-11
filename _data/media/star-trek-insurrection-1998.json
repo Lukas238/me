@@ -6,7 +6,12 @@
   "title": "Star Trek: Insurrection",
   "year": "1998",
   "rating": "7+",
-  "tags": "Science Fiction; Action; Adventure; Thriller",
+  "tags": [
+    "Science Fiction",
+    "Action",
+    "Adventure",
+    "Thriller"
+  ],
   "tmdb_id": "200",
   "tmdb_poster_url": "xQCMAHeg5M9HpDIqanYbWdr4brB.jpg"
 }

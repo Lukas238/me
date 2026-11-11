@@ -6,7 +6,10 @@
   "title": "Star Trek IV: The Voyage Home",
   "year": "1986",
   "rating": "7+",
-  "tags": "Science Fiction; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Adventure"
+  ],
   "tmdb_id": "168",
   "tmdb_poster_url": "xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "V for Vendetta",
   "year": "2005",
   "rating": "17+",
-  "tags": "Action; Thriller; Science Fiction",
+  "tags": [
+    "Action",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "752",
   "tmdb_poster_url": "1avD1JeaRiJX5M4ahPdZPypGoGN.jpg"
 }

@@ -6,7 +6,10 @@
   "title": "Gattaca",
   "year": "1998",
   "rating": "13+",
-  "tags": "Science Fiction; Drama",
+  "tags": [
+    "Science Fiction",
+    "Drama"
+  ],
   "tmdb_id": "782",
   "tmdb_poster_url": "eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "The Fugitive",
   "year": "1993",
   "rating": "13+",
-  "tags": "Action; Thriller; Drama",
+  "tags": [
+    "Action",
+    "Thriller",
+    "Drama"
+  ],
   "tmdb_id": "5503",
   "tmdb_poster_url": "b3rEtLKyOnF89mcK75GXDXdmOEf.jpg"
 }

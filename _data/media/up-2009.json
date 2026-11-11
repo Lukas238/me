@@ -6,7 +6,12 @@
   "title": "Up",
   "year": "2009",
   "rating": "7+",
-  "tags": "Animation; Comedy; Family; Adventure",
+  "tags": [
+    "Animation",
+    "Comedy",
+    "Family",
+    "Adventure"
+  ],
   "tmdb_id": "14160",
   "tmdb_poster_url": "mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg"
 }

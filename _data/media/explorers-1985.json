@@ -6,7 +6,11 @@
   "title": "Explorers",
   "year": "1985",
   "rating": "7+",
-  "tags": "Science Fiction; Adventure; Family",
+  "tags": [
+    "Science Fiction",
+    "Adventure",
+    "Family"
+  ],
   "tmdb_id": "9872",
   "tmdb_poster_url": "oFJosj5ECYjf1jkvpTEjGNzPx2x.jpg"
 }

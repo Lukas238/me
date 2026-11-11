@@ -6,7 +6,11 @@
   "title": "Toy Story 2",
   "year": "1999",
   "rating": "0+",
-  "tags": "Animation; Comedy; Family",
+  "tags": [
+    "Animation",
+    "Comedy",
+    "Family"
+  ],
   "tmdb_id": "863",
   "tmdb_poster_url": "4rbcp3ng8n1MKHjpeqW0L7Fnpzz.jpg"
 }

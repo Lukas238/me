@@ -6,7 +6,9 @@
   "title": "Airplane!",
   "year": "1980",
   "rating": "7+",
-  "tags": "Comedy",
+  "tags": [
+    "Comedy"
+  ],
   "tmdb_id": "813",
   "tmdb_poster_url": "7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "The Mummy",
   "year": "1999",
   "rating": "13+",
-  "tags": "Adventure; Action; Fantasy",
+  "tags": [
+    "Adventure",
+    "Action",
+    "Fantasy"
+  ],
   "tmdb_id": "564",
   "tmdb_poster_url": "yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg"
 }

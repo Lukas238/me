@@ -6,7 +6,10 @@
   "title": "The Grand Budapest Hotel",
   "year": "2014",
   "rating": "17+",
-  "tags": "Comedy; Drama",
+  "tags": [
+    "Comedy",
+    "Drama"
+  ],
   "tmdb_id": "120467",
   "tmdb_poster_url": "eWdyYQreja6JGCzqHWXpWHDrrPo.jpg"
 }

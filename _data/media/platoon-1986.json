@@ -6,7 +6,11 @@
   "title": "Platoon",
   "year": "1986",
   "rating": "17+",
-  "tags": "Drama; War; Action",
+  "tags": [
+    "Drama",
+    "War",
+    "Action"
+  ],
   "tmdb_id": "792",
   "tmdb_poster_url": "m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg"
 }

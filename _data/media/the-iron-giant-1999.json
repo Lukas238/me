@@ -6,7 +6,12 @@
   "title": "The Iron Giant",
   "year": "1999",
   "rating": "7+",
-  "tags": "Animation; Family; Science Fiction; Drama",
+  "tags": [
+    "Animation",
+    "Family",
+    "Science Fiction",
+    "Drama"
+  ],
   "tmdb_id": "10386",
   "tmdb_poster_url": "ct04FCFLPImNG5thcPLRnVsZlmS.jpg"
 }

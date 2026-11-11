@@ -6,7 +6,11 @@
   "title": "Schindler's List",
   "year": "1993",
   "rating": "17+",
-  "tags": "Drama; History; War",
+  "tags": [
+    "Drama",
+    "History",
+    "War"
+  ],
   "tmdb_id": "424",
   "tmdb_poster_url": "sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
 }

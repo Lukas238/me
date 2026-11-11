@@ -6,7 +6,11 @@
   "title": "Cool Runnings",
   "year": "1993",
   "rating": "7+",
-  "tags": "Comedy; Adventure; Drama",
+  "tags": [
+    "Comedy",
+    "Adventure",
+    "Drama"
+  ],
   "tmdb_id": "864",
   "tmdb_poster_url": "6fXuGEb7EqGmAeUodxm7l5ELPZ.jpg"
 }

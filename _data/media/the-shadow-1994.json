@@ -6,7 +6,12 @@
   "title": "The Shadow",
   "year": "1994",
   "rating": "13+",
-  "tags": "Fantasy; Action; Crime; Adventure",
+  "tags": [
+    "Fantasy",
+    "Action",
+    "Crime",
+    "Adventure"
+  ],
   "tmdb_id": "8850",
   "tmdb_poster_url": "xAbFJH3vQYZvUyzzGAtG4OLy492.jpg"
 }

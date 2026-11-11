@@ -6,7 +6,11 @@
   "title": "Inception",
   "year": "2010",
   "rating": "13+",
-  "tags": "Action; Science Fiction; Crime",
+  "tags": [
+    "Action",
+    "Science Fiction",
+    "Crime"
+  ],
   "tmdb_id": "27205",
   "tmdb_poster_url": "xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
 }

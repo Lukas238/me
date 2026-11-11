@@ -6,7 +6,11 @@
   "title": "The Thing",
   "year": "1982",
   "rating": "17+",
-  "tags": "Horror; Mystery; Science Fiction",
+  "tags": [
+    "Horror",
+    "Mystery",
+    "Science Fiction"
+  ],
   "tmdb_id": "1091",
   "tmdb_poster_url": "tzGY49kseSE9QAKk47uuDGwnSCu.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Contact",
   "year": "1997",
   "rating": "7+",
-  "tags": "Drama; Science Fiction; Mystery",
+  "tags": [
+    "Drama",
+    "Science Fiction",
+    "Mystery"
+  ],
   "tmdb_id": "686",
   "tmdb_poster_url": "bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg"
 }

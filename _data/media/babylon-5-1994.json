@@ -6,7 +6,11 @@
   "title": "Babylon 5",
   "year": "1994",
   "rating": "10+",
-  "tags": "Drama; Sci-Fi & Fantasy; Action & Adventure",
+  "tags": [
+    "Drama",
+    "Sci-Fi & Fantasy",
+    "Action & Adventure"
+  ],
   "tmdb_id": "3137",
   "tmdb_poster_url": "td8O6KJQpN9ZRiuyFUILziXFMrk.jpg"
 }

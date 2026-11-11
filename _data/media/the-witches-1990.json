@@ -6,7 +6,11 @@
   "title": "The Witches",
   "year": "1990",
   "rating": "7+",
-  "tags": "Fantasy; Family; Horror",
+  "tags": [
+    "Fantasy",
+    "Family",
+    "Horror"
+  ],
   "tmdb_id": "10166",
   "tmdb_poster_url": "mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Batteries Not Included",
   "year": "1987",
   "rating": "7+",
-  "tags": "Family; Comedy; Science Fiction",
+  "tags": [
+    "Family",
+    "Comedy",
+    "Science Fiction"
+  ],
   "tmdb_id": "11548",
   "tmdb_poster_url": "8NkpnpdLd8J6zCR8ZGTeGTur4uO.jpg"
 }

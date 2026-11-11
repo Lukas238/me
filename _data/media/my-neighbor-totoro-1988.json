@@ -6,7 +6,11 @@
   "title": "My Neighbor Totoro",
   "year": "1988",
   "rating": "0+",
-  "tags": "Fantasy; Animation; Family",
+  "tags": [
+    "Fantasy",
+    "Animation",
+    "Family"
+  ],
   "tmdb_id": "8392",
   "tmdb_poster_url": "rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
 }

@@ -6,7 +6,11 @@
   "title": "Wargames",
   "year": "1983",
   "rating": "7+",
-  "tags": "Drama; Science Fiction; Thriller",
+  "tags": [
+    "Drama",
+    "Science Fiction",
+    "Thriller"
+  ],
   "tmdb_id": "860",
   "tmdb_poster_url": "zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg"
 }

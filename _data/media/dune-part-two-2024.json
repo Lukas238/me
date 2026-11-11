@@ -6,7 +6,10 @@
   "title": "Dune: Part Two",
   "year": "2024",
   "rating": "13+",
-  "tags": "Science Fiction; Adventure",
+  "tags": [
+    "Science Fiction",
+    "Adventure"
+  ],
   "tmdb_id": "693134",
   "tmdb_poster_url": "6izwz7rsy95ARzTR3poZ8H6c5pp.jpg"
 }

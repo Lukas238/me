@@ -6,7 +6,10 @@
   "title": "Raiders of the Lost Ark",
   "year": "1981",
   "rating": "7+",
-  "tags": "Adventure; Action",
+  "tags": [
+    "Adventure",
+    "Action"
+  ],
   "tmdb_id": "85",
   "tmdb_poster_url": "ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
 }

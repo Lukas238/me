@@ -6,7 +6,12 @@
   "title": "Hackers",
   "year": "1995",
   "rating": "13+",
-  "tags": "Action; Crime; Thriller; Drama",
+  "tags": [
+    "Action",
+    "Crime",
+    "Thriller",
+    "Drama"
+  ],
   "tmdb_id": "10428",
   "tmdb_poster_url": "qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
 }

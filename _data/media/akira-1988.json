@@ -6,7 +6,11 @@
   "title": "Akira",
   "year": "1988",
   "rating": "17+",
-  "tags": "Animation; Science Fiction; Action",
+  "tags": [
+    "Animation",
+    "Science Fiction",
+    "Action"
+  ],
   "tmdb_id": "149",
   "tmdb_poster_url": "neZ0ykEsPqxamsX6o5QNUFILQrz.jpg"
 }

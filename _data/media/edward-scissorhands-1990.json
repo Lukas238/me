@@ -6,7 +6,11 @@
   "title": "Edward Scissorhands",
   "year": "1990",
   "rating": "13+",
-  "tags": "Fantasy; Drama; Romance",
+  "tags": [
+    "Fantasy",
+    "Drama",
+    "Romance"
+  ],
   "tmdb_id": "162",
   "tmdb_poster_url": "e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg"
 }

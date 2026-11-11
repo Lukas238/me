@@ -6,7 +6,12 @@
   "title": "ReBoot",
   "year": "1994",
   "rating": "7+",
-  "tags": "Sci-Fi & Fantasy; Animation; Action & Adventure; Kids",
+  "tags": [
+    "Sci-Fi & Fantasy",
+    "Animation",
+    "Action & Adventure",
+    "Kids"
+  ],
   "tmdb_id": "2121",
   "tmdb_poster_url": "5C2ZVZEZJdQLkaeO9cCw7rJ0EUM.jpg"
 }

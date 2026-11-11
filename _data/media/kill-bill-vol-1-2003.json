@@ -6,7 +6,10 @@
   "title": "Kill Bill: Vol. 1",
   "year": "2003",
   "rating": "17+",
-  "tags": "Action; Crime",
+  "tags": [
+    "Action",
+    "Crime"
+  ],
   "tmdb_id": "24",
   "tmdb_poster_url": "v7TaX8kXMXs5yFFGR41guUDNcnB.jpg"
 }

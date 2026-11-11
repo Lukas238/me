@@ -6,7 +6,11 @@
   "title": "RoboCop",
   "year": "1987",
   "rating": "17+",
-  "tags": "Action; Thriller; Science Fiction",
+  "tags": [
+    "Action",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "5548",
   "tmdb_poster_url": "hHtOgGb3NihlyRATHlKPaFApbrd.jpg"
 }

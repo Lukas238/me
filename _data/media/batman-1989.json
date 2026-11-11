@@ -6,7 +6,11 @@
   "title": "Batman",
   "year": "1989",
   "rating": "13+",
-  "tags": "Fantasy; Action; Crime",
+  "tags": [
+    "Fantasy",
+    "Action",
+    "Crime"
+  ],
   "tmdb_id": "268",
   "tmdb_poster_url": "cij4dd21v2Rk2YtUQbV5kW69WB2.jpg"
 }

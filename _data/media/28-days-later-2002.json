@@ -6,7 +6,11 @@
   "title": "28 Days Later",
   "year": "2002",
   "rating": "17+",
-  "tags": "Horror; Thriller; Science Fiction",
+  "tags": [
+    "Horror",
+    "Thriller",
+    "Science Fiction"
+  ],
   "tmdb_id": "170",
   "tmdb_poster_url": "sQckQRt17VaWbo39GIu0TMOiszq.jpg"
 }

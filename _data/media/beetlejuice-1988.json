@@ -6,7 +6,10 @@
   "title": "Beetlejuice",
   "year": "1988",
   "rating": "7+",
-  "tags": "Fantasy; Comedy",
+  "tags": [
+    "Fantasy",
+    "Comedy"
+  ],
   "tmdb_id": "4011",
   "tmdb_poster_url": "nnl6OWkyPpuMm595hmAxNW3rZFn.jpg"
 }

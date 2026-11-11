@@ -6,7 +6,13 @@
   "title": "Chip 'n Dale: Rescue Rangers",
   "year": "1989",
   "rating": "7+",
-  "tags": "Animation; Comedy; Kids; Family; Action & Adventure",
+  "tags": [
+    "Animation",
+    "Comedy",
+    "Kids",
+    "Family",
+    "Action & Adventure"
+  ],
   "tmdb_id": "1615",
   "tmdb_poster_url": "44VE1LaaZq4bZhMDo6Yi29NO4H.jpg"
 }
