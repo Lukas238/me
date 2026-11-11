@@ -117,6 +117,8 @@ collections:
     thumbnail: cover
     slug: "{{title}}-{{year}}"
     summary: "{{title}} ({{year}})"
+    sortable_fields: [title, year]
+    filterable_fields: [year, type, rating, watched]
     fields:
       - name: id
         label: ID
@@ -170,10 +172,12 @@ collections:
     folder: _data/bidassoa
     format: json
     create: true
-    media_folder: assets/bidassoa
+    media_folder: /assets/bidassoa
     public_folder: /assets/bidassoa
     thumbnail: cover
     summary: "{{title | alias}} ({{year}})"
+    sortable_fields: [year]
+    filterable_fields: [year]
     fields:
       - name: id
         label: ID
