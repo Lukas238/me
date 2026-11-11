@@ -4,7 +4,13 @@
   "title": "ALF",
   "year": "1986",
   "rating": "0+",
-  "tags": "Comedy; Family; Sci-Fi & Fantasy",
+  "watched": false,
+  "status": "",
+  "tags": [
+    "Comedy",
+    "Family",
+    "Sci-Fi & Fantasy"
+  ],
   "tmdb_id": "4658",
   "tmdb_poster_url": "shRed7ZrCRjdIMEYNx2YBVFkkNu.jpg"
 }
