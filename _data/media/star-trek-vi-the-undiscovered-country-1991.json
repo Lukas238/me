@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek VI: The Undiscovered Country",
   "year": "1991",
   "rating": "7+",
@@ -13,5 +14,6 @@
     "Thriller"
   ],
   "tmdb_id": "174",
+  "tmdb_poster_url": "tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg"
 }

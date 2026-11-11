@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Blazing Saddles",
   "year": "1974",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Comedy"
   ],
   "tmdb_id": "11072",
+  "tmdb_poster_url": "vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg"
 }

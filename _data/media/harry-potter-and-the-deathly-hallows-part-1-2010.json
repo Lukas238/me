@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Harry Potter and the Deathly Hallows - Part 1",
   "year": "2010",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Fantasy"
   ],
   "tmdb_id": "12444",
+  "tmdb_poster_url": "iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg"
 }

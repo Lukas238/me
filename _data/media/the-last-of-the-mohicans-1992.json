@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Last of the Mohicans",
   "year": "1992",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "9361",
+  "tmdb_poster_url": "qzJMPWRtZveBkxXOv3ucWhoJuyj.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qzJMPWRtZveBkxXOv3ucWhoJuyj.jpg"
 }

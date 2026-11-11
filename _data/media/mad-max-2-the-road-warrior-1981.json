@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Mad Max 2: The Road Warrior",
   "year": "1981",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "8810",
+  "tmdb_poster_url": "l1KVEhkGDpWRzQ0VqIhZqDDuOim.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/l1KVEhkGDpWRzQ0VqIhZqDDuOim.jpg"
 }

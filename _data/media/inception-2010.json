@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Inception",
   "year": "2010",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "27205",
+  "tmdb_poster_url": "xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
 }

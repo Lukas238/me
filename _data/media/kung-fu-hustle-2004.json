@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Kung Fu Hustle",
   "year": "2004",
   "rating": "17+",
@@ -13,5 +14,6 @@
     "Fantasy"
   ],
   "tmdb_id": "9470",
+  "tmdb_poster_url": "exbyTbrvRUDKN2mcNEuVor4VFQW.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg"
 }

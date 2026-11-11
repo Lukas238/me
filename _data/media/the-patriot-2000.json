@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Patriot",
   "year": "2000",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "2024",
+  "tmdb_poster_url": "fWZd815QxUCUcrWQZwUkAp9ljG.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/fWZd815QxUCUcrWQZwUkAp9ljG.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Robin Hood: Men in Tights",
   "year": "1993",
   "rating": "13+",
@@ -10,5 +11,6 @@
     "Comedy"
   ],
   "tmdb_id": "8005",
+  "tmdb_poster_url": "woexOLEkUlYsPLLuZRK6LjZaF38.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/woexOLEkUlYsPLLuZRK6LjZaF38.jpg"
 }

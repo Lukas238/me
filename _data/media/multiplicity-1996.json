@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Multiplicity",
   "year": "1996",
   "rating": "13+",
@@ -13,5 +14,6 @@
     "Romance"
   ],
   "tmdb_id": "9304",
+  "tmdb_poster_url": "rlG2vi85uSEwWigVTtqDecVFTxR.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/rlG2vi85uSEwWigVTtqDecVFTxR.jpg"
 }

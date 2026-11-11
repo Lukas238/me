@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Fight Club",
   "year": "1999",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "550",
+  "tmdb_poster_url": "jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg"
 }

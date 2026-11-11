@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: Voyager",
   "year": "1995",
   "rating": "10+",
@@ -12,5 +13,6 @@
     "Action & Adventure"
   ],
   "tmdb_id": "1855",
+  "tmdb_poster_url": "gNS5tRSG3UlXodCxznKKOKweqxh.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
 }

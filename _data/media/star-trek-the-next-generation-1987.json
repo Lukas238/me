@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: The Next Generation",
   "year": "1987",
   "rating": "10+",
@@ -13,5 +14,6 @@
     "Mystery"
   ],
   "tmdb_id": "655",
+  "tmdb_poster_url": "vkLzXddgUKH5VcpnYiRzpJFrZhz.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vkLzXddgUKH5VcpnYiRzpJFrZhz.jpg"
 }

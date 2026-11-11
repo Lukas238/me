@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Saint Seiya",
   "title_es": "Los Caballeros del Zodiaco",
   "year": "1986",
@@ -14,5 +15,6 @@
     "Sci-Fi & Fantasy"
   ],
   "tmdb_id": "42444",
+  "tmdb_poster_url": "dhtiYYbob8saEUFWle3aWgVY28M.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/dhtiYYbob8saEUFWle3aWgVY28M.jpg"
 }

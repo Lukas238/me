@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Dark Knight Rises",
   "year": "2012",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Thriller"
   ],
   "tmdb_id": "49026",
+  "tmdb_poster_url": "hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg"
 }

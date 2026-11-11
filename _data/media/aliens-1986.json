@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Aliens",
   "year": "1986",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "679",
+  "tmdb_poster_url": "r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
 }

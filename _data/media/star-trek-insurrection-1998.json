@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: Insurrection",
   "year": "1998",
   "rating": "7+",
@@ -13,5 +14,6 @@
     "Thriller"
   ],
   "tmdb_id": "200",
+  "tmdb_poster_url": "xQCMAHeg5M9HpDIqanYbWdr4brB.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg"
 }

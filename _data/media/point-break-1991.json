@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Point Break",
   "year": "1991",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "1089",
+  "tmdb_poster_url": "tlbERIghrQ4oofqlbF7H0K0EYnx.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/tlbERIghrQ4oofqlbF7H0K0EYnx.jpg"
 }

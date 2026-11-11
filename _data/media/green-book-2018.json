@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Green Book",
   "year": "2018",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "History"
   ],
   "tmdb_id": "490132",
+  "tmdb_poster_url": "7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg"
 }

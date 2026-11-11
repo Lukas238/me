@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Little Mermaid",
   "year": "1989",
   "rating": "0+",
@@ -12,5 +13,6 @@
     "Fantasy"
   ],
   "tmdb_id": "10144",
+  "tmdb_poster_url": "plcZXvI310FkbwIptvd6rqk63LP.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/plcZXvI310FkbwIptvd6rqk63LP.jpg"
 }

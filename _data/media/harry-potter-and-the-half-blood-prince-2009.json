@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Harry Potter and the Half-Blood Prince",
   "year": "2009",
   "rating": "7+",
@@ -11,5 +12,6 @@
     "Fantasy"
   ],
   "tmdb_id": "767",
+  "tmdb_poster_url": "z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg"
 }

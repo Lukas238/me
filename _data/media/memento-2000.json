@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Memento",
   "year": "2000",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "77",
+  "tmdb_poster_url": "nzlv62aC0octS5AklAiWpXLX9Z0.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nzlv62aC0octS5AklAiWpXLX9Z0.jpg"
 }

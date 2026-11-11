@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Love Bug",
   "year": "1969",
   "rating": "0+",
@@ -12,5 +13,6 @@
     "Fantasy"
   ],
   "tmdb_id": "14136",
+  "tmdb_poster_url": "9Lc1efdYZUZia2zsRWcUkiD1KdN.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9Lc1efdYZUZia2zsRWcUkiD1KdN.jpg"
 }

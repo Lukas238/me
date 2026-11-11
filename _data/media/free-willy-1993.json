@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "watching",
   "watched": false,
+  "favorite": false,
   "title": "Free Willy",
   "year": "1993",
   "rating": "7+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "1634",
+  "tmdb_poster_url": "9iBgd9gi9ztWiVcYSG6zl8wDFBN.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9iBgd9gi9ztWiVcYSG6zl8wDFBN.jpg"
 }

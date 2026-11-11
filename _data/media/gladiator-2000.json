@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Gladiator",
   "year": "2000",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Adventure"
   ],
   "tmdb_id": "98",
+  "tmdb_poster_url": "aDb548BOkFfI4nFm0kx8A3Ezh7H.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/aDb548BOkFfI4nFm0kx8A3Ezh7H.jpg"
 }

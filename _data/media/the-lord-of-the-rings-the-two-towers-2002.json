@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Lord of the Rings: The Two Towers",
   "year": "2002",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "121",
+  "tmdb_poster_url": "5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"
 }

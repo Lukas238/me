@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Beakman's World",
   "year": "1992",
   "rating": "0+",
@@ -11,5 +12,6 @@
     "Kids"
   ],
   "tmdb_id": "5343",
+  "tmdb_poster_url": "x6wXEkbyhwh98kFWPtfjn5EdVHu.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/x6wXEkbyhwh98kFWPtfjn5EdVHu.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Benji",
   "year": "1974",
   "rating": "0+",
@@ -12,5 +13,6 @@
     "Romance"
   ],
   "tmdb_id": "23069",
+  "tmdb_poster_url": "aSowNmq4bZrmfazhQBePyNF8A2E.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/aSowNmq4bZrmfazhQBePyNF8A2E.jpg"
 }

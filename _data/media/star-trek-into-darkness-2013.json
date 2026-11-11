@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek Into Darkness",
   "year": "2013",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "54138",
+  "tmdb_poster_url": "Aim3kVNh1MPIxPEFeJrl9e9Uf1a.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/Aim3kVNh1MPIxPEFeJrl9e9Uf1a.jpg"
 }

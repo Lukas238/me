@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Gattaca",
   "year": "1998",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Drama"
   ],
   "tmdb_id": "782",
+  "tmdb_poster_url": "eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg"
 }

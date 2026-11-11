@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Total Recall",
   "year": "1990",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "861",
+  "tmdb_poster_url": "wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg"
 }

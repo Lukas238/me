@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: Picard",
   "year": "2020",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "85949",
+  "tmdb_poster_url": "nIlAKIrLKxOeoEnc0Urb65yNCp.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nIlAKIrLKxOeoEnc0Urb65yNCp.jpg"
 }

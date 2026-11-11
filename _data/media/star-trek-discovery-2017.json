@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Star Trek: Discovery",
   "year": "2017",
   "rating": "14+",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "67198",
+  "tmdb_poster_url": "xwpOHgym48Ftz7fbJq5te5xoiwu.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xwpOHgym48Ftz7fbJq5te5xoiwu.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Pinky and the Brain",
   "year": "1995",
   "rating": "7+",
@@ -14,5 +15,6 @@
     "Kids"
   ],
   "tmdb_id": "2228",
+  "tmdb_poster_url": "69Hrbgi2qcy8xjcwad94VNHpXLI.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/msVySCL9hRGaWFA0c3Bvx9WJFVV.jpg"
 }

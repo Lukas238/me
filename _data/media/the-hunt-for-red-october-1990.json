@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Hunt for Red October",
   "year": "1990",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "1669",
+  "tmdb_poster_url": "yVl7zidse4KiWtGMqHFtZCx4X3N.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yVl7zidse4KiWtGMqHFtZCx4X3N.jpg"
 }

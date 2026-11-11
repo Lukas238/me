@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Waterworld",
   "year": "1995",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Action"
   ],
   "tmdb_id": "9804",
+  "tmdb_poster_url": "X4UyUO5jgzs3c5YafnmYKLKKYw.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/X4UyUO5jgzs3c5YafnmYKLKKYw.jpg"
 }

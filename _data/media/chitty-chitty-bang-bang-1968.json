@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Chitty Chitty Bang Bang",
   "year": "1968",
   "rating": "0+",
@@ -13,5 +14,6 @@
     "Comedy"
   ],
   "tmdb_id": "11708",
+  "tmdb_poster_url": "wJ62FzGeCAs6PjCIK1as6xzdIY5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wJ62FzGeCAs6PjCIK1as6xzdIY5.jpg"
 }

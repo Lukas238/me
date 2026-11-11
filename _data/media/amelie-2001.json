@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Amélie",
   "year": "2001",
   "rating": "17+",
@@ -11,5 +12,6 @@
     "Romance"
   ],
   "tmdb_id": "194",
+  "tmdb_poster_url": "nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg"
 }

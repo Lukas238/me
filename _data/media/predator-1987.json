@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Predator",
   "year": "1987",
   "rating": "17+",
@@ -13,5 +14,6 @@
     "Thriller"
   ],
   "tmdb_id": "106",
+  "tmdb_poster_url": "k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg"
 }

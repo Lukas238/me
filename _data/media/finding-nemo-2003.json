@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Finding Nemo",
   "year": "2003",
   "rating": "0+",
@@ -12,5 +13,6 @@
     "Adventure"
   ],
   "tmdb_id": "12",
+  "tmdb_poster_url": "eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg"
 }

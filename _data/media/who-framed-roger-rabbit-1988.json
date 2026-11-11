@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Who Framed Roger Rabbit",
   "year": "1988",
   "rating": "7+",
@@ -13,5 +14,6 @@
     "Crime"
   ],
   "tmdb_id": "856",
+  "tmdb_poster_url": "lYfRc57Kx9VgLZ48iulu0HKnM15.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Coco",
   "year": "2017",
   "rating": "7+",
@@ -13,5 +14,6 @@
     "Adventure"
   ],
   "tmdb_id": "354912",
+  "tmdb_poster_url": "6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Interstellar",
   "year": "2014",
   "rating": "13+",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "157336",
+  "tmdb_poster_url": "yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "series",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Doctor Who",
   "year": "2005",
   "rating": "10+",
@@ -12,5 +13,6 @@
     "Sci-Fi & Fantasy"
   ],
   "tmdb_id": "57243",
+  "tmdb_poster_url": "lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg"
 }

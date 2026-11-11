@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Men in Black",
   "year": "1997",
   "rating": "13+",
@@ -13,5 +14,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "607",
+  "tmdb_poster_url": "uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Titanic",
   "year": "1997",
   "rating": "13+",
@@ -11,5 +12,6 @@
     "Romance"
   ],
   "tmdb_id": "597",
+  "tmdb_poster_url": "9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
 }

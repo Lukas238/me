@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Matrix Revolutions",
   "year": "2003",
   "rating": "17+",
@@ -13,5 +14,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "605",
+  "tmdb_poster_url": "qEWiBXJGXK28jGBAm8oFKKTB0WD.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/t1wm4PgOQ8e4z1C6tk1yDNrps4T.jpg"
 }

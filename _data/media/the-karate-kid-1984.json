@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "The Karate Kid",
   "year": "1984",
   "rating": "7+",
@@ -12,5 +13,6 @@
     "Family"
   ],
   "tmdb_id": "1885",
+  "tmdb_poster_url": "1mp4ViklKvA0WXXsNvNx0RBuiit.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/1mp4ViklKvA0WXXsNvNx0RBuiit.jpg"
 }

@@ -3,6 +3,7 @@
   "type": "movie",
   "status": "",
   "watched": false,
+  "favorite": false,
   "title": "Terminator 2: Judgment Day",
   "year": "1991",
   "rating": "17+",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "280",
+  "tmdb_poster_url": "jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg"
 }
