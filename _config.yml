@@ -44,6 +44,7 @@ plugins:
 include:
   - _pages
   - _thumbs
+  - admin
 
 # Excludes
 exclude:
