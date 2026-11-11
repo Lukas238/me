@@ -15,4 +15,4 @@ permalink: /bidassoa/
 </blockquote>
 
 
-{% include bidassoa_gallery.html %}
+{% include gallery_bidassoa.html %}

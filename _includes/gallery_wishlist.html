@@ -1,0 +1,56 @@
+<p class="wishlist-summary" id="wishlist-summary"></p>
+
+<div class="gallery-controls">
+  <div class="gallery-control">
+    <span class="gallery-control__label">Sort by</span>
+    <div class="btn-group btn-group-sm" role="group" aria-label="Sort by">
+      <input type="radio" class="btn-check" name="wishlistSort" id="wishlistSortAdded" value="added" autocomplete="off" checked>
+      <label class="btn btn-outline-secondary" for="wishlistSortAdded" title="Sort by date added" aria-label="Sort by date added"><i class="bi bi-clock-history"></i></label>
+      <input type="radio" class="btn-check" name="wishlistSort" id="wishlistSortTitle" value="title" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="wishlistSortTitle" title="Sort by title" aria-label="Sort by title"><i class="bi bi-sort-alpha-down"></i></label>
+    </div>
+  </div>
+  <div class="gallery-control">
+    <span class="gallery-control__label">Tags</span>
+    <button class="btn btn-sm btn-outline-secondary" type="button" title="Browse tags" aria-label="Browse tags" data-bs-toggle="collapse" data-bs-target="#wishlist-tags-panel" aria-expanded="false" aria-controls="wishlist-tags-panel"><i class="bi bi-tags"></i></button>
+  </div>
+</div>
+
+<div id="active-filters"></div>
+
+<div class="collapse" id="wishlist-tags-panel">
+  <div id="wishlist-tags"></div>
+</div>
+
+<div id="wishlist-container">
+  <div id="wishlist-container__list">  
+    <div class="spinner-wrapper">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Template for the product card -->
+<script id="product-card-template" type="text/template">
+    <div class="wishlist-item">
+        <a href="@@link@@" target="_blank" rel="noopener" class="wishlist-item__link">
+            @@image@@
+            <h3 class="wishlist-item__title">@@title@@</h3>
+        </a>
+        <div class="wishlist-item__meta">
+            <ul>
+                @@metaItems@@
+            </ul>
+        </div>
+        @@tags@@
+    </div>
+</script>
+
+<script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
+<script>
+  window.wishlistData = Object.values({{ site.data.wishlist | jsonify }} || {});
+</script>
+<script src="{{ '/assets/js/wishlist.js' | relative_url }}"></script>

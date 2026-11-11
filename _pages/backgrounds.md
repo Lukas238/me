@@ -8,4 +8,4 @@ permalink: /backgrounds/
 
 <p>Curated backgrounds that have lived with me across different times.</p>
 
-{% include bg_gallery.html %}
+{% include gallery_backgrounds.html %}

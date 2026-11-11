@@ -7,7 +7,7 @@ title: Media Gallery
 <h1 class="mb-2">Media Gallery</h1>
 <p class="mb-4">Our collection of movies and series to watch together, organized your way.</p>
 
-{% include media_gallery.html %}
+{% include gallery_media.html %}
 
 
 <p class="text-center text-muted small mt-5">
