@@ -116,12 +116,9 @@ collections:
     create: true
     slug: "{{title}}-{{year}}"
     summary_fields:
-      - label: Poster
-        field: tmdb_poster_url
-      - label: Título
-        field: title
-      - label: Año
-        field: year
+      - tmdb_poster_url
+      - title
+      - year
     summary: "{{title}} ({{year}})"
     fields:
       - name: id
