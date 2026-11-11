@@ -7,8 +7,9 @@ media_folder: assets/uploads
 public_folder: /assets/uploads
 
 collections:
+  # PÁGINAS ESTÁTICAS
   - name: pages
-    label: Páginas
+    label: 📄 Páginas
     folder: _pages
     format: frontmatter
     create: true
@@ -31,13 +32,14 @@ collections:
         label: Contenido
         widget: markdown
 
+  # POSTS DE BLOG
   - name: posts
-    label: Posts
+    label: 📝 Posts
     folder: _posts
     format: frontmatter
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "{{year}}/{{month}}/{{day}}/{{slug}}"
+    preview_path: "blog/{{year}}/{{month}}/{{day}}/{{slug}}"
     fields:
       - name: layout
         label: Layout
@@ -51,7 +53,7 @@ collections:
         widget: string
         default: Lucas Dasso
       - name: date
-        label: Fecha
+        label: Fecha de publicación
         widget: datetime
         format: "YYYY-MM-DD HH:mm:ss"
       - name: categories
@@ -67,10 +69,119 @@ collections:
         widget: image
         required: false
       - name: description
-        label: Descripción
+        label: Descripción corta
         widget: text
         required: false
       - name: body
         label: Contenido
         widget: markdown
+
+  # PELÍCULAS
+  - name: movies
+    label: 🎬 Películas
+    folder: _data/media
+    format: json
+    create: true
+    slug: "{{title}}-{{year}}"
+    fields:
+      - name: id
+        label: ID
+        widget: hidden
+      - name: type
+        label: Tipo de contenido
+        widget: select
+        options:
+          - movie
+          - series
+          - documentary
+      - name: title
+        label: Título
+        widget: string
+      - name: year
+        label: Año
+        widget: number
+        valueType: string
+      - name: rating
+        label: Clasificación
+        widget: select
+        options:
+          - 0+
+          - 7+
+          - 13+
+          - 16+
+          - 18+
+      - name: watched
+        label: ¿Visto?
+        widget: boolean
+        default: false
+      - name: status
+        label: Estado
+        widget: text
+        required: false
+      - name: tags
+        label: Géneros/Etiquetas
+        widget: text
+        hint: "Separados por punto y coma (;)"
+      - name: tmdb_id
+        label: ID de TMDB
+        widget: string
+        required: false
+      - name: tmdb_poster_url
+        label: URL del póster (TMDB)
+        widget: string
+        required: false
+
+  # BIDASSOA
+  - name: bidassoa
+    label: 🖼️ Bidassoa
+    folder: _data/bidassoa
+    format: json
+    create: true
+    fields:
+      - name: id
+        label: ID
+        widget: hidden
+      - name: title
+        label: Título
+        widget: string
+      - name: year
+        label: Año
+        widget: number
+        valueType: string
+      - name: artist
+        label: Artista
+        widget: string
+        required: false
+      - name: description
+        label: Descripción
+        widget: text
+        required: false
+      - name: tags
+        label: Etiquetas
+        widget: text
+        required: false
+
+  # CONFIGURACIÓN DEL SITIO
+  - name: site_config
+    label: ⚙️ Configuración
+    files:
+      - name: config
+        label: Configuración principal
+        file: _config.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Título del sitio
+            widget: string
+          - name: baseurl
+            label: Base URL
+            widget: string
+          - name: url
+            label: URL del sitio
+            widget: string
+          - name: google_analytics
+            label: Google Analytics ID
+            widget: string
+            required: false
+
 
