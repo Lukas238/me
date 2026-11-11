@@ -219,8 +219,8 @@
         <div class="form-row">
           <label>Image</label>
           <div class="input-group">
-            <input type="text" id="image_url" placeholder="URL"/>
-            <button class="target-btn" data-field="image_url"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/></svg></button>
+            <input type="text" id="cover" placeholder="URL"/>
+            <button class="target-btn" data-field="cover"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/></svg></button>
           </div>
         </div>
         <div class="image-preview-container">
@@ -550,7 +550,7 @@
       title: $('#title'),
       tags: $('#tags'),
       notes: $('#notes'),
-      image_url: $('#image_url')
+      cover: $('#cover')
     },
     preview: $('#image-preview'),
     status: $('#wishlist-status'),
@@ -579,8 +579,8 @@
         if (detected.title && !this.fields.title.value) {
           this.fields.title.value = detected.title;
         }
-        if (detected.image && !this.fields.image_url.value) {
-          this.fields.image_url.value = detected.image;
+        if (detected.image && !this.fields.cover.value) {
+          this.fields.cover.value = detected.image;
           this.updatePreview();
         }
         return Boolean(detected.title && detected.image);
@@ -602,7 +602,7 @@
       this.fields.title.value = '';
       this.fields.tags.value = '';
       this.fields.notes.value = '';
-      this.fields.image_url.value = '';
+      this.fields.cover.value = '';
       this.updatePreview();
     },
 
@@ -612,7 +612,7 @@
         this.fields.title.value = detected.title;
       }
       if (detected.image) {
-        this.fields.image_url.value = detected.image;
+        this.fields.cover.value = detected.image;
         this.updatePreview();
       }
       if (detected.title || detected.image) {
@@ -641,7 +641,7 @@
     },
 
     updatePreview() {
-      const url = this.fields.image_url.value.trim();
+      const url = this.fields.cover.value.trim();
       if (url) {
         this.preview.innerHTML = `<img src="${url}" alt="Preview"/>`;
       } else {
@@ -681,7 +681,7 @@
       console.log(`[Wishlist CAPTURE] ${field}: "${selector}"`);
       console.log('[Wishlist CAPTURE] Element:', element);
 
-      if (field === 'image_url') {
+      if (field === 'cover') {
         let imageUrl = null;
         if (element.tagName === 'IMG') {
           imageUrl = element.src || element.dataset.src;
@@ -733,7 +733,7 @@
         product_url: this.fields.product_url.value.trim(),
         tags: this.fields.tags.value.trim(),
         notes: this.fields.notes.value.trim(),
-        image_url: this.fields.image_url.value.trim()
+        cover: this.fields.cover.value.trim()
       };
 
       if (!data.title) {
@@ -759,7 +759,7 @@
           setTimeout(() => {
             this.fields.title.value = '';
             this.fields.notes.value = '';
-            this.fields.image_url.value = '';
+            this.fields.cover.value = '';
             this.updatePreview();
             this.hide();
           }, 1500);
@@ -819,7 +819,7 @@
   root.querySelector('#wishlist-cancel').addEventListener('click', () => widget.hide());
   root.querySelector('#wishlist-save').addEventListener('click', () => widget.save());
   root.querySelector('#wishlist-auto').addEventListener('click', () => widget.autoFillFields());
-  widget.fields.image_url.addEventListener('input', () => widget.updatePreview());
+  widget.fields.cover.addEventListener('input', () => widget.updatePreview());
 
   // Target buttons
   root.querySelectorAll('.target-btn').forEach(btn => {

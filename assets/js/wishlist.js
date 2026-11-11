@@ -23,7 +23,7 @@ function processWishlistData() {
     .map(product => ({
       title: escapeHtml(product.title),
       link: safeUrl(product.product_url),
-      img: safeUrl(product.image_url),
+      img: safeUrl(product.cover),
       description: product.notes || '',
       date_added: product.date_added || null,
       tags: (Array.isArray(product.tags) ? product.tags : []).map(t => String(t).trim()).filter(Boolean)

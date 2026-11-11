@@ -1,7 +1,7 @@
 /**
  * Cloudflare Worker: Wishlist inbox
  *
- * POST /  with header `X-Wishlist-Key` and JSON { title, tags, notes, image_url, product_url }
+ * POST /  with header `X-Wishlist-Key` and JSON { title, tags, notes, cover, product_url }
  *         → commits it as a new file in _data/wishlist/ on GitHub, which rebuilds the site.
  *
  * KV (SITE_CONFIG): wishlist_key (the bookmarklet's X-Wishlist-Key), github_token (fine-grained, Contents: read/write on the repo)
@@ -81,15 +81,15 @@ function normalize(data) {
   if (!title) return { error: 'title is required' };
 
   const product_url = cleanUrl(data.product_url);
-  const image_url = cleanUrl(data.image_url);
-  if (product_url === null || image_url === null) return { error: 'URLs must be http(s)' };
+  const cover = cleanUrl(data.cover);
+  if (product_url === null || cover === null) return { error: 'URLs must be http(s)' };
 
   return {
     date_added: new Date().toISOString().slice(0, 10),
     title,
     tags: cleanTags(data.tags),
     notes: clean(data.notes, MAX.notes),
-    image_url,
+    cover,
     product_url
   };
 }
