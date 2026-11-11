@@ -170,6 +170,10 @@ collections:
     folder: _data/bidassoa
     format: json
     create: true
+    media_folder: assets/bidassoa
+    public_folder: /assets/bidassoa
+    thumbnail: cover
+    summary: "{{title | alias}} ({{year}})"
     fields:
       - name: id
         label: ID
@@ -177,21 +181,48 @@ collections:
       - name: title
         label: Título
         widget: string
+        required: false
+      - name: alias
+        label: Alias
+        widget: string
+        required: false
       - name: year
         label: Año
         widget: number
         value_type: int/string
-      - name: artist
-        label: Artista
-        widget: string
+      - name: cover
+        label: Portada (primera imagen)
+        widget: image
         required: false
-      - name: description
-        label: Descripción
+      - name: images
+        label: Imágenes (galería)
+        widget: list
+        field:
+          name: image
+          widget: image
+        required: false
+      - name: width
+        label: Ancho (px)
+        widget: number
+        value_type: int
+        required: false
+      - name: height
+        label: Alto (px)
+        widget: number
+        value_type: int
+        required: false
+      - name: keywords
+        label: Palabras clave
+        widget: list
+        required: false
+      - name: notes
+        label: Notas
         widget: text
         required: false
-      - name: tags
-        label: Etiquetas
-        widget: list
+      - name: added
+        label: Fecha agregada
+        widget: datetime
+        type: date
         required: false
 
   # CONFIGURACIÓN DEL SITIO
