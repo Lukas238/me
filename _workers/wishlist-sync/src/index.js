@@ -2,13 +2,13 @@
  * Cloudflare Worker: Wishlist inbox
  *
  * POST /  with header `X-Wishlist-Key` and JSON { title, tags, notes, image_url, product_url }
- *         → adds it at the top of _data/wishlist.json on GitHub, which rebuilds the site.
+ *         → commits it as a new file in _data/wishlist/ on GitHub, which rebuilds the site.
  *
  * KV (SITE_CONFIG): wishlist_key (the bookmarklet's X-Wishlist-Key), github_token (fine-grained, Contents: read/write on the repo)
  * Vars:    GITHUB_REPO ("owner/name"), GITHUB_BRANCH
  */
 
-import { safeEqual, clean, prependToJsonArray, getConfig } from '../../shared/inbox.js';
+import { safeEqual, clean, commitJson, getConfig } from '../../shared/inbox.js';
 
 const MAX = { title: 300, notes: 2000, url: 2048, tag: 30, tags: 10 };
 
@@ -37,7 +37,11 @@ export default {
     if (item.error) return json({ error: item.error }, 400);
 
     try {
-      const path = await prependToJsonArray(env, '_data/wishlist.json', item, `Add wishlist item: ${item.title.slice(0, 60)}`);
+      const slug = item.title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 50).replace(/-+$/, '');
+      const rand = crypto.randomUUID().slice(0, 6);
+      const file = `_data/wishlist/${item.date_added}-${slug || 'item'}-${rand}.json`;
+      const path = await commitJson(env, file, item, `Add wishlist item: ${item.title.slice(0, 60)}`);
       return json({ success: true, path, item });
     } catch (error) {
       console.error('GitHub commit failed:', error);

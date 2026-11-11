@@ -1,5 +1,5 @@
 // scripts/generate-bidassoa-json.js
-// Genera/actualiza _data/bidassoa.json a partir de los JPG en ./assets/bidassoa/
+// Genera/actualiza _data/bidassoa/ (un JSON por obra) a partir de los JPG en ./assets/bidassoa/
 //
 // Formato de archivo:
 //   YYYY__TitleOrAlias[__INFO1[__INFO2...]].jpg
@@ -27,7 +27,15 @@ const path = require("path");
 const sharp = require("sharp");
 
 const INPUT_DIR = path.resolve("assets/bidassoa");
-const OUTPUT_FILE = path.resolve("_data/bidassoa.json");
+const OUTPUT_DIR = path.resolve("_data/bidassoa");
+
+// Nombre de archivo estable derivado del id de la obra
+function fileNameForId(id) {
+  return id
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+    .slice(0, 80).replace(/-+$/, "");
+}
 
 // Normaliza el nombre base para agrupar:
 function normalizeBaseName(str) {
@@ -219,8 +227,11 @@ function sortImagesWithMainFirst(images) {
 // Carga el JSON existente y lo agrupa por groupKey
 async function loadExistingJson() {
   try {
-    const data = await fsp.readFile(OUTPUT_FILE, "utf8");
-    const arr = JSON.parse(data);
+    const names = (await fsp.readdir(OUTPUT_DIR)).filter((n) => n.endsWith(".json"));
+    const arr = [];
+    for (const name of names) {
+      arr.push(JSON.parse(await fsp.readFile(path.join(OUTPUT_DIR, name), "utf8")));
+    }
 
     const map = new Map(); // groupKey -> merged item
 
@@ -269,15 +280,15 @@ async function loadExistingJson() {
     }
 
     console.log(
-      `Cargado JSON existente: ${OUTPUT_FILE} (${arr.length} items, ${map.size} grupos distintos)`
+      `Cargado JSON existente: ${OUTPUT_DIR} (${arr.length} items, ${map.size} grupos distintos)`
     );
     return map;
   } catch (err) {
     if (err.code === "ENOENT") {
-      console.log("No existe _data/bidassoa.json todavía. Se creará desde cero.");
+      console.log("No existe _data/bidassoa/ todavía. Se creará desde cero.");
       return new Map();
     }
-    console.error("Error leyendo _data/bidassoa.json:", err.message);
+    console.error("Error leyendo _data/bidassoa/:", err.message);
     throw err;
   }
 }
@@ -286,10 +297,10 @@ async function main() {
   console.log("=== generate-bidassoa-json ===");
   console.log("Directorio de trabajo:", process.cwd());
   console.log("Carpeta de imágenes:", INPUT_DIR);
-  console.log("Archivo JSON:", OUTPUT_FILE);
+  console.log("Carpeta de datos:", OUTPUT_DIR);
   console.log("--------------------------------");
 
-  await fsp.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
+  await fsp.mkdir(OUTPUT_DIR, { recursive: true });
 
   const existingByGroupKey = await loadExistingJson();
 
@@ -560,11 +571,21 @@ async function main() {
     return nameA.localeCompare(nameB);
   });
 
-  await fsp.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
-  await fsp.writeFile(OUTPUT_FILE, JSON.stringify(resultItems, null, 2), "utf8");
+  // Un archivo por obra; se borran los de obras que ya no tienen imágenes
+  const keep = new Set();
+  for (const item of resultItems) {
+    const base = fileNameForId(item.id);
+    let name = `${base}.json`;
+    for (let n = 2; keep.has(name); n++) name = `${base}-${n}.json`;
+    keep.add(name);
+    await fsp.writeFile(path.join(OUTPUT_DIR, name), JSON.stringify(item, null, 2) + "\n", "utf8");
+  }
+  for (const name of await fsp.readdir(OUTPUT_DIR)) {
+    if (name.endsWith(".json") && !keep.has(name)) await fsp.unlink(path.join(OUTPUT_DIR, name));
+  }
 
   console.log("--------------------------------");
-  console.log(`Generado/actualizado: ${OUTPUT_FILE}`);
+  console.log(`Generado/actualizado: ${OUTPUT_DIR} (${resultItems.length} obras)`);
   console.log("=== FIN generate-bidassoa-json ===");
 }
 

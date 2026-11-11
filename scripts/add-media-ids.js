@@ -1,20 +1,19 @@
-// Assigns a UUID to every entry in _data/media.json that has no id. Run by .github/workflows/media-ids.yml.
+// Assigns a UUID to every entry in _data/media/ that has no id. Run by .github/workflows/media-complete.yml.
 const fs = require('fs');
 const path = require('path');
 const { randomUUID } = require('crypto');
 
-const file = path.join(__dirname, '..', '_data', 'media.json');
-const items = JSON.parse(fs.readFileSync(file, 'utf8'));
+const dir = path.join(__dirname, '..', '_data', 'media');
 
 let added = 0;
-for (const item of items) {
+for (const name of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
+  const file = path.join(dir, name);
+  const item = JSON.parse(fs.readFileSync(file, 'utf8'));
   if (!item.id) {
     item.id = randomUUID();
+    fs.writeFileSync(file, JSON.stringify(item, null, 2) + '\n');
     added++;
   }
 }
 
-if (added > 0) {
-  fs.writeFileSync(file, JSON.stringify(items, null, 2) + '\n');
-}
 console.log(`Assigned ${added} new id(s)`);

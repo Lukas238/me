@@ -31,10 +31,6 @@ function toBase64(text) {
   return btoa(binary);
 }
 
-function fromBase64(base64) {
-  return new TextDecoder().decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
-}
-
 function contentsUrl(env, path) {
   return `https://api.github.com/repos/${env.GITHUB_REPO}/contents/${path}`;
 }
@@ -51,15 +47,14 @@ async function githubHeaders(env) {
   };
 }
 
-async function putFile(env, headers, path, data, message, sha) {
+async function putFile(env, headers, path, data, message) {
   return fetch(contentsUrl(env, path), {
     method: 'PUT',
     headers,
     body: JSON.stringify({
       message,
       content: toBase64(JSON.stringify(data, null, 2) + '\n'),
-      branch: env.GITHUB_BRANCH,
-      ...(sha ? { sha } : {})
+      branch: env.GITHUB_BRANCH
     })
   });
 }
@@ -71,33 +66,4 @@ export async function commitJson(env, path, data, message) {
     throw new Error(`GitHub API ${response.status}: ${await response.text()}`);
   }
   return path;
-}
-
-// Adds an item at the top of a JSON array file, retrying if the file changed meanwhile
-export async function prependToJsonArray(env, path, item, message) {
-  const headers = await githubHeaders(env);
-
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const current = await fetch(`${contentsUrl(env, path)}?ref=${encodeURIComponent(env.GITHUB_BRANCH)}`, { headers });
-
-    let list = [];
-    let sha;
-    if (current.ok) {
-      const file = await current.json();
-      list = JSON.parse(fromBase64(file.content));
-      sha = file.sha;
-    } else if (current.status !== 404) {
-      throw new Error(`GitHub API ${current.status}: ${await current.text()}`);
-    }
-
-    list.unshift(item);
-    const response = await putFile(env, headers, path, list, message, sha);
-    if (response.ok) return path;
-
-    // 409/422 mean the sha is stale: someone committed in between, so read again
-    if (response.status !== 409 && response.status !== 422) {
-      throw new Error(`GitHub API ${response.status}: ${await response.text()}`);
-    }
-  }
-  throw new Error('Could not save after 3 attempts: file keeps changing');
 }

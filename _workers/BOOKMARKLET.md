@@ -109,7 +109,7 @@ El bookmarklet es **completamente autocontenido** (~16KB minificado):
 5. El widget se posiciona con `z-index: 999999` para estar siempre visible
 6. El target mode usa event listeners de `mouseover` y `click` en capture phase
 7. Al guardar, hace un `POST /` al worker con los datos del producto
-8. El worker agrega el producto al principio de `_data/wishlist.json` en GitHub
+8. El worker crea un archivo nuevo para el producto en `_data/wishlist/` en GitHub
 
 ### Estructura del Bookmarklet
 

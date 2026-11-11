@@ -62,8 +62,8 @@ permalink: /wishlist/
 <script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
 
 <script>
-  // Items live in _data/wishlist.json, embedded at build time
-  const wishlistItems = {{ site.data.wishlist | jsonify }} || [];
+  // Items live in _data/wishlist/, one file each, embedded at build time
+  const wishlistItems = Object.values({{ site.data.wishlist | jsonify }} || {});
 
   const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const safeUrl = u => /^https?:\/\//i.test(u || '') ? escapeHtml(u) : '';

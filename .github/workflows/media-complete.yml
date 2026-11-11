@@ -3,7 +3,7 @@ name: Complete media entries
 on:
   push:
     branches: [main]
-    paths: ['_data/media.json']
+    paths: ['_data/media/**']
 
 permissions:
   contents: write

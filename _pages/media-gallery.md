@@ -677,7 +677,7 @@ title: Media Gallery
 <script src="{{ '/assets/js/gallery-tags.js' | relative_url }}"></script>
 
 <script>
-let mediaList = ({{ site.data.media | jsonify }}).map(item => ({ ...item, type: item.type || 'movie' }));
+let mediaList = Object.values({{ site.data.media | jsonify }}).map(item => ({ ...item, type: item.type || 'movie' }));
 let feedbackList = Object.values({{ site.data.comments.media | jsonify }} || {});
 
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));

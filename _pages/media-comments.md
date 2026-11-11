@@ -312,7 +312,7 @@ title: Comment-A-Media
 const COMMENTS_WORKER_URL = 'https://comments-inbox.dassolucas.workers.dev/';
 const CODE_KEY = 'commentsFamilyCode';
 
-let mediaList = {{ site.data.media | jsonify }};
+let mediaList = Object.values({{ site.data.media | jsonify }});
 
 async function loadMediaList() {
   try {

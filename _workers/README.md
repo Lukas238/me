@@ -4,7 +4,7 @@ Dos Cloudflare Workers reciben datos de la web y los guardan como archivos en es
 
 | Worker | Carpeta | Recibe | Guarda en |
 |---|---|---|---|
-| `wishlist-sync` | [wishlist-sync](./wishlist-sync) | `POST /` del bookmarklet, con el header `X-Wishlist-Key` | `_data/wishlist.json` (agrega arriba) |
+| `wishlist-sync` | [wishlist-sync](./wishlist-sync) | `POST /` del bookmarklet, con el header `X-Wishlist-Key` | `_data/wishlist/<fecha>-<titulo>-<rand>.json` |
 | `comments-inbox` | [comments-worker](./comments-worker) | `POST /` del formulario de comentarios, con el código familiar | `_data/comments/<kind>/<fecha>-<id>-<rand>.json` |
 
 El código común (comparación de claves, limpieza de texto, commits a GitHub) está en [shared/inbox.js](./shared/inbox.js).
@@ -13,7 +13,7 @@ La cuenta de Cloudflare está fijada con `account_id` en cada `wrangler.toml`.
 
 ## Bookmarklet - Add to Wishlist
 
-Agrega productos a `_data/wishlist.json` desde cualquier página. Guía de uso: [BOOKMARKLET.md](./BOOKMARKLET.md).
+Agrega productos a `_data/wishlist/` (un archivo por producto) desde cualquier página. Guía de uso: [BOOKMARKLET.md](./BOOKMARKLET.md).
 
 **Instalación:** desde la raíz del repo corre `node scripts/build-bookmarklet.js`; toma `WISHLIST_KEY` del `.env` (ignorado por git; si no está, la pide) y pega el resultado (empieza con `javascript:`) como URL de un marcador nuevo. En macOS también queda copiado al portapapeles. El `.env` también guarda como respaldo `FAMILY_CODE` y `GITHUB_TOKEN` (los que usan los workers desde el KV `SITE_CONFIG`); ningún script los lee. La plantilla es `.env.example`. El código fuente es [bookmarklet-source.js](./bookmarklet-source.js).
 

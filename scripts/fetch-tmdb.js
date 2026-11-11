@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Completes the entries of _data/media.json that are missing TMDb data (tmdb_id, poster, tags, rating).
-// Add { "title": "...", "year": "1984" } (optionally "type": "series") and run this script.
+// Completes the entries of _data/media/ (one JSON file each) that are missing TMDb data (tmdb_id, poster, tags, rating).
+// Add a file with { "title": "...", "year": "1984" } (optionally "type": "series") and run this script.
 //
-//   node scripts/fetch-tmdb.js [--dry-run] [--limit N] [--file path/to/media.json]
+//   node scripts/fetch-tmdb.js [--dry-run] [--limit N] [--dir path/to/media]
 //
 // --limit N stops after N entries are completed (not-found ones don't count), so a big list can be done in batches.
 //
@@ -22,14 +22,14 @@ const TV_AGE = { 'TV-Y': '0+', 'TV-Y7': '7+', 'TV-G': '0+', 'TV-PG': '10+', 'TV-
 
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
-const fileArg = args.includes('--file') ? args[args.indexOf('--file') + 1] : null;
+const dirArg = args.includes('--dir') ? args[args.indexOf('--dir') + 1] : null;
 const limitArg = args.find(a => a.startsWith('--limit'));
 const limit = limitArg ? Number(limitArg.includes('=') ? limitArg.split('=')[1] : args[args.indexOf('--limit') + 1]) : Infinity;
 if (!(limit >= 1) || (limit !== Infinity && !Number.isInteger(limit))) {
   console.error('--limit needs a positive whole number, e.g. --limit 20');
   process.exit(1);
 }
-const mediaFile = path.resolve(fileArg || path.join(__dirname, '..', '_data', 'media.json'));
+const mediaDir = path.resolve(dirArg || path.join(__dirname, '..', '_data', 'media'));
 
 const isEmpty = value => value === undefined || value === null || value === '';
 const norm = text => String(text || '').trim().toLowerCase();
@@ -144,8 +144,9 @@ async function main() {
     process.exit(1);
   }
 
-  const items = JSON.parse(fs.readFileSync(mediaFile, 'utf8'));
-  const pending = items.filter(item => !isEmpty(item.title) && needsLookup(item));
+  const entries = fs.readdirSync(mediaDir).filter(name => name.endsWith('.json')).sort()
+    .map(name => ({ file: path.join(mediaDir, name), item: JSON.parse(fs.readFileSync(path.join(mediaDir, name), 'utf8')) }));
+  const pending = entries.filter(({ item }) => !isEmpty(item.title) && needsLookup(item));
   if (!pending.length) {
     console.log('Nothing to complete.');
     return;
@@ -154,7 +155,8 @@ async function main() {
   let updated = 0;
   const notFound = [];
 
-  for (const item of pending) {
+  for (const entry of pending) {
+    const { item } = entry;
     if (updated >= limit) break;
     const label = `${item.title} (${item.year || '?'})`;
     if (isEmpty(item.year) && isEmpty(item.tmdb_id)) {
@@ -171,17 +173,17 @@ async function main() {
     }
 
     const next = fill(item, found.kind, found.data);
-    const duplicate = items.find(other => other !== item && String(other.tmdb_id) === next.tmdb_id && kindOf(other.type) === kindOf(next.type));
-    items[items.indexOf(item)] = next;
+    const duplicate = entries.find(other => other !== entry && String(other.item.tmdb_id) === next.tmdb_id && kindOf(other.item.type) === kindOf(next.type));
+    entry.item = next;
+    if (!dryRun) fs.writeFileSync(entry.file, JSON.stringify(next, null, 2) + '\n');
     updated++;
 
     console.log(`+ ${label} -> ${next.type} #${next.tmdb_id} | ${next.tags || 'no genres'} | ${next.rating || 'no rating'}`);
     if (!next.rating) console.log('    no US certification on TMDb, rating left empty');
     if (!next.tmdb_poster_url) console.log('    no poster on TMDb');
-    if (duplicate) console.log(`    already in the list as "${duplicate.title}"`);
+    if (duplicate) console.log(`    already in the list as "${duplicate.item.title}"`);
   }
 
-  if (updated && !dryRun) fs.writeFileSync(mediaFile, JSON.stringify(items, null, 2) + '\n');
   console.log(`\n${updated} completed, ${notFound.length} not found${dryRun ? ' (dry run, nothing written)' : ''}`);
   const left = pending.length - updated - notFound.length;
   if (updated >= limit && left > 0) console.log(`${left} still pending, run it again for the next batch`);

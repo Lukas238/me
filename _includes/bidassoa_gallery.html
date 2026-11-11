@@ -3,7 +3,8 @@
   {% assign items = "" | split: "" %}
 
   {% comment %}Obtener todos los años únicos ordenados{% endcomment %}
-  {% assign all_years = site.data.bidassoa | map: 'year' | uniq | sort | reverse %}
+  {% assign bidassoa_items = site.data.bidassoa | where_exp: "item", "item.id" %}
+  {% assign all_years = bidassoa_items | map: 'year' | uniq | sort | reverse %}
   {% assign years = "" | split: "" %}
   {% assign has_undated = false %}
 
@@ -21,7 +22,7 @@
 
   {% comment %}Procesar cada año en orden y ordenar items por título dentro de cada año{% endcomment %}
   {% for year in years %}
-    {% assign year_items = site.data.bidassoa | where: "year", year %}
+    {% assign year_items = bidassoa_items | where: "year", year %}
 
     {% comment %}Separar por título vs alias y ordenar{% endcomment %}
     {% assign items_with_title = "" | split: "" %}
