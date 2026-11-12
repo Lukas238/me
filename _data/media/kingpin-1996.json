@@ -1,16 +1,15 @@
 {
   "id": "00f98174-07c3-4b44-b4c0-b69fe32f0a21",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Kingpin",
+  "title_es": "",
   "year": "1996",
   "rating": "13+",
   "tags": [
     "Comedy"
   ],
   "tmdb_id": "11543",
-  "tmdb_poster_url": "lVpejjxzBujSjLpxQ7hGe1s0wP2.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lVpejjxzBujSjLpxQ7hGe1s0wP2.jpg"
 }

@@ -1,10 +1,10 @@
 {
   "id": "41e0f63f-3f82-4124-a2da-5c3118431ba1",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dune: Part Two",
+  "title_es": "",
   "year": "2024",
   "rating": "13+",
   "tags": [
@@ -12,6 +12,5 @@
     "Adventure"
   ],
   "tmdb_id": "693134",
-  "tmdb_poster_url": "6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg"
 }

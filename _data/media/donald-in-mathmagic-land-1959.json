@@ -1,11 +1,12 @@
 {
   "id": "00009410-098a-41f9-8be8-388f166249a1",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Donald in Mathmagic Land",
+  "title_es": "",
   "year": "1959",
+  "rating": null,
   "tags": [
     "Animation",
     "Fantasy",
@@ -13,6 +14,5 @@
     "Comedy"
   ],
   "tmdb_id": "19715",
-  "tmdb_poster_url": "dKyvrSVysFobPPmMHqyStvrJRqc.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/dKyvrSVysFobPPmMHqyStvrJRqc.jpg"
 }

@@ -1,10 +1,10 @@
 {
   "id": "58248e5e-70fe-4341-910d-900833b96e83",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Babylon 5",
+  "title_es": "",
   "year": "1994",
   "rating": "10+",
   "tags": [
@@ -13,6 +13,5 @@
     "Action & Adventure"
   ],
   "tmdb_id": "3137",
-  "tmdb_poster_url": "td8O6KJQpN9ZRiuyFUILziXFMrk.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/td8O6KJQpN9ZRiuyFUILziXFMrk.jpg"
 }

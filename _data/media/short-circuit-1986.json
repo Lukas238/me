@@ -1,10 +1,10 @@
 {
   "id": "183ae353-8ac8-4bec-afd8-36849fd30ad0",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Short Circuit",
+  "title_es": "",
   "year": "1986",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Family"
   ],
   "tmdb_id": "2605",
-  "tmdb_poster_url": "e3eimdUK6lLe0iaSlLrYVQF3yeL.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/e3eimdUK6lLe0iaSlLrYVQF3yeL.jpg"
 }

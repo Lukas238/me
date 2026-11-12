@@ -1,10 +1,10 @@
 {
   "id": "4b3ac5d0-49fa-4841-90d4-5df29129ef5a",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dragon Ball Z",
+  "title_es": "",
   "year": "1989",
   "rating": "14+",
   "tags": [
@@ -13,6 +13,5 @@
     "Action & Adventure"
   ],
   "tmdb_id": "12971",
-  "tmdb_poster_url": "oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg"
 }

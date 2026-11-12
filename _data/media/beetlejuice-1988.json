@@ -1,10 +1,10 @@
 {
   "id": "aefae23d-637f-429b-b225-5e139bec9623",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Beetlejuice",
+  "title_es": "",
   "year": "1988",
   "rating": "7+",
   "tags": [
@@ -12,6 +12,5 @@
     "Comedy"
   ],
   "tmdb_id": "4011",
-  "tmdb_poster_url": "nnl6OWkyPpuMm595hmAxNW3rZFn.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nnl6OWkyPpuMm595hmAxNW3rZFn.jpg"
 }

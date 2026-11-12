@@ -1,16 +1,16 @@
 {
   "id": "86547b52-50c1-4236-8520-05009e09d6a6",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Man from Earth",
+  "title_es": "",
   "year": "2008",
+  "rating": null,
   "tags": [
     "Science Fiction",
     "Drama"
   ],
   "tmdb_id": "13363",
-  "tmdb_poster_url": "V086R82gNgWrotaXZFO4JhdgB1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/V086R82gNgWrotaXZFO4JhdgB1.jpg"
 }

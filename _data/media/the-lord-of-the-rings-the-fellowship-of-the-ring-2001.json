@@ -1,10 +1,10 @@
 {
   "id": "83f611a2-979c-4b4e-b73a-a16c872650a6",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Lord of the Rings: The Fellowship of the Ring",
+  "title_es": "",
   "year": "2001",
   "rating": "13+",
   "tags": [
@@ -13,6 +13,5 @@
     "Action"
   ],
   "tmdb_id": "120",
-  "tmdb_poster_url": "6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
 }

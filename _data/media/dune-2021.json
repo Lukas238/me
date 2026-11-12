@@ -1,10 +1,10 @@
 {
   "id": "49d1d335-2c01-4a3d-a628-f9f69a9f2fd0",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dune",
+  "title_es": "",
   "year": "2021",
   "rating": "13+",
   "tags": [
@@ -12,6 +12,5 @@
     "Adventure"
   ],
   "tmdb_id": "438631",
-  "tmdb_poster_url": "v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg"
 }

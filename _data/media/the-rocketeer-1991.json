@@ -1,10 +1,10 @@
 {
   "id": "31139d54-573a-4034-b140-3c140f5dc4ff",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Rocketeer",
+  "title_es": "",
   "year": "1991",
   "rating": "7+",
   "tags": [
@@ -12,6 +12,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "10249",
-  "tmdb_poster_url": "2tDFRESFwKww1LHRE8W1Exj9edH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg"
 }

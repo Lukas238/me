@@ -1,10 +1,10 @@
 {
   "id": "aa180719-656c-4868-9316-b770a98aa5ce",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "DuckTales",
+  "title_es": "",
   "year": "1987",
   "rating": "7+",
   "tags": [
@@ -15,6 +15,5 @@
     "Kids"
   ],
   "tmdb_id": "720",
-  "tmdb_poster_url": "l39HDf6WYzV8VLY5EnCRC81DWOy.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/muplnM90daPCQ5Bn1olcwN1EO22.jpg"
 }

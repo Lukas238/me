@@ -1,10 +1,10 @@
 {
   "id": "eaf74f31-0fbe-4bc3-b5d2-e58dcde6432c",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Encanto",
+  "title_es": "",
   "year": "2021",
   "rating": "7+",
   "tags": [
@@ -14,6 +14,5 @@
     "Fantasy"
   ],
   "tmdb_id": "568124",
-  "tmdb_poster_url": "4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
 }

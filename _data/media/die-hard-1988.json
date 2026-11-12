@@ -1,10 +1,10 @@
 {
   "id": "321545c9-f59d-49c7-a092-0adbff7eb21e",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Die Hard",
+  "title_es": "",
   "year": "1988",
   "rating": "17+",
   "tags": [
@@ -12,6 +12,5 @@
     "Thriller"
   ],
   "tmdb_id": "562",
-  "tmdb_poster_url": "7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg"
 }

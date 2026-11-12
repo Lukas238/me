@@ -1,10 +1,10 @@
 {
   "id": "aecc6ce4-5b17-4dfa-9f5f-656fc575dec9",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Crouching Tiger Hidden Dragon",
+  "title_es": "",
   "year": "2000",
   "rating": "13+",
   "tags": [
@@ -13,6 +13,5 @@
     "Action"
   ],
   "tmdb_id": "146",
-  "tmdb_poster_url": "iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg"
 }

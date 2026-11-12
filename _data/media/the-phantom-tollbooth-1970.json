@@ -1,10 +1,10 @@
 {
   "id": "bf450448-78fb-4e28-8dfb-b333a4cd9d18",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Phantom Tollbooth",
+  "title_es": "",
   "year": "1970",
   "rating": "0+",
   "tags": [
@@ -15,6 +15,5 @@
     "Family"
   ],
   "tmdb_id": "28476",
-  "tmdb_poster_url": "totkDxL4QApB4xFr7gc1EdGkz7J.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/totkDxL4QApB4xFr7gc1EdGkz7J.jpg"
 }

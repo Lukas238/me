@@ -1,10 +1,10 @@
 {
   "id": "8b28f1e2-cb96-45c6-8a25-270a78f0cfdb",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Return of the Jedi",
+  "title_es": "",
   "year": "1983",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "1892",
-  "tmdb_poster_url": "jQYlydvHm3kUix1f8prMucrplhm.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/jQYlydvHm3kUix1f8prMucrplhm.jpg"
 }

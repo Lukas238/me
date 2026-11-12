@@ -1,7 +1,6 @@
 {
   "id": "1dd32af6-1e64-4156-b053-8b65369b0cd6",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Captain Tsubasa",
@@ -14,6 +13,5 @@
     "Animation"
   ],
   "tmdb_id": "25707",
-  "tmdb_poster_url": "qHVVaYYlD509eh1V4LYE0M927uw.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qHVVaYYlD509eh1V4LYE0M927uw.jpg"
 }

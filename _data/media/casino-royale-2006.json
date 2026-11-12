@@ -1,10 +1,10 @@
 {
   "id": "e73369d5-eca4-458c-9186-f1f7d0028eab",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Casino Royale",
+  "title_es": "",
   "year": "2006",
   "rating": "13+",
   "tags": [
@@ -13,6 +13,5 @@
     "Thriller"
   ],
   "tmdb_id": "36557",
-  "tmdb_poster_url": "lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
 }

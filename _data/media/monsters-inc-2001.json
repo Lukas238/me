@@ -1,10 +1,10 @@
 {
   "id": "d0035503-9773-4fb9-a1e9-636729fc4305",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Monsters Inc.",
+  "title_es": "",
   "year": "2001",
   "rating": "0+",
   "tags": [
@@ -14,6 +14,5 @@
     "Fantasy"
   ],
   "tmdb_id": "585",
-  "tmdb_poster_url": "wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg"
 }

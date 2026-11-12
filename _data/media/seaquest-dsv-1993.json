@@ -1,10 +1,10 @@
 {
   "id": "a936fa4c-8efa-4c74-ac7f-91bd3ee6929a",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "SeaQuest DSV",
+  "title_es": "",
   "year": "1993",
   "rating": "10+",
   "tags": [
@@ -12,6 +12,5 @@
     "Action & Adventure"
   ],
   "tmdb_id": "2289",
-  "tmdb_poster_url": "azbnl41bGqTcp2ajyfm9JYekEHp.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/azbnl41bGqTcp2ajyfm9JYekEHp.jpg"
 }

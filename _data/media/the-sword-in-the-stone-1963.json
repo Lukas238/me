@@ -1,10 +1,10 @@
 {
   "id": "081a5568-b4aa-4cec-a7de-e8ec84a638b8",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Sword in the Stone",
+  "title_es": "",
   "year": "1963",
   "rating": "0+",
   "tags": [
@@ -13,6 +13,5 @@
     "Fantasy"
   ],
   "tmdb_id": "9078",
-  "tmdb_poster_url": "7lyeeuhGAJSNXYEW34S8mJ1bwI8.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/7lyeeuhGAJSNXYEW34S8mJ1bwI8.jpg"
 }

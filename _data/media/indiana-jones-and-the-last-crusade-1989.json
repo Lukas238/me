@@ -1,10 +1,10 @@
 {
   "id": "65d18819-96a8-43ef-804b-2b26c0b9d584",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Indiana Jones and the Last Crusade",
+  "title_es": "",
   "year": "1989",
   "rating": "13+",
   "tags": [
@@ -12,6 +12,5 @@
     "Action"
   ],
   "tmdb_id": "89",
-  "tmdb_poster_url": "sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg"
 }

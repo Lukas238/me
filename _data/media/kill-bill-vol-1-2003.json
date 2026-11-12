@@ -1,10 +1,10 @@
 {
   "id": "e0f33017-5a4a-4ec0-935a-15f74f0afb96",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Kill Bill: Vol. 1",
+  "title_es": "",
   "year": "2003",
   "rating": "17+",
   "tags": [
@@ -12,6 +12,5 @@
     "Crime"
   ],
   "tmdb_id": "24",
-  "tmdb_poster_url": "v7TaX8kXMXs5yFFGR41guUDNcnB.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg"
 }

@@ -1,10 +1,10 @@
 {
   "id": "61885119-045a-4e5a-b7b4-9f6d93eacccb",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Spider-Man",
+  "title_es": "",
   "year": "2002",
   "rating": "13+",
   "tags": [
@@ -12,6 +12,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "557",
-  "tmdb_poster_url": "or6XJBVpcEbIkma0V9zshnbEtx4.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/or6XJBVpcEbIkma0V9zshnbEtx4.jpg"
 }

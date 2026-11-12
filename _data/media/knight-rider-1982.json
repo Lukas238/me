@@ -1,10 +1,10 @@
 {
   "id": "8dc94a4b-3253-4b01-9013-aa17a9c92eab",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Knight Rider",
+  "title_es": "",
   "year": "1982",
   "rating": "10+",
   "tags": [
@@ -14,6 +14,5 @@
     "Crime"
   ],
   "tmdb_id": "2384",
-  "tmdb_poster_url": "t57NXzTrwp5rnPXiaX4BThrDxt1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/t57NXzTrwp5rnPXiaX4BThrDxt1.jpg"
 }

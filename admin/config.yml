@@ -133,7 +133,6 @@ collections:
     format: json
     create: true
     thumbnail: cover
-    public_folder: https://image.tmdb.org/t/p/w500/
     slug: "{{title}}-{{year}}"
     summary: "{{title}} ({{year}})"
     sortable_fields: [title, year]
@@ -148,13 +147,20 @@ collections:
         options:
           - movie
           - series
+        default: movie
       - name: title
         label: Título
         widget: string
+        required: true
+      - name: title_es
+        label: Título en español
+        widget: string
+        required: false
       - name: year
         label: Año
         widget: number
         value_type: int/string
+        required: true
       - name: rating
         label: Clasificación
         widget: select
@@ -164,24 +170,27 @@ collections:
           - 13+
           - 16+
           - 18+
+        required: false
       - name: watched
         label: ¿Visto?
         widget: boolean
         default: false
+        required: false
       - name: favorite
         label: ⭐ Favorito
         widget: boolean
         default: false
+        required: false
       - name: tags
         label: Géneros/Etiquetas
         widget: list
         required: false
       - name: tmdb_id
-        label: ID de TMDB
+        label: ID de TMDB (se completa automáticamente)
         widget: string
         required: false
       - name: cover
-        label: Póster
+        label: Póster (se completa automáticamente)
         widget: image
         required: false
 

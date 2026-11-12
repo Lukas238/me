@@ -1,10 +1,10 @@
 {
   "id": "f0338337-8ea3-4779-a4ee-d2afaa7f2199",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Nightmare Before Christmas",
+  "title_es": "",
   "year": "1993",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Family"
   ],
   "tmdb_id": "9479",
-  "tmdb_poster_url": "oQffRNjK8e19rF7xVYEN8ew0j7b.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/oQffRNjK8e19rF7xVYEN8ew0j7b.jpg"
 }

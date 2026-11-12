@@ -1,10 +1,10 @@
 {
   "id": "8802dfd5-505b-492e-a1db-788c13e5bfe3",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Little Nicky",
+  "title_es": "",
   "year": "2000",
   "rating": "13+",
   "tags": [
@@ -12,6 +12,5 @@
     "Fantasy"
   ],
   "tmdb_id": "9678",
-  "tmdb_poster_url": "AudA8gnTWSBWXBHSBHnr3HHUXXM.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/AudA8gnTWSBWXBHSBHnr3HHUXXM.jpg"
 }

@@ -1,10 +1,10 @@
 {
   "id": "a89e8559-765f-4073-9c9e-c68cdbe3e2ec",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "2001: A Space Odyssey",
+  "title_es": "",
   "year": "1968",
   "rating": "0+",
   "tags": [
@@ -13,6 +13,5 @@
     "Adventure"
   ],
   "tmdb_id": "62",
-  "tmdb_poster_url": "ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
 }

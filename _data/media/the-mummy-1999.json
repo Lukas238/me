@@ -1,10 +1,10 @@
 {
   "id": "c60ccb8f-a3de-438b-b388-114c01ddfc66",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Mummy",
+  "title_es": "",
   "year": "1999",
   "rating": "13+",
   "tags": [
@@ -13,6 +13,5 @@
     "Fantasy"
   ],
   "tmdb_id": "564",
-  "tmdb_poster_url": "yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg"
 }

@@ -1,10 +1,10 @@
 {
   "id": "ad510464-7c57-4511-a40c-ecbe96ef1b21",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: Deep Space Nine",
+  "title_es": "",
   "year": "1993",
   "rating": "10+",
   "tags": [
@@ -13,6 +13,5 @@
     "Drama"
   ],
   "tmdb_id": "580",
-  "tmdb_poster_url": "vE6138ykaEXQkCSEHyuBIgfGlUZ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vE6138ykaEXQkCSEHyuBIgfGlUZ.jpg"
 }

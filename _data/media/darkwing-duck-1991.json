@@ -1,10 +1,10 @@
 {
   "id": "00c805aa-cdae-461e-854b-25cfa06ecc50",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Darkwing Duck",
+  "title_es": "",
   "year": "1991",
   "rating": "7+",
   "tags": [
@@ -15,6 +15,5 @@
     "Kids"
   ],
   "tmdb_id": "3319",
-  "tmdb_poster_url": "1gJMSXS0gwM8gDJnzVSITcxbQc.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/1gJMSXS0gwM8gDJnzVSITcxbQc.jpg"
 }

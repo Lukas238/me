@@ -1,10 +1,10 @@
 {
   "id": "fb6c87e9-c836-409a-9617-018eea36aaa4",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Tron",
+  "title_es": "",
   "year": "1982",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Adventure"
   ],
   "tmdb_id": "97",
-  "tmdb_poster_url": "jigY9B6TKz4qlfikZcd18qtzTK4.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/jigY9B6TKz4qlfikZcd18qtzTK4.jpg"
 }

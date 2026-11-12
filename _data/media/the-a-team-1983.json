@@ -1,10 +1,10 @@
 {
   "id": "267964e6-cbdd-4381-8e82-f0c9e2f1e1f2",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The A-Team",
+  "title_es": "",
   "year": "1983",
   "rating": "10+",
   "tags": [
@@ -13,6 +13,5 @@
     "Crime"
   ],
   "tmdb_id": "1516",
-  "tmdb_poster_url": "p2qWJJ7Wyaq2xvgIHuBw4zVNBij.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/p2qWJJ7Wyaq2xvgIHuBw4zVNBij.jpg"
 }

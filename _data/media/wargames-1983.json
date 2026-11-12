@@ -1,10 +1,10 @@
 {
   "id": "133351eb-917c-418f-83c7-a8582ce2ec44",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Wargames",
+  "title_es": "",
   "year": "1983",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Thriller"
   ],
   "tmdb_id": "860",
-  "tmdb_poster_url": "zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg"
 }

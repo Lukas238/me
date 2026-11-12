@@ -1,10 +1,10 @@
 {
   "id": "2677d5c5-bb21-4882-bc4a-dff2b4404dd0",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Raiders of the Lost Ark",
+  "title_es": "",
   "year": "1981",
   "rating": "7+",
   "tags": [
@@ -12,6 +12,5 @@
     "Action"
   ],
   "tmdb_id": "85",
-  "tmdb_poster_url": "ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
 }

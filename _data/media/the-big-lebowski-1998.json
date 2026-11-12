@@ -1,10 +1,10 @@
 {
   "id": "36b369f6-db00-49d5-b72e-5c7938b504cf",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Big Lebowski",
+  "title_es": "",
   "year": "1998",
   "rating": "17+",
   "tags": [
@@ -12,6 +12,5 @@
     "Crime"
   ],
   "tmdb_id": "115",
-  "tmdb_poster_url": "3bv6WAp6BSxxYvB5ozKFUYuRA8C.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/3bv6WAp6BSxxYvB5ozKFUYuRA8C.jpg"
 }

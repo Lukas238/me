@@ -1,10 +1,10 @@
 {
   "id": "92e44315-9e32-4f15-93ef-eed6ecbcbe41",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Flight of the Navigator",
+  "title_es": "",
   "year": "1986",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Adventure"
   ],
   "tmdb_id": "10122",
-  "tmdb_poster_url": "tdRgQWMximj0tL6OWu9kRTtePmI.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/tdRgQWMximj0tL6OWu9kRTtePmI.jpg"
 }

@@ -1,10 +1,10 @@
 {
   "id": "db73ce1f-96a9-481e-b2ea-07aaec9e857a",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Galaxy Quest",
+  "title_es": "",
   "year": "1999",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Adventure"
   ],
   "tmdb_id": "926",
-  "tmdb_poster_url": "fZXSwgZknp81vmciTb86rw0MejV.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg"
 }

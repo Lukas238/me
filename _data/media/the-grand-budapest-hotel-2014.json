@@ -1,10 +1,10 @@
 {
   "id": "73fd617e-71c4-4425-bf65-0638650274ea",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Grand Budapest Hotel",
+  "title_es": "",
   "year": "2014",
   "rating": "17+",
   "tags": [
@@ -12,6 +12,5 @@
     "Drama"
   ],
   "tmdb_id": "120467",
-  "tmdb_poster_url": "eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg"
 }

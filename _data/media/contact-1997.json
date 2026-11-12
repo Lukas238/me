@@ -1,10 +1,10 @@
 {
   "id": "ebd80941-5ea6-4ddd-bfe5-9c6820143504",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Contact",
+  "title_es": "",
   "year": "1997",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Mystery"
   ],
   "tmdb_id": "686",
-  "tmdb_poster_url": "bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg"
 }

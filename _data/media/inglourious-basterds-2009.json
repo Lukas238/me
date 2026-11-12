@@ -1,10 +1,10 @@
 {
   "id": "ca1c9211-16da-4444-abef-5321a50b4e98",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Inglourious Basterds",
+  "title_es": "",
   "year": "2009",
   "rating": "17+",
   "tags": [
@@ -13,6 +13,5 @@
     "War"
   ],
   "tmdb_id": "16869",
-  "tmdb_poster_url": "aupnPtagH9JVBuMrGEanf4iqXEQ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/aupnPtagH9JVBuMrGEanf4iqXEQ.jpg"
 }

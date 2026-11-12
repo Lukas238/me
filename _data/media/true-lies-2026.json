@@ -1,0 +1,13 @@
+{
+  "id": "d848eccc-b51f-44e5-b2ef-daf29d52ed8e",
+  "type": "movie",
+  "watched": false,
+  "favorite": false,
+  "title": "True Lies",
+  "title_es": "Mentiras Verdaderas",
+  "year": "1994",
+  "rating": "17+",
+  "tags": [],
+  "tmdb_id": "36955",
+  "cover": "https://image.tmdb.org/t/p/w500/pqdvCBDThAOjlA0XBzbNm7GvwpU.jpg"
+}

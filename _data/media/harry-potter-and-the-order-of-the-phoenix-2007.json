@@ -1,10 +1,10 @@
 {
   "id": "73b67c0b-742a-41a7-bcba-3a2e499cac16",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Harry Potter and the Order of the Phoenix",
+  "title_es": "",
   "year": "2007",
   "rating": "13+",
   "tags": [
@@ -12,6 +12,5 @@
     "Fantasy"
   ],
   "tmdb_id": "675",
-  "tmdb_poster_url": "5aOyriWkPec0zUDxmHFP9qMmBaj.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/5aOyriWkPec0zUDxmHFP9qMmBaj.jpg"
 }

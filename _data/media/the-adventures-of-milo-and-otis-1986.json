@@ -1,7 +1,6 @@
 {
   "id": "5e47c677-629b-4084-9051-82e7c51196bf",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Adventures of Milo and Otis",
@@ -14,6 +13,5 @@
     "Family"
   ],
   "tmdb_id": "47951",
-  "tmdb_poster_url": "imHIqEfWRZuJ2vLow0UJ9aqjyEO.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/imHIqEfWRZuJ2vLow0UJ9aqjyEO.jpg"
 }

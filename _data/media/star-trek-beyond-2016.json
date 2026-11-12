@@ -1,10 +1,10 @@
 {
   "id": "d9a89fc0-668b-46ad-adf0-dd5e16196527",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek Beyond",
+  "title_es": "",
   "year": "2016",
   "rating": "13+",
   "tags": [
@@ -13,6 +13,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "188927",
-  "tmdb_poster_url": "wI5VghYNYLktDRPUa5rrVcVA1h7.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wI5VghYNYLktDRPUa5rrVcVA1h7.jpg"
 }

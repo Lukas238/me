@@ -15,7 +15,8 @@ const { loadEnv } = require('./lib/env');
 
 const LANG = loadEnv().TMDB_LANG || 'en-US';
 const COUNTRY = 'US'; // certification source for the age rating
-const FIELD_ORDER = ['id', 'type', 'status', 'watched', 'favorite', 'title', 'title_es', 'year', 'rating', 'tags', 'tmdb_id', 'tmdb_poster_url'];
+const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w500';
+const FIELD_ORDER = ['id', 'type', 'watched', 'favorite', 'title', 'title_es', 'year', 'rating', 'tags', 'tmdb_id', 'cover'];
 
 const MOVIE_AGE = { G: '0+', PG: '7+', 'PG-13': '13+', R: '17+', 'NC-17': '18+' };
 const TV_AGE = { 'TV-Y': '0+', 'TV-Y7': '7+', 'TV-G': '0+', 'TV-PG': '10+', 'TV-14': '14+', 'TV-MA': '17+' };
@@ -98,7 +99,7 @@ function ageRating(kind, data) {
 }
 
 // An entry needs a lookup while any of the TMDb fields is missing
-const needsLookup = item => isEmpty(item.tmdb_id) || isEmpty(item.tmdb_poster_url) || isEmpty(item.tags);
+const needsLookup = item => isEmpty(item.tmdb_id) || isEmpty(item.cover) || isEmpty(item.tags);
 
 // Finds the TMDb entry: by id when the list already has one, otherwise by title + year (movie first when the type is not given)
 async function resolve(item) {
@@ -124,13 +125,12 @@ function fill(item, kind, data) {
 
   set('id', randomUUID());
   set('type', kind === 'tv' ? 'series' : 'movie');
-  if (next.status === undefined) next.status = '';
   if (next.watched === undefined) next.watched = false;
   if (next.favorite === undefined) next.favorite = false;
   set('rating', ageRating(kind, data));
-  set('tags', (data.genres || []).map(g => g.name).join('; '));
+  set('tags', (data.genres || []).map(g => g.name));
   set('tmdb_id', String(data.id));
-  set('tmdb_poster_url', (data.poster_path || '').replace(/^\/+/, ''));
+  set('cover', data.poster_path ? TMDB_IMAGE_BASE + data.poster_path : '');
 
   const ordered = {};
   FIELD_ORDER.forEach(field => { if (field in next) ordered[field] = next[field]; });
@@ -178,9 +178,9 @@ async function main() {
     if (!dryRun) fs.writeFileSync(entry.file, JSON.stringify(next, null, 2) + '\n');
     updated++;
 
-    console.log(`+ ${label} -> ${next.type} #${next.tmdb_id} | ${next.tags || 'no genres'} | ${next.rating || 'no rating'}`);
+    console.log(`+ ${label} -> ${next.type} #${next.tmdb_id} | ${Array.isArray(next.tags) ? next.tags.join(', ') : next.tags || 'no genres'} | ${next.rating || 'no rating'}`);
     if (!next.rating) console.log('    no US certification on TMDb, rating left empty');
-    if (!next.tmdb_poster_url) console.log('    no poster on TMDb');
+    if (!next.cover) console.log('    no poster on TMDb');
     if (duplicate) console.log(`    already in the list as "${duplicate.item.title}"`);
   }
 

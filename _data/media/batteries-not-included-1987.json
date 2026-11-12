@@ -1,10 +1,10 @@
 {
   "id": "276d8214-9d78-40b8-96c6-980ad0326d03",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Batteries Not Included",
+  "title_es": "",
   "year": "1987",
   "rating": "7+",
   "tags": [
@@ -13,6 +13,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "11548",
-  "tmdb_poster_url": "8NkpnpdLd8J6zCR8ZGTeGTur4uO.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/8NkpnpdLd8J6zCR8ZGTeGTur4uO.jpg"
 }

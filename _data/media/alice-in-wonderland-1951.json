@@ -1,10 +1,10 @@
 {
   "id": "ffc68423-13aa-4cc0-85c5-8e7f187ea988",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Alice in Wonderland",
+  "title_es": "",
   "year": "1951",
   "rating": "0+",
   "tags": [
@@ -14,6 +14,5 @@
     "Adventure"
   ],
   "tmdb_id": "12092",
-  "tmdb_poster_url": "20cvfwfaFqNbe9Fc3VEHJuPRxmn.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/20cvfwfaFqNbe9Fc3VEHJuPRxmn.jpg"
 }

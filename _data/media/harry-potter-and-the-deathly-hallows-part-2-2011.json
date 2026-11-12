@@ -1,10 +1,10 @@
 {
   "id": "741ec482-11cc-4bb3-9f31-b047fcd913bb",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Harry Potter and the Deathly Hallows - Part 2",
+  "title_es": "",
   "year": "2011",
   "rating": "13+",
   "tags": [
@@ -12,6 +12,5 @@
     "Fantasy"
   ],
   "tmdb_id": "12445",
-  "tmdb_poster_url": "c54HpQmuwXjHq2C9wmoACjxoom3.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/c54HpQmuwXjHq2C9wmoACjxoom3.jpg"
 }

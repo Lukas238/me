@@ -1,10 +1,10 @@
 {
   "id": "1580b844-7afa-4295-b7b0-319b79265cde",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "28 Days Later",
+  "title_es": "",
   "year": "2002",
   "rating": "17+",
   "tags": [

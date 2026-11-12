@@ -1,10 +1,10 @@
 {
   "id": "dfe2fead-aeaa-42d8-ac50-d1ba6b5f160b",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek",
+  "title_es": "",
   "year": "2009",
   "rating": "13+",
   "tags": [
@@ -13,6 +13,5 @@
     "Adventure"
   ],
   "tmdb_id": "13475",
-  "tmdb_poster_url": "lV5OpzAss1z06YNagOVap1I35mH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lV5OpzAss1z06YNagOVap1I35mH.jpg"
 }

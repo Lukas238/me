@@ -1,10 +1,10 @@
 {
   "id": "7fd364e8-8e5d-4a72-8d7e-9d0196b32d26",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Frank Herbert's Dune",
+  "title_es": "",
   "year": "2000",
   "rating": "14+",
   "tags": [
@@ -13,6 +13,5 @@
     "Drama"
   ],
   "tmdb_id": "19566",
-  "tmdb_poster_url": "iIf5XeuuBKPtG6H7MfWLirbJGrQ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/iIf5XeuuBKPtG6H7MfWLirbJGrQ.jpg"
 }

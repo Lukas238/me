@@ -1,10 +1,10 @@
 {
   "id": "d89e220c-66ed-4b68-b37c-b2a446c20656",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Time Bandits",
+  "title_es": "",
   "year": "1981",
   "rating": "7+",
   "tags": [
@@ -15,6 +15,5 @@
     "Comedy"
   ],
   "tmdb_id": "36819",
-  "tmdb_poster_url": "4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
 }

@@ -1,0 +1,13 @@
+{
+  "id": "01adae40-1d65-4f62-959c-8345b621ed82",
+  "type": "movie",
+  "watched": false,
+  "favorite": false,
+  "title": "Gemelos",
+  "title_es": "",
+  "year": "1988",
+  "rating": "7+",
+  "tags": [],
+  "tmdb_id": "9493",
+  "cover": "https://image.tmdb.org/t/p/w500/stJx9BQZbXrZnTGf9Erc7d2UMVc.jpg"
+}

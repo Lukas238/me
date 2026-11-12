@@ -1,10 +1,10 @@
 {
   "id": "acf2ca0e-c610-4ba5-9e75-d1f26e9fd5d9",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dragon Ball",
+  "title_es": "",
   "year": "1986",
   "rating": "10+",
   "tags": [
@@ -13,6 +13,5 @@
     "Sci-Fi & Fantasy"
   ],
   "tmdb_id": "12609",
-  "tmdb_poster_url": "onCLyCOgszTIyyVs2XKYSkKPOPG.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/onCLyCOgszTIyyVs2XKYSkKPOPG.jpg"
 }

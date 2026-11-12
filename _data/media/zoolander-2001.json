@@ -1,16 +1,15 @@
 {
   "id": "75599651-b50b-4eba-b995-06c811067611",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Zoolander",
+  "title_es": "",
   "year": "2001",
   "rating": "13+",
   "tags": [
     "Comedy"
   ],
   "tmdb_id": "9398",
-  "tmdb_poster_url": "qdrbSneHZjJG2Dj0hhBxzzAo4HB.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qdrbSneHZjJG2Dj0hhBxzzAo4HB.jpg"
 }

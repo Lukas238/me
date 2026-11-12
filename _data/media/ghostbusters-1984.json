@@ -1,10 +1,10 @@
 {
   "id": "f76da05e-80b3-4335-926f-b44a130a6bcc",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Ghostbusters",
+  "title_es": "",
   "year": "1984",
   "rating": "7+",
   "tags": [
@@ -12,6 +12,5 @@
     "Fantasy"
   ],
   "tmdb_id": "620",
-  "tmdb_poster_url": "7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg"
 }

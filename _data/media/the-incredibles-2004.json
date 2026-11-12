@@ -1,10 +1,10 @@
 {
   "id": "b99d75c9-bbb2-4955-a998-3d8b2385bab5",
   "type": "movie",
-  "status": "",
   "watched": true,
   "favorite": false,
   "title": "The Incredibles",
+  "title_es": "",
   "year": "2004",
   "rating": "7+",
   "tags": [
@@ -14,6 +14,5 @@
     "Family"
   ],
   "tmdb_id": "9806",
-  "tmdb_poster_url": "2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg"
 }

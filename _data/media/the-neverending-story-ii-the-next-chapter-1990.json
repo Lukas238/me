@@ -1,10 +1,10 @@
 {
   "id": "a5869f44-8f93-48ae-bc90-db0ec1e32c9d",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The NeverEnding Story II: The Next Chapter",
+  "title_es": "",
   "year": "1990",
   "rating": "7+",
   "tags": [
@@ -14,6 +14,5 @@
     "Drama"
   ],
   "tmdb_id": "34636",
-  "tmdb_poster_url": "5QfUCbgKzWzjHO5X4ANsDmuTxNQ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/bRSLCuO2B6owYBtUwGYGqWZCVo6.jpg"
 }

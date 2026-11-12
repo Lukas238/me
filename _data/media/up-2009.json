@@ -1,10 +1,10 @@
 {
   "id": "b0cb94d1-ba88-4d62-b971-a581d572f6c8",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Up",
+  "title_es": "",
   "year": "2009",
   "rating": "7+",
   "tags": [
@@ -14,6 +14,5 @@
     "Adventure"
   ],
   "tmdb_id": "14160",
-  "tmdb_poster_url": "mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg"
 }

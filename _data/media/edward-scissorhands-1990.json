@@ -1,10 +1,10 @@
 {
   "id": "6d4f6664-38bb-471c-949b-1e3d5f416db4",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Edward Scissorhands",
+  "title_es": "",
   "year": "1990",
   "rating": "13+",
   "tags": [
@@ -13,6 +13,5 @@
     "Romance"
   ],
   "tmdb_id": "162",
-  "tmdb_poster_url": "e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg"
 }

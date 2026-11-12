@@ -1,16 +1,15 @@
 {
   "id": "92569ef6-42e0-40a8-ae18-3fd0709ecfb6",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dumb and Dumber",
+  "title_es": "",
   "year": "1994",
   "rating": "13+",
   "tags": [
     "Comedy"
   ],
   "tmdb_id": "8467",
-  "tmdb_poster_url": "4LdpBXiCyGKkR8FGHgjKlphrfUc.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/4LdpBXiCyGKkR8FGHgjKlphrfUc.jpg"
 }
