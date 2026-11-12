@@ -3,7 +3,7 @@ backend:
   repo: Lukas238/me
   branch: main
 
-media_folder: assets/uploads
+media_folder: /assets/uploads
 public_folder: /assets/uploads
 
 collections:
@@ -31,6 +31,23 @@ collections:
       - name: body
         label: Contenido
         widget: markdown
+
+  # HOME PAGE
+  - name: home
+    label: 🏠 Home
+    files:
+      - name: home
+        label: Home
+        file: index.md
+        format: frontmatter
+        fields:
+          - name: layout
+            label: Layout
+            widget: hidden
+            default: about
+          - name: body
+            label: Contenido
+            widget: markdown
 
   # POSTS DE BLOG
   - name: posts
@@ -229,6 +246,26 @@ collections:
         widget: datetime
         type: date
         required: false
+
+  # BACKGROUNDS
+  - name: backgrounds
+    label: 🌅 Backgrounds
+    file: _data/backgrounds.json
+    format: json
+    thumbnail: image
+    summary: "{{fields.image}} ({{fields.year}})"
+    sortable_fields: [year]
+    filterable_fields: [year]
+    fields:
+      - name: image
+        label: Imagen
+        widget: image
+        media_folder: /assets/backgrounds
+        public_folder: /assets/backgrounds
+      - name: year
+        label: Año
+        widget: number
+        value_type: int/string
 
   # CONFIGURACIÓN DEL SITIO
   - name: site_config
