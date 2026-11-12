@@ -1,7 +1,6 @@
 {
   "id": "3309253c-fb98-4508-b422-a1a15e3b5827",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Matrix",
@@ -12,6 +11,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "603",
-  "tmdb_poster_url": "dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/p96dm7sCMn4VYAStA6siNz30G1r.jpg"
 }

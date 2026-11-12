@@ -1,7 +1,6 @@
 {
   "id": "da6245b5-1813-4547-aa9d-7febb0eb8bf2",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Monty Python's Life of Brian",
@@ -11,6 +10,5 @@
     "Comedy"
   ],
   "tmdb_id": "583",
-  "tmdb_poster_url": "lSSA64WF0M0BXnjwr2quMh6shCl.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg"
 }

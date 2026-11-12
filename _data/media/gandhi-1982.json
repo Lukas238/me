@@ -1,7 +1,6 @@
 {
   "id": "a6c2897a-f983-4d9e-ba33-7157a3f32b6c",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Gandhi",
@@ -12,6 +11,5 @@
     "History"
   ],
   "tmdb_id": "783",
-  "tmdb_poster_url": "rOXftt7SluxskrFrvU7qFJa5zeN.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/rOXftt7SluxskrFrvU7qFJa5zeN.jpg"
 }

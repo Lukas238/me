@@ -1,7 +1,6 @@
 {
   "id": "d882a3c9-d442-490c-bbf1-2f08af1eb594",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Evil Dead",
@@ -11,6 +10,5 @@
     "Horror"
   ],
   "tmdb_id": "764",
-  "tmdb_poster_url": "54C1qdaiSijIU5NeNb4WsPJdNkG.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/54C1qdaiSijIU5NeNb4WsPJdNkG.jpg"
 }

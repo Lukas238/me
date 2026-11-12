@@ -1,7 +1,6 @@
 {
   "id": "cadb065e-34b3-4d6c-b138-9b84232dd04b",
   "type": "movie",
-  "status": "",
   "watched": true,
   "favorite": false,
   "title": "Moana",
@@ -14,6 +13,5 @@
     "Animation"
   ],
   "tmdb_id": "277834",
-  "tmdb_poster_url": "m5MDZOIFEFlxGiLuAzWzFSsWcye.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9tzN8sPbyod2dsa0lwuvrwBDWra.jpg"
 }

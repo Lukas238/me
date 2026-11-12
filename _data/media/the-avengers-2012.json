@@ -1,7 +1,6 @@
 {
   "id": "6b323e6e-7c45-4d43-a5d6-4c630adfe0c0",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Avengers",
@@ -13,6 +12,5 @@
     "Adventure"
   ],
   "tmdb_id": "24428",
-  "tmdb_poster_url": "RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
 }

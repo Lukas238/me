@@ -1,7 +1,6 @@
 {
   "id": "bed63105-8ac4-40d6-8947-9f3bcbb3b950",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Explorers",
@@ -13,6 +12,5 @@
     "Family"
   ],
   "tmdb_id": "9872",
-  "tmdb_poster_url": "oFJosj5ECYjf1jkvpTEjGNzPx2x.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/oFJosj5ECYjf1jkvpTEjGNzPx2x.jpg"
 }

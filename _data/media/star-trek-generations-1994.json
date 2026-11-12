@@ -1,7 +1,6 @@
 {
   "id": "29410fe5-5ffd-4654-a597-7a4591895f59",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: Generations",
@@ -14,6 +13,5 @@
     "Thriller"
   ],
   "tmdb_id": "193",
-  "tmdb_poster_url": "wqU1XiJgvgJVrFCWjZEqat3icMT.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wqU1XiJgvgJVrFCWjZEqat3icMT.jpg"
 }

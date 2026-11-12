@@ -1,7 +1,6 @@
 {
   "id": "89825a3b-4e2f-4fc9-b382-dc53e63e7df2",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Tangled",
@@ -13,6 +12,5 @@
     "Adventure"
   ],
   "tmdb_id": "38757",
-  "tmdb_poster_url": "ym7Kst6a4uodryxqbGOxmewF235.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg"
 }

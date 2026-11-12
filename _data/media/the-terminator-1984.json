@@ -1,7 +1,6 @@
 {
   "id": "7cb89ca2-37ca-4fa2-858d-c0ec1ca1b5d0",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Terminator",
@@ -13,6 +12,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "218",
-  "tmdb_poster_url": "qvktm0BHcnmDpul4Hz01GIazWPr.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qvktm0BHcnmDpul4Hz01GIazWPr.jpg"
 }

@@ -1,7 +1,6 @@
 {
   "id": "1c216c0f-99d2-4aa6-96b1-76282b523c0f",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Rock",
@@ -13,6 +12,5 @@
     "Thriller"
   ],
   "tmdb_id": "9802",
-  "tmdb_poster_url": "eBcoxveWzzXQrCrwWMGAROcqgpP.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eBcoxveWzzXQrCrwWMGAROcqgpP.jpg"
 }

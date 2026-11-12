@@ -1,7 +1,6 @@
 {
   "id": "72388088-3a44-4fa4-bf0a-35ce9baeeb8e",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Animaniacs",
@@ -14,6 +13,5 @@
     "Family"
   ],
   "tmdb_id": "82",
-  "tmdb_poster_url": "c1b2UtrhbMOdHKISB2ZvINo9eyc.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/bqUIqC7zMKYkdZpK6I7ZfJE3I3g.jpg"
 }

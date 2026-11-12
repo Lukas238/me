@@ -1,7 +1,6 @@
 {
   "id": "3a9ac684-c1cc-4930-b2dc-b7c5b0f2d03e",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Multiplicity",
@@ -14,6 +13,5 @@
     "Romance"
   ],
   "tmdb_id": "9304",
-  "tmdb_poster_url": "rlG2vi85uSEwWigVTtqDecVFTxR.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/rlG2vi85uSEwWigVTtqDecVFTxR.jpg"
 }

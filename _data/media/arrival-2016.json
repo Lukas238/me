@@ -1,7 +1,6 @@
 {
   "id": "6f15903f-fba3-460a-ac32-adff5bdf69b9",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Arrival",
@@ -13,6 +12,5 @@
     "Mystery"
   ],
   "tmdb_id": "329865",
-  "tmdb_poster_url": "pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg"
 }

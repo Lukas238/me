@@ -1,7 +1,6 @@
 {
   "id": "d00e0ce3-6749-4f0c-8bf8-f90fe31a9b1c",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek IV: The Voyage Home",
@@ -12,6 +11,5 @@
     "Adventure"
   ],
   "tmdb_id": "168",
-  "tmdb_poster_url": "xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg"
 }

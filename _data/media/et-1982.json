@@ -1,7 +1,6 @@
 {
   "id": "b093f122-0777-422b-a37e-4732beae18ef",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "ET",
@@ -14,6 +13,5 @@
     "Fantasy"
   ],
   "tmdb_id": "601",
-  "tmdb_poster_url": "an0nD6uq6byfxXCfk6lQBzdL2J1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg"
 }

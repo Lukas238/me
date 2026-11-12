@@ -1,7 +1,6 @@
 {
   "id": "bee3126e-dd38-4f7b-af5b-c689984fe1a3",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Rob Roy",
@@ -15,6 +14,5 @@
     "War"
   ],
   "tmdb_id": "11780",
-  "tmdb_poster_url": "kWI2rF6RAnRtEjfBlZgsXumgOm5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/kWI2rF6RAnRtEjfBlZgsXumgOm5.jpg"
 }

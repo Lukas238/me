@@ -1,7 +1,6 @@
 {
   "id": "2fc77c88-aeb6-4e18-9d72-b5d1522c538e",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Dark Knight",
@@ -13,6 +12,5 @@
     "Crime"
   ],
   "tmdb_id": "155",
-  "tmdb_poster_url": "qJ2tW6WMUDux911r6m7haRef0WH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
 }

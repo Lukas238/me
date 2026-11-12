@@ -1,7 +1,6 @@
 {
   "id": "33c274ac-d594-45ee-8e20-9b2d89169058",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Mask of Zorro",
@@ -12,6 +11,5 @@
     "Adventure"
   ],
   "tmdb_id": "9342",
-  "tmdb_poster_url": "bdMufwGDDzqu4kTSQwrKc5WR4bu.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/bdMufwGDDzqu4kTSQwrKc5WR4bu.jpg"
 }

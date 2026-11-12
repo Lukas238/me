@@ -1,7 +1,6 @@
 {
   "id": "cfcd66ec-5294-4823-874d-1b0a28d9bbf6",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Braveheart",
@@ -13,6 +12,5 @@
     "War"
   ],
   "tmdb_id": "197",
-  "tmdb_poster_url": "or1gBugydmjToAEq7OZY0owwFk.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg"
 }

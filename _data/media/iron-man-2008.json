@@ -1,7 +1,6 @@
 {
   "id": "cfc7d715-77b7-48e7-ba49-d5f8da3b1cd2",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Iron Man",
@@ -13,6 +12,5 @@
     "Adventure"
   ],
   "tmdb_id": "1726",
-  "tmdb_poster_url": "78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
 }

@@ -1,7 +1,6 @@
 {
   "id": "cff3de4f-13d7-410b-bcd9-3bf037a3d068",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Aladdin",
@@ -15,6 +14,5 @@
     "Romance"
   ],
   "tmdb_id": "812",
-  "tmdb_poster_url": "eLFfl7vS8dkeG1hKp5mwbm37V83.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eLFfl7vS8dkeG1hKp5mwbm37V83.jpg"
 }

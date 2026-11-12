@@ -1,7 +1,6 @@
 {
   "id": "01d7e4a7-7b03-4a36-8d28-0a2168ff179f",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Mad Max",
@@ -13,6 +12,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "9659",
-  "tmdb_poster_url": "5LrI4GiCSrChgkdskVZiwv643Kg.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg"
 }

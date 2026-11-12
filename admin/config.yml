@@ -133,6 +133,7 @@ collections:
     format: json
     create: true
     thumbnail: cover
+    public_folder: https://image.tmdb.org/t/p/w500/
     slug: "{{title}}-{{year}}"
     summary: "{{title}} ({{year}})"
     sortable_fields: [title, year]
@@ -167,10 +168,10 @@ collections:
         label: ¿Visto?
         widget: boolean
         default: false
-      - name: status
-        label: Estado
-        widget: text
-        required: false
+      - name: favorite
+        label: ⭐ Favorito
+        widget: boolean
+        default: false
       - name: tags
         label: Géneros/Etiquetas
         widget: list

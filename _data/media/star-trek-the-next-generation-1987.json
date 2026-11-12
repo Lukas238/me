@@ -1,7 +1,6 @@
 {
   "id": "e5b895da-c46c-45e7-a92e-5e769e0654e2",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: The Next Generation",
@@ -14,6 +13,5 @@
     "Mystery"
   ],
   "tmdb_id": "655",
-  "tmdb_poster_url": "vkLzXddgUKH5VcpnYiRzpJFrZhz.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vkLzXddgUKH5VcpnYiRzpJFrZhz.jpg"
 }

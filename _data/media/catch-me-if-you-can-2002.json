@@ -1,7 +1,6 @@
 {
   "id": "6a14bba7-1a2e-4531-aeae-8bad6b01a3b5",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Catch Me If You Can",
@@ -12,6 +11,5 @@
     "Crime"
   ],
   "tmdb_id": "640",
-  "tmdb_poster_url": "ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg"
 }

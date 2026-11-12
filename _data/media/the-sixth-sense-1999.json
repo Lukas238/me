@@ -1,7 +1,6 @@
 {
   "id": "053a0d72-4b30-4950-a5d7-e9eb24d78139",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Sixth Sense",
@@ -13,6 +12,5 @@
     "Drama"
   ],
   "tmdb_id": "745",
-  "tmdb_poster_url": "vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg"
 }

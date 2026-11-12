@@ -1,7 +1,6 @@
 {
   "id": "5c72e5ee-4474-434b-91e0-adefa8a1f82a",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Blades of Glory",
@@ -11,6 +10,5 @@
     "Comedy"
   ],
   "tmdb_id": "9955",
-  "tmdb_poster_url": "yclY3zyzrL1MS9b6Eygs9ks0ZTY.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yclY3zyzrL1MS9b6Eygs9ks0ZTY.jpg"
 }

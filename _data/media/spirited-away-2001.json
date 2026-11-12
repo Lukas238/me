@@ -1,7 +1,6 @@
 {
   "id": "bc24fd1b-1a4e-4ab3-a1ad-46de588e360b",
   "type": "movie",
-  "status": "",
   "watched": true,
   "favorite": false,
   "title": "Spirited Away",
@@ -13,6 +12,5 @@
     "Fantasy"
   ],
   "tmdb_id": "129",
-  "tmdb_poster_url": "39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/laXrmaTRuroArSPfsGlvTbeWxVA.jpg"
 }

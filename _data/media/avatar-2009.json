@@ -1,7 +1,6 @@
 {
   "id": "6c10eb09-450d-485c-b8d5-b88d8301b7cb",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Avatar",
@@ -13,6 +12,5 @@
     "Adventure"
   ],
   "tmdb_id": "19995",
-  "tmdb_poster_url": "gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg"
 }

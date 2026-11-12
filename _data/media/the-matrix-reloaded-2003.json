@@ -1,7 +1,6 @@
 {
   "id": "ab0637c1-9133-4d15-bc6d-b123512aa8bb",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Matrix Reloaded",
@@ -14,6 +13,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "604",
-  "tmdb_poster_url": "8xEVAe84zlL9rkfYT6dZXero4KK.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg"
 }

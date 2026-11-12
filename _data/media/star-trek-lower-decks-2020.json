@@ -1,7 +1,6 @@
 {
   "id": "43eed06e-1ed6-4246-9357-8f46973ed256",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: Lower Decks",
@@ -13,6 +12,5 @@
     "Comedy"
   ],
   "tmdb_id": "85948",
-  "tmdb_poster_url": "i7Em3r7KCyNfkOwMkyqN8UMvK8S.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/i7Em3r7KCyNfkOwMkyqN8UMvK8S.jpg"
 }

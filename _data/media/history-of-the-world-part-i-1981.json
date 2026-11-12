@@ -1,7 +1,6 @@
 {
   "id": "df468035-99f6-458f-b391-4276ac7746d8",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "History of the World, Part I",
@@ -11,6 +10,5 @@
     "Comedy"
   ],
   "tmdb_id": "10156",
-  "tmdb_poster_url": "1bMaEfI76yrGjCSDquCippAFIDI.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/1bMaEfI76yrGjCSDquCippAFIDI.jpg"
 }

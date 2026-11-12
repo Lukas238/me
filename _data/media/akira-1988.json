@@ -1,7 +1,6 @@
 {
   "id": "b73d3cae-d043-456d-ba9c-6ca422667d57",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Akira",
@@ -13,6 +12,5 @@
     "Action"
   ],
   "tmdb_id": "149",
-  "tmdb_poster_url": "neZ0ykEsPqxamsX6o5QNUFILQrz.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg"
 }

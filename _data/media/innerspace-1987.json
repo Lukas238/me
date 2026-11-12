@@ -1,7 +1,6 @@
 {
   "id": "3362d3cb-7739-4adb-99ae-4344c46163de",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Innerspace",
@@ -13,6 +12,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "2614",
-  "tmdb_poster_url": "nuK4HEeIByWg1BSJrXAAQ4pIAJW.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nuK4HEeIByWg1BSJrXAAQ4pIAJW.jpg"
 }

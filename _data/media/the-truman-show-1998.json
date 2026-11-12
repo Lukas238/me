@@ -1,7 +1,6 @@
 {
   "id": "6116a6f8-2b8b-4909-9afb-16fa918e45f8",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Truman Show",
@@ -12,6 +11,5 @@
     "Drama"
   ],
   "tmdb_id": "37165",
-  "tmdb_poster_url": "vuza0WqY239yBXOadKlGwJsZJFE.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vuza0WqY239yBXOadKlGwJsZJFE.jpg"
 }

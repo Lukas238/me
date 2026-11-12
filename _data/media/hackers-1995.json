@@ -1,7 +1,6 @@
 {
   "id": "519715aa-c5f1-4208-b951-9b22e518520f",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Hackers",
@@ -14,6 +13,5 @@
     "Drama"
   ],
   "tmdb_id": "10428",
-  "tmdb_poster_url": "qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
 }

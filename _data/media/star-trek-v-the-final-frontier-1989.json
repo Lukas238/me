@@ -1,7 +1,6 @@
 {
   "id": "ce229909-dabf-4a97-8577-19db9f822773",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek V: The Final Frontier",
@@ -14,6 +13,5 @@
     "Thriller"
   ],
   "tmdb_id": "172",
-  "tmdb_poster_url": "uiXr41VLYsuug3CZbFrKLSNahuZ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/uiXr41VLYsuug3CZbFrKLSNahuZ.jpg"
 }

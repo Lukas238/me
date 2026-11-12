@@ -1,7 +1,6 @@
 {
   "id": "0e66409d-964d-4c8e-976d-bdd3bb740f26",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: Voyager",
@@ -13,6 +12,5 @@
     "Action & Adventure"
   ],
   "tmdb_id": "1855",
-  "tmdb_poster_url": "gNS5tRSG3UlXodCxznKKOKweqxh.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
 }

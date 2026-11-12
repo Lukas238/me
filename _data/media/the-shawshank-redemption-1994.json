@@ -1,7 +1,6 @@
 {
   "id": "778b7116-a1b2-430b-852c-968df8742b96",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Shawshank Redemption",
@@ -12,6 +11,5 @@
     "Crime"
   ],
   "tmdb_id": "278",
-  "tmdb_poster_url": "9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
 }

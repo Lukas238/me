@@ -1,7 +1,6 @@
 {
   "id": "f5568421-5a5d-4567-95cb-574bf95d7817",
   "type": "movie",
-  "status": "",
   "watched": true,
   "favorite": false,
   "title": "Hook",
@@ -14,6 +13,5 @@
     "Family"
   ],
   "tmdb_id": "879",
-  "tmdb_poster_url": "a6rB1lGXoGms7gWxRfJneQmAjNV.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/a6rB1lGXoGms7gWxRfJneQmAjNV.jpg"
 }

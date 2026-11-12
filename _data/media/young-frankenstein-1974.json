@@ -1,7 +1,6 @@
 {
   "id": "0ecd8fe2-0c59-4016-abeb-9d67f677385a",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Young Frankenstein",
@@ -11,6 +10,5 @@
     "Comedy"
   ],
   "tmdb_id": "3034",
-  "tmdb_poster_url": "3BvvVKPg9yucChlSvQtJxAbLmj9.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/3BvvVKPg9yucChlSvQtJxAbLmj9.jpg"
 }

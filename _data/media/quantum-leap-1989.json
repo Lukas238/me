@@ -1,7 +1,6 @@
 {
   "id": "45fd5573-5cd5-4b1b-ae06-0f0cfff50ca5",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Quantum Leap",
@@ -13,6 +12,5 @@
     "Drama"
   ],
   "tmdb_id": "4018",
-  "tmdb_poster_url": "ujIGP3e3V6kDQHRhjNYtUE3fHJi.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ujIGP3e3V6kDQHRhjNYtUE3fHJi.jpg"
 }

@@ -1,7 +1,6 @@
 {
   "id": "4cc0854c-7d0c-4543-8746-038e76f0fd3e",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Fifth Element",
@@ -13,6 +12,5 @@
     "Adventure"
   ],
   "tmdb_id": "18",
-  "tmdb_poster_url": "fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg"
 }

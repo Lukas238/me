@@ -1,7 +1,6 @@
 {
   "id": "b8558d68-cf0d-451e-817c-11554cbfd0ac",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: Discovery",
@@ -13,6 +12,5 @@
     "Drama"
   ],
   "tmdb_id": "67198",
-  "tmdb_poster_url": "xwpOHgym48Ftz7fbJq5te5xoiwu.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xwpOHgym48Ftz7fbJq5te5xoiwu.jpg"
 }

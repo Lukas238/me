@@ -1,7 +1,6 @@
 {
   "id": "6d71c9cd-339b-4922-a10b-0a8089058d3b",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Independence Day",
@@ -13,6 +12,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "602",
-  "tmdb_poster_url": "p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg"
 }

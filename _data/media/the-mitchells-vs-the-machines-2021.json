@@ -1,7 +1,6 @@
 {
   "id": "6f836d29-c329-4b38-911b-f941dbd9b00d",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Mitchells vs. the Machines",
@@ -13,6 +12,5 @@
     "Comedy"
   ],
   "tmdb_id": "501929",
-  "tmdb_poster_url": "mI2Di7HmskQQ34kz0iau6J1vr70.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/mI2Di7HmskQQ34kz0iau6J1vr70.jpg"
 }

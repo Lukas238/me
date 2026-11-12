@@ -1,7 +1,6 @@
 {
   "id": "71050b6a-f6cd-412a-a1ae-337e3cd2a535",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Django Unchained",
@@ -12,6 +11,5 @@
     "Western"
   ],
   "tmdb_id": "68718",
-  "tmdb_poster_url": "7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg"
 }

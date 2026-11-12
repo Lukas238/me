@@ -1,7 +1,6 @@
 {
   "id": "c583e598-29e0-47f6-9227-047648ac8658",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Frozen",
@@ -14,6 +13,5 @@
     "Fantasy"
   ],
   "tmdb_id": "109445",
-  "tmdb_poster_url": "itAKcobTYGpYT8Phwjd8c9hleTo.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/itAKcobTYGpYT8Phwjd8c9hleTo.jpg"
 }

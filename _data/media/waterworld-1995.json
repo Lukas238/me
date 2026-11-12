@@ -1,7 +1,6 @@
 {
   "id": "1c44c896-13ff-4dd6-ab6e-2f5c86d1f0f3",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Waterworld",
@@ -12,6 +11,5 @@
     "Action"
   ],
   "tmdb_id": "9804",
-  "tmdb_poster_url": "X4UyUO5jgzs3c5YafnmYKLKKYw.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/X4UyUO5jgzs3c5YafnmYKLKKYw.jpg"
 }

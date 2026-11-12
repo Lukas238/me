@@ -1,7 +1,6 @@
 {
   "id": "1c81f18f-bcc6-452e-8348-556b2f0774a4",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Robin Hood: Prince of Thieves",
@@ -13,6 +12,5 @@
     "Drama"
   ],
   "tmdb_id": "8367",
-  "tmdb_poster_url": "hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg"
 }

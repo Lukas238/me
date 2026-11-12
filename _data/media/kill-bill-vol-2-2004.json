@@ -1,7 +1,6 @@
 {
   "id": "4f071b0b-b2c1-4bc9-8769-5229e7ac6613",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Kill Bill: Vol. 2",
@@ -13,6 +12,5 @@
     "Thriller"
   ],
   "tmdb_id": "393",
-  "tmdb_poster_url": "2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg"
 }

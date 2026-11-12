@@ -1,7 +1,6 @@
 {
   "id": "05339433-0012-4600-8893-172351bc66c0",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Harry Potter and the Prisoner of Azkaban",
@@ -12,6 +11,5 @@
     "Fantasy"
   ],
   "tmdb_id": "673",
-  "tmdb_poster_url": "aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg"
 }

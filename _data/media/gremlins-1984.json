@@ -1,7 +1,6 @@
 {
   "id": "2b020cc3-072d-46d4-ae37-397a9ed97644",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Gremlins",
@@ -13,6 +12,5 @@
     "Comedy"
   ],
   "tmdb_id": "927",
-  "tmdb_poster_url": "6m0F7fsXjQvUbCZrPWcJNrjvIui.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/6m0F7fsXjQvUbCZrPWcJNrjvIui.jpg"
 }

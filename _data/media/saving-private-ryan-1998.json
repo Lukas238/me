@@ -1,7 +1,6 @@
 {
   "id": "dd8f0d5b-481b-4595-971b-224a893b2c45",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Saving Private Ryan",
@@ -13,6 +12,5 @@
     "History"
   ],
   "tmdb_id": "857",
-  "tmdb_poster_url": "uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg"
 }

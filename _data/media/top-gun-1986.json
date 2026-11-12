@@ -1,7 +1,6 @@
 {
   "id": "7d9ac721-32f5-459e-838e-60ae96175292",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Top Gun",
@@ -13,6 +12,5 @@
     "Romance"
   ],
   "tmdb_id": "744",
-  "tmdb_poster_url": "xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg"
 }

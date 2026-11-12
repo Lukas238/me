@@ -1,7 +1,6 @@
 {
   "id": "153667a2-d854-4da6-bbad-d8c6829e9d8f",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Right Stuff",
@@ -12,6 +11,5 @@
     "History"
   ],
   "tmdb_id": "9549",
-  "tmdb_poster_url": "htEr0vyHbU7FMr8qvTguTmaTvES.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/htEr0vyHbU7FMr8qvTguTmaTvES.jpg"
 }

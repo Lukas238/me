@@ -1,7 +1,6 @@
 {
   "id": "7919fb21-a12a-41fb-b2cf-f753d355be55",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Harry Potter and the Goblet of Fire",
@@ -12,6 +11,5 @@
     "Fantasy"
   ],
   "tmdb_id": "674",
-  "tmdb_poster_url": "fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg"
 }

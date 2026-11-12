@@ -1,7 +1,6 @@
 {
   "id": "f5b46c17-0ebf-4b81-95c7-f6751487b957",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Starship Troopers",
@@ -14,6 +13,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "563",
-  "tmdb_poster_url": "cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg"
 }

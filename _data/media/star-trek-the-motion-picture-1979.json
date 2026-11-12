@@ -1,7 +1,6 @@
 {
   "id": "7d55f755-c18d-474f-ae0b-3b268cc3637a",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: The Motion Picture",
@@ -13,6 +12,5 @@
     "Mystery"
   ],
   "tmdb_id": "152",
-  "tmdb_poster_url": "wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg"
 }

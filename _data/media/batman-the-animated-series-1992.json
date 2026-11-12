@@ -1,7 +1,6 @@
 {
   "id": "f1fd0627-9f95-4db8-aebe-491a7936fd04",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Batman: The Animated Series",
@@ -14,6 +13,5 @@
     "Mystery"
   ],
   "tmdb_id": "2098",
-  "tmdb_poster_url": "lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg"
 }

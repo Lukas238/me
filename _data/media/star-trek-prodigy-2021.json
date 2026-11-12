@@ -1,7 +1,6 @@
 {
   "id": "2135034c-812d-4a58-890b-e44220c299af",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: Prodigy",
@@ -13,6 +12,5 @@
     "Kids"
   ],
   "tmdb_id": "106393",
-  "tmdb_poster_url": "Aqub3PSzLm2F398vitkbkxjopjO.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/Aqub3PSzLm2F398vitkbkxjopjO.jpg"
 }

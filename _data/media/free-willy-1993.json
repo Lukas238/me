@@ -1,7 +1,6 @@
 {
   "id": "a58ca9ab-6f36-4588-8068-68d1810c89ee",
   "type": "movie",
-  "status": "watching",
   "watched": false,
   "favorite": false,
   "title": "Free Willy",
@@ -13,6 +12,5 @@
     "Drama"
   ],
   "tmdb_id": "1634",
-  "tmdb_poster_url": "9iBgd9gi9ztWiVcYSG6zl8wDFBN.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9iBgd9gi9ztWiVcYSG6zl8wDFBN.jpg"
 }

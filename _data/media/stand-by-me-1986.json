@@ -1,7 +1,6 @@
 {
   "id": "1847849a-efcc-4e6f-b436-7cef852b0a7b",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Stand by Me",
@@ -12,6 +11,5 @@
     "Adventure"
   ],
   "tmdb_id": "235",
-  "tmdb_poster_url": "vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg"
 }

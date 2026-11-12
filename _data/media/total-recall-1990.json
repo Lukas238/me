@@ -1,7 +1,6 @@
 {
   "id": "38f3fe02-8f97-473c-9947-af20fe9b0c2a",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Total Recall",
@@ -13,6 +12,5 @@
     "Science Fiction"
   ],
   "tmdb_id": "861",
-  "tmdb_poster_url": "wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg"
 }

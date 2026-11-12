@@ -1,7 +1,6 @@
 {
   "id": "2ede44b6-0586-44b4-8cdb-3030cf366cf3",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dracula: Dead and Loving It",
@@ -12,6 +11,5 @@
     "Horror"
   ],
   "tmdb_id": "12110",
-  "tmdb_poster_url": "5QmMhHdKpJ2eQp5i8NqopzGbw9r.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/5QmMhHdKpJ2eQp5i8NqopzGbw9r.jpg"
 }

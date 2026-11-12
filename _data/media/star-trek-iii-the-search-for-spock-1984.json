@@ -1,7 +1,6 @@
 {
   "id": "c8133bcf-e07e-4515-891d-674764351de7",
   "type": "movie",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek III: The Search for Spock",
@@ -14,6 +13,5 @@
     "Thriller"
   ],
   "tmdb_id": "157",
-  "tmdb_poster_url": "yqEj0oPfKBMCz7YcCARHDgH7VFm.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yqEj0oPfKBMCz7YcCARHDgH7VFm.jpg"
 }

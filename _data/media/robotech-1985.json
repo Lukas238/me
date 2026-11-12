@@ -1,7 +1,6 @@
 {
   "id": "620b19e4-6136-468f-9467-0b8f9aa3bf66",
   "type": "series",
-  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Robotech",
@@ -12,6 +11,5 @@
     "Sci-Fi & Fantasy"
   ],
   "tmdb_id": "2192",
-  "tmdb_poster_url": "f3SIr4To9Tuie4I9D2U41XsIbpC.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/f3SIr4To9Tuie4I9D2U41XsIbpC.jpg"
 }
