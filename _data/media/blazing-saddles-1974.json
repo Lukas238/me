@@ -1,6 +1,7 @@
 {
   "id": "ab32dbb1-5a80-4efb-b9e3-26461e1d6d0f",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Blazing Saddles",
@@ -11,5 +12,6 @@
     "Comedy"
   ],
   "tmdb_id": "11072",
+  "tmdb_poster_url": "vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg"
 }

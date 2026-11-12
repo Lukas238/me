@@ -1,6 +1,7 @@
 {
   "id": "d3c39846-368b-466e-88a4-ac385ddee97d",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Platoon",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "792",
+  "tmdb_poster_url": "m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg"
 }

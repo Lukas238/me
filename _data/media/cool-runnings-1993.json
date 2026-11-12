@@ -1,6 +1,7 @@
 {
   "id": "d7e9ee1c-7747-49a3-b94e-4aabcc9661bb",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Cool Runnings",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "864",
+  "tmdb_poster_url": "6fXuGEb7EqGmAeUodxm7l5ELPZ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/6fXuGEb7EqGmAeUodxm7l5ELPZ.jpg"
 }

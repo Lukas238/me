@@ -1,6 +1,7 @@
 {
   "id": "b5b2577b-bd35-4032-85aa-f6e17962ff2f",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Iron Giant",
@@ -13,5 +14,6 @@
     "Drama"
   ],
   "tmdb_id": "10386",
+  "tmdb_poster_url": "k1Cv5CHJvqGWK1xJDUJz8DojFEy.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg"
 }

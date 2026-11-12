@@ -1,6 +1,7 @@
 {
   "id": "07daeeec-9faf-4cf6-8047-60ee4d6d2b4a",
   "type": "movie",
+  "status": "",
   "watched": true,
   "favorite": false,
   "title": "My Neighbor Totoro",
@@ -12,5 +13,6 @@
     "Family"
   ],
   "tmdb_id": "8392",
+  "tmdb_poster_url": "rtGDOeG9LzoerkDGZF9dnVeLppL.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
 }

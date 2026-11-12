@@ -1,6 +1,7 @@
 {
   "id": "870e4ec6-d7d4-4c52-a365-4268334c0a41",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Pinky and the Brain",
@@ -14,5 +15,6 @@
     "Kids"
   ],
   "tmdb_id": "2228",
+  "tmdb_poster_url": "69Hrbgi2qcy8xjcwad94VNHpXLI.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/msVySCL9hRGaWFA0c3Bvx9WJFVV.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "fde6d739-a2af-4e69-a0a1-3399e7a2b913",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Brazil",
@@ -11,5 +12,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "68",
+  "tmdb_poster_url": "2w09J0KUnVtJvqPYu8N63XjAyCR.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/2w09J0KUnVtJvqPYu8N63XjAyCR.jpg"
 }

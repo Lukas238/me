@@ -1,6 +1,7 @@
 {
   "id": "bfd76b4a-df0a-421b-be85-c00e337695f8",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Titanic",
@@ -11,5 +12,6 @@
     "Romance"
   ],
   "tmdb_id": "597",
+  "tmdb_poster_url": "9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
 }

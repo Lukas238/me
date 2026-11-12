@@ -1,6 +1,7 @@
 {
   "id": "eea15e3d-5b17-4e07-b88f-8ea99272bdd8",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Jumanji",
@@ -12,5 +13,6 @@
     "Family"
   ],
   "tmdb_id": "8844",
+  "tmdb_poster_url": "bdHG5Mo83VPobeZZdlSz0Y7HQHB.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/bdHG5Mo83VPobeZZdlSz0Y7HQHB.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "051fda45-19ad-4c47-812f-9f4372f8385c",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Jurassic Park",
@@ -11,5 +12,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "329",
+  "tmdb_poster_url": "d9mtMGQDLANKieb9PbD3yK7xxzo.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/d9mtMGQDLANKieb9PbD3yK7xxzo.jpg"
 }

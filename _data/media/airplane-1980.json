@@ -1,14 +1,16 @@
 {
   "id": "56f53deb-9e5f-4dea-9f92-5aa47f9a36b8",
   "type": "movie",
+  "status": "",
+  "watched": false,
+  "favorite": true,
   "title": "Airplane!",
   "year": "1980",
   "rating": "7+",
-  "watched": false,
-  "favorite": true,
   "tags": [
     "Comedy"
   ],
   "tmdb_id": "813",
+  "tmdb_poster_url": "7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
 }

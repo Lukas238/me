@@ -1,6 +1,7 @@
 {
   "id": "01a0d7b8-097c-4535-9876-b7a2b2e7af74",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Witches",
@@ -12,5 +13,6 @@
     "Horror"
   ],
   "tmdb_id": "10166",
+  "tmdb_poster_url": "mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg"
 }

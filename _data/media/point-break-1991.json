@@ -1,6 +1,7 @@
 {
   "id": "c372cdcd-286d-49a9-b720-c1714acfece5",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Point Break",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "1089",
+  "tmdb_poster_url": "tlbERIghrQ4oofqlbF7H0K0EYnx.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/tlbERIghrQ4oofqlbF7H0K0EYnx.jpg"
 }

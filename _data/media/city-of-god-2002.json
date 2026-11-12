@@ -1,6 +1,7 @@
 {
   "id": "7b9225b0-cf80-4d98-ae3d-6f3fe05b524a",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "City of God",
@@ -11,5 +12,6 @@
     "Crime"
   ],
   "tmdb_id": "598",
+  "tmdb_poster_url": "k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg"
 }

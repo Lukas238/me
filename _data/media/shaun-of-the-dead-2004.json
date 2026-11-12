@@ -1,6 +1,7 @@
 {
   "id": "df432588-630d-47de-8085-39b74804c0cb",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Shaun of the Dead",
@@ -11,5 +12,6 @@
     "Comedy"
   ],
   "tmdb_id": "747",
+  "tmdb_poster_url": "dgXPhzNJH8HFTBjXPB177yNx6RI.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/dgXPhzNJH8HFTBjXPB177yNx6RI.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "9d74f473-10f5-4c10-beec-4f40ed042607",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Dark Knight Rises",
@@ -12,5 +13,6 @@
     "Thriller"
   ],
   "tmdb_id": "49026",
+  "tmdb_poster_url": "hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg"
 }

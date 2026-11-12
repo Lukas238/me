@@ -1,6 +1,7 @@
 {
   "id": "7f6eef68-499b-4ec3-9f22-721838c0353d",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Men in Black II",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "608",
+  "tmdb_poster_url": "enA22EPyzc2WQ1VVyY7zxresQQr.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/enA22EPyzc2WQ1VVyY7zxresQQr.jpg"
 }

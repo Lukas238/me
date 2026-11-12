@@ -1,6 +1,7 @@
 {
   "id": "6ccbd332-a4c0-49cc-9126-02623d3af338",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek VI: The Undiscovered Country",
@@ -13,5 +14,6 @@
     "Thriller"
   ],
   "tmdb_id": "174",
+  "tmdb_poster_url": "tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg"
 }

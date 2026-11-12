@@ -1,6 +1,7 @@
 {
   "id": "2eb9ec8b-0908-4380-aee9-3f7dc7b9790a",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dances with Wolves",
@@ -12,5 +13,6 @@
     "Western"
   ],
   "tmdb_id": "581",
+  "tmdb_poster_url": "hw0ZEHAaTqTxSXGVwUFX7uvanSA.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/hw0ZEHAaTqTxSXGVwUFX7uvanSA.jpg"
 }

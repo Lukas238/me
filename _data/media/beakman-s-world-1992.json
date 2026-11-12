@@ -1,6 +1,7 @@
 {
   "id": "83622dbc-2786-4057-b3c0-1e9cc1dd55fa",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Beakman's World",
@@ -11,5 +12,6 @@
     "Kids"
   ],
   "tmdb_id": "5343",
+  "tmdb_poster_url": "x6wXEkbyhwh98kFWPtfjn5EdVHu.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/x6wXEkbyhwh98kFWPtfjn5EdVHu.jpg"
 }

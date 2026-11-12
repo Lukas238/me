@@ -1,6 +1,7 @@
 {
   "id": "66641724-aed7-4a73-8b9c-b38db91e443c",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Kung Fu Hustle",
@@ -13,5 +14,6 @@
     "Fantasy"
   ],
   "tmdb_id": "9470",
+  "tmdb_poster_url": "exbyTbrvRUDKN2mcNEuVor4VFQW.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg"
 }

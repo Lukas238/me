@@ -1,6 +1,7 @@
 {
   "id": "87723ceb-c1ec-434c-af04-7800eb62a418",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Inside Out 2",
@@ -13,5 +14,6 @@
     "Family"
   ],
   "tmdb_id": "1022789",
+  "tmdb_poster_url": "vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
 }

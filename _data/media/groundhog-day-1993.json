@@ -1,6 +1,7 @@
 {
   "id": "fe86270f-33c9-4e46-861f-4840d4c53ae5",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Groundhog Day",
@@ -13,5 +14,6 @@
     "Comedy"
   ],
   "tmdb_id": "137",
+  "tmdb_poster_url": "gCgt1WARPZaXnq523ySQEUKinCs.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/gCgt1WARPZaXnq523ySQEUKinCs.jpg"
 }

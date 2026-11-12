@@ -1,6 +1,7 @@
 {
   "id": "04948c6f-5991-4c3e-85c4-862a65e39ae5",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Predator",
@@ -13,5 +14,6 @@
     "Thriller"
   ],
   "tmdb_id": "106",
+  "tmdb_poster_url": "k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg"
 }

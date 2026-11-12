@@ -1,6 +1,7 @@
 {
   "id": "d1dcf3bc-35f8-4fee-a8e2-2004bee23345",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Fight Club",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "550",
+  "tmdb_poster_url": "jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg"
 }

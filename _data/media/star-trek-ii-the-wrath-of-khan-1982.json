@@ -1,6 +1,7 @@
 {
   "id": "ef722d1e-60c9-4362-aeff-cbc2d6994057",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek II: The Wrath of Khan",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "154",
+  "tmdb_poster_url": "uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg"
 }

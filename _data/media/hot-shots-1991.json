@@ -1,6 +1,7 @@
 {
   "id": "ea29146e-1918-443b-a296-5401c636dbc3",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Hot Shots!",
@@ -12,5 +13,6 @@
     "War"
   ],
   "tmdb_id": "9595",
+  "tmdb_poster_url": "koLIB5263emHxewmwgBBK26vjeS.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg"
 }

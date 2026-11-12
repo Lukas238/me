@@ -1,6 +1,7 @@
 {
   "id": "3bd8d2b5-1685-4480-8140-a64fd111c293",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Interstellar",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "157336",
+  "tmdb_poster_url": "yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg"
 }

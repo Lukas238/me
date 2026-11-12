@@ -1,6 +1,7 @@
 {
   "id": "2dedb706-edb0-44a6-8ad0-ee8f050543d6",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Who Framed Roger Rabbit",
@@ -13,5 +14,6 @@
     "Crime"
   ],
   "tmdb_id": "856",
+  "tmdb_poster_url": "lYfRc57Kx9VgLZ48iulu0HKnM15.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg"
 }

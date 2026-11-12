@@ -1,6 +1,7 @@
 {
   "id": "80577d73-1682-4b9b-92e2-1e2c6f1c7e3f",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Silence of the Lambs",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "274",
+  "tmdb_poster_url": "uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
 }

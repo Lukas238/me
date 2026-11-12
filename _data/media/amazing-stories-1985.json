@@ -1,6 +1,7 @@
 {
   "id": "e893ef06-41ff-4886-9e57-8a50fc4763cd",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Amazing Stories",
@@ -15,5 +16,6 @@
     "Crime"
   ],
   "tmdb_id": "1026",
+  "tmdb_poster_url": "66Utyft9WHPQJSU7f7MbEB72dkc.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/66Utyft9WHPQJSU7f7MbEB72dkc.jpg"
 }

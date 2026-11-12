@@ -1,6 +1,7 @@
 {
   "id": "d30a9e20-c760-4bf1-9e6a-c7e067aafbe6",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Stargate SG-1",
@@ -11,5 +12,6 @@
     "Action & Adventure"
   ],
   "tmdb_id": "4629",
+  "tmdb_poster_url": "dQjmI7XxI47v8IM2MUysHG0LuU2.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/dQjmI7XxI47v8IM2MUysHG0LuU2.jpg"
 }

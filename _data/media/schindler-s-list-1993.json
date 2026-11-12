@@ -1,6 +1,7 @@
 {
   "id": "6c812ec1-a0b2-4f11-b5ef-70c06c0aee6a",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Schindler's List",
@@ -12,5 +13,6 @@
     "War"
   ],
   "tmdb_id": "424",
+  "tmdb_poster_url": "sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
 }

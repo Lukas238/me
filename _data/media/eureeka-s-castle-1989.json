@@ -1,6 +1,7 @@
 {
   "id": "e802c645-817f-48c5-a150-881ea9cd844c",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Eureeka's Castle",
@@ -11,5 +12,6 @@
     "Comedy"
   ],
   "tmdb_id": "403",
+  "tmdb_poster_url": "yg9FX5LfZmbib88NkU5sM0y4wnD.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yg9FX5LfZmbib88NkU5sM0y4wnD.jpg"
 }

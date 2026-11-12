@@ -1,6 +1,7 @@
 {
   "id": "56c73b9e-ed3a-40f7-8837-4814b6b3ff18",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Lethal Weapon",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "941",
+  "tmdb_poster_url": "6gt44oqb4nE8vflPElffeGwsHVl.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/6gt44oqb4nE8vflPElffeGwsHVl.jpg"
 }

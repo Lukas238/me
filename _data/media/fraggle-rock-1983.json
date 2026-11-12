@@ -1,6 +1,7 @@
 {
   "id": "a344e950-b5bf-43af-a8d0-adf5b47dddf9",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Fraggle Rock",
@@ -13,5 +14,6 @@
     "Comedy"
   ],
   "tmdb_id": "2957",
+  "tmdb_poster_url": "nyvNej9aHC2wydFflPMrASS6MF7.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nyvNej9aHC2wydFflPMrASS6MF7.jpg"
 }

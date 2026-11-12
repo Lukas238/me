@@ -1,6 +1,7 @@
 {
   "id": "aafed57b-4c40-40d5-aeec-0d7fbbae8253",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Coraline",
@@ -13,5 +14,6 @@
     "Horror"
   ],
   "tmdb_id": "14836",
+  "tmdb_poster_url": "4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
 }

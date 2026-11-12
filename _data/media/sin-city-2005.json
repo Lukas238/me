@@ -1,6 +1,7 @@
 {
   "id": "468627cf-d918-4bc8-8199-5e5d8f9a35bd",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Sin City",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "187",
+  "tmdb_poster_url": "i66G50wATMmPrvpP95f0XP6ZdVS.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/i66G50wATMmPrvpP95f0XP6ZdVS.jpg"
 }

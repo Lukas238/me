@@ -1,6 +1,7 @@
 {
   "id": "43cd8832-b789-436a-baab-55fa36458868",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Dead Poets Society",
@@ -10,5 +11,6 @@
     "Drama"
   ],
   "tmdb_id": "207",
+  "tmdb_poster_url": "erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg"
 }

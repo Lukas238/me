@@ -1,6 +1,7 @@
 {
   "id": "5eea6020-a8b8-4559-98c6-1338fd8bc462",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Good Will Hunting",
@@ -10,5 +11,6 @@
     "Drama"
   ],
   "tmdb_id": "489",
+  "tmdb_poster_url": "z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg"
 }

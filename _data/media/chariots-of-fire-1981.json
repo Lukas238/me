@@ -1,6 +1,7 @@
 {
   "id": "06fbda83-9676-4357-a5ad-4385709159f1",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Chariots of Fire",
@@ -11,5 +12,6 @@
     "History"
   ],
   "tmdb_id": "9443",
+  "tmdb_poster_url": "qnRaum8k0HqGRml2i7OawFqUtEb.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qnRaum8k0HqGRml2i7OawFqUtEb.jpg"
 }

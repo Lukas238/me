@@ -1,6 +1,7 @@
 {
   "id": "4a9afcf8-1609-42a7-936e-e75aeae2acff",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Memento",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "77",
+  "tmdb_poster_url": "nzlv62aC0octS5AklAiWpXLX9Z0.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nzlv62aC0octS5AklAiWpXLX9Z0.jpg"
 }

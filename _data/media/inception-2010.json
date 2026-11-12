@@ -1,6 +1,7 @@
 {
   "id": "56fbf0d0-8c7c-46c1-8b27-f079d3a71b6b",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Inception",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "27205",
+  "tmdb_poster_url": "xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
 }

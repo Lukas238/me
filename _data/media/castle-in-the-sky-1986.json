@@ -1,6 +1,7 @@
 {
   "id": "f473118f-a488-4bc5-9ef4-868bf5651a76",
   "type": "movie",
+  "status": "",
   "watched": true,
   "favorite": false,
   "title": "Castle in the Sky",
@@ -14,5 +15,6 @@
     "Family"
   ],
   "tmdb_id": "10515",
+  "tmdb_poster_url": "41XxSsJc5OrulP0m7TrrUeO2hoz.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg"
 }

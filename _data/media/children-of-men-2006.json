@@ -1,6 +1,7 @@
 {
   "id": "9be2095d-2387-451b-9ea5-6195f2a51535",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Children of Men",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "9693",
+  "tmdb_poster_url": "k9IAS4TehZFcKi4HVByxZNPfqex.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/k9IAS4TehZFcKi4HVByxZNPfqex.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "a00cee96-8e44-4d86-b55b-45e254bfc102",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Last of the Mohicans",
@@ -12,5 +13,6 @@
     "Drama"
   ],
   "tmdb_id": "9361",
+  "tmdb_poster_url": "qzJMPWRtZveBkxXOv3ucWhoJuyj.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/qzJMPWRtZveBkxXOv3ucWhoJuyj.jpg"
 }

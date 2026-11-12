@@ -1,6 +1,7 @@
 {
   "id": "7c5885e3-2288-44d7-9dc3-bfae2405482e",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "District 9",
@@ -10,5 +11,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "17654",
+  "tmdb_poster_url": "tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg"
 }

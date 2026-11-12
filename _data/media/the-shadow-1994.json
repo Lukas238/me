@@ -1,6 +1,7 @@
 {
   "id": "61ff0675-b7d8-46fa-8f7e-59596b42fb6b",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Shadow",
@@ -13,5 +14,6 @@
     "Adventure"
   ],
   "tmdb_id": "8850",
+  "tmdb_poster_url": "xAbFJH3vQYZvUyzzGAtG4OLy492.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/xAbFJH3vQYZvUyzzGAtG4OLy492.jpg"
 }

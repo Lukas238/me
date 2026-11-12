@@ -1,6 +1,7 @@
 {
   "id": "0efbbc11-0db7-4197-b68c-63412e3d0c88",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Armageddon",
@@ -12,5 +13,6 @@
     "Adventure"
   ],
   "tmdb_id": "95",
+  "tmdb_poster_url": "eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg"
 }

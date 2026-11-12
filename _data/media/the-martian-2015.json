@@ -1,6 +1,7 @@
 {
   "id": "26266faa-b867-4dbb-9425-6238755c4973",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Martian",
@@ -12,5 +13,6 @@
     "Adventure"
   ],
   "tmdb_id": "286217",
+  "tmdb_poster_url": "5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg"
 }

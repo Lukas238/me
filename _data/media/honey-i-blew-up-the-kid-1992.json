@@ -1,6 +1,7 @@
 {
   "id": "958799be-84d8-4d87-a6fd-edf1e85cb4f7",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Honey, I Blew Up the Kid",
@@ -13,5 +14,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "11158",
+  "tmdb_poster_url": "4EGqDo2pP2ZL0TCcYDGnwsU8liQ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/4EGqDo2pP2ZL0TCcYDGnwsU8liQ.jpg"
 }

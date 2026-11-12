@@ -1,6 +1,7 @@
 {
   "id": "0a215217-a9a9-4c75-bb46-bdd44294cb34",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Chip 'n Dale: Rescue Rangers",
@@ -14,5 +15,6 @@
     "Action & Adventure"
   ],
   "tmdb_id": "1615",
+  "tmdb_poster_url": "44VE1LaaZq4bZhMDo6Yi29NO4H.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/44VE1LaaZq4bZhMDo6Yi29NO4H.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "4937c6d1-940f-4226-b5b5-847eb8432286",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Small Wonder",
@@ -11,5 +12,6 @@
     "Family"
   ],
   "tmdb_id": "2898",
+  "tmdb_poster_url": "beaMCxE00CGMSk6MVCcvhZkwqSV.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/beaMCxE00CGMSk6MVCcvhZkwqSV.jpg"
 }

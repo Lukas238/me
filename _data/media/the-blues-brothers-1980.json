@@ -1,6 +1,7 @@
 {
   "id": "dc9188d4-7b72-4c01-b1d2-20dcb1926a97",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Blues Brothers",
@@ -13,5 +14,6 @@
     "Adventure"
   ],
   "tmdb_id": "525",
+  "tmdb_poster_url": "b0hq1d2d7FIvRGNLewKLm79JNTK.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/b0hq1d2d7FIvRGNLewKLm79JNTK.jpg"
 }

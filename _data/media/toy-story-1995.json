@@ -1,6 +1,7 @@
 {
   "id": "85e56d46-dcea-4302-a4cd-fcb5f77f8a16",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Toy Story",
@@ -13,5 +14,6 @@
     "Adventure"
   ],
   "tmdb_id": "862",
+  "tmdb_poster_url": "uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "790d6708-841c-42ea-b178-fbc9a50cb1f5",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Batman Begins",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "272",
+  "tmdb_poster_url": "sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/sPX89Td70IDDjVr85jdSBb4rWGr.jpg"
 }

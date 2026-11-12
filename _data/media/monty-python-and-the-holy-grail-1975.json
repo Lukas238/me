@@ -1,6 +1,7 @@
 {
   "id": "324038f8-ed4d-4ed4-9d27-89906e220b8c",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Monty Python and the Holy Grail",
@@ -12,5 +13,6 @@
     "Fantasy"
   ],
   "tmdb_id": "762",
+  "tmdb_poster_url": "7nTkHjETdGMYK1phHwDbPsrzbYl.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg"
 }

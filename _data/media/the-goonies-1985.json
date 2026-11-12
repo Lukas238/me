@@ -1,6 +1,7 @@
 {
   "id": "76749780-214d-4aaf-be1f-9cf2f868ac57",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Goonies",
@@ -12,5 +13,6 @@
     "Family"
   ],
   "tmdb_id": "9340",
+  "tmdb_poster_url": "eBU7gCjTCj9n2LTxvCSIXXOvHkD.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/eBU7gCjTCj9n2LTxvCSIXXOvHkD.jpg"
 }

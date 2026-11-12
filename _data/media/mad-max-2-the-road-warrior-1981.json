@@ -1,6 +1,7 @@
 {
   "id": "249223d6-ef95-42d9-96a0-b051fbbc6fb8",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Mad Max 2: The Road Warrior",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "8810",
+  "tmdb_poster_url": "l1KVEhkGDpWRzQ0VqIhZqDDuOim.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/l1KVEhkGDpWRzQ0VqIhZqDDuOim.jpg"
 }

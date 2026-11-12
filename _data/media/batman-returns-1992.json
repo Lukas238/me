@@ -1,6 +1,7 @@
 {
   "id": "89899e6a-315e-48dd-847c-56c18c77ad04",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Batman Returns",
@@ -11,5 +12,6 @@
     "Fantasy"
   ],
   "tmdb_id": "364",
+  "tmdb_poster_url": "jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg"
 }

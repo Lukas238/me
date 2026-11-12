@@ -1,6 +1,7 @@
 {
   "id": "b85cc7d7-ef90-40fe-b4d7-e112e6b958b2",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Star Trek: Nemesis",
@@ -13,5 +14,6 @@
     "Thriller"
   ],
   "tmdb_id": "201",
+  "tmdb_poster_url": "cldAwhvBmOv9jrd3bXWuqRHoXyq.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/cldAwhvBmOv9jrd3bXWuqRHoXyq.jpg"
 }

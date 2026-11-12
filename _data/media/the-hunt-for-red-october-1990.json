@@ -1,6 +1,7 @@
 {
   "id": "b9744aa7-5e1d-4c29-a36b-73bfd557e154",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Hunt for Red October",
@@ -11,5 +12,6 @@
     "Thriller"
   ],
   "tmdb_id": "1669",
+  "tmdb_poster_url": "yVl7zidse4KiWtGMqHFtZCx4X3N.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/yVl7zidse4KiWtGMqHFtZCx4X3N.jpg"
 }

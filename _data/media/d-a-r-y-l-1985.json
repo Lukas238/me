@@ -1,6 +1,7 @@
 {
   "id": "38eef58b-0a23-4ff1-ad5f-b1f5534acff3",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "D.A.R.Y.L.",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "16248",
+  "tmdb_poster_url": "87huhTOQijJy0pLhusZfest1MoZ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/87huhTOQijJy0pLhusZfest1MoZ.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "eb6d4069-2cee-420f-ac5b-5f28fbc2a0b5",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Short Circuit 2",
@@ -13,5 +14,6 @@
     "Drama"
   ],
   "tmdb_id": "11966",
+  "tmdb_poster_url": "vXzkNsPEA59EON5PMVXsURe8o67.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/648hPsOYVZCI44e4jZgvMUfBtTY.jpg"
 }

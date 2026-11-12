@@ -1,6 +1,7 @@
 {
   "id": "1580b844-7afa-4295-b7b0-319b79265cde",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "28 Days Later",
@@ -12,5 +13,6 @@
     "Science Fiction"
   ],
   "tmdb_id": "170",
+  "tmdb_poster_url": "sQckQRt17VaWbo39GIu0TMOiszq.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/sQckQRt17VaWbo39GIu0TMOiszq.jpg"
 }

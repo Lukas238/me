@@ -1,6 +1,7 @@
 {
   "id": "756eb73f-8d15-4362-bf99-7ea264528d62",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Blade",
@@ -11,5 +12,6 @@
     "Action"
   ],
   "tmdb_id": "36647",
+  "tmdb_poster_url": "oWT70TvbsmQaqyphCZpsnQR7R32.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg"
 }

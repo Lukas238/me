@@ -1,6 +1,7 @@
 {
   "id": "53a3c726-5dcd-4b74-938b-df79b9e81f41",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Amélie",
@@ -11,5 +12,6 @@
     "Romance"
   ],
   "tmdb_id": "194",
+  "tmdb_poster_url": "nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg"
 }

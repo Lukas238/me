@@ -1,6 +1,7 @@
 {
   "id": "02ee1c98-8dea-432a-ad61-cfde39c19b3f",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Labyrinth",
@@ -12,5 +13,6 @@
     "Fantasy"
   ],
   "tmdb_id": "13597",
+  "tmdb_poster_url": "pejayhTVBEL4w8YKSfrhOjjWVlH.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/pejayhTVBEL4w8YKSfrhOjjWVlH.jpg"
 }

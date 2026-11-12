@@ -1,6 +1,7 @@
 {
   "id": "540e0b14-450a-453d-9cc8-24507c77461e",
   "type": "movie",
+  "status": "",
   "watched": true,
   "favorite": false,
   "title": "The Princess Bride",
@@ -14,5 +15,6 @@
     "Romance"
   ],
   "tmdb_id": "2493",
+  "tmdb_poster_url": "2FC9L9MrjBoGHYjYZjdWQdopVYb.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/2FC9L9MrjBoGHYjYZjdWQdopVYb.jpg"
 }

@@ -1,6 +1,7 @@
 {
   "id": "fde53cb4-41d7-4986-a312-d28358bec153",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "MacGyver",
@@ -12,5 +13,6 @@
     "Crime"
   ],
   "tmdb_id": "2875",
+  "tmdb_poster_url": "zhgJNHbFxGkqdsKdkZLBrDWagOv.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/zhgJNHbFxGkqdsKdkZLBrDWagOv.jpg"
 }

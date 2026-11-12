@@ -1,6 +1,7 @@
 {
   "id": "a5673591-3598-421d-8e3c-54334dba46cc",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Lord of the Rings: The Return of the King",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "122",
+  "tmdb_poster_url": "rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
 }

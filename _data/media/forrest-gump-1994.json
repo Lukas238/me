@@ -1,6 +1,7 @@
 {
   "id": "7e09a5c4-4c49-4f5d-96e2-4d61c883254e",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Forrest Gump",
@@ -12,5 +13,6 @@
     "Romance"
   ],
   "tmdb_id": "13",
+  "tmdb_poster_url": "saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
 }

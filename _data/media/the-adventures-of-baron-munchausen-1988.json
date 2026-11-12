@@ -1,6 +1,7 @@
 {
   "id": "6a4b039e-c81d-4b43-8553-7739502fe76c",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "The Adventures of Baron Munchausen",
@@ -12,5 +13,6 @@
     "Comedy"
   ],
   "tmdb_id": "14506",
+  "tmdb_poster_url": "oiOwGRqwrKpg1EMUlPgRjVC49bn.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/oiOwGRqwrKpg1EMUlPgRjVC49bn.jpg"
 }

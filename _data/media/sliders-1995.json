@@ -1,6 +1,7 @@
 {
   "id": "a9a1ba52-9c78-4f53-94a1-00b4e55b2ff7",
   "type": "series",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Sliders",
@@ -11,5 +12,6 @@
     "Sci-Fi & Fantasy"
   ],
   "tmdb_id": "1649",
+  "tmdb_poster_url": "9cBXIPl83fE2yQusoEt6vMpSjIJ.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/9cBXIPl83fE2yQusoEt6vMpSjIJ.jpg"
 }

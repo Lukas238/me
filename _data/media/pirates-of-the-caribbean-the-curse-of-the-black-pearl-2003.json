@@ -1,6 +1,7 @@
 {
   "id": "85ab144e-5a0b-488a-9fe5-c42b647e07d4",
   "type": "movie",
+  "status": "",
   "watched": false,
   "favorite": false,
   "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
@@ -12,5 +13,6 @@
     "Action"
   ],
   "tmdb_id": "22",
+  "tmdb_poster_url": "poHwCZeWzJCShH7tOjg8RIoyjcw.jpg",
   "cover": "https://image.tmdb.org/t/p/w500/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg"
 }
