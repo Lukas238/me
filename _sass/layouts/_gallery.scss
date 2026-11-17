@@ -225,9 +225,8 @@
   }
 }
 
-// Masonry (assets/js/gallery-masonry.js): 1px rows, each item spans its own height
+// Masonry (assets/js/gallery-masonry.js): small rows (set inline by the script), each item spans its own height
 .is-masonry {
-  grid-auto-rows: 1px;
   row-gap: 0 !important;
 }
 
