@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Lukas238/me
   branch: main
+  base_url: https://me-cms-auth.dassolucas.workers.dev
 
 media_folder: /assets/uploads
 public_folder: /assets/uploads
