@@ -3,6 +3,10 @@ backend:
   repo: Lukas238/me
   branch: main
   base_url: https://me-cms-auth.dassolucas.workers.dev
+logo:
+  src: /assets/img/logo_login.jpg
+  alt: Be thou the Gear in the Builder's Plan — Admin Access
+  show_in_header: true
 
 media_folder: /assets/uploads
 public_folder: /assets/uploads
@@ -127,9 +131,9 @@ collections:
         widget: text
         required: false
 
-  # PELÍCULAS
+  # PELÍCULAS Y SERIES
   - name: movies
-    label: 🎬 Películas
+    label: 🎬 Media Collection
     folder: _data/media
     format: json
     create: true
