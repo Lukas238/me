@@ -23,7 +23,7 @@ El login de GitHub en `/admin/` usa un tercer Worker, `me-cms-auth`, desplegado 
 
 ### Completar la configuración
 
-1. [Registrar una GitHub App](https://github.com/settings/apps/new?name=Sveltia+CMS+Auth+for+me&url=https%3A%2F%2Fme.c238.com.ar&webhook_active=false&contents=write&pull_requests=write). Usar el callback indicado arriba; dejar la expiración de tokens activada, desactivar webhooks y no activar Device Flow ni la autorización durante la instalación.
+1. [Registrar una GitHub App](https://github.com/settings/apps/new?name=Sveltia+CMS+Auth+for+me&url=https%3A%2F%2Fme.c238.com.ar&webhook_active=false&contents=write&pull_requests=write). Completar **Homepage URL** con `https://me.c238.com.ar` y, explícitamente, **Callback URL** con `https://me-cms-auth.dassolucas.workers.dev/callback`: el enlace no precarga el callback. Dejar la expiración de tokens activada, desactivar webhooks y no activar Device Flow ni la autorización durante la instalación. En **Where can this GitHub App be installed?**, elegir **Only on this account** y presionar **Create GitHub App**.
 2. Dar permisos de repositorio **Contents: Read and write**, **Metadata: Read-only** y **Pull requests: Read and write**. Dejar **Workflows: No access**.
 3. Instalar la App en la cuenta `Lukas238`, seleccionando únicamente `Lukas238/me`. Quienes inicien sesión deben tener permiso de escritura en el repositorio.
 4. En la App, copiar el **Client ID** (no el App ID) y generar un **Client secret** desde Credentials.
