@@ -49,6 +49,10 @@ gem install eventmachine -v '1.2.7' -- --with-ldflags="-Wl,-undefined,dynamic_lo
 
 Add a file to `_data/media/` (e.g. `the-goonies-1985.json`) containing `{ "title": "...", "year": "..." }` (plus `"type": "series"` for a series) and run `npm run media:fetch` (add `-- --dry-run` to preview, or `-- --limit 20` to complete at most 20 entries per run). It completes the id, genres, rating and poster from TMDb, using `TMDB_TOKEN` from `.env` (see `.env.example`). If you add the file on GitHub (or with Pages CMS) instead, the `Complete media entries` workflow does the same on push (it needs a `TMDB_TOKEN` repository secret) and then assigns an id to anything TMDb could not complete, using `scripts/add-media-ids.js`. Check its log for entries marked "not found".
 
+### Sveltia CMS
+
+The editor is available at `/admin/`. GitHub login uses the official Sveltia authenticator deployed on Cloudflare Workers. See [the setup instructions](./_workers/README.md#login-de-sveltia-cms) to configure the GitHub App and its credentials.
+
 ## Structure
 
 *   Here are the main files of the template:

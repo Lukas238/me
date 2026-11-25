@@ -11,6 +11,43 @@ El código común (comparación de claves, limpieza de texto, commits a GitHub) 
 
 La cuenta de Cloudflare está fijada con `account_id` en cada `wrangler.toml`.
 
+## Login de Sveltia CMS
+
+El login de GitHub en `/admin/` usa un tercer Worker, `me-cms-auth`, desplegado desde el [autenticador oficial de Sveltia](https://github.com/sveltia/sveltia-cms-auth). No usa el token ni el KV de los workers de datos.
+
+- URL: https://me-cms-auth.dassolucas.workers.dev
+- Callback de GitHub: https://me-cms-auth.dassolucas.workers.dev/callback
+- `ALLOWED_DOMAINS`: `me.c238.com.ar` (solo producción).
+- Configuración del CMS: [`backend.base_url` en admin/config.yml](../admin/config.yml).
+- Revisión desplegada del autenticador: `e62e76ae5ca4dd28e751607b331bb47bb1feddfe`.
+
+### Completar la configuración
+
+1. [Registrar una GitHub App](https://github.com/settings/apps/new?name=Sveltia+CMS+Auth+for+me&url=https%3A%2F%2Fme.c238.com.ar&webhook_active=false&contents=write&pull_requests=write). Usar el callback indicado arriba; dejar la expiración de tokens activada, desactivar webhooks y no activar Device Flow ni la autorización durante la instalación.
+2. Dar permisos de repositorio **Contents: Read and write**, **Metadata: Read-only** y **Pull requests: Read and write**. Dejar **Workflows: No access**.
+3. Instalar la App en la cuenta `Lukas238`, seleccionando únicamente `Lukas238/me`. Quienes inicien sesión deben tener permiso de escritura en el repositorio.
+4. En la App, copiar el **Client ID** (no el App ID) y generar un **Client secret** desde Credentials.
+5. En [Cloudflare > me-cms-auth > Settings > Variables and Secrets](https://dash.cloudflare.com/449ed5cb0f3def6bd64f4d0cd3139a63/workers/services/view/me-cms-auth/production/settings), agregar `GITHUB_CLIENT_ID` y `GITHUB_CLIENT_SECRET`; guardar el segundo como **Secret**. No pegarlo en el chat, el repo ni comandos de terminal.
+6. Guardar/desplegar las variables. Revisar y publicar el cambio de `admin/config.yml` mediante el flujo habitual de GitHub Pages; luego abrir https://me.c238.com.ar/admin/ e iniciar sesión con GitHub.
+
+Hasta configurar ambas credenciales, el Worker responde `MISCONFIGURED_CLIENT`: estar desplegado no significa que el login esté listo.
+
+### Actualizar el autenticador
+
+El código se mantiene en el proyecto oficial, no se copia a este repo. Desde un clon de ese proyecto, con Wrangler instalado y autenticado en la cuenta del sitio:
+
+```bash
+git clone https://github.com/sveltia/sveltia-cms-auth.git
+cd sveltia-cms-auth
+git checkout e62e76ae5ca4dd28e751607b331bb47bb1feddfe
+npm install
+CLOUDFLARE_ACCOUNT_ID=449ed5cb0f3def6bd64f4d0cd3139a63 \
+  npx wrangler deploy --name me-cms-auth \
+  --var ALLOWED_DOMAINS:me.c238.com.ar --keep-vars --strict
+```
+
+Para actualizar, revisar y seleccionar una nueva revisión oficial y actualizar la referencia documentada. `--keep-vars` conserva el Client ID cargado desde el dashboard; los secrets también se conservan.
+
 ## Bookmarklet - Add to Wishlist
 
 Agrega productos a `_data/wishlist/` (un archivo por producto) desde cualquier página. Guía de uso: [BOOKMARKLET.md](./BOOKMARKLET.md).
