@@ -143,8 +143,18 @@ collections:
     thumbnail: cover
     slug: "{{title}}-{{year}}"
     summary: "{{title}} ({{year}})"
-    sortable_fields: [title, year]
-    filterable_fields: [year, type, rating, watched]
+    sortable_fields:
+      fields: [title, year]
+      default:
+        field: year
+        direction: descending
+    view_filters:
+      - label: Películas
+        field: type
+        pattern: '^movie$'
+      - label: Series
+        field: type
+        pattern: '^series$'
     fields:
       - name: id
         label: ID

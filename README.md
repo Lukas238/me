@@ -53,6 +53,8 @@ Add a file to `_data/media/` (e.g. `the-goonies-1985.json`) containing `{ "title
 
 The editor is available at `/admin/`. GitHub login uses the official Sveltia authenticator deployed on Cloudflare Workers. See [the setup instructions](./_workers/README.md#login-de-sveltia-cms) to configure the GitHub App and its credentials.
 
+Media Collection has Movies (`Películas`) and Series filters. Its default order is newest year first; Sveltia remembers any order the user selects. The extra Summary and Git update sorting options are added automatically by Sveltia.
+
 ## Structure
 
 *   Here are the main files of the template:
