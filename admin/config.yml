@@ -3,9 +3,10 @@ backend:
   repo: Lukas238/me
   branch: main
   base_url: https://me-cms-auth.dassolucas.workers.dev
+app_title: "Be thou the Gear in the Builder's Plan" — Admin Access
 logo:
   src: /assets/img/logo_login.jpg
-  alt: Be thou the Gear in the Builder's Plan — Admin Access
+  alt: "Be thou the Gear in the Builder's Plan" — Admin Access
   show_in_header: true
 
 media_folder: /assets/uploads
