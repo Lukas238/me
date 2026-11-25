@@ -11,3 +11,6 @@
 
 - Agregar una seccion de posts de carpinteria y acuarelas, y mis proyectos.
 - Agregar una seccino de mini blog
+- Agregar una lista de grandes juegos como Thief o Worms.
+- Agregar una lista de sitios web favoritos y web comics
+
