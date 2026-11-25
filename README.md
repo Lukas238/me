@@ -55,6 +55,10 @@ The editor is available at `/admin/`. GitHub login uses the official Sveltia aut
 
 Media Collection has Movies (`Películas`) and Series filters. Its default order is newest year first; Sveltia remembers any order the user selects. The extra Summary and Git update sorting options are added automatically by Sveltia.
 
+### Blog
+
+`/blog/` lists the newest posts first, with 10 posts per page. Older posts are available at `/blog/page2/`, `/blog/page3/`, etc. Change `paginate` in `_config.yml` to adjust the page size. The listing uses Jekyll's existing `jekyll-paginate` plugin and leaves individual post URLs unchanged.
+
 ## Structure
 
 *   Here are the main files of the template:

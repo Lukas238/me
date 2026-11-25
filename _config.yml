@@ -40,6 +40,9 @@ bg_thumbs_url: "/assets/backgrounds/_thumbs/"
 plugins:
   - jekyll-paginate
 
+paginate: 10
+paginate_path: "/blog/page:num/"
+
 # Pages
 include:
   - _pages
