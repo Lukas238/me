@@ -8,3 +8,6 @@
 - Add missing paintings to bidassoa like Marina "Metropolitan museum".
 - Add new paintings to bidassoa from Carlitos.
 - Add worker for login with github account.
+
+- Agregar una seccion de posts de carpinteria y acuarelas, y mis proyectos.
+- Agregar una seccino de mini blog
