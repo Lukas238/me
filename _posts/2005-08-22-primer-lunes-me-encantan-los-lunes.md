@@ -8,6 +8,7 @@ categories:
 tags:
 - da-vinci
 - estudios
+- palm-blogged
 description: Primer lunes de clases. La primeria materia Sonido. Excelente clase.
   El profesor -Sebastian Miraglia- hiso incapie en conocer los principios tras los
   programas, y no casarse con ni
@@ -39,5 +40,3 @@ Voy a aprovechar y terminar la web de TKD mientras aguardo a la clase de Diseño
 
 Arnau me reconocio y en un primer momento no entendia que asi en su clase, por mis notas :)\
 Como yo vengo s cursar esta unica clase, llegue a tiempo, el resto del curso se demoro casi 30 minutos. Esto nos dio tiempo de charlar un poco... en resumen me insto a traer mis viejos trabajos -junto con lo nuevos- pra mostrarlos en clase. Hoy tenin una cara de desorientados... jua! Ya me pongo escrobir mi momografia, este año no me pasa lo del otro, que nos quedamos solos en el grupo.
-
-\[palm:Blogged\]

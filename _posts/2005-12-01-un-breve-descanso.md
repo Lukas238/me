@@ -9,6 +9,7 @@ tags:
 - videojuegos
 - diseno
 - da-vinci
+- palm-blogged
 description: Hoy me tome el dia libre. Ayer entregue el diseño del juego, que me tomo
   casi tres dias enteros para completar. No solo era el diseño, tambien realice un
   diseño editorial para el m
@@ -34,4 +35,4 @@ El juego me agoto pero valio la pena. El profesor nos insto a registrarlo, asi q
 *Imagen no disponible en el archivo original: juego_manual238.jpg*\
 *Una vista de cerca del manual.*
 
-\[palm:Blogged\] - Colectivo 59
+*Colectivo 59*

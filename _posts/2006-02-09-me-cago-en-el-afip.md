@@ -8,6 +8,7 @@ categories:
 tags:
 - tramites
 - recuerdos
+- palm-blogged
 description: 'Miercoles por la mañana, el sol reflejado en la medianera sumerje mi
   casa en una lus calida y difusa. El timbrar del telefono rompe el encanto y me trae
   de nuebo la realidad de un '
@@ -42,5 +43,3 @@ Mi vieja casi se muere del susto ya que tiene todo ordenado al milimetro... y en
 Entre tanto, mientras corrin del AFIP al banco, marina pasa por el frente de un edificio en obras cuando pisa una baldosa y se patina callendo de espaldas. La vereda estaba en construccion, con el semento de las juntas fresco, el cual se embadurno por toda su espalda. La obra no tenia señalamientos, y para colmo uno de los peones -que vio todo- se emoezo a morir de riasa. Mama lego regreso con un policia ya que marina se pudo haber lastimado, y a ver si se hacian cargo y le pagaban la ropa.
 
 Un dia de sorpresas como no hay muchos. Por suerte.
-
-\[palm:Blogged\]

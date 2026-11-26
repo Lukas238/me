@@ -8,6 +8,7 @@ categories:
 tags:
 - compras
 - recuerdos
+- palm-blogged
 description: 'El otro dia, luego de bajarme del subte (o seria subirme del subte)
   pase por esta vidriera de muy interesante diseño. Creo que la foto se explica sola.
   Pero no es solo la fota, es '
@@ -26,5 +27,3 @@ Creo que la foto se explica sola. Pero no es solo la fota, es que se trata de un
 
 ![](/assets/blog/legacy/DSC07234.JPG)\
 *Totalmente freak!*
-
-\[palm:Blogged\]

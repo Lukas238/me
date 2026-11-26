@@ -8,6 +8,7 @@ categories:
 tags:
 - familia
 - fotografia
+- palm-blogged
 description: Hoy es el cumpleaños de mi mejor amigo Tomas. Nos juntamo para un festejo
   casual en el Romario de la esquina al Dogan. Estaban todos los amigos y tambien
   uno de los hermaos, felix,
@@ -38,5 +39,3 @@ Una cena de pizza y amigos. No hay nada mejor.
 
 *Fe de Errata:\
 Donde dice "nos reimamos de la situacion.", deberia decir "nos reimamos de Felix.".\*
-
-\[palm:Blogged\]

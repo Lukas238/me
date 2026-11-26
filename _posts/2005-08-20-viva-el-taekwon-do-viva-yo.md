@@ -8,6 +8,7 @@ categories:
 tags:
 - itf
 - torneos
+- palm-blogged
 description: 'Que felicida, acabo de terminar de rendir el examen de taekwon-do para
   el cinturo de rojo punta negra, y mi Sabon me dijo que pase. Es muy significativo
   pues ya llevo casi 10 años '
@@ -31,5 +32,3 @@ Este examen fue especial, por primera vez estaba tranquilo con migo mismo. Me se
 
 Una cosa que me dio mucha confianza en mi mismo fue que la patada que debia rendir en el exament, en este caso rotura de una pulgada de madera con un giro talon saltando, pude ejecutarlo limpiamente y con conciencia de lo que estaba hacindo. Es algo sumamente gratificante lograr dominar una tecnica como esta. No es que sea gran cosa, pero tan solo algunos meses atras parecia algo tan posible como viajar a la luna en bicicleta, asi que -com ya dije- stoy muy contento.\
 Lastima que no hay fotos, romper una tabla de mas de 2 centimetros de grozor, con el talon, y a una altura de casi 2 metros es... increible, despues de todo no soy Van Dame, solo yo soy yo mismo, y por dios que me gusta! :D
-
-\[palm:Blogged\]

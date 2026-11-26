@@ -8,6 +8,7 @@ categories:
 tags:
 - palm
 - hardware
+- palm-blogged
 description: Mas de un año ha pasado desde que perdi el stylus de mi palm (el lapicito).
   Se cayo en algun momento que no pude determinar. Triste consuelo parece ser que
   no soy el unico. Por cas
@@ -32,4 +33,4 @@ Hoy, el profesor de video (quien tiene mi mismo modelo) me comento que el tambie
 Increible que despues de recorrer mas de 3000 kilometros buscando un remplazo, lo consiguiera a solo 15 cuadras de la facultad. Increible. Este repuesto no es oficial de Soñ -a quien le importa- y entra mas justado que el original, lo cual es mejor; como yapa tiene una mini-birome escondida en la tapa, toda una mejoria.\
 Tenia pensado fabricarme uno y en mi diseño utilizaria una pequeña antena. Ahora veo que el sylus que compre se basa en el mismo principio... Me parece que voy a fabricarlo, solo para ver... :)
 
-\[palm:Blogged - Subte linea D\]
+*Subte linea D*

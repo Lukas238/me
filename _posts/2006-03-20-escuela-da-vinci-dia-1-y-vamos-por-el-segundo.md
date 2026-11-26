@@ -8,6 +8,7 @@ categories:
 tags:
 - da-vinci
 - estudios
+- palm-blogged
 description: Hoy comienzan las clases de mi segundo cuatrime de Diseño Multimedial
   en la escuela Da Vinci. Para variar no pude dormir de los nervios y a pesar de haberme
   arreglado sigo luciendo
@@ -60,5 +61,4 @@ La web de la escuela me resulta mas pretenciosa que util, y ya que es una escuel
 
 Ya vere en las semanas proximas que pasa.
 
-\
-\[palm:Blogged\]
+

@@ -8,6 +8,7 @@ categories:
 tags:
 - da-vinci
 - estudios
+- palm-blogged
 description: La primera materia resulto ser Ingles. Pero es de un nIvel introduc torio
   y solo pretende prepararnos en comprencion de texto y vocabulario especifico de
   multimedia. Creo que voy a
@@ -26,5 +27,3 @@ La segunba resulto ser Animacion, con mi viejo amigo -por que es un amigo- 3D St
 En base a lo visto en clase, me sorprendio mis propios conocimientos sobre el programa.\
 Me voy a dibertir mucho!!\
 :D
-
-\[palm:Blogged\]

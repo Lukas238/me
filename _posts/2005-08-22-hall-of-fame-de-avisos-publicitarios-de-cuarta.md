@@ -8,6 +8,7 @@ categories:
 tags:
 - publicidad
 - humor
+- palm-blogged
 description: Bienbenido valiente internauta a la mas horrenda colleccion de publicidades,
   afiches, y covers de peliculas. En este mundo hay quienes no tienen gusto, ojo,
   o el valor de enfrertar
@@ -34,5 +35,3 @@ Hey! Donde firmo!!!
 
 [![](/assets/blog/legacy/mate_calma.jpg)](/assets/blog/legacy/mate_calma.jpg)\
 Mmm.... Un *hombre mate*. Este se lleva el premio a la mas pelotuda.
-
-\[palm:Blogged\]
