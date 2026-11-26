@@ -43,8 +43,10 @@ Finalmente me saque una foto con mis dos **mejores amigos** con quienes ya lleva
 
 [![](/assets/blog/legacy/matrix_kick_bb.jpg)](/assets/blog/legacy/matrix_kick_bb.jpg)
 
-*De der. a izq.:Tomás (3er DAN), Yo (1er DAN), y Julio (2do DAN). Los grados de DNA (cinturón negro) se cuentan desde 1er DAN (principiante) a 9no DAN (avanzado*).
+>De der. a izq.: Tomás, 3er DAN. Lucas (yo), 1er DAN. Julio, 2do DAN. Los grados de DAN (cinturón negro) se cuentan desde 1er DAN, principiante a 9no DAN, avanzado.
 
-Y si a alguien le interesa, aca les dejo mi tesis para que la lean: [Tesis_TKD_Lukas238.doc \[200 kb\]](https://docs.google.com/document/d/1rCWJz6sMqJ3hdc63RGWw7x2LgTE5PGwF/edit?usp=sharing)
+Y si a alguien le [interesa](https://c.tenor.com/bOBb4TKnGisAAAAd/tenor.gif), aca les dejo mi tesis para que la lean: [Tesis_TKD_Lukas238.doc \[200 kb\]](https://docs.google.com/document/d/1rCWJz6sMqJ3hdc63RGWw7x2LgTE5PGwF/edit?usp=sharing)
+
+
 
 EOF
