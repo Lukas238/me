@@ -6,24 +6,16 @@
   <section class="blog-sidebar-block">
     <h2>Archive</h2>
     {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    <p class="mb-1"><a href="{{ '/blog/' | relative_url }}">Show all</a></p>
     <ul class="blog-archive list-unstyled">
       {% for year in years %}
         <li>
           <details>
-            <summary>{{ year.name }} ({{ year.items.size }})</summary>
+            <summary><a href="{{ '/blog/archivo/' | relative_url }}#{{ year.name }}">{{ year.name }}</a> ({{ year.items.size }})</summary>
             {% assign months = year.items | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
             <ul class="list-unstyled">
               {% for month in months %}
-                <li>
-                  <details>
-                    <summary>{{ month.items.first.date | date: "%B" }} ({{ month.items.size }})</summary>
-                    <ul>
-                      {% for post in month.items %}
-                        <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
-                      {% endfor %}
-                    </ul>
-                  </details>
-                </li>
+                <li><a href="{{ '/blog/archivo/' | relative_url }}#{{ month.name }}">{{ month.items.first.date | date: "%B" }}</a> ({{ month.items.size }})</li>
               {% endfor %}
             </ul>
           </details>

@@ -4,14 +4,22 @@ title: Archive
 permalink: /blog/archivo/
 ---
 
-{% assign months = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
-{% for month in months %}
-  <section class="blog-group" id="{{ month.name }}">
-    <h2>{{ month.name }} <small class="text-body-secondary">({{ month.items.size }})</small></h2>
-    <ul class="list-unstyled">
-      {% for post in month.items %}
-        <li><time class="text-body-secondary" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
-      {% endfor %}
-    </ul>
+<p><a href="{{ '/blog/' | relative_url }}">Show all</a></p>
+
+{% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in years %}
+  <section class="blog-group" id="{{ year.name }}">
+    <h2>{{ year.name }} <small class="text-body-secondary">({{ year.items.size }})</small></h2>
+    {% assign months = year.items | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+    {% for month in months %}
+      <div class="blog-group" id="{{ month.name }}">
+        <h3>{{ month.items.first.date | date: "%B" }} <small class="text-body-secondary">({{ month.items.size }})</small></h3>
+        <ul class="list-unstyled">
+          {% for post in month.items %}
+            <li><time class="text-body-secondary" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
   </section>
 {% endfor %}

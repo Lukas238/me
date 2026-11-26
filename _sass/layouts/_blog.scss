@@ -71,7 +71,8 @@
 .blog-group {
   margin-bottom: 2rem;
 
-  &:target h2 {
+  &:target > h2,
+  &:target > h3 {
     text-decoration: underline;
   }
 }
