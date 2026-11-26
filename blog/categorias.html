@@ -4,6 +4,8 @@ title: Categories
 permalink: /blog/categorias/
 ---
 
+<p><a href="{{ '/blog/' | relative_url }}">Show all</a></p>
+
 {% assign categories = site.categories | sort %}
 {% for category in categories %}
   {% if category[0] != "blog" %}

@@ -26,6 +26,7 @@
 
   <section class="blog-sidebar-block">
     <h2>Categories</h2>
+    <p class="mb-1"><a href="{{ '/blog/' | relative_url }}">Show all</a></p>
     <ul class="list-unstyled">
       {% assign categories = site.categories | sort %}
       {% for category in categories %}
@@ -38,6 +39,7 @@
 
   <section class="blog-sidebar-block">
     <h2>Tags</h2>
+    <p class="mb-1"><a href="{{ '/blog/' | relative_url }}">Show all</a></p>
     {% capture ranked %}{% for tag in site.tags %}{{ tag[1].size | prepend: "0000" | slice: -4, 4 }}|{{ tag[0] }}
 {% endfor %}{% endcapture %}
     {% assign ranked = ranked | strip | newline_to_br | split: "<br />" | sort | reverse %}

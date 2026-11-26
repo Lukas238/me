@@ -4,6 +4,8 @@ title: Tags
 permalink: /blog/tags/
 ---
 
+<p><a href="{{ '/blog/' | relative_url }}">Show all</a></p>
+
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
   <section class="blog-group" id="{{ tag[0] | slugify }}">

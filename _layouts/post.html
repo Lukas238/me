@@ -2,6 +2,8 @@
 layout: base 
 ---
 
+<div class="blog-wrap">
+<div class="blog-main">
 <div class="post">
   <h1 class="post-title">{{ page.title | escape }}</h1>
   {% include blog_meta.html post=page %}
@@ -38,4 +40,8 @@ layout: base
   {% endif %}
 
   <a href="#" class="top">Top</a>
+</div>
+</div>
+
+{% include blog_sidebar.html %}
 </div>
