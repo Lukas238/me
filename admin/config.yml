@@ -62,6 +62,27 @@ collections:
             label: Contenido
             widget: markdown
 
+  # CATEGORÍAS Y ETIQUETAS DEL BLOG (se eligen o crean desde el post)
+  - name: categories
+    label: 🗂️ Categorías
+    label_singular: Categoría
+    folder: _data/categories
+    extension: yml
+    format: yaml
+    create: true
+    fields:
+      - { name: title, label: Nombre, widget: string }
+
+  - name: tags
+    label: 🏷️ Etiquetas
+    label_singular: Etiqueta
+    folder: _data/tags
+    extension: yml
+    format: yaml
+    create: true
+    fields:
+      - { name: title, label: Nombre, widget: string }
+
   # POSTS DE BLOG
   - name: posts
     label: 📝 Blog
@@ -89,11 +110,21 @@ collections:
         format: "YYYY-MM-DD HH:mm:ss"
       - name: categories
         label: Categorías
-        widget: list
+        widget: relation
+        collection: categories
+        multiple: true
+        search_fields: [title]
+        display_fields: [title]
+        value_field: "{{slug}}"
         required: false
       - name: tags
         label: Etiquetas
-        widget: list
+        widget: relation
+        collection: tags
+        multiple: true
+        search_fields: [title]
+        display_fields: [title]
+        value_field: "{{slug}}"
         required: false
       - name: image
         label: Imagen destacada
