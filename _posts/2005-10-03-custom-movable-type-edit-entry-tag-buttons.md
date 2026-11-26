@@ -43,64 +43,64 @@ mt.js - en la carpeta mt-static\\
 
 Para agregar el primer boton en "Entry Body", habrimos el archivo edit_entry.tmpl y buscamos la cadena:
 
-a.----------------------------------------------------------------------\
-`write('&lta title="&ltMT_TRANS phrase="Quote"&gt" href="#" onclick="return formatStr(document.entry_form.text, \'blockquote\')"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-quote.gif" alt="&ltMT_TRANS phrase="Quote"&gt" width="22" height="16" /&gt&lt/a&gt');`\
-------------------------------------------------------------------------
+```js
+write('&lta title="&ltMT_TRANS phrase="Quote"&gt" href="#" onclick="return formatStr(document.entry_form.text, \'blockquote\')"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-quote.gif" alt="&ltMT_TRANS phrase="Quote"&gt" width="22" height="16" /&gt&lt/a&gt');
+```
 
 Éste es el último boton que vienen en Mobavle Type, el boton de "insertar comillas", y es a continuación de este que deseamos poner nuestro nuevo botón, asi que en el renglon siguiente ponemos el nuevo código:
 
-b.----------------------------------------------------------------------\
-`write('&lta title="&ltMT_TRANS phrase="Image"&gt" href="#" onclick="return insertImage(document.entry_form.text)"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-image.gif" alt="&ltMT_TRANS phrase="Image"&gt" width="22" height="16" /&gt&lt/a&gt');`\
-------------------------------------------------------------------------
+```js
+write('&lta title="&ltMT_TRANS phrase="Image"&gt" href="#" onclick="return insertImage(document.entry_form.text)"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-image.gif" alt="&ltMT_TRANS phrase="Image"&gt" width="22" height="16" /&gt&lt/a&gt');
+```
 
 Noten que ademas de cambiar el nombre de la imagen del boton tambien cambie el nombre de la función que llamo al precionarlo ("insertImage").
 
 Para el boton de imagen pero del campo "Extended Entry", buscamos más a bajo el código:
 
-c.---------------------------------------------------------------------\
-`write('&lta title="&ltMT_TRANS phrase="Quote"&gt" href="#" onclick="return formatStr(document.entry_form.text_more, \'blockquote\')"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-quote.gif" alt="&ltMT_TRANS phrase="Quote"&gt" width="22" height="16" /&gt&lt/a&gt');`\
------------------------------------------------------------------------
+```js
+write('&lta title="&ltMT_TRANS phrase="Quote"&gt" href="#" onclick="return formatStr(document.entry_form.text_more, \'blockquote\')"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-quote.gif" alt="&ltMT_TRANS phrase="Quote"&gt" width="22" height="16" /&gt&lt/a&gt');
+```
 
 E inserto el siguiente código a continuación:
 
-d.----------------------------------------------------------------------\
-`write('&lta title="&ltMT_TRANS phrase="Image"&gt" href="#" onclick="return insertImage(document.entry_form.text_more)"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-image.gif" alt="&ltMT_TRANS phrase="Image"&gt" width="22" height="16" /&gt&lt/a&gt');`\
--------------------------------------------------------------------------
+```js
+write('&lta title="&ltMT_TRANS phrase="Image"&gt" href="#" onclick="return insertImage(document.entry_form.text_more)"&gt&ltimg src="&ltTMPL_VAR NAME=STATIC_URI&gtimages/html-image.gif" alt="&ltMT_TRANS phrase="Image"&gt" width="22" height="16" /&gt&lt/a&gt');
+```
 
-Uso la misma imagen que antes, la misma función, pero hago referencia al nuevo cuadro de texto ("document.entry_form.text_more", en lugar de "document.entry_form.text").
+Uso la misma imagen que antes, la misma función, pero hago referencia al nuevo cuadro de texto (`document.entry_form.text_more`, en lugar de `document.entry_form.text`).
 
-\
-3. Ahora es momento de crear las funciones que efectivmenten crearan el código html de la imagen.
+
+1. Ahora es momento de crear las funciones que efectivmenten crearan el código html de la imagen.
 
 Para eso habrimos el archivo mt.js y al final del documento insertamos el siguiente código:
 
-e.----------------------------------------------------------------------\
-`function insertImage (e) {`\
-`/*Obtengo el nombr de la imagen*/`\
-`var myValue = prompt('Ingrese la URL de la imagen:', 'http://');`
+```js
+function insertImage (e) { /*Obtengo el nombr de la imagen*/
+    var myValue = prompt('Ingrese la URL de la imagen:', 'http://');
 
-if (!myValue ) return;/\*Si no puse nada finalizo\*/
+    if (!myValue ) return;
 
-var str = getSelected(e); /\*Obtengo el texto seleccionado, si lo hay\*/
+    /* Si no puse nada finalizo */
+    var str = getSelected(e);
 
-if (!str ) {\
-/\*Si no seleccione ningun texto, inserto la imagen y un link a la imagen\*/\
-myValue= '&lta href="'+ myValue + '" target="\_blank"&gt&ltimg width=320 height=240 src="'+ myValue +'"&gt&lt/a&gt';\
-} else {\
-/\*Si hay un texto seleccionado inserto un link a la imagen\*/\
-myValue= '&lta href="' + myValue + '" target="\_blank"&gt'+ str +'&lt/a&gt';\
+    /* Obtengo el texto seleccionado, si lo hay */
+
+    if (!str ) { /* Si no seleccione ningun texto, inserto la imagen y un link a la imagen*/
+        myValue= '&lta href="'+ myValue + '" target="\_blank"&gt&ltimg width=320 height=240 src="'+ myValue +'"&gt&lt/a&gt';
+    } else { /* Si hay un texto seleccionado inserto un link a la imagen */
+        myValue= '&lta href="' + myValue + '" target="\_blank"&gt'+ str +'&lt/a&gt';
+    }
+
+    setSelection(e, myValue); /*Mando a imprimir el resultado */
+    return false;
 }
-
-setSelection(e, myValue); /\*Mando a imprimir el resultado \*/\
-return false;\
-}\
-------------------------------------------------------------------------
+```
 
 Este código én sí mismo solo crea la cadena de código HTML, para imprimirlo en el campo de texto uso la misma función que ya viene con Mobavle Type que usan el resto de las funciones, asi ahorramos código.
 
 Como interesante al precionar el boton de imagen, una ventana emergente nos pide la dirección de la imagen que deseamos insertar. Luego automaticamente crea el código nesesario y por ultimo lo manda a imprimir por la función "setSelection". Cabe destacar que si seleccionamos un texto y luego precionamos el boton de imagen, este texo se convierte en un vinculo a la imagen, y si no hay ningun texto seleccionado al presionar el boton, se inserta la imagen, que a su ves es un link a la imagen de tamaño completo. ¿Qué más se puede pedir?
 
-\
-4. Para terminar guardamos los cambios y ya podemos probar Mobavle Type, y ver si nuestro nuevo boton funciona apropiadamente.
+
+1. Para terminar guardamos los cambios y ya podemos probar Mobavle Type, y ver si nuestro nuevo boton funciona apropiadamente.
 
 Espero que les haya sido util, lo fue para mi. Suerte.

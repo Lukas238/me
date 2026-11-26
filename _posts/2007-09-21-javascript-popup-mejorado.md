@@ -23,60 +23,58 @@ Hay muchos javascripts en internet disponibles para bajar, pero ninguno como est
 
 **Características:**\
 
-- \
 - La ventana del popup se centra al medio de la pantalla.
-  \
 - Se puede cambiar el título de la ventana.
-  \
 - La ventana no abre una págin, le escribe código html en el momento.
-  \
 
 Primero necesitamos incorporar a las fotos o links el siguiente código:
 
-\<img src='images/foto1.jpg' width='150' height='110' border='0' onclick="htmlPopup('URL IMAGEN','ANCHO POPUP', 'ALTO POPUP', 'TITULO POPUP'\>
+```html
+<img src='images/foto1.jpg' width='150' height='110' border='0' onclick="htmlPopup('URL IMAGEN','ANCHO POPUP', 'ALTO POPUP', 'TITULO POPUP')">
+```
 
 Y luego agregar en la página el código del javascript:
 
-\<script language="JavaScript"\>\<!-- function htmlPopup(img,w,h,title) { //v2.0 var winl = (screen.width-w)/2; var wint = (screen.height-h)/2; settings= 'height=' + h +',width=' + w + ',top=' + wint + ',left=' + winl + ',scrollbars=no,toolbar=no';
+```js
+function htmlPopup(img,w,h,title) { //v2.0
+    var winl = (screen.width-w)/2; var wint = (screen.height-h)/2; settings= 'height=' + h +',width=' + w + ',top=' + wint + ',left=' + winl + ',scrollbars=no,toolbar=no';
 
-mypopup = window.open("",title,settings);\
-\
-mypopup.document.open();\
-mypopup.document.write("\<head\>\<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' /\>");\
-mypopup.document.write("\<title\>" + title + "\</title\>");\
-mypopup.document.write("\<style type='text/css'\>\<!--body {margin: 0px;}--\>\</style\>\</head\>\<body\>");\
-mypopup.document.write("\<table width='100%' height='100%' border='0' cellpadding='0' cellspacing='0'\>");\
-mypopup.document.write("\<tr\>\<td align='center' valign='middle'\>");
+    mypopup = window.open("",title,settings);
+    mypopup.document.open();
+    mypopup.document.write("<head>\<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' />");
+    mypopup.document.write("<title>" + title + "</title>");
+    mypopup.document.write("<style type='text/css'>\<!--body {margin: 0px;}-->\</style>\</head>\<body>");
+    mypopup.document.write("<table width='100%' height='100%' border='0' cellpadding='0' cellspacing='0'>");
+    mypopup.document.write("<tr>\<td align='center' valign='middle'>");
 
-mypopup.document.write("\<img src=" + img+ " onclick=\\javascript:window.close();\\\>");
+    mypopup.document.write("<img src=" + img+ " onclick=\\javascript:window.close();\\>");
 
-mypopup.document.write("\</td\>\</tr\>\</table\>\</body\>\</html\>");\
-mypopup.document.close();\
-}\
---\>\
-\</script\>\
+    mypopup.document.write("</td>\</tr>\</table>\</body>\</html>");
+    mypopup.document.close();
+}
+```
 
-\
 **Explicación:**
 
-1\. Lo primero que hace el script es centrar el popup:
+1. Lo primero que hace el script es centrar el popup:
+    ```js
+    var winl = (screen.width-w)/2; var wint = (screen.height-h)/2; settings= 'height=' + h +',width=' + w + ',top=' + wint + ',left=' + winl + ',scrollbars=no,toolbar=no';
+    ```
 
-var winl = (screen.width-w)/2; var wint = (screen.height-h)/2; settings= 'height=' + h +',width=' + w + ',top=' + wint + ',left=' + winl + ',scrollbars=no,toolbar=no';
+2. Despues crea una ventana de popup con el nombre de "mypopup":
+    ```js
+    mypopup = window.open("",title,settings);
+    ```
 
-2\. Despues crea una ventana de popup con el nombre de "mypopup":
+3. Finalmente escribe cualquier cosa que deseemos dentro, en este caso código html:
+    ```js
+    mypopup.document.open(); mypopup.document.write("<head>\<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' />"); mypopup.document.write("<title>" + title + "</title>"); mypopup.document.write("<style type='text/css'>\<!--body {margin: 0px;}-->\</style>\</head>\<body>"); mypopup.document.write("<table width='100%' height='100%' border='0' cellpadding='0' cellspacing='0'>"); mypopup.document.write("<tr>\<td align='center' valign='middle'>");
 
-mypopup = window.open("",title,settings);
+    mypopup.document.write("<img src=" + img + " onclick=javascript:window.close();>");
 
-3\. Finalmente escribe cualquier cosa que deseemos dentro, en este caso código html:
-
-mypopup.document.open(); mypopup.document.write("\<head\>\<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' /\>"); mypopup.document.write("\<title\>" + title + "\</title\>"); mypopup.document.write("\<style type='text/css'\>\<!--body {margin: 0px;}--\>\</style\>\</head\>\<body\>"); mypopup.document.write("\<table width='100%' height='100%' border='0' cellpadding='0' cellspacing='0'\>"); mypopup.document.write("\<tr\>\<td align='center' valign='middle'\>");
-
-mypopup.document.write("\<img src=" + img + " onclick=\\javascript:window.close();\\\>");
-
-mypopup.document.write("\</td\>\</tr\>\</table\>\</body\>\</html\>");\
-mypopup.document.close();\
-
-\
+    mypopup.document.write("</td>\</tr>\</table>\</body></html>");
+    mypopup.document.close();
+    ```
 El html solo es una tabla al 100% de ancho y alto, con una imagen centrad en el centro, la cual a su ves tiene un pequeño codigo javascript que hace que la ventana se cierre al hacer click en la imagen.
 
 En resumen este script permite abrir un popup -centrado- e incluir cualquier código que deseemos. Ideal para popups en páginas dinámicas.
