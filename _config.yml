@@ -39,6 +39,9 @@ bg_thumbs_url: "/assets/backgrounds/_thumbs/"
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-redirect-from
+
+permalink: /blog/:year/:month/:day/:title.html
 
 paginate: 10
 paginate_path: "/blog/page:num/"
