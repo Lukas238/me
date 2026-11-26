@@ -41,6 +41,7 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
+excerpt_separator: "<!--more-->"
 permalink: /blog/:year/:month/:day/:title.html
 
 paginate: 10
