@@ -7,7 +7,7 @@ permalink: /blog/buscar/
 <form class="mb-4" role="search" method="get" action="{{ '/blog/buscar/' | relative_url }}">
   <input class="form-control" type="search" name="q" id="blog-search-input" placeholder="Search the blog…" aria-label="Search the blog" autofocus>
 </form>
-<p id="blog-search-status" class="text-body-secondary"></p>
+<p id="blog-search-status" class="blog-search-status fw-semibold"></p>
 <ul id="blog-search-results" class="list-unstyled"></ul>
 
 <script>
@@ -30,11 +30,11 @@ permalink: /blog/buscar/
   function render(query) {
     results.innerHTML = '';
     var terms = normalize(query).split(/\s+/).filter(Boolean);
-    if (!terms.length) { status.textContent = ''; return; }
+    if (!terms.length) { status.innerHTML = ''; return; }
     var found = index.filter(function (entry) {
       return terms.every(function (term) { return entry.haystack.indexOf(term) !== -1; });
     });
-    status.textContent = found.length + (found.length === 1 ? ' result' : ' results');
+    status.innerHTML = '<i class="bi bi-chevron-right" aria-hidden="true"></i> ' + found.length + (found.length === 1 ? ' result' : ' results');
     found.forEach(function (entry) {
       var item = document.createElement('li');
       item.className = 'mb-2';
