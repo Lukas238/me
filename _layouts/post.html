@@ -3,15 +3,21 @@ layout: base
 ---
 
 <div class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
-  <div class="post-line"></div>
+  <h1 class="post-title">{{ page.title | escape }}</h1>
+  {% include blog_meta.html post=page %}
 
   {{ content }}
+
+  {% if page.tags.size > 0 %}
+  <p class="blog-tags">
+    {% for tag in page.tags %}<a href="{{ '/blog/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a> {% endfor %}
+  </p>
+  {% endif %}
 
   {% assign legacy_comments = site.data.legacy_comments[page.legacy_id] %}
   {% if legacy_comments %}
   <div class="legacy-comments">
-    <h3>Comentarios históricos</h3>
+    <h3>Historical comments</h3>
     {% for comment in legacy_comments %}
     <div class="legacy-comment">
       <p><strong>{{ comment.author }}</strong> · {{ comment.date }}</p>

@@ -1,0 +1,6 @@
+<p class="blog-meta">
+  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%Y-%m-%d" }}</time>
+  {% for category in include.post.categories %}{% if category != "blog" %}
+    · <a href="{{ '/blog/categorias/' | relative_url }}#{{ category | slugify }}">{{ category | capitalize }}</a>
+  {% endif %}{% endfor %}
+</p>

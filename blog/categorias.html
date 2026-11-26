@@ -1,0 +1,19 @@
+---
+layout: blog_section
+title: Categories
+permalink: /blog/categorias/
+---
+
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+  {% if category[0] != "blog" %}
+    <section class="blog-group" id="{{ category[0] | slugify }}">
+      <h2>{{ category[0] | capitalize }} <small class="text-body-secondary">({{ category[1].size }})</small></h2>
+      <ul class="list-unstyled">
+        {% for post in category[1] %}
+          <li><time class="text-body-secondary" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,12 @@
+---
+layout: base
+---
+
+<div class="blog-wrap">
+  <div class="blog-main">
+    <h1>{{ page.title | escape }}</h1>
+    {{ content }}
+  </div>
+
+  {% include blog_sidebar.html %}
+</div>

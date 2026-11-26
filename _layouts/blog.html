@@ -2,35 +2,56 @@
 layout: base
 ---
 
-<h1>{{ page.title | escape }}</h1>
+<div class="blog-wrap">
+  <div class="blog-main">
+    <h1>{{ page.title | escape }}</h1>
 
-{% for post in paginator.posts %}
-  <article class="border-bottom py-4">
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-    <time class="text-body-secondary" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-    {% if post.description and post.description != "" %}
-      <p class="mt-3">{{ post.description | escape }}</p>
+    {% for post in paginator.posts %}
+      <article class="blog-entry">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        {% include blog_meta.html post=post %}
+        {% assign text_length = post.content | strip_html | strip | size %}
+        {% if post.content contains site.excerpt_separator %}
+          <div class="blog-excerpt">{{ post.excerpt }}</div>
+          <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
+        {% elsif text_length <= 800 %}
+          <div class="blog-excerpt">{{ post.content }}</div>
+        {% elsif post.description and post.description != "" %}
+          <p>{{ post.description | escape }}</p>
+          <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
+        {% else %}
+          <p>{{ post.excerpt | strip_html | truncatewords: 50 | escape }}</p>
+          <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
+        {% endif %}
+      </article>
     {% else %}
-      <p class="mt-3">{{ post.excerpt | strip_html | truncatewords: 50 | escape }}</p>
-    {% endif %}
-    <a href="{{ post.url | relative_url }}">Read more</a>
-  </article>
-{% else %}
-  <p>No posts yet.</p>
-{% endfor %}
+      <p>No posts yet.</p>
+    {% endfor %}
+  </div>
+
+  {% include blog_sidebar.html %}
+</div>
 
 {% if paginator.total_pages > 1 %}
-  <nav class="pagination d-flex justify-content-between align-items-center mt-4" aria-label="Blog pagination">
-    <div>
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}" rel="prev">Previous</a>
+  <nav class="blog-pager" aria-label="Blog pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" rel="prev">&laquo; Prev</a>
+    {% endif %}
+
+    {% for i in (1..paginator.total_pages) %}
+      {% assign distance = i | minus: paginator.page | abs %}
+      {% if i == 1 %}{% assign page_path = '/blog/' %}{% else %}{% assign page_path = site.paginate_path | replace: ':num', i %}{% endif %}
+      {% if i == paginator.page %}
+        <span class="current" aria-current="page">{{ i }}</span>
+      {% elsif i == 1 or i == paginator.total_pages or distance <= 2 %}
+        <a href="{{ page_path | relative_url }}">{{ i }}</a>
+      {% elsif distance == 3 %}
+        <span class="gap">…</span>
       {% endif %}
-    </div>
-    <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    <div>
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}" rel="next">Next</a>
-      {% endif %}
-    </div>
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" rel="next">Next &raquo;</a>
+    {% endif %}
   </nav>
 {% endif %}

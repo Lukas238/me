@@ -1,0 +1,68 @@
+<aside class="blog-sidebar" aria-label="Blog navigation">
+  <form class="blog-sidebar-block" role="search" method="get" action="{{ '/blog/buscar/' | relative_url }}">
+    <input class="form-control form-control-sm" type="search" name="q" placeholder="Search…" aria-label="Search the blog">
+  </form>
+
+  <section class="blog-sidebar-block">
+    <h2>Archive</h2>
+    {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    <ul class="blog-archive list-unstyled">
+      {% for year in years %}
+        <li>
+          <details>
+            <summary>{{ year.name }} ({{ year.items.size }})</summary>
+            {% assign months = year.items | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+            <ul class="list-unstyled">
+              {% for month in months %}
+                <li>
+                  <details>
+                    <summary>{{ month.items.first.date | date: "%B" }} ({{ month.items.size }})</summary>
+                    <ul>
+                      {% for post in month.items %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </details>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="blog-sidebar-block">
+    <h2>Categories</h2>
+    <ul class="list-unstyled">
+      {% assign categories = site.categories | sort %}
+      {% for category in categories %}
+        {% if category[0] != "blog" %}
+          <li><a href="{{ '/blog/categorias/' | relative_url }}#{{ category[0] | slugify }}">{{ category[0] | capitalize }}</a> <span class="text-body-secondary">({{ category[1].size }})</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="blog-sidebar-block">
+    <h2>Tags</h2>
+    {% capture ranked %}{% for tag in site.tags %}{{ tag[1].size | prepend: "0000" | slice: -4, 4 }}|{{ tag[0] }}
+{% endfor %}{% endcapture %}
+    {% assign ranked = ranked | strip | newline_to_br | split: "<br />" | sort | reverse %}
+    <p class="blog-tags">
+      {% for item in ranked limit: 10 %}{% assign parts = item | strip | split: "|" %}
+        <a href="{{ '/blog/tags/' | relative_url }}#{{ parts[1] | slugify }}">{{ parts[1] }}</a>
+      {% endfor %}
+    </p>
+    {% if ranked.size > 10 %}
+      <details class="blog-tags-more">
+        <summary>{{ ranked.size | minus: 10 }} more tags</summary>
+        <p class="blog-tags">
+          {% for item in ranked offset: 10 %}{% assign parts = item | strip | split: "|" %}
+            <a href="{{ '/blog/tags/' | relative_url }}#{{ parts[1] | slugify }}">{{ parts[1] }}</a>
+          {% endfor %}
+        </p>
+      </details>
+    {% endif %}
+  </section>
+</aside>

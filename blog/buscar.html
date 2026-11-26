@@ -1,0 +1,59 @@
+---
+layout: blog_section
+title: Search
+permalink: /blog/buscar/
+---
+
+<form class="mb-4" role="search" method="get" action="{{ '/blog/buscar/' | relative_url }}">
+  <input class="form-control" type="search" name="q" id="blog-search-input" placeholder="Search the blog…" aria-label="Search the blog" autofocus>
+</form>
+<p id="blog-search-status" class="text-body-secondary"></p>
+<ul id="blog-search-results" class="list-unstyled"></ul>
+
+<script>
+(function () {
+  var input = document.getElementById('blog-search-input');
+  var status = document.getElementById('blog-search-status');
+  var results = document.getElementById('blog-search-results');
+  var index = null;
+
+  function normalize(text) {
+    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function escapeHtml(text) {
+    var span = document.createElement('span');
+    span.textContent = text;
+    return span.innerHTML;
+  }
+
+  function render(query) {
+    results.innerHTML = '';
+    var terms = normalize(query).split(/\s+/).filter(Boolean);
+    if (!terms.length) { status.textContent = ''; return; }
+    var found = index.filter(function (entry) {
+      return terms.every(function (term) { return entry.haystack.indexOf(term) !== -1; });
+    });
+    status.textContent = found.length + (found.length === 1 ? ' result' : ' results');
+    found.forEach(function (entry) {
+      var item = document.createElement('li');
+      item.className = 'mb-2';
+      item.innerHTML = '<time class="text-body-secondary">' + entry.date + '</time> <a href="' + entry.url + '">' + escapeHtml(entry.title) + '</a>';
+      results.appendChild(item);
+    });
+  }
+
+  fetch('{{ "/blog/search.json" | relative_url }}').then(function (response) { return response.json(); }).then(function (data) {
+    index = data.map(function (entry) {
+      entry.haystack = normalize([entry.title, entry.tags, entry.category, entry.text].join(' '));
+      return entry;
+    });
+    var initial = new URLSearchParams(window.location.search).get('q') || '';
+    input.value = initial;
+    render(initial);
+    input.addEventListener('input', function () { render(input.value); });
+  });
+
+  input.form.addEventListener('submit', function (event) { event.preventDefault(); });
+})();
+</script>

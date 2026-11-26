@@ -1,0 +1,17 @@
+---
+layout: blog_section
+title: Archive
+permalink: /blog/archivo/
+---
+
+{% assign months = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+{% for month in months %}
+  <section class="blog-group" id="{{ month.name }}">
+    <h2>{{ month.name }} <small class="text-body-secondary">({{ month.items.size }})</small></h2>
+    <ul class="list-unstyled">
+      {% for post in month.items %}
+        <li><time class="text-body-secondary" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
