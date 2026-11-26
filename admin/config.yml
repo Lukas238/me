@@ -136,8 +136,6 @@ collections:
         label: Contenido
         widget: markdown
 
-  - divider: true
-
   # CATEGORÍAS Y ETIQUETAS DEL BLOG (se eligen o crean desde el post)
   - name: categories
     label: 🗂️ Categorías
@@ -158,6 +156,8 @@ collections:
     create: true
     fields:
       - { name: title, label: Nombre, widget: string }
+
+  - divider: true
 
   # WISHLIST
   - name: wishlist
