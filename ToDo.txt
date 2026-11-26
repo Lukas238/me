@@ -10,7 +10,8 @@
 - Add worker for login with github account.
 
 - Agregar una seccion de posts de carpinteria y acuarelas, y mis proyectos.
-- Agregar una seccino de mini blog
 - Agregar una lista de grandes juegos como Thief o Worms.
 - Agregar una lista de sitios web favoritos y web comics
+- Agregar una lista de software hsitorico
+- Agregar una lista de blog de canciones imprimibles para ukulele
 

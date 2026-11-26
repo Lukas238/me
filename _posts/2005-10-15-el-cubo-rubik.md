@@ -30,4 +30,4 @@ Reciente mente me surgieron memorias de mi infancia y de que tenia un cubo -ahor
 - <http://jjorg.chem.unc.edu/personal/monroe/cube/rubik.html> - Otra guia paso a paso.
 - <http://www.olympus.net/personal/prmhem/step_one.htm> - Buena guia por el método de la cruz.
 
-Espero les alla gustado.
+Espero les haya gustado.

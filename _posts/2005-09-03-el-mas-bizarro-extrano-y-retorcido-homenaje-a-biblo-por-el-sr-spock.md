@@ -25,10 +25,13 @@ Sí, sí, sí. Como lo escucharon. Un homenaje a "El Hobbit" de Tolkien, cantada
 
 Crean me que no me lo invente. Asi como ustedes, al principio, no podia creerlo, pero es verdad. Un triste -tristícimo- producto de la decada de los 60s.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QuQbus0xfhk?si=UfGvdh1KqW2qBC_F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 [![](/assets/blog/legacy/billboballad_spock.jpg)](/assets/blog/legacy/billboballad_spock.jpg)\
 *Imagen del video del Sr. Spock.*
 
-"La Balada de Bilbo Baggins" fue compuesta por Charles R. Grean e interpretada por Leonard Nimoy. Cuenta la historia de Biblo, y su aventura como aparece en el libro "El Hobbit", de J. R. R. Tolkien.
+"*La Balada de Bilbo Baggins*" fue compuesta por Charles R. Grean e interpretada por Leonard Nimoy. Cuenta la historia de Biblo, y su aventura como aparece en el libro "El Hobbit", de J. R. R. Tolkien.
 
 Lo más increible es que ademas del disco, tambien editaron un sencillo de este tema, realmente le tenian fe al muchacho!
 
@@ -40,7 +43,8 @@ Luego de escucharla es fácil de entender por qué es comunmente citada como *la
 [![](/assets/blog/legacy/bibloballad2.jpg)](/assets/blog/legacy/bibloballad2.jpg)\
 *Contra tapa.*
 
-Pero si esto no fuera poco, filmaron un video. No solo esta el Sr. Spock sino que ademas hay una banda de adolecentes carilindos vesrtidos de coloers y *con orejas de elfo* saltando por todas partes. Realmente algo digno de verse. Pueden bajarce el video desde [aquí](mainframe/movies/fun/bilboballad.wmv).
+Pero si esto no fuera poco, filmaron un video. No solo esta el Sr. Spock sino que ademas hay una banda de adolecentes carilindos vesrtidos de coloers y *con orejas de elfo* saltando por todas partes. Realmente algo digno de verse. Pueden bajarce el video desde [aquí](https://www.youtube.com/watch?v=QuQbus0xfhk).
+
 
 Luego de ver este verdadero monumento al mal gusto, debo reconocer que el Sr. Spock me llevo a donde ningún hombre ha hido antes, no deberia volver a ir.
 

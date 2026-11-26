@@ -21,6 +21,8 @@ redirect_from:
 - "/blog/2007/04/18/swift-3d-del-3d-a-flash.html"
 ---
 
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
 Como todo buen diseñador que se precie siempre estoy buscando la manera de sobresalir, inovar, o simplemente encontra nuevaa formas de hacer las cosas.
 
 Un problema que comunmente veo en diseño Flash, es que -apesar de estar muy logrados- muchos diseños paresen una demostracion de los efectos 'de fbrica' de Flash.
@@ -44,9 +46,12 @@ Evidentemente la ventaja que este metodo tiene sobre el primero, es que nos perm
 
 Este es un ejemplo de una caja que se habre, animada en 3DSMax 8 y llevada a flash con el segundo metodo.
 
-[Descargar animación Flash original (formato obsoleto)](/assets/blog/legacy/3D%20Box.swf)
+<!-- Ruffle automatically converts this into a playable Flash container -->
+<embed src="/assets/blog/legacy/3D%20Box.swf" width="600" height="420" type="application/x-shockwave-flash">
 
 Esta es una animacion de 30 cuadros (que se repiten una ves y es ciclica)\
 tambien en 3DSMax 8 pasada a Flash, con efecto 'Pen' en las lineas (pero no se nota mucho).
 
-[Descargar animación Flash original (formato obsoleto)](/assets/blog/legacy/3D%20PingPong.swf)
+<!-- Ruffle automatically converts this into a playable Flash container -->
+<embed src="/assets/blog/legacy/3D%20PingPong.swf" width="600" height="420" type="application/x-shockwave-flash">
+

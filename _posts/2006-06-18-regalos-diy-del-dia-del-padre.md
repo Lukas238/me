@@ -29,7 +29,7 @@ Un recurso al que le he hechado mano en los ultimos años, a sido los regalos ca
 A mi padre -como a mí- nos gusta dibujar. Asi que un rápido paseo por las librerias me bastan para encontrar alguna birome o portaminas interesante. Pero claro, ese regalo, si bien es apropiado, no transmite el sentimiento que deseo hacer llegar a mi padre, asi que ¿qué hacemos?
 
 Este año decidi regalarle una pelota de gomitas elásticas. Lo vi en uno de mis viajes. Es -simplemente- de una *pelota de gomitas elásticas*.\
-La gracia ademas de la obvia (esta genial, es una pelota de gomitas!!), es que -al menos yo- no he visto este artículo en ninguna libreria (tampoco es que alla revisado mucho), asi que es bastante unico.
+La gracia ademas de la obvia (esta genial, es una pelota de gomitas!!), es que -al menos yo- no he visto este artículo en ninguna libreria (tampoco es que haya revisado mucho), asi que es bastante unico.
 
 [![](/assets/blog/legacy/rubberball.jpg)](/assets/blog/legacy/rubberball.jpg) *Pelota de gomitas de colores. Al lado una moneda de 50 cts. y una gomita suelta.*
 

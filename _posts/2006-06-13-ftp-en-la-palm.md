@@ -35,7 +35,7 @@ Bueno, el servcio web funciona sin restricciones, ¿por qué no usar un servicio
 
 [**Net2FTP**](http://www.net2FTP.com). Un servicio de edireccionamiento FTP basado en web. Asi que la facultad no me lo bloquea. Pero tiene una ventaja más. Al poder conectarme por web, para ¿que necesito un programa de ftp en la palm? Me ahorro el espacio y si me quiero conectar a un FTP solo navego hasta esta página.
 
-Lo unico que puedo reclamarles es que la pagina de inicio es muy abultada para ver en la palm, y los campos de texto (para la direccion ftp, el nombre de usuario, la clave y demas) son muy chicos y no se ven correctamente. Lo caul hace la pagina inutil. Por eso cree mi propia página inicio especialmente para palm. Podemos ingresar los datos facilmente y al darle el ok, manda los datos a net2FTP y todo siguie su curso normalmente. La pagina esta [aquí](ftp.html).
+Lo unico que puedo reclamarles es que la pagina de inicio es muy abultada para ver en la palm, y los campos de texto (para la direccion ftp, el nombre de usuario, la clave y demas) son muy chicos y no se ven correctamente. Lo caul hace la pagina inutil. Por eso cree mi propia página inicio especialmente para palm. Podemos ingresar los datos facilmente y al darle el ok, manda los datos a net2FTP y todo siguie su curso normalmente. ~~La pagina esta [aquí](ftp.html).~~
 
 Como yapa, este método de conectarnos desde net2FTP tambien me permite sortear un problema que cada ves es más comun en la facultad: el fallo de la red interna lo que no nos deja acceder a nuestras carpetas desde la facultad, pero esto no es problema si entramos al ftp desde *afuera*, o sea desde net2FTP.
 

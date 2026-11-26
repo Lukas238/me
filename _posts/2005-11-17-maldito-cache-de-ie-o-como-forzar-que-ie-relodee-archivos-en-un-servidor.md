@@ -52,8 +52,8 @@ La idea es que en la hoja HTML, donde esta el código que llama a nuestra imagen
 A continuación el código de esta solución, en PHP, Java Script y ActionScript (Flash).
 
 **PHP**
-```html
-<img src=<?\ echo "'http://www.miservidor.com/files/myimage01.jpg?" . date('Y-m-d') . "'" ?>
+```php
+<img src=<?php echo "'http://www.miservidor.com/files/myimage01.jpg?" . date('Y-m-d') . "'" ?>
 ```
 **ActionScript**
 ```
@@ -69,6 +69,6 @@ trace("'http://www.miservidor.com/files/myimage01.jpg?id=" + mydate.getTime());
 </script>
 ```
 
-Como ven no es tan complicado. Y funciona siempre. Espero que les alla sido de ayuda, ciertamente me solucionó un problema.
+Como ven no es tan complicado. Y funciona siempre. Espero que les haya sido de ayuda, ciertamente me solucionó un problema.
 
 ;)

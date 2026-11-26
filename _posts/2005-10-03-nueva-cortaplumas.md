@@ -28,7 +28,7 @@ El viernes se me hacerca mi mamá -quien es un mienbro de este grupo- y en nombr
 
 \
 Grande fue mi sorpresa cuando al habrir mi regalo encontre una fantástica cortapluma Victorinox modelo Champ, que es la que los astronautas llevan al espacio regularmente.\
-El asunto es que hace unos mese me robaron una que yo tenia (una CyberToll34, el que la alla visto es la que tiene un juego de destornilladores especiales para PC) y quede muy triste. No solo por la pérdida - a quién le gusta que le roben- pero ademas por que yo tengo una naturaleza bastante inquieta y me encanta desarmar todo o que caiga en mis mano, tambien soy un fanatico del DIY (Do It Yourself, o en español, Hagalo Ustéd Mismo) y la verdad es que no herramienta como la cortaplumas. Me hasia falta. A tomas le regalaron una mochila tipo Serf que a el le encantan.
+El asunto es que hace unos mese me robaron una que yo tenia (una CyberToll34, el que la haya visto es la que tiene un juego de destornilladores especiales para PC) y quede muy triste. No solo por la pérdida - a quién le gusta que le roben- pero ademas por que yo tengo una naturaleza bastante inquieta y me encanta desarmar todo o que caiga en mis mano, tambien soy un fanatico del DIY (Do It Yourself, o en español, Hagalo Ustéd Mismo) y la verdad es que no herramienta como la cortaplumas. Me hasia falta. A tomas le regalaron una mochila tipo Serf que a el le encantan.
 
 [![](/assets/blog/legacy/victorinox238.jpg)](/assets/blog/legacy/victorinox238.jpg)\
 *Modelo Champ!!!!*

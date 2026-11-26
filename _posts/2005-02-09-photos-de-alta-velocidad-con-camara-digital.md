@@ -21,7 +21,7 @@ redirect_from:
 image: "/assets/blog/legacy/edgerton_apple.jpg"
 ---
 
-Siempre me ha maravillado las fotos de alta velocidad, el mundo visto en un pestañeo. Hay cosas realmente increíbles ocurriendo ante nosotros pero demasiado rápido para apreciarlas. Uno de los pioneros en este campo fue el señor Edgerton \[<http://www.destinationets.com/>\].
+Siempre me ha maravillado las fotos de alta velocidad, el mundo visto en un pestañeo. Hay cosas realmente increíbles ocurriendo ante nosotros pero demasiado rápido para apreciarlas. Uno de los pioneros en este campo fue el señor [Edgerton](https://edgerton.org/).
 
 ![](/assets/blog/legacy/edgerton_apple.jpg)
 
@@ -33,4 +33,4 @@ Con esto listo solo queda iluminar aquello que queremos fotografiar, cuidando qu
 
 ![](/assets/blog/legacy/stroboscope-4.jpg)
 
-Más info en: <http://www.rit.edu/~andpph/text-stroboscope.html>
+Más info en: <https://www.davidhazy.org/andpph/text-stroboscope.html>

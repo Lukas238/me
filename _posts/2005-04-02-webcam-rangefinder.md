@@ -19,6 +19,6 @@ redirect_from:
 - "/blog/2005/04/02/webcam-rangefinder.html"
 ---
 
-Estaba el otro dia buscando algo interesante que hacer con mi nueva webcam y di con esta página que explica como hacer un [metro laser](http://www.pages.drexel.edu/~twd25/webcam_laser_ranger.html).
+Estaba el otro dia buscando algo interesante que hacer con mi nueva webcam y di con esta página que explica como hacer un [metro laser](https://web.archive.org/web/20041211211153/https://www.pages.drexel.edu/~twd25/webcam_laser_ranger.html).
 
 La idea es utilizar una webcam comun y un puntero laser, y convinarlos para crear un metro laser (para medir distancias). La teoria es que mientras más lejos este el blanco , el punto laser dara más cerca del centro de la imagen capturada por la webcam. incluso escribio un software en Visual Basic!, asi que podemos estudiarlo y crear nuestras propias aplicaciones. Muy interesante por cierto.

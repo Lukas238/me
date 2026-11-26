@@ -25,7 +25,7 @@ Hace unas semanas me regalaron un flash drive [Cruzer Micro](http://en.wikipedi
 
 La idea no solo *llevar* los programas que más nos gusta o usamos en el drive, sino que llevarlos **instalados** en él.
 
-Claro que hay una desventaja, no podemos instalar cualquier programa en el flash drive, solo aquellos programas que allan sido creados especialmente para ser portátiles. La buena noticia es que son muchos los programas que tienen una version portatil, desde programas sencillos hasta suits office completas, y cada día hya más.
+Claro que hay una desventaja, no podemos instalar cualquier programa en el flash drive, solo aquellos programas que hayan sido creados especialmente para ser portátiles. La buena noticia es que son muchos los programas que tienen una version portatil, desde programas sencillos hasta suits office completas, y cada día hya más.
 
 Para hacer todo más sencillo podemos instalar también un *launcher* o lanzador de programas. Hay algunas opciones en la red, de hecho mi Flash drive ya venia con uno instalado de origen llamado [U3](http://en.wikipedia.org/wiki/U3) pero algunas cuestiones técnicas me convencieron de buscar una mejor opción.
 

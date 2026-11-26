@@ -41,21 +41,22 @@ Por *supuesto* -y como ya es costumbre cuando compro libros- lo pedi envuelto pa
 
 La tarjeta que me escribi dice:
 
-> "De Lukas238\
+> "De Lukas238
 > Para Lucas!
-
-Espero que este mi primer libro comprado en Amazon.com sea tan útil e interesante como creo.
-
-Feliz cumpleaños!!! 21/12/79"
+>
+>Espero que este mi primer libro comprado en Amazon.com sea tan útil e interesante como creo.
+>
+>Feliz cumpleaños!!! 21/12/79"
 
 Cuando escribi el mensaje no me di cuenta que puse mi fecha de nacimiento (1979) en lugar de la de mi cumpleaños (2007). Y bueno, era de madrugada, jajaja.
 
-\
-Pocket Ref fue presentado en la serie de televisión [Mythbusters](http://en.wikipedia.org/wiki/MythBusters) (*Cazadores de Mitos*, por el canal de cable [Discovery Channel](http://www.tudiscovery.com/cazadores_funsite/) en Argentina).
+---
+
+**Pocket Ref** fue presentado en la serie de televisión [Mythbusters](http://en.wikipedia.org/wiki/MythBusters) (*Cazadores de Mitos*, por el canal de cable [Discovery Channel](http://www.tudiscovery.com/cazadores_funsite/) en Argentina).
 
 > "It's got everything in it.... It should be in everyone's toolbox." *Adam* (*Tiene de todo... Todos deberían llevar uno en su caja de herramientas*)
 
-\
+
 **Tabla de Contenidos:**
 
 - Prefacio Introducción de información personal y de nombres comerciales, marcas, y Referencias
@@ -110,7 +111,7 @@ Pocket Ref fue presentado en la serie de televisión [Mythbusters](http://en.wik
 - Elemento Cuadros
 - Elemento Propiedades
 - Tabla Periódica de los Elementos
-- PH de común Ã�cidos
+- PH de común Acidos
 - PH de Bases comunes
 - Indicadores de pH
 - Elementary Particles
@@ -125,7 +126,7 @@ Pocket Ref fue presentado en la serie de televisión [Mythbusters](http://en.wik
 - Canales DMA
 - Megabytes y Kilobytes
 - Constantes - Física, Química y Matemáticas
-- \- Electrical Wire, Motors y Frames
+- Electrical Wire, Motors y Frames
 - Hilo de cobre capacidad actual
 - Ampacity frente a la corrección de temperatura
 - Copper Wire actual de plazas (3 alambre)
@@ -155,7 +156,7 @@ Pocket Ref fue presentado en la serie de televisión [Mythbusters](http://en.wik
 - Piloto lámpara Especificaciones
 - Discos de carga - pequeño tubo tipo
 - Características de batería
-- \- El tamaño estándar de baterías
+- El tamaño estándar de baterías
 - RF Coil Winding datos
 - Wire Size vs Número de Activa / Inch
 - Decibelios vs Voltage & Power Ratios
@@ -269,7 +270,7 @@ Pocket Ref fue presentado en la serie de televisión [Mythbusters](http://en.wik
 - Plastic Pipe
 - De tubos de acero
 - De tubos de acero de fórmulas
-- \- Presión de tubos de acero de Estrellas de Sch 40
+- Presión de tubos de acero de Estrellas de Sch 40
 - Cuerda, y la Cadena de Cable
 - Rope (polietileno, de ñlon, manila)
 - Wire Rope
@@ -326,8 +327,8 @@ Pocket Ref fue presentado en la serie de televisión [Mythbusters](http://en.wik
 - Soldadura
 - Arc electrodos de acero dulce -
 - Electrodo Amperages
-- \- Permitir que los electrodos de acero de baja
-- \- Electrodos de acero inoxidable
+- Permitir que los electrodos de acero de baja
+- Electrodos de acero inoxidable
 - Marca de fábrica de electrodos de Conversión (Steel)
 - Gas varillas de soldadura
 - Gases de soldadura
@@ -341,5 +342,5 @@ Pocket Ref fue presentado en la serie de televisión [Mythbusters](http://en.wik
 
 (Traducido con [traductor de google](http://www.google.com/language_tools?hl=en), ni me moleste en revisarlo.)
 
-\
+
 Ahora queda probarlo. Por lo que estube hojeando parece muy interesante, ahora queda ber si efectivamente es tan útil como parece. Los tendre informados.

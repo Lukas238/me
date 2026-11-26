@@ -20,7 +20,7 @@ redirect_from:
 ---
 
 El otro día mi propia madre me comenta que escucho hablar a un Horangel (un conocido astrólogo argentino) y que ante la pregunta de si la astrología era verdadera contesto con una suerte de explicación espiritual, donde 'explicaba' que en realidad la astrología predecia una probabilidad de que determinado suceso o tendencia ocurriese.\
-Lo preocupante es que a mi madre la explicación le parecio bastante acertada. Como considero a mi madre una persona centrada y educada creo que es hora de volver a recordar el porque la astrología -más alla de cuan completas y aparentemente cooherentes sean las explicaciones- fue, es y seguira siendo una idiotez.
+Lo preocupante es que a mi madre la explicación le parecio bastante acertada. Como considero a mi madre una persona centrada y educada creo que es hora de volver a recordar el porque la astrología -más allá de cuan completas y aparentemente cooherentes sean las explicaciones- fue, es y seguira siendo una idiotez.
 
 Lo que aun no deja de asombrarme es el poco o nulo criterio cientifico que la gente utiliza día a día. No porque estemos almorzando, o viendo televisión las reglas de la física y el universo dejan de ser válidas. Todo, obsolutamente todo sigue estas leyes, y si bien aun hay cosas que no podemos explicar, estas no pueden dejar de responder a las leyes existentes. Un nuevo fenómeno puede agregar nuevo conocimiento pero no puede invalidar el prebio. El conocimiento se suma, no se permuta.
 

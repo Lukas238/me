@@ -31,15 +31,13 @@ Bastante complicado lo mio, no?. Imaginense tener que escribir todo ese código 
 
 Este ejemplo trabaja con Movable Type 3.2. La idea es crear un boton que nos permita insertar una imagen, agregarlo a la barra de herrmanientas de Movable Type, y luego insertar el código nesesario.
 
-*Archivos a modificar (es recomendable hacerles un backup a cada uno)*\
-edit_entry.tmpl - en la carpeta tmpl\cms\\\
-mt.js - en la carpeta mt-static\\
+Archivos a modificar (es recomendable hacerles un backup a cada uno):
+- `edit_entry.tmpl`: en la carpeta `tmpl\cms\`
+- `mt.js`: en la carpeta `mt-static\`
 
-*El botón:*\
-1. Primero debemos crear una imagen en formato.gif para usar como boton. Pueden bajarse la mía haciendo click [aquí](mt/mt-static/images/html-image.gif).
+1. **El botón**: Primero debemos crear una imagen en formato `.gif` para usar como boton. Le pondremos de nombre `html-image.gif`.
 
-*El código:*\
-2. Ahora es tiempo de incertar el código. Hay dós lugares donde debemos incertar dos códigos lijeramente diferentes, ya que hay que poner un boton en el area de "Entry Body" y el area de "Extended Entry".
+2. **El código**: Ahora es tiempo de incertar el código. Hay dós lugares donde debemos incertar dos códigos lijeramente diferentes, ya que hay que poner un boton en el area de "Entry Body" y el area de `Extended Entry`.
 
 Para agregar el primer boton en "Entry Body", habrimos el archivo edit_entry.tmpl y buscamos la cadena:
 
@@ -70,7 +68,7 @@ write('&lta title="&ltMT_TRANS phrase="Image"&gt" href="#" onclick="return inser
 Uso la misma imagen que antes, la misma función, pero hago referencia al nuevo cuadro de texto (`document.entry_form.text_more`, en lugar de `document.entry_form.text`).
 
 
-1. Ahora es momento de crear las funciones que efectivmenten crearan el código html de la imagen.
+3. **La funcición**: Ahora es momento de crear las funciones que efectivmenten crearan el código html de la imagen.
 
 Para eso habrimos el archivo mt.js y al final del documento insertamos el siguiente código:
 
@@ -100,7 +98,6 @@ Este código én sí mismo solo crea la cadena de código HTML, para imprimirlo 
 
 Como interesante al precionar el boton de imagen, una ventana emergente nos pide la dirección de la imagen que deseamos insertar. Luego automaticamente crea el código nesesario y por ultimo lo manda a imprimir por la función "setSelection". Cabe destacar que si seleccionamos un texto y luego precionamos el boton de imagen, este texo se convierte en un vinculo a la imagen, y si no hay ningun texto seleccionado al presionar el boton, se inserta la imagen, que a su ves es un link a la imagen de tamaño completo. ¿Qué más se puede pedir?
 
-
-1. Para terminar guardamos los cambios y ya podemos probar Mobavle Type, y ver si nuestro nuevo boton funciona apropiadamente.
+Para terminar guardamos los cambios y ya podemos probar Mobavle Type, y ver si nuestro nuevo boton funciona apropiadamente.
 
 Espero que les haya sido util, lo fue para mi. Suerte.

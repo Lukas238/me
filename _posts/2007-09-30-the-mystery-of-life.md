@@ -22,6 +22,6 @@ image: "/assets/blog/legacy/paul.jpg"
 
 ![paul.jpg](/assets/blog/legacy/paul.jpg)
 
-*"The mystery of life isn't a problem to solve, but a reality to experience."*
+>"The mystery of life isn't a problem to solve, but a reality to experience."
 
-The Reverend Mother Gaius Helen Mohiam to Paul Atreides
+— The Reverend Mother Gaius Helen Mohiam to Paul Atreides
