@@ -8,6 +8,19 @@ layout: base
 
   {{ content }}
 
+  {% assign legacy_comments = site.data.legacy_comments[page.legacy_id] %}
+  {% if legacy_comments %}
+  <div class="legacy-comments">
+    <h3>Comentarios históricos</h3>
+    {% for comment in legacy_comments %}
+    <div class="legacy-comment">
+      <p><strong>{{ comment.author }}</strong> · {{ comment.date }}</p>
+      {{ comment.body | markdownify }}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
 </div>
 
 <div class="pagination">
