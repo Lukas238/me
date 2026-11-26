@@ -3,8 +3,10 @@ layout: post
 title: Relanzando el blog 18 años después
 author: Lucas Dasso
 date: 2026-11-26 11:42:00
-categories: []
-tags: []
+categories:
+  - personal
+tags:
+  - blog
 image: ''
 description: ''
 ---
