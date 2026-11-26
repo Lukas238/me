@@ -120,3 +120,12 @@
   color: $grey-1;
   margin-right: 0.25rem;
 }
+
+.post-pager {
+  align-items: center;
+  border-top: 1px solid $grey-2;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}

@@ -31,16 +31,11 @@ layout: base
 
 </div>
 
-<div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left next">Prev</a>
-  {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right next">Next</a>
-  {% endif %}
-
+<nav class="post-pager" aria-label="Post navigation">
+  <span>{% if page.next.url %}<a href="{{ page.next.url | relative_url }}" rel="prev">&laquo; Prev</a>{% endif %}</span>
   <a href="#" class="top">Top</a>
-</div>
+  <span>{% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}" rel="next">Next &raquo;</a>{% endif %}</span>
+</nav>
 </div>
 
 {% include blog_sidebar.html %}
